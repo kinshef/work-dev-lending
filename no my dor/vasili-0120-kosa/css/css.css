@@ -1,0 +1,363 @@
+#section-nav{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    background-color: white;
+    border-bottom: 5px solid #81c916;
+    z-index: 999;
+}
+#section-main{
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    background-image: url("../img/back/main.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+}
+#section-catalog{
+    background-image: url("../img/back/main.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+}
+#section-equipment{
+    background-attachment: fixed;
+}
+#section-certificate{
+    background-attachment: fixed;
+}
+#section-footer{
+    background-image: url("../img/back/main.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+}
+
+/* Fix bootstrap */
+@media (min-width: 1600px){
+    .container {
+        max-width: 1520px;
+    }
+}
+
+/* Reset */
+a{
+    color: inherit;
+}
+a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+/* Custom */
+.text-red{color: red;}
+
+.c__section{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.c__gradient{
+    background-image: linear-gradient(0deg, #5a9d0f, #81c916);
+}
+.c__bg--white80{
+    background-color: rgba(255,255,255,0.8);
+}
+.c__bg--black60{
+    background-color: rgba(0,0,0,0.6);
+}
+.c__shadow{
+    box-shadow: 0 0 2rem black;
+}
+.c__shadow--success{
+    box-shadow: 0 0 2rem #28a745;
+}
+.c__shadow--danger{
+    box-shadow: 0 0 1rem #dc3545;
+}
+.ul__fa--green i{
+    color: green;
+}
+
+.transition--scale{
+    transition: transform 300ms;
+}
+.transition--scale:hover{
+    transform: scale(1.1);
+}
+
+header{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+@media (min-width: 768px) {
+    header{
+        font-size: 3rem;
+    }
+}
+
+.countdown-week{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+@media (min-width: 1000px) {
+    .countdown-week{
+        font-size: 2rem;
+    }
+}
+
+.nav__link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.main__title{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 6px black;
+}
+.main__subtitle{
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+@media (min-width: 376px) {
+    .main__title{
+        font-size: 2rem;
+    }
+    .main__subtitle{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 992px) {
+    .main__title{
+        font-size: 4rem;
+    }
+    .main__subtitle{
+        font-size: 2rem;
+    }
+}
+
+.sale__card{
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 10px silver;
+}
+.sale__card__title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.sale__card__price{
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+}
+.sale__card__price--old{
+    text-decoration: line-through;
+}
+
+.advantages__card{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.catalog__card{
+    text-align: left;
+    background-color: white;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 10px silver;
+}
+@media (min-width: 376px) {
+    .catalog__card{
+        /*padding: 2rem;*/
+    }
+}
+.catalog__prices{
+    position: relative;
+}
+.catalog__prices span:nth-child(4){
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.catalog__card__title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.catalog__card__img{
+    text-align: center;
+}
+.catalog__card__subtitle{
+    margin-bottom: .5rem;
+    font-weight: 400;
+}
+.catalog__card__price{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: red;
+}
+.catalog__card__price--old{
+    text-decoration: line-through;
+    display: inline-block;
+    color: #6c757d;
+}
+.catalog__input {
+    display: inline-block;
+}
+.catalog__input__label {
+    display: inline-block;
+    padding: 0 1rem;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 1rem;
+    border: 3px solid #808080;
+    cursor: pointer;
+    margin: 0.2rem;
+    transition: all 0.3s;
+}
+.catalog__input__label:hover {
+    box-shadow: 3px 3px 3px silver;
+}
+.catalog__input input:checked + .catalog__input__label {
+    color: #09b53e;
+    border: 3px solid #09b53e;
+    box-shadow: 3px 3px 3px silver;
+}
+.catalog__input input {
+    display:none;
+}
+
+.delivery__card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #eee;
+}
+.delivery__card__img{
+    margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+    .delivery__card{
+        flex-direction: row;
+    }
+    .delivery__card__img{
+        margin-bottom: 0;
+        margin-right: 2rem;
+    }
+}
+
+.equipment__card{
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 10px silver;
+}
+
+.review__card{
+    padding: 2rem;
+    border: 3px solid #ddd;
+}
+
+.nav-stretch {
+    display: none;
+    position: fixed;
+    right: 1rem;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+@media (min-width: 768px) {
+    .nav-stretch {
+        display: block;
+    }
+}
+.nav-stretch .nav-stretch__link {
+    display: block;
+    /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.nav-stretch .nav-stretch__link:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.nav-stretch .nav-stretch__link span {
+    float: right;
+    display: inline-block;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    transform: scale(0.6);
+}
+.nav-stretch .nav-stretch__link:hover span {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.nav-stretch .nav-stretch__link:hover .nav-stretch__label{
+    opacity: 1;
+}
+.nav-stretch .nav-stretch__link.active .nav-stretch__dot {
+    background-color: white;
+    border: 2px solid #d88683;
+    transform: scale(1);
+}
+.nav-stretch .nav-stretch__dot {
+    position: relative;
+    /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+    top: 8px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #d88683;
+    -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+    -moz-transition: -moz-transform 0.2s, background-color 0.5s;
+    transition: transform 0.2s, background-color 0.5s;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+.nav-stretch .nav-stretch__label {
+    position: relative;
+    margin-right: 10px;
+    padding: .4em 1em;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 0.8rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    transition: transform 0.2s, opacity 0.2s;
+    opacity: 0;
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+
+.hero-wall{
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}

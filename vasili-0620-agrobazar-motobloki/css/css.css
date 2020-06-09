@@ -1,0 +1,255 @@
+#section-main {
+    background-image: url(../img/back/fon-main.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#section-award {
+    background-image: url(../img/back/award.jpg);
+    background-size: cover;
+}
+#section-warranty {
+    background-image: url(../img/back/garant.jpg);
+    background-size: cover;
+}
+#section-profit i{
+    color: green;
+}
+.c__section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.c__bg_primary {
+    background-color: orange;
+}
+.c__text_primary {
+    color: orange;
+}
+.c__bg_secondary {
+    background-color: green;
+}
+.c__bg--black-t {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.c__text_secondary {
+    color: green;
+}
+.text-red {
+    color: red;
+}
+.--fs-2 {
+    font-size: 2rem;
+}
+.--fw-bold {
+    font-weight: bold;
+}
+.text-stroke {
+    text-shadow:
+        0 0 2px #000, 0.1em 0.1em 0 #000, 0.1em 0.1em 2px #000, 0.1em 0.1em 6px #000;
+}
+
+.c__bg_silver {
+    background-color: #c9c9c9;
+}
+
+.c__fill_text {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+.c__fill {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+}
+.c__fill svg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#section-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 999;
+    transition: padding 500ms, background-color 500ms;
+}
+#section-nav.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 999;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+.nav__link {
+    position: relative;
+    margin-right: 6px;
+    padding: 10px 14px;
+    color: white;
+}
+.nav__link::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: red;
+    content: "";
+    transition: width ease 300ms;
+}
+.nav__link.active::after {
+    width: 100%;
+}
+.nav__link:hover {
+    color: #ffc107;
+    text-decoration: none;
+    background-color: #0005;
+}
+
+.countdown-week {
+    font-size: 1rem;
+}
+@media (min-width: 768px) {
+    .countdown-week {
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 992px) {
+    .countdown-week {
+        font-size: 2rem;
+    }
+}
+
+.main__title {
+    margin-bottom: 2rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+@media (min-width: 768px) {
+    .main__title {
+        color: white;
+        font-size: 2.5rem;
+    }
+}
+@media (min-width: 1000px) {
+    .main__title {
+        color: white;
+        font-size: 3rem;
+    }
+}
+@media (min-width: 1200px) {
+    .main__title {
+        color: white;
+        font-size: 4rem;
+    }
+}
+
+.main__form{
+    margin: 9rem 0 4rem;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.about__card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.about__card i {
+    color: #ffbb64;
+}
+.catalog__card {
+    padding: 1rem;
+}
+@media (min-width: 768px) {
+    .catalog__card {
+        padding: 3rem;
+    }
+}
+.catalog__card__title {
+    font-size: 2.0rem;
+    padding: 0.7rem;
+    color: white;
+    background-color: #ffbb64;
+    border: 5px solid #343a40;
+}
+.catalog__card__price {
+    font-size: 2.0rem;
+    color: red;
+    background-color: #f8f9fa;
+    padding: 0.7rem;
+    margin: 5px 5px 0;
+}
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    
+    border-top: 20px solid #343a40;
+}
+.catalog__card__li li{
+    color: green;
+}
+.catalog__table {
+    text-align: center;
+}
+.catalog__table i {
+    color: green;
+}
+.catalog__table th,
+.catalog__table td{
+    vertical-align: middle;
+}
+.c__divider {
+    border-top: 5px solid red;
+}
+
+@keyframes fixedbutton {
+    0% {
+        box-shadow: 0 0 4px 4px rgba(255, 0, 0, .6);
+    }
+    100% {
+        box-shadow: 0 0 8px 12px rgba(255, 0, 0, 0);
+    }
+}
+
+.fixed-button {
+    position: fixed !important;
+    bottom: 70px;
+    right: 50px;
+    border-radius: 100%;
+    z-index: 1100;
+    opacity: 0.6;
+    animation: fixedbutton 1.5s 0s ease-out infinite;
+    transition: all .2s ease;
+}
+
+.fixed-button img {
+    width: 60px;
+    border-radius: 100%;
+}
+
+.fixed-button:focus {
+    background-color: #ff5346 !important;
+}
+
+.fixed-button:hover {
+    opacity: 1;
+    background-color: #ff5346 !important;
+    transform: scale(1.3);
+}

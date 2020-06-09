@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css"
+          integrity="sha256-soW/iAENd5uEBh0+aUIS1m2dK4K6qTcB9MLuOnWEQhw=" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+          integrity="sha256-HtCCUh9Hkh//8U1OwcbD8epVEUdBvuI8wj1KtqMhNkI="
+          crossorigin="anonymous">
+
+    <link href="../vendor/lib/lightcountdown/lightcountdown.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/header-menu.css">
+
+    <title>Сварочные аппараты.</title>
+</head>
+
+<body>
+
+<section id="section-nav" class="section-navbar ">
+    <div class="container">
+        <div class="row min-hight main-menu navbar navbar-expand-lg navbar-dark ">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <div class="col-lg-1  col-2    hide">
+                    <div class="header-logo padding-top">
+                        <img class="header-logo__img" src="img/header_logo.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-lg-6  col-10 d-flex justify-content-center align-self-center">
+                    <nav class="section-navbar__menu">
+                        <ul>
+                            <li>
+                                <a href="#section-catalog" class="smoothscroll js-nav-scroll">Каталог
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section-advantages" class="smoothscroll js-nav-scroll">Преимущества
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section-steps" class="smoothscroll js-nav-scroll">Контакты
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3  col-6   hide">
+                    <div class="row header-phone">
+                        <div class="col-12">
+                            <img class="header-phone__item " src="./img/logo_mts_64.jpg" width="30" height="30"
+                                 alt="logo_mts">
+                            <a href="tel:+375333527111">+375 (33) 322-06-26</a>
+                        </div>
+                        <div class="col-12">
+                            <img class="header-phone__item " src="./img/logo_velcom_64.jpg" width="30" height="30"
+                                 alt="logo_velcom">
+                            <a href="tel:+375443527111">+375 (44) 322-06-26</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2  col-6    hide">
+                    <div class="row">
+                        <div class="col">
+                            <div class="header-btn">
+                                <button type="button" class="btn bg_grean" data-toggle="modal"
+                                        data-target="#exampleModal">Заказать звонок
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section-promo" class="section-proma_bg">
+    <div class="container">
+        <div class="row py-4">
+            <div class="section-promo_size col-lg-5 offset-lg-1 d-flex align-items-center justify-content-center">
+                <div class="proma">
+                    <div class="proma-contant">
+                        <div class="h2 text-white">Сварочные аппараты SHTENLI-ваш умный выбор!</div>
+                        <p><span class="text-white">Agrobazar.by</span>
+                        <p><span class="text-white">Самое выгодное предложение на территории Беларуси!</span></p>
+                        <p><span class="text-white">Нам по плечу любая задача!</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-promo_size col-lg-5 offset-lg-1 d-flex align-items-center">
+                <div class="panel__container panel__color_black rounded text-white text-center">
+                    <p class="h2 text-red">Специальное предложение</p>
+                    <hr>
+                    <img src="img/skidka.png" alt="Certificate" class="img-fluid mb-4">
+                    <div class="mb-3 d-flex justify-content-center">
+                        <div class="countdown-week"></div>
+                    </div>
+                    <p class="h3">До конца <span class="text-red">Акции</span> осталось совсем не много времени!</p>
+                    <p>Закажи звонок, и получи в подарок набор инструментов для сборки теплицы.</p>
+                    <form>
+                        <input type="hidden" name="form" value="Верхняя форма">
+                        <fieldset>
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" class="form-control" placeholder="Ваш номер телефона"
+                                       required>
+                            </div>
+                            <button type="submit" class="btn bg_grean btn-lg btn-block transition--slide">Отправить
+                                заявку
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section-catalog" class="section-catalog c__section">
+    <div class="svg-arrow-bottom py-4 text-uppercase text-center bg_green text-white">
+        <div class="h3 font-weight-bold">КАЧЕСТВЕННЫЕ КОМПЛЕКТУЮЩИЕ+</div>
+        <div class="h6 m-0">ХОРОШО ПРОРАБОТАННАЯ КОНСТРУКЦИЯ</div>
+        <svg viewBox="0 0 100 3" xmlns="http://www.w3.org/2000/svg">
+            <polyline points="25 0 75 0 50 3 25 0"></polyline>
+        </svg>
+    </div>
+    <div class="container">
+        <div class="catalog-header text-center">
+            <span class="catalog-header-title text-center">Каталог сварочных аппаратов</span>
+        </div>
+        <div class="row">
+            <div class="col-12  col-lg-4">
+                <div class="card">
+                    <h5 class="card-title text-center catalog-title">Shtenli MMA-200 PRO</h5>
+                    <img src="./img/1-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title catalog-text">+бесплатная доставка по всей Беларуси</h6>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <table class="table table-white">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение</th>
+                                            <td>220/230 В</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота</th>
+                                            <td>50 /60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток</th>
+                                            <td>24 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки</th>
+                                            <td>20 - 250 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Вес</th>
+                                            <td>5.2 кг</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Гарантия</th>
+                                            <td>2 года</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="list-group-item text-center">
+                            <h5 class="card-title text-center catalog-title">134 BYN</h5>
+                            <button type="button" class="btn btn-catalog bg_grean" 
+                                data-toggle="modal"
+                                data-target="#exampleModal"
+                            >
+                                Заказать сварочник
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12  col-lg-4">
+                <div class="card">
+                    <h5 class="card-title text-center catalog-title">Shtenli MMA-250 PRO </h5>
+                    <img src="./img/1-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title catalog-text">+бесплатная доставка по всей Беларуси</h6>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <table class="table table-white">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение</th>
+                                            <td>220/230 В</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток</th>
+                                            <td>24 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки</th>
+                                            <td>20 - 250 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Вес</th>
+                                            <td>5.5 кг</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Гарантия</th>
+                                            <td>2 года</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="list-group-item text-center">
+                            <h5 class="card-title text-center catalog-title">183 BYN</h5>
+                            <button type="button" class="btn btn-catalog bg_grean" 
+                                data-toggle="modal"
+                                data-target="#exampleModal"
+                            >
+                                Заказать сварочник
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12  col-lg-4">
+                <div class="card">
+                    <h5 class="card-title text-center catalog-title">Shtenli MMA-270 PRO</h5>
+                    <img src="./img/1-3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title catalog-text">+бесплатная доставка по всей Беларуси</h6>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <table class="table table-white">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение</th>
+                                            <td>220/230 В</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток</th>
+                                            <td>24 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки</th>
+                                            <td>20 - 250 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Вес</th>
+                                            <td>5.5 кг</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Гарантия</th>
+                                            <td>2 года</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="list-group-item text-center">
+                            <h5 class="card-title text-center catalog-title">217 BYN</h5>
+                            <button type="button" class="btn btn-catalog bg_grean" 
+                                data-toggle="modal"
+                                data-target="#exampleModal"
+                            >
+                                Заказать сварочник
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12  col-lg-4">
+                <div class="card">
+                    <h5 class="card-title text-center catalog-title">Shtenli <br> MMA-315</h5>
+                    <img src="./img/1-4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title catalog-text">+бесплатная доставка по всей Беларуси</h6>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <table class="table table-white">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение</th>
+                                            <td>220/230 В</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток</th>
+                                            <td>24 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки</th>
+                                            <td>20 - 250 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Вес</th>
+                                            <td>5.7 кг</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Гарантия</th>
+                                            <td>2 года</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="list-group-item text-center">
+                            <h5 class="card-title text-center catalog-title">240 BYN</h5>
+                            <button type="button" class="btn btn-catalog bg_grean" 
+                                data-toggle="modal"
+                                data-target="#exampleModal"
+                            >
+                                Заказать сварочник
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12  col-lg-4">
+                <div class="card">
+                    <h5 class="card-title text-center catalog-title">Shtenli MIG-220 PRO (без евро разъема)</h5>
+                    <img src="./img/1-5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title catalog-text">+бесплатная доставка по всей Беларуси</h6>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <table class="table table-white">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение</th>
+                                            <td>220/230 В</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток</th>
+                                            <td>24 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки</th>
+                                            <td>40 - 250 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Вес</th>
+                                            <td>7.0 кг</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Гарантия</th>
+                                            <td>2 года</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="list-group-item text-center">
+                            <h5 class="card-title text-center catalog-title">380 BYN</h5>
+                            <button type="button" class="btn btn-catalog bg_grean" 
+                                data-toggle="modal"
+                                data-target="#exampleModal"
+                            >
+                                Заказать сварочник
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12  col-lg-4">
+                <div class="card">
+                    <h5 class="card-title text-center catalog-title">Shtenli MIG-220 PRO S (с евро разъемом)</h5>
+                    <img src="./img/1-6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title catalog-text">+бесплатная доставка по всей Беларуси</h6>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <table class="table table-white">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение</th>
+                                            <td>220/230 В</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток</th>
+                                            <td>24 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки</th>
+                                            <td>40 - 250 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Вес</th>
+                                            <td>7.0 кг</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Гарантия</th>
+                                            <td>2 года</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="list-group-item text-center">
+                            <h5 class="card-title text-center catalog-title">443 BYN</h5>
+                            <button type="button" class="btn btn-catalog bg_grean" 
+                                data-toggle="modal"
+                                data-target="#exampleModal"
+                            >
+                                Заказать сварочник
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><div class="row">
+            <div class="col-12  col-lg-4">
+                <div class="card">
+                    <h5 class="card-title text-center catalog-title">Shtenli MIG-250 PRO (без евро разъема)</h5>
+                    <img src="./img/1-7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title catalog-text">+бесплатная доставка по всей Беларуси</h6>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <table class="table table-white">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение</th>
+                                            <td>220/230 В</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток</th>
+                                            <td>24 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки</th>
+                                            <td>40 - 250 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Вес</th>
+                                            <td>9.0 кг</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Гарантия</th>
+                                            <td>2 года</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="list-group-item text-center">
+                            <h5 class="card-title text-center catalog-title">408 BYN</h5>
+                            <button type="button" class="btn btn-catalog bg_grean" 
+                                data-toggle="modal"
+                                data-target="#exampleModal"
+                            >
+                                Заказать сварочник
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12  col-lg-4">
+                <div class="card">
+                    <h5 class="card-title text-center catalog-title">Shtenli MIG-250 PRO S (с евро разъемом)</h5>
+                    <img src="./img/1-8.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title catalog-text">+бесплатная доставка по всей Беларуси</h6>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <table class="table table-white">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение</th>
+                                            <td>220/230 В</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток</th>
+                                            <td>24 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки</th>
+                                            <td>20 - 250 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Вес</th>
+                                            <td>7.0 кг</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Гарантия</th>
+                                            <td>2 года</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="list-group-item text-center">
+                            <h5 class="card-title text-center catalog-title">454 BYN</h5>
+                            <button type="button" class="btn btn-catalog bg_grean" 
+                                data-toggle="modal"
+                                data-target="#exampleModal"
+                            >
+                                Заказать сварочник
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12  col-lg-4">
+                <div class="card">
+                    <h5 class="card-title text-center catalog-title">Shtenli MIG/MMA-220 PRO (без евро разъема)</h5>
+                    <img src="./img/1-9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title catalog-text">+бесплатная доставка по всей Беларуси</h6>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <table class="table table-white">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение</th>
+                                            <td>220/230 В</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток</th>
+                                            <td>24 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки</th>
+                                            <td>60 - 220 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Вес</th>
+                                            <td>9.0 кг</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Гарантия</th>
+                                            <td>2 года</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="list-group-item text-center">
+                            <h5 class="card-title text-center catalog-title">392 BYN</h5>
+                            <button type="button" class="btn btn-catalog bg_grean" 
+                                data-toggle="modal"
+                                data-target="#exampleModal"
+                            >
+                                Заказать сварочник
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12  col-lg-4">
+                <div class="card">
+                    <h5 class="card-title text-center catalog-title">Shtenli MIG/MMA-220 PRO S (с евро разъемом)</h5>
+                    <img src="./img/1-10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title catalog-text">+бесплатная доставка по всей Беларуси</h6>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <table class="table table-white">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение</th>
+                                            <td>220/230 В</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток</th>
+                                            <td>24 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки</th>
+                                            <td>60 - 220 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Вес</th>
+                                            <td>9.0 кг</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Гарантия</th>
+                                            <td>2 года</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="list-group-item text-center">
+                            <h5 class="card-title text-center catalog-title">489 BYN</h5>
+                            <button type="button" class="btn btn-catalog bg_grean" 
+                                data-toggle="modal"
+                                data-target="#exampleModal"
+                            >
+                                Заказать сварочник
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12  col-lg-4">
+                <div class="card">
+                    <h5 class="card-title text-center catalog-title">Shtenli MIG/MMA-250 PRO (без евро разъема)</h5>
+                    <img src="./img/1-11.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title catalog-text">+бесплатная доставка по всей Беларуси</h6>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <table class="table table-white">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение</th>
+                                            <td>220/230 В</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток</th>
+                                            <td>24 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки</th>
+                                            <td>60 - 220 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Вес</th>
+                                            <td>9.0 кг</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Гарантия</th>
+                                            <td>2 года</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="list-group-item text-center">
+                            <h5 class="card-title text-center catalog-title">404 BYN</h5>
+                            <button type="button" class="btn btn-catalog bg_grean" 
+                                data-toggle="modal"
+                                data-target="#exampleModal"
+                            >
+                                Заказать сварочник
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12  col-lg-4">
+                <div class="card">
+                    <h5 class="card-title text-center catalog-title">Shtenli MIG/MMA-250 PRO S (с евро разъемом)</h5>
+                    <img src="./img/1-12.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title catalog-text">+бесплатная доставка по всей Беларуси</h6>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <table class="table table-white">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение</th>
+                                            <td>220/230 В</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток</th>
+                                            <td>24 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки</th>
+                                            <td>60 - 220 А</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Вес</th>
+                                            <td>9.0 кг</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Гарантия</th>
+                                            <td>2 года</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="list-group-item text-center">
+                            <h5 class="card-title text-center catalog-title">512 BYN</h5>
+                            <button type="button" class="btn btn-catalog bg_grean" 
+                                data-toggle="modal"
+                                data-target="#exampleModal"
+                            >
+                                Заказать сварочник
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section-servicies" class="section-servicies_bg c__section">
+    <div class="svg-arrow-bottom py-4 text-uppercase text-center bg_green text-white">
+        <div class="h3 font-weight-bold">Дополнительные КОМПЛЕКТУЮЩИЕ+</div>
+        <svg viewBox="0 0 100 3" xmlns="http://www.w3.org/2000/svg">
+            <polyline points="25 0 75 0 50 3 25 0"></polyline>
+        </svg>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="section-servicies_item">
+                    <div class="h4 text-center">Маска сварщика без регулировок WH 1000</div>
+                    <img src="./img/komplekt1.jpg" class="card-img-top" alt="...">
+                    <div class="text-center pb-4">
+                            <span class="section-servicies_item__price">Стоимость 70 BYN<br>
+                            </span>
+                    </div>
+                    <div class="text-center">
+                        <a href="#modal-order" data-toggle="modal" class="section-servicies_item__button m-4">Купить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="section-servicies_item">
+                    <div class="h4 text-center">Маска сварщика с регулировками WH 4000</div>
+                    <img src="./img/komplekt2.jpg" class="card-img-top" alt="...">
+                    <div class="text-center pb-4">
+                            <span class="section-servicies_item__price">Стоимость 80 BYN<br>
+                            </span>
+                    </div>
+                    <div class="text-center">
+                        <a href="#modal-order" data-toggle="modal" class="section-servicies_item__button m-4">Купить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="section-servicies_item">
+                    <div class="h4 text-center">Краги <br>для сварочников </div>
+                    <img src="./img/komplekt3.jpg" class="card-img-top" alt="...">
+                    <div class="text-center pb-4">
+                            <span class="section-servicies_item__price">Стоимость 26 BYN<br>
+                            </span>
+                    </div>
+                    <div class="text-center">
+                        <a href="#modal-order" data-toggle="modal" class="section-servicies_item__button m-4">Купить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="section-servicies_item">
+                    <div class="h4 text-center">Электроды Монолит 1кг, 2мм и 3мм</div>
+                    <img src="./img/komplekt4.jpg" class="card-img-top" alt="...">
+                    <div class="text-center pb-4">
+                            <span class="section-servicies_item__price">Стоимость 26 BYN<br>
+                            </span>
+                    </div>
+                    <div class="text-center">
+                        <a href="#modal-order" data-toggle="modal" class="section-servicies_item__button m-4">Купить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="section-servicies_item">
+                    <div class="h4 text-center">Проволка флюсовая Gold 1кг, 0,8мм (MIG) </div>
+                    <img src="./img/komplekt5.jpg" class="card-img-top" alt="...">
+                    <div class="text-center pb-4">
+                            <span class="section-servicies_item__price">Стоимость 18 BYN<br>
+                            </span>
+                    </div>
+                    <div class="text-center">
+                        <a href="#modal-order" data-toggle="modal" class="section-servicies_item__button m-4">Купить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="section-servicies_item">
+                    <div class="h4 text-center">Проволка омедненная Gold 5кг, 0,8мм и 1мм</div>
+                    <img src="./img/komplekt6.jpg" class="card-img-top" alt="...">
+                    <div class="text-center pb-4">
+                            <span class="section-servicies_item__price">Стоимость 15 BYN<br>
+                            </span>
+                    </div>
+                    <div class="text-center">
+                        <a href="#modal-order" data-toggle="modal" class="section-servicies_item__button m-4">Купить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section-advantages" class="section-advantages_bg c__section">
+    <div class="svg-arrow-bottom py-4 text-uppercase text-center bg_green text-white">
+        <div class="h3 font-weight-bold">Дополнительные КОМПЛЕКТУЮЩИЕ+</div>
+        <svg viewBox="0 0 100 3" xmlns="http://www.w3.org/2000/svg">
+            <polyline points="25 0 75 0 50 3 25 0"></polyline>
+        </svg>
+    </div>
+    <div class="container">
+        <div class="header text-white">
+            ПОЧЕМУ СТОИТ ВЫБРАТЬ ИМЕННО НАС
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="section-advantages__item">
+                    <p class="section-advantages__item-title">Цена=Качество</p>
+                    <div class="section-advantages__item-image image_back1">
+                    </div>
+                    <p class="section-advantages__item-text">
+                        Наш товар самого лучшего качества по приемлимой цене.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="section-advantages__item">
+                    <p class="section-advantages__item-title">Наличие продукции на складе</p>
+                    <div class="section-advantages__item-image image_back2">
+                    </div>
+                    <p class="section-advantages__item-text">
+                        Более 1000 товарных позиций в постоянном наличии на складе.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="section-advantages__item">
+                    <p class="section-advantages__item-title">Выгодные цены</p>
+                    <div class="section-advantages__item-image image_back3">
+                    </div>
+                    <p class="section-advantages__item-text">
+                        Товары разной ценовой категории.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="section-advantages__item">
+                    <p class="section-advantages__item-title">Работаем по всей Беларуси</p>
+                    <div class="section-advantages__item-image image_back4">
+                    </div>
+                    <p class="section-advantages__item-text">
+                        Быстрая и бесплатная доставка по всей Беларуси!
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="section-advantages__item">
+                    <p class="section-advantages__item-title">Оплата</p>
+                    <div class="section-advantages__item-image image_back5">
+                    </div>
+                    <p class="section-advantages__item-text">
+                        Удобный способ оплаты наличными и по карте.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="section-advantages__item">
+                    <p class="section-advantages__item-title">Только лучшее</p>
+                    <div class="section-advantages__item-image image_back6">
+                    </div>
+                    <p class="section-advantages__item-text">
+                        Мы ценим своих клиентов и предлагаем им только лучшее. Более 3000 тысяч довольных клиентов.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section-media" class="c__section text-center c__section">
+    <div class="svg-arrow-bottom py-4 text-uppercase text-center bg_green text-white">
+        <div class="h3 font-weight-bold">Преимущества сварочных аппаратов Shtenli</div>
+        <svg viewBox="0 0 100 3" xmlns="http://www.w3.org/2000/svg">
+            <polyline points="25 0 75 0 50 3 25 0"></polyline>
+        </svg>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 mt-5">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/LsM2oRHWATo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-7 description">
+                <p class="h2 font-weight-bold text-center">Преимущества сварочных аппаратов Shtenli</p>
+                <div class="mx-3 font-weight-bold mt-2">
+                    <img src="img/dvigatel.jpg" class="img-fluid mr-3" alt="dvigatel"> ARC FORCE -  поддержание стабильного горения дуги в случае изменения расстояния между электродом и материалом и колебания напряжения в сети.
+                </div>
+                <div class="mx-3 font-weight-bold mt-2">
+                    <img src="img/diferencial.jpg" class="img-fluid mr-3" alt="diferencial"> ANTI STICKING - функция защиты электрода от залипания. Современный инверторный аппарат не даст залипнуть электроду. Благодаря этим особенностям вы получите качественное и надёжное соединение.
+                </div>
+                <div class="mx-3 font-weight-bold mt-2">
+                    <img src="img/ruchnoy-starter.jpg" class="img-fluid mr-3" alt="ruchnoy-starter"> ANTI DROP - система антиразбрызгивания метала во время сварки.
+                </div>
+                <div class="mx-3 font-weight-bold mt-2">
+                    <img src="img/poniz.jpg" class="img-fluid mr-3" alt="poniz"> HOT START- инвертор кратковременно увеличивает сварочный ток для легкого розжига.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section-steps" class="section-steps_bg c__section">
+    <div class="svg-arrow-bottom py-4 text-uppercase text-center bg_green text-white">
+        <div class="h3 font-weight-bold">КАК МЫ РАБОТАЕМ</div>
+        <svg viewBox="0 0 100 3" xmlns="http://www.w3.org/2000/svg">
+            <polyline points="25 0 75 0 50 3 25 0"></polyline>
+        </svg>
+    </div>
+    <div class="container">
+        <div class="header">
+            КАК МЫ РАБОТАЕМ
+        </div>
+        <div class="col-12">
+            <div class="section-steps__item" onclick="showArticle(1)">
+                <div class="section-steps__item_header">
+                    <div class="arrow"></div>
+                    <div class="ml-3">ШАГ 1: ЗАЯВКА</div>
+                </div>
+                <article class="section-steps__item_text">
+                    <p>Вы оставляете заявку - с вами связывается наш специалист - вы получаете полную консультацию по
+                        товару и помощь в выборе!</p>
+                    <button data-target="#modal-order" data-toggle="modal">Оставить заявку</button>
+                </article>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="section-steps__item" onclick="showArticle(2)">
+                <div class="section-steps__item_header">
+                    <div class="arrow"></div>
+                    <div class="ml-3">ШАГ 2: ОПЛАТА</div>
+                </div>
+                <article class="section-steps__item_text">
+                    <p>Наличными: курьеру в день доставки товара.</p>
+                    <p>Банковской картой: курьеру в день доставки товара.</p>
+                    <p>Рассрочка: оформляется через специалиста в день заказа товара.</p>
+                    <button data-target="#modal-order" data-toggle="modal">Оставить заявку</button>
+                </article>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="section-steps__item" onclick="showArticle(3)">
+                <div class="section-steps__item_header">
+                    <div class="arrow"></div>
+                    <div class="ml-3">ШАГ 3: ДОСТАВКА</div>
+                </div>
+                <article class="section-steps__item_text">
+                    <p>Товар доставляется курьером по всей Беларуси БЕСПЛАТНО!</p>
+                    <button data-target="#modal-order" data-toggle="modal">Оставить заявку</button>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section-final" class="section-final_bg c__section">
+    <div class="svg-arrow-bottom py-4 text-center bg_green text-white">
+        <div class="h3 font-weight-bold">Возникли трудности в выборе сварочного аппарата?</div>
+        <svg viewBox="0 0 100 3" xmlns="http://www.w3.org/2000/svg">
+            <polyline points="25 0 75 0 50 3 25 0"></polyline>
+        </svg>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 ">
+                <div class="final_text text-center">
+                    <div class="h2">Возникли трудности в выборе сварочного аппарата?</div>
+                    <p>
+                        Оставте ваши контактные данные, и наш специалист свяжется с вами в самые кратчайшие сроки.
+                        Ответит на все интересующие вопросы!
+                    </p>
+                    <button data-target="#modal-order" data-toggle="modal">Консультация</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="final_offer">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section-contact" class="section-contact_bg c__section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="section-contact_phone">
+                    <p>ИП Коробкин О.Е.<br><span><span>пр.Рокосовского 41/254</span>, <span>Минск</span></span><br>УНП
+                        192693197<br>+375(33)3220626<br>
+                        Время работы: 7:00 - 23:00<br></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="text-right">
+
+                    <p>ИП Коробкин О.Е.<br><span><span>пр.Рокосовского 41/254</span>, <span>Минск</span></span><br>УНП
+                        192693197<br>+375(29)3220626<br>
+                        Время работы: 7:00 - 23:00<br></p>
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <p>© Agrobazar.by - Продажа сварочный аппаратов в Минске</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Modal header-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div id="modal-order-header" class="c__modal__order--bg" style="display: inline-block;">
+                <div class="container text-center">
+                        <span class="modal-close" data-dismiss="modal">
+                            &times;
+                        </span>
+                    <!--                    <p><img src="img/logo.png" alt="Logo" class="img-fluid" style="max-height: 200px;"></p>-->
+
+                    <div class="c__panel c__panel--black-60 text-white my-4">
+                        <p class="h2">Ваш личный менеджер</p>
+                        <p class="h3">Александр Витальевич </p>
+                        <div class="h2">
+                            <img src="img/logo_velcom_64.jpg" width="25" alt="velcom-logo">
+                            <a class="modal-phone" href="tel:+375293527111">(29) 352-71-11</a>
+                            <br>
+                            <img src="./img/logo_mts_64.jpg" width="25" alt="mts-logo">
+                            <a class="modal-phone" href="tel:+375333527111">(33) 352-71-11</a>
+                        </div>
+                    </div>
+
+                    <form>
+                        <input type="hidden" name="form" value="Окно заказа">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона"
+                                   required="">
+                        </div>
+                        <div class="form-group">
+                                <textarea name="comment" class="form-control" rows="3"
+                                          placeholder="Оставьте сообщение..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-danger btn-block btn-lg">Отправить заявку</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal contacts -->
+<div class="modal fade" id="modal-order">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content bg-warning">
+            <div class="modal-body text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <p class="h2">Оставьте ваш номер телефона</p>
+                <p class="h4">И наш консультант с Вами свяжется</p>
+                <div class="d-flex justify-content-center align-items-center mb-1 h4">
+                    <img src="img/velcom.png" alt="velcom" class="img-fluid mr-2" width="16">
+                    <a href="tel:+375447795544" class="text-reset font-weight-bold">(33) 3220626</a>
+                </div>
+                <div class="d-flex justify-content-center align-items-center h4">
+                    <img src="img/mts.png" alt="mts" class="img-fluid mr-2" width="16">
+                    <a href="tel:+375297795544" class="text-reset font-weight-bold">(29) 3220626</a>
+                </div>
+                <hr>
+                <form>
+                    <input type="hidden" name="form" value="Форма заказа звонка">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-danger btn-lg btn-block">Отправить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-leave">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content bg-warning">
+            <div class="modal-body text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <p class="h2">ПОДОЖДИТЕ УХОДИТЬ!</p>
+                <p class="h4">У нас самые низкие цены. Мы уверены! Найдёте дешевле - сделаем ЕЩЁ ДЕШЕВЛЕ!</p>
+                <hr>
+                <form>
+                    <div class="form-group">
+                        <input type="text" name="price" class="form-control" placeholder="Какую цену хотите?">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-danger btn-lg btn-block">Отправить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- Bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animatelo/1.0.1/animatelo.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-noty/2.3.11/packaged/jquery.noty.packaged.min.js"></script>
+
+<script src="../vendor/lib/lightcountdown/lightcountdown.min.js"></script>
+
+<script src="js/js.js"></script>
+<!-- <script src="vendor/js/app.js"></script> -->
+</body>
+
+</html>

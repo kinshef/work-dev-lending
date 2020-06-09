@@ -1,0 +1,84 @@
+.section-navbar__menu ul li {
+    position: relative;
+    list-style: none;
+}
+
+.section-navbar__menu ul li a {
+    position: relative;
+    width: 160px;
+    height: 40px;
+    display: block;
+    color: #FFF;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: .5s;
+    transition: .5s;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.section-navbar__menu ul li a span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #4d7719;
+    z-index: -1;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+}
+
+.section-navbar__menuul li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.section-navbar__menu ul li a:hover span {
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.section-navbar__menu ul li a span:nth-child(1) {
+    left: 0;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.section-navbar__menu ul li a span:nth-child(2) {
+    left: 25%;
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+.section-navbar__menu ul li a span:nth-child(3) {
+    left: 50%;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.section-navbar__menu ul li a span:nth-child(4) {
+    left: 75%;
+    -webkit-transition-delay: 0.45s;
+    transition-delay: 0.45s;
+}
+
+.active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #4d7719;
+}
+
+@media (min-width: 1200px) {
+    .section-navbar__menu ul li a {
+        width: 195px;
+    }
+}
+
