@@ -128,12 +128,12 @@ button.bg_green:hover{
   margin: 0;
 }
 .section_title{
-  font-size: 54px;
+  font-size: 3.375em;
   line-height: 50px;
 }
 @media (max-width: 768px) {
   .section_title{
-    font-size: 32px;
+    font-size: 2em;
     font-weight: 600;
   }
 }
@@ -348,6 +348,12 @@ a.nav__phone:hover {
   font-weight: 700;
   color: #000;
 }
+@media(max-width: 768px){
+  .has-calculator{
+    font-size: 0.8em;
+  }
+}
+
 /* section-assembly */
 .assembly-wrap{
   background: url(../img/back/bg_advant.png) no-repeat center bottom;

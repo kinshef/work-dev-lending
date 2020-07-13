@@ -96,12 +96,17 @@ $(document).ready(function () {
 document.addEventListener("DOMContentLoaded", function () {
 
     try {
-    	// countdown
+        // countdown
         let dateEnd = new Date();
         dateEnd.setDate(dateEnd.getDay() ? dateEnd.getDate() - dateEnd.getDay() + 8 : dateEnd.getDate() + 1);
         dateEnd.setHours(0, 0, 0);
-        let countdown = new LightCountdown(".countdown-week", dateEnd, {animation: "animated flipInX", animationDuration: "600ms"});
-    } catch (e) {console.error(e);}
+        new LightCountdown(".countdown-week", dateEnd, {
+            animation: "animated flipInX", 
+            animationDuration: "600ms"
+        });
+    } catch (e) {
+        console.error(e);
+    }
 
 });
 
