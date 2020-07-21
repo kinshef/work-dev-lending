@@ -371,14 +371,13 @@ h1 {
   transform: rotate(-60deg);
 }
 .b-polygon_hexagon {
-  margin: 1rem 0 0.1rem;
+  margin: 1rem 0;
 }
 .b-polygon_hexagon .b-polygon-part_content {
   width: inherit;
   min-height: 300px;
   height: 100%;
 }
-
 .catalog-sotLeft{
   width: 100%;
   transform: translate(16%);
@@ -389,11 +388,6 @@ h1 {
   transform: translate(-16%);
   position: relative;
 }
-.section-catalog .b-polygon.active{
-  transform: scale(1.2) rotate(120deg);
-  z-index: 1;
-}
-
 .b-polygon-part_content,
 .b-polygon-part_content a{
   color: #fff;
@@ -427,7 +421,8 @@ h1 {
 }
 .catalogBtn{
   transform: skew(30deg);
-  background: rgba(0,0,0,.2);
+  background: #ff8700;
+  background-image: linear-gradient(to right,#ec3e00,#ff8700);
   color: #fff;
   z-index: 10;
   padding: 15px 30px;
@@ -435,16 +430,13 @@ h1 {
   font-size: 18px;
   font-weight: 700;
   transition: box-shadow  0.3s;
+  box-shadow: 0 0 50px rgba(224, 0, 0, 0.6);
   display: block;
 }
 .catalogBtn div{
   transform: skew(-30deg);
 }
-.active .catalogBtn{
-  background-image: linear-gradient(to right,#ec3e00,#ff8700);
-  box-shadow: 0 0 50px rgba(224, 0, 0, 0.6);
-}
-.active .catalogBtn:hover{
+.catalogBtn:hover{
   color: #fff;
   box-shadow: 0 0 50px rgb(224, 0, 0, 0.9);
 }
@@ -511,15 +503,8 @@ h1 {
   .catalog-sotRight{
     transform: translate(-1%);
   }
-  .catalogBtn{
-    background-image: linear-gradient(to right,#ec3e00,#ff8700);
-    box-shadow: 0 0 50px rgba(224, 0, 0, 0.6);
-  }
   .b-polygon-part_content:before{
     width: 210px;
-  }
-  .section-catalog .b-polygon.active{
-    transform: rotate(120deg);
   }
 }
 @media(max-width: 992px){
@@ -539,19 +524,6 @@ h1 {
   .b-polygon_hexagon .b-polygon-part_content {
     border-radius: 40px;
   }
-}
-.catalog-shadow{
-  width: 60%;
-  height: 0.9rem;
-  position: relative;
-  margin: 0 auto;
-  transition: all .4s;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-}
-.catalog-shadow.active{
-  transform: scale(1.2) translate(0, 40px);
-  height: 1.5rem;
-  z-index: 1;
 }
 
 /* modal-order */

@@ -53,11 +53,6 @@ $(document).ready(function () {
         return false
     });
 
-
-    $(window).scroll(function() {
-		0 < $(window).scrollTop() ? $("#section-nav").addClass("fixed-nav") : $("#section-nav").removeClass("fixed-nav")
-	});
-
     // Smooth scroll
     $("a.smoothscroll").click(function (event) {
         if (this.hash !== "") {
@@ -114,6 +109,5 @@ document.addEventListener('DOMContentLoaded', function(){
         dateEnd.setHours(0, 0, 0);
         let countdown = new LightCountdown('.countdown-week', dateEnd, {animation: "animated flipInX", animationDuration: "600ms"});
     }catch (e) {console.error(e);}
-
 
 });

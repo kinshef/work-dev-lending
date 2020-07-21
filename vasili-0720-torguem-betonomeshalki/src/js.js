@@ -75,18 +75,6 @@ $(function() {
         }
     });
 
-
-    $('.b-polygon').mouseover(function(elem){
-        $('.b-polygon').removeClass('active');
-        $('.catalog-shadow').removeClass('active');
-        $('.b-polygon').parent().css('z-index', '0')
-        if(document.body.clientWidth>1199){
-            elem.currentTarget.classList.add('active');
-            elem.currentTarget.nextElementSibling.classList.add('active');
-            elem.currentTarget.parentElement.style.zIndex = '1';
-        }
-    })
-
     $('#section-catalog .catalogBtn').click(function(){
         $('#modal-order').modal('show');
     });

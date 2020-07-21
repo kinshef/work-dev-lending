@@ -32,6 +32,15 @@
   }
 }
 
+.line {
+  position: fixed;
+  top: 75px;
+  width: 100%;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 11111;
+}
+
 /* section nav  */
 #section-nav {
   position: absolute;
@@ -135,10 +144,130 @@
   margin-right: 9px;
 }
 
+/* section main  */
+#section-main {
+  padding-top: 8rem;
+}
+
+.section-main__bg {
+  background: url("../img/back/glavfon.jpg") center bottom no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 500px) {
+  .section-main__bg {
+      min-height: 1175px;
+  }
+}
+
+.section-main__image {
+  position: absolute;
+  right: 0;
+  width: 1120px;
+  display: none;
+}
+
+@media screen and (max-width: 1500px) {
+  .section-main__image {
+      width: 60%;
+      top: 15%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-main__image {
+      display: block;
+  }
+}
+
+.section-main__header {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .section-main__header {
+      font-size: 2rem;
+  }
+}
+
+.section-main__list li:before {
+  position: absolute;
+  left: -25px;
+  top: 10px;
+  content: "";
+  color: rgb(249, 64, 32);
+  display: block;
+  font-size: inherit;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-image: url("../img/li-icon.svg");
+  background-position: center center;
+}
+
+.section-main__list li {
+  position: relative;
+  counter-increment: count;
+  list-style: none;
+  margin-bottom: 11px;
+  font-size: 1.4rem;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 34px;
+}
+
+.input-box input,
+.input-box textarea {
+  width: 95%;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 16px;
+  padding: 13px 20px;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 800px) {
+  .input-box input,
+  .input-box textarea {
+      width: 100%;
+  }
+}
+
+.section-main__form_submit {
+  display: inline-block;
+  background-color: #f94020;
+  color: #fff;
+  outline: none !important;
+  text-decoration: none !important;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(249, 64, 32, 0.25);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 11px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+.section-main__form_submit:hover{
+  color: #fff;
+  transform: scale(1.05);
+}
+
 /* Main css */
 .countdown-week {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
+}
+
+.bg-dark2 {
+  background-color: #64a85a;
 }
 
 @media (min-width: 1000px) {
@@ -151,10 +280,6 @@
   .countdown-week {
     font-size: 1.8rem;
   }
-}
-
-.bg-dark2 {
-  background-color: #64a85a;
 }
 
 .c__ff--alt {
@@ -214,12 +339,6 @@
   color: #fff;
   text-decoration: none;
   cursor: pointer;
-}
-
-#sMain {
-  background: url(../img/back/glavfon.jpg) top no-repeat;
-  background-size: cover;
-  padding-top: 6em;
 }
 
 .title-1 {
@@ -468,3 +587,33 @@ section {
 #flipclock2 .flip-clock-label {
   color: white;
 }
+
+/* MOVE LINE */
+.marquee {
+  width: 100%;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee span:hover {
+  animation-play-state: paused
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+/* END MOVE LINE */

@@ -28,63 +28,95 @@
 
 <body>
 
-  <section id="section-nav" class="section-nav_bg">
-    <div class="container pr-0">
-      <nav class="d-flex align-items-center justify-content-center --fw-bold">
-        <a href="#modal-order" data-toggle="modal" class="mr-auto d-none d-md-block">
-          <img src="img/logo.png" alt="logo image">
-        </a>
-        <a href="#section-main" class="nav__link smoothscroll d-none d-md-block">ГЛАВНАЯ</a>
-        <a href="#section-benefits" class="nav__link smoothscroll d-none d-md-block">СПЕЦ. ПРЕДЛОЖЕНИЕ</a>
-        <a href="#section-prices" class="nav__link smoothscroll d-none d-md-block">КАТАЛОГ</a>
-        <div class="d-flex flex-column align-items-center ml-md-auto mr-3">
-          <a href="tel:+375333220626" class="nav__phone mb-1"><img src="../vendor/img/logo_mts_64.jpg" width="24"> (33) 322-06-26</a>
-          <a href="tel:+375293220626" class="nav__phone"><img src="../vendor/img/logo_velcom_64.jpg" width="24"> (29) 322-06-26</a>
+  <div id="sNav" class="fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 d-flex align-items-center m-0 p-0">
+          <img class="header-logo" src="img/logo.png" alt="logo image">
         </div>
-        <a href="#modal-order" data-toggle="modal" class="nav__call-btn btn btn-positive --font__bold section-nav_button">
-          <img src="./img/phone.svg" alt="Заказать звонок">
-          Заказать звонок
-        </a>
-      </nav>
+        <div class="col-md-7 d-none d-md-block mt-3 m-0 p-0">
+          <nav class="nav mr-auto d-flex justify-content-center">
+            <a class="font-weight-bold nav-link smoothscroll" href="#sMain">ГЛАВНАЯ</a>
+            <a class="font-weight-bold nav-link smoothscroll" href="#sCert">СЕРТИФИКАТЫ</a>
+            <a class="font-weight-bold nav-link smoothscroll" href="#sCatalog">КАТАЛОГ</a>
+            <a class="font-weight-bold nav-link smoothscroll" href="#section-advantages">ПРЕИМУЩЕСТВА</a>
+            <a class="font-weight-bold nav-link smoothscroll" href="#sOrder">ЗАКАЗАТЬ</a>
+          </nav>
+        </div>
+        <div class="col-md-3 text-center text-md-right m-0 p-0">
+          <span class="navbar-text font-weight-bold">
+            <div class="col-12">
+              <img src="img/mts.png" height="24"> <a class="text-white" href="tel:+375333220626">(33) 322-06-26</a>
+            </div>
+            <div class="col-12">
+              <img src="img/a1.png" height="24"> <a class="text-white" href="tel:+375293220626">(29) 322-06-26</a>
+            </div>
+          </span>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <section id="sMain">
+  <div class="line">
     <div class="container-fluid">
       <div class="row">
-
-        <div class="col-lg-5 mt-5">
-          <div class="panel__container panel__color_black rounded text-white text-center">
-            <p class="h2 text-red">ПОДАРКИ КАЖДОМУ КЛИЕНТУ </p>
-            <p class="h5">УСПЕЙ ПОЛУЧИТЬ СВОЙ </p>
-            <hr>
-            <img src="img/back/shtenlilogo.png" alt="Certificate" class="img-fluid">
-            <hr>
-            <p class="h3">Сезонное <span class="text-red">Спец-предложение</span> для каждого клиента!</p>
-
-            <div class="countdown-week my-4"></div>
-
-            <p class="h3">До конца <span class="text-red">Акции</span> осталось совсем мало времени!</p>
-            <form>
-              <input type="hidden" name="form" value="Верхняя форма">
-              <fieldset>
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" placeholder="Ваше имя">
-                </div>
-                <div class="form-group">
-                  <input type="tel" name="phone" class="form-control" placeholder="Ваш номер телефона" required>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block btn-lg">Отправить заявку</button>
-              </fieldset>
-            </form>
+        <div class="col-12">
+          <div class="marquee">
+            <span class="text-red font-weight-bold">
+    !!! АКЦИЯ<img src="img/back/shtenlilogo.png" alt="present" width="90px">ПОДАРКИ КАЖДОМУ КЛИЕНТУ<img src="img/back/shtenlilogo.png" alt="present" width="90px">АКЦИЯ !!!
+            </span>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="col-lg-7 text-white text-shadow d-flex flex-column">
-          <p class="title-2 text-center">Бензокоса немецкого качества!</p>
-          <p class="title-1 text-center mb-auto">SHTENLI-PROFI</p>
-          <p class="title-3">Скидка до 50%. Сезонная распродажа.</p>
-          <p class="title-3 text-right">Надежность из Германии!</p>
+  <section id="section-main" class="section-main__bg c__section">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-xl-7 col-lg-10 col-md-12">
+          <div class="p-2 p-lg-5 panel__color_black text-white mt-5">
+              <div class="section-main__header text-center c__ff--alt mb-5">
+                      Садовые беседки из прочного сотового поликарбоната.   <br> Лучший выбор для вашей дачи. 
+                  </div>
+              <ul class="section-main__list px-2">
+                  <li>
+                      Бесплатная доставка по всей Беларуси!
+                  </li>
+                  <li>
+                      Большой выбор цвета поликарбоната! 
+                  </li>
+                  <li>
+                      Гарантированно надёжная покупка и честная цена! 
+                  </li>
+                  <li>
+                      В ПОДАРОК МАНГАЛ КАЖДОМУ КЛИЕНТУ!
+                  </li>
+              </ul>
+          </div>
+          <div class="p-5 panel__color_black text-center mt-5">
+            <form>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="input-box">
+                    <input type="text" placeholder="Имя" name="name">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="input-box">
+                    <input type="text" placeholder="Телефон" name="phone" class="tel-check" required="">
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="">
+                    <button class="section-main__form_submit" type="submit">Бесплатная консультация
+                      <img src="img/send-form.svg" alt="Бесплатная консультация">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -1329,7 +1361,7 @@
         </div>
         <div class="col-md-7 d-none d-md-block mt-3 m-0 p-0">
           <nav class="nav mr-auto d-flex justify-content-center">
-            <a class="font-weight-bold nav-link smoothscroll" href="#sMain">ГЛАВНАЯ</a>
+            <a class="font-weight-bold nav-link smoothscroll" href="#section-main">ГЛАВНАЯ</a>
             <a class="font-weight-bold nav-link smoothscroll" href="#sCert">СЕРТИФИКАТЫ</a>
             <a class="font-weight-bold nav-link smoothscroll" href="#sCatalog">КАТАЛОГ</a>
             <a class="font-weight-bold nav-link smoothscroll" href="#section-advantages">ПРЕИМУЩЕСТВА</a>
