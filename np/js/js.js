@@ -108,6 +108,28 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error(e);
     }
 
+
+
+
+
+    var mainNav = document.querySelector('.main-nav');
+    document.onscroll = function () {
+        if(window.pageYOffset >= 100){
+            mainNav.classList.add('fixHead');
+        } else {
+            mainNav.classList.remove('fixHead');
+        }
+    };
+
+
+
+
+
+
+
+
+
+
 });
 
 

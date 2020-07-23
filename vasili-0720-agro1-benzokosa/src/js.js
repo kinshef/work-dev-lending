@@ -14,11 +14,11 @@ $(document).ready(function() {
         var data = $(this).serializeArray();
         data.push({
             name: "source",
-            value: "Agro1"
+            value: "Test"
         });
         data.push({
             name: "title",
-            value: "Коса"
+            value: "Test message"
         });
         data.push({
             name: "link",
@@ -121,5 +121,14 @@ document.addEventListener("DOMContentLoaded", function() {
         dateEnd.setHours(0, 0, 0);
         let countdown = new LightCountdown('.countdown-week', dateEnd, {animation: "animated flipInX"});
     }catch (e) {console.error(e);}
+
+
+    document.onscroll = function () {
+        if(window.pageYOffset >= 266){
+            document.querySelector('.section-top-navbar').classList.add('fixHead');
+        } else {
+            document.querySelector('.section-top-navbar').classList.remove('fixHead');
+        }
+    };
 
 });
