@@ -1249,10 +1249,17 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <div class="">чтобы с Вами смог связаться менеджер для уточнения заказа</div>
                 <form>
                     <input type="hidden" name="form" value="Окно заказа">
-                    <div class="w-100">
-                        <input type="text" class="form__input form__input_product_name form__input_message" placeholder="Бензиновая коса Kasei 243R + подарки" name="productname" value="" readonly="">
+                    <div class="">
+                        <div class="select">
+                            <input class="select__input" type="hidden" name="productForm" value='Бензиновая коса Kasei 243R + подарки'>
+                            <div class="select__head">Бензиновая коса Kasei 243R + подарки</div>
+                            <ul class="select__list" style="display: none;">
+                                <li class="select__item">Бензиновая коса Kasei 243R + подарки</li>
+                                <li class="select__item">Бензиновая коса Kasei 243R 2 + подарки</li>
+                                <li class="select__item">Бензиновая коса Kasei 243R 3 + подарки</li>
+                            </ul>
+                        </div>
                     </div>
-                    
                     <div class="w-100">
                         <p class="form__gifts-promo">Выберите товар со скидкой:</p>
                         <div class="form__gifts">
