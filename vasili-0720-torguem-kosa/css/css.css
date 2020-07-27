@@ -1,0 +1,168 @@
+body{
+    color: white;
+    background-color: black;
+}
+.--fs-2{
+    font-size: 2em;
+}
+.c__section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.c__separator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+}
+.c__separator_bottom {
+    top: auto;
+    bottom: 0;
+}
+.c__separator svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.c__bg_black_t {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.header {
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+#section-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-color: rgba(0,0,0,0.2);
+    background-image: linear-gradient(to top, black, transparent);
+}
+
+#section-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    z-index: 999;
+    transition: padding 500ms, background-color 500ms;
+}
+
+#section-nav.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 999;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.nav__phones {
+    color: white;
+}
+.nav__phones:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.nav__link {
+    position: relative;
+    margin-right: 6px;
+    padding: 10px 14px;
+    color: white;
+}
+
+.nav__link::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: red;
+    content: "";
+    transition: width ease 300ms;
+}
+
+.nav__link.active::after {
+    width: 100%;
+}
+
+.nav__link:hover {
+    color: #ffc107;
+    text-decoration: none;
+    background-color: #0005;
+}
+
+#section-mainOld {
+    background: url(../img/back/back.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.main__title {
+    font-size: 4rem;
+}
+.main__subtitle {
+    font-size: 2.2rem;
+}
+.main__form {
+	border: 3px solid red;
+	text-align: center;
+	border-radius: 50%;
+	padding: 3em;
+}
+
+.form__input {
+    padding: .5rem 1rem;
+    border: 3px solid red;
+    border-radius: 3px;
+}
+
+.form__button {
+    color: white;
+    background-color: red;
+    font-weight: 900;
+    padding: .5rem 2.5rem;
+    border: 3px solid red;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.catalog__card {
+    color: black;
+}
+.catalog__card__title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.catalog__card__price {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+#section-about,
+#section-cert {
+    background: url(../img/back/back.jpg) center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

@@ -52,6 +52,16 @@ $(document).ready(function() {
         //console.log(JSON.stringify(data))
         return false
     });
+
+    var owl = $(".owl-catalog").owlCarousel({
+        items: 1,
+        nav: true,
+        loop: true,
+        dots: true,
+        autoHeight:true,
+        navText: ['<i class="fa fa-lg fa-fw fa-angle-double-left" aria-hidden="true"></i>', '<i class="fa fa-lg fa-fw fa-angle-double-right" aria-hidden="true"></i>'],
+    });
+
 });
 document.addEventListener("DOMContentLoaded", function () {
     try {
