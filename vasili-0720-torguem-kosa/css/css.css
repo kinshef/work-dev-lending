@@ -149,20 +149,197 @@ body{
     cursor: pointer;
 }
 
-.catalog__card {
-    color: black;
-}
-.catalog__card__title {
-    font-size: 2rem;
-    font-weight: 700;
-}
-.catalog__card__price {
-    font-size: 1.5rem;
-    font-weight: 600;
-}
 #section-about,
 #section-cert {
     background: url(../img/back/back.jpg) center no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+/* section catalog  */
+.section-catalog{
+    color: #000;
+}
+.section-catalog_gift__title {
+    font-size: 1.4rem;
+    color: #566375;
+    font-weight: 300;
+}
+.section-catalog_gift__list-image__item {
+    position: relative;
+    max-width: 137px;
+    max-height: 137px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.section-catalog_gift__list-image__item__image {
+    border-radius: 50%;
+    position: relative;
+}
+.section-catalog_gift__list-image__item__title {
+    width: 102px;
+    height: 24px;
+    border-radius: 5px;
+    background-color: #ffc107;
+    color: #ffffff;
+    font-weight: 500;
+    position: absolute;
+    bottom: -30px;
+    right: 20px;
+}
+.section-catalog_gift__list-image__item__name {
+    font-size: 1rem;
+    line-height: 48px;
+    color: #333333;
+    font-weight: 800;
+    text-align: center;
+    position: absolute;
+    bottom: -65px;
+    right: 50px;
+}
+.section-catalog_header {
+    position: relative;
+    text-transform: uppercase;
+    color: #566375;
+    font-size: 1.7rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 2rem;
+}
+.section-catalog_header::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 40%;
+    height: 1px;
+    background-color: #556375;
+}
+.section-catalog_header:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 40%;
+    height: 1px;
+    background-color: #556375;
+}
+@media (max-width: 740px) {
+    .section-catalog_header::before,
+    .section-catalog_header:after {
+        width: 14%;
+    }
+}
+.section-catalog_product {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.section-catalog_product__title {
+    padding: 10px;
+    font-size: 2rem;
+    color: #343a40;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.section-catalog_product__image {
+    border-radius: 10px 10px 0 0;
+    border-color: #ffc107;
+    overflow: hidden;
+}
+.section-catalog_product__characteristics div {
+    padding: 10px;
+    font-size: 1rem;
+    color: #343a40;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.section-catalog_product__characteristics hr {
+    margin: 0;
+}
+.section-catalog_product__description {
+    font-size: 1.5rem;
+    color: #343a40;
+}
+.section-catalog_product__list {
+    font-size: 1.2rem;
+}
+.section-catalog_product__list i {
+    font-size: 1.5rem;
+    color: #ffc107;
+}
+.section-catalog_product__parametrs {
+    background-color: #ffc107;
+    color: white;
+    margin: 0 auto;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.section-catalog .catalog__price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: red;
+}
+.catalog__card {
+    margin-bottom: 1rem;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.catalog__card-body {
+    padding: 1rem;
+}
+.catalog__title {
+    padding: 1rem 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: white;
+    background-color: #5fc6e9;
+}
+.catalog__input {
+    display: inline-block;
+}
+.catalog__input__label {
+    display: block;
+    padding: 0.2rem 1rem;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.6em;
+    cursor: pointer;
+    margin: 0.2rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 4px;
+    border-top: 2px solid #F2F5F8;
+    background: #F2F5F8;
+    transition: all 0.3s;
+}
+.catalog__input__label:hover {
+    background: #d1dce6;
+    border-top: 2px solid #b0c2d4;
+    box-shadow: 0 0 1px #b0c2d4;
+}
+.catalog__input input:checked + .catalog__input__label {
+    color: white;
+    background: linear-gradient(#5fc6e9, #598ecc);
+    border-top: 2px solid #598ecc;
+    box-shadow: 0 0 1px #5fc6e9;
+}
+.catalog__input input {
+    display: none;
+}
+.custom-control-label-fix::before,
+.custom-control-label-fix::after {
+    top: 0;
+}
+.catalog__divider {
+    border: 1px solid silver;
+    margin: 3rem 0;
 }

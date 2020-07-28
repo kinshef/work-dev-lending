@@ -77,272 +77,501 @@
         </div>
     </section>
 
-    <section class="header">
-        Каталог
-    </section>
+    <section class="header">Каталог</section>
     
-    <section id="section-catalog" class="c__section">
+    <section id="section-catalog" class="section-catalog c__section">
         <div class="container">
-            <div class="row catalog__card">
-                <div class="col-6 bg-secondary p-5 d-flex align-items-center">
-                    <div>
-                        <img src="img/7m.jpg" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-6 bg-light p-5">
-                    <p class="catalog__card__title text-center">Shtenli Demon Black PRO</p>
-                    <p class="catalog__card__price">
-                        <small>От</small> 335
-                        <small>р.</small>
-                    </p>
-                    <div>
-                        <span class="text-primary">Тип двигателя:</span> бензиновый.</div>
-                    <div>
-                        <span class="text-primary">Расход топлива АИ-92:</span> 300 г/ч</div>
-                    <div>
-                        <span class="text-primary">Смесь масла и топлива</span> 1:25</div>
-                    <div>
-                        <span class="text-primary">Ширина скашивания леской:</span> 430 мм.</div>
-                    <div>
-                        <span class="text-primary">Ширина скашивания ножом:</span> 230 мм.</div>
-                    <div>
-                        <span class="text-primary">Объём топливного бака:</span> 1.3л.</div>
-                    <div>
-                        <span class="text-primary">Мощность:</span> 1100-4500 Вт.</div>
-                    <div>
-                        <span class="text-primary">Вес:</span> 6-8 кг.</div>
-                    <div>
-                        <span class="text-primary">Гарантия:</span> 24 месяца.</div>
-                    <div>
-                        <span class="text-primary"></span> Автоподача лески осуществляется нажатием на кнопку.</div>
-                    <div class="text-center mt-5 px-5">
-                        <form>
-                            <input type="hidden" name="form" value="Окно заказа">
-                            <div class="form-group">
-                                <select name="power" class="custom-select" style="border:3px solid red;border-radius: 3px;max-width: 238px;">
-                                    <option selected>Выберите мощность...</option>
-                                    <option value="1">1.1 кВт</option>
-                                    <option value="2">1.45 кВт</option>
-                                    <option value="3">1.75 кВт</option>
-                                    <option value="1">2.15 кВт</option>
-                                    <option value="2">2.5 кВт</option>
-                                    <option value="3">3.5 кВт</option>
-                                    <option value="3">4.5 кВт</option>
-                                </select>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="catalog__card">
+                        <form class="has-calculator">
+                            <input type="hidden" name="product" value="profi">
+                            <div class="catalog__title">Profi</div>
+                            <div class="catalog__img">
+                                <img src="img/product/profi.jpg" alt="product" class="img-fluid">
                             </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" class="form__input" placeholder="Номер телефона" required>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="form__button shadow">Отправить заявку</button>
+                            <div class="catalog__card-body">
+    
+                                <div class="catalog__table">
+                                    <table class="table table-striped table-sm">
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">Объём бака</th>
+                                            <td>1 литр.</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Обороты</th>
+                                            <td>10000/мин.</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Масса</th>
+                                            <td>6700г.</td>
+                                        </tr>
+                                    </tbody></table>
+                                </div>
+    
+                                <hr>
+    
+                                <div class="catalog__param">
+                                    <p class="font-weight-bold">мощность (кВт):</p>
+                                    <div>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="1100" checked="">
+                                            <span class="catalog__input__label">1.1</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="1450">
+                                            <span class="catalog__input__label">1.45
+                                        </span></label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="1750">
+                                            <span class="catalog__input__label">1.75</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="2100">
+                                            <span class="catalog__input__label">2.1</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="2500">
+                                            <span class="catalog__input__label">2.5</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="3500">
+                                            <span class="catalog__input__label">3.5</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="4500">
+                                            <span class="catalog__input__label">4.5</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="catalog__price"><span class="calculator-price">193</span> р.</div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="catalog__form">
+                                    <div class="input-group input-group-lg">
+                                        <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required="">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-warning px-md-5 font-weight-bold" type="submit">Заказать</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </form>
-                        <p class="text-secondary text-right">Германия</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="catalog__card">
+                        <form class="has-calculator">
+                            <input type="hidden" name="product" value="profi_expert">
+                            <div class="catalog__title">Profi Expert</div>
+                            <div class="catalog__img">
+                                <img src="img/product/profiexpert.jpg" alt="product" class="img-fluid">
+                            </div>
+                            <div class="catalog__card-body">
+    
+                                <div class="catalog__table">
+                                    <table class="table table-striped table-sm">
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">Объём бака</th>
+                                            <td>1 литр.</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Обороты</th>
+                                            <td>10000/мин.</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Масса</th>
+                                            <td>6000г.</td>
+                                        </tr>
+                                    </tbody></table>
+                                </div>
+    
+                                <hr>
+    
+                                <div class="catalog__param">
+                                    <p class="font-weight-bold">мощность (кВт):</p>
+                                    <div>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="1100" checked="">
+                                            <span class="catalog__input__label">1.1</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="1450">
+                                            <span class="catalog__input__label">1.45</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="1750">
+                                            <span class="catalog__input__label">1.75</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="2100">
+                                            <span class="catalog__input__label">2.1</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="2500">
+                                            <span class="catalog__input__label">2.5</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="3500">
+                                            <span class="catalog__input__label">3.5</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="4500">
+                                            <span class="catalog__input__label">4.5</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="catalog__price"><span class="calculator-price">264</span> р.</div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="catalog__form">
+                                    <div class="input-group input-group-lg">
+                                        <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required="">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-warning px-md-5 font-weight-bold" type="submit">Заказать
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="catalog__card">
+                        <form class="has-calculator">
+                            <input type="hidden" name="product" value="ms">
+                            <div class="catalog__title">Shtenli MS</div>
+                            <div class="catalog__img">
+                                <img src="img/product/profi.jpg" alt="product" class="img-fluid">
+                            </div>
+                            <div class="catalog__card-body">
+    
+                                <div class="catalog__table">
+                                    <table class="table table-striped table-sm">
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">Объём бака</th>
+                                            <td>1 литр.</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Обороты</th>
+                                            <td>10000/мин.</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Масса</th>
+                                            <td>6000г.</td>
+                                        </tr>
+                                    </tbody></table>
+                                </div>
+    
+                                <hr>
+    
+                                <div class="catalog__param">
+                                    <p class="font-weight-bold">мощность (кВт):</p>
+                                    <div>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="1100" checked="">
+                                            <span class="catalog__input__label">1.1</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="1450">
+                                            <span class="catalog__input__label">1.45</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="1750">
+                                            <span class="catalog__input__label">1.75</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="2100">
+                                            <span class="catalog__input__label">2.1</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="2500">
+                                            <span class="catalog__input__label">2.5</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="3500">
+                                            <span class="catalog__input__label">3.5</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="4500">
+                                            <span class="catalog__input__label">4.5</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="catalog__price"><span class="calculator-price">244</span> р.</div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="catalog__form">
+                                    <div class="input-group input-group-lg">
+                                        <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required="">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-warning px-md-5 font-weight-bold" type="submit">Заказать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="catalog__card">
+                        <form class="has-calculator">
+                            <input type="hidden" name="product" value="black">
+                            <div class="catalog__title">Shtenli Demon Black Pro</div>
+                            <div class="catalog__img">
+                                <img src="img/product/shtenlidemon.jpg" alt="product" class="img-fluid">
+                            </div>
+                            <div class="catalog__card-body">
+    
+                                <div class="catalog__table">
+                                    <table class="table table-striped table-sm">
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">Объём бака</th>
+                                            <td>1 литр.</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Обороты</th>
+                                            <td>10000/мин.</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Масса</th>
+                                            <td>6000г.</td>
+                                        </tr>
+                                    </tbody></table>
+                                </div>
+    
+                                <hr>
+    
+                                <div class="catalog__param">
+                                    <p class="font-weight-bold">мощность (кВт):</p>
+                                    <div>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="1100" checked="">
+                                            <span class="catalog__input__label">1.1</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="1450">
+                                            <span class="catalog__input__label">1.45</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="1750">
+                                            <span class="catalog__input__label">1.75</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="2100">
+                                            <span class="catalog__input__label">2.1</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="2500">
+                                            <span class="catalog__input__label">2.5</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="3500">
+                                            <span class="catalog__input__label">3.5</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="4500">
+                                            <span class="catalog__input__label">4.5</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="catalog__price"><span class="calculator-price">244</span> р.</div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="catalog__form">
+                                    <div class="input-group input-group-lg">
+                                        <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required="">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-warning px-md-5 font-weight-bold" type="submit">Заказать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="catalog__card">
+                        <form class="has-calculator">
+                            <input type="hidden" name="product" value="s">
+                            <div class="catalog__title">Shtenli Demon Black Pro S</div>
+                            <div class="catalog__img">
+                                <img src="img/product/blackpros.jpg" alt="product" class="img-fluid">
+                            </div>
+                            <div class="catalog__card-body">
+    
+                                <div class="catalog__table">
+                                    <table class="table table-striped table-sm">
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">Объём бака</th>
+                                            <td>1 литр.</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Обороты</th>
+                                            <td>10000/мин.</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Масса</th>
+                                            <td>6000г.</td>
+                                        </tr>
+                                    </tbody></table>
+                                </div>
+    
+                                <hr>
+    
+                                <div class="catalog__param">
+                                    <p class="font-weight-bold">мощность (кВт):</p>
+                                    <div>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="1100" checked="">
+                                            <span class="catalog__input__label">1.1</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="1450">
+                                            <span class="catalog__input__label">1.45</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="1750">
+                                            <span class="catalog__input__label">1.75</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="2100">
+                                            <span class="catalog__input__label">2.1</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="2500">
+                                            <span class="catalog__input__label">2.5</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="3500">
+                                            <span class="catalog__input__label">3.5</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="4500">
+                                            <span class="catalog__input__label">4.5</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="catalog__price"><span class="calculator-price">244</span> р.</div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="catalog__form">
+                                    <div class="input-group input-group-lg">
+                                        <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required="">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-warning px-md-5 font-weight-bold" type="submit">Заказать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="catalog__card">
+                        <form class="has-calculator">
+                            <input type="hidden" name="product" value="rq">
+                            <div class="catalog__title">Shtenli Demon RQ</div>
+                            <div class="catalog__img">
+                                <img src="img/product/rq.jpg" alt="product" class="img-fluid">
+                            </div>
+                            <div class="catalog__card-body">
+    
+                                <div class="catalog__table">
+                                    <table class="table table-striped table-sm">
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">Объём бака</th>
+                                            <td>1 литр.</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Обороты</th>
+                                            <td>10000/мин.</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Масса</th>
+                                            <td>6000г.</td>
+                                        </tr>
+                                    </tbody></table>
+                                </div>
+    
+                                <hr>
+    
+                                <div class="catalog__param">
+                                    <p class="font-weight-bold">мощность (кВт):</p>
+                                    <div>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="1100" checked="">
+                                            <span class="catalog__input__label">1.1</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="1450">
+                                            <span class="catalog__input__label">1.45</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="1750">
+                                            <span class="catalog__input__label">1.75</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="2100">
+                                            <span class="catalog__input__label">2.1</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="2500">
+                                            <span class="catalog__input__label">2.5</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="3500">
+                                            <span class="catalog__input__label">3.5</span>
+                                        </label>
+                                        <label class="catalog__input">
+                                            <input type="radio" name="power" value="4500">
+                                            <span class="catalog__input__label">4.5</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="catalog__price"><span class="calculator-price">244</span> р.</div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="catalog__form">
+                                    <div class="input-group input-group-lg">
+                                        <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required="">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-warning px-md-5 font-weight-bold" type="submit">Заказать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <section id="section-catalog" class="c__section">
-        <div class="container">
-            <div class="row catalog__card">
-                <div class="col-6 bg-secondary p-5 d-flex align-items-center">
-                    <div>
-                        <img src="img/9_bonusov.jpg" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-6 bg-light p-5">
-                    <p class="catalog__card__title text-center">Shtenli Demon Black PRO S</p>
-                    <p class="catalog__card__price">
-                        <small>От</small> 390
-                        <small>р.</small>
-                    </p>
-                    <div>
-                        <span class="text-primary">Тип двигателя:</span> бензиновый.</div>
-                    <div>
-                        <span class="text-primary">Расход топлива АИ-92:</span> 300 г/ч</div>
-                    <div>
-                        <span class="text-primary">Смесь масла и топлива</span> 1:25</div>
-                    <div>
-                        <span class="text-primary">Ширина скашивания леской:</span> 430 мм.</div>
-                    <div>
-                        <span class="text-primary">Ширина скашивания ножом:</span> 230 мм.</div>
-                    <div>
-                        <span class="text-primary">Объём топливного бака:</span> 1.3л.</div>
-                    <div>
-                        <span class="text-primary">Мощность:</span> 1100-4500 Вт.</div>
-                    <div>
-                        <span class="text-primary">Вес:</span> 6-8 кг.</div>
-                    <div>
-                        <span class="text-primary">Гарантия:</span> 24 месяца.</div>
-                    <div>
-                        <span class="text-primary"></span> Автоподача лески осуществляется нажатием на кнопку.</div>
-                    <div>
-                    <span class="text-danger">Антивибрационная система</span></div>
-                    <div class="text-center mt-5 px-5">
-                        <form>
-                            <input type="hidden" name="form" value="Окно заказа">
-                            <div class="form-group">
-                                <select name="power" class="custom-select" style="border:3px solid red;border-radius: 3px;max-width: 238px;">
-                                    <option selected>Выберите мощность...</option>
-                                    <option value="1">1.1 кВт</option>
-                                    <option value="2">1.45 кВт</option>
-                                    <option value="3">1.75 кВт</option>
-                                    <option value="1">2.15 кВт</option>
-                                    <option value="2">2.5 кВт</option>
-                                    <option value="3">3.5 кВт</option>
-                                    <option value="3">4.5 кВт</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" class="form__input" placeholder="Номер телефона" required>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="form__button shadow">Отправить заявку</button>
-                            </div>
-                        </form>
-                        <p class="text-secondary text-right">Германия</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div id="l-ms" class="p-a--md">
-    </div>
-    
-    <section id="section-catalog2" class="c__section">
-        <div class="container">
-            <div class="row catalog__card">
-                <div class="col-6 bg-secondary p-5 d-flex align-items-center">
-                    <div>
-                        <img src="img/9_bonusov.jpg" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-6 bg-light p-5">
-                    <p class="catalog__card__title text-center">Shtenli MS</p>
-                    <p class="catalog__card__price">
-                        <small>От</small> 304
-                        <small>р.</small>
-                    </p>
-                    <div>
-                        <span class="text-primary">Тип двигателя:</span> бензиновый.</div>
-                    <div>
-                        <span class="text-primary">Расход топлива АИ-92:</span> 300 г/ч</div>
-                    <div>
-                        <span class="text-primary">Смесь масла и топлива</span> 1:25</div>
-                    <div>
-                        <span class="text-primary">Ширина скашивания леской:</span> 430 мм.</div>
-                    <div>
-                        <span class="text-primary">Ширина скашивания ножом:</span> 230 мм.</div>
-                    <div>
-                        <span class="text-primary">Объём топливного бака:</span> 1.3л.</div>
-                    <div>
-                        <span class="text-primary">Мощность:</span> 1100-4500 Вт.</div>
-                    <div>
-                        <span class="text-primary">Вес:</span> 6-8 кг.</div>
-                    <div>
-                        <span class="text-primary">Гарантия:</span> 24 месяцев.</div>
-                    <div>
-                        <span class="text-primary"></span> Автоподача лески осуществляется нажатием на кнопку.</div>
-                    <div class="text-center mt-5 px-5">
-                        <form>
-                            <input type="hidden" name="form" value="Окно заказа">
-                            <div class="form-group">
-                                <select name="power" class="custom-select" style="border:3px solid red;border-radius: 3px;max-width: 238px;">
-                                    <option selected>Выберите мощность...</option>
-                                    <option value="1">1.1 кВт</option>
-                                    <option value="2">1.45 кВт</option>
-                                    <option value="3">1.75 кВт</option>
-                                    <option value="1">2.15 кВт</option>
-                                    <option value="2">2.5 кВт</option>
-                                    <option value="3">3.5 кВт</option>
-                                    <option value="3">4.5 кВт</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" class="form__input" placeholder="Номер телефона" required>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="form__button shadow">Отправить заявку</button>
-                            </div>
-                        </form>
-                        <p class="text-secondary text-right">Германия</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <div id="l-demon" class="p-a--md">
-                </div>
-
-    <section id="section-catalog" class="c__section">
-        <div class="container">
-            <div class="row catalog__card">
-                <div class="col-6 bg-secondary p-5 d-flex align-items-center">
-                    <a href="img/9_bonusov.jpg" data-fancybox>
-                        <img src="img/9_bonusov.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="col-6 bg-light p-5">
-                    <p class="catalog__card__title text-center">Profi</p>
-                    <p class="catalog__card__price">
-                        <small>От</small> 220
-                        <small>р.</small>
-                    </p>
-                   <div>
-                        <span class="text-primary">Тип двигателя:</span> бензиновый.</div>
-                    <div>
-                        <span class="text-primary">Расход топлива АИ-92:</span> 300 г/ч</div>
-                    <div>
-                        <span class="text-primary">Смесь масла и топлива</span> 1:25</div>
-                    <div>
-                        <span class="text-primary">Ширина скашивания леской:</span> 430 мм.</div>
-                    <div>
-                        <span class="text-primary">Ширина скашивания ножом:</span> 230 мм.</div>
-                    <div>
-                        <span class="text-primary">Объём топливного бака:</span> 1.3л.</div>
-                    <div>
-                        <span class="text-primary">Мощность:</span> 1100-4500 Вт.</div>
-                    <div>
-                        <span class="text-primary">Вес:</span> 6-8 кг.</div>
-                    <div>
-                        <span class="text-primary">Гарантия:</span> 12 месяцев.</div>
-                    <div>
-                        <span class="text-primary"></span> Автоподача лески осуществляется нажатием на кнопку.</div>
-                    <div class="text-center mt-5 px-5">
-                        <form>
-                            <input type="hidden" name="form" value="Окно заказа">
-                            <div class="form-group">
-                                <select name="power" class="custom-select" style="border:3px solid red;border-radius: 3px;max-width: 238px;">
-                                    <option selected>Выберите мощность...</option>
-                                    <option value="1">1.1 кВт</option>
-                                    <option value="2">1.45 кВт</option>
-                                    <option value="3">1.75 кВт</option>
-                                    <option value="1">2.15 кВт</option>
-                                    <option value="2">2.5 кВт</option>
-                                    <option value="3">3.5 кВт</option>
-                                    <option value="3">4.5 кВт</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" class="form__input" placeholder="Номер телефона" required>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="form__button shadow">Отправить заявку</button>
-                            </div>
-                        </form>
-                        <p class="text-secondary text-right">Китайский аналог Shtenli</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div id="dostavka" class="p-a--md">
-    </div>
 
     <section id="section-about" class="c__section bg-secondary text-center">
         <div class="container">
@@ -558,8 +787,8 @@
 
     <script src="../vendor/lib/lightcountdown/lightcountdown.min.js"></script>
     <script src="js/data.js"></script>
-    <script src="src/c.js"></script>
-    <script src="src/js.js"></script>
+    <script src="js/c.min.js"></script>
+    <script src="js/js.min.js"></script>
     <script src="/assets/site/js/analytics.js"></script>
 </body>
 </html>
