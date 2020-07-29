@@ -53,8 +53,6 @@ $(function () {
         //console.log(JSON.stringify(data))
         return false
     });
-});
-
 
 
 
@@ -64,25 +62,28 @@ $(function () {
 //     }, 400))
 // });
 
-    // $.fn.nav = function(a) {
-    //     var b = {
-    //         offset: 0
-    //     };
-    //     $.extend(b, a);
-    //     var c = this;
-    //     $(c).each(function(a, e) {
-    //         var d = $(e.hash),
-    //             f = $(d).offset();
-    //         $(window).scroll(function() {
-    //             var a = $(window).scrollTop() + b.offset;
-    //             f.top < a && a < f.top + $(d).height() && ($(c).removeClass("active"), $(e).addClass("active"))
-    //         })
-    //     })
-    // };
-    // $(".js-nav-scroll").nav({
-    //     offset: 150
-    // });
+ // links hightLight after scroll page
+//   $.fn.nav = function (item) {
+//     var point = {
+//       offset: 0
+//     };
+//     $.extend(point, item);
+//     var links = this;
+//     $(links).each(function (a, index) {
+//       var link = $(index.hash);
+//       var place = $(link).offset();
+//       $(window).scroll(function () {
+//         var newPoint = $(window).scrollTop() + point.offset;
+//         place.top < newPoint && newPoint < place.top + $(link).height() && ($(links).removeClass("active"), $(index).addClass("active"))
+//       })
+//     })
+//   };
+//   $(".js-nav-scroll").nav({
+//     offset: 150
+//   });
+// });
 
+});
 document.addEventListener("DOMContentLoaded", function () {
 
 /* countdown */
