@@ -5,48 +5,1356 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#4285f4">
+    <meta name="theme-color" content="#fff">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" integrity="sha256-HtCCUh9Hkh//8U1OwcbD8epVEUdBvuI8wj1KtqMhNkI=" crossorigin="anonymous">
     <!-- Fontawesome -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- Owl carousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" integrity="sha256-AWqwvQ3kg5aA5KcXpX25sYKowsX97sTCTbeo33Yfyk0=" crossorigin="anonymous">
-    <!-- Fancybox -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
-    
 
-    <link rel="stylesheet" href="./lib/lightcountdown/lightcountdown.css">
-    
     <link rel="stylesheet" href="css/css.css">
     <link rel="icon" type="image/ico" href="./favicon.ico">
     <title>Главная</title>
 </head>
 
 <body>
-    
-   <section class="section-header " id="section-header">
+
+    <section class="section-header" id="section-header">
         <div class="container">
-            <div class="row align-items-center font-weight-bold">
-                <div class="col-6">
-                    <!-- <a href="#modal-order" data-toggle="modal" class="btn btn-warning text-uppercase">ЗАКАЗАТЬ звонок</a> -->
+            <div class="row align-items-center font-weight-bold position-relative">
+                <div class="col-md-4 col-8">
                     <a href=""><img src="./img/icon/77777.png" class="img-fluid"></a>
                 </div>
-                <div class="col-6 text-right">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false">
+                <div class="col-md-8 col-4 text-right">
+                    <div class="d-md-block d-none">
+                        <div class="row align-items-center text-center">
+                            <div class="col-6">
+                                <a href="#modal-order" data-toggle="modal" class="btn_castom transition--slide">Заказать звонок</a>
+                            </div>
+                            <div class="col-6">
+                                <ul class="h4 font-weight-light">
+                                    <li class="my-2">+375 29 558 00 58</li>
+                                    <li class="my-2">+375 29 267 00 82</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="navbar-toggler collapsed d-md-none" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false">
                         <span class="navbar-toggler_item"></span>
-                    </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="text-center h-100">
+                <a href="#modal-order" data-toggle="modal" class="mt-4 btn_castom w-auto transition--slide">Заказать звонок</a>
+                <ul class="mt-4 h4 font-weight-light">
+                    <li class="my-2">+375 29 558 00 58</li>
+                    <li class="my-2">+375 29 267 00 82</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-mine" id="section-mine">
+        <div class="container h-100">
+            <div class="row align-items-center font-weight-bold h-100">
+                <div class="col-md-5 text-white">
+                    <div class="section-mine__title">ТРЕЗВЫЙ ВОДИТЕЛЬ В МИНСКЕ</div>
+                    <ul class="h3 font-weight-light">
+                        <li class="my-2">Прибытие водителя через 15-20 мин</li>
+                        <li class="my-2">+375 29 558 00 58</li>
+                        <li class="my-2">+375 29 267 00 82</li>
+                        <li class="my-2"><a href="#modal-order" data-toggle="modal" class="btn_castom mt-5 transition--slide">ЗАКАЗАТЬ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section-mine__bevel">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 200" preserveAspectRatio="none">
+                <path d="M1280 200H0V0l1280 195.5v4.5z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="section-advantages my-3" id="section-advantages">
+        <div class="container h-100">
+            <div class="row align-items-center font-weight-bold text-center">
+                <div class="col-lg-3 col-6">
+                    <div class="p-4">
+                        <img src="./img/icon/store_24.svg" class="img-fluid mb-3 w-50">
+                        <div class="h3 mb-4">Круглосуточно</div>
+                        <div class="font-weight-light text-muted">Работаем 7 дней в неделю, 24 часа в сутки</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="p-4">
+                        <img src="./img/icon/hostel_5stars.svg" class="img-fluid mb-3 w-50">
+                        <div class="h3 mb-4">Безопастно</div>
+                        <div class="font-weight-light text-muted">Безаварийный стаж вождения более 10 лет</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="p-4">
+                        <img src="./img/icon/Blck_Tilda_Icons_46_ny_midnight.svg" class="img-fluid mb-3 w-50">
+                        <div class="h3 mb-4">Оперативно</div>
+                        <div class="font-weight-light text-muted">Оперативно приедем к вам в течении 15-20 минут</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="p-4">
+                        <img src="./img/icon/Blck_Tilda_Icons_46_ny_snegurka.svg" class="img-fluid mb-3 w-50">
+                        <div class="h3 mb-4">Заботливо</div>
+                        <div class="font-weight-light text-muted">Водитель обязательно сопровождает девушек до подъезда
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12">
-                    <div class="collapse" id="navbarToggleExternalContent">
-                        <ul>
-                            <li>123</li>
-                            <li>123</li>
-                        </ul>
+                    <a href="https://t.me/375295580058" class="btn_castom m-2 btn-primary">Написать в Telegram</a>
+                    <a href="https://wa.me/375295580058" class="btn_castom m-2 btn-success">Написать в WhatsApp</a>
+                    <a href="viber://add?number=375295580058" class="btn_castom m-2 btn-info">Написать в Viber</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <div class="header__line"></div>
+        <div class="header__title">Каталог</div>
+    </header>
+
+    <section id="block-catalog" class="hero-moroccan">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="bg-white text-center">
+                        <div class="catalog-card__top-title" style="background-color:#3394cc;">Беседка "АСТРА"</div>
                     </div>
+                    <div class="bg-white text-center mt-3 p-3">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div id="catalog-product-1" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item">
+                                            <img src="img/catalog/Besedki/Astra/Astra1.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/catalog/Besedki/Astra/Astra2.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/catalog/Besedki/Astra/Astra3.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <img src="img/catalog/Besedki/Astra/Astra4-razmer.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#catalog-product-1" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#catalog-product-1" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <div class="row my-5">
+                                    <div class="col text-center">
+                                        <div style="padding:10px 24px;background-color:yellow;display:inline-block;">
+                                            <span style="font-size:2em;">Каталог Цветов Поликарбоната</span><br>(толщина
+                                            4 мм. и 6 мм. - на выбор)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Joltei.jpg" alt="" class="img-fluid">
+                                        <p>Жёлтый</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Zelenii.jpg" alt="" class="img-fluid">
+                                        <p>Зелёный</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Krasnii.jpg" alt="" class="img-fluid">
+                                        <p>Гранат</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Senii.jpg" alt="" class="img-fluid">
+                                        <p>Синий</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Prozrachnii.jpg" alt="" class="img-fluid">
+                                        <p>Прозрачный</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Molochnii.jpg" alt="" class="img-fluid">
+                                        <p>Молочный</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Tonirivannii.jpg" alt="" class="img-fluid">
+                                        <p>Тонированный</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Bronza.jpg" alt="" class="img-fluid">
+                                        <p>Бронза</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <table class="table table-striped text-left">
+                                    <thead class="thead-inverse">
+                                        <tr>
+                                            <th>Категория</th>
+                                            <th>Характеристики</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Доступная длина:</td>
+                                            <td>2, 3 и 4 метра</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Высота:</td>
+                                            <td>2,00 метра</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ширина у основания:</td>
+                                            <td>1,73 метра</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ширина по максимальному габариту:</td>
+                                            <td>2,53 метра</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ширина столешницы:</td>
+                                            <td>60 см.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Сечение трубы:</td>
+                                            <td>40х20 у основания, и 20х20 на крыше.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Металл:</td>
+                                            <td>Беседка <b>полностью оцинкована</b> с двух сторон и обработана
+                                                <b>антикоррозийным
+                                                    средством,</b> что позволяет не только продлить срок эксплуатации,
+                                                но и сохронить
+                                                первоначальный внешний вид.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Дерево:</td>
+                                            <td>Столешница и скамейки сделаны из шлифованной <b>сухой обрезной
+                                                    доски.</b>
+                                                <br>Вся сушка древесины производится в специальной вакуумной
+                                                <b>сушильной камере</b>, с
+                                                поддерживаемой влажностью в 8-12%.
+                                                <br><b>Во-первых,</b> такая древисина не даёт усадку и позволяет
+                                                впоследствии избежать
+                                                каких-либо перекосов.
+                                                <br><b>Во-вторых,</b> благодоря выведенной влаги, материал становится
+                                                значительно плотнее и
+                                                прочнее.
+                                                <br><b>И, в-третьих,</b> благодоря технической сушки, древесина менее
+                                                подвержена гнеению,
+                                                образованию грибков и гораздо более устойчива к воздействию окрежающей
+                                                среды. </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Поликарбонат:</td>
+                                            <td>В наличии имеется толщина 4мм и 6мм, а также доступно 6 цветов.
+                                                <br>Используемый нами поликарбонат оносится к <b>сотовому типу,</b> с
+                                                нанесённым <b>специальным
+                                                    защитным слоем,</b> предотвращающим проникновение вредного
+                                                УФ-излучения</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Доставка:</td>
+                                            <td>БЕСПЛАТНАЯ ДОСТАВКА ПО РБ + МАНГАЛ В ПОДАРОК</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col">
+                            <div class="catalog-card__calculator-title" style="border-color:yellow;">Калькулятор Беседки
+                                "АСТРА"</div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-3">
+                        <form class="has-calculator">
+                            <input type="hidden" name="form" value="Карточка товара">
+                            <input type="hidden" name="product" value="Астра">
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label class="font-weight-bold">Длина:</label>
+                                                <div>
+                                                    <select name="length" class="custom-select w-100">
+                                                        <option value="Длина 2" selected="">2 метра</option>
+                                                        <option value="Длина 3">3 метра</option>
+                                                        <option value="Длина 4">4 метров</option>
+                                                    </select>
+                                                </div>
+                                                <small class="form-text text-muted">Выберите нужную длинну.</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label class="font-weight-bold">Толщина и цвет поликарбоната:</label>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <select name="weight" class="custom-select w-100">
+                                                            <option value="Толщина 4" selected="">4 мм.</option>
+                                                            <option value="Толщина 6">6 мм.</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <select name="color" class="custom-select w-100">
+                                                            <option value="Цветной" selected="">Зелёный</option>
+                                                            <option value="Цветной">Синий</option>
+                                                            <option value="Цветной">Жёлтый</option>
+                                                            <option value="Цветной">Гранат</option>
+                                                            <option value="Цветной">Бронза</option>
+                                                            <option value="Цветной">Тонированный</option>
+                                                            <option value="Цветной">Молочный</option>
+                                                            <option value="Прозрачный">Прозрачный</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <small class="form-text text-muted">Выберите нужную толщину и
+                                                    цвет.</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="custom-control custom-checkbox">
+                                                <input name="additional[]" value="Маскитная сетка" type="checkbox"
+                                                    class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Маскитная сетка</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="custom-control custom-checkbox">
+                                                <input name="additional[]" value="Мангал в подарок" type="checkbox"
+                                                    class="custom-control-input" checked="">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description text-red">МАНГАЛ в
+                                                    подарок!!</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="custom-control custom-checkbox">
+                                                <input name="additional[]" value="Бесплатная доставка" type="checkbox"
+                                                    class="custom-control-input" checked="">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description text-red">Бесплатная
+                                                    доставка</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-center blockquote">
+                                    <p class="h1 text-red jPrice">264 руб.</p>
+                                    <p class="h6"><s class="jPriceOld">343 руб.</s></p>
+                                    <div class="input-group mt-5">
+                                        <input name="phone" type="tel" class="form-control"
+                                            placeholder="Введите номер телефона" required="">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary" type="submit">Заказать звонок</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero-moroccan">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <div class="bg-white text-center">
+                        <div class="catalog-card__top-title" style="background-color:#3394cc;">Беседка "АСТРА 2"</div>
+
+                    </div>
+
+                    <div class="bg-white text-center mt-3 p-3">
+
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <div id="catalog-product-4" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#catalog-product-1" data-slide-to="0" class="active"></li>
+                                        <li data-target="#catalog-product-1" data-slide-to="1" class=""></li>
+                                        <li data-target="#catalog-product-1" data-slide-to="2" class=""></li>
+                                        <li data-target="#catalog-product-1" data-slide-to="3" class=""></li>
+                                        <li data-target="#catalog-product-1" data-slide-to="4" class=""></li>
+                                    </ol>
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item active">
+                                            <img src="img/catalog/Besedki/Astra_2/astra_1.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/catalog/Besedki/Astra_2/astra_2.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/catalog/Besedki/Astra_2/astra_4.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/catalog/Besedki/Astra_2/astra_5.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/catalog/Besedki/Astra_2/astra_6.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#catalog-product-4" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#catalog-product-4" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+
+                                <div class="row my-5">
+                                    <div class="col text-center">
+                                        <div style="padding:10px 24px;background-color:#33ccff;display:inline-block;">
+                                            <span style="font-size:2em;">Каталог Цветов Поликарбоната</span><br>(толщина
+                                            4 мм. и 6 мм. - на выбор)
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Joltei.jpg" alt="" class="img-fluid">
+                                        <p>Жёлтый</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Zelenii.jpg" alt="" class="img-fluid">
+                                        <p>Зелёный</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Krasnii.jpg" alt="" class="img-fluid">
+                                        <p>Гранат</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Senii.jpg" alt="" class="img-fluid">
+                                        <p>Синий</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Prozrachnii.jpg" alt="" class="img-fluid">
+                                        <p>Прозрачный</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Molochnii.jpg" alt="" class="img-fluid">
+                                        <p>Молочный</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Tonirivannii.jpg" alt="" class="img-fluid">
+                                        <p>Тонированный</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Bronza.jpg" alt="" class="img-fluid">
+                                        <p>Бронза</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <table class="table table-striped text-left">
+                                    <thead>
+                                        <tr>
+                                            <th>Категория</th>
+                                            <th>Характеристики</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Доступная длина:</td>
+                                            <td>2, 3 и 4 метра</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Высота:</td>
+                                            <td>2,00 метра</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ширина у основания:</td>
+                                            <td>1,73 метра</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ширина по максимальному габариту:</td>
+                                            <td>2,53 метра</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ширина столешницы:</td>
+                                            <td>60 см.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Сечение трубы:</td>
+                                            <td>40х20 у основания, и 20х20 на крыше.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Металл:</td>
+                                            <td>Беседка <b>полностью оцинкована</b> с двух сторон и обработана
+                                                <b>антикоррозийным
+                                                    средством,</b> что позволяет не только продлить срок эксплуатации,
+                                                но и сохронить
+                                                первоначальный внешний вид.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Дерево:</td>
+                                            <td>Столешница и скамейки сделаны из шлифованной <b>сухой обрезной
+                                                    доски.</b>
+                                                <br>Вся сушка древесины производится в специальной вакуумной
+                                                <b>сушильной камере</b>, с
+                                                поддерживаемой влажностью в 8-12%.
+                                                <br><b>Во-первых,</b> такая древисина не даёт усадку и позволяет
+                                                впоследствии избежать
+                                                каких-либо перекосов.
+                                                <br><b>Во-вторых,</b> благодоря выведенной влаги, материал становится
+                                                значительно плотнее и
+                                                прочнее.
+                                                <br><b>И, в-третьих,</b> благодоря технической сушки, древесина менее
+                                                подвержена гнеению,
+                                                образованию грибков и гораздо более устойчива к воздействию окрежающей
+                                                среды. </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Поликарбонат:</td>
+                                            <td>В наличии имеется толщина 4мм и 6мм, а также доступно 6 цветов.
+                                                <br>Используемый нами поликарбонат оносится к <b>сотовому типу,</b> с
+                                                нанесённым <b>специальным
+                                                    защитным слоем,</b> предотвращающим проникновение вредного
+                                                УФ-излучения</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Доставка:</td>
+                                            <td>БЕСПЛАТНАЯ ДОСТАВКА ПО РБ + МАНГАЛ В ПОДАРОК</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row text-center">
+                        <div class="col">
+                            <div class="catalog-card__calculator-title" style="border-color:#33ccff;">Калькулятор
+                                Беседки "Астра 2"
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-3">
+                        <form class="has-calculator">
+                            <input type="hidden" name="form" value="Карточка товара">
+                            <input type="hidden" name="product" value="Астра2">
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label class="font-weight-bold">Длина:</label>
+                                                <div>
+                                                    <select name="length" class="custom-select w-100">
+                                                        <option value="Длина 2" selected="">2 метра</option>
+                                                        <option value="Длина 3">3 метра</option>
+                                                        <option value="Длина 4">4 метра</option>
+                                                    </select>
+                                                </div>
+                                                <small class="form-text text-muted">Выберите нужную длинну.</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label class="font-weight-bold">Толщина и цвет поликарбоната:</label>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <select name="weight" class="custom-select w-100">
+                                                            <option value="Толщина 4" selected="">4 мм.</option>
+                                                            <option value="Толщина 6">6 мм.</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <select name="color" class="custom-select w-100">
+                                                            <option value="Цветной" selected="">Зелёный</option>
+                                                            <option value="Цветной">Синий</option>
+                                                            <option value="Цветной">Жёлтый</option>
+                                                            <option value="Цветной">Гранат</option>
+                                                            <option value="Цветной">Бронза</option>
+                                                            <option value="Цветной">Тонированный</option>
+                                                            <option value="Цветной">Молочный</option>
+                                                            <option value="Прозрачный">Прозрачный</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <small class="form-text text-muted">Выберите нужную толщину и
+                                                    цвет.</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="custom-control custom-checkbox">
+                                                <input name="additional[]" value="Маскитная сетка" type="checkbox"
+                                                    class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Маскитная сетка</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="custom-control custom-checkbox">
+                                                <input name="additional[]" value="Мангал в подарок" type="checkbox"
+                                                    class="custom-control-input" checked="">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description text-red">МАНГАЛ в подарок
+                                                    !!</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="custom-control custom-checkbox">
+                                                <input name="additional[]" value="Бесплатная доставка" type="checkbox"
+                                                    class="custom-control-input" checked="">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description text-red">Бесплатная
+                                                    доставка</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-center blockquote">
+                                    <p class="h1 text-red jPrice">296 руб.</p>
+                                    <p class="h6"><s class="jPriceOld">385 руб.</s></p>
+                                    <div class="input-group mt-5">
+                                        <input name="phone" type="tel" class="form-control"
+                                            placeholder="Введите номер телефона" required="">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary" type="submit">Заказать звонок</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <div class="header__line"></div>
+    </header>
+
+    <section class="hero-moroccan">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <div class="bg-white text-center">
+                        <div class="catalog-card__top-title" style="background-color:#3394cc;">Беседка "ТЮЛЬПАН"</div>
+
+                    </div>
+
+                    <div class="bg-white text-center mt-3 p-3">
+
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <div id="catalog-product-2" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item">
+                                            <img src="img/catalog/Besedki/Tulpan/Tulpan1.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/catalog/Besedki/Tulpan/Tulpan2.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <img src="img/catalog/Besedki/Tulpan/Tulpan3.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/catalog/Besedki/Tulpan/Tulpan4-razmer.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#catalog-product-2" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#catalog-product-2" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+
+                                <div class="row my-5">
+                                    <div class="col text-center">
+                                        <div style="padding:10px 24px;background-color:#33cc00;display:inline-block;">
+                                            <span style="font-size:2em;">Каталог Цветов Поликарбоната</span><br>(толщина
+                                            4 мм. и 6 мм. - на выбор)
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Joltei.jpg" alt="" class="img-fluid">
+                                        <p>Жёлтый</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Zelenii.jpg" alt="" class="img-fluid">
+                                        <p>Зелёный</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Krasnii.jpg" alt="" class="img-fluid">
+                                        <p>Гранат</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Senii.jpg" alt="" class="img-fluid">
+                                        <p>Синий</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Prozrachnii.jpg" alt="" class="img-fluid">
+                                        <p>Прозрачный</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Molochnii.jpg" alt="" class="img-fluid">
+                                        <p>Молочный</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Tonirivannii.jpg" alt="" class="img-fluid">
+                                        <p>Тонированный</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Bronza.jpg" alt="" class="img-fluid">
+                                        <p>Бронза</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <table class="table table-striped text-left">
+                                    <thead class="thead-inverse">
+                                        <tr>
+                                            <th>Категория</th>
+                                            <th>Характеристики</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Доступная длина:</td>
+                                            <td>2, 3 и 4 метра</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Высота:</td>
+                                            <td>2,02 метра</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ширина у основания:</td>
+                                            <td>1,50 метра</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ширина по максимальному габариту:</td>
+                                            <td>2,80 метра</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ширина столешницы:</td>
+                                            <td>60 см.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Сечение трубы:</td>
+                                            <td>40х20 у основания, и 20х20 на крыше.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Металл:</td>
+                                            <td>Беседка <b>полностью оцинкована</b> с двух сторон и обработана
+                                                <b>антикоррозийным
+                                                    средством,</b> что позволяет не только продлить срок эксплуатации,
+                                                но и сохронить
+                                                первоначальный внешний вид.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Дерево:</td>
+                                            <td>Столешница и скамейки сделаны из шлифованной <b>сухой обрезной
+                                                    доски.</b>
+                                                <br>Вся сушка древесины производится в специальной вакуумной
+                                                <b>сушильной камере</b>, с
+                                                поддерживаемой влажностью в 8-12%.
+                                                <br><b>Во-первых,</b> такая древисина не даёт усадку и позволяет
+                                                впоследствии избежать
+                                                каких-либо перекосов.
+                                                <br><b>Во-вторых,</b> благодоря выведенной влаги, материал становится
+                                                значительно плотнее и
+                                                прочнее.
+                                                <br><b>И, в-третьих,</b> благодоря технической сушки, древесина менее
+                                                подвержена гнеению,
+                                                образованию грибков и гораздо более устойчива к воздействию окрежающей
+                                                среды. </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Поликарбонат:</td>
+                                            <td>В наличии имеется толщина 4мм и 6мм, а также доступно 6 цветов.
+                                                <br>Используемый нами поликарбонат оносится к <b>сотовому типу,</b> с
+                                                нанесённым <b>специальным
+                                                    защитным слоем,</b> предотвращающим проникновение вредного
+                                                УФ-излучения</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Доставка:</td>
+                                            <td>БЕСПЛАТНАЯ ДОСТАВКА ПО РБ + МАНГАЛ В ПОДАРОК</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row text-center">
+                        <div class="col">
+                            <div class="catalog-card__calculator-title" style="border-color:#33cc00;">Калькулятор
+                                Беседки "ТЮЛЬПАН"
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-3">
+                        <form class="has-calculator">
+                            <input type="hidden" name="form" value="Карточка товара">
+                            <input type="hidden" name="product" value="Тюльпан">
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label class="font-weight-bold">Длина:</label>
+                                                <div>
+                                                    <select name="length" class="custom-select w-100">
+                                                        <option value="Длина 2" selected="">2 метра</option>
+                                                        <option value="Длина 3">3 метров</option>
+                                                        <option value="Длина 4">4 метров</option>
+                                                    </select>
+                                                </div>
+                                                <small class="form-text text-muted">Выберите нужную длинну.</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label class="font-weight-bold">Толщина и цвет поликарбоната:</label>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <select name="weight" class="custom-select w-100">
+                                                            <option value="Толщина 4" selected="">4 мм.</option>
+                                                            <option value="Толщина 6">6 мм.</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <select name="color" class="custom-select w-100">
+                                                            <option value="Цветной" selected="">Зелёный</option>
+                                                            <option value="Цветной">Синий</option>
+                                                            <option value="Цветной">Жёлтый</option>
+                                                            <option value="Цветной">Гранат</option>
+                                                            <option value="Цветной">Бронза</option>
+                                                            <option value="Цветной">Тонированный</option>
+                                                            <option value="Цветной">Молочный</option>
+                                                            <option value="Прозрачный">Прозрачный</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <small class="form-text text-muted">Выберите нужную толщину и
+                                                    цвет.</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="custom-control custom-checkbox">
+                                                <input name="additional[]" value="Маскитная сетка" type="checkbox"
+                                                    class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Маскитная сетка</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <label class="custom-control custom-checkbox">
+                                                <input name="additional[]" value="Мангал в подарок" type="checkbox"
+                                                    class="custom-control-input" checked="">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description text-red">МАНГАЛ в подарок
+                                                    !!</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="custom-control custom-checkbox">
+                                                <input name="additional[]" value="Бесплатная доставка" type="checkbox"
+                                                    class="custom-control-input" checked="">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description text-red">Бесплатная
+                                                    доставка</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-center blockquote">
+                                    <p class="h1 text-red jPrice">274 руб.</p>
+                                    <p class="h6"><s class="jPriceOld">356 руб.</s></p>
+                                    <div class="input-group mt-5">
+                                        <input name="phone" type="tel" class="form-control"
+                                            placeholder="Введите номер телефона" required="">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary" type="submit">Заказать звонок</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <div class="header__line"></div>
+    </header>
+
+    <section class="hero-moroccan">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <div class="bg-white text-center">
+                        <div class="catalog-card__top-title" style="background-color:#3394cc;">Беседка "ПИОН"</div>
+
+                    </div>
+
+                    <div class="bg-white text-center mt-3 p-3">
+
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <div id="catalog-product-3" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#catalog-product-1" data-slide-to="0" class="active"></li>
+                                        <li data-target="#catalog-product-1" data-slide-to="1" class=""></li>
+                                        <li data-target="#catalog-product-1" data-slide-to="2" class=""></li>
+                                    </ol>
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item active">
+                                            <img src="img/catalog/Besedki/Pion/Pion1.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/catalog/Besedki/Pion/Pion2.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/catalog/Besedki/Pion/Pion3.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/catalog/Besedki/Pion/Pion4-razmer.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#catalog-product-3" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#catalog-product-3" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+
+                                <div class="row my-5">
+                                    <div class="col text-center">
+                                        <div style="padding:10px 24px;background-color:#ff9933;display:inline-block;">
+                                            <span style="font-size:2em;">Каталог Цветов Поликарбоната</span><br>(толщина
+                                            4 мм. и 6 мм. - на выбор)
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Joltei.jpg" alt="" class="img-fluid">
+                                        <p>Жёлтый</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Zelenii.jpg" alt="" class="img-fluid">
+                                        <p>Зелёный</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Krasnii.jpg" alt="" class="img-fluid">
+                                        <p>Гранат</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Senii.jpg" alt="" class="img-fluid">
+                                        <p>Синий</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Prozrachnii.jpg" alt="" class="img-fluid">
+                                        <p>Прозрачный</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Molochnii.jpg" alt="" class="img-fluid">
+                                        <p>Молочный</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Tonirivannii.jpg" alt="" class="img-fluid">
+                                        <p>Тонированный</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/color/Polik_Bronza.jpg" alt="" class="img-fluid">
+                                        <p>Бронза</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <table class="table table-striped text-left">
+                                    <thead>
+                                        <tr>
+                                            <th>Категория</th>
+                                            <th>Характеристики</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Доступная длина:</td>
+                                            <td>2, 3 и 4 метра</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Высота:</td>
+                                            <td>2,00 метра</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ширина у основания:</td>
+                                            <td>2,80 метра</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ширина по максимальному габариту:</td>
+                                            <td>2,96 метра</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ширина столешницы:</td>
+                                            <td>60 см.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Сечение трубы:</td>
+                                            <td>40х20 у основания, и 20х20 на крыше.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Металл:</td>
+                                            <td>Беседка <b>полностью оцинкована</b> с двух сторон и обработана
+                                                <b>антикоррозийным
+                                                    средством,</b> что позволяет не только продлить срок эксплуатации,
+                                                но и сохронить
+                                                первоначальный внешний вид.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Дерево:</td>
+                                            <td>Столешница и скамейки сделаны из шлифованной <b>сухой обрезной
+                                                    доски.</b>
+                                                <br>Вся сушка древесины производится в специальной вакуумной
+                                                <b>сушильной камере</b>, с
+                                                поддерживаемой влажностью в 8-12%.
+                                                <br><b>Во-первых,</b> такая древисина не даёт усадку и позволяет
+                                                впоследствии избежать
+                                                каких-либо перекосов.
+                                                <br><b>Во-вторых,</b> благодоря выведенной влаги, материал становится
+                                                значительно плотнее и
+                                                прочнее.
+                                                <br><b>И, в-третьих,</b> благодоря технической сушки, древесина менее
+                                                подвержена гнеению,
+                                                образованию грибков и гораздо более устойчива к воздействию окрежающей
+                                                среды. </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Поликарбонат:</td>
+                                            <td>В наличии имеется толщина 4мм и 6мм, а также доступно 6 цветов.
+                                                <br>Используемый нами поликарбонат оносится к <b>сотовому типу,</b> с
+                                                нанесённым <b>специальным
+                                                    защитным слоем,</b> предотвращающим проникновение вредного
+                                                УФ-излучения</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Доставка:</td>
+                                            <td>БЕСПЛАТНАЯ ДОСТАВКА ПО РБ + МАНГАЛ В ПОДАРОК</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row text-center">
+                        <div class="col">
+                            <div class="catalog-card__calculator-title" style="border-color:#ff9933;">Калькулятор
+                                Беседки "ПИОН"</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-3">
+                        <form class="has-calculator">
+                            <input type="hidden" name="form" value="Карточка товара">
+                            <input type="hidden" name="product" value="Пион">
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label class="font-weight-bold">Длина:</label>
+                                                <div>
+                                                    <select name="length" class="custom-select w-100">
+                                                        <option value="Длина 2" selected="">2 метра</option>
+                                                        <option value="Длина 3">3 метра</option>
+                                                        <option value="Длина 4">4 метра</option>
+                                                    </select>
+                                                </div>
+                                                <small class="form-text text-muted">Выберите нужную длинну.</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label class="font-weight-bold">Толщина и цвет поликарбоната:</label>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <select name="weight" class="custom-select w-100">
+                                                            <option value="Толщина 4" selected="">4 мм.</option>
+                                                            <option value="Толщина 6">6 мм.</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <select name="color" class="custom-select w-100">
+                                                            <option value="Цветной" selected="">Зелёный</option>
+                                                            <option value="Цветной">Синий</option>
+                                                            <option value="Цветной">Жёлтый</option>
+                                                            <option value="Цветной">Гранат</option>
+                                                            <option value="Цветной">Бронза</option>
+                                                            <option value="Цветной">Тонированный</option>
+                                                            <option value="Цветной">Молочный</option>
+                                                            <option value="Прозрачный">Прозрачный</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <small class="form-text text-muted">Выберите нужную толщину и
+                                                    цвет.</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="custom-control custom-checkbox">
+                                                <input name="additional[]" value="Маскитная сетка" type="checkbox"
+                                                    class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Маскитная сетка</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="custom-control custom-checkbox">
+                                                <input name="additional[]" value="Мангал в подарок" type="checkbox"
+                                                    class="custom-control-input" checked="">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description text-red">МАНГАЛ в подарок!!
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="custom-control custom-checkbox">
+                                                <input name="additional[]" value="Бесплатная доставка" type="checkbox"
+                                                    class="custom-control-input" checked="">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description text-red">Бесплатная
+                                                    доставка</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-center blockquote">
+                                    <p class="h1 text-red jPrice">306 руб.</p>
+                                    <p class="h6"><s class="jPriceOld">398 руб.</s></p>
+                                    <div class="input-group mt-5">
+                                        <input name="phone" type="tel" class="form-control"
+                                            placeholder="Введите номер телефона" required="">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary" type="submit">Заказать звонок</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <div class="header__line"></div>
+    </header>
+
+    <section class="hero-moroccan">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="bg-white text-center">
+                        <div class="catalog-card__top-title" style="background-color:#3394cc;">Качели садовые Buono Vera
+                            PREMIUM
+                            3-GL</div>
+                        <div class="text-left p-4">
+                            <p><b>Садовые качели Buono Vera Premium</b> - элитная модель для особо требовательных
+                                покупателей. Качели
+                                имеют стильный дорогой внешний вид, прекрасно украшающий территорию вокруг элитной
+                                недвижимости.Качели
+                                выполнены в виде шатра на стальном каркасе из стальных труб увеличенного квадратного
+                                сечения.</p>
+                            <p>Такие <b>качели</b> Как и во всех моделях качелей Buono Vera PREMIUM 3-GL, применена
+                                антикоррозийная
+                                обработка и высококачественная окраска. Качели подвешиваются к каркасу двумя стальными
+                                опорами
+                                улучшенной прочности.
+                                Конструкция обладает высокой грузоподъемностью в 400 кг. Основание сидения и спинки
+                                обварены стальной
+                                решеткой, которая в отличие от сетки не имеет эффекта гамака с продавливанием матраса.
+                                Тент над шатром не регулируется, так как имеет форму широкого конуса и прекрасно
+                                закрывает от солнечных
+                                лучей под любым углом.
+                                В верхней части тента предусмотрен вентиляционный купол. Купол подшит антимоскитной
+                                сеткой. Форма тента
+                                не препятствует быстрому стеканию дождевой воды.
+                                На качели помещаются до 4х человек, а в разложенном состоянии, они превращаются в
+                                комфортную двуспальную
+                                кровать с фиксатором от качания.
+
+                                Садовые качели Buono Vera PREMIUM 3-GL оборудованы антимоскитной сеткой, закрывающей их
+                                по периметру.
+                                Сетка фиксируется при помощи молний и имеет подшив из специальной ткани препятствующей
+                                истиранию и
+                                износу. Для защиты подлокотников используются удобные круглые продолговатые подушки,
+                                выполненные, как и
+                                сам матрас, из высококачественного полиэфира.
+
+                                Материал по тактильным ощущениям очень близок к хлопку, хотя изготавливается из
+                                полиэфирных нитей.
+                                Материал не пропускает влагу, сохраняет форму и быстро высыхает. Материал очень прочный,
+                                не
+                                деформируется под действием больших температур.
+                                Садовые качели Buono Vera PREMIUM 3-GL качественная стильная модель, которая будет
+                                гармонично смотреться
+                                на дорогих вилах и порадует своих владельцев высокими стандартами комфорта.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white text-center mt-3 p-3">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div id="catalog-product-5" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#catalog-product-1" data-slide-to="0" class=""></li>
+                                        <li data-target="#catalog-product-1" data-slide-to="1" class=""></li>
+                                        <li data-target="#catalog-product-1" data-slide-to="2" class="active"></li>
+                                    </ol>
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item">
+                                            <img src="img/catalog/kacheli_1.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/catalog/kacheli_2.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <img src="img/catalog/kacheli_3.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#catalog-product-5" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#catalog-product-5" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <table class="table table-striped text-left">
+                                    <thead>
+                                        <tr>
+                                            <th>Категория</th>
+                                            <th>Характеристики</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Размеры качелей:</td>
+                                            <td>206 * 166 * 235 СМ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Размеры сиденья:</td>
+                                            <td>156*45/46cm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Грузоподьёмность:</td>
+                                            <td>200 кг</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Диаметр трубы:</td>
+                                            <td>￠30x30/38/25/19/12/30*15/16/12mm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ткань:</td>
+                                            <td>Полиэстер водонепроницаемый</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маскитная сетка:</td>
+                                            <td>В комплекте</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Подарок каждому клиенту</td>
+                                            <td>МАНГАЛ !!</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 text-center blockquote">
+                                <form>
+                                    <input type="hidden" name="product" value="kacheli">
+                                    <p class="h1 text-red">750 руб.</p>
+                                    <p class="h6"><s class="jPriceOld">890 руб.</s></p>
+                                    <div class="input-group mt-5">
+                                        <input name="phone" type="tel" class="form-control"
+                                            placeholder="Введите номер телефона" required="">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary" type="submit">Заказать звонок</button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -88,17 +1396,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <!-- Owl carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js" integrity="sha256-s5TTOyp+xlSmsDfr/aZhg0Gz+JejYr5iTJI8JxG1SkM=" crossorigin="anonymous"></script>
-    <!-- Fancybox -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
-
-
-    <script src="lib/lightcountdown/lightcountdown.min.js"></script>
-
-    <!-- <script src="js/data.js"></script> -->
-    <!-- <script src="src/c.js"></script> -->
-    <script src="src/js.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/c.min.js"></script>
+    <script src="js/js.min.js"></script>
 </body>
 
 </html>

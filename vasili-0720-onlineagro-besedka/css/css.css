@@ -119,7 +119,6 @@ a:hover {
   top: -150px;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  -webkit-transition: all .1s;
   transition: all .1s;
   -webkit-animation-name: slideme;
           animation-name: slideme;
@@ -127,8 +126,7 @@ a:hover {
           animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 @-webkit-keyframes slideme {
   0% {
@@ -160,42 +158,254 @@ a:hover {
 }
 
 /* Custom */
-/* .section-header {
-  background: url(../img/back/78798798789674.jpg) no-repeat center center;
-  background-size: cover;
-} */
+/* section-header  */
+.section-header {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  z-index: 111;
+}
 .navbar-toggler{
   padding: 1.25rem .75rem;
+  position: absolute;
+  top: 0%;
+  right: 0;
+  transform: translate(0, -50%);
 }
-.navbar-toggler_item{
+.navbar-toggler .navbar-toggler_item{
+  background: rgba(0, 0, 0, 0);
   display: block;
   width: 35px;
   border-radius: 1.5px;
   height: 3px;
   position: relative;
-  background-color: #000;
+  transition: all .4s;
+  transform: rotate(90deg);
+
 }
-.navbar-toggler_item:before{
+.navbar-toggler .navbar-toggler_item:before,
+.navbar-toggler .navbar-toggler_item:after{
   content: '';
   position: absolute;
-  left: 0;
-  top: -10px;
+  transition: all .4s;
+  left: 50%;
   border-radius: 1.5px;
   height: 3px;
   width: 100%;
   background-color: #000;
 }
-.navbar-toggler_item:after{
+.navbar-toggler .navbar-toggler_item:before{
+  top: 0px;
+  transform: translate(-50%,-50%) rotate(225deg);
+}
+.navbar-toggler .navbar-toggler_item:after{
+  bottom: 0px;
+  transform: translate(-50%,-50%) rotate(-225deg);
+}
+.navbar-toggler.collapsed .navbar-toggler_item:before,
+.navbar-toggler.collapsed .navbar-toggler_item:after{
+  transform: translate(0%,0%);
+  left: 0%;
+}
+.navbar-toggler.collapsed .navbar-toggler_item:before{
+  top: 10px;
+}
+.navbar-toggler.collapsed .navbar-toggler_item:after{
+  bottom: 10px;
+}
+.navbar-toggler.collapsed .navbar-toggler_item{
+  background: rgba(0, 0, 0, 1);
+  transform: rotate(0deg);
+}
+.collapse {
+  width: calc(100% + 17px);
+  overflow-y: scroll;
+  transition: all 0.4s;
+}
+.nav-item a{
+  display: block;
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+  transition: background 0.4s;
+}
+.nav-item a:hover{
+  background-color: rgba(0,0,0,0.1);
+}
+.btn_castom{
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  padding: 15px 60px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background 0.3s;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+.btn_castom:hover{
+  color: rgb(255, 255, 255);
+}
+.section-header .btn_castom{
+  background-color: rgb(0, 105, 217);
+  padding: 10px 60px;
+}
+.section-header .btn_castom:hover{
+  background-color: rgb(0, 78, 161);
+}
+
+/* section-mine */
+.section-mine{
+  min-height: 100vh;
+  background: url(../img/back/78798798789674.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  padding: 75px 0;
+}
+.section-mine:before{
   content: '';
-  position: absolute;
+  top: 0;
   left: 0;
-  bottom: -10px;
-  border-radius: 1.5px;
-  height: 3px;
   width: 100%;
-  background-color: #000;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  position: absolute;
 }
-.navbar-toggler span:before{
-
+.section-mine__title{
+  font-size: 70px;
+  line-height: 1.5;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.section-mine .btn_castom{
+  background-color: rgb(161, 9, 9);
+}
+.section-mine .btn_castom:hover{
+  background-color: rgb(134, 9, 9);
+}
+.section-mine .section-mine__bevel{
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  transform: scaleX(-1);
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+.section-mine .section-mine__bevel svg{
+  height: 8vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 101%;
+  fill: #fff;
 }
 
+/* catalog */
+.blockquote {
+  padding: .5rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  border-left: .25rem solid #eceeef;
+}
+header {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header__line {
+  position: absolute;
+  top: calc(50% - 10px);
+  height: 20px;
+  left: 0;
+  right: 0;
+  background-color: #329f42;
+}
+.header__title {
+  position: relative;
+  display: inline-flex;
+  padding: 0.2em 0.5em;
+  font-size: 3em;
+  font-weight: 700;
+  background-color: white;
+  font-family: 'Lobster', cursive;
+}
+.header__title:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  content: "";
+  background-color: rebeccapurple;
+}
+.header__title:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  content: "";
+  background-color: rebeccapurple;
+}
+.hero-moroccan {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #eaeaea;
+  background-image: url('../img/back/bg_catalog.svg');
+}
+.catalog-card__top-title {
+  color: white;
+  background-color: green;
+  font-size: 3em;
+}
+.catalog-card__calculator-title {
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: black;
+  background-color: white;
+  border: 8px solid white;
+  font-size: 2em;
+  transform: scale(1.2);
+}
+/* castom checkbox */
+.custom-control {
+  position: relative;
+  display: inline-flex;
+  min-height: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.custom-control-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-control-indicator {
+  position: absolute;
+  top: .25rem;
+  left: 0;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #ddd;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  border-radius: .25rem;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-indicator {
+  background-image: url('../img/icon/checksvg.svg');
+  color: #fff;
+  background-color: #0275d8;
+}
+/* castom checkbox end */
