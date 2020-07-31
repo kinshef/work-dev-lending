@@ -130,7 +130,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (c.isIntersecting) {
                         var d = a.dataset.animation.split(" ");
                         a.classList.add.apply(a.classList, $jscomp.arrayFromIterable(d));
-                        console.log($jscomp.arrayFromIterable(d))
                         a.addEventListener("animationend", function e() {
                             a.classList.remove.apply(a.classList, $jscomp.arrayFromIterable(d));
                             a.removeEventListener("animationend", e)
@@ -145,6 +144,10 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error(b)
     }
 
+    $(".catalog-toggle__btn").click(function() {
+		var a = $(this).parent(".catalog-toggle").find(".catalog-toggle__container");
+		a.length && a.slideToggle()
+	})
 
     try {
         // countdown
