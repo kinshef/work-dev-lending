@@ -162,4 +162,22 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error(e);
     }
 
+  // light link on scroll page
+  try {
+    [].forEach.call(document.querySelectorAll(".js-nav-scroll"), function (event) {
+      if ("undefined" !== typeof event.hash && null !== document.querySelector(event.hash)) {
+        var target = document.querySelector(event.hash);
+        (new IntersectionObserver(function (link) {
+          link.forEach(function (item) {
+            item.isIntersecting && ([].forEach.call(document.querySelectorAll(".js-nav-scroll"), function (event) {
+              event.classList.remove("active")
+            }), event.classList.add("active"))
+          })
+        })).observe(target)
+      }
+    })
+  } catch (error) {
+    console.error(error)
+  }
+
 });

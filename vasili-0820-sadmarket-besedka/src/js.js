@@ -1,4 +1,5 @@
-$(document).ready(function () {
+$(function () {
+
     // Form submit
     $("form").submit(function (event) {
         event.preventDefault();
@@ -53,14 +54,18 @@ $(document).ready(function () {
         return false
     });
 
-    $("body").mouseleave(function (event) {
-        if (typeof sessionStorage !== "undefined") {
-            if (!sessionStorage.getItem("modalLeaveShowed") && event.clientY < -12) {
-                sessionStorage.setItem("modalLeaveShowed", "true");
-                $("#modal-leave").modal("show");
-            }
-        }
+
+
+    $(".modal").on("shown.bs.modal", function () {
+        window.location.hash = "modal"
     });
+    $(".modal").on("hide.bs.modal", function (a) {
+        "#modal" === window.location.hash && history.replaceState(null, null, " ")
+    });
+    $(window).on("hashchange", function (a) {
+        "#modal" !== window.location.hash && $(".modal").modal("hide")
+    });
+
 
     // Smooth scroll
     $(".smoothscroll").click(function (event) {
@@ -81,71 +86,26 @@ $(document).ready(function () {
         }
     });
 
-	// Show popup when user leave site
-    $('body').mouseleave(function (event) {
-        if (typeof sessionStorage !== 'undefined') {
-            if (!sessionStorage.getItem('modalLeaveShowed') && event.clientY < -12) {
-                sessionStorage.setItem('modalLeaveShowed', 'true');
-                $('#modal-leave').modal('show');
-            }
-        }
-    });
-
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    try {
-        // countdown
-        let dateEnd = new Date();
-        dateEnd.setDate(dateEnd.getDay() ? dateEnd.getDate() - dateEnd.getDay() + 8 : dateEnd.getDate() + 1);
-        dateEnd.setHours(0, 0, 0);
-        new LightCountdown(".countdown-week", dateEnd, {
-            animation: "animated flipInX", 
-            animationDuration: "600ms"
-        });
-    } catch (e) {
-        console.error(e);
-    }
 
 
-  // light link on scroll page
-  try {
-    [].forEach.call(document.querySelectorAll(".js-nav-scroll"), function (event) {
-      if ("undefined" !== typeof event.hash && null !== document.querySelector(event.hash)) {
-        var target = document.querySelector(event.hash);
-        (new IntersectionObserver(function (link) {
-          link.forEach(function (item) {
-            item.isIntersecting && ([].forEach.call(document.querySelectorAll(".js-nav-scroll"), function (event) {
-              event.classList.remove("active")
-            }), event.classList.add("active"))
-          })
-        })).observe(target)
-      }
+    $(".catalog-toggle__btn").click(function () {
+        var a = $(this).parent(".catalog-toggle").find(".catalog-toggle__container");
+        a.length && a.slideToggle()
     })
-  } catch (error) {
-    console.error(error)
-  }
-
-
-    var mainNav = document.querySelector('.main-nav');
-    document.onscroll = function () {
-        if(window.pageYOffset >= 100){
-            mainNav.classList.add('fixHead');
-        } else {
-            mainNav.classList.remove('fixHead');
-        }
-    };
-
-
-
-
-
-
-
-
-
 
 });
-
-
+document.addEventListener("DOMContentLoaded", function () {
+    try {
+        var a = document.querySelectorAll(".js-calculator-group-values");
+        [].forEach.call(a, function (a) {
+            a.addEventListener("click", function () {
+                [].forEach.call(document.querySelectorAll("#section-catalog .has-calculator"), function (b) {
+                    b.querySelector("input[name='" + a.dataset.name + "'][value='" + a.dataset.value + "']").checked = !0;
+                    b.dispatchEvent(new Event("change"))
+                })
+            })
+        })
+    } catch (c) {
+        console.error(c)
+    }
+});
