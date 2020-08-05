@@ -1,0 +1,1685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" integrity="sha256-HtCCUh9Hkh//8U1OwcbD8epVEUdBvuI8wj1KtqMhNkI=" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Owl carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" integrity="sha256-AWqwvQ3kg5aA5KcXpX25sYKowsX97sTCTbeo33Yfyk0=" crossorigin="anonymous">
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="../vendor/lib/lightcountdown/lightcountdown.css"> -->
+
+    <link rel="stylesheet" href="./dist/style/css.css">
+    <link rel="icon" type="image/ico" href="./public/assets/favicon.ico">
+    <title>Test</title>
+</head>
+<body>
+
+    <section id="section-header" class="section-header">
+        <div class="container">
+            <div class="row py-1">
+                <div class="col-5 col-md-3">
+                    <a href="https://promo.xn--80aaakf3dn3d.xn--90ais/">
+                        <img class="img-fluid" src="./public/assets/icon/logo.svg" width="200" height="85" alt="">
+                    </a>
+                </div>
+                <div class="col-5 d-none d-md-flex align-items-center justify-content-center">
+                    <img src="./public/assets/icon/time.png" width="60" height="60" class="mr-2" alt="">
+                    <div class="text-center header-schedule">
+                        <span class="font-weight-bold">Работаем для Вас:</span><br>
+                        <span>с 8:00 до 21:00</span><br>
+                        <span>без выходных</span>
+                    </div>
+                </div>
+                <div class="col-4 text-center header-contact d-none d-md-flex flex-column justify-content-center align-items-end">
+                    <a href="#modal-order" data-toggle="modal" class="header-contact__phone d-flex align-items-center py-1"><img
+                            src="../vendor/img/logo_mts_64.jpg" height="25" class="phone__operator mr-2" alt=""> +375(29)
+                        701-27-36</a>
+                    <a href="#modal-order" data-toggle="modal" class="header-contact__phone d-flex align-items-center py-1">
+                        <img src="../vendor/img/logo_A1_56.png" height="25" class="phone__operator mr-2" alt=""> +375(44)
+                        701-27-36</a>
+                </div>
+            </div>
+        </div>
+        <div class="bg_custom d-none d-md-block">
+            <div class="container">
+                <div class="row text-center header-nav ">
+                    <div class="col py-1 py-xl-2 header-nav__item">
+                        <a href="#section-main" class="smoothscroll">Главная</a>
+                    </div>
+                    <div class="col py-1 py-xl-2 header-nav__item">
+                        <a href="#section-sale" class="smoothscroll">Акции</a>
+                    </div>
+                    <div class="col py-1 py-xl-2 header-nav__item">
+                        <a href="#section-catalog" class="smoothscroll">Каталог</a>
+                    </div>
+                    <div class="col py-1 py-xl-2 header-nav__item">
+                        <a href="#section-advantages" class="smoothscroll">Комплектация</a>
+                    </div>
+                    <div class="col py-1 py-xl-2 header-nav__item">
+                        <a href="#section-company" class="smoothscroll">О нас</a>
+                    </div>
+                    <div class="col py-1 py-xl-2 header-nav__item">
+                        <a href="#section-contact" class="smoothscroll">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="navBurger" role="navigation" id="navToggle"></div>
+        <div class="overlay">
+            <nav class="overlayMenu">
+                <ul role="menu">
+                    <li><a href="#section-main" role="menuitem" class="smoothscroll">Главная</a></li>
+                    <li><a href="#section-sale" role="menuitem" class="smoothscroll">Акции</a></li>
+                    <li><a href="#section-catalog" role="menuitem" class="smoothscroll">Каталог</a></li>
+                    <li><a href="#section-advantages" role="menuitem" class="smoothscroll">Комплектация</a></li>
+                    <li><a href="#section-company" role="menuitem" class="smoothscroll">О нас</a></li>
+                    <li><a href="#section-contact" role="menuitem" class="smoothscroll">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    
+    <section id="section-main" class="section-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 my-3 text-center main__map">
+                    <h5>
+                        <i class="fa fa-lg fa-map-marker mr-2" aria-hidden="true"></i>Доставка бесплатная в любую точку Беларуси
+                    </h5>
+                </div>
+                <div class="col-md-8 col-12">
+                    <div class="main__left-block">
+                        <img class="w-100 h-auto" src="./public/assets/icon/bg-head-left.png" alt="">
+                        <div class="left-block__item left-block__item-1 d-md-block d-none">
+                            <span>Защита</span>
+                            <b>Металл оцинкован с двух сторон + защитная норвежская эмаль</b>
+                            <div> Каркас устойчив к появлению коррозии до 30 лет</div>
+                        </div>
+                        <div class="left-block__item left-block__item-2 d-md-block d-none">
+                            <span>Поликарбонат</span>
+                            <b>Сверхпрочный сотовый с двойной защитой от УФ излучения</b>
+                            <div>Помимо скороспелости овощных культур, минимизируются риски ожогов и обезвоживания
+                                растений
+                            </div>
+                        </div>
+                        <div class="left-block__item left-block__item-3 d-md-block d-none">
+                            <span>Конструкция</span>
+                            <b>Металл оцинкован гальваническим методом</b>
+                            <p class="m-0">Изготавливается из профильной трубы 20×20 мм. Выдерживает сильные ветровые и
+                                снеговые нагрузки</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="main__right-block">
+                        <div class="right-block__title">
+                            Теплицы "Сибирские" из поликарбоната от первого поставщика!<br>
+                            в Беларуси
+                        </div>
+                        <div class="right-block__subtitle">Рассрочки по картам рассрочек!</div>
+    
+                        <div class="right-block__price">
+                            <div class="price__discount text-uppercase"><span class="mr-2">скидка</span><span class="mr-2">НОВИНКА 2020</span>
+                            </div>
+                            <div class="price__item font-weight-bold pt-3">329 <span><sup> руб.</sup></span>
+                            </div>
+                        </div>
+                        <div class="right-block__text my-4">
+                            <p class="font-weight-bold">В стоимость входят:</p>
+                            <div>Двойная оцинковка металла</div>
+                            <div>Дуги с дополнительным ребром жесткости</div>
+                            <div>Сотовый усиленный поликарбонат</div>
+                            <div>Двухсторонняя защита от УФ</div>
+                        </div>
+                        <a href="#modal-order" data-toggle="modal"
+                           class="btn btn-outline-danger btn-lg ml-3 my-3 font-weight-bold">Перезвоним бесплатно</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="section-sale" class="c__section" owl-dots>
+        <header class="text-red header-sale text-center" data-animation="animated zoomInUp">АКЦИЯ</header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 order-1 order-md-2">
+                    <div class="catalog-sale__card">
+                        <div class="catalog-sale__title text-red" data-animation="animated shake delay-2s">Теплицы по акции!
+    
+                        </div>
+                        <hr>
+                        <p class="h3 font-weight-2000">ОЩУТИМАЯ СКИДКА 50% ДО КОНЦА НЕДЕЛИ!</p>
+    
+                        <div class="row">
+                            <div class="col-md-2 col-2"></div>
+                        </div>
+                        <p class="h4"> Сибирские Теплицы по акционным ценам только для наших клиентов.
+                            Новинки 2020г на рынке Теплиц с доставкой по всей Беларуси.
+                            Сверхпрочная теплица не требует ухода,
+                            выдерживает значительные снеговые нагрузки при любой длине.
+                            Благодаря каркасу из оцинкованной трубы с классом цинкового покрытия 140-180 мкм
+                            теплица крайне устойчива к ржавчине и не требует подкрасов во время эксплуатации
+                            (в отличие от теплиц, покрашенных краской).
+                            Минимальное количество разборных элементов обеспечивают легкость сборки,
+                            поэтому 95% покупателей устанавливают теплицу самостоятельно.
+                            Поликарбонат EUROTEK c эффективной UV-защитой от ультрафиолета как в массе, так и на поверхности
+                            листа.
+                            Гарантия
+                            10 лет. Срок эксплуатации более 30 лет. Успейте купить! Количество акционного товара
+                            ограничено!! </p>
+                        <div class="catalog-sale__title text-red" data-animation="animated shake delay-2s">Осталось 6
+                            теплиц по акции!
+                        </div>
+                        <div class="mt-4 text-center">
+                            <button data-toggle="modal" data-target="#modal-order"
+                                    class="btn btn-danger btn-block btn-lg font-weight-bold">Жми сюда и заказывай
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 order-2 order-md-1">
+                    <form class="has-calculator">
+                        <input type="hidden" name="product" value="ozink1">
+                        <div class="catalog__card">
+                            <div class="catalog__label">
+                                <span class="badge badge-pill badge-danger animated pulse infinite slow"><i class="fa fa-star"></i> Супер цена</span>
+                            </div>
+                            <div class="catalog__card__title c__gradient">
+                                Теплица Агро Лайт 
+                            </div>
+                            <div class="catalog__card__img">
+                                <a href="./public/assets/catalog/1.1o.jpg" data-fancybox>
+                                    <img src="./public/assets/catalog/1.1o.jpg" alt="product" class="img-fluid">
+                                </a>
+                            </div>
+                            <hr>
+                            <div class="catalog__card__table">
+                                <table class="table table-sm table-striped">
+                                    <tr>
+                                        <th>Длина</th>
+                                        <td>от 4 до 30 метров</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ширина</th>
+                                        <td>2.4 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Высота</th>
+                                        <td>1.8 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Между дугами</th>
+                                        <td>1 метр</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Профиль</th>
+                                        <td>20 × 20 мм</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <hr>
+                            <div class="catalog__parameter">
+                                <span>Длина (м):</span>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="4" checked>
+                                    <span class="catalog__input__label">4</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="6">
+                                    <span class="catalog__input__label">6</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="8">
+                                    <span class="catalog__input__label">8</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="10">
+                                    <span class="catalog__input__label">10</span>
+                                </label>
+                            </div>
+                            <div class="catalog__card__price--old small">
+                                <s><span class="calculator-price-old">0</span> руб.</s>
+                            </div>
+                            <div class="catalog__card__price">
+                                <span class="calculator-price">0</span> руб.
+                            </div>
+                            <div class="my-3">
+                                <button type="button" class="btn btn-success btn-block btn-lg shadow transition--slide" data-toggle="modal" data-target="#modal-order">Заказать</button>
+                            </div>
+    
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-catalog" class="c__section hero-hexagons">
+        <header data-animation="animated zoomInUp">КАТАЛОГ</header>
+        <div class="container">
+            <header id="section-catalog-1" class="catalog__header">Теплица Сибирская Агро Лайт</header>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <form class="has-calculator">
+                        <input type="hidden" name="product" value="ozink1">
+                        <div class="catalog__card">
+                            <div class="catalog__label">
+                                <span class="badge badge-pill badge-danger animated pulse infinite slow"><i class="fa fa-star"></i> Супер цена</span>
+                            </div>
+                            <div class="catalog__card__title c__gradient">
+                                Теплица Агро Лайт 
+                            </div>
+                            <div class="catalog__card__img">
+                                <a href="./public/assets/catalog/1.1o.jpg" data-fancybox>
+                                    <img src="./public/assets/catalog/1.1o.jpg" alt="product" class="img-fluid">
+                                </a>
+                            </div>
+                            <hr>
+                            <div class="catalog__card__table">
+                                <table class="table table-sm table-striped">
+                                    <tr>
+                                        <th>Длина</th>
+                                        <td>от 4 до 30 метров</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ширина</th>
+                                        <td>2.4 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Высота</th>
+                                        <td>1.8 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Между дугами</th>
+                                        <td>1 метр</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Профиль</th>
+                                        <td>20 × 20 мм</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <hr>
+                            <div class="catalog__parameter">
+                                <span>Длина (м):</span>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="4" checked>
+                                    <span class="catalog__input__label">4</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="6">
+                                    <span class="catalog__input__label">6</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="8">
+                                    <span class="catalog__input__label">8</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="10">
+                                    <span class="catalog__input__label">10</span>
+                                </label>
+                            </div>
+                            <div class="catalog__card__price--old small">
+                                <s><span class="calculator-price-old">0</span> руб.</s>
+                            </div>
+                            <div class="catalog__card__price">
+                                <span class="calculator-price">0</span> руб.
+                            </div>
+                            <div class="my-3">
+                                <button type="button" class="btn btn-success btn-block btn-lg shadow transition--slide" data-toggle="modal" data-target="#modal-order">Заказать</button>
+                            </div>
+    
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="col-md-6 col-lg-4">
+                    <form class="has-calculator">
+                        <input type="hidden" name="product" value="ozink0.67">
+                        <div class="catalog__card">
+                            
+                            <div class="catalog__card__title c__gradient">
+                                Теплица Агро Лайт  
+                            </div>
+                            <div class="catalog__card__img">
+                                <a href="./public/assets/catalog/1.3o.jpg" data-fancybox>
+                                    <img src="./public/assets/catalog/1.3o.jpg" alt="product" class="img-fluid">
+                                </a>
+                            </div>
+                            <hr>
+                            <div class="catalog__card__table">
+                                <table class="table table-sm table-striped">
+                                    <tr>
+                                        <th>Длина</th>
+                                        <td>от 4 до 30 метров</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ширина</th>
+                                        <td>2.4 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Высота</th>
+                                        <td>1.8 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Между дугами</th>
+                                        <td>0.67 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Профиль</th>
+                                        <td>20 × 20 мм</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <hr>
+                            <div class="catalog__parameter">
+                                <span>Длина (м):</span>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="4" checked>
+                                    <span class="catalog__input__label">4</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="6">
+                                    <span class="catalog__input__label">6</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="8">
+                                    <span class="catalog__input__label">8</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="10">
+                                    <span class="catalog__input__label">10</span>
+                                </label>
+                            </div>
+                            <div class="catalog__card__price--old small">
+                                <s><span class="calculator-price-old">0</span> руб.</s>
+                            </div>
+                            <div class="catalog__card__price">
+                                <span class="calculator-price">0</span> руб.
+                            </div>
+                            <div class="my-3">
+                                <button type="button" class="btn btn-success btn-block btn-lg shadow transition--slide" data-toggle="modal" data-target="#modal-order">Заказать</button>
+                            </div>
+    
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="col-md-6 col-lg-4">
+                    <form class="has-calculator">
+                        <input type="hidden" name="product" value="ozink0.5">
+                        <div class="catalog__card">
+                            <div class="catalog__card__title c__gradient">
+                                Теплица Агро Лайт 
+                            </div>
+                            <div class="catalog__card__img">
+                                <a href="./public/assets/catalog/1.1s.jpg" data-fancybox>
+                                    <img src="./public/assets/catalog/1.1s.jpg" alt="product" class="img-fluid">
+                                </a>
+                            </div>
+                            <hr>
+                            <div class="catalog__card__table">
+                                <table class="table table-sm table-striped">
+                                    <tr>
+                                        <th>Длина</th>
+                                        <td>от 4 до 30 метров</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ширина</th>
+                                        <td>2 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Высота</th>
+                                        <td>1.8 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Между дугами</th>
+                                        <td>1 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Профиль</th>
+                                        <td>20 × 20 мм</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <hr>
+                            <div class="catalog__parameter">
+                                <span>Длина (м):</span>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="4" checked>
+                                    <span class="catalog__input__label">4</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="6">
+                                    <span class="catalog__input__label">6</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="8">
+                                    <span class="catalog__input__label">8</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="10">
+                                    <span class="catalog__input__label">10</span>
+                                </label>
+                            </div>
+                            <div class="catalog__card__price--old small">
+                                <s><span class="calculator-price-old">0</span> руб.</s>
+                            </div>
+                            <div class="catalog__card__price">
+                                <span class="calculator-price">0</span> руб.
+                            </div>
+                            <div class="my-3">
+                                <button type="button" class="btn btn-success btn-block btn-lg shadow transition--slide" data-toggle="modal" data-target="#modal-order">Заказать</button>
+                            </div>
+    
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+            <header id="section-catalog-2" class="catalog__header">Теплица Сибирская Агро 20х20</header>
+    
+            <div class="row">
+    
+                <div class="col-md-6 col-lg-4">
+                    <form class="has-calculator">
+                        <input type="hidden" name="product" value="sibirskaya1">
+                        <div class="catalog__card">
+                            
+                            <div class="catalog__card__title c__gradient">
+                                Теплица 20х20 
+                            </div>
+                            <div class="catalog__card__img">
+                                <a href="./public/assets/catalog/2.1.jpg" data-fancybox>
+                                    <img src="./public/assets/catalog/2.1.jpg" alt="product" class="img-fluid">
+                                </a>
+                            </div>
+                            <hr>
+                            <div class="catalog__card__table">
+                                <table class="table table-sm table-striped">
+                                    <tr>
+                                        <th>Длина</th>
+                                        <td>от 4 до 30 метров</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ширина</th>
+                                        <td>3 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Высота</th>
+                                        <td>2.1 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Между дугами</th>
+                                        <td>1 метр</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Профиль</th>
+                                        <td>20 × 20 мм</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <hr>
+                            <div class="catalog__parameter">
+                                <span>Длина (м):</span>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="4" checked>
+                                    <span class="catalog__input__label">4</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="6">
+                                    <span class="catalog__input__label">6</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="8">
+                                    <span class="catalog__input__label">8</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="10">
+                                    <span class="catalog__input__label">10</span>
+                                </label>
+                            </div>
+                            <div class="catalog__card__price--old small">
+                                <s><span class="calculator-price-old">0</span> руб.</s>
+                            </div>
+                            <div class="catalog__card__price">
+                                <span class="calculator-price">0</span> руб.
+                            </div>
+                            <div class="my-3">
+                                <button type="button" class="btn btn-success btn-block btn-lg shadow transition--slide" data-toggle="modal" data-target="#modal-order">Заказать</button>
+                            </div>
+    
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="col-md-6 col-lg-4">
+                    <form class="has-calculator">
+                        <input type="hidden" name="product" value="sibirskaya0.67">
+                        <div class="catalog__card">
+                            
+                            <div class="catalog__card__title c__gradient">
+                                Теплица 20х20  
+                            </div>
+                            <div class="catalog__card__img">
+                                <a href="./public/assets/catalog/2.2.jpg" data-fancybox>
+                                    <img src="./public/assets/catalog/2.2.jpg" alt="product" class="img-fluid">
+                                </a>
+                            </div>
+                            <hr>
+                            <div class="catalog__card__table">
+                                <table class="table table-sm table-striped">
+                                    <tr>
+                                        <th>Длина</th>
+                                        <td>от 4 до 30 метров</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ширина</th>
+                                        <td>3 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Высота</th>
+                                        <td>2.1 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Между дугами</th>
+                                        <td>0.67 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Профиль</th>
+                                        <td>20 × 20 мм</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <hr>
+                            <div class="catalog__parameter">
+                                <span>Длина (м):</span>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="4" checked>
+                                    <span class="catalog__input__label">4</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="6">
+                                    <span class="catalog__input__label">6</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="8">
+                                    <span class="catalog__input__label">8</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="10">
+                                    <span class="catalog__input__label">10</span>
+                                </label>
+                            </div>
+                            <div class="catalog__card__price--old small">
+                                <s><span class="calculator-price-old">0</span> руб.</s>
+                            </div>
+                            <div class="catalog__card__price">
+                                <span class="calculator-price">0</span> руб.
+                            </div>
+                            <div class="my-3">
+                                <button type="button" class="btn btn-success btn-block btn-lg shadow transition--slide" data-toggle="modal" data-target="#modal-order">Заказать</button>
+                            </div>
+    
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="col-md-6 col-lg-4">
+                    <form class="has-calculator">
+                        <input type="hidden" name="product" value="sibirskaya0.5">
+                        <div class="catalog__card">
+                            <div class="catalog__card__title c__gradient">
+                                Теплица 20х20 
+                            </div>
+                            <div class="catalog__card__img">
+                                <a href="./public/assets/catalog/2.3.jpg" data-fancybox>
+                                    <img src="./public/assets/catalog/2.3.jpg" alt="product" class="img-fluid">
+                                </a>
+                            </div>
+                            <hr>
+                            <div class="catalog__card__table">
+                                <table class="table table-sm table-striped">
+                                    <tr>
+                                        <th>Длина</th>
+                                        <td>от 4 до 30 метров</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ширина</th>
+                                        <td>3 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Высота</th>
+                                        <td>2.1 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Между дугами</th>
+                                        <td>0.5 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Профиль</th>
+                                        <td>20 × 20 мм</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <hr>
+                            <div class="catalog__parameter">
+                                <span>Длина (м):</span>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="4" checked>
+                                    <span class="catalog__input__label">4</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="6">
+                                    <span class="catalog__input__label">6</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="8">
+                                    <span class="catalog__input__label">8</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="10">
+                                    <span class="catalog__input__label">10</span>
+                                </label>
+                            </div>
+                            <div class="catalog__card__price--old small">
+                                <s><span class="calculator-price-old">0</span> руб.</s>
+                            </div>
+                            <div class="catalog__card__price">
+                                <span class="calculator-price">0</span> руб.
+                            </div>
+                            <div class="my-3">
+                                <button type="button" class="btn btn-success btn-block btn-lg shadow transition--slide" data-toggle="modal" data-target="#modal-order">Заказать</button>
+                            </div>
+    
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+            <header id="section-catalog-3" class="catalog__header">Теплица Сибирская Агро Сила 40х20</header>
+    
+            <div class="row">
+    
+                <div class="col-md-6 col-lg-4">
+                    <form class="has-calculator">
+                        <input type="hidden" name="product" value="sibirskaya_xxl1">
+                        <div class="catalog__card">
+                            
+                            <div class="catalog__card__title c__gradient">
+                                Теплица 40х20
+                            </div>
+                            <div class="catalog__card__img">
+                                <a href="./public/assets/catalog/3.1.jpg" data-fancybox>
+                                    <img src="./public/assets/catalog/3.1.jpg" alt="product" class="img-fluid">
+                                </a>
+                            </div>
+                            <hr>
+                            <div class="catalog__card__table">
+                                <table class="table table-sm table-striped">
+                                    <tr>
+                                        <th>Длина</th>
+                                        <td>от 4 до 30 метров</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ширина</th>
+                                        <td>3 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Высота</th>
+                                        <td>2.1 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Между дугами</th>
+                                        <td>1 метр</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Профиль</th>
+                                        <td>40 × 20 мм</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <hr>
+                            <div class="catalog__parameter">
+                                <span>Длина (м):</span>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="4" checked>
+                                    <span class="catalog__input__label">4</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="6">
+                                    <span class="catalog__input__label">6</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="8">
+                                    <span class="catalog__input__label">8</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="10">
+                                    <span class="catalog__input__label">10</span>
+                                </label>
+                            </div>
+                            <div class="catalog__card__price--old small">
+                                <s><span class="calculator-price-old">0</span> руб.</s>
+                            </div>
+                            <div class="catalog__card__price">
+                                <span class="calculator-price">0</span> руб.
+                            </div>
+                            <div class="my-3">
+                                <button type="button" class="btn btn-success btn-block btn-lg shadow transition--slide" data-toggle="modal" data-target="#modal-order">Заказать</button>
+                            </div>
+    
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="col-md-6 col-lg-4">
+                    <form class="has-calculator">
+                        <input type="hidden" name="product" value="sibirskaya_xxl0.67">
+                        <div class="catalog__card">
+                            
+                            <div class="catalog__card__title c__gradient">
+                                Теплица 40х20 
+                            </div>
+                            <div class="catalog__card__img">
+                                <a href="./public/assets/catalog/3.2.jpg" data-fancybox>
+                                    <img src="./public/assets/catalog/3.2.jpg" alt="product" class="img-fluid">
+                                </a>
+                            </div>
+                            <hr>
+                            <div class="catalog__card__table">
+                                <table class="table table-sm table-striped">
+                                    <tr>
+                                        <th>Длина</th>
+                                        <td>от 4 до 30 метров</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ширина</th>
+                                        <td>3 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Высота</th>
+                                        <td>2.1 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Между дугами</th>
+                                        <td>0.67 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Профиль</th>
+                                        <td>40 × 20 мм</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <hr>
+                            <div class="catalog__parameter">
+                                <span>Длина (м):</span>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="4" checked>
+                                    <span class="catalog__input__label">4</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="6">
+                                    <span class="catalog__input__label">6</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="8">
+                                    <span class="catalog__input__label">8</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="10">
+                                    <span class="catalog__input__label">10</span>
+                                </label>
+                            </div>
+                            <div class="catalog__card__price--old small">
+                                <s><span class="calculator-price-old">0</span> руб.</s>
+                            </div>
+                            <div class="catalog__card__price">
+                                <span class="calculator-price">0</span> руб.
+                            </div>
+                            <div class="my-3">
+                                <button type="button" class="btn btn-success btn-block btn-lg shadow transition--slide" data-toggle="modal" data-target="#modal-order">Заказать</button>
+                            </div>
+    
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="col-md-6 col-lg-4">
+                    <form class="has-calculator">
+                        <input type="hidden" name="product" value="sibirskaya_xxl0.5">
+                        <div class="catalog__card">
+                            <div class="catalog__card__title c__gradient">
+                                Теплица 40х20
+                            </div>
+                            <div class="catalog__card__img">
+                                <a href="./public/assets/catalog/3.3.jpg" data-fancybox>
+                                    <img src="./public/assets/catalog/3.3.jpg" alt="product" class="img-fluid">
+                                </a>
+                            </div>
+                            <hr>
+                            <div class="catalog__card__table">
+                                <table class="table table-sm table-striped">
+                                    <tr>
+                                        <th>Длина</th>
+                                        <td>от 4 до 30 метров</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ширина</th>
+                                        <td>3 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Высота</th>
+                                        <td>2.1 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Между дугами</th>
+                                        <td>0.5 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Профиль</th>
+                                        <td>40 × 20 мм</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <hr>
+                            <div class="catalog__parameter">
+                                <span>Длина (м):</span>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="4" checked>
+                                    <span class="catalog__input__label">4</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="6">
+                                    <span class="catalog__input__label">6</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="8">
+                                    <span class="catalog__input__label">8</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="10">
+                                    <span class="catalog__input__label">10</span>
+                                </label>
+                            </div>
+                            <div class="catalog__card__price--old small">
+                                <s><span class="calculator-price-old">0</span> руб.</s>
+                            </div>
+                            <div class="catalog__card__price">
+                                <span class="calculator-price">0</span> руб.
+                            </div>
+                            <div class="my-3">
+                                <button type="button" class="btn btn-success btn-block btn-lg shadow transition--slide" data-toggle="modal" data-target="#modal-order">Заказать</button>
+                            </div>
+    
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+            <header id="section-catalog-4" class="catalog__header">Теплица Сибирская 40х20 ширина 3.5 м. </header>
+    
+            <div class="row">
+    
+                <div class="col-md-6 col-lg-4">
+                    <form class="has-calculator">
+                        <input type="hidden" name="product" value="sibirskaya3.5">
+                        <div class="catalog__card">
+                            
+                            <div class="catalog__card__title c__gradient">
+                                Теплица 40х20 Ширина 3.5 м.
+                            </div>
+                            <div class="catalog__card__img">
+                                <a href="./public/assets/catalog/777.jpg" data-fancybox>
+                                    <img src="./public/assets/catalog/777.jpg" alt="product" class="img-fluid">
+                                </a>
+                            </div>
+                            <hr>
+                            <div class="catalog__card__table">
+                                <table class="table table-sm table-striped">
+                                    <tr>
+                                        <th>Длина</th>
+                                        <td>от 4 до 30 метров</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ширина</th>
+                                        <td>3.5 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Высота</th>
+                                        <td>2.1 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Между дугами</th>
+                                        <td>1 метр</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Профиль</th>
+                                        <td>40 × 20 мм</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <hr>
+                            <div class="catalog__parameter">
+                                <span>Длина (м):</span>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="4" checked>
+                                    <span class="catalog__input__label">4</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="6">
+                                    <span class="catalog__input__label">6</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="8">
+                                    <span class="catalog__input__label">8</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="10">
+                                    <span class="catalog__input__label">10</span>
+                                </label>
+                            </div>
+                            <div class="catalog__card__price--old small">
+                                <s><span class="calculator-price-old">0</span> руб.</s>
+                            </div>
+                            <div class="catalog__card__price">
+                                <span class="calculator-price">0</span> руб.
+                            </div>
+                            <div class="my-3">
+                                <button type="button" class="btn btn-success btn-block btn-lg shadow transition--slide" data-toggle="modal" data-target="#modal-order">Заказать</button>
+                            </div>
+    
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="col-md-6 col-lg-4">
+                    <form class="has-calculator">
+                        <input type="hidden" name="product" value="sibirskaya3.5-67">
+                        <div class="catalog__card">
+                            
+                            <div class="catalog__card__title c__gradient">
+                                Теплица 40х20 Ширина 3.5 м.
+                            </div>
+                            <div class="catalog__card__img">
+                                <a href="./public/assets/catalog/777.jpg" data-fancybox>
+                                    <img src="./public/assets/catalog/777.jpg" alt="product" class="img-fluid">
+                                </a>
+                            </div>
+                            <hr>
+                            <div class="catalog__card__table">
+                                <table class="table table-sm table-striped">
+                                    <tr>
+                                        <th>Длина</th>
+                                        <td>от 4 до 30 метров</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ширина</th>
+                                        <td>3.5 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Высота</th>
+                                        <td>2.1 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Между дугами</th>
+                                        <td>0.67 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Профиль</th>
+                                        <td>40 × 20 мм</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <hr>
+                            <div class="catalog__parameter">
+                                <span>Длина (м):</span>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="4" checked>
+                                    <span class="catalog__input__label">4</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="6">
+                                    <span class="catalog__input__label">6</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="8">
+                                    <span class="catalog__input__label">8</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="10">
+                                    <span class="catalog__input__label">10</span>
+                                </label>
+                            </div>
+                            <div class="catalog__card__price--old small">
+                                <s><span class="calculator-price-old">0</span> руб.</s>
+                            </div>
+                            <div class="catalog__card__price">
+                                <span class="calculator-price">0</span> руб.
+                            </div>
+                            <div class="my-3">
+                                <button type="button" class="btn btn-success btn-block btn-lg shadow transition--slide" data-toggle="modal" data-target="#modal-order">Заказать</button>
+                            </div>
+    
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <form class="has-calculator">
+                        <input type="hidden" name="product" value="sibirskaya3.5-0.5">
+                        <div class="catalog__card">
+                            
+                            <div class="catalog__card__title c__gradient">
+                                Теплица 40х20 Ширина 3.5 м.
+                            </div>
+                            <div class="catalog__card__img">
+                                <a href="./public/assets/catalog/777.jpg" data-fancybox>
+                                    <img src="./public/assets/catalog/777.jpg" alt="product" class="img-fluid">
+                                </a>
+                            </div>
+                            <hr>
+                            <div class="catalog__card__table">
+                                <table class="table table-sm table-striped">
+                                    <tr>
+                                        <th>Длина</th>
+                                        <td>от 4 до 30 метров</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ширина</th>
+                                        <td>4 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Высота</th>
+                                        <td>2.1 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Между дугами</th>
+                                        <td>0.5 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Профиль</th>
+                                        <td>40 × 20 мм</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <hr>
+                            <div class="catalog__parameter">
+                                <span>Длина (м):</span>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="4" checked>
+                                    <span class="catalog__input__label">4</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="6">
+                                    <span class="catalog__input__label">6</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="8">
+                                    <span class="catalog__input__label">8</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="10">
+                                    <span class="catalog__input__label">10</span>
+                                </label>
+                            </div>
+                            <div class="catalog__card__price--old small">
+                                <s><span class="calculator-price-old">0</span> руб.</s>
+                            </div>
+                            <div class="catalog__card__price">
+                                <span class="calculator-price">0</span> руб.
+                            </div>
+                            <div class="my-3">
+                                <button type="button" class="btn btn-success btn-block btn-lg shadow transition--slide" data-toggle="modal" data-target="#modal-order">Заказать</button>
+                            </div>
+    
+                        </div>
+                    </form>
+                </div>
+    
+              
+            </div>
+    
+            <header id="section-catalog-5" class="catalog__header">Теплица Сибирская 40х20 ширина 4 м.</header>
+    
+            <div class="row">
+    
+                <div class="col-md-6 col-lg-4">
+                    <form class="has-calculator">
+                        <input type="hidden" name="product" value="sibirskaya4-1">
+                        <div class="catalog__card">
+                            
+                            <div class="catalog__card__title c__gradient">
+                                Теплица 40х20 Ширина 4 м.
+                            </div>
+                            <div class="catalog__card__img">
+                                <a href="./public/assets/catalog/5.1.jpg" data-fancybox>
+                                    <img src="./public/assets/catalog/5.1.jpg" alt="product" class="img-fluid">
+                                </a>
+                            </div>
+                            <hr>
+                            <div class="catalog__card__table">
+                                <table class="table table-sm table-striped">
+                                    <tr>
+                                        <th>Длина</th>
+                                        <td>от 4 до 30 метров</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ширина</th>
+                                        <td>3.5 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Высота</th>
+                                        <td>2.1 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Между дугами</th>
+                                        <td>1 метр</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Профиль</th>
+                                        <td>40 × 20 мм</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <hr>
+                            <div class="catalog__parameter">
+                                <span>Длина (м):</span>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="4" checked>
+                                    <span class="catalog__input__label">4</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="6">
+                                    <span class="catalog__input__label">6</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="8">
+                                    <span class="catalog__input__label">8</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="10">
+                                    <span class="catalog__input__label">10</span>
+                                </label>
+                            </div>
+                            <div class="catalog__card__price--old small">
+                                <s><span class="calculator-price-old">0</span> руб.</s>
+                            </div>
+                            <div class="catalog__card__price">
+                                <span class="calculator-price">0</span> руб.
+                            </div>
+                            <div class="my-3">
+                                <button type="button" class="btn btn-success btn-block btn-lg shadow transition--slide" data-toggle="modal" data-target="#modal-order">Заказать</button>
+                            </div>
+    
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <form class="has-calculator">
+                        <input type="hidden" name="product" value="sibirskaya4-67">
+                        <div class="catalog__card">
+                            
+                            <div class="catalog__card__title c__gradient">
+                                Теплица 40х20 Ширина 4 м.
+                            </div>
+                            <div class="catalog__card__img">
+                                <a href="./public/assets/catalog/5.2.jpg" data-fancybox>
+                                    <img src="./public/assets/catalog/5.2.jpg" alt="product" class="img-fluid">
+                                </a>
+                            </div>
+                            <hr>
+                            <div class="catalog__card__table">
+                                <table class="table table-sm table-striped">
+                                    <tr>
+                                        <th>Длина</th>
+                                        <td>от 4 до 30 метров</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ширина</th>
+                                        <td>4 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Высота</th>
+                                        <td>2.1 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Между дугами</th>
+                                        <td>0.67 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Профиль</th>
+                                        <td>40 × 20 мм</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <hr>
+                            <div class="catalog__parameter">
+                                <span>Длина (м):</span>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="4" checked>
+                                    <span class="catalog__input__label">4</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="6">
+                                    <span class="catalog__input__label">6</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="8">
+                                    <span class="catalog__input__label">8</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="10">
+                                    <span class="catalog__input__label">10</span>
+                                </label>
+                            </div>
+                            <div class="catalog__card__price--old small">
+                                <s><span class="calculator-price-old">0</span> руб.</s>
+                            </div>
+                            <div class="catalog__card__price">
+                                <span class="calculator-price">0</span> руб.
+                            </div>
+                            <div class="my-3">
+                                <button type="button" class="btn btn-success btn-block btn-lg shadow transition--slide" data-toggle="modal" data-target="#modal-order">Заказать</button>
+                            </div>
+    
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="col-md-6 col-lg-4">
+                    <form class="has-calculator">
+                        <input type="hidden" name="product" value="sibirskaya4-0.5">
+                        <div class="catalog__card">
+                            
+                            <div class="catalog__card__title c__gradient">
+                                Теплица 40х20 Ширина 4 м.
+                            </div>
+                            <div class="catalog__card__img">
+                                <a href="./public/assets/catalog/5.3.jpg" data-fancybox>
+                                    <img src="./public/assets/catalog/5.3.jpg" alt="product" class="img-fluid">
+                                </a>
+                            </div>
+                            <hr>
+                            <div class="catalog__card__table">
+                                <table class="table table-sm table-striped">
+                                    <tr>
+                                        <th>Длина</th>
+                                        <td>от 4 до 30 метров</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ширина</th>
+                                        <td>4 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Высота</th>
+                                        <td>2.1 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Между дугами</th>
+                                        <td>0.5 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Профиль</th>
+                                        <td>40 × 20 мм</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <hr>
+                            <div class="catalog__parameter">
+                                <span>Длина (м):</span>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="4" checked>
+                                    <span class="catalog__input__label">4</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="6">
+                                    <span class="catalog__input__label">6</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="8">
+                                    <span class="catalog__input__label">8</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="10">
+                                    <span class="catalog__input__label">10</span>
+                                </label>
+                            </div>
+                            <div class="catalog__card__price--old small">
+                                <s><span class="calculator-price-old">0</span> руб.</s>
+                            </div>
+                            <div class="catalog__card__price">
+                                <span class="calculator-price">0</span> руб.
+                            </div>
+                            <div class="my-3">
+                                <button type="button" class="btn btn-success btn-block btn-lg shadow transition--slide" data-toggle="modal" data-target="#modal-order">Заказать</button>
+                            </div>
+    
+                        </div>
+                    </form>
+                </div>
+    
+              
+            </div>
+    
+            <header id="section-catalog-6" class="catalog__header">Теплица "Ферма" с двойными дугами</header>
+    
+            <div class="row">
+    
+                <div class="col-md-6 col-lg-4">
+                    <form class="has-calculator">
+                        <input type="hidden" name="product" value="ferma1">
+                        <div class="catalog__card">
+                            
+                            <div class="catalog__card__title c__gradient">
+                                Теплица "Ферма" 20х20
+                            </div>
+                            <div class="catalog__card__img">
+                                <a href="./public/assets/catalog/6.1.jpg" data-fancybox>
+                                    <img src="./public/assets/catalog/6.1.jpg" alt="product" class="img-fluid">
+                                </a>
+                            </div>
+                            <hr>
+                            <div class="catalog__card__table">
+                                <table class="table table-sm table-striped">
+                                    <tr>
+                                        <th>Длина</th>
+                                        <td>от 4 до 30 метров</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ширина</th>
+                                        <td>3 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Высота</th>
+                                        <td>2.1 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Между дугами</th>
+                                        <td>1 метр</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Профиль</th>
+                                        <td>20 × 20 мм</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <hr>
+                            <div class="catalog__parameter">
+                                <span>Длина (м):</span>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="4" checked>
+                                    <span class="catalog__input__label">4</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="6">
+                                    <span class="catalog__input__label">6</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="8">
+                                    <span class="catalog__input__label">8</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="10">
+                                    <span class="catalog__input__label">10</span>
+                                </label>
+                            </div>
+                            <div class="catalog__card__price--old small">
+                                <s><span class="calculator-price-old">0</span> руб.</s>
+                            </div>
+                            <div class="catalog__card__price">
+                                <span class="calculator-price">0</span> руб.
+                            </div>
+                            <div class="my-3">
+                                <button type="button" class="btn btn-success btn-block btn-lg shadow transition--slide" data-toggle="modal" data-target="#modal-order">Заказать</button>
+                            </div>
+    
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="col-md-6 col-lg-4">
+                    <form class="has-calculator">
+                        <input type="hidden" name="product" value="ferma0.67">
+                        <div class="catalog__card">
+                            
+                            <div class="catalog__card__title c__gradient">
+                                Теплица "Ферма" 20х20
+                            </div>
+                            <div class="catalog__card__img">
+                                <a href="./public/assets/catalog/6.2.jpg" data-fancybox>
+                                    <img src="./public/assets/catalog/6.2.jpg" alt="product" class="img-fluid">
+                                </a>
+                            </div>
+                            <hr>
+                            <div class="catalog__card__table">
+                                <table class="table table-sm table-striped">
+                                    <tr>
+                                        <th>Длина</th>
+                                        <td>от 4 до 30 метров</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ширина</th>
+                                        <td>3 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Высота</th>
+                                        <td>2.1 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Между дугами</th>
+                                        <td>0.67 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Профиль</th>
+                                        <td>20 × 20 мм</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <hr>
+                            <div class="catalog__parameter">
+                                <span>Длина (м):</span>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="4" checked>
+                                    <span class="catalog__input__label">4</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="6">
+                                    <span class="catalog__input__label">6</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="8">
+                                    <span class="catalog__input__label">8</span>
+                                </label>
+                                <label class="catalog__input">
+                                    <input type="radio" name="length" value="10">
+                                    <span class="catalog__input__label">10</span>
+                                </label>
+                            </div>
+                            <div class="catalog__card__price--old small">
+                                <s><span class="calculator-price-old">0</span> руб.</s>
+                            </div>
+                            <div class="catalog__card__price">
+                                <span class="calculator-price">0</span> руб.
+                            </div>
+                            <div class="my-3">
+                                <button type="button" class="btn btn-success btn-block btn-lg shadow transition--slide" data-toggle="modal" data-target="#modal-order">Заказать</button>
+                            </div>
+    
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-additional" class="c__section text-center">
+        <header data-animation="animated zoomInUp">Дополнительные комплектующие</header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/additional/forto4ka.JPG" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            Форточка
+                        </div>
+                        <hr>
+                        <div class="equipment__price">
+                            27 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/additional/gazlift.JPG" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            Газлифт
+                        </div>
+                        <hr>
+                        <div class="equipment__price">
+                            27 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/additional/lenta.JPG" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            Лента утепления 12 м.
+                        </div>
+                        <hr>
+                        <div class="equipment__price">
+                            13 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/additional/poliv.JPG" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            Авто-полив
+                        </div>
+                        <hr>
+                        <div class="equipment__price">
+                            39 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/additional/podv9zki.JPG" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            Подвязки
+                        </div>
+                        <hr>
+                        <div class="equipment__price">
+                            13 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/additional/pp.JPG" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            П-профиль
+                        </div>
+                        <hr>
+                        <div class="equipment__price">
+                            18 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/additional/pog.jpg" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            Парник "Огурчик"
+                        </div>
+                        <hr>
+                        <div class="equipment__price">
+                            27 руб.
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- modal -->
+    <div id="modal-order" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-center bg-warning">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="my-4">
+                        <p class="h2">Ваш личный менеджер</p>
+                        <p class="h3">Михаил</p>
+                        <p class="h2">(44) 762-43-96, (29) 762-43-96</p>
+                        <hr>
+                    </div>
+
+                    <form>
+                        <input type="hidden" name="form" value="Окно заказа">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-danger shadow">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Owl carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js" integrity="sha256-s5TTOyp+xlSmsDfr/aZhg0Gz+JejYr5iTJI8JxG1SkM=" crossorigin="anonymous"></script>
+    <!-- Fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+    <!-- <script src="../vendor/lib/lightcountdown/lightcountdown.min.js"></script> -->
+
+    <script src="./public/scripts/data.js"></script>
+    <script src="./src/scripts/c.js"></script>
+    <!-- <script src="./dist/scripts/c.js"></script> -->
+    <script src="./src/scripts/js.js"></script>
+    <!-- <script src="./dist/scripts/js.js"></script> -->
+</body>
+</html>
