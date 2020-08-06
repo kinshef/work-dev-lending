@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+
+
+/*.fone_roboto{
+  font-family: Roboto, sans-serif;
+}*/
+/*@font-face {
+  font-family: "Phenomena";
+  src: url("../font/Phenomena/Phenomena-ExtraBold.eot");
+  src: url("../font/Phenomena/Phenomena-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("../font/Phenomena/Phenomena-ExtraBold.woff") format("woff"), 
+    url("../font/Phenomena/Phenomena-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}*/
+/*.font-weight-800{
+  font-weight: 800;
+}*/
+
+body {
+  font-family: Roboto, serif;
+}
+textarea{
+  resize: none;
+}
+ul{
+  padding-left: 0;
+}
+li{
+  list-style-type: none;
+}
+section{
+  overflow: hidden;
+}
+/* Fix bootstrap */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1520px;
+  }
+}
+.modal-xl {
+  max-width: 1140px;
+}
+.carousel-control-prev,
+.carousel-control-next{
+  text-shadow: 2px 2px 2px black;
+}
+/* Reset */
+a {
+  color: #000;
+}
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+.opasiti-75{
+  opacity: .75;
+}
+.opasiti-50{
+  opacity: .50;
+}
+.border-radius-30{
+  border-radius: 30px;
+}
+.border-radius-15{
+  border-radius: 15px;
+}
+.text-size-1{
+  font-size: 0.8em;
+}
+.text-size-2{
+  font-size: 0.9em;
+}
+.text-size-4{
+  font-size: 1.1em;
+}
+.text-size-5{
+  font-size: 1.2em;
+}
+.text-size-6{
+  font-size: 1.4em;
+}
+.text-size-7{
+  font-size: 1.7em;
+}
+.text-red{
+  color: red;
+}
+.bg_op-black{
+  background-color: rgba(0, 0, 0, 0.4);
+    color: #FFF;
+}
+.c__section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.section_title{
+  font-size: 38px;
+  font-weight: 800;
+}
+@media (max-width: 768px) {
+  .section_taitl{
+    font-size: 26px;
+    font-weight: 800;
+  }
+}
+
+/* btn */
+.transition--slide {
+  position: relative;
+  overflow: hidden;
+}
+.transition--slide::before {
+  margin-left: 60px;
+  content: "";
+  width: 30px;
+  height: 300px;
+  background: #ffffff80;
+  -webkit-animation-delay: .05s;
+          animation-delay: .05s;
+  position: absolute;
+  left: -40px;
+  top: -150px;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+  -webkit-animation-name: slideme;
+          animation-name: slideme;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+@-webkit-keyframes slideme {
+  0% {
+    left: -30px;
+    margin-left: 0;
+  }
+  30% {
+    left: 110%;
+    margin-left: 80px;
+  }
+  100% {
+    left: 110%;
+    margin-left: 80px;
+  }
+}
+@keyframes slideme {
+  0% {
+    left: -30px;
+    margin-left: 0;
+  }
+  30% {
+    left: 110%;
+    margin-left: 80px;
+  }
+  100% {
+    left: 110%;
+    margin-left: 80px;
+  }
+}
+
+/* Custom */
+/* section-header */
+.section-header{
+  background-color: #FF6E28;
+}
+.header-nav__item:hover{
+  transition: all .4s;
+  background-color: rgba(0,0,0,0.2);
+}
+
+
+
+
+/* section-main */
+.section-main{
+  position: relative;
+  background-color: #FFF100;
+}
+.main-top{
+  padding: 1rem;
+}
+.main-top__action{
+  background-color: #000;
+  transform: skew(-20deg) rotate(-5deg);
+  padding: 1.5rem 2rem;
+  margin: 0 2rem;
+  box-shadow: 12px 12px 0 0 #fff;
+  font-size: 2rem;
+}
+.old-prise{
+  font-size: 18px;
+  position: relative;
+}
+.old-prise:before{
+  content: '';
+  left: 0;
+  top: calc(50% - 2px);
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  background-color: red;
+}
+.main-top img{
+  max-height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+.section-main .main-right{
+  background: url(../../public/assets/img/back/fon-main.jpg) no-repeat left center;
+  background-size: cover;
+  position: relative;
+}
+.main-left:before{
+  content: '';
+  width: 3rem;
+  height: 100%;
+  position: absolute;
+  right: -1rem;
+  top: 0;
+  background: url(../../public/assets/img/icon/asd.png) repeat center center;
+  background-size: contain;
+  z-index: 11;
+}
+
+.lightcountdown{
+  font-size: 2rem;
+}
+.section-main__text-orenge {
+  color: rgb(255, 232, 140);
+}
+.main-form{
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #FFF;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(255, 229, 127);
+  padding: 5px;
+}
+.main-form input {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  font-weight: 400;
+  padding: 4px;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.main-form button {
+  border-radius: 30px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+

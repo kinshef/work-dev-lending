@@ -1,22 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap');
 
-/*.fone_roboto{
-  font-family: Roboto, sans-serif;
-}*/
-/*@font-face {
-  font-family: "Phenomena";
-  src: url("../font/Phenomena/Phenomena-ExtraBold.eot");
-  src: url("../font/Phenomena/Phenomena-ExtraBold.eot?#iefix") format("embedded-opentype"),
-    url("../font/Phenomena/Phenomena-ExtraBold.woff") format("woff"), 
-    url("../font/Phenomena/Phenomena-ExtraBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 800;
-}*/
-/*.font-weight-800{
-  font-weight: 800;
-}*/
-
 body {
   font-family: 'Arsenal', sans-serif;
 }
@@ -91,12 +75,12 @@ a:hover {
   padding-bottom: 4rem;
 }
 .section_title{
-  font-size: 38px;
+  font-size: 2.6rem;
   font-weight: 800;
 }
 @media (max-width: 768px) {
   .section_taitl{
-    font-size: 26px;
+    font-size: 1.6rem;
     font-weight: 800;
   }
 }
@@ -119,7 +103,6 @@ a:hover {
   top: -150px;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  -webkit-transition: all .1s;
   transition: all .1s;
   -webkit-animation-name: slideme;
           animation-name: slideme;
@@ -127,8 +110,7 @@ a:hover {
           animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 @-webkit-keyframes slideme {
   0% {
@@ -195,8 +177,6 @@ a:hover {
 }
 
 .header-nav a {
-  -webkit-transition: border-color .4s ease, color .4s ease;
-  -o-transition: border-color .4s ease, color .4s ease;
   transition: border-color .4s ease, color .4s ease;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -225,16 +205,13 @@ a:hover {
   right: 0;
   cursor: pointer;
   background: #5e5e5e;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-clip: content-box;
   width: 30px;
   height: 24px;
   border-top: 11px solid transparent;
   border-bottom: 11px solid transparent;
-  -webkit-transform: rotate(0deg) translate(-100%, -50%);
   transform: rotate(0deg) translate(-100%, -50%);
-  -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
 
@@ -259,9 +236,7 @@ a:hover {
   width: 100%;
   right: 0;
   will-change: rotate;
-  -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -281,7 +256,6 @@ a:hover {
 }
 
 .navBurger.active:before {
-  -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
   top: 0;
   background: #eee;
@@ -290,7 +264,6 @@ a:hover {
 
 .navBurger.active:after {
   bottom: 0;
-  -webkit-transform: rotate(-135deg);
   transform: rotate(-135deg);
   background: #eee;
   width: 110%;
@@ -305,12 +278,9 @@ a:hover {
   width: 100%;
   height: 100%;
   opacity: 0;
-  -webkit-transform-origin: right top;
   transform-origin: right top;
-  -webkit-transform: scale(0);
   transform: scale(0);
   visibility: hidden;
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   overflow: hidden;
 }
@@ -318,7 +288,6 @@ a:hover {
 .overlay.open {
   opacity: 0.99;
   visibility: visible;
-  -webkit-transform: scale(1);
   transform: scale(1);
 }
 
@@ -328,9 +297,7 @@ a:hover {
   animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5) forwards;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
-  -webkit-transform: rotate(-7deg);
   transform: rotate(-7deg);
-  -webkit-transform-origin: right bottom;
   transform-origin: right bottom;
 }
 
@@ -385,7 +352,6 @@ a:hover {
   font-size: 30px;
   padding: 10px 20px;
   margin: 10px 0;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   background-color: rgba(256, 256, 256, .1);
 
@@ -394,7 +360,6 @@ a:hover {
 .overlayMenu ul li a:hover,
 .overlayMenu ul li a:active,
 .overlayMenu ul li a:focus {
-  -webkit-transform: translateX(-2px);
   transform: translateX(-2px);
   padding-left: 80px;
   outline: 1px solid rgba(255, 255, 255, 0.3);
@@ -404,7 +369,7 @@ a:hover {
 /* section-main */
 #section-main {
   padding-top: 2rem;
-  background: url(../../public/assets/back/bg.jpg) no-repeat center top;
+  background: url(../../public/assets/img/back/bg.jpg) no-repeat center top;
   background-size: cover;
   font-family: Arsenal, sans-serif;
   font-size: 19px;
@@ -465,8 +430,6 @@ a:hover {
   color: #645050;
   cursor: help;
   z-index: 1;
-  -webkit-transition: all .4s ease;
-  -o-transition: all .4s ease;
   transition: all .4s ease;
 }
 
@@ -488,7 +451,6 @@ a:hover {
   width: 270px;
   z-index: 2;
   background: #fff;
-  -webkit-box-shadow: 0 30px 60px rgba(165, 175, 180, .6);
   box-shadow: 0 30px 60px rgba(165, 175, 180, .6);
 }
 
@@ -693,7 +655,6 @@ header{
   }
 }
 
-
 /* section-additional */
 .equipment__card{
   border-radius: 1rem;
@@ -713,13 +674,106 @@ header{
   font-weight: bold;
 }
 
+/* section-reviews */
+.section-reviews {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  line-height: 1.55;
+}
 
+.section-reviews__title {
+  font-size: 45px;
+  font-weight: 700;
+}
 
+.review__photo {
+  width: 120px;
+}
 
+.review__name {
+  font-size: 18px;
+  font-style: italic;
+}
 
+.review__text {
+  position: relative;
+  background-color: #daf2ff;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+}
 
+.review .review__text:before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  border-width: 50px;
+  border-style: solid;
+}
 
+.review:nth-of-type(odd) .review__text:before {
+  left: 0;
+  transform: translateX(-100%) translateY(-50%);
+  border-color: transparent #daf2ff transparent transparent;
+}
 
+.review:nth-of-type(even) .review__text:before {
+  left: 100%;
+  transform: translateY(-50%);
+  border-color: transparent transparent transparent #daf2ff;
+}
 
+@media (max-width: 991px) {
+  .review:nth-of-type(odd) .review__text:before,
+  .review:nth-of-type(even) .review__text:before {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%) translateY(-100%);
+      border-color: transparent transparent #daf2ff transparent;
+  }
+}
 
+/* section-contact */
+#section-contact {
+  background: url(../../public/assets/img/back/contact.jpg) no-repeat center bottom;
+  background-size: cover;
+}
+.c__bg--white60 {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.contact__phone {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #f2f200;
+  font-weight: bold;
+}
 
+/* section-footer */
+.section-footer {
+  background: #abe4f7;
+  color: black;
+  font-family: Roboto, sans-serif;
+}
+
+.section-footer__title {
+  color: gray;
+  padding-bottom: 15px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  font-family: Lora, Roboto, sans-serif;
+}
+
+.section-footer p {
+  font-size: 14px;
+}
+
+.footer-phone {
+  font-family: Lora, Roboto, sans-serif;
+}
+
+.copy {
+  line-height: 45px;
+  font-size: 12px;
+  color: black;
+}
