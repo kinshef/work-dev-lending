@@ -1,24 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
 
-
-/*.fone_roboto{
-  font-family: Roboto, sans-serif;
-}*/
-/*@font-face {
-  font-family: "Phenomena";
-  src: url("../font/Phenomena/Phenomena-ExtraBold.eot");
-  src: url("../font/Phenomena/Phenomena-ExtraBold.eot?#iefix") format("embedded-opentype"),
-    url("../font/Phenomena/Phenomena-ExtraBold.woff") format("woff"), 
-    url("../font/Phenomena/Phenomena-ExtraBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 800;
-}*/
-/*.font-weight-800{
-  font-weight: 800;
-}*/
-
 body {
-  font-family: Roboto, serif;
+  font-family: "Roboto", serif;
 }
 textarea{
   resize: none;
@@ -95,71 +78,13 @@ a:hover {
   padding-bottom: 4rem;
 }
 .section_title{
-  font-size: 38px;
+  font-size: 3rem;
   font-weight: 800;
 }
 @media (max-width: 768px) {
   .section_taitl{
-    font-size: 26px;
+    font-size: 2rem;
     font-weight: 800;
-  }
-}
-
-/* btn */
-.transition--slide {
-  position: relative;
-  overflow: hidden;
-}
-.transition--slide::before {
-  margin-left: 60px;
-  content: "";
-  width: 30px;
-  height: 300px;
-  background: #ffffff80;
-  -webkit-animation-delay: .05s;
-          animation-delay: .05s;
-  position: absolute;
-  left: -40px;
-  top: -150px;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-transition: all .1s;
-  transition: all .1s;
-  -webkit-animation-name: slideme;
-          animation-name: slideme;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-@-webkit-keyframes slideme {
-  0% {
-    left: -30px;
-    margin-left: 0;
-  }
-  30% {
-    left: 110%;
-    margin-left: 80px;
-  }
-  100% {
-    left: 110%;
-    margin-left: 80px;
-  }
-}
-@keyframes slideme {
-  0% {
-    left: -30px;
-    margin-left: 0;
-  }
-  30% {
-    left: 110%;
-    margin-left: 80px;
-  }
-  100% {
-    left: 110%;
-    margin-left: 80px;
   }
 }
 
@@ -167,19 +92,27 @@ a:hover {
 /* section-header */
 .section-header{
   background-color: #FF6E28;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 111;
 }
 .header-nav__item:hover{
   transition: all .4s;
   background-color: rgba(0,0,0,0.2);
 }
-
-
-
+.header__img{
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 70px;
+}
 
 /* section-main */
 .section-main{
   position: relative;
-  background-color: #FFF100;
+  background: #FFE100;
 }
 .main-top{
   padding: 1rem;
@@ -188,9 +121,10 @@ a:hover {
   background-color: #000;
   transform: skew(-20deg) rotate(-5deg);
   padding: 1.5rem 2rem;
-  margin: 0 2rem;
+  margin: 1rem 2rem;
   box-shadow: 12px 12px 0 0 #fff;
   font-size: 2rem;
+  display: inline-block;
 }
 .old-prise{
   font-size: 18px;
@@ -208,15 +142,6 @@ a:hover {
 .main-top img{
   max-height: 200px;
 }
-
-
-
-
-
-
-
-
-
 
 .section-main .main-right{
   background: url(../../public/assets/img/back/fon-main.jpg) no-repeat left center;
@@ -265,4 +190,77 @@ a:hover {
   max-width: 300px;
   margin: 0 auto;
 }
+@media(max-width: 768px){
+  .main-left:before{
+    display: none;
+  }
+  .lightcountdown {
+    font-size: 1.5rem;
+  }
+}
+
+/* section-catalog  */
+.section-catalog{
+  background-color: #FCCA39;
+}
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: green;
+  color: #ffffff;
+}
+.section-catalog__cart-product {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(110, 106, 89, 0.32);
+  position: relative;
+  border: 3px solid #ece6e6;
+  border-radius: 10px;
+  text-align: center;
+  transition: border-color 300ms;
+  margin: 0 auto 2rem;
+  display: block;
+}
+.section-catalog__cart-product:hover {
+  border-color: #de4848;
+}
+.section-catalog__price {
+  color: red;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* section-additional */
+.equipment__card {
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px #888;
+  transition: all .5s;
+  padding: 1rem;
+}
+.equipment__card:hover{
+  box-shadow: 0px 0px 15px #333;
+}
+.equipment__price {
+    font-size: 1.5rem;
+}
+
+/* section-advantages */
+.advantages-item__img img{
+  max-width: 80px;
+  max-height: 60px;
+}
+
+/* section-certificates */
+.section-certificates_img {
+  border: 3px solid #e94e38;
+}
+
+/* section-contact */
+.section-contact{
+  background-color: #FCCA39;
+}
+
+
 

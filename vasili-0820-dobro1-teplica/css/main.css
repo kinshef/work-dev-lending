@@ -59,33 +59,29 @@ ul {
 
 .logo-title {
   position: absolute;
-  left: 1rem;
-  font-size: 2rem;
+  left: 10%;
+  font-size: 4rem;
+  margin-top: 10px;
   color: #ff6633;
   text-shadow: 4px 4px 8px #000;
   font-family: "Bookman";
   text-transform: uppercase;
   text-shadow: 4px 4px 8px #000, 0 0 2px black;
 }
-
-@media screen and (min-width: 800px) {
+@media (max-width: 1600px){
   .logo-title {
-    left: 3rem;
-    font-size: 3rem;
+    left: 8%;
   }
 }
-
-@media screen and (min-width: 1300px) {
+@media (max-width: 1500px){
   .logo-title {
-    left: 8rem;
-    font-size: 3rem;
+    margin-top: 0px;
   }
 }
-
-@media screen and (min-width: 1500px) {
+@media (max-width: 1400px){
   .logo-title {
-    left: 10rem;
-    font-size: 5rem;
+    font-size: 3rem;
+    margin-top: 10px;
   }
 }
 
