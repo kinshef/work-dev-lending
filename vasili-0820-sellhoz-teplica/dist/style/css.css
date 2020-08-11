@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap'); */
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
 
 /*.fone_roboto{
   font-family: Roboto, sans-serif;
@@ -19,6 +19,7 @@
 
 body {
   /* font-family: Roboto, serif; */
+  font-family: 'Rubik', sans-serif;
 }
 textarea{
   resize: none;
@@ -90,10 +91,13 @@ a:hover {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+.text_black{
+  color: #383838;
+}
 .section_title{
   font-size: 38px;
-  font-weight: 800;
-  color: #383838;
+  font-weight: 700;
+  text-align: center;
 }
 @media (max-width: 768px) {
   .section_taitl{
@@ -168,6 +172,18 @@ a:hover {
   right: 0;
   z-index: 111;
 }
+.section-nav:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 75%;
+  background-color: rgba(0,0,0,.2);
+  box-shadow: 0px 20px 20px rgba(0,0,0,.2);
+}
 .nav-logo__img{
   object-fit: contain;
   margin-right: .5rem;
@@ -184,8 +200,8 @@ a:hover {
   border-radius: 10px;
   box-shadow: 5px 5px 5px #333;
   font-weight: bold;
-  font-size: 1.2rem;
-  padding: 0.5rem 1.5rem;
+  font-size: 1.1rem;
+  padding: 0.25rem 0.5rem;
   transition: all 0.5s;
 }
 .nav-nav__item:hover{
@@ -193,19 +209,19 @@ a:hover {
   z-index: 11;
   transform: scale(1.3);
 }
-/* @media(max-width: 1600px){
-  .header-nav__item{
-    padding: 0.25rem 1rem;
+@media(min-width: 1600px){
+  .nav-nav__item{
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
   }
-} */
-
-
+}
 
 /* section-mine */
 .section-mine{
   background: url(../../public/assets/img/back/bg_mine.jpg) no-repeat center center;
   background-size: cover;
-  height: 50vh;
+  padding-top: 30vh;
+  padding-bottom: 2rem;
   position: relative;
 }
 .section-mine:before{
@@ -217,7 +233,82 @@ a:hover {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.3);
+}
+.mine-left_title{
+  font-size: 50px;
+}
+.mine-left_img{
+  max-width: 200px;
+  object-fit: contain;
+}
+.mine-form{
+  background-color: #00A250;
+  border-radius: 15px;
+  padding: 1rem;
+}
+.mine-form .form-control{
+  border-radius: 15px;
+  line-height: 32px;
+  height: auto;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.mine-form .btn{
+  background-color: #ffcd00;
+  box-shadow: 5px 5px 5px #333;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 3rem;
+}
+
+/* section-delivery */
+.section-delivery{
+  position: relative;
+  background-color: #00A250;
+}
+.section-delivery:after,
+.section-delivery:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 100%;
+}
+.section-delivery:before{
+  left: 0;
+  background: url(../../public/assets/img/icon/delivery.png) no-repeat center center;
+}
+.section-delivery:after{
+  right: 0;
+  background: url(../../public/assets/img/icon/delivery1.png) no-repeat right bottom;
+}
+
+/* section-advantages */
+.advantages-item__img{
+  background-color: #00A250;
+  padding: 1.25rem 2rem;
+  border-radius: 50%;
+  margin-right: 2rem;
+  position: relative;
+  max-width: 150px;
+  width: 100%;
+  min-height: 100px;
+  box-shadow: 0 12px 14px #00A250, 0 -12px 14px #00A250;
+  display: flex;
+  align-self: center;
+}
+.advantages-item__img img{
+  object-fit: contain;
+  width: 100%;
+}
+
+/* section-calculator */
+.section-calculator{
+  background-color: #00A250;
 }
 
 
@@ -229,6 +320,73 @@ a:hover {
 
 
 
+
+.calculation-pages{
+  position: relative;
+}
+.calculation-pages>div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scale(0);
+  
+}
+.calculation-pages>div.activ{
+  transform: scale(1);
+  position: static;
+  transition: all 1s;
+}
+
+.cost-calculation .btn.disabled{
+  opacity: .6;
+}
+.calculation-btn-pages .btn{
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  text-align: center;
+}
+.calculation-btn-pages .btn.activ{
+  background-color: #09b53e;
+  border: none
+}
+
+
+.c__input input {
+    display: none;
+}
+.c__input{
+    color: #fff;
+}
+.c__input label {
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0.2rem;
+  position: relative;
+  padding-left: 30px;
+}
+.c__input label:before{
+  content: '';
+  position: absolute;
+  left: 0px;
+  border-radius: 50%;
+  top: calc(50% - 10px);
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+}
+.c__input input:checked + label:after{
+  content: '';
+  position: absolute;
+  left: 3px;
+  border-radius: 50%;
+  top: calc(50% - 7px);
+  height: 14px;
+  width: 14px;
+  background-color: #09b53e;
+}
 
 
 

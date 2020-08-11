@@ -92,6 +92,64 @@ document.addEventListener("DOMContentLoaded", function () {
     //     var countdown = new LightCountdown(".countdown-week", dateEnd, {animation: "animated flipInX", animationDuration: "600ms"});
     // } catch (e) {console.error(e);}
 
+
+
+
+
+
+
+
+
+
+
+
+var calculationPages = document.querySelectorAll('.calculation-pages>div');
+var calculatorBtnNextBottom = document.querySelector('.cost-calculation div.next-bottom');
+var calculatorBtnPrevBottom = document.querySelector('.cost-calculation div.prev-bottom');
+var pageTo = 0;
+function disabledBtn() {
+    if(0 !== pageTo){
+        calculatorBtnPrevBottom.classList.remove('disabled');
+    }else{
+        calculatorBtnPrevBottom.classList.add('disabled');
+    }
+    if(calculationPages.length-1 > pageTo){
+        calculatorBtnNextBottom.classList.remove('disabled');
+    }else{
+        calculatorBtnNextBottom.classList.add('disabled');
+    }
+}
+disabledBtn()
+
+calculatorBtnNextBottom.onclick = function () {
+    if(!this.classList.contains('disabled')){
+        calculationPages[pageTo].classList.remove('activ');
+        pageTo++;
+        calculationPages[pageTo].classList.add('activ');
+        disabledBtn()
+    }
+}
+calculatorBtnPrevBottom.onclick = function () {
+    if(!this.classList.contains('disabled')){
+        calculationPages[pageTo].classList.remove('activ');
+        pageTo--;
+        calculationPages[pageTo].classList.add('activ');
+        disabledBtn()
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
 
 
