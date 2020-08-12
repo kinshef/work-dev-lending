@@ -1,24 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
 
-/*.fone_roboto{
-  font-family: Roboto, sans-serif;
-}*/
-/*@font-face {
-  font-family: "Phenomena";
-  src: url("../font/Phenomena/Phenomena-ExtraBold.eot");
-  src: url("../font/Phenomena/Phenomena-ExtraBold.eot?#iefix") format("embedded-opentype"),
-    url("../font/Phenomena/Phenomena-ExtraBold.woff") format("woff"), 
-    url("../font/Phenomena/Phenomena-ExtraBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 800;
-}*/
-/*.font-weight-800{
-  font-weight: 800;
-}*/
-
 body {
-  /* font-family: Roboto, serif; */
   font-family: 'Rubik', sans-serif;
 }
 textarea{
@@ -29,9 +11,6 @@ ul{
 }
 li{
   list-style-type: none;
-}
-section{
-  overflow: hidden;
 }
 /* Fix bootstrap */
 @media (min-width: 1600px) {
@@ -95,14 +74,17 @@ a:hover {
   color: #383838;
 }
 .section_title{
-  font-size: 38px;
+  font-size: 3rem;
   font-weight: 700;
   text-align: center;
 }
 @media (max-width: 768px) {
   .section_taitl{
-    font-size: 26px;
+    font-size: 2rem;
   }
+}
+.input-group input{
+  min-width: 200px;
 }
 
 /* btn */
@@ -180,13 +162,14 @@ a:hover {
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 75%;
+  height: 60%;
   background-color: rgba(0,0,0,.2);
-  box-shadow: 0px 20px 20px rgba(0,0,0,.2);
+  box-shadow: 0px 20px 25px 20px rgba(0,0,0,.2);
 }
 .nav-logo__img{
   object-fit: contain;
   margin-right: .5rem;
+  max-width: 80px;
 }
 .nav-logo__text div{
   color: #fff;
@@ -196,7 +179,7 @@ a:hover {
   background-color: #ffcd00;
   border: 1px solid #333;
   position: relative;
-  color: #fff;
+  color: #000;
   border-radius: 10px;
   box-shadow: 5px 5px 5px #333;
   font-weight: bold;
@@ -241,6 +224,10 @@ a:hover {
 .mine-left_img{
   max-width: 200px;
   object-fit: contain;
+  margin: auto;
+}
+.mine-left_img img{
+  max-width: 100%;
 }
 .mine-form{
   background-color: #00A250;
@@ -264,11 +251,19 @@ a:hover {
   font-weight: 700;
   margin-top: 3rem;
 }
+@media(max-width: 768px){
+  .section-mine{
+    padding-top: 15vh;
+  }
+}
 
 /* section-delivery */
 .section-delivery{
   position: relative;
   background-color: #00A250;
+}
+.section-delivery .col-12 {
+  z-index: 1;
 }
 .section-delivery:after,
 .section-delivery:before{
@@ -277,6 +272,7 @@ a:hover {
   top: 0;
   width: 40%;
   height: 100%;
+  z-index: 0;
 }
 .section-delivery:before{
   left: 0;
@@ -286,7 +282,12 @@ a:hover {
   right: 0;
   background: url(../../public/assets/img/icon/delivery1.png) no-repeat right bottom;
 }
-
+@media(max-width: 992px){
+  .section-delivery:after,
+  .section-delivery:before{
+    display: none;
+  }
+}
 /* section-advantages */
 .advantages-item__img{
   background-color: #00A250;
@@ -310,17 +311,6 @@ a:hover {
 .section-calculator{
   background-color: #00A250;
 }
-
-
-
-
-
-
-
-
-
-
-
 .calculation-pages{
   position: relative;
 }
@@ -331,14 +321,12 @@ a:hover {
   right: 0;
   bottom: 0;
   transform: scale(0);
-  
 }
 .calculation-pages>div.activ{
   transform: scale(1);
   position: static;
   transition: all 1s;
 }
-
 .cost-calculation .btn.disabled{
   opacity: .6;
 }
@@ -351,15 +339,13 @@ a:hover {
   background-color: #09b53e;
   border: none
 }
-
-
-.c__input input {
+.section-calculator .c__input input {
     display: none;
 }
-.c__input{
+.section-calculator .c__input{
     color: #fff;
 }
-.c__input label {
+.section-calculator .c__input label {
   font-size: 1.5em;
   font-weight: 600;
   cursor: pointer;
@@ -367,7 +353,7 @@ a:hover {
   position: relative;
   padding-left: 30px;
 }
-.c__input label:before{
+.section-calculator .c__input label:before{
   content: '';
   position: absolute;
   left: 0px;
@@ -377,7 +363,7 @@ a:hover {
   width: 20px;
   background-color: #fff;
 }
-.c__input input:checked + label:after{
+.section-calculator .c__input input:checked + label:after{
   content: '';
   position: absolute;
   left: 3px;
@@ -387,6 +373,100 @@ a:hover {
   width: 14px;
   background-color: #09b53e;
 }
+@media(max-width: 992px){
+  .section-calculator .c__input{
+    display: inline-block;
+  }
+}
 
+/* section-catalog */
+.section-catalog{
+  background-color: #f4f4f4;
+}
+.old-prise:before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #ff4545;
+  transform: rotate(170deg);
+  bottom: 43%;
+}
+
+.castom_input .c__input input {
+  display: none;
+}
+.castom_input .c__input input:checked + label {
+  color: #000;
+  background: #FFD000;
+}
+.castom_input .c__input label {
+  padding: 0.2rem 1rem;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.6em;
+  border-radius: 8px;
+  color: #000;
+  background: #F2F5F8;
+  cursor: pointer;
+  margin: 0.2rem;
+}
+.castom_input .c__input label:hover {
+  background: #d1dce6;
+}
+.catalog__label {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  font-size: 1.5rem;
+  transform: translate(-10%,-50%);
+}
+
+.catalog__banck{
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  max-width: 100%;
+  height: auto;
+  white-space: normal;
+  background-color: #FFD000;
+  box-shadow: 2px 5px 10px 5px #999;
+  position: relative;
+  display: block;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  padding-right: 3rem;
+}
+.catalog__banck:before{
+  content: '';
+  width: 70px;
+  height: 70px;
+  display: block;
+  position: absolute;
+  top: calc(90% - 35px);
+  right: -30px;
+  background: url(../../public/assets/img/icon/sale.png) no-repeat center center;
+  background-size: contain;
+}
+
+/* section-equipment */
+.section-equipment{
+  position: relative;
+  background-color: #00A250;
+}
+.equipment__card {
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0.1rem 0.3rem 1rem rgba(0,0,0,0.6);
+}
+
+/* section-bank */
+.section-bank{
+  background-color: #FFCF00;
+  color: #FFf;
+}
 
 

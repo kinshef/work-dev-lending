@@ -97,12 +97,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
-
-
-
-
 var calculationPages = document.querySelectorAll('.calculation-pages>div');
 var calculatorBtnNextBottom = document.querySelector('.cost-calculation div.next-bottom');
 var calculatorBtnPrevBottom = document.querySelector('.cost-calculation div.prev-bottom');
