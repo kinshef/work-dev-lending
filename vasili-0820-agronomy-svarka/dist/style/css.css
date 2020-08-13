@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap');
+
+
+body {
+  font-family: Roboto, serif;
+  background-color: #180A17;
+}
+textarea{
+  resize: none;
+}
+ul{
+  padding-left: 0;
+}
+li{
+  list-style-type: none;
+}
+section{
+  overflow: hidden;
+}
+.btn{
+  white-space: normal;
+}
+/* Fix bootstrap */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1520px;
+  }
+}
+.modal-xl {
+  max-width: 1140px;
+}
+.carousel-control-prev,
+.carousel-control-next{
+  text-shadow: 2px 2px 2px black;
+}
+/* Reset */
+a {
+  color: #000;
+}
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+.opasiti-75{
+  opacity: .75;
+}
+.opasiti-50{
+  opacity: .50;
+}
+.border-radius-30{
+  border-radius: 30px;
+}
+.border-radius-15{
+  border-radius: 15px;
+}
+.text-size-1{
+  font-size: 0.8em;
+}
+.text-size-2{
+  font-size: 0.9em;
+}
+.text-size-4{
+  font-size: 1.1em;
+}
+.text-size-5{
+  font-size: 1.2em;
+}
+.text-size-6{
+  font-size: 1.4em;
+}
+.text-size-7{
+  font-size: 1.7em;
+}
+.text-red{
+  color: red;
+}
+.c__section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.section_title{
+  font-size: 38px;
+  font-weight: 800;
+}
+@media (max-width: 768px) {
+  .section_taitl{
+    font-size: 26px;
+    font-weight: 800;
+  }
+}
+.bg_red{
+  background-color: #e94e38;
+}
+.bg_orenge{
+  background-color: #FB8C32;
+}
+
+
+/* btn */
+.transition--slide {
+  position: relative;
+  overflow: hidden;
+}
+.transition--slide::before {
+  margin-left: 60px;
+  content: "";
+  width: 30px;
+  height: 300px;
+  background: #ffffff80;
+  -webkit-animation-delay: .05s;
+          animation-delay: .05s;
+  position: absolute;
+  left: -40px;
+  top: -150px;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+  -webkit-animation-name: slideme;
+          animation-name: slideme;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+@-webkit-keyframes slideme {
+  0% {
+    left: -30px;
+    margin-left: 0;
+  }
+  30% {
+    left: 110%;
+    margin-left: 80px;
+  }
+  100% {
+    left: 110%;
+    margin-left: 80px;
+  }
+}
+@keyframes slideme {
+  0% {
+    left: -30px;
+    margin-left: 0;
+  }
+  30% {
+    left: 110%;
+    margin-left: 80px;
+  }
+  100% {
+    left: 110%;
+    margin-left: 80px;
+  }
+}
+
+/* Custom */
+/* section-main */
+.section-main {
+  background: url(../../public/assets/img/back/11.jpg) no-repeat center center;
+  background-size: cover;
+}
+.main-icon {
+  max-width: 40px;
+}
+
+/* section-stock  */
+.stock__title{
+  font-size: 70px;
+}
+.stock-details{
+  color: #007bff;
+  text-decoration: none;
+  border-bottom: 2px dashed;
+  font-weight: bold;
+}
+
+
+/* section-catalog  */
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #FF6407;
+  color: #ffffff;
+  padding: 0.5rem 0;
+}
+.section-catalog__cart-product {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(110, 106, 89, 0.32);
+  position: relative;
+  border: 3px solid #ece6e6;
+  border-radius: 10px;
+  text-align: center;
+  transition: border-color 300ms;
+  margin: 0 auto 2rem;
+  display: block;
+}
+.section-catalog__cart-product:hover {
+  border-color: #de4848;
+}
+.section-catalog__price {
+  color: red;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* section-company */
+.section-company{
+  background-color: #fff;
+}
+
+
+
+
+/* modal */
+.modal .lightcountdown{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.modal .lightcountdown__digit{
+  background-color: transparent;
+  border: none;
+  color: rgb(236, 66, 54);
+  text-shadow: 0 1px 2px #000;
+  width: auto;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  padding: 0;
+  margin: 0;
+}
