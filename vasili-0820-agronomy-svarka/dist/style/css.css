@@ -42,26 +42,8 @@ a:hover {
   color: #000;
   text-decoration: none;
 }
-.opasiti-75{
-  opacity: .75;
-}
-.opasiti-50{
-  opacity: .50;
-}
-.border-radius-30{
-  border-radius: 30px;
-}
 .border-radius-15{
   border-radius: 15px;
-}
-.text-size-1{
-  font-size: 0.8em;
-}
-.text-size-2{
-  font-size: 0.9em;
-}
-.text-size-4{
-  font-size: 1.1em;
 }
 .text-size-5{
   font-size: 1.2em;
@@ -69,15 +51,8 @@ a:hover {
 .text-size-6{
   font-size: 1.4em;
 }
-.text-size-7{
-  font-size: 1.7em;
-}
 .text-red{
   color: red;
-}
-.c__section {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 .section_title{
   font-size: 38px;
@@ -95,7 +70,6 @@ a:hover {
 .bg_orenge{
   background-color: #FB8C32;
 }
-
 
 /* btn */
 .transition--slide {
@@ -156,6 +130,12 @@ a:hover {
 }
 
 /* Custom */
+/* section-nav */
+.nav-nav__item.active,
+.nav-nav__item:hover{
+  color: #fff;
+}
+
 /* section-main */
 .section-main {
   background: url(../../public/assets/img/back/11.jpg) no-repeat center center;
@@ -207,13 +187,18 @@ a:hover {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* section-company */
-.section-company{
+/* section-additional */
+.equipment__card {
+  margin-bottom: 1rem;
+  padding: 1rem 0;
   background-color: #fff;
+  border-radius: 15px;
+  transition: box-shadow .4s;
+  box-shadow: 0 0 20px #666;
 }
-
-
-
+.equipment__price {
+    font-size: 1.5rem;
+}
 
 /* modal */
 .modal .lightcountdown{

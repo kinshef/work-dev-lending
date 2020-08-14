@@ -3,17 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#4285f4">
+    <meta name="theme-color" content="#FB8C32">
 
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" integrity="sha256-HtCCUh9Hkh//8U1OwcbD8epVEUdBvuI8wj1KtqMhNkI=" crossorigin="anonymous">
     <!-- Fontawesome -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- Owl carousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" integrity="sha256-AWqwvQ3kg5aA5KcXpX25sYKowsX97sTCTbeo33Yfyk0=" crossorigin="anonymous">
     <!-- Fancybox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
 
@@ -21,7 +17,7 @@
 
     <link rel="stylesheet" href="./dist/style/css.css">
     <link rel="icon" type="image/ico" href="./public/assets/img/favicon.ico">
-    <title>Test</title>
+    <title>Главная</title>
 </head>
 <body>
 
@@ -36,11 +32,11 @@
                     <a href="tel:+375291111111" class="mx-2 text-white font-weight-bold">+375 (29) 111-11-11</a>
                 </div>
                 <div class="col-lg-6 text-size-5 nav-nav d-flex justify-content-between flex-wrap">
-                    <a class="nav-nav__item smoothscroll" href="#section-main">Главная</a>
-                    <a class="nav-nav__item smoothscroll" href="#section-equipment">Каталог</a>
-                    <a class="nav-nav__item smoothscroll" href="#section-advantages">Преимущества</a>
-                    <a class="nav-nav__item smoothscroll" href="#section-advantages">Сертификаты</a>
-                    <a class="nav-nav__item smoothscroll" href="#section-consultation">Контакты</a>
+                    <a class="nav-nav__item smoothscroll js-nav-scroll" href="#section-main">Главная</a>
+                    <a class="nav-nav__item smoothscroll js-nav-scroll" href="#section-catalog">Каталог</a>
+                    <a class="nav-nav__item smoothscroll js-nav-scroll" href="#section-company">Преимущества</a>
+                    <a class="nav-nav__item smoothscroll js-nav-scroll" href="#section-certificate">Сертификаты</a>
+                    <a class="nav-nav__item smoothscroll js-nav-scroll" href="#section-contact">Контакты</a>
                 </div>
             </div>
         </div>
@@ -49,12 +45,12 @@
     <section class="section-main py-3" id="section-main">
         <div class="container">
             <div class="row align-items-end text-white text-size-5">
-                <div class="col-6">
+                <div class="col-sm-6 text-sm-left text-center">
                     <div class="text-size-5 font-weight-bold">Гарантия 2 года!</div>
                     <div class="text-size-5 font-weight-bold">Быстрая доставка!</div>
                     <div class="text-size-5 font-weight-bold">Надёжные сварочные швы!</div>
                 </div>
-                <div class="col-6 text-center">
+                <div class="col-sm-6 text-center">
                     <div class="my-1">
                         <img src="./public/assets/img/icon/logo_A1_56.png" class="main-icon mr-2">
                         <span class="text-size-5"><a href="tel:+375441111111" class="text-white">+375 (44) 111-11-11</a></span>
@@ -2459,7 +2455,7 @@
         </div>
     </section>
 
-    <section class="section-company py-5 text-center" id="section-company">
+    <section class="section-company py-5 text-center text-white" id="section-company">
         <div class="container">
             <div class="section_title mb-3">Наши преимущества</div>
             <div class="row">
@@ -2499,9 +2495,177 @@
         </div>
     </section>
 
+    <section id="section-additional" class="section-additional py-5 text-center">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <div class="section_title text-white pb-3">Комплектующие</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/pod1.png" class="img-fluid">
+                        </div>
+                        <div class="font-weight-bold">Леска</div>
+                        <div class="equipment__price">
+                            <span class="badge badge-danger">3 руб.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/pod2.png" class="img-fluid">
+                        </div>
+                        <div class="font-weight-bold">Масло</div>
+                        <div class="equipment__price">
+                            <span class="badge badge-danger">7 руб.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/pod3.png" class="img-fluid">
+                        </div>
+                        <div class="font-weight-bold">Смазка для редуктора</div>
+                        <div class="equipment__price">
+                            <span class="badge badge-danger">3 руб.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/pod4.png" class="img-fluid">
+                        </div>
+                        <div class="font-weight-bold">Свеча</div>
+                        <div class="equipment__price">
+                            <span class="badge badge-danger">3 руб.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/pod5.png" class="img-fluid">
+                        </div>
+                        <div class="font-weight-bold">Ремень рюкзачного типа</div>
+                        <div class="equipment__price">
+                            <span class="badge badge-danger">13 руб.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/pod6.png" class="img-fluid">
+                        </div>
+                        <div class="font-weight-bold">Трехлопастной нож</div>
+                        <div class="equipment__price">
+                            <span class="badge badge-danger">10 руб.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/pod7.png" class="img-fluid">
+                        </div>
+                        <div class="font-weight-bold">Перчатки</div>
+                        <div class="equipment__price">
+                            <span class="badge badge-danger">2 руб.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/pod8.png" class="img-fluid">
+                        </div>
+                        <div class="font-weight-bold">Беруши</div>
+                        <div class="equipment__price">
+                            <span class="badge badge-danger">2 руб.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="section-certificate" class="section-certificate py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 my-3 section_title text-white">Сертификаты</div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md my-3">
+                            <a href="./public/assets/img/certificate/s1.png" data-fancybox="certificate">
+                                <img src="./public/assets/img/certificate/s1.png" alt="product" class="border img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md my-3">
+                            <a href="./public/assets/img/certificate/s2.png" data-fancybox="certificate">
+                                <img src="./public/assets/img/certificate/s2.png" alt="product" class="border img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md my-3">
+                            <a href="./public/assets/img/certificate/s3.png" data-fancybox="certificate">
+                                <img src="./public/assets/img/certificate/s3.png" alt="product" class="border img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="section-contact" class="section-contact py-4 bg-secondary text-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="section_title">Остались вопросы?</div>
+                    <br>
+                    <p class="h3">Вы можете оставить заявку</p>
+                    <p class="h3">И мы перезвоним вам!</p>
+                    <br>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required="">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-danger btn-lg btn-block">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="section-contact2" class="section-contact2 py-1 text-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl col-sm-6 my-xl-0 my-2">
+                    <img src="./public/assets/img/icon/logo_A1_56.png" class="main-icon mr-2">
+                    <span class="text-size-5"><a href="tel:+375441111111" class="text-white">+375 (44) 111-11-11</a></span>
+                </div>
+                <div class="col-xl col-sm-6 my-xl-0 my-2">
+                    <img src="./public/assets/img/icon/logo_mts_64.jpg" class="main-icon mr-2">
+                    <span class="text-size-5"><a href="tel:+375291111111" class="text-white">+375 (29) 111-11-11</a></span>
+                </div>
+                <div class="col-xl col-12 my-xl-0 my-2">
+                    <img src="./public/assets/img/icon/mail.png" class="main-icon mr-2 rounded">
+                    <span class="text-size-5"><a href="#" class="text-white">agronomy100@gmail.com</a></span>
+                    <img src="./public/assets/img/icon/mail.png" class="main-icon ml-2 rounded">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- modal -->
     <div class="modal fade" id="modal-order">
@@ -5625,17 +5789,13 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <!-- Owl carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js" integrity="sha256-s5TTOyp+xlSmsDfr/aZhg0Gz+JejYr5iTJI8JxG1SkM=" crossorigin="anonymous"></script>
     <!-- Fancybox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
 
     <script src="../vendor/lib/lightcountdown/lightcountdown.min.js"></script>
 
     <script src="./public/scripts/data.js"></script>
-    <script src="./src/scripts/c.js"></script>
-    <!-- <script src="./dist/scripts/c.js"></script> -->
-    <script src="./src/scripts/js.js"></script>
-    <!-- <script src="./dist/scripts/js.js"></script> -->
+    <script src="./dist/scripts/c.js"></script>
+    <script src="./dist/scripts/js.js"></script>
 </body>
 </html>

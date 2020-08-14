@@ -1,5 +1,6 @@
 $(function () {
 
+
     $("form").submit(function (event) {
         event.preventDefault();
 
@@ -53,42 +54,43 @@ $(function () {
         return false
     });
 
-    $("a.smoothscroll").click(function(a) {
-        "" !== this.hash && (a.preventDefault(), a = this.hash, $("html, body").animate({
-            scrollTop: $(a).offset().top
-        }, 400))
-    });
+// $("a.smoothscroll").click(function(a) {
+//     "" !== this.hash && (a.preventDefault(), a = this.hash, $("html, body").animate({
+//         scrollTop: $(a).offset().top
+//     }, 400))
+// });
 
-    // links hightLight after scroll page
-    $.fn.nav = function (item) {
-        var point = {
-        offset: 0
-        };
-        $.extend(point, item);
-        var links = this;
-        $(links).each(function (a, index) {
-        var link = $(index.hash);
-        var place = $(link).offset();
-        $(window).scroll(function () {
-            var newPoint = $(window).scrollTop() + point.offset;
-            place.top < newPoint && newPoint < place.top + $(link).height() && ($(links).removeClass("active"), $(index).addClass("active"))
-        })
-        })
-    };
-    $(".js-nav-scroll").nav({
-        offset: 150
-    });
+ // links hightLight after scroll page
+//   $.fn.nav = function (item) {
+//     var point = {
+//       offset: 0
+//     };
+//     $.extend(point, item);
+//     var links = this;
+//     $(links).each(function (a, index) {
+//       var link = $(index.hash);
+//       var place = $(link).offset();
+//       $(window).scroll(function () {
+//         var newPoint = $(window).scrollTop() + point.offset;
+//         place.top < newPoint && newPoint < place.top + $(link).height() && ($(links).removeClass("active"), $(index).addClass("active"))
+//       })
+//     })
+//   };
+//   $(".js-nav-scroll").nav({
+//     offset: 150
+//   });
+// });
 
 });
 document.addEventListener("DOMContentLoaded", function () {
 
 /* countdown */
-    try {
-        var dateEnd = new Date();
-        dateEnd.setDate(dateEnd.getDay() ? dateEnd.getDate() - dateEnd.getDay() + 8 : dateEnd.getDate() + 1);
-        dateEnd.setHours(0, 0, 0);
-        var countdown = new LightCountdown(".countdown-week", dateEnd, {animation: "animated flipInX", animationDuration: "600ms"});
-    } catch (e) {console.error(e);}
+    // try {
+    //     var dateEnd = new Date();
+    //     dateEnd.setDate(dateEnd.getDay() ? dateEnd.getDate() - dateEnd.getDay() + 8 : dateEnd.getDate() + 1);
+    //     dateEnd.setHours(0, 0, 0);
+    //     var countdown = new LightCountdown(".countdown-week", dateEnd, {animation: "animated flipInX", animationDuration: "600ms"});
+    // } catch (e) {console.error(e);}
 
 });
 
