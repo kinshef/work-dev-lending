@@ -91,13 +91,17 @@ a:hover {
   padding-bottom: 4rem;
 }
 .section_title{
-  font-size: 38px;
+  font-size: 4rem;
   font-weight: 800;
 }
 @media (max-width: 768px) {
-  .section_taitl{
-    font-size: 26px;
-    font-weight: 800;
+  .section_title{
+    font-size: 2rem;
+  }
+}
+@media(max-width: 576px){
+  .section_title{
+    font-size: 1.5rem;
   }
 }
 
@@ -160,12 +164,15 @@ a:hover {
 }
 
 /* Custom */
-
-
-
-
-
 /* section-nav */
+.section-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  backdrop-filter: blur(15px);
+}
 .nav-nav__item{
   color: #000;
   font-weight: 700;
@@ -197,12 +204,6 @@ a:hover {
   margin-right: .5rem;
   max-width: 80px;
 }
-
-
-.section-main {
-  background: url(../../public/assets/img/back/bg_mine.png) no-repeat center center;
-  background-size: cover;
-}
 .nav-nav__job{
   position: relative;
   padding-left: 2rem;
@@ -217,3 +218,169 @@ a:hover {
   background-color: #6DF7BB;
   border-radius: 50%;
 }
+
+/* section-main */
+.section-main {
+  background: url(../../public/assets/img/back/bg_mine.png) no-repeat center center;
+  background-size: cover;
+  padding: 10rem 0 6rem;
+}
+.main-left__subtitle{
+  font-size: 2.5rem;
+}
+@media(max-width: 576px){
+  .main-left__subtitle{
+    font-size: 1.5rem;
+  }
+}
+
+/* section-advantages */
+.section-advantages{
+  background-color: #383838;
+}
+.section-advantages .section_title{
+  background-color: #485BA6;
+  display: inline-block;
+  padding: 2rem 5rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 100px #ccc, 0 0 70px #ccc, 2px 2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000;
+  box-shadow: 0 0 40px #555;
+}
+
+/* section-catalog */
+.bg_orenge{
+  background-color: #FF653D;
+}
+.bg_purple{
+  background-color: #8783BF;
+}
+.section-catalog{
+  background: url(../../public/assets/img/back/bg_catalog.png) no-repeat center top;
+  background-size: cover;
+  position: relative;
+}
+.section-catalog .catalog__title{
+  padding: 3rem 0;
+  text-shadow: 0 0 80px #ccc;
+  font-size: 8rem;
+  font-weight: 800;
+}
+.section-catalog .catalog__title:before,
+.section-catalog .catalog__title:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 18rem;
+  width: 18rem;
+}
+.section-catalog .catalog__title:before{
+  left: 0;
+  background: url(../../public/assets/img/icon/kileso.png) no-repeat left center;
+  background-size: contain;
+  animation: rotating 5s infinite linear;
+}
+.section-catalog .catalog__title:after{
+  right: 0;
+  background: url(../../public/assets/img/icon/kileso.png) no-repeat right center;
+  background-size: contain;
+  animation: rotating 5s infinite linear reverse;
+}
+.animat__rotate{
+  animation: rotating 5s infinite linear reverse;
+}
+@keyframes rotating {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.catalog-item__btn{
+  color: #FF653D;
+  background-color: #000;
+  border-radius: 50%;
+}
+.catalog-item__btn:hover{
+  color: #FF653D;
+}
+.catalog-item{
+  min-width: 60%;
+  display: inline-block;
+  box-shadow: 10px 10px 20px 10px #444;
+}
+
+/* section-dop */
+.section-dop{
+  background-color: #C5C5C5;
+}
+.owl-catalog .item{
+  background-color: #292929;
+  position: relative;
+  display: block;
+}
+.dop-img{
+  height: 400px;
+  display: flex;
+}
+.dop-img img{
+  max-height: 100%;
+  object-fit: contain;
+  padding: 1rem 0;
+}
+.owl-catalog .owl-prev,
+.owl-catalog .owl-next{
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0,-50%);
+      -ms-transform: translate(0,-50%);
+          transform: translate(0,-50%);
+  height: 100px;
+  width: 60px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 100px;
+  color: #292929;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  text-shadow: 5px 5px 10px black;
+}
+.owl-catalog .owl-prev{
+  left: -4rem;
+}
+.owl-catalog .owl-next{
+  right: -4rem;
+}
+.owl-catalog .owl-next:hover,
+.owl-catalog .owl-prev:hover{
+  text-shadow: 4px 4px 8px black;
+}
+.owl-catalog .owl-next:active,
+.owl-catalog .owl-prev:active{
+  text-shadow: 2px 2px 4px black;
+}
+
+/* section-mail */
+.section-mail{
+  background: url(../../public/assets/img/back/bg_feedback.png) no-repeat center bottom;
+  background-size: cover;
+  position: relative;
+}
+.mail-form__help {
+  background-color: #959595;
+  height: 100px;
+  width: 100px;
+}
+.mail-form__help img{
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+}
+.mail-form .form-control{
+  height: auto;
+  border-radius: 0;
+  font-size: 2rem;
+}
+.mail-btn .btn:hover{
+  background-color: #fd3f10;
+}
+
+
+

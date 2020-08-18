@@ -54,6 +54,24 @@ $(function () {
         return false
     });
 
+
+    $('.owl-catalog').owlCarousel({
+        responsive : {
+            0 : {
+                items:1,
+            },
+            768 : {
+                items:2,
+            },
+        },
+        margin: 30,
+        loop: true,
+        navText: ['&#10092;', '&#10093;'],
+        nav: true,
+        autoheight: false,
+        dots: false
+    })
+
 // $("a.smoothscroll").click(function(a) {
 //     "" !== this.hash && (a.preventDefault(), a = this.hash, $("html, body").animate({
 //         scrollTop: $(a).offset().top
@@ -84,13 +102,7 @@ $(function () {
 });
 document.addEventListener("DOMContentLoaded", function () {
 
-/* countdown */
-    // try {
-    //     var dateEnd = new Date();
-    //     dateEnd.setDate(dateEnd.getDay() ? dateEnd.getDate() - dateEnd.getDay() + 8 : dateEnd.getDate() + 1);
-    //     dateEnd.setHours(0, 0, 0);
-    //     var countdown = new LightCountdown(".countdown-week", dateEnd, {animation: "animated flipInX", animationDuration: "600ms"});
-    // } catch (e) {console.error(e);}
+
 
 });
 
