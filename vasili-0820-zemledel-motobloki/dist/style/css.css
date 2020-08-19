@@ -1,22 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
 
-
-/*.fone_roboto{
-  font-family: Roboto, sans-serif;
-}*/
-/*@font-face {
-  font-family: "Phenomena";
-  src: url("../font/Phenomena/Phenomena-ExtraBold.eot");
-  src: url("../font/Phenomena/Phenomena-ExtraBold.eot?#iefix") format("embedded-opentype"),
-    url("../font/Phenomena/Phenomena-ExtraBold.woff") format("woff"), 
-    url("../font/Phenomena/Phenomena-ExtraBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 800;
-}*/
-/*.font-weight-800{
-  font-weight: 800;
-}*/
-
 body {
   font-family: Roboto, serif;
 }
@@ -53,33 +36,6 @@ a:hover {
   color: #000;
   text-decoration: none;
 }
-.opasiti-75{
-  opacity: .75;
-}
-.opasiti-50{
-  opacity: .50;
-}
-.border-radius-30{
-  border-radius: 30px;
-}
-.border-radius-15{
-  border-radius: 15px;
-}
-.text-size-1{
-  font-size: 0.8em;
-}
-.text-size-2{
-  font-size: 0.9em;
-}
-.text-size-4{
-  font-size: 1.1em;
-}
-.text-size-5{
-  font-size: 1.2em;
-}
-.text-size-6{
-  font-size: 1.4em;
-}
 .text-size-7{
   font-size: 1.7em;
 }
@@ -105,64 +61,6 @@ a:hover {
   }
 }
 
-/* btn */
-.transition--slide {
-  position: relative;
-  overflow: hidden;
-}
-.transition--slide::before {
-  margin-left: 60px;
-  content: "";
-  width: 30px;
-  height: 300px;
-  background: #ffffff80;
-  -webkit-animation-delay: .05s;
-          animation-delay: .05s;
-  position: absolute;
-  left: -40px;
-  top: -150px;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-transition: all .1s;
-  transition: all .1s;
-  -webkit-animation-name: slideme;
-          animation-name: slideme;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-@-webkit-keyframes slideme {
-  0% {
-    left: -30px;
-    margin-left: 0;
-  }
-  30% {
-    left: 110%;
-    margin-left: 80px;
-  }
-  100% {
-    left: 110%;
-    margin-left: 80px;
-  }
-}
-@keyframes slideme {
-  0% {
-    left: -30px;
-    margin-left: 0;
-  }
-  30% {
-    left: 110%;
-    margin-left: 80px;
-  }
-  100% {
-    left: 110%;
-    margin-left: 80px;
-  }
-}
-
 /* Custom */
 /* section-nav */
 .section-nav{
@@ -171,7 +69,16 @@ a:hover {
   left: 0;
   right: 0;
   z-index: 2;
-  backdrop-filter: blur(15px);
+}
+.section-nav:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  box-shadow: 0px 20px 25px 15px rgba(255, 255, 255,.2);
+  background-color: rgba(255, 255, 255,0.2);
 }
 .nav-nav__item{
   color: #000;
@@ -251,6 +158,9 @@ a:hover {
 .bg_orenge{
   background-color: #FF653D;
 }
+.text_orenge{
+  color: #FF653D;
+}
 .bg_purple{
   background-color: #8783BF;
 }
@@ -258,6 +168,12 @@ a:hover {
   background: url(../../public/assets/img/back/bg_catalog.png) no-repeat center top;
   background-size: cover;
   position: relative;
+}
+.catalog-item{
+  transition: background .4s;
+}
+.section-catalog .catalog-item:hover{
+  background-color: #8783BF;
 }
 .section-catalog .catalog__title{
   padding: 3rem 0;
@@ -277,7 +193,8 @@ a:hover {
   left: 0;
   background: url(../../public/assets/img/icon/kileso.png) no-repeat left center;
   background-size: contain;
-  animation: rotating 5s infinite linear;
+  -webkit-animation: rotating 5s infinite linear;
+          animation: rotating 5s infinite linear;
 }
 .section-catalog .catalog__title:after{
   right: 0;
@@ -287,6 +204,10 @@ a:hover {
 }
 .animat__rotate{
   animation: rotating 5s infinite linear reverse;
+}
+@-webkit-keyframes rotating {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 @keyframes rotating {
   0%   { transform: rotate(0deg); }
@@ -321,24 +242,21 @@ a:hover {
 }
 .dop-img img{
   max-height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   padding: 1rem 0;
 }
 .owl-catalog .owl-prev,
 .owl-catalog .owl-next{
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(0,-50%);
-      -ms-transform: translate(0,-50%);
-          transform: translate(0,-50%);
+  transform: translate(0,-50%);
   height: 100px;
   width: 60px;
   line-height: 100px;
   text-align: center;
   font-size: 100px;
   color: #292929;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
   transition: all .5s;
   text-shadow: 5px 5px 10px black;
 }
@@ -362,6 +280,7 @@ a:hover {
   background: url(../../public/assets/img/back/bg_feedback.png) no-repeat center bottom;
   background-size: cover;
   position: relative;
+  color: #000;
 }
 .mail-form__help {
   background-color: #959595;
@@ -369,9 +288,10 @@ a:hover {
   width: 100px;
 }
 .mail-form__help img{
-  max-width: 70%;
-  max-height: 70%;
-  object-fit: contain;
+  max-width: 60%;
+  max-height: 60%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .mail-form .form-control{
   height: auto;
@@ -381,6 +301,73 @@ a:hover {
 .mail-btn .btn:hover{
   background-color: #fd3f10;
 }
-
-
-
+.modal-product .close{
+  position: absolute;
+  right: -3rem;
+  top: 0;
+  color: #fff;
+  z-index: 11;
+}
+.modal-product .modal-body .close:hover{
+  color: #fff;
+}
+.product-prise__old{
+  position: relative;
+}
+.product-prise__old:before {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #ff4545;
+  transform: rotate(170deg);
+  bottom: 43%;
+}
+.btn_modal{
+  border-radius: 0;
+  border: none;
+  background-color: #545454;
+  color: #FF8969;
+  font-size: 2rem;
+}
+.modal-product__textLeft{
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translate(0,-50%);
+}
+.btn_modal{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media(max-width: 1200px){
+  .section-catalog .catalog__title{
+    font-size: 5rem;
+  }
+}
+@media(max-width: 992px){
+  .modal-product__textLeft{
+    position: static;
+    top: auto;
+    right: auto;
+    transform: translate(0,0);
+  }
+  .section-catalog .catalog__title:before, .section-catalog .catalog__title:after{
+    display: none;
+  }
+  .section-catalog .catalog__title{
+    font-size: 3rem;
+  }
+  .btn_modal{
+    position: static;
+    bottom: auto;
+    right: auto;
+  }
+  .modal-product .close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: #fff;
+  }
+}

@@ -1,6 +1,5 @@
 $(function () {
 
-
     $("form").submit(function (event) {
         event.preventDefault();
 
@@ -54,7 +53,6 @@ $(function () {
         return false
     });
 
-
     $('.owl-catalog').owlCarousel({
         responsive : {
             0 : {
@@ -72,37 +70,30 @@ $(function () {
         dots: false
     })
 
-// $("a.smoothscroll").click(function(a) {
-//     "" !== this.hash && (a.preventDefault(), a = this.hash, $("html, body").animate({
-//         scrollTop: $(a).offset().top
-//     }, 400))
-// });
-
- // links hightLight after scroll page
-//   $.fn.nav = function (item) {
-//     var point = {
-//       offset: 0
-//     };
-//     $.extend(point, item);
-//     var links = this;
-//     $(links).each(function (a, index) {
-//       var link = $(index.hash);
-//       var place = $(link).offset();
-//       $(window).scroll(function () {
-//         var newPoint = $(window).scrollTop() + point.offset;
-//         place.top < newPoint && newPoint < place.top + $(link).height() && ($(links).removeClass("active"), $(index).addClass("active"))
-//       })
-//     })
-//   };
-//   $(".js-nav-scroll").nav({
-//     offset: 150
-//   });
-// });
+    $("a.smoothscroll").click(function(a) {
+        "" !== this.hash && (a.preventDefault(), a = this.hash, $("html, body").animate({
+            scrollTop: $(a).offset().top
+        }, 400))
+    });
 
 });
 document.addEventListener("DOMContentLoaded", function () {
 
-
+(function () {
+    var phone = document.getElementById('mail__tel');
+    var email = document.getElementById('mail__email');
+    phone.addEventListener("input", validation, false);
+    email.addEventListener("input", validation, false);
+    function validation() {
+        if ((!phone.value) && (!email.value)) {
+            phone.setCustomValidity ('Введите хотя бы один контакт');
+        }
+        else {
+            phone.setCustomValidity ('');
+        }
+    }
+    validation()
+})();
 
 });
 
