@@ -12,6 +12,10 @@ ul{
 li{
   list-style-type: none;
 }
+.btn{
+  white-space: normal;
+  line-height: 1;
+}
 /* Fix bootstrap */
 @media (min-width: 1600px) {
   .container {
@@ -21,10 +25,6 @@ li{
 .modal-xl {
   max-width: 1140px;
 }
-.carousel-control-prev,
-.carousel-control-next{
-  text-shadow: 2px 2px 2px black;
-}
 /* Reset */
 a {
   color: #000;
@@ -32,6 +32,12 @@ a {
 a:hover {
   color: #000;
   text-decoration: none;
+}
+.border-radius-10{
+  border-radius: 10px;
+}
+.b_shadow{
+  box-shadow: 3px 8px 15px rgba(51, 51, 51, 0.6);
 }
 .text-size-5{
   font-size: 1.2em;
@@ -196,7 +202,7 @@ a:hover {
 .nav-nav__item:hover{
   color: #383838;
   z-index: 11;
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 .nav-phone a{
   color: #fff;
@@ -215,7 +221,7 @@ a:hover {
   .nav-nav__item{
     font-size: 1rem;
     padding: 0rem 0.5rem;
-    margin: 0.25rem 0;
+    margin: 0.25rem auto;
   }
 }
 
@@ -281,8 +287,8 @@ a:hover {
   }
 }
 .animated-form{
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-name: form;
@@ -348,38 +354,19 @@ a:hover {
 }
 .section-delivery:before{
   left: 0;
-  background: url(../../public/assets/img/icon/delivery.png) no-repeat center center;
+  background: url(../../public/assets/img/icon/drive.png) no-repeat center center;
+  background-size: auto 80%;
 }
 .section-delivery:after{
   right: 0;
-  background: url(../../public/assets/img/icon/delivery1.png) no-repeat right bottom;
+  background: url(../../public/assets/img/icon/delivery.png) no-repeat right bottom;
+  background-size: contain;
 }
 @media(max-width: 992px){
   .section-delivery:after,
   .section-delivery:before{
     display: none;
   }
-}
-
-/* section-advantages */
-.advantages-item__img{
-  background-color: #00A250;
-  border: 1px solid #00A250;
-  padding: 1.25rem 2rem;
-  border-radius: 50%;
-  margin-right: 2rem;
-  position: relative;
-  max-width: 150px;
-  width: 100%;
-  min-height: 100px;
-  box-shadow: 0 12px 14px #00A250, 0 -12px 14px #00A250;
-  display: flex;
-  align-self: center;
-}
-.advantages-item__img img{
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 100%;
 }
 
 /* section-calculator */
@@ -516,12 +503,12 @@ a:hover {
   height: 70px;
   display: block;
   position: absolute;
-  top: calc(90% - 35px);
-  right: -30px;
+  top: calc(80% - 35px);
+  right: -25px;
   background: url(../../public/assets/img/icon/sale.png) no-repeat center center;
   background-size: contain;
+  transform: rotate(-45deg);
 }
-
 /* section-equipment */
 .section-equipment{
   position: relative;
@@ -540,6 +527,12 @@ a:hover {
 .section-bank{
   background-color: #FFCF00;
   color: #FFf;
+}
+.bank-img{
+  position: absolute;
+  transform: rotate(-45deg);
+  top: -40%;
+  left: 35%;
 }
 
 /* section-consultation */
@@ -585,4 +578,42 @@ a:hover {
 .footer-icon{
   max-width: 30px;
   margin-right: 0.5rem;
+}
+.footer-logo{
+  max-width: 50%;
+}
+
+/* modal */
+.questionBank__border-bottom,
+.complectation__border-bottom{
+  border-bottom: 3px solid #fff;
+}
+.questionBank__border-right,
+.complectation__border-right{
+  border-right: 3px solid #fff;
+}
+.question-bank__img{
+  max-height: 100px;
+}
+.modal-question-bank .close,
+.modal-complectation .close {
+  position: absolute;
+  right: -3rem;
+  font-size: 2rem;
+  top: 0;
+  color: #fff;
+  z-index: 11;
+}
+.modal-question-bank .modal-body .close:hover,
+.modal-complectation .modal-body .close:hover {
+  color: #fff;
+}
+@media(max-width: 992px){
+  .modal-question-bank .close,
+  .modal-complectation .close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: #fff;
+  }
 }

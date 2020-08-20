@@ -53,11 +53,20 @@ $(function () {
         return false
     });
 
-$("a.smoothscroll").click(function(a) {
-    "" !== this.hash && (a.preventDefault(), a = this.hash, $("html, body").animate({
-        scrollTop: $(a).offset().top
-    }, 400))
-});
+    $("a.smoothscroll").click(function(a) {
+        "" !== this.hash && (a.preventDefault(), a = this.hash, $("html, body").animate({
+            scrollTop: $(a).offset().top
+        }, 400))
+    });
+
+    var owl = $(".owl-carousel-catalog").owlCarousel({
+        items: 1,
+        nav: true,
+        loop: true,
+        dots: true,
+        autoHeight:true,
+        navText: ['<i class="fa fa-2x fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-2x fa-angle-right" aria-hidden="true"></i>'],
+    });
 
 });
 document.addEventListener("DOMContentLoaded", function () {
