@@ -195,9 +195,10 @@ a:hover {
   border-radius: 10px;
   box-shadow: 5px 5px 5px #333;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   padding: 0.25rem 0.5rem;
   transition: all 0.5s;
+  margin: 0.25rem auto;
 }
 .nav-nav__item:hover{
   color: #383838;
@@ -219,9 +220,8 @@ a:hover {
 }
 @media(max-width: 768px){
   .nav-nav__item{
-    font-size: 1rem;
+    /* font-size: 1.2rem; */
     padding: 0rem 0.5rem;
-    margin: 0.25rem auto;
   }
 }
 

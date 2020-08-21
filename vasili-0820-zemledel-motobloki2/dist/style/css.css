@@ -2,6 +2,7 @@
 
 body {
   font-family: Roboto, serif;
+  /* font-family: cursive; */
 }
 textarea{
   resize: none;
@@ -12,7 +13,9 @@ ul{
 li{
   list-style-type: none;
 }
-
+.catalog__price{
+  display: inline-block;
+}
 /* Fix bootstrap */
 @media (min-width: 1600px) {
   .container {
@@ -33,6 +36,12 @@ a {
 a:hover {
   color: #000;
   text-decoration: none;
+}
+.text-size-5{
+  font-size: 1.2em;
+}
+.text-size-6{
+  font-size: 1.4em;
 }
 .text-size-7{
   font-size: 1.7em;
@@ -100,7 +109,6 @@ a:hover {
   }
 }
 .logo__text{
-  /* font-family: cursive; */
   line-height: 1;
   color: #fff;
 }
@@ -113,6 +121,7 @@ a:hover {
 .nav-nav__job{
   position: relative;
   padding-left: 2rem;
+  margin: 0;
 }
 .nav-nav__job:before{
   content: '';
@@ -121,8 +130,12 @@ a:hover {
   top: calc(50% - 10px);
   height: 20px;
   width: 20px;
-  background-color: #6DF7BB;
+  background-color: #fff;
   border-radius: 50%;
+}
+.nav-info{
+  background-color: #F09552;
+  border-radius: 1rem;
 }
 
 /* section-main */
@@ -175,31 +188,34 @@ a:hover {
   background-color: #8783BF;
 }
 .section-catalog .catalog__title{
-  padding: 3rem 0;
+  padding: 2rem 0;
   text-shadow: 0 0 80px #ccc;
-  font-size: 8rem;
+  font-size: 4rem;
   font-weight: 800;
+  background-color: #000;
+  position: relative;
 }
 .section-catalog .catalog__title:before,
 .section-catalog .catalog__title:after{
   content: '';
   position: absolute;
-  top: 0;
-  height: 18rem;
-  width: 18rem;
+  top: 1rem;
+  height: 8rem;
+  width: 8rem;
 }
 .section-catalog .catalog__title:before{
-  left: 0;
+  left: 2rem;
   background: url(../../public/assets/img/icon/kileso.png) no-repeat left center;
   background-size: contain;
   -webkit-animation: rotating 5s infinite linear;
           animation: rotating 5s infinite linear;
 }
 .section-catalog .catalog__title:after{
-  right: 0;
+  right: 2rem;
   background: url(../../public/assets/img/icon/kileso.png) no-repeat right center;
   background-size: contain;
-  animation: rotating 5s infinite linear reverse;
+  -webkit-animation: rotating 5s infinite linear reverse;
+          animation: rotating 5s infinite linear reverse;
 }
 .animat__rotate{
   animation: rotating 5s infinite linear reverse;
@@ -212,19 +228,57 @@ a:hover {
   0%   { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-.catalog-item__btn{
-  color: #FF653D;
-  background-color: #000;
-  border-radius: 50%;
-}
-.catalog-item__btn:hover{
-  color: #FF653D;
-}
+
 .catalog-item{
-  min-width: 60%;
-  display: inline-block;
   box-shadow: 10px 10px 20px 10px #444;
 }
+
+.catalog-item__title{
+  background-color: #F0C89C;
+  border-radius: 10px;
+  display: inline-block;
+  transform: translate(-50%,-70%);
+  left: 50%;
+  position: absolute;
+  border: 1px solid #343A40;
+  color: #000;
+}
+.catalog_img{
+  max-width: 150px;
+}
+
+
+
+
+
+.castom_input .c__input input {
+  display: none;
+}
+.castom_input .c__input label {
+  padding: 0.2rem 1rem;
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.6em;
+  border-radius: 8px;
+  color: #000;
+  background: #F2F5F8;
+  cursor: pointer;
+  margin: 0.5rem 1rem;
+
+}
+.castom_input .c__input input:checked + label {
+  color: #000;
+  background: #BD8CC0;
+}
+.castom_input .c__input label:hover {
+  background: #d1dce6;
+}
+
+
+
+
+
 
 /* section-dop */
 .section-dop{
@@ -334,20 +388,14 @@ a:hover {
   transform: rotate(170deg);
   bottom: 43%;
 }
-.btn_modal{
+.btn_catalog{
   border-radius: 0;
   border: none;
   background-color: #545454;
   color: #FF8969;
   font-size: 2rem;
 }
-.modal-product__textLeft{
-  position: absolute;
-  top: 50%;
-  right: 0.5rem;
-  transform: translate(0,-50%);
-}
-.btn_modal{
+.btn_catalog{
   position: absolute;
   bottom: 0;
   right: 0;
@@ -358,19 +406,13 @@ a:hover {
   }
 }
 @media(max-width: 992px){
-  .modal-product__textLeft{
-    position: static;
-    top: auto;
-    right: auto;
-    transform: translate(0,0);
-  }
   .section-catalog .catalog__title:before, .section-catalog .catalog__title:after{
     display: none;
   }
   .section-catalog .catalog__title{
     font-size: 3rem;
   }
-  .btn_modal{
+  .btn_catalog{
     position: static;
     bottom: auto;
     right: auto;
