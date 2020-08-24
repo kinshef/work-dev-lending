@@ -509,6 +509,16 @@ a:hover {
   background-size: contain;
   transform: rotate(-45deg);
 }
+.catalog_formBtn{
+  transition: all 0.4s;
+  border-radius: 10px;
+}
+.catalog_formBtn:hover{
+  color: #383838;
+  z-index: 11;
+  transform: scale(1.2);
+}
+
 /* section-equipment */
 .section-equipment{
   position: relative;

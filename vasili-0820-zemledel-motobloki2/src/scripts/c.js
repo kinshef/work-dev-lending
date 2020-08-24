@@ -4,19 +4,18 @@ $(document).ready(function() {
         var form = this;
         var product = $("input[name='product']", form).val();
         var option = $("input[name='option']:checked", form).val();
-        var sum = 0;
-        
-        sum += calculatorData.product[product][option][0];
+
 
         var animateBlock = $('.catalog__price', form);
-
-        var animationName = 'rubberBand';
+        var animationName = 'flash';
         animateBlock.addClass('animated faster ' + animationName);
         animateBlock.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
             animateBlock.removeClass('animated faster ' + animationName)
         });
 
 
+        var sum = 0;
+        sum += calculatorData.product[product][option][0];
         var out = $('.jPrice', form);
         var outOld = $('.jPriceOld', form);
         var animateFrom = out.data("animateFrom") > 0 ? out.data("animateFrom") : 0;
@@ -52,21 +51,23 @@ $(document).ready(function() {
         });
 
 
+        var sumTankVolume = calculatorData.product[product][option][3];
+        var tankVolume = $('.jTankVolume', form);
+        var animateFromTankVolume = tankVolume.data("animateFromTankVolume") > 0 ? tankVolume.data("animateFromTankVolume") : 0;
+        $({ animateNumber: animateFromTankVolume }).animate({ animateNumber: sumTankVolume }, {
+            duration: 800,
+            step: function (animateNumber){
+                tankVolume.text(Number(animateNumber).toFixed());
+            },
+            complete: function() {
+                tankVolume.data("animateFromTankVolume", Number(sumTankVolume).toFixed());
+            }
+        });
 
 
-
-        // var sumShina = calculatorData.product[product][power][1];
-        // var tankVolume = $('.jShina', form);
-        // var animateFromShina = tankVolume.data("animateFromShina") > 0 ? tankVolume.data("animateFromShina") : 0;
-        // $({ animateNumber: animateFromShina }).animate({ animateNumber: sumShina }, {
-        //     duration: 800,
-        //     step: function (animateNumber){
-        //         tankVolume.text(Number(animateNumber).toFixed());
-        //     },
-        //     complete: function() {
-        //         tankVolume.data("animateFromShina", Number(sumShina).toFixed());
-        //     }
-        // });
+        if(calculatorData.product[product][option][4] !== $('.jPrivod', form).text()){
+            $('.jPrivod', form).text(calculatorData.product[product][option][4])
+        };
 
 
         calculatorData.product[product][option][5].forEach(function(item, index){
@@ -86,51 +87,96 @@ $(document).ready(function() {
         })
 
 
+
+        var sumRaskhod = calculatorData.product[product][option][6];
+        var raskhod = $('.jRaskhod', form);
+        var animateFromRaskhod = raskhod.data("animateFromRaskhod") > 0 ? raskhod.data("animateFromRaskhod") : 0;
+        $({ animateNumber: animateFromRaskhod }).animate({ animateNumber: sumRaskhod }, {
+            duration: 800,
+            step: function (animateNumber){
+                raskhod.text(Number(animateNumber).toFixed(1));
+            },
+            complete: function() {
+                raskhod.data("animateFromRaskhod", Number(sumRaskhod).toFixed(1));
+            }
+        });
+
+
+        calculatorData.product[product][option][7].forEach(function(item, index){
+            var sumShirinaObr = item;
+            var shirinaObr = $('.jShirinaObr'+index, form);
+            var animateFromShirinaObr = shirinaObr.data("animateFromShirinaObr") > 0 ? shirinaObr.data("animateFromShirinaObr") : 0;
+
+            $({ animateNumber: animateFromShirinaObr }).animate({ animateNumber: sumShirinaObr }, {
+                duration: 800,
+                step: function (animateNumber){
+                    shirinaObr.text(Number(animateNumber).toFixed());
+                },
+                complete: function() {
+                    shirinaObr.data("animateFromShirinaObr", Number(sumShirinaObr).toFixed());
+                }
+            });
+        })
+
+
+        calculatorData.product[product][option][8].forEach(function(item, index){
+            var sumGlubinaObr = item;
+            var glubinaObr = $('.jGlubinaObr'+index, form);
+            var animateFromGlubinaObr = glubinaObr.data("animateFromGlubinaObr") > 0 ? glubinaObr.data("animateFromGlubinaObr") : 0;
+
+            $({ animateNumber: animateFromGlubinaObr }).animate({ animateNumber: sumGlubinaObr }, {
+                duration: 800,
+                step: function (animateNumber){
+                    glubinaObr.text(Number(animateNumber).toFixed());
+                },
+                complete: function() {
+                    glubinaObr.data("animateFromGlubinaObr", Number(sumGlubinaObr).toFixed());
+                }
+            });
+        })
+
+
+        calculatorData.product[product][option][9].forEach(function(item, index){
+            var sumRazmKoles = item;
+            var razmKoles = $('.jRazmKoles'+index, form);
+            var animateFromRazmKoles = razmKoles.data("animateFromRazmKoles") > 0 ? razmKoles.data("animateFromRazmKoles") : 0;
+
+            $({ animateNumber: animateFromRazmKoles }).animate({ animateNumber: sumRazmKoles }, {
+                duration: 800,
+                step: function (animateNumber){
+                    razmKoles.text(Number(animateNumber).toFixed());
+                },
+                complete: function() {
+                    razmKoles.data("animateFromRazmKoles", Number(sumRazmKoles).toFixed());
+                }
+            });
+        })
+
+
         var equipment = calculatorData.product[product][option][10];
         if(equipment !== $('.jEquipment', form).text()){
             $('.jEquipment', form).text(equipment.join(', '))
         };
 
 
+        var sumVes = calculatorData.product[product][option][11];
+        var ves = $('.jVes', form);
+        var animateFromVes = ves.data("animateFromVes") > 0 ? ves.data("animateFromVes") : 0;
+        $({ animateNumber: animateFromVes }).animate({ animateNumber: sumVes }, {
+            duration: 800,
+            step: function (animateNumber){
+                ves.text(Number(animateNumber).toFixed());
+            },
+            complete: function() {
+                ves.data("animateFromVes", Number(sumVes).toFixed());
+            }
+        });
 
-        // var sumShina = calculatorData.product[product][power][1];
-        // var shina = $('.jShina', form);
-        // var animateFromShina = shina.data("animateFromShina") > 0 ? shina.data("animateFromShina") : 0;
-        // $({ animateNumber: animateFromShina }).animate({ animateNumber: sumShina }, {
-        //     duration: 800,
-        //     step: function (animateNumber){
-        //         shina.text(Number(animateNumber).toFixed());
-        //     },
-        //     complete: function() {
-        //         shina.data("animateFromShina", Number(sumShina).toFixed());
-        //     }
-        // });
 
-        // var sumShag = calculatorData.product[product][power][2];
-        // var shag = $('.jShag', form);
-        // var animateFromShag = shag.data("animateFromShag") > 0 ? shag.data("animateFromShag") : 0;
-        // $({ animateNumber: animateFromShag }).animate({ animateNumber: sumShag }, {
-        //     duration: 800,
-        //     step: function (animateNumber){
-        //         shag.text(Number(animateNumber).toFixed(1));
-        //     },
-        //     complete: function() {
-        //         shag.data("animateFromShag", Number(sumShag).toFixed(1));
-        //     }
-        // });
+        if(calculatorData.product[product][option][12] !== $('.jUrmImg', form).attr('src')){
+            $('.jUrmImg', form).attr('src', calculatorData.product[product][option][12]);
+        };
 
-        // var sumWeight = calculatorData.product[product][power][3];
-        // var weight = $('.jWeight', form);
-        // var animateFromWeight = weight.data("animateFromWeight") > 0 ? weight.data("animateFromWeight") : 0;
-        // $({ animateNumber: animateFromWeight }).animate({ animateNumber: sumWeight }, {
-        //     duration: 800,
-        //     step: function (animateNumber){
-        //         weight.text(Number(animateNumber).toFixed(1));
-        //     },
-        //     complete: function() {
-        //         weight.data("animateFromWeight", Number(sumWeight).toFixed(1));
-        //     }
-        // });
 
   });
   $("form.has-calculator").change();

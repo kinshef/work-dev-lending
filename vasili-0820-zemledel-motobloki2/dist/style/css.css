@@ -228,29 +228,26 @@ a:hover {
   0%   { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
 .catalog-item{
   box-shadow: 10px 10px 20px 10px #444;
 }
-
 .catalog-item__title{
   background-color: #F0C89C;
   border-radius: 10px;
   display: inline-block;
-  transform: translate(-50%,-70%);
-  left: 50%;
-  position: absolute;
   border: 1px solid #343A40;
   color: #000;
+  z-index: 1;
+
+  transform: translate(0,30%);
+  position: relative;
 }
 .catalog_img{
   max-width: 150px;
+  position: absolute;
+  right: 1rem;
+  top: calc(50% - 75px);
 }
-
-
-
-
-
 .castom_input .c__input input {
   display: none;
 }
@@ -274,11 +271,6 @@ a:hover {
 .castom_input .c__input label:hover {
   background: #d1dce6;
 }
-
-
-
-
-
 
 /* section-dop */
 .section-dop{

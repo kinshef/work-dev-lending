@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#4285f4">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+        integrity="sha256-HtCCUh9Hkh//8U1OwcbD8epVEUdBvuI8wj1KtqMhNkI=" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./dist/style/css.css">
+    <link rel="icon" type="image/ico" href="./public/assets/img/favicon.ico">
+    <title>Мотоблоки Shtenli</title>
+</head>
+
+<body>
+
+    <section id="section-nav" class="bg-light shadow">
+        <div class="container d-flex justify-content-around align-items-center">
+            <div class="d-none d-sm-block">
+                <img src="./public/assets/img/icon/agroidealogo5.png" class="img-fluid">
+            </div>
+            <div>
+                <a href="tel:+375293279111" class="nav__link d-none d-lg-inline-block c__fw--bold"><img
+                        src="./public/assets/img/icon/logo_velcom_64.jpg" width="16"> (29) 327-91-11</a>
+                <a href="tel:+375333571911" class="nav__link d-none d-lg-inline-block c__fw--bold"><img
+                        src="./public/assets/img/icon/logo_mts_64.jpg" width="16"> (33) 357-19-11</a>
+                <a href="#modal-order" data-toggle="modal" class="nav__link"><i class="fa fa-phone"></i> <span
+                        class="nav__link--dashed text-reset">Заказать звонок</span></a>
+            </div>
+            <div class="d-none d-xl-block">
+                <i class="fa fa-truck"></i> <span>Бесплатная доставка по всей Беларуси</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-main" class="c__section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="main__title text-black">Мотоблоки и культиваторы <br> Shtenli </p>
+                    <p class="main__subtitle text-red">Гарантия качества!<br></p>
+                    <p>
+                        <a href="#section-catalog-shtenli"
+                            class="c__btn c__btn--success btn-lg smoothscroll">Каталог</a>
+                    </p>
+                    <p class="mt-5">
+                        <img src="./public/assets/img/icon/hit-1.png" class="img-fluid mx-3">
+                        <img src="./public/assets/img/icon/hit-2.png" class="img-fluid mx-3">
+                        <img src="./public/assets/img/icon/hit-3.png" class="img-fluid mx-3">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-media" class="c__section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 mt-5">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EaVTRpEfYvA"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-7 description">
+                    <p class="h2 font-weight-bold text-center">Преимущества мотоблоков Shtenli</p>
+                    <div class="mx-3 font-weight-bold mt-2">
+                        <img src="./public/assets/img/media/dvigatel.jpg" class="img-fluid mr-3"> Высокоэфективный,
+                        надёжный двигатель с высоким моторесурсом
+                    </div>
+                    <div class="mx-3 font-weight-bold mt-2">
+                        <img src="./public/assets/img/media/diferencial.jpg" class="img-fluid mr-3"> Дифференциал для
+                        более высокой манёвренности
+                    </div>
+                    <div class="mx-3 font-weight-bold mt-2">
+                        <img src="./public/assets/img/media/ruchnoy-starter.jpg" class="img-fluid mr-3"> Система лёгкого
+                        запуска для более плавного старта
+                    </div>
+                    <div class="mx-3 font-weight-bold mt-2">
+                        <img src="./public/assets/img/media/poniz.jpg" class="img-fluid mr-3"> Пониженная передача для
+                        более комфортной работы
+                    </div>
+                    <div class="mx-3 font-weight-bold mt-2">
+                        <img src="./public/assets/img/media/rul.jpg" class="img-fluid mr-3"> Регулировка рукояток по
+                        высоте удобна для эксплуатации и транспортировки
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header class="header_calc">
+        <div class="header__title">Каталог</div>
+    </header>
+
+
+
+    <section id="section-catalog" class="section-catalog c__section fone_arsenal">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="h3 text-success font-weight-bold">Посмотрите, какие теплицы имеются в наличии</div>
+                </div>
+
+                <div class="col-md-4 my-2 px-2">
+                    <div class="bg-white px-3 border border-radius-15 shadow">
+                        <div class="row">
+                            <div class="col-12 p-0">
+                                <img src="./public/assets/img/catalog/catalog1.png" class="img-fluid w-100">
+                            </div>
+                            <div class="col-12 px-5">
+                                <div class="h3 text-center">«Стандарт»</div>
+                                <div class="mb-4">Надежная и недорогая теплица. Изготовлена из высококачественной оцинкованной трубы. Отличная защита от ржавчины</div>
+                                <div class="mb-3 h5">
+                                    <span class="text-muted">Ширина: </span><span>2.5 или 3 м.</span><br>
+                                    <span class="text-muted">Высота: </span><span>2.1 м.</span><br>
+                                    <span class="text-muted">Расстояние между дугами: </span><span>1 метр</span><br>
+                                    <span class="text-muted">Дуга: </span><span>Одинарная, цельная</span><br>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="h3">Цена на акции: <span class="h2">14 990</span> руб.</div>
+                                </div>
+                            </div>
+                            <div class="col-6 text-center">
+                                <a href="#modal-order" data-toggle="modal" class="my-3 btn btn-danger text-uppercase">ЗАКАЗАТЬ звонок</a>
+                            </div>
+                            <div class="col-6 text-center">
+                                <a href="#modal-order" data-toggle="modal" class="my-3 btn btn-danger text-uppercase">ЗАКАЗАТЬ звонок</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <header class="header_calc">
+        <div class="header__title">Калькулятор</div>
+    </header>
+
+    <section id="section-calculator" class="section_p">
+        <div class="container">
+            <form class="has-calculator">
+                <input name="form" value="Калькулятор" type="hidden">
+                <input name="price" class="js-input-order-price" type="hidden">
+                <div class="calculator">
+                    <div class="row">
+                        <div class="col">
+                            <div class="calculator__title">
+                                Калькулятор мотоблоков
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-lg-6">
+                            <div class="row row-individual">
+                                <div class="col">
+                                    <div class="calculator__block">
+                                        <div class="calculator__block__title d-flex">
+                                            <div class="d-flex align-items-center">Выберите Ваш мотоблок</div>
+                                        </div>
+                                        <hr>
+                                        <div class="pl-2 calculator__brand_shtenli">
+                                            <div class="row">
+
+                                                <div class="col-lg-4 col-6 text-center">
+                                                    <label class="c__input-img">
+                                                        <input name="product" value="Shtenli1000" type="radio"
+                                                            class="c__input-img__input" checked>
+                                                        <span class="c__input-img__content">
+                                                            <span class="c__input-img__overlay">
+                                                                <i class="fa fa-check fa-3x"></i>
+                                                            </span>
+                                                            <img src="./public/assets/img/kalculator/k-sh1000.jpg"
+                                                                class="img-fluid">
+                                                        </span>
+                                                        <span class="c__input-img__title">1000</span>
+                                                    </label>
+                                                </div>
+
+                                                <div class="col-lg-4 col-6 text-center">
+                                                    <label class="c__input-img">
+                                                        <input name="product" value="Shtenli7000" type="radio"
+                                                            class="c__input-img__input" checked>
+                                                        <span class="c__input-img__content">
+                                                            <span class="c__input-img__overlay">
+                                                                <i class="fa fa-check fa-3x"></i>
+                                                            </span>
+                                                            <img src="./public/assets/img/kalculator/k-sh7000.jpg"
+                                                                class="img-fluid">
+                                                        </span>
+                                                        <span class="c__input-img__title">7000</span>
+                                                    </label>
+                                                </div>
+
+                                                <div class="col-lg-4 col-6 text-center">
+                                                    <label class="c__input-img">
+                                                        <input name="product" value="Shtenli8000" type="radio"
+                                                            class="c__input-img__input">
+                                                        <span class="c__input-img__content">
+                                                            <span class="c__input-img__overlay">
+                                                                <i class="fa fa-check fa-3x"></i>
+                                                            </span>
+                                                            <img src="./public/assets/img/kalculator/k-sh8000.jpg"
+                                                                class="img-fluid">
+                                                        </span>
+                                                        <span class="c__input-img__title">8000</span>
+                                                    </label>
+                                                </div>
+
+                                                <div class="col-lg-4 col-6 text-center">
+                                                    <label class="c__input-img">
+                                                        <input name="product" value="Shtenli500" type="radio"
+                                                            class="c__input-img__input">
+                                                        <span class="c__input-img__content">
+                                                            <span class="c__input-img__overlay">
+                                                                <i class="fa fa-check fa-3x"></i>
+                                                            </span>
+                                                            <img src="./public/assets/img/kalculator/k-sh500.jpg"
+                                                                class="img-fluid">
+                                                        </span>
+                                                        <span class="c__input-img__title">500</span>
+                                                    </label>
+                                                </div>
+
+                                                <div class="col-lg-4 col-6 text-center">
+                                                    <label class="c__input-img">
+                                                        <input name="product" value="Shtenli900" type="radio"
+                                                            class="c__input-img__input">
+                                                        <span class="c__input-img__content">
+                                                            <span class="c__input-img__overlay">
+                                                                <i class="fa fa-check fa-3x"></i>
+                                                            </span>
+                                                            <img src="./public/assets/img/kalculator/k-sh900.jpg"
+                                                                class="img-fluid">
+                                                        </span>
+                                                        <span class="c__input-img__title">900</span>
+                                                    </label>
+                                                </div>
+
+                                                <div class="col-lg-4 col-6 text-center">
+                                                    <label class="c__input-img">
+                                                        <input name="product" value="Shtenli1030" type="radio"
+                                                            class="c__input-img__input">
+                                                        <span class="c__input-img__content">
+                                                            <span class="c__input-img__overlay">
+                                                                <i class="fa fa-check fa-3x"></i>
+                                                            </span>
+                                                            <img src="./public/assets/img/kalculator/k-sh1030.jpg"
+                                                                class="img-fluid">
+                                                        </span>
+                                                        <span class="c__input-img__title">1030</span>
+                                                    </label>
+                                                </div>
+
+                                                <div class="col-lg-4 col-6 text-center">
+                                                    <label class="c__input-img">
+                                                        <input name="product" value="Shtenli1900(14)" type="radio"
+                                                            class="c__input-img__input">
+                                                        <span class="c__input-img__content">
+                                                            <span class="c__input-img__overlay">
+                                                                <i class="fa fa-check fa-3x"></i>
+                                                            </span>
+                                                            <img src="./public/assets/img/kalculator/k-sh1900.jpg"
+                                                                class="img-fluid">
+                                                        </span>
+                                                        <span class="c__input-img__title">1900(14)</span>
+                                                    </label>
+                                                </div>
+
+                                                <div class="col-lg-4 col-6 text-center">
+                                                    <label class="c__input-img">
+                                                        <input name="product" value="Shtenli1900(16)" type="radio"
+                                                            class="c__input-img__input">
+                                                        <span class="c__input-img__content">
+                                                            <span class="c__input-img__overlay">
+                                                                <i class="fa fa-check fa-3x"></i>
+                                                            </span>
+                                                            <img src="./public/assets/img/kalculator/k-sh1900.jpg"
+                                                                class="img-fluid">
+                                                        </span>
+                                                        <span class="c__input-img__title">1900(16)</span>
+                                                    </label>
+                                                </div>
+
+                                                <div class="col-lg-4 col-6 text-center">
+                                                    <label class="c__input-img">
+                                                        <input name="product" value="Shtenli1900(18)" type="radio"
+                                                            class="c__input-img__input">
+                                                        <span class="c__input-img__content">
+                                                            <span class="c__input-img__overlay">
+                                                                <i class="fa fa-check fa-3x"></i>
+                                                            </span>
+                                                            <img src="./public/assets/img/kalculator/k-sh1900.jpg"
+                                                                class="img-fluid">
+                                                        </span>
+                                                        <span class="c__input-img__title">1900(18)</span>
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col">
+                                    <div class="calculator__block">
+                                        <div class="calculator__block__title d-flex">
+                                            <div class="d-flex align-items-center">Выберите навесное оборудование</div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+
+                                            <div class="col-lg-4 col-6 text-center">
+                                                <label class="c__input-img">
+                                                    <input name="additional[]" value="Плуг" type="checkbox"
+                                                        class="c__input-img__input">
+                                                    <span class="c__input-img__content">
+                                                        <span class="c__input-img__overlay">
+                                                            <i class="fa fa-check fa-3x"></i>
+                                                        </span>
+                                                        <img src="./public/assets/img/kalculator/k-plugb.jpg"
+                                                            class="img-fluid">
+                                                    </span>
+                                                    <span class="c__input-img__title">Плуг</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="col-lg-4 col-6 text-center">
+                                                <label class="c__input-img">
+                                                    <input name="additional[]" value="Окучник" type="checkbox"
+                                                        class="c__input-img__input">
+                                                    <span class="c__input-img__content">
+                                                        <span class="c__input-img__overlay">
+                                                            <i class="fa fa-check fa-3x"></i>
+                                                        </span>
+                                                        <img src="./public/assets/img/kalculator/k-okuch1.jpg"
+                                                            class="img-fluid">
+                                                    </span>
+                                                    <span class="c__input-img__title">Окучник</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="col-lg-4 col-6 text-center">
+                                                <label class="c__input-img">
+                                                    <input name="additional[]" value="Окучник двурядный" type="checkbox"
+                                                        class="c__input-img__input">
+                                                    <span class="c__input-img__content">
+                                                        <span class="c__input-img__overlay">
+                                                            <i class="fa fa-check fa-3x"></i>
+                                                        </span>
+                                                        <img src="./public/assets/img/kalculator/k-okuch2.jpg"
+                                                            class="img-fluid">
+                                                    </span>
+                                                    <span class="c__input-img__title">Окучник двурядный</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="col-lg-4 col-6 text-center">
+                                                <label class="c__input-img">
+                                                    <input name="additional[]" value="Картофелекопалка" type="checkbox"
+                                                        class="c__input-img__input">
+                                                    <span class="c__input-img__content">
+                                                        <span class="c__input-img__overlay">
+                                                            <i class="fa fa-check fa-3x"></i>
+                                                        </span>
+                                                        <img src="./public/assets/img/kalculator/k-kapal.jpg"
+                                                            class="img-fluid">
+                                                    </span>
+                                                    <span class="c__input-img__title">Картофеле-копалка</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="col-lg-4 col-6 text-center">
+                                                <label class="c__input-img">
+                                                    <input name="additional[]" value="Картофелесажалка" type="checkbox"
+                                                        class="c__input-img__input">
+                                                    <span class="c__input-img__content">
+                                                        <span class="c__input-img__overlay">
+                                                            <i class="fa fa-check fa-3x"></i>
+                                                        </span>
+                                                        <img src="./public/assets/img/kalculator/k-kartof.jpg"
+                                                            class="img-fluid">
+                                                    </span>
+                                                    <span class="c__input-img__title">Картофеле-сажалка</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="col-lg-4 col-6 text-center">
+                                                <label class="c__input-img">
+                                                    <input name="additional[]" value="Адаптер" type="checkbox"
+                                                        class="c__input-img__input">
+                                                    <span class="c__input-img__content">
+                                                        <span class="c__input-img__overlay">
+                                                            <i class="fa fa-check fa-3x"></i>
+                                                        </span>
+                                                        <img src="./public/assets/img/kalculator/k-adapter.jpg"
+                                                            class="img-fluid">
+                                                    </span>
+                                                    <span class="c__input-img__title">Адаптер</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="col-lg-4 col-6 text-center">
+                                                <label class="c__input-img">
+                                                    <input name="additional[]" value="Прицеп МП-480" type="checkbox"
+                                                        class="c__input-img__input">
+                                                    <span class="c__input-img__content">
+                                                        <span class="c__input-img__overlay">
+                                                            <i class="fa fa-check fa-3x"></i>
+                                                        </span>
+                                                        <img src="./public/assets/img/kalculator/k-pricep.jpg"
+                                                            class="img-fluid">
+                                                    </span>
+                                                    <span class="c__input-img__title">Прицеп МП-480</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="col-lg-4 col-6 text-center">
+                                                <label class="c__input-img">
+                                                    <input name="additional[]" value="Прицеп МП-600" type="checkbox"
+                                                        class="c__input-img__input">
+                                                    <span class="c__input-img__content">
+                                                        <span class="c__input-img__overlay">
+                                                            <i class="fa fa-check fa-3x"></i>
+                                                        </span>
+                                                        <img src="./public/assets/img/kalculator/k-pricep.jpg"
+                                                            class="img-fluid">
+                                                    </span>
+                                                    <span class="c__input-img__title">Прицеп МП-600</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="col-lg-4 col-6 text-center">
+                                                <label class="c__input-img">
+                                                    <input name="additional[]" value="Прицеп МП-700" type="checkbox"
+                                                        class="c__input-img__input">
+                                                    <span class="c__input-img__content">
+                                                        <span class="c__input-img__overlay">
+                                                            <i class="fa fa-check fa-3x"></i>
+                                                        </span>
+                                                        <img src="./public/assets/img/kalculator/k-pricep.jpg"
+                                                            class="img-fluid">
+                                                    </span>
+                                                    <span class="c__input-img__title">Прицеп МП-700</span>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="calculator__sticky">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="calculator__block text-center">
+                                            <div class="calculator__price__title tippy" title="test">
+                                                Сумма:
+                                            </div>
+                                            <div class="calculator__price__text">
+                                                <span class="js-price">0</span>
+                                                <small>руб.</small>
+                                            </div>
+                                            <hr>
+                                            <div class="form-group">
+                                                <input name="phone" class="form-control" placeholder="Номер телефона"
+                                                    required="" type="tel">
+                                            </div>
+                                            <button type="submit" class="btn btn-danger btn-block">Заказать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col">
+                                        <div class="calculator__block">
+                                            <table class="table table-sm table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th colspan="3" class="text-center">Вы выбрали:</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="js-calculator-table">
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <header class="container header_reviews">
+        <div class="header__title_reviews">Отзывы наших клиентов</div>
+    </header>
+
+    <section id="section-reviews">
+        <div class="container container-fluid ">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="review">
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <img src="./public/assets/img/reviews/pavel.jpg" alt="avatar" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <p class="h1">Павел</p>
+                                <p class="text-success">г. Витебск</p>
+                            </div>
+                        </div>
+                        <p>Купили мотоблок Shtenli 1900 на 18 лошадиных сил. Земля у нас тяжелая, глинистая, но наш
+                            новый помощник благодаря своей мощности справился легко. Прокультивировали 10 соток под
+                            картошку, земля стала мягкая, без комьев. Потом мы сделали для мотоблока прицеп из
+                            автомобильного прицепа, возим на нём навоз, землю, мусор , картошку и т.п., справляется
+                            легко, а однажды мы погрузились в прицеп всей семьёй (4 взрослых и 2 детей) и отправились в
+                            лес за грибами. Отличный мотоблок всем рекомендую!</p>
+                    </div>
+                    <div class="review">
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <img src="./public/assets/img/reviews/klient-2.jpg" alt="avatar" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <p class="h1">Владимир</p>
+                                <p class="text-success">г. Чаусы</p>
+                            </div>
+                        </div>
+                        <p>Мотоблок понравился. До начала огородного сезона цеплял к нему сначала корыто рыбацкое, так,
+                            ради развлечения, по деревне кататься. Потом сварил прицеп небольшой. Потом пахал целину.
+                            Вообщем доволен полностью.Брал Штенли 1900 на 16 лошадей.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <div class="review">
+                        <div class="row mb-3">
+                            <div class="col-md-4 order-md-2">
+                                <img src="./public/assets/img/reviews/klient-andrey.jpg" alt="avatar" class="img-fluid">
+                            </div>
+                            <div class="col-md-8 order-md-1">
+                                <p class="h1">Игорь С.В.</p>
+                                <p class="text-success">г. Гомель</p>
+                            </div>
+                        </div>
+                        <p>Доволен покупкой мотоблока Shtenli 8.5 л.с. Жена отговаривала, мол, зачем, куда, участок то у
+                            нас небольшой, грядки под картошку и другие корнеплоды, несколько клумб и теплиц. Я настоял
+                            на покупке, потому что одному тяжело все перекопать, потом еще окучивать, все же своими
+                            руками делается. В начале сезона заказал мотоблок с ним работа идет быстрее, и сил трачу
+                            меньше. Могу отметить, что и овощам такой уход нравится, и жена не ворчит уже. </p>
+                    </div>
+                    <div class="review">
+                        <div class="row mb-3">
+                            <div class="col-md-4 order-md-2">
+                                <img src="./public/assets/img/reviews/leonid.jpg" alt="avatar" class="img-fluid">
+                            </div>
+                            <div class="col-md-8 order-md-1">
+                                <p class="h1">Леонид</p>
+                                <p class="text-success">дер. Леньки</p>
+                            </div>
+                        </div>
+                        <p>Shtenli 1030 мотоблок мощный, брал для вспашки изначально, ну а потом пошло поехало, почему
+                            бы нет, мотоблок очень даже не плохо работает, мне нравится, и когда есть возможность и с
+                            плугом и картофлекопалку - надо брать и делать. заводится хорошо, при первой сборке
+                            закрутите болты туго</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-guarantee">
+        <div class="container">
+            <div class="header__title_guarantee">Гарантия качества</div>
+            <div class="row">
+                <div class="col-md-7 description">
+                    <div class="mx-3 font-weight-bold mt-2">
+                        <img src="./public/assets/img/guarantee/servis.jpg" class="img-fluid mr-3"> Официальный
+                        сервисный центр в Беларуси
+                    </div>
+                    <div class="mx-3 font-weight-bold mt-2">
+                        <img src="./public/assets/img/guarantee/cena.jpg" class="img-fluid mr-3"> Цены от официального
+                        поставщика
+                    </div>
+                    <div class="mx-3 font-weight-bold mt-2">
+                        <img src="./public/assets/img/guarantee/posle-servis.jpg" class="img-fluid mr-3">
+                        Послегарантийное обслуживание
+                    </div>
+                    <div class="mx-3 font-weight-bold mt-2">
+                        <img src="./public/assets/img/guarantee/personal.jpg" class="img-fluid mr-3"> Професиональные
+                        консультанты
+                    </div>
+                    <div class="mx-3 font-weight-bold mt-2">
+                        <img src="./public/assets/img/guarantee/naveska.jpg" class="img-fluid mr-3"> Самый большой выбор
+                        навесного оборудования!
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <img src="./public/assets/img/guarantee/garant.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-question">
+        <div class="container">
+            <div class="h1 text-center">Остались вопросы?</div>
+            <div class="row mt-5">
+                <div class="col-md-5 text-center">
+                    <p class="px-5"><img src="./public/assets/img/icon/manager.png" alt="manager" class="img-fluid"></p>
+                    <p class="p-3 bg-dark text-white h2">Менеджер Виталий, ответит на все ваши вопросы.</p>
+                </div>
+                <div class="col-md-7 text-center text-md-left">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <i class="fa fa-phone fa-4x text-warning"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="flex-column justify-content-center align-items-center h3">
+                                <div class="d-flex align-items-center mb-1">
+                                    <img src="./public/assets/img/icon/logo_velcom_64.jpg"
+                                        class="max-width-50 w-100 mr-2">
+                                    <a href="tel:+375293279111" class="--font__bold text-reset">(29) 327-91-11</a>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="./public/assets/img/icon/logo_mts_64.jpg" class="max-width-50 w-100 mr-2">
+                                    <a href="tel:+375333571911" class="--font__bold text-reset">(33) 357-19-11</a>
+                                </div>
+                            </div>
+                            <a href="#modal-order" data-toggle="modal"
+                                class="btn btn-danger btn-lg font-weight-bold mt-3">Заказать
+                                звонок</a>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-2">
+                            <i class="fa fa-clock-o fa-4x text-danger"></i>
+                        </div>
+                        <div class="col-md-10 h5">
+                            <p>Время приема заявок с сайта: <b>24/7</b></p>
+                            <p>Время работы отдела продаж: <b>24/7</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-order">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content bg-warning">
+                <div class="modal-body text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p class="h2">Оставьте ваш номер телефона</p>
+                    <p class="h4">И наш консультант с Вами свяжется</p>
+                    <div class="d-flex justify-content-center align-items-center mb-1 h4">
+                        <img src="./public/assets/img/icon/logo_velcom_64.jpg" alt="velcom"
+                            class="max-width-50 w-100 mr-2" width="16">
+                        <a href="tel:+375293279111" class="text-reset font-weight-bold">(29) 3279111</a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center h4">
+                        <img src="./public/assets/img/icon/logo_mts_64.jpg" alt="mts" class="max-width-50 w-100 mr-2"
+                            width="16">
+                        <a href="tel:+375293571911" class="text-reset font-weight-bold">(33) 3571911</a>
+                    </div>
+                    <hr>
+                    <form>
+                        <input type="hidden" name="form" value="Форма заказа звонка">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-danger btn-lg btn-block">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-leave">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content bg-warning">
+                <div class="modal-body text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p class="h2">ПОДОЖДИТЕ УХОДИТЬ!</p>
+                    <p class="h4">У нас самые низкие цены. Мы уверены! Найдёте дешевле - сделаем ЕЩЁ ДЕШЕВЛЕ!</p>
+                    <hr>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="price" class="form-control" placeholder="Какую цену хотите?">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-danger btn-lg btn-block">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+    <script src="./public/scripts/data.js"></script>
+    <script src="./src/scripts/c.js"></script>
+    <!-- <script src="./dist/scripts/c.js"></script> -->
+    <script src="./src/scripts/js.js"></script>
+    <!-- <script src="./dist/scripts/js.js"></script> -->
+</body>
+
+</html>
