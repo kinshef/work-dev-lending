@@ -1,3 +1,71 @@
+
+
+
+var $jscomp = $jscomp || {};
+$jscomp.scope = {};
+$jscomp.arrayIteratorImpl = function (c) {
+    var b = 0;
+    return function () {
+        return b < c.length ? {
+            done: !1,
+            value: c[b++]
+        } : {
+            done: !0
+        }
+    }
+};
+$jscomp.arrayIterator = function (c) {
+    return {
+        next: $jscomp.arrayIteratorImpl(c)
+    }
+};
+$jscomp.makeIterator = function (c) {
+    var b = "undefined" != typeof Symbol && Symbol.iterator && c[Symbol.iterator];
+    return b ? b.call(c) : $jscomp.arrayIterator(c)
+};
+$jscomp.arrayFromIterator = function (c) {
+    for (var b, a = []; !(b = c.next()).done;) a.push(b.value);
+    return a
+};
+$jscomp.arrayFromIterable = function (c) {
+    return c instanceof Array ? c : $jscomp.arrayFromIterator($jscomp.makeIterator(c))
+};
+
+
+
+
+
+
+    try {
+        [].forEach.call(document.querySelectorAll("[data-animation]"), function (a) {
+            var b = new IntersectionObserver(function (c) {
+                c.forEach(function (c) {
+                    if (c.isIntersecting) {
+                        var d = a.dataset.animation.split(" ");
+                        a.classList.add.apply(a.classList, $jscomp.arrayFromIterable(d));
+                        a.addEventListener("animationend", function e() {
+                            a.classList.remove.apply(a.classList, $jscomp.arrayFromIterable(d));
+                            a.removeEventListener("animationend", e)
+                        });
+                        b.unobserve(a)
+                    }
+                })
+            });
+            b.observe(a)
+        })
+    } catch (a) {
+        console.error(a)
+    }
+
+
+
+
+
+
+
+
+
+
 $(document).ready(function () {
     // Form submit
     $("form").submit(function (event) {

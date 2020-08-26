@@ -28,18 +28,18 @@ $(document).ready(function () {
         /*console.log(JSON.stringify(data));
         return false;*/ // Testing
 
-        // $.ajax({
-        //     type: "POST",
-        //     url: "https://skidka-tut.by/action/index.php",
-        //     headers: {'X-Requested-With': 'XMLHttpRequest'},
-        //     dataType: "json",
-        //     data: data,
-        // }).done(function (response) {
-        //     alert(response.text);
-        // }).fail(function (error, textStatus) {
-        //     console.log(error, textStatus);
-        //     alert('Извините, произошла ошибка запроса. Свяжитесь с менеджером по телефону!');
-        // });
+        $.ajax({
+            type: "POST",
+            url: "https://skidka-tut.by/action/index.php",
+            headers: {'X-Requested-With': 'XMLHttpRequest'},
+            dataType: "json",
+            data: data,
+        }).done(function (response) {
+            alert(response.text);
+        }).fail(function (error, textStatus) {
+            console.log(error, textStatus);
+            alert('Извините, произошла ошибка запроса. Свяжитесь с менеджером по телефону!');
+        });
 
         // Event dispatcher for IE9+ included
         if(typeof(Event) === 'function') {
@@ -62,6 +62,15 @@ $(document).ready(function () {
                 $('#modal-leave').modal('show');
             }
         }
+    });
+
+    $(".owl-carousel-catalog").owlCarousel({
+        items: 1,
+        nav: true,
+        loop: true,
+        dots: true,
+        autoHeight:true,
+        navText: ['<i class="fa fa-2x fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-2x fa-angle-right" aria-hidden="true"></i>'],
     });
 
     // Smooth scroll
