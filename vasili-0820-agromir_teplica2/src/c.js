@@ -7,6 +7,7 @@ $(document).ready(function () {
         var length = $("input[name='length']:checked", form).val();
         var interval = $("input[name='interval']:checked", form).val();
         var additional = $("input[name='additional[]']:checked", form);
+
         var sum = 0;
 
         sum += calculator.products[product][length][interval];
@@ -15,15 +16,21 @@ $(document).ready(function () {
             sum += calculator.additional[$(e).val()]
         });
 
+        var animateBlock = $('.catalog__price', form);
         var out = $('.jPrice', form);
         var outOld = $('.jPriceOld', form);
 
+        var animationName = 'pulse';
+        animateBlock.addClass('animated faster ' + animationName);
+        animateBlock.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){animateBlock.removeClass('animated faster ' + animationName)});
+
         var animateFrom = out.data("animateFrom") > 0 ? out.data("animateFrom") : 0;
 
-        $({animateNumber: animateFrom}).animate({animateNumber: sum}, {
+        $({ animateNumber: animateFrom }).animate({ animateNumber: sum }, {
             duration: 800,
             step: function (animateNumber) {
-                out.text(Number(animateNumber).toFixed() + " руб.");
+                out.text(Number(animateNumber).toFixed() + " руб.")
+
                 outOld.text(Number(animateNumber * 2).toFixed() + " руб.")
             },
             complete: function () {

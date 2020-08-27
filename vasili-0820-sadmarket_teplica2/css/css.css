@@ -703,3 +703,20 @@ a:hover {
 		line-height: 45px;
 	}
 }
+
+
+
+
+.catalog__text__label {
+    display: block;
+    padding: 0.2rem 0.5rem;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.6em;
+    margin: 0.2rem;
+}
+
+.provercaPhone__inputPhone{
+    font-size: 32px;
+    color: #000;
+}

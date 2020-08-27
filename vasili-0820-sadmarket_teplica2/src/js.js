@@ -1,34 +1,6 @@
-var $jscomp = $jscomp || {};
-$jscomp.scope = {};
-$jscomp.arrayIteratorImpl = function (c) {
-    var b = 0;
-    return function () {
-        return b < c.length ? {
-            done: !1,
-            value: c[b++]
-        } : {
-            done: !0
-        }
-    }
-};
-$jscomp.arrayIterator = function (c) {
-    return {
-        next: $jscomp.arrayIteratorImpl(c)
-    }
-};
-$jscomp.makeIterator = function (c) {
-    var b = "undefined" != typeof Symbol && Symbol.iterator && c[Symbol.iterator];
-    return b ? b.call(c) : $jscomp.arrayIterator(c)
-};
-$jscomp.arrayFromIterator = function (c) {
-    for (var b, a = []; !(b = c.next()).done;) a.push(b.value);
-    return a
-};
-$jscomp.arrayFromIterable = function (c) {
-    return c instanceof Array ? c : $jscomp.arrayFromIterator($jscomp.makeIterator(c))
-};
+$(function () {
 
-$(document).ready(function () {
+
 
     var proverkaTel = function(formOtpr, data) {
         var boolProvTel = false;
@@ -62,7 +34,8 @@ $(document).ready(function () {
     }
 
 
-    // Form submit
+
+
     $("form").submit(function (event) {
         event.preventDefault();
 
@@ -75,12 +48,15 @@ $(document).ready(function () {
         }
         var data = $(this).serializeArray();
 
+
+
         // проверка телефона
         var formOtprData;
         if(!proverkaTel(this, data)){
             return false;
         }
         // проверка телефона end
+
 
         data.push({
             name: "source",
@@ -95,8 +71,8 @@ $(document).ready(function () {
             value: location.href
         });
 
-        // console.log(JSON.stringify(data));
-        // return false; // Testing
+        console.log(JSON.stringify(data));
+        return false; // Testing
 
         $.ajax({
             type: "POST",
@@ -124,7 +100,6 @@ $(document).ready(function () {
         return false
     });
 
-
     $(".modal").on("shown.bs.modal", function () {
         window.location.hash = "modal"
     });
@@ -136,9 +111,6 @@ $(document).ready(function () {
     });
 
 
-
-
-    // Smooth scroll
     $(".smoothscroll").click(function (event) {
         if (this.hash !== "") {
             // Prevent default anchor click behavior
@@ -150,40 +122,31 @@ $(document).ready(function () {
             // Using jQuery's animate() method to add smooth page scroll
             $("html, body").animate(
                 {
-                    scrollTop: $(hash).offset().top
+                    scrollTop: $(hash).offset().top - 100
                 },
                 400
             );
         }
     });
 
-});
 
+    $(".catalog-toggle__btn").click(function () {
+        var a = $(this).parent(".catalog-toggle").find(".catalog-toggle__container");
+        a.length && a.slideToggle()
+    })
+});
 document.addEventListener("DOMContentLoaded", function () {
-
     try {
-        [].forEach.call(document.querySelectorAll("[data-animation]"), function (a) {
-            var b = new IntersectionObserver(function (c) {
-                c.forEach(function (c) {
-                    if (c.isIntersecting) {
-                        var d = a.dataset.animation.split(" ");
-                        a.classList.add.apply(a.classList, $jscomp.arrayFromIterable(d));
-                        a.addEventListener("animationend", function e() {
-                            a.classList.remove.apply(a.classList, $jscomp.arrayFromIterable(d));
-                            a.removeEventListener("animationend", e)
-                        });
-                        b.unobserve(a)
-                    }
+        var a = document.querySelectorAll(".js-calculator-group-values");
+        [].forEach.call(a, function (a) {
+            a.addEventListener("click", function () {
+                [].forEach.call(document.querySelectorAll("#section-catalog .has-calculator"), function (b) {
+                    b.querySelector("input[name='" + a.dataset.name + "'][value='" + a.dataset.value + "']").checked = !0;
+                    b.dispatchEvent(new Event("change"))
                 })
-            });
-            b.observe(a)
+            })
         })
-    } catch (a) {
-        console.error(a)
+    } catch (c) {
+        console.error(c)
     }
-
-});
-
-window.addEventListener("DOMContentLoaded", function () {
-
 });
