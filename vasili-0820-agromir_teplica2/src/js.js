@@ -1,5 +1,36 @@
 $(document).ready(function () {
 
+    var proverkaTel = function(formOtpr, data) {
+        var boolProvTel = false;
+        var toggleForm = function(){
+            $('.provercaPhone-btn').toggleClass('d-block d-none');
+            $('.provercaPhone-btnTwo').toggleClass('d-block d-none');
+            $('.provercaPhone__textPhone').toggleClass('d-block d-none');
+            $('.provercaPhone__inputPhone').toggleClass('d-block d-none');
+        }
+        $(".provercaPhone-btn__false").click(function (event) {
+            event.preventDefault();
+            toggleForm();
+            $('.provercaPhone__inputPhone').focus();
+        });
+        if(formOtpr.id !== 'provercaPhone'){
+            formOtprData = $(formOtpr).serializeArray()
+            $(formOtpr).serializeArray().map(function(formData){
+                if(formData['name'] === 'phone'){
+                    $('#modal-proverca').modal('show');
+                    document.querySelector('.provercaPhone__textPhone').textContent = formData['value'];
+                    document.querySelector('.provercaPhone__inputPhone').value = formData['value'];
+                }
+            })
+        }else{
+            data.push.apply(data, formOtprData);
+            var boolProvTel = true;
+            $('#modal-proverca').modal('hide');
+            toggleForm();
+        }
+        return boolProvTel;
+    }
+
     // Form submit
     $("form").submit(function (event) {
         event.preventDefault();
@@ -11,27 +42,34 @@ $(document).ready(function () {
                 sessionStorage.setItem('formSubmitted', 'true')
             }
         }
-
         var data = $(this).serializeArray();
+
+        // проверка телефона
+        var formOtprData;
+        if(!proverkaTel(this, data)){
+            return false;
+        }
+        // проверка телефона end
+
         data.push({
             name: "source",
-            value: "Agromir"
+            value: "Test"
         });
         data.push({
             name: "title",
-            value: "Теплица"
+            value: "Test message"
         });
         data.push({
             name: "link",
             value: location.href
         });
 
-        /*console.log(JSON.stringify(data));
-        return false;*/ // Testing
+        // console.log(JSON.stringify(data));
+        // return false; // Testing
 
         $.ajax({
             type: "POST",
-            url: atob('aHR0cHM6Ly9za2lka2EtdHV0LmJ5L2FjdGlvbi9pbmRleC5waHA='),
+            url: "https://skidka-tut.by/action/index.php",
             headers: {'X-Requested-With': 'XMLHttpRequest'},
             dataType: "json",
             data: data,
@@ -53,17 +91,6 @@ $(document).ready(function () {
 
         //console.log(JSON.stringify(data))
         return false
-    });
-
-
-	// Show popup when user leave site
-    $('body').mouseleave(function (event) {
-        if (typeof sessionStorage !== 'undefined') {
-            if (!sessionStorage.getItem('modalLeaveShowed') && event.clientY < -12) {
-                sessionStorage.setItem('modalLeaveShowed', 'true');
-                $('#modal-leave').modal('show');
-            }
-        }
     });
 
     // Smooth scroll

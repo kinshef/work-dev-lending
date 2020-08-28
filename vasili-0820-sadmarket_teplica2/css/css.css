@@ -551,6 +551,14 @@ a:hover {
 	border-top: 2px solid #5c8200;
 	box-shadow: 0 0 1px #5c8200;
 }
+.catalog__text__label {
+    display: block;
+    padding: 0.2rem 0.5rem;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.6em;
+    margin: 0.2rem;
+}
 .catalog__input input {
 	display:none;
 }
@@ -563,10 +571,6 @@ a:hover {
 
 .product-price {
 	font-size: 2rem;
-}
-
-.product-price_new {
-	font-weight: bold !important;
 }
 
 /* section-footer-forma */
@@ -702,18 +706,6 @@ a:hover {
 		font-size: 27px;
 		line-height: 45px;
 	}
-}
-
-
-
-
-.catalog__text__label {
-    display: block;
-    padding: 0.2rem 0.5rem;
-    font-size: 1.2em;
-    font-weight: 700;
-    line-height: 1.6em;
-    margin: 0.2rem;
 }
 
 .provercaPhone__inputPhone{

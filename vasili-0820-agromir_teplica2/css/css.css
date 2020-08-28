@@ -512,6 +512,14 @@ header {
     border-top: 2px solid #5c8200;
     box-shadow: 0 0 1px #5c8200;
 }
+.catalog__text__label {
+    display: block;
+    padding: 0.2rem 0.5rem;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.6em;
+    margin: 0.2rem;
+}
 .catalog__input input {
     display:none;
 }
@@ -653,4 +661,9 @@ header {
     line-height: 45px;
     font-size: 12px;
     color: #a4e800;
+}
+
+.provercaPhone__inputPhone{
+    font-size: 32px;
+    color: #000;
 }
