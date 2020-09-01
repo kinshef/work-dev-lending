@@ -26,43 +26,170 @@
 <body>
 
     <section class="section-nav" id="section-nav">
-        <div class="container">
-            <div class="row align-items-center py-xl-4 py-1">
-                <div class="col-xl-2 order-xl-1 order-1 col-6 text-center d-md-block d-none">
+        <div class="container-fluid">
+            <div class="row align-items-start pb-xl-4 pb-1">
+                <div class="col-xl-2 order-xl-1 order-2 col-6 my-3 text-center d-md-block d-none">
                     <img src="./public/assets/img/icon/logo.png" class="logo__img">
                     <div class="logo__text h5 font-weight-bold text-uppercase">Motokult.by</div>
                 </div>
-                <div class="col-xl-7 order-xl-2 order-3 my-3 my-xl-0 nav-nav text-center text-uppercase d-flex justify-content-between flex-sm-nowrap flex-wrap">
-                    <a class="nav-nav__item smoothscroll w-100" href="#section-advantages">Преимущества</a>
-                    <a class="nav-nav__item smoothscroll w-100" href="#section-catalog">Каталог</a>
-                    <a class="nav-nav__item smoothscroll w-100" href="#section-mail">Связь</a>
-                    <a class="nav-nav__item smoothscroll w-100" href="#section-dop">Дополнительные товары</a>
+                <div class="col-xl-7 order-xl-2 order-1 mb-3 my-xl-0 nav-nav text-center text-uppercase d-flex justify-content-around flex-sm-nowrap flex-wrap">
+                    <a class="nav-nav__item smoothscroll py-sm-3 py-0" href="#section-advantages">Главная</a>
+                    <a class="nav-nav__item smoothscroll py-sm-3 py-0" href="#section-catalog">Каталог</a>
+                    <a class="nav-nav__item smoothscroll py-sm-3 py-0" href="#section-mail">о работе</a>
+                    <a class="nav-nav__item smoothscroll py-sm-3 py-0" href="#section-mail">отзавы</a>
+                    <a class="nav-nav__item smoothscroll py-sm-3 py-0" href="#section-dop">контакты</a>
                 </div>
-                <div class="col-xl-3 order-xl-3 order-2 col-6 d-md-block d-none p-3 nav-info">
-                    <a href="tel:+375291111111" class="font-weight-bold h4">+375 (29) 111-11-11</a><br>
-                    <a href="tel:+375291111111" class="font-weight-bold h4">+375 (29) 111-11-11</a><br>
-                    <div class="nav-nav__job font-weight-bold h5">Работаем с 9.00 до 23.00</div>
+                <div class="col-xl-3 order-xl-3 order-3 col-6 d-md-block d-none nav-info my-2">
+                    <a href="tel:+375291111111" class="font-weight-bold text-size-5">+375 (29) 111-11-11</a><br>
+                    <a href="tel:+375291111111" class="font-weight-bold text-size-5">+375 (29) 111-11-11</a><br>
+                    <div class="nav-nav__job font-weight-bold text-size-4">Работаем с 9.00 до 23.00</div>
                 </div>
             </div>
         </div>
     </section>
 
-
     <section class="section-main " id="section-main">
-        <div class="container">
+        <div class="container text-center">
             <div class="row align-items-center py-xl-4 py-1 position-relative">
-                <div class="col-lg-8 offset-lg-2 font-weight-bold main-left text-uppercase main-textWrap">
+                <div class="col-lg-9 font-weight-bold main-left text-uppercase main-textWrap">
                     <div class="section_title">Теплицы из поликарбаната</div>
-                    <div class="main-left__subtitle">Собирайте урожай на вашем участке 8 месяцев в году</div>
+                    <div class="h3">Собирайте урожай на вашем участке 8 месяцев в году</div>
+                    <div class="main-discount font-weight-bold text-primary">Скидка 40%</div>
                 </div>
-                <div class="col-lg-6 text-center main-imgWrap position-absolute">
+                <div class="col-lg-6 offset-lg-6">
                     <img src="./public/assets/img/catalog/mine1.png" class="img-fluid">
                 </div>
             </div>
+            <div class="row text-size-5 align-items-center py-xl-4 py-1">
+                <div class="col-md-3 col-sm-6 my-3">
+                    <img src="./public/assets/img/icon/mine1.png">
+                    <div class="mt-3">цена от 295 р.</div>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <img src="./public/assets/img/icon/mine2.png">
+                    <div class="mt-3">бесплатная доставка по Беларуси</div>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <img src="./public/assets/img/icon/mine3.png">
+                    <div class="mt-3">11 моделей в ассортименте</div>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <img src="./public/assets/img/icon/mine4.png">
+                    <div class="mt-3">любые размеры для вашего участка</div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="section- " id="section-">
+
+    <section class="section-stock" id="section-stock">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 my-3">
+                    <form class="has-calculator">
+                        <input type="hidden" name="form" value="Карточка товара">
+                        <input type="hidden" name="product" value="product1">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="text-uppercase font-weight-bold has-calculator_title">ТЕплица сибирская</div>
+                            </div>
+                            <div class="col-6 calculator-left pr-0">
+                                <div class="row text-center align-items-center px-3">
+                                    <div class="col-12 py-3">
+                                        <a href="./public/assets/img/catalog/cat1.jpg" data-fancybox="">
+                                            <img src="./public/assets/img/catalog/cat1.jpg" class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="py-2 col-4">
+                                        <div class="castom_input d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <div class="c__input d-inline-block">
+                                                    <input id="product1-length-1" type="radio" name="length" value="4"
+                                                        checked="">
+                                                    <label for="product1-length-1">4</label>
+                                                </div>
+                                                <div class="c__input d-inline-block">
+                                                    <input id="product1-length-2" type="radio" name="length" value="6">
+                                                    <label for="product1-length-2">6</label>
+                                                </div>
+                                                <div class="c__input d-inline-block">
+                                                    <input id="product1-length-3" type="radio" name="length" value="8">
+                                                    <label for="product1-length-3">8</label>
+                                                </div>
+                                                <div class="c__input d-inline-block">
+                                                    <input id="product1-length-10" type="radio" name="length" value="10">
+                                                    <label for="product1-length-10">10</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-2 col-4">
+                                        <s class="text-size-2"><span class="jPriceOld" data-animation="animated tada delay-1s">348</span> руб.</s><br>
+                                        <span class="text-size-7 font-weight-bold text-red"><span class="jPrice" data-animation="animated tada delay-1s">274</span> руб.</span>
+                                    </div>
+                                    <div class="py-2 col-4">
+                                        <div class="castom_input d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <div class="c__input d-inline-block">
+                                                    <input id="product1-shag-50" type="radio" name="shag" value="50" checked="">
+                                                    <label for="product1-shag-50">0.5</label>
+                                                </div>
+                                                <div class="c__input d-inline-block">
+                                                    <input id="product1-shag-70" type="radio" name="shag" value="70">
+                                                    <label for="product1-shag-70">0.7</label>
+                                                </div>
+                                                <div class="c__input d-inline-block">
+                                                    <input id="product1-shag-100" type="radio" name="shag" value="100">
+                                                    <label for="product1-shag-100">1</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 calculator-left__form">
+                                        <a href="#modal-order" data-toggle="modal" class="btn btn-block font-weight-bold text-size-6 btn-warning text-uppercase transition--slide">ЗАКАЗАТь</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="calculator-right">
+                                    <img src="./public/assets/img/catalog/ac1.jpg" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <section class="section- " id="section-">
         <div class="container">
             <div class="row align-items-center text-center font-weight-bold">
                 <div class="col">
@@ -70,7 +197,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- modal -->
     <div id="modal-order" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
@@ -117,8 +244,8 @@
 
     <script src="./public/scripts/data.js"></script>
     <script src="./src/scripts/c.js"></script>
-    <!-- <script src="./dist/scripts/c.js"></script> -->
     <script src="./src/scripts/js.js"></script>
+    <!-- <script src="./dist/scripts/c.js"></script> -->
     <!-- <script src="./dist/scripts/js.js"></script> -->
 </body>
 </html>

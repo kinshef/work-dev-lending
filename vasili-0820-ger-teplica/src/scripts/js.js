@@ -30,6 +30,7 @@ $jscomp.arrayFromIterable = function (c) {
 
 $(document).ready(function () {
 
+    var formOtprData;
     var proverkaTel = function(formOtpr, data) {
 
         $('.provercaPhone__inputPhone , .provercaPhone-btnTwo').toggleClass('d-none', true).toggleClass('d-block', false);
@@ -53,6 +54,7 @@ $(document).ready(function () {
                 }
             })
         }else{
+            sessionStorage.setItem('formPhone', 1);
             data.push.apply(data, formOtprData);
             $('#modal-proverca').modal('hide');
         }
@@ -62,17 +64,17 @@ $(document).ready(function () {
     $("form").submit(function (event) {
         event.preventDefault();
 
-        if(typeof sessionStorage !== 'undefined'){
-            if(sessionStorage.getItem('formSubmitted')){
-                if(!confirm('Вы уже отправили заявку, повторить?')){return false}
-            }else{
-                sessionStorage.setItem('formSubmitted', 'true')
-            }
-        }
+        // if(typeof sessionStorage !== 'undefined'){
+        //     if(sessionStorage.getItem('formSubmitted')){
+        //         if(!confirm('Вы уже отправили заявку, повторить?')){return false}
+        //     }else{
+        //         sessionStorage.setItem('formSubmitted', 'true')
+        //     }
+        // }
         var data = $(this).serializeArray();
 
         // проверка телефона
-        var formOtprData;
+        sessionStorage.setItem('formPhone', 0);
         proverkaTel(this, data);
         // проверка телефона end
 
@@ -89,8 +91,8 @@ $(document).ready(function () {
             value: location.href
         });
 
-        console.log(JSON.stringify(data));
-        return false; // Testing
+        // console.log(JSON.stringify(data));
+        // return false; // Testing
 
         $.ajax({
             type: "POST",
@@ -99,7 +101,9 @@ $(document).ready(function () {
             dataType: "json",
             data: data,
         }).done(function (response) {
-            alert(response.text);
+            if(+sessionStorage.getItem('formPhone')){
+                alert(response.text);
+            }
         }).fail(function (error, textStatus) {
             console.log(error, textStatus);
             alert('Извините, произошла ошибка запроса. Свяжитесь с менеджером по телефону!');
@@ -217,4 +221,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 window.addEventListener("DOMContentLoaded", function () {
 
+    // изменения "Сейчас на сайте"
+    if(!sessionStorage.getItem('onlineNow')){
+        sessionStorage.setItem('onlineNow', Math.floor(234 + Math.random() * 10));
+    }
+    document.querySelector('.online_now').textContent = sessionStorage.getItem('onlineNow');
+    setInterval(function(){
+        sessionStorage.setItem('onlineNow', Math.floor(234 + Math.random() * 10));
+        document.querySelector('.online_now').textContent = sessionStorage.getItem('onlineNow')
+    }, 7500)
+    // изменения "Сейчас на сайте" end
 });

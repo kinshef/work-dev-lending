@@ -15,8 +15,8 @@ $(document).ready(function() {
       $({ animateNumber: animateFrom }).animate({ animateNumber: sum }, {
           duration: 800,
           step: function (animateNumber){
-              out.text(Number(animateNumber).toFixed() + " руб.");
-              outOld.text(Number(animateNumber * 1.4).toFixed() + " руб.");
+              out.text(Number(animateNumber).toFixed());
+              outOld.text(Number(animateNumber * 1.4).toFixed());
           },
           complete: function() {
               out.data("animateFrom", Number(sum).toFixed());
