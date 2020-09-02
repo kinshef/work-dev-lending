@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/jpeg" href="https://images.by.prom.st/150237179_150237179.jpg" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css" integrity="sha256-Plq9l9jMJkIx2PX9Rax0AkgNzFXpaC3YU/XFlL5MYFE=" crossorigin="anonymous">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Owl carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"
+        integrity="sha256-AWqwvQ3kg5aA5KcXpX25sYKowsX97sTCTbeo33Yfyk0=" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../vendor/lib/lightcountdown_v1_2/lightcountdown.css">
+    <link rel="stylesheet" href="css/css.css">
+    <title>Теплицы из поликарбоната</title>
+</head>
+
+<body>
+
+    <section id="section-nav" class="animated fadeInDown">
+        <div class="container">
+            <nav class="d-flex align-items-center justify-content-center">
+                <a href="#section-sale" class="nav__link smoothscroll d-none d-md-block">Акция</a>
+                <div class="app-dropdown d-none d-md-block">
+                    <a href="#section-catalog" class="nav__link smoothscroll">Каталог</a>
+                </div>
+                <a href="#section-delivery" class="nav__link smoothscroll d-none d-lg-block">Доставка</a>
+                <div class="d-flex flex-column align-items-center ml-md-auto mr-3">
+                    <a href="tel:+74952666453" class="nav__phone mb-1"><img src="../vendor/img/logo_mts_64.jpg" width="24"> +7 (495) 266-64-53</a>
+                </div>
+                <button data-toggle="modal" data-target="#modal-order" class="btn btn-danger app-ff--alt"><i class="fa fa-phone"></i> Заказать<span class="d-none d-md-inline"> звонок</span></button>
+            </nav>
+        </div>
+    </section>
+
+    <section id="section-main" class="text-white">
+        <div class="container">
+            <div class="row ">
+                <div class="col">
+                    <p class="main__title">Продажа Теплиц Оцинковочка<br>По цене <span class="text-red">от 13700 рубля </span><br>Из профильной трубы 20х20 и 40х20<br>И сотового поликарбоната с <br> двойным УФ фильтром</p>
+                    <p class="main__subtitle text-red">Бесплатная доставка <br>По всей Москве и Московской Области!</p>
+                    <button data-target="#modal-order" data-toggle="modal" class="app-btn app-btn--primary app-btn--lg text-uppercase mt-5 animated tada delay-2s">Заказать консультацию</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-sale" class="app-section app-section-overlay-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-md-right">
+                    <img src="img/nabor.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-6 text-center">
+                    <p class="h1 app-ff--alt text-red">Сказочное предложение</p>
+                    <p>Только до Конца недели!!! Купи парник и получи второй в Подарок</p>
+                    <hr>
+                    <button data-target="#modal-order" data-toggle="modal" class="app-btn app-btn--danger text-uppercase">Заказать по Акции</button>
+                    <div class="countdown-week mt-5"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-consult" class="app-section text-white">
+        <div class="container">
+            <div class="row ">
+                <div class="col">
+                    <p class="main__title">Не знаете какую выбрать теплицу?</p>
+                    <p class="main__subtitle">Закажите бесплатную профессиональную консультацию!</p>
+                    <button data-target="#modal-order" data-toggle="modal" class="app-btn app-btn--primary text-uppercase mt-5">Бесплатная консультация</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="p-2 bg-primary"></div>
+
+    <section id="section-catalog" class="app-section">
+        <div class="header">Каталог теплиц</div>
+        <div class="container mt-5">
+          <!-- <div id="catalog-product-ocinkovka" class="catalog__card">
+                <div class="row no-gutters">
+
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="catalog__gallery">
+                            <div id="carousel-catalog-product-ocinkovka" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-catalog-product-ocinkovka" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-catalog-product-ocinkovka" data-slide-to="1"></li>
+                                    <li data-target="#carousel-catalog-product-ocinkovka" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/temp/16by9.jpg" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/temp/16by9.jpg" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/temp/16by9.jpg" class="d-block w-100">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel-catalog-product-ocinkovka" role="button" data-slide="prev">
+                                    <i class="fa fa-chevron-left fa-2x"></i>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel-catalog-product-ocinkovka" role="button" data-slide="next">
+                                    <i class="fa fa-chevron-right fa-2x"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 order-lg-0 bg-dark text-white">
+                        <div class="catalog__block catalog__title">Теплица "Оцинковочка"</div>
+                        <div class="catalog__block catalog__price">650 руб.</div>
+                        <hr>
+                        <div class="catalog__block catalog__tabs">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#tabs-catalog-product-ocinkovka-description">Описание</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tabs-catalog-product-ocinkovka-params">Характеристики</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="tabs-catalog-product-ocinkovka-description">
+                                    <p>Описание</p>
+                                    <ul class="fa-ul">
+                                        <li><i class="fa-li fa fa-check"></i> Description</li>
+                                        <li><i class="fa-li fa fa-check"></i> Description</li>
+                                        <li><i class="fa-li fa fa-check"></i> Description</li>
+                                        <li><i class="fa-li fa fa-check"></i> Description</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorem est exercitationem facere laborum minus nisi praesentium sint voluptate, voluptatum? Adipisci doloremque ea laboriosam libero neque possimus rem sequi voluptatem.</p>
+                                </div>
+                                <div class="tab-pane fade" id="tabs-catalog-product-ocinkovka-params">
+                                    <table class="table table-dark">
+                                        <tbody>
+                                            <tr>
+                                                <th>name</th>
+                                                <td>value</td>
+                                            </tr>
+                                            <tr>
+                                                <th>name</th>
+                                                <td>value</td>
+                                            </tr>
+                                            <tr>
+                                                <th>name</th>
+                                                <td>value</td>
+                                            </tr>
+                                            <tr>
+                                                <th>name</th>
+                                                <td>value</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form>
+                            <div class="catalog__block mt-5">
+                                <div class="row">
+
+                                    <div class="col-md-6">
+                                        <div class="option">
+                                            <div class="option__title">Длина</div>
+                                            <div class="option__list">
+                                                <label class="option__input">
+                                                    <input type="radio" name="length" value="4" checked>
+                                                    4 метра
+                                                </label>
+                                                <label class="option__input">
+                                                    <input type="radio" name="length" value="6">
+                                                    6 метров
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="option">
+                                            <div class="option__title">Между дугами</div>
+                                            <div class="option__list">
+                                                <label class="option__input">
+                                                    <input type="radio" name="interval" value="1" checked>
+                                                    1 метр
+                                                </label>
+                                                <label class="option__input">
+                                                    <input type="radio" name="interval" value="067">
+                                                    0,67 метров
+                                                </label>
+                                                <label class="option__input">
+                                                    <input type="radio" name="interval" value="050">
+                                                    0,5 метров
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="option">
+                                            <div class="option__title">Комплектация</div>
+                                            <div class="option__list">
+                                                <label class="option__input">
+                                                    <input type="checkbox" name="additional[]" value="lift">
+                                                    Автоинтеллект
+                                                </label>
+                                                <label class="option__input">
+                                                    <input type="checkbox" name="additional[]" value="window">
+                                                    Форточка в теплицу
+                                                </label>
+                                                <label class="option__input">
+                                                    <input type="checkbox" name="additional[]" value="poliv">
+                                                    Автополив
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="option">
+                                            <div class="option__title">Дополнительно</div>
+                                            <div class="option__list">
+                                                <label class="option__input">
+                                                    <input type="checkbox" name="additional[]" value="delivery">
+                                                    Доставка
+                                                </label>
+                                                <label class="option__input">
+                                                    <input type="checkbox" name="additional[]" value="install">
+                                                    Нужна сборка
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="catalog__block h3 text-center">
+                                Цена: <span class="app-ff--alt">800 руб.</span>
+                            </div>
+
+                            <hr>
+
+                            <div class="catalog__block">
+                                <div class="form-group">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                                </div>
+                                <button type="submit" class="catalog__btn-order">Заказать</button>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div> -->
+            <div class="row">
+              <div class="col-12 col-md-6 my-3">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-catalog__cart-product">
+                            <form class="has-calculator text-center brand_of_year top-sale bg-white p-3">
+                                <input type="hidden" name="form" value="Карточка товара">
+                                <input type="hidden" name="product" value="product1">
+                                <div class="row text-center">
+                                    <div class="col-12">
+                                        <div class="owl-carousel owl-carousel-catalog owl-theme text-center">
+                                            <div class="item">
+                                                    <img src="img/temp/mini999.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/mini1.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/mini4.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/mini5.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-left my-3">
+                                        <div class="h4 font-weight-bold">Теплица <span class="text_green">"Оцинковочка Мини"</span></div>
+                                    </div>
+                                    <div class="col-12 text-left font-weight-bold has-calculator__characteristics">
+                                        <ul class="d-inline-block">
+                                            <li><span>Высота:</span> 1.70 м</li>
+                                            <li><span>Ширина:</span> 2 м</li>
+                                            <li><span>Длина:</span> от 4 до 10 м</li>
+                                            <li><span>Шаг дуги:</span> 1м, 0.67см, 0.5см</li>
+                                        </ul>
+                                        <ul class="d-inline-block">
+                                            <li><span>Грунтозацепы</span>: Т-э образные</li>
+                                            <li><span>Усиленный каркас</span></li>
+                                            <li><span>2 двери</span></li>
+                                            <li><span>2 форточки</span></li>    
+                                        </ul>
+                                        <ul class="d-inline-block">
+                                            <li><span>Оцинкованная труба:</span> 20х20 мм</li>
+                                            <li><span>Тип крепление:</span> Болтовое</li>
+                                            <li><span>Поликарбонат:</span> От 3мм Сотовый с 2-ым УФ-Фильтром</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6 bg_green2 text-white text-left has-calculator__delivery">
+                                        <div class="h6">Бесплатная доставка</div>
+                                    </div>
+                                    <div class="col-12 col-md-6 bg_green text-white text-left has-calculator__rassrochka">
+                                        <div class="h6">Производство РБ</div>
+                                    </div>
+                                    <div class="col-12 form-group custom_input">
+                                        <div class="font-weight-bold">Выберите длину теплицы:</div>
+                                        <div class="c__input d-inline-block mt-2">
+                                            <input id="product1-length-4" type="radio" name="length" value="4" checked>
+                                            <label for="product1-length-4">4</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product1-length-6" type="radio" name="length" value="6">
+                                            <label for="product1-length-6">6</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product1-length-8" type="radio" name="length" value="8">
+                                            <label for="product1-length-8">8</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product1-length-10" type="radio" name="length" value="10">
+                                            <label for="product1-length-10">10</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="bg_green text-white font-weight-bold">Узнайте цену со скидкой для Вашей теплицы</p>
+                                    </div>
+                                    <div class="col-12 pl-4 mb-4">
+                                      <div class="col-12">
+                                        <s class="h5 calculator-price-old" data-animation="animated tada delay-1s"></s>руб
+                                      </div>
+                                      <div class="col-12">
+                                        <span class="h3 text-red calculator-price" data-animation="animated tada delay-1s"></span>руб
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="hidden" name="form" value="Форма заказа звонка">
+                                        <div class="input-group">
+                                            <div class="has-calculator__phone">
+                                                <span>Ваш номер телефона:</span>
+                                                <input name="phone" type="tel" required="">
+                                            </div>
+                                            <button type="submit" class="btn px-4 custom_btn">Заказать <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 my-3">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-catalog__cart-product">
+                            <form class="has-calculator text-center brand_of_year top-sale bg-white p-3">
+                                <input type="hidden" name="form" value="Карточка товара">
+                                <input type="hidden" name="product" value="product2">
+                                <div class="row text-center">
+                                    <div class="col-12">
+                                        <div class="owl-carousel owl-carousel-catalog owl-theme text-center">
+                                            <div class="item">
+                                                    <img src="img/temp/mini3.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/mini1.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/mini5.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/mini4.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-left my-3">
+                                        <div class="h4 font-weight-bold">Теплица <span class="text_green">"Оцинковочка Мини +"</span></div>
+                                    </div>
+                                    <div class="col-12 text-left font-weight-bold has-calculator__characteristics">
+                                        <ul class="d-inline-block">
+                                            <li><span>Высота:</span> 1.70 м</li>
+                                            <li><span>Ширина:</span> 2.40 м</li>
+                                            <li><span>Длина:</span> от 4 до 10 м</li>
+                                            <li><span>Шаг дуги:</span> 1м, 0.67см, 0.5см</li>
+                                        </ul>
+                                        <ul class="d-inline-block">
+                                            <li><span>Грунтозацепы</span>: Т-э образные</li>
+                                            <li><span>Усиленный каркас</span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>    
+                                        </ul>
+                                        <ul class="d-inline-block">
+                                            <li><span>Оцинкованная труба:</span> 20х20 мм</li>
+                                            <li><span>Крепление:</span> Болтовое</li>
+                                            <li><span>Поликарбонат:</span> От 3мм Сотовый с 2-ым УФ Фильтром</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6 bg_green2 text-white text-left has-calculator__delivery">
+                                        <div class="h6">Бесплатная доставка</div>
+                                    </div>
+                                    <div class="col-12 col-md-6 bg_green text-white text-left has-calculator__rassrochka">
+                                        <div class="h6">Производство РБ</div>
+                                    </div>
+                                    <div class="col-12 form-group custom_input">
+                                        <div class="font-weight-bold">Выберите длину теплицы:</div>
+                                        <div class="c__input d-inline-block mt-2">
+                                            <input id="product2-length-4" type="radio" name="length" value="4" checked>
+                                            <label for="product2-length-4">4</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product2-length-6" type="radio" name="length" value="6">
+                                            <label for="product2-length-6">6</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product2-length-8" type="radio" name="length" value="8">
+                                            <label for="product2-length-8">8</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product2-length-10" type="radio" name="length" value="10">
+                                            <label for="product2-length-10">10</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="bg_green text-white font-weight-bold">Узнайте цену со скидкой для Вашей теплицы</p>
+                                    </div>
+                                    <div class="col-12 pl-4 mb-4">
+                                      <div class="col-12">
+                                        <s class="h5 calculator-price-old" data-animation="animated tada delay-1s"></s>руб
+                                      </div>
+                                      <div class="col-12">
+                                        <span class="h3 text-red calculator-price" data-animation="animated tada delay-1s"></span>руб
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="hidden" name="form" value="Форма заказа звонка">
+                                        <div class="input-group">
+                                            <div class="has-calculator__phone">
+                                                <span>Ваш номер телефона:</span>
+                                                <input name="phone" type="tel" required="">
+                                            </div>
+                                            <button type="submit" class="btn px-4 custom_btn">Заказать <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 my-3">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-catalog__cart-product">
+                            <form class="has-calculator text-center brand_of_year top-sale bg-white p-3">
+                                <input type="hidden" name="form" value="Карточка товара">
+                                <input type="hidden" name="product" value="product3">
+                                <div class="row text-center">
+                                    <div class="col-12">
+                                        <div class="owl-carousel owl-carousel-catalog owl-theme text-center">
+                                            <div class="item">
+                                                    <img src="img/temp/teplica6.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/teplica8.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/teplica11.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/teplica16.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-left my-3">
+                                        <div class="h4 font-weight-bold">Теплица <span class="text_green">"Оцинковочка"</span></div>
+                                    </div>
+                                    <div class="col-12 text-left font-weight-bold has-calculator__characteristics">
+                                        <ul class="d-inline-block">
+                                            <li><span>Высота:</span> 2 м</li>
+                                            <li><span>Ширина:</span> 3 м</li>
+                                            <li><span>Длина:</span> от 4 до 10 м</li>
+                                            <li><span>Шаг дуги:</span> 1м, 0.67см, 0.5см</li>
+                                        </ul>
+                                        <ul class="d-inline-block">
+                                            <li><span>Грунтозацепы</span>: Т-э образные</li>
+                                            <li><span>Усиленный каркас</span></li>
+                                            <li><span>2 двери</span></li>
+                                            <li><span>2 форточки</span></li>    
+                                        </ul>
+                                        <ul class="d-inline-block">
+                                            <li><span>Оцинкованная труба:</span> 20х20 мм</li>
+                                            <li><span>Крепление:</span> Болтовое</li>
+                                            <li><span>Поликарбонат:</span> От 3мм Сотовый с 2-ым УФ Фильтром</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6 bg_green2 text-white text-left has-calculator__delivery">
+                                        <div class="h6">Бесплатная доставка</div>
+                                    </div>
+                                    <div class="col-12 col-md-6 bg_green text-white text-left has-calculator__rassrochka">
+                                        <div class="h6">Производство РБ</div>
+                                    </div>
+                                    <div class="col-12 form-group custom_input">
+                                        <div class="font-weight-bold">Выберите длину теплицы:</div>
+                                        <div class="c__input d-inline-block mt-2">
+                                            <input id="product3-length-4" type="radio" name="length" value="4" checked>
+                                            <label for="product3-length-4">4</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product3-length-6" type="radio" name="length" value="6">
+                                            <label for="product3-length-6">6</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product3-length-8" type="radio" name="length" value="8">
+                                            <label for="product3-length-8">8</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product3-length-10" type="radio" name="length" value="10">
+                                            <label for="product3-length-10">10</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="bg_green text-white font-weight-bold">Узнайте цену со скидкой для Вашей теплицы</p>
+                                    </div>
+                                    <div class="col-12 pl-4 mb-4">
+                                      <div class="col-12">
+                                        <s class="h5 calculator-price-old" data-animation="animated tada delay-1s"></s>руб
+                                      </div>
+                                      <div class="col-12">
+                                        <span class="h3 text-red calculator-price" data-animation="animated tada delay-1s"></span>руб
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="hidden" name="form" value="Форма заказа звонка">
+                                        <div class="input-group">
+                                            <div class="has-calculator__phone">
+                                                <span>Ваш номер телефона:</span>
+                                                <input name="phone" type="tel" required="">
+                                            </div>
+                                            <button type="submit" class="btn px-4 custom_btn">Заказать <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 my-3">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-catalog__cart-product">
+                            <form class="has-calculator text-center brand_of_year top-sale bg-white p-3">
+                                <input type="hidden" name="form" value="Карточка товара">
+                                <input type="hidden" name="product" value="product4">
+                                <div class="row text-center">
+                                    <div class="col-12">
+                                        <div class="owl-carousel owl-carousel-catalog owl-theme text-center">
+                                            <div class="item">
+                                                    <img src="img/temp/teplica01.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/teplica28.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/teplica31.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/teplica35.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-left my-3">
+                                        <div class="h4 font-weight-bold">Теплица <span class="text_green">"Оцинковочка-Сверхпрочная"</span></div>
+                                    </div>
+                                    <div class="col-12 text-left font-weight-bold has-calculator__characteristics">
+                                        <ul class="d-inline-block">
+                                            <li><span>Высота:</span> 2 м</li>
+                                            <li><span>Ширина:</span> 3 м</li>
+                                            <li><span>Длина:</span> от 4 до 10 м</li>
+                                            <li><span>Шаг дуги:</span> 1м, 0.67см, 0.5см</li>
+                                        </ul>
+                                        <ul class="d-inline-block">
+                                            <li><span>Грунтозацепы</span>: Т-э образные</li>
+                                            <li><span>Усиленный каркас</span></li>
+                                            <li><span>2 двери</span></li>
+                                            <li><span>2 форточки</span></li>    
+                                        </ul>
+                                        <ul class="d-inline-block">
+                                            <li><span>Оцинкованная труба:</span> 20х20 мм</li>
+                                            <li><span>Крепления:</span> Болтовое, Краб.</li>
+                                            <li><span>Поликарбонат:</span> От 3мм Сотовый с 2-ым УФ фильтром</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6 bg_green2 text-white text-left has-calculator__delivery">
+                                        <div class="h6">Бесплатная доставка</div>
+                                    </div>
+                                    <div class="col-12 col-md-6 bg_green text-white text-left has-calculator__rassrochka">
+                                        <div class="h6">Производство РБ</div>
+                                    </div>
+                                    <div class="col-12 form-group custom_input">
+                                        <div class="font-weight-bold">Выберите длину теплицы:</div>
+                                        <div class="c__input d-inline-block mt-2">
+                                            <input id="product4-length-4" type="radio" name="length" value="4" checked>
+                                            <label for="product4-length-4">4</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product4-length-6" type="radio" name="length" value="6">
+                                            <label for="product4-length-6">6</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product4-length-8" type="radio" name="length" value="8">
+                                            <label for="product4-length-8">8</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product4-length-10" type="radio" name="length" value="10">
+                                            <label for="product4-length-10">10</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="bg_green text-white font-weight-bold">Узнайте цену со скидкой для Вашей теплицы</p>
+                                    </div>
+                                    <div class="col-12 pl-4 mb-4">
+                                      <div class="col-12">
+                                        <s class="h5 calculator-price-old" data-animation="animated tada delay-1s"></s>руб
+                                      </div>
+                                      <div class="col-12">
+                                        <span class="h3 text-red calculator-price" data-animation="animated tada delay-1s"></span>руб
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="hidden" name="form" value="Форма заказа звонка">
+                                        <div class="input-group">
+                                            <div class="has-calculator__phone">
+                                                <span>Ваш номер телефона:</span>
+                                                <input name="phone" type="tel" required="">
+                                            </div>
+                                            <button type="submit" class="btn px-4 custom_btn">Заказать <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 my-3">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-catalog__cart-product">
+                            <form class="has-calculator text-center brand_of_year top-sale bg-white p-3">
+                                <input type="hidden" name="form" value="Карточка товара">
+                                <input type="hidden" name="product" value="product5">
+                                <div class="row text-center">
+                                    <div class="col-12">
+                                        <div class="owl-carousel owl-carousel-catalog owl-theme text-center">
+                                            <div class="item">
+                                                    <img src="img/temp/teplica666.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/teplica82.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/teplica35.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/teplica85.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-left my-3">
+                                        <div class="h4 font-weight-bold">Теплица <span class="text_green">"Оцинковочка Титан"</span></div>
+                                    </div>
+                                    <div class="col-12 text-left font-weight-bold has-calculator__characteristics">
+                                        <ul class="d-inline-block">
+                                            <li><span>Высота:</span> 2 м</li>
+                                            <li><span>Ширина:</span> 3 м</li>
+                                            <li><span>Длина:</span> от 4 до 10 м</li>
+                                            <li><span>Шаг дуги:</span> 1м, 0.67см, 0.5см</li>
+                                        </ul>
+                                        <ul class="d-inline-block">
+                                            <li><span>Грунтозацепы</span>: Т-э образные</li>
+                                            <li><span>Усиленный каркас</span></li>
+                                            <li><span>2 двери</span></li>
+                                            <li><span>2 форточки</span></li>    
+                                        </ul>
+                                        <ul class="d-inline-block">
+                                            <li><span>Оцинкованная труба:</span> 40х20 мм</li>
+                                            <li><span>Крепления:</span> Болтовое, Краб.</li>
+                                            <li><span>Поликарбонат:</span> От 3мм Сотовый с 2-ым УФ фильтром</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6 bg_green2 text-white text-left has-calculator__delivery">
+                                        <div class="h6">Бесплатная доставка</div>
+                                    </div>
+                                    <div class="col-12 col-md-6 bg_green text-white text-left has-calculator__rassrochka">
+                                        <div class="h6">Производство РБ</div>
+                                    </div>
+                                    <div class="col-12 form-group custom_input">
+                                        <div class="font-weight-bold">Выберите длину теплицы:</div>
+                                        <div class="c__input d-inline-block mt-2">
+                                            <input id="product5-length-4" type="radio" name="length" value="4" checked>
+                                            <label for="product5-length-4">4</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product5-length-6" type="radio" name="length" value="6">
+                                            <label for="product5-length-6">6</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product5-length-8" type="radio" name="length" value="8">
+                                            <label for="product5-length-8">8</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product5-length-10" type="radio" name="length" value="10">
+                                            <label for="product5-length-10">10</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="bg_green text-white font-weight-bold">Узнайте цену со скидкой для Вашей теплицы</p>
+                                    </div>
+                                    <div class="col-12 pl-4 mb-4">
+                                      <div class="col-12">
+                                        <s class="h5 calculator-price-old" data-animation="animated tada delay-1s"></s>руб
+                                      </div>
+                                      <div class="col-12">
+                                        <span class="h3 text-red calculator-price" data-animation="animated tada delay-1s"></span>руб
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="hidden" name="form" value="Форма заказа звонка">
+                                        <div class="input-group">
+                                            <div class="has-calculator__phone">
+                                                <span>Ваш номер телефона:</span>
+                                                <input name="phone" type="tel" required="">
+                                            </div>
+                                            <button type="submit" class="btn px-4 custom_btn">Заказать <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 my-3">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-catalog__cart-product">
+                            <form class="has-calculator text-center brand_of_year top-sale bg-white p-3">
+                                <input type="hidden" name="form" value="Карточка товара">
+                                <input type="hidden" name="product" value="product6">
+                                <div class="row text-center">
+                                    <div class="col-12">
+                                        <div class="owl-carousel owl-carousel-catalog owl-theme text-center">
+                                            <div class="item">
+                                                    <img src="img/temp/ferma13.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/ferma5.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/ferma1.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/ferma8.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-left my-3">
+                                        <div class="h4 font-weight-bold">Теплица <span class="text_green">"Оцинковочка Ферма"</span></div>
+                                    </div>
+                                    <div class="col-12 text-left font-weight-bold has-calculator__characteristics">
+                                        <ul class="d-inline-block">
+                                            <li><span>Высота:</span> 2 м</li>
+                                            <li><span>Ширина:</span> 3 м</li>
+                                            <li><span>Длина:</span> от 4 до 10 м</li>
+                                            <li><span>Шаг дуги:</span> 1м, 0.67см, 0.5см</li>
+                                        </ul>
+                                        <ul class="d-inline-block">
+                                            <li><span>Грунтозацепы</span>: Т-э образные</li>
+                                            <li><span>Усиленный каркас</span></li>
+                                            <li><span>2 двери</span></li>
+                                            <li><span>2 форточки</span></li>    
+                                        </ul>
+                                        <ul class="d-inline-block">
+                                            <li><span>Оцинкованная труба:</span> 20х20 мм</li>
+                                            <li><span>Крепление:</span> Болтовое</li>
+                                            <li><span>Поликарбонат:</span> От 3мм Сотовый с 2-ым УФ фильтром</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6 bg_green2 text-white text-left has-calculator__delivery">
+                                        <div class="h6">Бесплатная доставка</div>
+                                    </div>
+                                    <div class="col-12 col-md-6 bg_green text-white text-left has-calculator__rassrochka">
+                                        <div class="h6">Производство РБ</div>
+                                    </div>
+                                    <div class="col-12 form-group custom_input">
+                                        <div class="font-weight-bold">Выберите длину теплицы:</div>
+                                        <div class="c__input d-inline-block mt-2">
+                                            <input id="product6-length-4" type="radio" name="length" value="4" checked>
+                                            <label for="product6-length-4">4</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product6-length-6" type="radio" name="length" value="6">
+                                            <label for="product6-length-6">6</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product6-length-8" type="radio" name="length" value="8">
+                                            <label for="product6-length-8">8</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product6-length-10" type="radio" name="length" value="10">
+                                            <label for="product6-length-10">10</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="bg_green text-white font-weight-bold">Узнайте цену со скидкой для Вашей теплицы</p>
+                                    </div>
+                                    <div class="col-12 pl-4 mb-4">
+                                      <div class="col-12">
+                                        <s class="h5 calculator-price-old" data-animation="animated tada delay-1s"></s>руб
+                                      </div>
+                                      <div class="col-12">
+                                        <span class="h3 text-red calculator-price" data-animation="animated tada delay-1s"></span>руб
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="hidden" name="form" value="Форма заказа звонка">
+                                        <div class="input-group">
+                                            <div class="has-calculator__phone">
+                                                <span>Ваш номер телефона:</span>
+                                                <input name="phone" type="tel" required="">
+                                            </div>
+                                            <button type="submit" class="btn px-4 custom_btn">Заказать <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 my-3">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-catalog__cart-product">
+                            <form class="has-calculator text-center brand_of_year top-sale bg-white p-3">
+                                <input type="hidden" name="form" value="Карточка товара">
+                                <input type="hidden" name="product" value="product7">
+                                <div class="row text-center">
+                                    <div class="col-12">
+                                        <div class="owl-carousel owl-carousel-catalog owl-theme text-center">
+                                            <div class="item">
+                                                    <img src="img/temp/dwuh10.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/dwuh11.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/dwuh7.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/dwuh6.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-left my-3">
+                                        <div class="h4 font-weight-bold">Теплица <span class="text_green">"Оцинковочка Богатырь-Стандарт Двухстворчатая"</span></div>
+                                    </div>
+                                    <div class="col-12 text-left font-weight-bold has-calculator__characteristics">
+                                        <ul class="d-inline-block">
+                                            <li><span>Высота:</span> 2 м</li>
+                                            <li><span>Ширина:</span> 3.5 м</li>
+                                            <li><span>Длина:</span> от 4 до 10 м</li>
+                                            <li><span>Шаг дуги:</span> 1м, 0.67см, 0.5см</li>
+                                        </ul>
+                                        <ul class="d-inline-block">
+                                            <li><span>Грунтозацепы</span>: Т-з образные</li>
+                                            <li><span>Усиленный каркас</span></li>
+                                            <li><span>2 двери</span></li>
+                                            <li><span>2 форточки</span></li>    
+                                        </ul>
+                                        <ul class="d-inline-block">
+                                            <li><span>Оцинкованная труба:</span> 40х20 мм</li>
+                                            <li><span>Крепление:</span> Болтовое</li>
+                                            <li><span>Поликарбонат:</span> От 3мм Сотовый с 2-ым УФ фильтром</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6 bg_green2 text-white text-left has-calculator__delivery">
+                                        <div class="h6">Бесплатная доставка</div>
+                                    </div>
+                                    <div class="col-12 col-md-6 bg_green text-white text-left has-calculator__rassrochka">
+                                        <div class="h6">Производство РБ</div>
+                                    </div>
+                                    <div class="col-12 form-group custom_input">
+                                        <div class="font-weight-bold">Выберите длину теплицы:</div>
+                                        <div class="c__input d-inline-block mt-2">
+                                            <input id="product7-length-4" type="radio" name="length" value="4" checked>
+                                            <label for="product7-length-4">4</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product7-length-6" type="radio" name="length" value="6">
+                                            <label for="product7-length-6">6</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product7-length-8" type="radio" name="length" value="8">
+                                            <label for="product7-length-8">8</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product7-length-10" type="radio" name="length" value="10">
+                                            <label for="product7-length-10">10</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="bg_green text-white font-weight-bold">Узнайте цену со скидкой для Вашей теплицы</p>
+                                    </div>
+                                    <div class="col-12 pl-4 mb-4">
+                                      <div class="col-12">
+                                        <s class="h5 calculator-price-old" data-animation="animated tada delay-1s"></s>руб
+                                      </div>
+                                      <div class="col-12">
+                                        <span class="h3 text-red calculator-price" data-animation="animated tada delay-1s"></span>руб
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="hidden" name="form" value="Форма заказа звонка">
+                                        <div class="input-group">
+                                            <div class="has-calculator__phone">
+                                                <span>Ваш номер телефона:</span>
+                                                <input name="phone" type="tel" required="">
+                                            </div>
+                                            <button type="submit" class="btn px-4 custom_btn">Заказать <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 my-3">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-catalog__cart-product">
+                            <form class="has-calculator text-center brand_of_year top-sale bg-white p-3">
+                                <input type="hidden" name="form" value="Карточка товара">
+                                <input type="hidden" name="product" value="product8">
+                                <div class="row text-center">
+                                    <div class="col-12">
+                                        <div class="owl-carousel owl-carousel-catalog owl-theme text-center">
+                                            <div class="item">
+                                                    <img src="img/temp/dwuh9.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/dwuh1.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/dwuh11.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                    <img src="img/temp/dwuh3.jpg" class="w-100 h-auto img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-left my-3">
+                                        <div class="h4 font-weight-bold">Теплица <span class="text_green">"Оцинковочка Богатырь-Премиум Двухстворчатая"</span></div>
+                                    </div>
+                                    <div class="col-12 text-left font-weight-bold has-calculator__characteristics">
+                                        <ul class="d-inline-block">
+                                            <li><span>Высота:</span> 2 м</li>
+                                            <li><span>Ширина:</span> 4 м</li>
+                                            <li><span>Длина:</span> от 4 до 10 м</li>
+                                            <li><span>Шаг дуги:</span> 1м, 0.67см, 0.5см</li>
+                                        </ul>
+                                        <ul class="d-inline-block">
+                                            <li><span>Грунтозацепы</span>: Т-э образные</li>
+                                            <li><span>Усиленный каркас</span></li>
+                                            <li><span>2 двери</span></li>
+                                            <li><span>2 форточки</span></li>    
+                                        </ul>
+                                        <ul class="d-inline-block">
+                                            <li><span>Оцинкованная труба:</span> 40х20 мм</li>
+                                            <li><span>Крепление:</span> Болтовое</li>
+                                            <li><span>Поликарбонат:</span> От 3мм Сотовый с 2-ым фильтром</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6 bg_green2 text-white text-left has-calculator__delivery">
+                                        <div class="h6">Бесплатная доставка</div>
+                                    </div>
+                                    <div class="col-12 col-md-6 bg_green text-white text-left has-calculator__rassrochka">
+                                        <div class="h6">Производство РБ</div>
+                                    </div>
+                                    <div class="col-12 form-group custom_input">
+                                        <div class="font-weight-bold">Выберите длину теплицы:</div>
+                                        <div class="c__input d-inline-block mt-2">
+                                            <input id="product8-length-4" type="radio" name="length" value="4" checked>
+                                            <label for="product8-length-4">4</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product8-length-6" type="radio" name="length" value="6">
+                                            <label for="product8-length-6">6</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product8-length-8" type="radio" name="length" value="8">
+                                            <label for="product8-length-8">8</label>
+                                        </div>
+                                        <div class="c__input d-inline-block">
+                                            <input id="product8-length-10" type="radio" name="length" value="10">
+                                            <label for="product8-length-10">10</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="bg_green text-white font-weight-bold">Узнайте цену со скидкой для Вашей теплицы</p>
+                                    </div>
+                                    <div class="col-12 pl-4 mb-4">
+                                      <div class="col-12">
+                                        <s class="h5 calculator-price-old" data-animation="animated tada delay-1s"></s>руб
+                                      </div>
+                                      <div class="col-12">
+                                        <span class="h3 text-red calculator-price" data-animation="animated tada delay-1s"></span>руб
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="hidden" name="form" value="Форма заказа звонка">
+                                        <div class="input-group">
+                                            <div class="has-calculator__phone">
+                                                <span>Ваш номер телефона:</span>
+                                                <input name="phone" type="tel" required="">
+                                            </div>
+                                            <button type="submit" class="btn px-4 custom_btn">Заказать <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-company" class="text-white text-center">
+        <div class="header">Почему теплицы рекомендуют покупать у нас?</div>
+        <div class="container mt-5">
+            <div class="row ">
+
+                <div class="col-6 col-lg-3">
+                    <div class="company__card">
+                        <div class="company__title">10 <br>Лет</div>
+                        <div class="company__text">Наша компания работает больше 10 лет.</div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="company__card">
+                        <div class="company__title">3000 <br>Отзывов</div>
+                        <div class="company__text">На нашем сайте Agrocatalog.by размещено более 3000 отзывов от наших клиентов.</div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="company__card">
+                        <div class="company__title">5000 <br>Клиентов</div>
+                        <div class="company__text">Более 5000 тысяч человек ежегодно становятся клиентами нашей компании.</div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="company__card">
+                        <div class="company__title">120 <br>Человек</div>
+                        <div class="company__text">Наша компания из 120 человек стремится обеспечить наших клиентов лучшим сервисом отрасли .</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="py-4">
+                <button data-target="#modal-order" data-toggle="modal" class="app-btn app-btn--primary app-btn--lg text-uppercase">Заказать</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-comparison" class="app-section">
+        <div class="header">Сравнение теплиц</div>
+        <div class="container mt-5">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="comparison__card">
+                        <div class="comparison__title">Эконом</div>
+                        <div class="comparison__img">
+                            <img src="img/plenka.jpg" class="img-fluid img-thumbnail">
+                        </div>
+                        <ul class="fa-ul comparison__list">
+                            <li><i class="fa fa-minus" aria-hidden="true"></i> Пленочное покрытие</li>
+                            <li><i class="fa fa-minus" aria-hidden="true"></i> Установка только на фундамент</li>
+                            <li><i class="fa fa-minus" aria-hidden="true"></i> Не пропускает свет</li>
+                            <li><i class="fa fa-minus" aria-hidden="true"></i> Маленькая снеговая нагрузка</li>
+                            <li><i class="fa fa-minus" aria-hidden="true"></i> Маленький срок эксплуатации</li>
+                            <li><i class="fa fa-minus" aria-hidden="true"></i> Требует разборки на зиму</li>
+                            <li><i class="fa fa-minus" aria-hidden="true"></i> Деревянный каркас</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="comparison__card">
+                        <div class="comparison__title">Стандарт</div>
+                        <div class="comparison__img">
+                            <img src="img/v.jpg" class="img-fluid img-thumbnail">
+                        </div>
+                        <ul class="fa-ul comparison__list">
+                            <li><i class="fa fa-plus" aria-hidden="true"></i> Усиленный поликарбонат</li>
+                            <li><i class="fa fa-plus" aria-hidden="true"></i> Не требует установки на фундамент</li>
+                            <li><i class="fa fa-plus" aria-hidden="true"></i> Выдерживает большие снеговые нагрузки</li>
+                            <li><i class="fa fa-plus" aria-hidden="true"></i> Легкая сборка</li>
+                            <li><i class="fa fa-plus" aria-hidden="true"></i> Двойной уф фльтр</li>
+                            <li><i class="fa fa-minus" aria-hidden="true"></i> V образный профиль</li>
+                            <li><i class="fa fa-minus" aria-hidden="true"></i> Разборные дуги</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="comparison__card">
+                        <div class="comparison__title">Премиум</div>
+                        <div class="comparison__img">
+                            <img src="img/teplica88.jpg" class="img-fluid img-thumbnail">
+                        </div>
+                        <ul class="fa-ul comparison__list">
+                            <li><i class="fa fa-plus" aria-hidden="true"></i> Цельно гнутый усиленный сварной каркас</li>
+                            <li><i class="fa fa-plus" aria-hidden="true"></i> Усиленный поликарбонат</li>
+                            <li><i class="fa fa-plus" aria-hidden="true"></i> Двойной уф фльтр</li>
+                            <li><i class="fa fa-plus" aria-hidden="true"></i> Не требует установки на фундамент</li>
+                            <li><i class="fa fa-plus" aria-hidden="true"></i> Выдерживает большие снеговые нагрузки</li>
+                            <li><i class="fa fa-plus" aria-hidden="true"></i> Большей срок эксплуатации</li>
+                            <li><i class="fa fa-plus" aria-hidden="true"></i> Гарантия 10 лет</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form class="text-center">
+                        <div class="input-group input-group-lg">
+                            <input type="text" class="form-control app-input--focus" placeholder="Номер телефона" required>
+                            <div class="input-group-append">
+                                <button class="btn btn-primary px-md-5" type="submit">Отправить заявку</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="mt-5">Хотите купить теплицу выгодно?<br>Только сегодня <b>скидка 27%!</b></div>
+        </div>
+    </section>
+
+    <section id="section-work" class="app-section text-white">
+        <div class="header">Заказать очень просто!</div>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="work__card">
+                        <div class="work__step">
+                            01
+                        </div>
+                        <div class="work__img">
+                            <i class="fa fa-file-text fa-5x"></i>
+                        </div>
+                        <div class="work__text">
+                            <p>Выбираете теплицу</p>
+                            <p class="mt-5"><a href="#section-catalog" class="app-btn app-btn--primary smoothscroll">Каталог</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="work__card">
+                        <div class="work__step">
+                            02
+                        </div>
+                        <div class="work__img">
+                            <i class="fa fa-phone fa-5x"></i>
+                        </div>
+                        <div class="work__text">
+                            <p>Оставляете заявку удобным способом</p>
+                            <p class="mt-5"><button data-target="#modal-order" data-toggle="modal" class="app-btn app-btn--danger">Заказать</button></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="work__card">
+                        <div class="work__step">
+                            03
+                        </div>
+                        <div class="work__img">
+                            <i class="fa fa-truck fa-5x"></i>
+                        </div>
+                        <div class="work__text">
+                            Мы доставляем теплицу к Вам в течении 3 дней
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="work__card">
+                        <div class="work__step">
+                            04
+                        </div>
+                        <div class="work__img">
+                            <i class="fa fa-wrench fa-5x"></i>
+                        </div>
+                        <div class="work__text">
+                            Если нужно производим установку теплицы
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="section-delivery" class="app-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/dostawka.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <p class="h2 mb-5 app-ff--alt">Бесплатная доставка по всей Беларуси!</p>
+                    <p>Быстрая доставка в течении 3 дней! Доставляем товары собственной курьерской службой прямо до дома в любую деревню или на участок.</p>
+                    <p>С нами любая покупка в радость!</p>
+                    <div class="h2 font-weight-bold">
+                        <p>Контакты:</p>
+                        <p><img src="../vendor/img/logo_mts_64.jpg" width="24"> (33) 674-41-52</p>
+                        <p><img src="../vendor/img/logo_velcom_64.jpg" width="24"> (29) 674-41-52</p>
+                    </div>
+                    <p>
+                        <button data-target="#modal-order" data-toggle="modal" class="app-btn app-btn--primary app-btn--lg text-uppercase mt-5">Заказать звонок</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-footer" class="app-section text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="h3">Оставьте заявку на консультацию</p>
+                    <hr>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-danger btn-lg btn-block">Перезвоните мне</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3">
+                    <p class="h3">Ссылки</p>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="#section-main" class="text-reset smoothscroll">Акция</a>
+                        </li>
+                        <li>
+                            <a href="#section-catalog" class="text-reset smoothscroll">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="#section-company" class="text-reset smoothscroll">Преимущества</a>
+                        </li>
+                        <li>
+                            <a href="#section-work" class="text-reset smoothscroll">Как заказать</a>
+                        </li>
+                        <li>
+                            <a href="#section-delivery" class="text-reset smoothscroll">Доставка</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <p class="h3">Теплицы</p>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="#section-catalog" class="text-reset smoothscroll">Теплица "Сибирская Мини 20х20"</a>
+                        </li>
+                        <li>
+                            <a href="#section-catalog" class="text-reset smoothscroll">Теплица "Сибирская Мини + 20х20"</a>
+                        </li>
+                        <li>
+                            <a href="#section-catalog" class="text-reset smoothscroll">Теплица "Оцинковочка 20х20"</a>
+                        </li>
+                        <li>
+                            <a href="#section-catalog" class="text-reset smoothscroll">Теплица "Сверхпрочная 20х20"</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODALS -->
+    <div class="modal fade" id="modal-order">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-question text-white">
+                <div class="modal-body text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p class="h2">Оставьте ваш номер телефона</p>
+                    <p class="h4">И наш консультант с Вами свяжется</p>
+                    <div class="d-flex justify-content-center align-items-center mb-1 h4">
+                        <img src="../vendor/img/logo_velcom_64.jpg" alt="velcom" class="img-fluid mr-2" width="16">
+                        <a href="tel:+375296744152" class="text-reset font-weight-bold">(29) 674-41-52</a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center h4">
+                        <img src="../vendor/img/logo_mts_64.jpg" alt="mts" class="img-fluid mr-2" width="16">
+                        <a href="tel:+375336744152" class="text-reset font-weight-bold">(33) 674-41-52</a>
+                    </div>
+                    <hr>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-danger btn-lg btn-block app-ff--alt">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-leave">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content bg-warning">
+                <div class="modal-body text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p class="h2">ПОДОЖДИТЕ УХОДИТЬ!</p>
+                    <p class="h4">У нас самые низкие цены. Мы уверены! Найдёте дешевле - сделаем ЕЩЁ ДЕШЕВЛЕ!</p>
+                    <hr>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="price" class="form-control" placeholder="Какую цену хотите?">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-danger btn-lg btn-block">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Fancybox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js" integrity="sha256-PyeEn7y37Cfw5xCU4Ub3G+A8Qx9zqMnAIaRGKjnfWiI=" crossorigin="anonymous"></script>
+    <!-- Owl carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js" integrity="sha256-s5TTOyp+xlSmsDfr/aZhg0Gz+JejYr5iTJI8JxG1SkM=" crossorigin="anonymous"></script>
+
+    <script src="../vendor/lib/lightcountdown_v1_2/lightcountdown.min.js"></script>
+    <script src="js/js.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/c.min.js"></script>
+    <script src="../vendor/js/app.js"></script>
+</body>
+
+</html>
