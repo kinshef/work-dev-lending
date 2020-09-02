@@ -81,10 +81,19 @@
         </div>
     </section>
 
-
     <section class="section-stock" id="section-stock">
         <div class="container text-center">
-            <div class="row">
+            <div class="row position-relative">
+                <div class="col-12 stock__predstavleniye">
+                    <span>акция</span>
+                    <span>акция</span>
+                    <span>акция</span>
+                </div>
+                <div class="col-12 stock__predstavleniye stock__rotate-90">
+                    <span>акция</span>
+                    <span>акция</span>
+                    <span>акция</span>
+                </div>
                 <div class="col-md-8 offset-md-2 my-3">
                     <form class="has-calculator">
                         <input type="hidden" name="form" value="Карточка товара">
@@ -94,11 +103,28 @@
                                 <div class="text-uppercase font-weight-bold has-calculator_title">ТЕплица сибирская</div>
                             </div>
                             <div class="col-6 calculator-left pr-0">
-                                <div class="row text-center align-items-center px-3">
+                                <div class="row text-center align-items-center h-100 px-3 ">
                                     <div class="col-12 py-3">
                                         <a href="./public/assets/img/catalog/cat1.jpg" data-fancybox="">
                                             <img src="./public/assets/img/catalog/cat1.jpg" class="img-fluid">
                                         </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex align-items-center my-2 stock-tablet">
+                                            <div>Длина</div><div>от 4 до 30 метров</div>
+                                        </div>
+                                        <div class="d-flex align-items-center my-2 stock-tablet">
+                                            <div>Ширина</div><div>3 м</div>
+                                        </div>
+                                        <div class="d-flex align-items-center my-2 stock-tablet">
+                                            <div>Высота</div><div>2.1 м</div>
+                                        </div>
+                                        <div class="d-flex align-items-center my-2 stock-tablet">
+                                            <div>Меду дугами</div><div>1 м</div>
+                                        </div>
+                                        <div class="d-flex align-items-center my-2 stock-tablet">
+                                            <div>Профиль</div><div>20x20 м</div>
+                                        </div>
                                     </div>
                                     <div class="py-2 col-4">
                                         <div class="castom_input d-flex align-items-center justify-content-between">
@@ -145,8 +171,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 calculator-left__form">
-                                        <a href="#modal-order" data-toggle="modal" class="btn btn-block font-weight-bold text-size-6 btn-warning text-uppercase transition--slide">ЗАКАЗАТь</a>
+                                    <div class="col-12 py-3 calculator-left__form">
+                                        <a href="#modal-order" data-toggle="modal" class="btn btn-block font-weight-bold text-size-6 text-uppercase transition--slide">ЗАКАЗАТь</a>
                                     </div>
                                 </div>
                             </div>
@@ -157,6 +183,28 @@
                             </div>
                         </div>
                     </form>
+                </div>
+                <div class="col-12 stock__predstavleniye stock__rotate90">
+                    <span>акция</span>
+                    <span>акция</span>
+                    <span>акция</span>
+                </div>
+                <div class="col-12 stock__predstavleniye">
+                    <span>акция</span>
+                    <span>акция</span>
+                    <span>акция</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-howWork py-5" id="section-section-howWork">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section_title text-center">как мы работаем?</div>
+                    <div class="text-size-5">1. Вы звоните нам или оставляете заявку через сайт</div>
+                    
                 </div>
             </div>
         </div>
@@ -185,19 +233,6 @@
 
 
 
-
-
-
-
-    <!-- <section class="section- " id="section-">
-        <div class="container">
-            <div class="row align-items-center text-center font-weight-bold">
-                <div class="col">
-                    <a href="#modal-order" data-toggle="modal" class="btn btn-warning text-uppercase">ЗАКАЗАТЬ звонок</a>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- modal -->
     <div id="modal-order" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">

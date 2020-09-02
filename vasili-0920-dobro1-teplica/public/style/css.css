@@ -320,6 +320,66 @@ a:hover {
   font-size: 1.5rem;
   transform: translate(-10%,-50%);
 }
-.calculator-left__form{
+.calculator-left__form a{
+  border-radius: 10px 10px 20px 20px;
+  background-color: #FDF320;
+  box-shadow: 0px 20px 15px -10px #E49C47;
+}
+.stock-tablet{
+  background: rgb(93,159,219);
+  background: linear-gradient(90deg, rgba(93,159,219,1) 0%, rgb(203, 230, 250) 100%);
   border-radius: 10px 10px 20px 20px;
 }
+.stock-tablet div{
+  width: 100%;
+}
+
+.stock__predstavleniye{
+  font-size: 6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 1rem;
+  color: red;
+  display: flex;
+  justify-content: space-around;
+}
+.stock__rotate-90,
+.stock__rotate90{
+  position: absolute;
+  top: 0;
+  width: 100vh;
+}
+.stock__rotate-90{
+  left: 0%;
+  transform: rotate(-90deg) translate(-50%, -25vw);
+}
+.stock__rotate90{
+  right: 0%;
+  transform: rotate(90deg) translate(50%, -25vw);
+}
+
+/* section-howWork */
+.section-howWork{
+  background-color: #84A882;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
