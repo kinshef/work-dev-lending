@@ -1,5 +1,6 @@
-$(function () {
+$(document).ready(function () {
 
+    // Form submit
     $("form").submit(function (event) {
         event.preventDefault();
 
@@ -53,24 +54,43 @@ $(function () {
         return false
     });
 
-    $("a.smoothscroll").click(function(a) {
-        "" !== this.hash && (a.preventDefault(), a = this.hash, $("html, body").animate({
-            scrollTop: $(a).offset().top
-        }, 400))
+	// Show popup when user leave site
+    $('body').mouseleave(function (event) {
+        if (typeof sessionStorage !== 'undefined') {
+            if (!sessionStorage.getItem('modalLeaveShowed') && event.clientY < -12) {
+                sessionStorage.setItem('modalLeaveShowed', 'true');
+                $('#modal-leave').modal('show');
+            }
+        }
+    });
+
+    $(".owl-carousel-catalog").owlCarousel({
+        items: 1,
+        nav: true,
+        loop: true,
+        dots: true,
+        autoHeight:true,
+        navText: ['<i class="fa fa-2x fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-2x fa-angle-right" aria-hidden="true"></i>'],
+    });
+
+    // Smooth scroll
+    $(".smoothscroll").click(function (event) {
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            $("html, body").animate(
+                {
+                    scrollTop: $(hash).offset().top
+                },
+                400
+            );
+        }
     });
 
 });
-document.addEventListener("DOMContentLoaded", function () {
-});
-
-
-
-
-
-
-
-
-
-
-
-
+document.addEventListener("DOMContentLoaded", function () {});
