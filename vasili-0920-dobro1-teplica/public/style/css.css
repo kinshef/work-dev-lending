@@ -74,6 +74,33 @@ section{
 .carousel-control-next{
   text-shadow: 2px 2px 2px black;
 }
+
+@media (min-width: 1600px){
+  .col-xxl-2{
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .col-xxl-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .col-xxl-8{
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .order-xxl-1 {
+    order: 1;
+  }
+  .order-xxl-2 {
+    order: 2;
+  }
+  .order-xxl-3 {
+    order: 3;
+  }
+}
+
 /* Reset */
 a {
   color: #000;
@@ -240,7 +267,6 @@ a:hover {
 }
 .nav-nav__job{
   position: relative;
-  padding-left: 1.5rem;
   margin: 0;
 }
 .nav-nav__job:before{
@@ -313,6 +339,11 @@ a:hover {
   box-shadow: 0 5px 5px #ccc;
   border-radius: 3px;
   overflow: hidden;
+  height: 98%;
+}
+.calculator-right img{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .castom_input .c__input input {
   display: none;
@@ -367,15 +398,15 @@ a:hover {
 .stock__rotate90{
   position: absolute;
   top: 0;
-  width: 100vh;
+  width: 100vmax;
 }
 .stock__rotate-90{
   left: 0%;
-  transform: rotate(-90deg) translate(-50%, -25vw);
+  transform: rotate(-90deg) translate(-50%, -35vmax);
 }
 .stock__rotate90{
   right: 0%;
-  transform: rotate(90deg) translate(50%, -25vw);
+  transform: rotate(90deg) translate(50%, -35vmax);
 }
 @media(max-width: 1200px){
   .calculator-left{
@@ -385,10 +416,10 @@ a:hover {
     transform: scaleY(1);
   }
   .stock__rotate-90{
-    transform: rotate(-90deg) translate(-50%, -40vw);
+    transform: rotate(-90deg) translate(-50%, -40vmax);
   }
   .stock__rotate90{
-    transform: rotate(90deg) translate(50%, -40vw);
+    transform: rotate(90deg) translate(50%, -40vmax);
   }
 }
 @media (max-width: 768px){

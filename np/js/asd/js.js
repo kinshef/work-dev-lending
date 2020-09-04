@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   // Form submit
   $("form").submit(function (event) {
     event.preventDefault();
@@ -70,12 +71,9 @@ $(document).ready(function () {
       // Store hash
       var hash = this.hash;
       // Using jQuery's animate() method to add smooth page scroll
-      $("html, body").animate(
-        {
+      $("html, body").animate({
           scrollTop: $(hash).offset().top - 100
-        },
-        400
-      );
+      },400);
     }
   });
 
