@@ -263,7 +263,7 @@ a:hover {
   -o-object-fit: contain;
      object-fit: contain;
   margin-right: .5rem;
-  max-width: 100px;
+  max-width: 50px;
 }
 .nav-nav__job{
   position: relative;
@@ -278,6 +278,9 @@ a:hover {
   width: 10px;
   background-color: #94DB8B;
   border-radius: 50%;
+}
+.nav-info{
+  line-height: 1.7rem;
 }
 @media(max-width: 768px){
   .nav-nav__item{

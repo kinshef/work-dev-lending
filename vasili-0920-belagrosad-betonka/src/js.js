@@ -33,11 +33,11 @@ $(function() {
         var data = $(this).serializeArray();
         data.push({
         name: "source",
-        value: "Test"
+        value: "Belagrosad"
         });
         data.push({
         name: "title",
-        value: "Test message"
+        value: "betonka"
         });
         data.push({
         name: "link",
@@ -84,9 +84,6 @@ $(function() {
         );
         }
     });
-
-});
-document.addEventListener("DOMContentLoaded", function() {
 
     //Fix nav
     $(window).scroll(function () {

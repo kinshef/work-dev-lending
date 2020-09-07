@@ -14,11 +14,11 @@ $(document).ready(function () {
         var data = $(this).serializeArray();
         data.push({
         name: "source",
-        value: "Test"
+        value: "Belagrosad"
         });
         data.push({
         name: "title",
-        value: "Test message"
+        value: "teplica"
         });
         data.push({
         name: "link",

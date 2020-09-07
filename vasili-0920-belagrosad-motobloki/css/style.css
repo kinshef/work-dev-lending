@@ -78,6 +78,11 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
+@media ( max-width: 576px) {
+    .phone{
+       font-size: 1.2rem; 
+    }
+}
 
 /* SECTION HEADER */
 .section-header {

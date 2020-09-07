@@ -36,11 +36,11 @@ $(function () {
         var data = $(this).serializeArray();
         data.push({
             name: "source",
-            value: "Test"
+            value: "Belagrosad"
         });
         data.push({
             name: "title",
-            value: "Test message"
+            value: "dvigateli"
         });
         data.push({
             name: "link",
@@ -92,9 +92,6 @@ $(function () {
         }
     });
 
-});
-document.addEventListener("DOMContentLoaded", function () {
-
     //Fix nav
     $(window).scroll(function () {
         230 < $(window).scrollTop() ? $("#section-header").addClass("header__active") :
@@ -102,6 +99,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     $(window).scroll();
 
+});
+document.addEventListener("DOMContentLoaded", function () {
     // tabs img to catalog
     Array.prototype.forEach.call(document.querySelectorAll('.catalog-castom-tab'), function (item) {
         var slaidActive = 0;
