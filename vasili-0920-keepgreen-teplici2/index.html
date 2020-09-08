@@ -25,38 +25,85 @@
 </head>
 
 <body>
-    <section id="section-header" class="section-header">
+
+    <section id="section-header" class="section-header sticky-top bg-white">
         <div class="container">
             <div class="row py-3 text-center align-items-center">
-                <div class="col-xl-1 col-5 text-xl-center text-right pr-0">
+                <div class="col-xl-1 d-xl-block d-none text-xl-center text-right pr-0">
                     <a href="#" class="header__logo"><img class="w-100 h-auto" src="./img/logo.png"></a>
                 </div>
-                <div class="col-xl-3 col-7 text-left">
+                <div class="col-xl-3 d-xl-block d-none text-left">
                     <p class="header__name font-weight-bold">Завод теплиц <span class="text_grean">Гарант</span></p>
                     <p class="header__description font-weight-light">Производим, продаем и устанавливаем теплицы по всей Беларуси</p>
                 </div>
-                <div class="col-xl-5 col-lg-8 col-12 text-right my-4 my-lg-0">
+                <div class="col-xl-5 col-lg-8 col-6 text-right">
                     <div class="m-0 header-phons">
                         <a href="tel:+375173882626">17 388-26-26</a>
                         <a href="tel:+375333274512">33 327-45-12</a>
-                        <a href="tel:+375293274512">29 327-45-12</a>
+                        <a class="d-sm-inline d-none" href="tel:+375293274512">29 327-45-12</a>
                     </div>
-                    <p class="font-weight-light m-0"><i class="fa fa-clock-o text_grean" aria-hidden="true"></i> с 9:00 до 21:00 <span class="font-weight-normal">Ежедневно</span></p>
+                    <p class="font-weight-light m-0 d-sm-inline d-none"><i class="fa fa-clock-o text_grean" aria-hidden="true"></i> с 9:00 до 21:00 <span class="font-weight-normal">Ежедневно</span></p>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-12">
-                    <a href="#modal-order" data-toggle="modal" class="header__buttom">Заказать звонок</a>
+                <div class="col-xl-3 col-lg-4 col-6">
+                    <a href="#modal-order" data-toggle="modal" class="header__buttom">Заказать <span class="d-sm-inline d-none">звонок</span></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="section-main" class="text-white">
+    <section id="section-two-header" class="section-two-header">
         <div class="container">
-            <div class="row ">
-                <div class="col">
-                    <p class="main__title">Продажа Теплиц Оцинковочка<br>По цене <span class="text-red">от 11700 рубля </span><br>Из профильной трубы 20х20 и 40х20<br>И сотового поликарбоната с <br> двойным УФ фильтром</p>
-                    <p class="main__subtitle text-red">Бесплатная доставка <br>По всей Москве и Московской Области!</p>
-                    <button data-target="#modal-order" data-toggle="modal" class="app-btn app-btn--primary app-btn--lg text-uppercase mt-5 animated tada delay-2s">Заказать консультацию</button>
+            <div class="row two-header text-center align-items-center">
+                <div class="col p-0">
+                    <a href="#section-advantages" class="h6 px-4 smoothscroll">Наши преимущества</a>
+                </div>
+                <div class="col p-0">
+                    <a href="#section-price" class="h6 px-4 smoothscroll">Расчет цены</a>
+                </div>
+                <div class="col p-0">
+                    <a href="#section-catalog" class="h6 px-4 smoothscroll">Каталог теплиц</a>
+                </div>
+                <div class="col p-0">
+                    <a href="#section-reviews" class="h6 px-4 smoothscroll">Отзывы</a>
+                </div>
+                <div class="col p-0">
+                    <a class="h6 px-4" data-fancybox="" href="https://www.youtube.com/watch?v=aI2iGt_fKQM">Видеоинструкция</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-header-main" class="section-header-main py-3">
+        <div class="container">
+            <div class="row header-main">
+                <div class="col-12">
+                    <div class="header-main-taitl">Получайте в 3 раза больше урожая, используя</div>
+                    <div class="header-main-taitl bg_grean">Получайте в 3 раза больше урожая, используя</div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <form class="header-main-form bg-white p-5">
+                        <div class="header-main-form__taitl">Скидки к 8 марта от 50 до 200 руб</div>
+                        <div class="header-main-form__text">Зафиксируйте цену со скидкой сейчас, а мы бесплатно сохраним Вашу теплицу на заводском складе до сезона</div>
+                        <div class="header-main-form__text bg_grean mb-1 font-weight-bold text-white">Количество теплиц со скидкой ограничено</div>
+                        <div class="header-main-form__text bg_grean font-weight-bold text-white">Акция действует до 10 марта</div>
+                        <div class="header-main-form__text">Чтобы рассчитать цену со скидкой и забронировать теплицу по акции, введите ваш телефон ниже:</div>
+                        <div class="input-group">
+                            <div class="header-main-form__phone">
+                                <span>Ваш номер телефона:</span>
+                                <input name="phone" type="tel" required="">
+                            </div>
+                            <button type="submit" class="btn px-4 castom_btn">Заказать консультацию <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-12 align-self-center">
+                    <ul class="header-main-advantages">
+                        <li>Бесплатная доставка по всей Беларуси</li>
+                        <li>Гарантия от завода - 5 лет</li>
+                        <li>Бесплатное хранение на складе до сезона</li>
+                        <li>Рассрочка 0% до 3 лет</li>
+                        <li>Доступная заводская цена</li>
+                    </ul>
                 </div>
             </div>
         </div>
