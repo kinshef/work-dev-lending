@@ -1122,6 +1122,10 @@
         <div class="container">
             <div class="row">
 
+                <div class="col-12">
+                    <div class="font-weight-bold section-title text-white">Видеообзоры Беседок для дачи</div>
+                </div>
+
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="text-white font-weight-bold h5">Сборка беседки</div>
                     <a href="https://www.youtube.com/watch?v=c1DqSfl7cmA" data-fancybox="gallery">
@@ -1162,6 +1166,36 @@
 
             <div class="mt-5">
                 <button class="c__btn c__btn--danger c__btn--lg" data-toggle="modal" data-target="#modal-order" data-animation="animated tada delay-1s">Заказать проверенную Беседку</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-contact" class="c__section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="font-weight-bold section-title">Контакты</div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="h1 text-alt">Заказ обратного звонка</div>
+                    <div class="c__bg--black60 text-white p-3 p-md-5">
+                        <p class="h1">Остались вопросы?</p>
+                        <p class="h3">Оставьте ваши данные и получите кометентную консультацию</p>
+                        <hr>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-warning btn-lg btn-block" style="border-color: #ef9300;">Заказать звонок</button>
+                            </div>
+                        </form>
+    
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1613,27 +1647,30 @@
         </div>
     </div>
 
-    <div class="modal fade" id="modal-leave" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal fade" id="modal-proverca">
         <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content bg-warning">
+            <div class="modal-content">
                 <div class="modal-body text-center">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <p class="h2">ПОДОЖДИТЕ УХОДИТЬ!</p>
-                    <p class="h4">У нас самые низкие цены. Мы уверены! Найдёте дешевле - сделаем ЕЩЁ ДЕШЕВЛЕ!</p>
-                    <hr>
-                    <form>
+                    <form id="provercaPhone">
+                        <div class="h3">Проверте правельно ли введён номер.</div>
                         <div class="form-group">
-                            <input type="text" name="name" class="form-control" placeholder="Какую цену хотите?">
+                            <div class="provercaPhone__textPhone d-block font-weight-bold h2 mt-4"></div>
+                            <input type="tel" name="truePhone"
+                                class="provercaPhone__inputPhone d-none font-weight-bold text-center form-control"
+                                placeholder="Номер телефона">
                         </div>
-                        <div class="form-group">
-                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                        <div class="provercaPhone-btn d-block text-center">
+                            <button type="submit" class="btn btn-success provercaPhone-btn__true mx-3">Да, правильно
+                                (Отправить)</button>
+                            <button type="submit" class="btn btn-danger provercaPhone-btn__false mx-3">Нет, не правильно
+                                (Исправить)</button>
                         </div>
-                        <div class="form-group">
-                            <button type="submit" onclick="ym(53929843,'reachGoal','form_send'); return true;"
-                                class="btn btn-danger btn-block --font__bolder transition--slide">Отправить
-                                заявку</button>
+                        <div class="form-group provercaPhone-btnTwo d-none">
+                            <button type="submit" class="btn h4 btn-warning btn-lg btn-block">Отправить
+                                исправленный</button>
                         </div>
                     </form>
                 </div>
@@ -1655,8 +1692,8 @@
     <script src="../vendor/lib/lightcountdown_v1_2/lightcountdown.min.js"></script>
 
     <script src="./public/scripts/data.js"></script>
-    <script src="./dist/scripts/c.js"></script>
-    <script src="./dist/scripts/js.js"></script>
+    <script src="./dist/scripts/c.min.js"></script>
+    <script src="./dist/scripts/js.min.js"></script>
     <script src="../vendor/js/app.js"></script>
 </body>
 

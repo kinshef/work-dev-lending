@@ -610,8 +610,6 @@ header {
     color: #fff;
     text-shadow: 1px 1px 0 #666, 1px -1px 0 #666, -1px 1px 0 #666, -1px -1px 0 #666;
     z-index: 2;
-    -webkit-transition: opacity .3s linear;
-    -o-transition: opacity .3s linear;
     transition: opacity .3s linear;
 }
 .catalog__input-color input {
@@ -874,15 +872,20 @@ header {
     width: 30px;
     height: 300px;
     background: #ffffff80;
-    animation-delay: .05s;
+    -webkit-animation-delay: .05s;
+            animation-delay: .05s;
     position: absolute;
     left: -40px;
     top: -150px;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
     transition: all .1s;
-    animation-name: slideme;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: slideme;
+            animation-name: slideme;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     transform: rotate(45deg);
 }
 @keyframes slideme {
@@ -898,4 +901,20 @@ header {
         left: 110%;
         margin-left: 80px;
     }
+}
+
+/* section-contact */
+#section-contact{
+    background: url("../../public/assets/img/contact/manager.jpg") center no-repeat;
+    background-size: cover;
+}
+.c__bg--black60 {
+    background-color: rgba(0,0,0,0.6);
+}
+
+
+/* modal */
+.provercaPhone__inputPhone{
+    font-size: 32px;
+    color: #000;
 }
