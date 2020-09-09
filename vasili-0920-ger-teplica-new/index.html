@@ -49,7 +49,7 @@
 
     <section id="section-main" class="c__section">
         <div class="container text-center">
-            <div class="row">
+            <div class="row align-items-end">
                 <div class="col-xl-6">
                     <div class="main-form">
                         <p class="main__title">ТЕПЛИЦЫ СИБИРСКИЕ</p>
@@ -268,7 +268,7 @@
                 <!-- РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ HFPLTKBNTKM NJDFHJD -->
 
                 <div class="col-lg-12">
-                    <form class="has-calculator">
+                    <form class="has-calculator catalog__akciya">
                         <input type="hidden" name="product" value="teplica_3">
                         <div class="catalog__card catalog__card--lg app-border" style="margin-bottom: 5rem">
 
@@ -298,41 +298,41 @@
                                                         aria-hidden="true"></i></a>
                                             </div>
                                             <div class="catalog__subblock__text">
-                                                <div class="row no-gutters">
-                                                    <div class="col-4 col-md-2">
+                                                <div class="row px-3">
+                                                    <div class="col-4 catalog__bank col-md-2">
                                                         <a href="#modal-question-bank" data-toggle="modal">
                                                             <img src="./public/assets/img/bank/halva.jpg"
-                                                                class="catalog__bank img-fluid" alt="halva">
+                                                                class="img-fluid" alt="halva">
                                                         </a>
                                                     </div>
-                                                    <div class="col-4 col-md-2">
+                                                    <div class="col-4 catalog__bank col-md-2">
                                                         <a href="#modal-question-bank" data-toggle="modal">
                                                             <img src="./public/assets/img/bank/cherepaha.jpg"
-                                                                class="catalog__bank img-fluid" alt="cherepaha">
+                                                                class="img-fluid" alt="cherepaha">
                                                         </a>
                                                     </div>
-                                                    <div class="col-4 col-md-2">
+                                                    <div class="col-4 catalog__bank col-md-2">
                                                         <a href="#modal-question-bank" data-toggle="modal">
-                                                            <img src="./public/assets/img/bank/fun.jpg" class="catalog__bank img-fluid"
+                                                            <img src="./public/assets/img/bank/fun.jpg" class="img-fluid"
                                                                 alt="kartafun">
                                                         </a>
                                                     </div>
-                                                    <div class="col-4 col-md-2">
+                                                    <div class="col-4 catalog__bank col-md-2">
                                                         <a href="#modal-question-bank" data-toggle="modal">
                                                             <img src="./public/assets/img/bank/magnit.jpg"
-                                                                class="catalog__bank img-fluid" alt="magnit">
+                                                                class="img-fluid" alt="magnit">
                                                         </a>
                                                     </div>
-                                                    <div class="col-4 col-md-2">
+                                                    <div class="col-4 catalog__bank col-md-2">
                                                         <a href="#modal-question-bank" data-toggle="modal">
                                                             <img src="./public/assets/img/bank/pokupok.jpg"
-                                                                class="catalog__bank img-fluid" alt="pokupok">
+                                                                class="img-fluid" alt="pokupok">
                                                         </a>
                                                     </div>
-                                                    <div class="col-4 col-md-2">
+                                                    <div class="col-4 catalog__bank col-md-2">
                                                         <a href="#modal-question-bank" data-toggle="modal">
                                                             <img src="./public/assets/img/bank/smart.jpg"
-                                                                class="catalog__bank img-fluid" alt="smart">
+                                                                class="img-fluid" alt="smart">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -345,7 +345,7 @@
                                         <table class="table table-sm table-striped">
                                             <tbody>
                                                 <tr>
-                                                    <th>Ширина (м): <a href="#modal-question-shirina"
+                                                    <th>Ширина<span class="d-sm-inline d-none"> (м)</span>: <a href="#modal-question-shirina"
                                                             data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
                                                                 aria-hidden="true"></i></a></th>
                                                     <td>
@@ -356,7 +356,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th>Длина (м): <a href="#modal-question-length"
+                                                    <th><span class="d-sm-inline d-none">Длина (м)</span><span class="d-sm-none d-inline">Длина2 (м)</span>: <a href="#modal-question-length"
                                                             data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
                                                                 aria-hidden="true"></i></a></th>
                                                     <td>
@@ -435,12 +435,12 @@
                                                         <label class="catalog__input m-0">
                                                             <input type="radio" name="kreplenie" value="bolt"
                                                                 checked="">
-                                                            <span class="catalog__input__label">Болт</span>
+                                                            <span class="catalog__text__label">Болт</span>
                                                         </label>
-                                                        <label class="catalog__input m-0">
+                                                        <!-- <label class="catalog__input m-0">
                                                             <input type="radio" name="kreplenie" value="krab">
                                                             <span class="catalog__input__label">Краб</span>
-                                                        </label>
+                                                        </label> -->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -451,11 +451,11 @@
                                                         <label class="catalog__input m-0">
                                                             <input type="radio" name="additional[]" value="dostavka_0"
                                                                 checked="">
-                                                            <span class="catalog__input__label">Разборная</span>
+                                                            <span class="catalog__input__label"><span class="d-sm-inline d-none">Разборная</span><span class="d-sm-none d-inline">Разб.</span></span>
                                                         </label>
                                                         <label class="catalog__input m-0">
                                                             <input type="radio" name="additional[]" value="dostavka_30">
-                                                            <span class="catalog__input__label">Цельная</span>
+                                                            <span class="catalog__input__label"><span class="d-sm-inline d-none">Цельная</span><span class="d-sm-none d-inline">Цельн.</span></span>
                                                         </label>
                                                     </td>
                                                 </tr>
@@ -598,11 +598,11 @@
                                             <td>
                                                 <label class="catalog__input m-0">
                                                     <input type="radio" name="additional[]" value="dostavka_0" checked>
-                                                    <span class="catalog__input__label">Разборная</span>
+                                                    <span class="catalog__input__label"><span class="d-sm-inline d-none">Разборная</span><span class="d-sm-none d-inline">Разб.</span></span>
                                                 </label>
                                                 <label class="catalog__input m-0">
                                                     <input type="radio" name="additional[]" value="dostavka_20_24">
-                                                    <span class="catalog__input__label">Цельная</span>
+                                                    <span class="catalog__input__label"><span class="d-sm-inline d-none">Цельная</span><span class="d-sm-none d-inline">Цельн.</span></span>
                                                 </label>
                                             </td>
                                         </tr>
@@ -736,11 +736,11 @@
                                             <td>
                                                 <label class="catalog__input m-0">
                                                     <input type="radio" name="additional[]" value="dostavka_0" checked>
-                                                    <span class="catalog__input__label">Разборная</span>
+                                                    <span class="catalog__input__label"><span class="d-sm-inline d-none">Разборная</span><span class="d-sm-none d-inline">Разб.</span></span>
                                                 </label>
                                                 <label class="catalog__input m-0">
                                                     <input type="radio" name="additional[]" value="dostavka_30">
-                                                    <span class="catalog__input__label">Цельная</span>
+                                                    <span class="catalog__input__label"><span class="d-sm-inline d-none">Цельная</span><span class="d-sm-none d-inline">Цельн.</span></span>
                                                 </label>
                                             </td>
                                         </tr>
@@ -879,11 +879,11 @@
                                             <td>
                                                 <label class="catalog__input m-0">
                                                     <input type="radio" name="additional[]" value="dostavka_0" checked>
-                                                    <span class="catalog__input__label">Разборная</span>
+                                                    <span class="catalog__input__label"><span class="d-sm-inline d-none">Разборная</span><span class="d-sm-none d-inline">Разб.</span></span>
                                                 </label>
                                                 <label class="catalog__input m-0">
                                                     <input type="radio" name="additional[]" value="dostavka_35_40">
-                                                    <span class="catalog__input__label">Цельная</span>
+                                                    <span class="catalog__input__label"><span class="d-sm-inline d-none">Цельная</span><span class="d-sm-none d-inline">Цельн.</span></span>
                                                 </label>
                                             </td>
                                         </tr>
@@ -993,7 +993,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="equipment__card">
                         <div class="equipment__img">
                             <img src="./public/assets/img/additional/forto4ka.jpg" class="img-fluid">
@@ -1007,7 +1007,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="equipment__card">
                         <div class="equipment__img">
                             <img src="./public/assets/img/additional/gazlift.jpg" class="img-fluid">
@@ -1021,7 +1021,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="equipment__card">
                         <div class="equipment__img">
                             <img src="./public/assets/img/additional/lenta.jpg" class="img-fluid">
@@ -1035,7 +1035,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="equipment__card">
                         <div class="equipment__img">
                             <img src="./public/assets/img/additional/poliv.jpg" class="img-fluid">
@@ -1049,7 +1049,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="equipment__card">
                         <div class="equipment__img">
                             <img src="./public/assets/img/additional/podv9zki.jpg" class="img-fluid">
@@ -1063,7 +1063,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="equipment__card">
                         <div class="equipment__img">
                             <img src="./public/assets/img/additional/pp.jpg" class="img-fluid">
@@ -1077,7 +1077,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="equipment__card">
                         <div class="equipment__img">
                             <img src="./public/assets/img/additional/pog.jpg" class="img-fluid">
@@ -1091,7 +1091,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="equipment__card">
                         <div class="equipment__img">
                             <img src="./public/assets/img/additional/gryadka.jpg" class="img-fluid">
@@ -1814,7 +1814,7 @@
         integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
 
     <script src="./public/scripts/data.js"></script>
-    <script src="./src/scripts/c.js"></script>
-    <script src="./src/scripts/js.js"></script>
+    <script src="./dist/scripts/c.min.js"></script>
+    <script src="./dist/scripts/js.min.js"></script>
 </body>
 </html>

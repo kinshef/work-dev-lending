@@ -130,13 +130,22 @@ $(document).ready(function () {
             $('span', $('.presentCol__remainder')).each(function(item, index){
                 var remainderGifts = String(50-activData)[item];
                 if(item === 1){
-                    if(remainderGifts == 1){
-                        $('.presentCol__gifts').text('подарок');
-                    }
-                    if(remainderGifts == 2 || remainderGifts == 3 || remainderGifts == 4){
-                        $('.presentCol__gifts').text('подарка');
-                    }else{
-                        $('.presentCol__gifts').text('подарков');
+                    switch (+remainderGifts) {
+                        case 1:
+                            $('.presentCol__gifts').text('подарок');
+                            break;
+                        case 2:
+                            $('.presentCol__gifts').text('подарка');
+                            break;
+                        case 3:
+                            $('.presentCol__gifts').text('подарка');
+                            break;
+                        case 4:
+                            $('.presentCol__gifts').text('подарка');
+                            break;
+                        default:
+                            $('.presentCol__gifts').text('подарков');
+                            break;
                     }
                 }
                 index.textContent = remainderGifts;
