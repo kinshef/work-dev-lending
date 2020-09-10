@@ -22,7 +22,10 @@
 
     <!-- MOBILE MENU -->
     <div class="mobile-menu__btn" >
-        <i class="fa fa-bars" id="mobile-btn_show" aria-hidden="true"></i>
+        <div id="mobile-btn_show">
+            <i class="fa fa-bars" aria-hidden="true"></i><br>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+        </div>
         <i class="fa fa-share" id="mobile-btn_close" aria-hidden="true"></i>
     </div>
 
@@ -53,25 +56,25 @@
 
     <section id="section-header" class="section-header">
         <div class="container">
-            <div class="row text-center align-items-center">
-                <div class="col-8 col-lg-3 offset-md-0 offset-2">
+            <div class="row text-center align-items-center py-1">
+                <div class="col-lg-3 col-3 d-md-block d-none">
                     <a href="#"><img class="img-fluid h-auto" src="./public/assets/img/icon/logo.jpg" alt="logo"></a>
                 </div>
-                <div class="col-8 col-lg-4">
+                <div class="col-lg-4 col-md-5 col-6">
                     <div class="row">
-                        <div class="phone-block">
+                        <div class="phone-block d-flex align-items-center">
                             <img src="./public/assets/img/icon/call_mts_24.jpg" alt="icon">
-                            <a class="mr-2 d-block d-xl-inline-block" href="tel:+375295320562">+375 29&nbsp; 532-05-62</a>
+                            <a href="tel:+375295320562">+375 29&nbsp; 532-05-62</a>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="phone-block">
+                        <div class="phone-block d-flex align-items-center">
                             <img src="./public/assets/img/icon/call_a1_24.jpg" alt="icon">
-                            <a class="mr-2 d-block d-xl-inline-block" href="tel:+375445320562">+375 44&nbsp; 532-05-62</a>
+                            <a href="tel:+375445320562">+375 44&nbsp; 532-05-62</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-3 text-md-left header-call">
+                <div class="col-lg-3 col-md-4 col-6 text-md-left header-call">
                     <div class="btn_custom btn_small">
                         <a class="smoothscroll transition--slide" data-target="#modal-order"  data-toggle="modal">
                             <img src="./public/assets/img/icon/call.png" alt="icon">
@@ -79,7 +82,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-lg-2 text-md-left header-delivery">
+                <div class="col-lg-2 d-lg-block d-none text-left header-delivery">
                     <div class="row">
                         <img src="./public/assets/img/icon/delivery.png" alt="icon">
                         <span>Доставка по всей Беларуси</span>
@@ -133,7 +136,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 text-center align-self-center section-header-main">
-                    <img src="./public/assets/img/icon/greenhouse-warranty.png" alt="warranty">
+                    <img src="./public/assets/img/icon/greenhouse-warranty.png" alt="warranty" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -202,7 +205,8 @@
 
             <div class="section-catalog__cart-product">
                 <form class="has-calculator">
-                    <input type="hidden" name="product" value="product_new">
+                    <input type="hidden" name="product" value="teplica_3">
+                    <input type="hidden" name="additional[]" value="dostavka_0">
                     <div class="row">
                         <div class="col-12">
                             <div class="h2 has-calculator__title">Телица Сибирская</div>
@@ -307,22 +311,6 @@
                                         </label>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <th>Двойная дуга: <a href="#modal-question-duga"
-                                            data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
-                                                aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="additional[]" value="dostavka_0"
-                                                checked="">
-                                            <span class="catalog__input__label"><span class="d-sm-inline d-none">Разборная</span><span class="d-sm-none d-inline">Разб.</span></span>
-                                        </label>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="additional[]" value="dostavka_30">
-                                            <span class="catalog__input__label"><span class="d-sm-inline d-none">Цельная</span><span class="d-sm-none d-inline">Цельн.</span></span>
-                                        </label>
-                                    </td>
-                                </tr>
                                 </tbody>
                             </table>
 
@@ -357,7 +345,7 @@
                             <div class="product-price">
                                 <span>Цена старая:</span>
                                 <s class="d-inline-block">
-                                    <span class="jPriceOld" data-animation="animated tada delay-1s">0</span>
+                                    <span class="calculator-price-old" data-animation="animated tada delay-1s">0</span>
                                     <span> руб.</span>
                                 </s>
                             </div>
@@ -366,7 +354,7 @@
                             <div class="product-price font-weight-bold">
                                 <span>Цена новая:</span>
                                 <p class="text-red d-inline-block">
-                                    <span class="jPrice" data-animation="animated tada delay-1s">0</span>
+                                    <span class="calculator-price" data-animation="animated tada delay-1s">0</span>
                                     <span>руб.</span>
                                 </p>
                             </div>
@@ -390,10 +378,11 @@
 
             <div class="section-catalog__cart-product">
                 <form class="has-calculator">
-                    <input type="hidden" name="product" value="sibirskaya_shir_2">
+                    <input type="hidden" name="product" value="teplica_2_24">
+                    <input type="hidden" name="additional[]" value="dostavka_0">
                     <div class="row">
                         <div class="col-12">
-                            <div class="h2 has-calculator__title">Теплица Сибирская (Шир 2м)</div>
+                            <div class="h2 has-calculator__title">Теплица Сибирская Шир 2м и 2,4м</div>
                         </div>
                         <div class="col-md-4 mb-3 col-12 has-calculator__img">
                             <a href="./public/assets/img/card/sibirskaya_shir_2.jpg" data-fancybox>
@@ -436,10 +425,6 @@
                                             <input type="radio" name="interval" value="0_67">
                                             <span class="catalog__input__label">0,67</span>
                                         </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="0_5">
-                                            <span class="catalog__input__label">0,5</span>
-                                        </label>
                                     </td>
                                 </tr>
                                 <tr>
@@ -447,7 +432,11 @@
                                     <td>
                                         <label class="catalog__input m-0">
                                             <input type="radio" name="shirina" value="2" checked>
-                                            <span class="catalog__text__label">2</span>
+                                            <span class="catalog__input__label">2</span>
+                                        </label>
+                                        <label class="catalog__input m-0">
+                                            <input type="radio" name="shirina" value="2_4">
+                                            <span class="catalog__input__label">2,4</span>
                                         </label>
                                     </td>
                                 </tr>
@@ -503,7 +492,7 @@
                             <div class="product-price">
                                 <span>Цена старая:</span>
                                 <s class="d-inline-block">
-                                    <span class="jPriceOld" data-animation="animated tada delay-1s">0</span>
+                                    <span class="calculator-price-old" data-animation="animated tada delay-1s">0</span>
                                     <span> руб.</span>
                                 </s>
                             </div>
@@ -512,7 +501,7 @@
                             <div class="product-price font-weight-bold">
                                 <span>Цена новая:</span>
                                 <p class="text-red d-inline-block">
-                                    <span class="jPrice" data-animation="animated tada delay-1s">0</span>
+                                    <span class="calculator-price" data-animation="animated tada delay-1s">0</span>
                                     <span>руб.</span>
                                 </p>
                             </div>
@@ -536,10 +525,11 @@
 
             <div class="section-catalog__cart-product">
                 <form class="has-calculator">
-                    <input type="hidden" name="product" value="sibirskaya_shir_2_4">
+                    <input type="hidden" name="product" value="sibirskaya_krab">
+                    <input type="hidden" name="additional[]" value="dostavka_0">
                     <div class="row">
                         <div class="col-12">
-                            <div class="h2 has-calculator__title">Телица Сибирская (Шир 2,4м)</div>
+                            <div class="h2 has-calculator__title">Теплица Сибирская Шир 3м - Краб</div>
                         </div>
                         <div class="col-md-4 mb-3 col-12 has-calculator__img">
                             <a href="./public/assets/img/card/sibirskaya_shir_2_4.jpg" data-fancybox>
@@ -582,18 +572,14 @@
                                             <input type="radio" name="interval" value="0_67">
                                             <span class="catalog__input__label">0,67</span>
                                         </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="0_5">
-                                            <span class="catalog__input__label">0,5</span>
-                                        </label>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th>Ширина (м): <a href="#modal-question-shirina" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
                                     <td>
                                         <label class="catalog__input m-0">
-                                            <input type="radio" name="shirina" value="2_4" checked>
-                                            <span class="catalog__text__label">2,4</span>
+                                            <input type="radio" name="shirina" value="3" checked>
+                                            <span class="catalog__text__label">3</span>
                                         </label>
                                     </td>
                                 </tr>
@@ -601,8 +587,12 @@
                                     <th>Профиль (мм): <a href="#modal-question-profil" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
                                     <td>
                                         <label class="catalog__input m-0">
-                                            <input type="radio" name="profil" value="20" checked>
-                                            <span class="catalog__text__label">20х20</span>
+                                            <input type="radio" name="hiden" value="20" checked>
+                                            <span class="catalog__input__label">20х20</span>
+                                        </label>
+                                        <label class="catalog__input m-0">
+                                            <input type="radio" name="hiden" value="40">
+                                            <span class="catalog__input__label">40х20</span>
                                         </label>
                                     </td>
                                 </tr>
@@ -649,7 +639,7 @@
                             <div class="product-price">
                                 <span>Цена старая:</span>
                                 <s class="d-inline-block">
-                                    <span class="jPriceOld" data-animation="animated tada delay-1s">0</span>
+                                    <span class="calculator-price-old" data-animation="animated tada delay-1s">0</span>
                                     <span> руб.</span>
                                 </s>
                             </div>
@@ -658,7 +648,7 @@
                             <div class="product-price font-weight-bold">
                                 <span>Цена новая:</span>
                                 <p class="text-red d-inline-block">
-                                    <span class="jPrice" data-animation="animated tada delay-1s">0</span>
+                                    <span class="calculator-price" data-animation="animated tada delay-1s">0</span>
                                     <span>руб.</span>
                                 </p>
                             </div>
@@ -682,10 +672,11 @@
 
             <div class="section-catalog__cart-product">
                 <form class="has-calculator">
-                    <input type="hidden" name="product" value="sibirskaya_20">
+                    <input type="hidden" name="product" value="teplica_35_4">
+                    <input type="hidden" name="additional[]" value="dostavka_0">
                     <div class="row">
                         <div class="col-12">
-                            <div class="h2 has-calculator__title">Телица Сибирская (20х20)</div>
+                            <div class="h2 has-calculator__title">Теплица Сибирская Шир 3,5м и 4м</div>
                         </div>
                         <div class="col-md-4 mb-3 col-12 has-calculator__img">
                             <a href="./public/assets/img/card/sibirskaya_20.jpg" data-fancybox>
@@ -738,884 +729,12 @@
                                     <th>Ширина (м): <a href="#modal-question-shirina" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
                                     <td>
                                         <label class="catalog__input m-0">
-                                            <input type="radio" name="shirina" value="3" checked>
-                                            <span class="catalog__text__label">3</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Профиль (мм): <a href="#modal-question-profil" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="profil" value="20" checked>
-                                            <span class="catalog__text__label">20х20</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Крепление: <a href="#modal-question-kreplenie" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="kreplenie" value="bolt" checked>
-                                            <span class="catalog__text__label">Болт</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-
-                            <hr>
-
-                            <div class="col-12">
-
-                                <div class="catalog-toggle">
-                                    <button type="button" class="btn catalog-btn-custom catalog-toggle__btn">↓ Дополнительная комплектация ↓</button>
-                                    <hr>
-                                    <div class="catalog-toggle__container">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                 -Форточка<br>
-                                                 -Автоинтеллект<br>
-                                                 -Изоляционная лента<br>
-                                                 -Автополив
-                                            </div>
-                                            <div class="col-6">
-                                                 -П-профиль<br>
-                                                 -Лента крепления<br>
-                                                 -Подвязки<br>
-                                                 -Перфорированная лента
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-6 text-center">
-                            <div class="product-price">
-                                <span>Цена старая:</span>
-                                <s class="d-inline-block">
-                                    <span class="jPriceOld" data-animation="animated tada delay-1s">0</span>
-                                    <span> руб.</span>
-                                </s>
-                            </div>
-                        </div>
-                        <div class="col-6 text-center">
-                            <div class="product-price font-weight-bold">
-                                <span>Цена новая:</span>
-                                <p class="text-red d-inline-block">
-                                    <span class="jPrice" data-animation="animated tada delay-1s">0</span>
-                                    <span>руб.</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-center mb-3">
-                        <div class="col-md-6">
-                            <div class="input-group input-group-lg">
-                                <input type="text" name="phone" class="form-control" placeholder="Телефон" required>
-                                <div class="input-group-append">
-                                    <button class="btn btn-danger px-xl-5" type="submit">Заказать</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <!-- РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ HFPLTKBNTKM NJDFHJD -->
-
-            <div class="section-catalog__cart-product">
-                <form class="has-calculator">
-                    <input type="hidden" name="product" value="sibirskaya_40">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="h2 has-calculator__title">Телица Сибирская (40х20)</div>
-                        </div>
-                        <div class="col-md-4 mb-3 col-12 has-calculator__img">
-                            <a href="./public/assets/img/card/sibirskaya_40.jpg" data-fancybox>
-                                <img class="w-100 h-auto" src="./public/assets/img/card/sibirskaya_40.jpg">
-                            </a>
-                        </div>
-                        <div class="col-md-8 col-12">
-
-                            <table class="table table-sm table-striped catalog__table">
-                                <tbody>
-                                <tr>
-                                    <th>Длина (м): <a href="#modal-question-length" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="4" checked>
-                                            <span class="catalog__input__label">4</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="6">
-                                            <span class="catalog__input__label">6</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="8">
-                                            <span class="catalog__input__label">8</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="10">
-                                            <span class="catalog__input__label">10</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Интервал (м): <a href="#modal-question-interval" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="1" checked>
-                                            <span class="catalog__input__label">1</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="0_67">
-                                            <span class="catalog__input__label">0,67</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="0_5">
-                                            <span class="catalog__input__label">0,5</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Ширина (м): <a href="#modal-question-shirina" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="shirina" value="3" checked>
-                                            <span class="catalog__text__label">3</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Профиль (мм): <a href="#modal-question-profil" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="profil" value="40" checked>
-                                            <span class="catalog__text__label">40х20</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Крепление: <a href="#modal-question-kreplenie" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="kreplenie" value="bolt" checked>
-                                            <span class="catalog__text__label">Болт</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-
-                            <hr>
-
-                            <div class="col-12">
-
-                                <div class="catalog-toggle">
-                                    <button type="button" class="btn catalog-btn-custom catalog-toggle__btn">↓ Дополнительная комплектация ↓</button>
-                                    <hr>
-                                    <div class="catalog-toggle__container">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                 -Форточка<br>
-                                                 -Автоинтеллект<br>
-                                                 -Изоляционная лента<br>
-                                                 -Автополив
-                                            </div>
-                                            <div class="col-6">
-                                                 -П-профиль<br>
-                                                 -Лента крепления<br>
-                                                 -Подвязки<br>
-                                                 -Перфорированная лента
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-6 text-center">
-                            <div class="product-price">
-                                <span>Цена старая:</span>
-                                <s class="d-inline-block">
-                                    <span class="jPriceOld" data-animation="animated tada delay-1s">0</span>
-                                    <span> руб.</span>
-                                </s>
-                            </div>
-                        </div>
-                        <div class="col-6 text-center">
-                            <div class="product-price font-weight-bold">
-                                <span>Цена новая:</span>
-                                <p class="text-red d-inline-block">
-                                    <span class="jPrice" data-animation="animated tada delay-1s">0</span>
-                                    <span>руб.</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-center mb-3">
-                        <div class="col-md-6">
-                            <div class="input-group input-group-lg">
-                                <input type="text" name="phone" class="form-control" placeholder="Телефон" required>
-                                <div class="input-group-append">
-                                    <button class="btn btn-danger px-xl-5" type="submit">Заказать</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <!-- РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ HFPLTKBNTKM NJDFHJD -->
-
-            <div class="section-catalog__cart-product">
-                <form class="has-calculator">
-                    <input type="hidden" name="product" value="sibirskaya_shir_3_5">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="h2 has-calculator__title">Телица Сибирская (Шир 3,5м)</div>
-                        </div>
-                        <div class="col-md-4 mb-3 col-12 has-calculator__img">
-                            <a href="./public/assets/img/card/sibirskaya_shir_3_5.jpg" data-fancybox>
-                                <img class="w-100 h-auto" src="./public/assets/img/card/sibirskaya_shir_3_5.jpg">
-                            </a>
-                        </div>
-                        <div class="col-md-8 col-12">
-
-                            <table class="table table-sm table-striped catalog__table">
-                                <tbody>
-                                <tr>
-                                    <th>Длина (м): <a href="#modal-question-length" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="4" checked>
-                                            <span class="catalog__input__label">4</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="6">
-                                            <span class="catalog__input__label">6</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="8">
-                                            <span class="catalog__input__label">8</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="10">
-                                            <span class="catalog__input__label">10</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Интервал (м): <a href="#modal-question-interval" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="1" checked>
-                                            <span class="catalog__input__label">1</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="0_67">
-                                            <span class="catalog__input__label">0,67</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="0_5">
-                                            <span class="catalog__input__label">0,5</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Ширина (м): <a href="#modal-question-shirina" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
                                             <input type="radio" name="shirina" value="3_5" checked>
-                                            <span class="catalog__text__label">3,5</span>
+                                            <span class="catalog__input__label">3,5</span>
                                         </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Профиль (мм): <a href="#modal-question-profil" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
                                         <label class="catalog__input m-0">
-                                            <input type="radio" name="profil" value="40" checked>
-                                            <span class="catalog__text__label">40х20</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Крепление: <a href="#modal-question-kreplenie" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="kreplenie" value="bolt" checked>
-                                            <span class="catalog__text__label">Болт</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-
-                            <hr>
-
-                            <div class="col-12">
-
-                                <div class="catalog-toggle">
-                                    <button type="button" class="btn catalog-btn-custom catalog-toggle__btn">↓ Дополнительная комплектация ↓</button>
-                                    <hr>
-                                    <div class="catalog-toggle__container">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                 -Форточка<br>
-                                                 -Автоинтеллект<br>
-                                                 -Изоляционная лента<br>
-                                                 -Автополив
-                                            </div>
-                                            <div class="col-6">
-                                                 -П-профиль<br>
-                                                 -Лента крепления<br>
-                                                 -Подвязки<br>
-                                                 -Перфорированная лента
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-6 text-center">
-                            <div class="product-price">
-                                <span>Цена старая:</span>
-                                <s class="d-inline-block">
-                                    <span class="jPriceOld" data-animation="animated tada delay-1s">0</span>
-                                    <span> руб.</span>
-                                </s>
-                            </div>
-                        </div>
-                        <div class="col-6 text-center">
-                            <div class="product-price font-weight-bold">
-                                <span>Цена новая:</span>
-                                <p class="text-red d-inline-block">
-                                    <span class="jPrice" data-animation="animated tada delay-1s">0</span>
-                                    <span>руб.</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-center mb-3">
-                        <div class="col-md-6">
-                            <div class="input-group input-group-lg">
-                                <input type="text" name="phone" class="form-control" placeholder="Телефон" required>
-                                <div class="input-group-append">
-                                    <button class="btn btn-danger px-xl-5" type="submit">Заказать</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <!-- РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ HFPLTKBNTKM NJDFHJD -->
-
-            <div class="section-catalog__cart-product">
-                <form class="has-calculator">
-                    <input type="hidden" name="product" value="sibirskaya_shir_4">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="h2 has-calculator__title">Телица Сибирская (Шир 4м)</div>
-                        </div>
-                        <div class="col-md-4 mb-3 col-12 has-calculator__img">
-                            <a href="./public/assets/img/card/sibirskaya_shir_4.jpg" data-fancybox>
-                                <img class="w-100 h-auto" src="./public/assets/img/card/sibirskaya_shir_4.jpg">
-                            </a>
-                        </div>
-                        <div class="col-md-8 col-12">
-
-                            <table class="table table-sm table-striped catalog__table">
-                                <tbody>
-                                <tr>
-                                    <th>Длина (м): <a href="#modal-question-length" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="4" checked>
+                                            <input type="radio" name="shirina" value="4">
                                             <span class="catalog__input__label">4</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="6">
-                                            <span class="catalog__input__label">6</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="8">
-                                            <span class="catalog__input__label">8</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="10">
-                                            <span class="catalog__input__label">10</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Интервал (м): <a href="#modal-question-interval" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="1" checked>
-                                            <span class="catalog__input__label">1</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="0_67">
-                                            <span class="catalog__input__label">0,67</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="0_5">
-                                            <span class="catalog__input__label">0,5</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Ширина (м): <a href="#modal-question-shirina" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="shirina" value="4" checked>
-                                            <span class="catalog__text__label">4</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Профиль (мм): <a href="#modal-question-profil" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="profil" value="40" checked>
-                                            <span class="catalog__text__label">40х20</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Крепление: <a href="#modal-question-kreplenie" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="kreplenie" value="bolt" checked>
-                                            <span class="catalog__text__label">Болт</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-
-                            <hr>
-
-                            <div class="col-12">
-
-                                <div class="catalog-toggle">
-                                    <button type="button" class="btn catalog-btn-custom catalog-toggle__btn">↓ Дополнительная комплектация ↓</button>
-                                    <hr>
-                                    <div class="catalog-toggle__container">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                 -Форточка<br>
-                                                 -Автоинтеллект<br>
-                                                 -Изоляционная лента<br>
-                                                 -Автополив
-                                            </div>
-                                            <div class="col-6">
-                                                 -П-профиль<br>
-                                                 -Лента крепления<br>
-                                                 -Подвязки<br>
-                                                 -Перфорированная лента
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-6 text-center">
-                            <div class="product-price">
-                                <span>Цена старая:</span>
-                                <s class="d-inline-block">
-                                    <span class="jPriceOld" data-animation="animated tada delay-1s">0</span>
-                                    <span> руб.</span>
-                                </s>
-                            </div>
-                        </div>
-                        <div class="col-6 text-center">
-                            <div class="product-price font-weight-bold">
-                                <span>Цена новая:</span>
-                                <p class="text-red d-inline-block">
-                                    <span class="jPrice" data-animation="animated tada delay-1s">0</span>
-                                    <span>руб.</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-center mb-3">
-                        <div class="col-md-6">
-                            <div class="input-group input-group-lg">
-                                <input type="text" name="phone" class="form-control" placeholder="Телефон" required>
-                                <div class="input-group-append">
-                                    <button class="btn btn-danger px-xl-5" type="submit">Заказать</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <!-- РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ HFPLTKBNTKM NJDFHJD -->
-
-            <div class="section-catalog__cart-product">
-                <form class="has-calculator">
-                    <input type="hidden" name="product" value="sibirskaya_krab_20">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="h2 has-calculator__title">Телица Сибирская (Краб 20х20)</div>
-                        </div>
-                        <div class="col-md-4 mb-3 col-12 has-calculator__img">
-                            <a href="./public/assets/img/card/sibirskaya_krab_20.jpg" data-fancybox>
-                                <img class="w-100 h-auto" src="./public/assets/img/card/sibirskaya_krab_20.jpg">
-                            </a>
-                        </div>
-                        <div class="col-md-8 col-12">
-
-                            <table class="table table-sm table-striped catalog__table">
-                                <tbody>
-                                <tr>
-                                    <th>Длина (м): <a href="#modal-question-length" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="4" checked>
-                                            <span class="catalog__input__label">4</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="6">
-                                            <span class="catalog__input__label">6</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="8">
-                                            <span class="catalog__input__label">8</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="10">
-                                            <span class="catalog__input__label">10</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Интервал (м): <a href="#modal-question-interval" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="1" checked>
-                                            <span class="catalog__input__label">1</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="0_67">
-                                            <span class="catalog__input__label">0,67</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="0_5">
-                                            <span class="catalog__input__label">0,5</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Ширина (м): <a href="#modal-question-shirina" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="shirina" value="3" checked>
-                                            <span class="catalog__text__label">3</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Профиль (мм): <a href="#modal-question-profil" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="profil" value="20" checked>
-                                            <span class="catalog__text__label">20х20</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Крепление: <a href="#modal-question-kreplenie" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="kreplenie" value="krab" checked>
-                                            <span class="catalog__text__label">Краб</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-
-                            <hr>
-
-                            <div class="col-12">
-
-                                <div class="catalog-toggle">
-                                    <button type="button" class="btn catalog-btn-custom catalog-toggle__btn">↓ Дополнительная комплектация ↓</button>
-                                    <hr>
-                                    <div class="catalog-toggle__container">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                 -Форточка<br>
-                                                 -Автоинтеллект<br>
-                                                 -Изоляционная лента<br>
-                                                 -Автополив
-                                            </div>
-                                            <div class="col-6">
-                                                 -П-профиль<br>
-                                                 -Лента крепления<br>
-                                                 -Подвязки<br>
-                                                 -Перфорированная лента
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-6 text-center">
-                            <div class="product-price">
-                                <span>Цена старая:</span>
-                                <s class="d-inline-block">
-                                    <span class="jPriceOld" data-animation="animated tada delay-1s">0</span>
-                                    <span> руб.</span>
-                                </s>
-                            </div>
-                        </div>
-                        <div class="col-6 text-center">
-                            <div class="product-price font-weight-bold">
-                                <span>Цена новая:</span>
-                                <p class="text-red d-inline-block">
-                                    <span class="jPrice" data-animation="animated tada delay-1s">0</span>
-                                    <span>руб.</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-center mb-3">
-                        <div class="col-md-6">
-                            <div class="input-group input-group-lg">
-                                <input type="text" name="phone" class="form-control" placeholder="Телефон" required>
-                                <div class="input-group-append">
-                                    <button class="btn btn-danger px-xl-5" type="submit">Заказать</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <!-- РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ HFPLTKBNTKM NJDFHJD -->
-
-            <div class="section-catalog__cart-product">
-                <form class="has-calculator">
-                    <input type="hidden" name="product" value="sibirskaya_krab_40">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="h2 has-calculator__title">Телица Сибирская (Краб 40х20)</div>
-                        </div>
-                        <div class="col-md-4 mb-3 col-12 has-calculator__img">
-                            <a href="./public/assets/img/card/sibirskaya_krab_40.jpg" data-fancybox>
-                                <img class="w-100 h-auto" src="./public/assets/img/card/sibirskaya_krab_40.jpg">
-                            </a>
-                        </div>
-                        <div class="col-md-8 col-12">
-
-                            <table class="table table-sm table-striped catalog__table">
-                                <tbody>
-                                <tr>
-                                    <th>Длина (м): <a href="#modal-question-length" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="4" checked>
-                                            <span class="catalog__input__label">4</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="6">
-                                            <span class="catalog__input__label">6</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="8">
-                                            <span class="catalog__input__label">8</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="10">
-                                            <span class="catalog__input__label">10</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Интервал (м): <a href="#modal-question-interval" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="1" checked>
-                                            <span class="catalog__input__label">1</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="0_67">
-                                            <span class="catalog__input__label">0,67</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="0_5">
-                                            <span class="catalog__input__label">0,5</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Ширина (м): <a href="#modal-question-shirina" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="shirina" value="3" checked>
-                                            <span class="catalog__text__label">3</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Профиль (мм): <a href="#modal-question-profil" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="profil" value="40" checked>
-                                            <span class="catalog__text__label">40х20</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Крепление: <a href="#modal-question-kreplenie" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="kreplenie" value="krab" checked>
-                                            <span class="catalog__text__label">Краб</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-
-                            <hr>
-
-                            <div class="col-12">
-
-                                <div class="catalog-toggle">
-                                    <button type="button" class="btn catalog-btn-custom catalog-toggle__btn">↓ Дополнительная комплектация ↓</button>
-                                    <hr>
-                                    <div class="catalog-toggle__container">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                 -Форточка<br>
-                                                 -Автоинтеллект<br>
-                                                 -Изоляционная лента<br>
-                                                 -Автополив
-                                            </div>
-                                            <div class="col-6">
-                                                 -П-профиль<br>
-                                                 -Лента крепления<br>
-                                                 -Подвязки<br>
-                                                 -Перфорированная лента
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-6 text-center">
-                            <div class="product-price">
-                                <span>Цена старая:</span>
-                                <s class="d-inline-block">
-                                    <span class="jPriceOld" data-animation="animated tada delay-1s">0</span>
-                                    <span> руб.</span>
-                                </s>
-                            </div>
-                        </div>
-                        <div class="col-6 text-center">
-                            <div class="product-price font-weight-bold">
-                                <span>Цена новая:</span>
-                                <p class="text-red d-inline-block">
-                                    <span class="jPrice" data-animation="animated tada delay-1s">0</span>
-                                    <span>руб.</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-center mb-3">
-                        <div class="col-md-6">
-                            <div class="input-group input-group-lg">
-                                <input type="text" name="phone" class="form-control" placeholder="Телефон" required>
-                                <div class="input-group-append">
-                                    <button class="btn btn-danger px-xl-5" type="submit">Заказать</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <!-- РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ HFPLTKBNTKM NJDFHJD -->
-
-            <div class="section-catalog__cart-product">
-                <form class="has-calculator">
-                    <input type="hidden" name="product" value="sibirskaya_spr_20">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="h2 has-calculator__title">Телица Сибирская (СПР 20х20)</div>
-                        </div>
-                        <div class="col-md-4 mb-3 col-12 has-calculator__img">
-                            <a href="./public/assets/img/card/sibirskaya_spr_20.jpg" data-fancybox>
-                                <img class="w-100 h-auto" src="./public/assets/img/card/sibirskaya_spr_20.jpg">
-                            </a>
-                        </div>
-                        <div class="col-md-8 col-12">
-
-                            <table class="table table-sm table-striped catalog__table">
-                                <tbody>
-                                <tr>
-                                    <th>Длина (м): <a href="#modal-question-length" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="4" checked>
-                                            <span class="catalog__input__label">4</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="6">
-                                            <span class="catalog__input__label">6</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="8">
-                                            <span class="catalog__input__label">8</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="10">
-                                            <span class="catalog__input__label">10</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Интервал (м): <a href="#modal-question-interval" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="1" checked>
-                                            <span class="catalog__input__label">1</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="0_67">
-                                            <span class="catalog__input__label">0,67</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="0_5">
-                                            <span class="catalog__input__label">0,5</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Ширина (м): <a href="#modal-question-shirina" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="shirina" value="3" checked>
-                                            <span class="catalog__text__label">3</span>
                                         </label>
                                     </td>
                                 </tr>
@@ -1669,158 +788,9 @@
                         </div>
                         <div class="col-6 text-center">
                             <div class="product-price">
-                                <span>
-                                    Цена старая:
-                                </span>
-                                <s class="d-inline-block">
-                                    <span class="jPriceOld" data-animation="animated tada delay-1s">0</span>
-                                    <span class=""> руб.</span>
-                                </s>
-                            </div>
-                        </div>
-                        <div class="col-6 text-center">
-                            <div class="product-price font-weight-bold">
-                                <span>
-                                    Цена новая:
-                                </span>
-                                <p class="text-red d-inline-block" data-animation="animated tada delay-1s">
-                                    <span class="jPrice">0 руб.</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-center mb-3">
-                        <div class="col-md-6">
-                            <div class="input-group input-group-lg">
-                                <input type="text" name="phone" class="form-control" placeholder="Телефон" required>
-                                <div class="input-group-append">
-                                    <button class="btn btn-danger px-xl-5" type="submit">Заказать</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <!-- РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ HFPLTKBNTKM NJDFHJD -->
-
-            <div class="section-catalog__cart-product">
-                <form class="has-calculator">
-                    <input type="hidden" name="product" value="sibirskaya_spr_40">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="h2 has-calculator__title">Телица Сибирская (СПР 40х20)</div>
-                        </div>
-                        <div class="col-md-4 mb-3 col-12 has-calculator__img">
-                            <a href="./public/assets/img/card/sibirskaya_spr_40.jpg" data-fancybox>
-                                <img class="w-100 h-auto" src="./public/assets/img/card/sibirskaya_spr_40.jpg">
-                            </a>
-                        </div>
-                        <div class="col-md-8 col-12">
-
-                            <table class="table table-sm table-striped catalog__table">
-                                <tbody>
-                                <tr>
-                                    <th>Длина (м): <a href="#modal-question-length" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="4" checked>
-                                            <span class="catalog__input__label">4</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="6">
-                                            <span class="catalog__input__label">6</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="8">
-                                            <span class="catalog__input__label">8</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="10">
-                                            <span class="catalog__input__label">10</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Интервал (м): <a href="#modal-question-interval" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="1" checked>
-                                            <span class="catalog__input__label">1</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="0_67">
-                                            <span class="catalog__input__label">0,67</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="0_5">
-                                            <span class="catalog__input__label">0,5</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Ширина (м): <a href="#modal-question-shirina" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="shirina" value="3" checked>
-                                            <span class="catalog__text__label">3</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Профиль (мм): <a href="#modal-question-profil" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="profil" value="40" checked>
-                                            <span class="catalog__text__label">40х20</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Крепление: <a href="#modal-question-kreplenie" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="kreplenie" value="bolt" checked>
-                                            <span class="catalog__text__label">Болт</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-
-                            <hr>
-
-                            <div class="col-12">
-
-                                <div class="catalog-toggle">
-                                    <button type="button" class="btn catalog-btn-custom catalog-toggle__btn">↓ Дополнительная комплектация ↓</button>
-                                    <hr>
-                                    <div class="catalog-toggle__container">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                 -Форточка<br>
-                                                 -Автоинтеллект<br>
-                                                 -Изоляционная лента<br>
-                                                 -Автополив
-                                            </div>
-                                            <div class="col-6">
-                                                 -П-профиль<br>
-                                                 -Лента крепления<br>
-                                                 -Подвязки<br>
-                                                 -Перфорированная лента
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-6 text-center">
-                            <div class="product-price">
                                 <span>Цена старая:</span>
                                 <s class="d-inline-block">
-                                    <span class="jPriceOld" data-animation="animated tada delay-1s">0</span>
+                                    <span class="calculator-price-old" data-animation="animated tada delay-1s">0</span>
                                     <span> руб.</span>
                                 </s>
                             </div>
@@ -1829,157 +799,7 @@
                             <div class="product-price font-weight-bold">
                                 <span>Цена новая:</span>
                                 <p class="text-red d-inline-block">
-                                    <span class="jPrice" data-animation="animated tada delay-1s">0</span>
-                                    <span>руб.</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-center mb-3">
-                        <div class="col-md-6">
-                            <div class="input-group input-group-lg">
-                                <input type="text" name="phone" class="form-control" placeholder="Телефон" required>
-                                <div class="input-group-append">
-                                    <button class="btn btn-danger px-xl-5" type="submit">Заказать</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <!-- РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ HFPLTKBNTKM NJDFHJD -->
-
-            <div class="section-catalog__cart-product">
-                <form class="has-calculator">
-                    <input type="hidden" name="product" value="sibirskaya_dvoynaya">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="h2 has-calculator__title">Телица Сибирская (Двойная дуга)</div>
-                        </div>
-                        <div class="col-md-4 mb-3 col-12 has-calculator__img">
-                            <a href="./public/assets/img/card/sibirskaya_dvoynaya.jpg" data-fancybox>
-                                <img class="w-100 h-auto" src="./public/assets/img/card/sibirskaya_dvoynaya.jpg">
-                            </a>
-                        </div>
-                        <div class="col-md-8 col-12">
-
-                            <table class="table table-sm table-striped catalog__table">
-                                <tbody>
-                                <tr>
-                                    <th>Длина (м): <a href="#modal-question-length" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="4" checked>
-                                            <span class="catalog__input__label">4</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="6">
-                                            <span class="catalog__input__label">6</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="8">
-                                            <span class="catalog__input__label">8</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="length" value="10">
-                                            <span class="catalog__input__label">10</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Интервал (м): <a href="#modal-question-interval" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="1" checked>
-                                            <span class="catalog__input__label">1</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="0_67">
-                                            <span class="catalog__input__label">0,67</span>
-                                        </label>
-                                        <label class="catalog__input">
-                                            <input type="radio" name="interval" value="0_5">
-                                            <span class="catalog__input__label">0,5</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Ширина (м): <a href="#modal-question-shirina" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="shirina" value="3" checked>
-                                            <span class="catalog__text__label">3</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Профиль (мм): <a href="#modal-question-profil" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="profil" value="20" checked>
-                                            <span class="catalog__input__label">20х20</span>
-                                        </label>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="profil" value="40" checked>
-                                            <span class="catalog__input__label">40х20</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Крепление: <a href="#modal-question-kreplenie" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></th>
-                                    <td>
-                                        <label class="catalog__input m-0">
-                                            <input type="radio" name="kreplenie" value="bolt" checked>
-                                            <span class="catalog__text__label">Болт</span>
-                                        </label>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-
-                            <hr>
-
-                            <div class="col-12">
-
-                                <div class="catalog-toggle">
-                                    <button type="button" class="btn catalog-btn-custom catalog-toggle__btn">↓ Дополнительная комплектация ↓</button>
-                                    <hr>
-                                    <div class="catalog-toggle__container">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                 -Форточка<br>
-                                                 -Автоинтеллект<br>
-                                                 -Изоляционная лента<br>
-                                                 -Автополив
-                                            </div>
-                                            <div class="col-6">
-                                                 -П-профиль<br>
-                                                 -Лента крепления<br>
-                                                 -Подвязки<br>
-                                                 -Перфорированная лента
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-6 text-center">
-                            <div class="product-price">
-                                <span>Цена старая:</span>
-                                <s class="d-inline-block">
-                                    <span class="jPriceOld" data-animation="animated tada delay-1s">0</span>
-                                    <span> руб.</span>
-                                </s>
-                            </div>
-                        </div>
-                        <div class="col-6 text-center">
-                            <div class="product-price font-weight-bold">
-                                <span>Цена новая:</span>
-                                <p class="text-red d-inline-block">
-                                    <span class="jPrice" data-animation="animated tada delay-1s">0</span>
+                                    <span class="calculator-price" data-animation="animated tada delay-1s">0</span>
                                     <span>руб.</span>
                                 </p>
                             </div>
@@ -2726,9 +1546,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
 
     <script src="./public/scripts/data.js"></script>
-    <script src="./src/scripts/js.js"></script>
-    <script src="./src/scripts/c.js"></script>
-    <!-- <script src="./dist/scripts/js.js"></script>
-    <script src="./dist/scripts/c.js"></script> -->
+    <script src="./dist/scripts/js.min.js"></script>
+    <script src="./dist/scripts/c.min.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var formOtprData;
+    var formOtprData, otprRespText;
     var proverkaTel = function(formOtpr, data) {
 
         $('.provercaPhone__inputPhone , .provercaPhone-btnTwo').toggleClass('d-none', true).toggleClass('d-block', false);
@@ -14,6 +14,11 @@ $(document).ready(function () {
             $('.provercaPhone__inputPhone').focus();
         });
 
+        $(".provercaPhone-btn__true").click(function (event) {
+            event.preventDefault();
+            $('#modal-proverca').modal('hide');
+            alert(otprRespText);
+        });
         if(formOtpr.id !== 'provercaPhone'){
             formOtprData = $(formOtpr).serializeArray()
             $(formOtpr).serializeArray().map(function(formData){
@@ -34,6 +39,7 @@ $(document).ready(function () {
     $("form").submit(function (event) {
         event.preventDefault();
 
+        // проверка телефона (отключение лишних уведомлений)
         // if(typeof sessionStorage !== 'undefined'){
         //     if(sessionStorage.getItem('formSubmitted')){
         //         if(!confirm('Вы уже отправили заявку, повторить?')){return false}
@@ -41,6 +47,7 @@ $(document).ready(function () {
         //         sessionStorage.setItem('formSubmitted', 'true')
         //     }
         // }
+        // проверка телефона (отключение лишних уведомлений) end
         var data = $(this).serializeArray();
 
         // проверка телефона
@@ -71,9 +78,12 @@ $(document).ready(function () {
             dataType: "json",
             data: data,
         }).done(function (response) {
+            // проверка телефона (отключение лишних благодарностей)
+            otprRespText = response.text;
             if(+sessionStorage.getItem('formPhone')){
                 alert(response.text);
             }
+            // проверка телефона (отключение лишних благодарностей) end
         }).fail(function (error, textStatus) {
             console.log(error, textStatus);
             alert('Извините, произошла ошибка запроса. Свяжитесь с менеджером по телефону!');

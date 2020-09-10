@@ -1,1597 +1,585 @@
 var calculator = {
     "products": {
-//РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ 
+        //РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ 
 
-        "product_1": {
-            "4": {
-                "1": {
-                    '2': {
-                        'prise': 295,
-                        'img': './public/assets/img/card/sibirskaya_20.jpg',
+        "teplica_2_24": { //
+            "4": { //МЕТРАЖ
+                "1": { //ШАГ
+                    '2': { //ШИРИНА
+                        'prise': 325, //Теплица 20 М-1Л-4 м,
+                        'img': './public/assets/img/card/sibirskaya_shir_2.jpg',
                     },
-                    '2_4': {
-                        'prise': 295,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                },
-                "0_67": {
-                    '2': {
-                        'prise': 308,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                    '2_4': {
-                        'prise': 308,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                    '2_4': { //ШИРИНА
+                        'prise': 330, //Теплица 24 М-1Л-4 м,
+                        'img': './public/assets/img/card/sibirskaya_shir_2_4.jpg',
                     },
                 },
-                "0_5": {
-                    '2': {
-                        'prise': 444,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                "0_67": { //ШАГ
+                    '2': { //ШИРИНА
+                        'prise': 339, //Теплица 20 М-0.67Л-4 м,
+                        'img': './public/assets/img/card/sibirskaya_shir_2.jpg',
                     },
-                    '2_4': {
-                        'prise': 444,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                    '2_4': { //ШИРИНА
+                        'prise': 343, //Теплица 24 М-0.67Л-4 м,
+                        'img': './public/assets/img/card/sibirskaya_shir_2_4.jpg',
                     },
                 },
             },
-            "6": {
-                "1": {
-                    '2': {
-                        'prise': 295,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+            "6": { //МЕТРАЖ
+                "1": { //ШАГ
+                    '2': { //ШИРИНА
+                        'prise': 406, //Теплица 20 М-1Л-6 м,
+                        'img': './public/assets/img/card/sibirskaya_shir_2.jpg',
                     },
-                    '2_4': {
-                        'prise': 295,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                },
-                "0_67": {
-                    '2': {
-                        'prise': 308,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                    '2_4': {
-                        'prise': 308,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                    '2_4': { //ШИРИНА
+                        'prise': 410, //Теплица 24 М-1Л-6 м,
+                        'img': './public/assets/img/card/sibirskaya_shir_2_4.jpg',
                     },
                 },
-                "0_5": {
-                    '2': {
-                        'prise': 444,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                "0_67": { //ШАГ
+                    '2': { //ШИРИНА
+                        'prise': 427, //Теплица 20 М-0.67Л-6 м,
+                        'img': './public/assets/img/card/sibirskaya_shir_2.jpg',
                     },
-                    '2_4': {
-                        'prise': 444,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                    '2_4': { //ШИРИНА
+                        'prise': 431, //Теплица 24 М-0.67Л-6 м,
+                        'img': './public/assets/img/card/sibirskaya_shir_2_4.jpg',
                     },
                 },
             },
-            "8": {
-                "1": {
-                    '2': {
-                        'prise': 295,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+            "8": { //МЕТРАЖ
+                "1": { //ШАГ
+                    '2': { //ШИРИНА
+                        'prise': 486, //Теплица 20 М-1Л-8 м,
+                        'img': './public/assets/img/card/sibirskaya_shir_2.jpg',
                     },
-                    '2_4': {
-                        'prise': 295,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                },
-                "0_67": {
-                    '2': {
-                        'prise': 308,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                    '2_4': {
-                        'prise': 308,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                    '2_4': { //ШИРИНА
+                        'prise': 492, //Теплица 24 М-1Л-8 м,
+                        'img': './public/assets/img/card/sibirskaya_shir_2_4.jpg',
                     },
                 },
-                "0_5": {
-                    '2': {
-                        'prise': 444,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                "0_67": { //ШАГ
+                    '2': { //ШИРИНА
+                        'prise': 515, //Теплица 20 М-0.67Л-8 м,
+                        'img': './public/assets/img/card/sibirskaya_shir_2.jpg',
                     },
-                    '2_4': {
-                        'prise': 444,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                    '2_4': { //ШИРИНА
+                        'prise': 519, //Теплица 24 М-0.67Л-8 м,
+                        'img': './public/assets/img/card/sibirskaya_shir_2_4.jpg',
                     },
                 },
             },
-            "10": {
-                "1": {
-                    '2': {
-                        'prise': 295,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+            "10": { //МЕТРАЖ
+                "1": { //ШАГ
+                    '2': { //ШИРИНА
+                        'prise': 568, //Теплица 20 М-1Л-10 м,
+                        'img': './public/assets/img/card/sibirskaya_shir_2.jpg',
                     },
-                    '2_4': {
-                        'prise': 295,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                },
-                "0_67": {
-                    '2': {
-                        'prise': 308,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                    '2_4': {
-                        'prise': 308,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                    '2_4': { //ШИРИНА
+                        'prise': 572, //Теплица 24 М-1Л-10 м,
+                        'img': './public/assets/img/card/sibirskaya_shir_2_4.jpg',
                     },
                 },
-                "0_5": {
-                    '2': {
-                        'prise': 444,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                "0_67": { //ШАГ
+                    '2': { //ШИРИНА
+                        'prise': 602, //Теплица 20 М-0.67Л-10 м,
+                        'img': './public/assets/img/card/sibirskaya_shir_2.jpg',
                     },
-                    '2_4': {
-                        'prise': 444,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                    '2_4': { //ШИРИНА
+                        'prise': 607, //Теплица 24 М-0.67Л-10 м,
+                        'img': './public/assets/img/card/sibirskaya_shir_2_4.jpg',
                     },
                 },
             },
         },
 
-//РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ 
+        //РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ 
 
-        "product_2": {
-            "4": {
-                "1": {
-                    '3_5': {
-                        'prise': 295,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+        "sibirskaya_krab": { //
+            "4": { //МЕТРАЖ
+                "1": { //ШАГ
+                    'prise': 374, //Теплица 20ЦК-1-4 м,
+                    'img': './public/assets/img/card/sibirskaya_krab_20.jpg',
+                },
+                "0_67": { //ШАГ
+                    'prise': 545, //Теплица 40ЦК-0.67-4 м,
+                    'img': './public/assets/img/card/sibirskaya_krab_40.jpg',
+                },
+            },
+            "6": { //МЕТРАЖ
+                "1": { //ШАГ
+                    'prise': 477, //Теплица 20ЦК-1-6 м,
+                    'img': './public/assets/img/card/sibirskaya_krab_20.jpg',
+                },
+                "0_67": { //ШАГ
+                    'prise': 690, //Теплица 40ЦК-0.67-6 м,
+                    'img': './public/assets/img/card/sibirskaya_krab_40.jpg',
+                },
+            },
+            "8": { //МЕТРАЖ
+                "1": { //ШАГ
+                    'prise': 583, //Теплица 20ЦК-1-8 м,
+                    'img': './public/assets/img/card/sibirskaya_krab_20.jpg',
+                },
+                "0_67": { //ШАГ
+                    'prise': 833, //Теплица 40ЦК-0.67-8 м,
+                    'img': './public/assets/img/card/sibirskaya_krab_40.jpg',
+                },
+            },
+            "10": { //МЕТРАЖ
+                "1": { //ШАГ
+                    'prise': 686, //Теплица 20ЦК-1-10 м,
+                    'img': './public/assets/img/card/sibirskaya_krab_20.jpg',
+                },
+                "0_67": { //ШАГ
+                    'prise': 977, //Теплица 40ЦК-0.67-10 м,
+                    'img': './public/assets/img/card/sibirskaya_krab_40.jpg',
+                },
+            },
+        },
+
+        //РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ 
+
+        "teplica_35_4": { //
+            "4": { //МЕТРАЖ
+                "1": { //ШАГ
+                    '3_5': { //ШИРИНА
+                        'prise': 505, //Теплица 40Ц-1-4 м 3.5 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_3_5.jpg',
                     },
-                    '4': {
-                        'prise': 295,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                    '4': { //ШИРИНА
+                        'prise': 447, //Теплица 40Ц-1-4 м 4 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_4.jpg',
                     },
                 },
-                "0_67": {
-                    '3_5': {
-                        'prise': 308,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                "0_67": { //ШАГ
+                    '3_5': { //ШИРИНА
+                        'prise': 527, //Теплица 40Ц-0.67-4 м 3.5 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_3_5.jpg',
                     },
-                    '4': {
-                        'prise': 308,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                    '4': { //ШИРИНА
+                        'prise': 468, //Теплица 40Ц-0.67-4 м 4 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_4.jpg',
                     },
                 },
-                "0_5": {
-                    '3_5': {
-                        'prise': 444,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                "0_5": { //ШАГ
+                    '3_5': { //ШИРИНА
+                        'prise': 550, //Теплица 40Ц-0.5-4 м 3.5 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_3_5.jpg',
                     },
-                    '4': {
-                        'prise': 444,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                    '4': { //ШИРИНА
+                        'prise': 488, //Теплица 40Ц-0.5-4 м 4 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_4.jpg',
                     },
                 },
             },
-            "6": {
-                "1": {
-                    '3_5': {
-                        'prise': 295,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+            "6": { //МЕТРАЖ
+                "1": { //ШАГ
+                    '3_5': { //ШИРИНА
+                        'prise': 629, //Теплица 40Ц-1-6 м 3.5 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_3_5.jpg',
                     },
-                    '4': {
-                        'prise': 295,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                },
-                "0_67": {
-                    '3_5': {
-                        'prise': 308,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                    '4': {
-                        'prise': 308,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                    '4': { //ШИРИНА
+                        'prise': 580, //Теплица 40Ц-1-6 м 4 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_4.jpg',
                     },
                 },
-                "0_5": {
-                    '3_5': {
-                        'prise': 444,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                "0_67": { //ШАГ
+                    '3_5': { //ШИРИНА
+                        'prise': 664, //Теплица 40Ц-0.67-6 м 3.5 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_3_5.jpg',
                     },
-                    '4': {
-                        'prise': 444,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                },
-            },
-            "8": {
-                "1": {
-                    '3_5': {
-                        'prise': 295,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                    '4': {
-                        'prise': 295,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                    '4': { //ШИРИНА
+                        'prise': 616, //Теплица 40Ц-0.67-6 м 4 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_4.jpg',
                     },
                 },
-                "0_67": {
-                    '3_5': {
-                        'prise': 308,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                "0_5": { //ШАГ
+                    '3_5': { //ШИРИНА
+                        'prise': 701, //Теплица 40Ц-0.5-6 м 3.5 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_3_5.jpg',
                     },
-                    '4': {
-                        'prise': 308,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                },
-                "0_5": {
-                    '3_5': {
-                        'prise': 444,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                    '4': {
-                        'prise': 444,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                    '4': { //ШИРИНА
+                        'prise': 651, //Теплица 40Ц-0.5-6 м 4 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_4.jpg',
                     },
                 },
             },
-            "10": {
-                "1": {
-                    '3_5': {
-                        'prise': 295,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+            "8": { //МЕТРАЖ
+                "1": { //ШАГ
+                    '3_5': { //ШИРИНА
+                        'prise': 755, //Теплица 40Ц-1-8 м 3.5 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_3_5.jpg',
                     },
-                    '4': {
-                        'prise': 295,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                },
-                "0_67": {
-                    '3_5': {
-                        'prise': 308,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                    '4': {
-                        'prise': 308,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                    '4': { //ШИРИНА
+                        'prise': 713, //Теплица 40Ц-1-8 м 4 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_4.jpg',
                     },
                 },
-                "0_5": {
-                    '3_5': {
-                        'prise': 444,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                "0_67": { //ШАГ
+                    '3_5': { //ШИРИНА
+                        'prise': 800, //Теплица 40Ц-0.67-8 м 3.5 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_3_5.jpg',
                     },
-                    '4': {
-                        'prise': 444,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
+                    '4': { //ШИРИНА
+                        'prise': 758, //Теплица 40Ц-0.67-8 м 4 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_4.jpg',
+                    },
+                },
+                "0_5": { //ШАГ
+                    '3_5': { //ШИРИНА
+                        'prise': 846, //Теплица 40Ц-0.5-8 м 3.5 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_3_5.jpg',
+                    },
+                    '4': { //ШИРИНА
+                        'prise': 803, //Теплица 40Ц-0.5-8 м 4 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_4.jpg',
+                    },
+                },
+            },
+            "10": { //МЕТРАЖ
+                "1": { //ШАГ
+                    '3_5': { //ШИРИНА
+                        'prise': 878, //Теплица 40Ц-1-10 м 3.5 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_3_5.jpg',
+                    },
+                    '4': { //ШИРИНА
+                        'prise': 845, //Теплица 40Ц-1-10 м 4 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_4.jpg',
+                    },
+                },
+                "0_67": { //ШАГ
+                    '3_5': { //ШИРИНА
+                        'prise': 936, //Теплица 40Ц-0.67-10 м 3.5 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_3_5.jpg',
+                    },
+                    '4': { //ШИРИНА
+                        'prise': 902, //Теплица 40Ц-0.67-10 м 4 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_4.jpg',
+                    },
+                },
+                "0_5": { //ШАГ
+                    '3_5': { //ШИРИНА
+                        'prise': 992, //Теплица 40Ц-0.5-10 м 3.5 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_3_5.jpg',
+                    },
+                    '4': { //ШИРИНА
+                        'prise': 959, //Теплица 40Ц-0.5-10 м 4 ширина,
+                        'img': './public/assets/img/card/sibirskaya_shir_4.jpg',
                     },
                 },
             },
         },
 
-//РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ 
-        "sibirskaya_shir_2": {
-            "4": {
-                "1": {
-                    'prise': 295,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 308,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 444,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                }
-            },
-            "6": {
-                "1": {
-                    'prise': 369,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 388,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 476,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "8": {
-                "1": {
-                    'prise': 442,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 468,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 547,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "10": {
-                "1": {
-                    'prise': 516,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 547,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 637,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            }
-        },
-
-//РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ 
-        "sibirskaya_shir_2_4": {
-            "4": {
-                "1": {
-                    'prise': 300,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 312,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 344,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "6": {
-                "1": {
-                    'prise': 373,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 392,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 446,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "8": {
-                "1": {
-                    'prise': 447,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 472,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 547,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "10": {
-                "1": {
-                    'prise': 520,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 552,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 587,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            }
-        },
-
-//РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ 
-        "sibirskaya_20": {
-            "4": {
-                "1": {
-                    'prise': 329,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 343,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 358,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "6": {
-                "1": {
-                    'prise': 422,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 443,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 465,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                }
-            },
-            "8": {
-                "1": {
-                    'prise': 515,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 543,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 571,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "10": {
-                "1": {
-                    'prise': 607,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 641,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 676,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            }
-        },
-
-//РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ 
-        "sibirskaya_40": {
-            "4": {
-                "1": {
-                    'prise': 382,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 403,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 424,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "6": {
-                "1": {
-                    'prise': 482,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 513,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 544,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "8": {
-                "1": {
-                    'prise': 582,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 624,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 666,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "10": {
-                "1": {
-                    'prise': 682,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 735,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 786,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            }
-        },
-
-//РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ 
-        "sibirskaya_shir_3_5": {
-            "4": {
-                "1": {
-                    'prise': 459,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 479,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 500,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "6": {
-                "1": {
-                    'prise': 572,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 604,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 637,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "8": {
-                "1": {
-                    'prise': 686,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 727,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 769,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "10": {
-                "1": {
-                    'prise': 798,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 851,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 902,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            }
-        },
-
-//РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ 
-        "sibirskaya_shir_4": {
-            "4": {
-                "1": {
-                    'prise': 486,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 505,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 524,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "6": {
-                "1": {
-                    'prise': 607,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 640,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 672,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "8": {
-                "1": {
-                    'prise': 728,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 769,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 810,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "10": {
-                "1": {
-                    'prise': 848,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 900,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 952,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            }
-        },
-
-//РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ 
-        "sibirskaya_krab_20": {
-            "4": {
-                "1": {
-                    'prise': 340,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 390,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 450,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "6": {
-                "1": {
-                    'prise': 434,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 485,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 546,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "8": {
-                "1": {
-                    'prise': 530,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 590,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 667,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "10": {
-                "1": {
-                    'prise': 624,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 700,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 757,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            }
-        },
-
-//РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ 
-        "sibirskaya_krab_40": {
-            "4": {
-                "1": {
-                    'prise': 421,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 495,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 557,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "6": {
-                "1": {
-                    'prise': 570,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 627,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 700,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "8": {
-                "1": {
-                    'prise': 670,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 757,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 820,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "10": {
-                "1": {
-                    'prise': 810,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 888,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 956,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            }
-        },
-
-//РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ 
-        "sibirskaya_spr_20": {
-            "4": {
-                "1": {
-                    'prise': 462,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 480,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 497,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "6": {
-                "1": {
-                    'prise': 604,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 631,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 658,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "8": {
-                "1": {
-                    'prise': 746,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 781,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 816,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "10": {
-                "1": {
-                    'prise': 886,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 931,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 974,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            }
-        },
-
-//РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ 
-        "sibirskaya_spr_40": {
-            "4": {
-                "1": {
-                    'prise': 435,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 456,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 477,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "6": {
-                "1": {
-                    'prise': 535,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 566,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 597,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "8": {
-                "1": {
-                    'prise': 635,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 677,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 719,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            },
-            "10": {
-                "1": {
-                    'prise': 735,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_67": {
-                    'prise': 788,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-                "0_5": {
-                    'prise': 839,
-                    'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                },
-            }
-        },
-
-//РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ 
-        "sibirskaya_dvoynaya": {
-            "4": {
-                "1": {
-                    '20': {
-                        'prise': 532,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                    '40': {
-                        'prise': 533,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                },
-                "0_67": {
-                    '20': {
-                        'prise': 561,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                    '40': {
-                        'prise': 562,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                },
-                "0_5": {
-                    '20': {
-                        'prise': 590,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                    '40': {
-                        'prise': 591,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                },
-            },
-            "6": {
-                "1": {
-                    '20': {
-                        'prise': 675,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                    '40': {
-                        'prise': 676,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                },
-                "0_67": {
-                    '20': {
-                        'prise': 704,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                    '40': {
-                        'prise': 705,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                },
-                "0_5": {
-                    '20': {
-                        'prise': 733,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                    '40': {
-                        'prise': 734,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                },
-            },
-            "8": {
-                "1": {
-                    '20': {
-                        'prise': 817,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                    '40': {
-                        'prise': 818,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                },
-                "0_67": {
-                    '20': {
-                        'prise': 858,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                    '40': {
-                        'prise': 859,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                },
-                "0_5": {
-                    '20': {
-                        'prise': 953,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                    '40': {
-                        'prise': 954,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                },
-            },
-            "10": {
-                "1": {
-                    '20': {
-                        'prise': 957,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                    '40': {
-                        'prise': 958,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                },
-                "0_67": {
-                    '20': {
-                        'prise': 1004,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                    '40': {
-                        'prise': 1005,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                },
-                "0_5": {
-                    '20': {
-                        'prise': 1051,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                    '40': {
-                        'prise': 1052,
-                        'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                    },
-                },
-            },
-        },
-
-//РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ 
-        "product_new": {
-            "4": {
-                "1": {
-                    '5': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+        //РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ 
+        "teplica_3": {
+            "4": { //МЕТРАЖ
+                "1": { //ШАГ
+                    '5': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 362, //Теплица 20Ц-1Л-4 м,
+                            'img': './public/assets/img/card/sibirskaya_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 420, //Теплица 40Ц-1Л-4 м,
+                            'img': './public/assets/img/card/sibirskaya_40.jpg',
                         },
                     },
-                    '7': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                    '7': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 508, //Теплица СПР 20Ц-1-4 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 479, //Теплица СПР 40Ц-1-4 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_40.jpg',
                         },
                     },
                 },
-                "0_67": {
-                    '5': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                "0_67": { //ШАГ
+                    '5': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 377, //Теплица 20Ц-0.67Л-4 м,
+                            'img': './public/assets/img/card/sibirskaya_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 443, //Теплица 40Ц-0.67Л-4 м,
+                            'img': './public/assets/img/card/sibirskaya_40.jpg',
                         },
                     },
-                    '7': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                    '7': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 528, //Теплица СПР 20Ц-0.67-4 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 502, //Теплица СПР 40Ц-0.67-4 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_40.jpg',
                         },
                     },
                 },
-                "0_5": {
-                    '5': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                "0_5": { //ШАГ
+                    '5': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 394, //Теплица 20Ц-0.5Л-4 м,
+                            'img': './public/assets/img/card/sibirskaya_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 466, //Теплица 40Ц-0.5Л-4 м,
+                            'img': './public/assets/img/card/sibirskaya_40.jpg',
                         },
                     },
-                    '7': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                    '7': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 547, //Теплица СПР 20Ц-0.5-4 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 525, //Теплица СПР 40Ц-0.5-4 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_40.jpg',
                         },
                     },
                 }
             },
-            "6": {
-                "1": {
-                    '5': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+            "6": { //МЕТРАЖ
+                "1": { //ШАГ
+                    '5': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 464, //Теплица 20Ц-1Л-6 м,
+                            'img': './public/assets/img/card/sibirskaya_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 530, //Теплица 40Ц-1Л-6 м,
+                            'img': './public/assets/img/card/sibirskaya_40.jpg',
                         },
                     },
-                    '7': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                    '7': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 664, //Теплица СПР 20Ц-1-6 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 589, //Теплица СПР 40Ц-1-6 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_40.jpg',
                         },
                     },
                 },
-                "0_67": {
-                    '5': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                "0_67": { //ШАГ
+                    '5': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 487, //Теплица 20Ц-0.67Л-6 м,
+                            'img': './public/assets/img/card/sibirskaya_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 564, //Теплица 40Ц-0.67Л-6 м,
+                            'img': './public/assets/img/card/sibirskaya_40.jpg',
                         },
                     },
-                    '7': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                    '7': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 694, //Теплица СПР 20Ц-0.67-6 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 623, //Теплица СПР 40Ц-0.67-6 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_40.jpg',
                         },
                     },
                 },
-                "0_5": {
-                    '5': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                "0_5": { //ШАГ
+                    '5': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 512, //Теплица 20Ц-0.5Л-6 м,
+                            'img': './public/assets/img/card/sibirskaya_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 598, //Теплица 40Ц-0.5Л-6 м,
+                            'img': './public/assets/img/card/sibirskaya_40.jpg',
                         },
                     },
-                    '7': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                    '7': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 724, //Теплица СПР 20Ц-0.5-6 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 657, //Теплица СПР 40Ц-0.5-6 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_40.jpg',
                         },
                     },
                 }
             },
-            "8": {
-                "1": {
-                    '5': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+            "8": { //МЕТРАЖ
+                "1": { //ШАГ
+                    '5': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 565, //Теплица 20Ц-1Л-8 м,
+                            'img': './public/assets/img/card/sibirskaya_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 640, //Теплица 40Ц-1Л-8 м,
+                            'img': './public/assets/img/card/sibirskaya_40.jpg',
                         },
                     },
-                    '7': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                    '7': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 821, //Теплица СПР 20Ц-1-8 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 699, //Теплица СПР 40Ц-1-8 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_40.jpg',
                         },
                     },
                 },
-                "0_67": {
-                    '5': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                "0_67": { //ШАГ
+                    '5': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 597, //Теплица 20Ц-0.67Л-8 м,
+                            'img': './public/assets/img/card/sibirskaya_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 686, //Теплица 40Ц-0.67Л-8 м,
+                            'img': './public/assets/img/card/sibirskaya_40.jpg',
                         },
                     },
-                    '7': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                    '7': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 859, //Теплица СПР 20Ц-0.67-8 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 745, //Теплица СПР 40Ц-0.67-8 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_40.jpg',
                         },
                     },
                 },
-                "0_5": {
-                    '5': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                "0_5": { //ШАГ
+                    '5': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 628, //Теплица 20Ц-0.5Л-8 м,
+                            'img': './public/assets/img/card/sibirskaya_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 733, //Теплица 40Ц-0.5Л-8 м,
+                            'img': './public/assets/img/card/sibirskaya_40.jpg',
                         },
                     },
-                    '7': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                    '7': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 898, //Теплица СПР 20Ц-0.5-8 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 791, //Теплица СПР 40Ц-0.5-8 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_40.jpg',
                         },
                     },
                 }
             },
-            "10": {
-                "1": {
-                    '5': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+            "10": { //МЕТРАЖ
+                "1": { //ШАГ
+                    '5': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 668, //Теплица 20Ц-1Л-10 м,
+                            'img': './public/assets/img/card/sibirskaya_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 750, //Теплица 40Ц-1Л-10 м,
+                            'img': './public/assets/img/card/sibirskaya_40.jpg',
                         },
                     },
-                    '7': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                    '7': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 975, //Теплица СПР 20Ц-1-10 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 809, //Теплица СПР 40Ц-1-10 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_40.jpg',
                         },
                     },
                 },
-                "0_67": {
-                    '5': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                "0_67": { //ШАГ
+                    '5': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 705, //Теплица 20Ц-0.67Л-10 м,
+                            'img': './public/assets/img/card/sibirskaya_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 809, //Теплица 40Ц-0.67Л-10 м,
+                            'img': './public/assets/img/card/sibirskaya_40.jpg',
                         },
                     },
-                    '7': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                    '7': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 1024, //Теплица СПР 20Ц-0.67-10 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 867, //Теплица СПР 40Ц-0.67-10 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_40.jpg',
                         },
                     },
                 },
-                "0_5": {
-                    '5': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                "0_5": { //ШАГ
+                    '5': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 744, //Теплица 20Ц-0.5Л-10 м,
+                            'img': './public/assets/img/card/sibirskaya_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 865, //Теплица 40Ц-0.5Л-10 м,
+                            'img': './public/assets/img/card/sibirskaya_40.jpg',
                         },
                     },
-                    '7': {
-                        '20': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                    '7': { //СТРИНГЕРЫ
+                        '20': { //ПРОФИЛЬ
+                            'prise': 1071, //Теплица СПР 20Ц-0.5-10 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_20.jpg',
                         },
-                        '40': {
-                            'bolt': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            },
-                            'krab': {
-                                'prise': 532,
-                                'img': './public/assets/img/card/sibirskaya_dvoynaya.jpg',
-                            }
+                        '40': { //ПРОФИЛЬ
+                            'prise': 923, //Теплица СПР 40Ц-0.5-10 м,
+                            'img': './public/assets/img/card/sibirskaya_spr_40.jpg',
                         },
                     },
                 }
             }
         },
 
-//РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ 
+        //РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ 
+
     },
     "additional": {
-//КОМПЛЕКТАЦИЯ И ДОСТАВКА КОМПЛЕКТАЦИЯ И ДОСТАВКА КОМПЛЕКТАЦИЯ И ДОСТАВКА 
+        //КОМПЛЕКТАЦИЯ И ДОСТАВКА КОМПЛЕКТАЦИЯ И ДОСТАВКА КОМПЛЕКТАЦИЯ И ДОСТАВКА 
         "fortochka": 0,
-    //--------------------
+        //--------------------
         "izo_lenta": 0,
-    //--------------------
+        //--------------------
         "krep_lenta": 0,
-    //--------------------
+        //--------------------
         "perf_lenta": 0,
-    //--------------------
+        //--------------------
         "p_profil": 0,
-    //--------------------
+        //--------------------
         "podvyazki": 0,
-    //--------------------
+        //--------------------
         "poliv": 0,
-    //--------------------
+        //--------------------
         "intelect": 0,
-    //--------------------
+        //--------------------
         "parnik": 0,
-    //--------------------
+        //--------------------
         "sborka": 0,
-    //--------------------
+        //--------------------
+        "gryadka": 5,
+        //--------------------
         "rassrochka": 0,
-    //--------------------
+        //--------------------
         "dostavka_0": 0,
-        "dostavka_1": 70,
-        "dostavka_2": 82,
-        "dostavka_30": 100,
+        "dostavka_20_24": 64,
+        "dostavka_30": 77,
+        "dostavka_35_40": 90
     }
 
 };

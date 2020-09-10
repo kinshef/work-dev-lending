@@ -12,17 +12,14 @@ $(document).ready(function () {
         var additional = $("input[name='additional[]']:checked", form);
 
         if((e.target.value === '20' && e.target.name === 'hiden') || (e.target.value === '1' && e.target.name === 'interval')){
-            $("input[name='interval'][value='1']", form).prop('checked', true);
             $("input[name='hiden'][value='20']", form).prop('checked', true);
-            console.log(`${e.target.value} === 20 и ${e.target.name} === hiden ,${e.target.value === '20' && e.target.name === 'hiden'}`);
-            console.log(`${e.target.value} === 1 и ${e.target.name} === interval ,${e.target.value === '1' && e.target.name === 'interval'}`);
-            console.log((e.target.value === '20' && e.target.name === 'hiden') || (e.target.value === '1' || e.target.name === 'interval'))
+            $("input[name='interval'][value='1']", form).prop('checked', true);
+            interval = '1';
         }
         if((e.target.value === '40' && e.target.name === 'hiden') || (e.target.value === '0_67' && e.target.name === 'interval')){
-            $("input[name='interval'][value='0_67']", form).prop('checked', true);
             $("input[name='hiden'][value='40']", form).prop('checked', true);
-            console.log(`${e.target.value} === 40 и ${e.target.name} === hiden ,${e.target.value === '40' && e.target.name === 'hiden'}`);
-            console.log(`${e.target.value} === 0_67 и ${e.target.name} === interval ,${e.target.value === '0_67' && e.target.name === 'hiden'}`);
+            $("input[name='interval'][value='0_67']", form).prop('checked', true);
+            interval = '0_67';
         }
 
         var sum = 0;
@@ -52,6 +49,9 @@ $(document).ready(function () {
         }
 
         additional.each(function (i, e) {
+            sum += calculator.additional[$(e).val()]
+        });
+        $("input[name='additional[]'][type='hidden']", form).each(function (i, e) {
             sum += calculator.additional[$(e).val()]
         });
 

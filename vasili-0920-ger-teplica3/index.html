@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#4285f4">
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" integrity="sha256-HtCCUh9Hkh//8U1OwcbD8epVEUdBvuI8wj1KtqMhNkI=" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./public/style/css.css">
+    <link rel="icon" type="image/ico" href="./public/assets/img/favicon.ico">
+    <title>Купить теплицу</title>
+</head>
+
+<body>
+
+    <section id="section-nav" class="shadow animated fadeInDown">
+        <div class="container d-flex justify-content-around align-items-center">
+            <div class="d-none d-xxl-block text-center font-weight-bold mr-auto">
+                <a href="#section-main" class="nav__link smoothscroll">Акция</a>
+                <a href="#section-catalog-header" class="nav__link smoothscroll">Каталог</a>
+                <a href="#section-advantages-header" class="nav__link smoothscroll d-none d-xl-inline">Преимущества</a>
+                <a href="#section-certificate-header" class="nav__link smoothscroll">Сертификаты</a>
+            </div>
+            <div class="d-flex flex-column">
+                <a href="tel:+375297341107" class="nav__phone"><img src="../vendor/img/logo_mts_64.jpg" width="24"> (29)
+                    734-11-07</a>
+                <a href="tel:+375299654239" class="nav__phone"><img src="../vendor/img/logo_velcom_64.jpg" width="24">
+                    (29) 965-42-39</a>
+            </div>
+            <div class="d-none d-xl-block ml-5">
+                <button class="c__btn c__btn--success c__btn--sm transition--slide" data-toggle="modal"
+                    data-target="#modal-order"><i class="fa fa-phone"></i> Заказать звонок</button>
+            </div>
+            <div class="d-none d-sm-block ml-md-5 text-center nav-online">
+                <div class="font-weight-bold">Сейчас на сайте: <span class="text-red online_now">237</span> человек</div>
+                <div class="font-weight-bold">Осталось: <span class="presentCol text-red"><span>1</span><span>8</span></span> подарков</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-main" class="c__section">
+        <div class="container text-center">
+            <div class="row align-items-end">
+                <div class="col-xl-6">
+                    <div class="main-form">
+                        <p class="main__title">ТЕПЛИЦЫ СИБИРСКИЕ</p>
+                        <p class="main__subtitle">Закажи по цене производителя!</p>
+                        <div class="my-3">
+                            <div class="font-weight-bold h1 text-uppercase">
+                                <span>Осталось: </span>
+                                <span class="white-nowrap">
+                                    <span class="main__presentCol text-red presentCol">
+                                        <span>1</span><span>8</span>
+                                    </span>
+                                    <span class="text-red"> подарков</span>
+                                </span>
+                            </div>
+                            <div class="font-weight-bold h3 text-uppercase">
+                                <span>Сегодня отданно: </span>
+                                <span class="white-nowrap">
+                                    <span class="main__presentCol text-dark presentCol__remainder">
+                                        <span>3</span><span>9</span>
+                                    </span>
+                                    <span class="presentCol__gifts"> подарков</span>
+                                </span>
+                            </div>
+                        </div>
+                        <button class="c__btn c__btn--danger c__btn--lg transition--slide" data-toggle="modal"
+                            data-target="#modal-order">ЗАКАЗАТЬ</button>
+                    </div>
+                </div>
+                <div class="col-xl-6 d-flex justify-content-end align-items-end">
+                    <p class="main__text-promo">Цены от Производителя!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ЗАБЛОКИРОВАНО
+
+<header class="d-none d-md-block">
+    <div data-animation="animated zoomInUp">Сравнение теплиц</div>
+</header>
+
+<section id="section-comparison" class="c__section d-none d-md-block">
+    <div class="container">
+
+        <div class="table-responsive-xl py-5">
+            <table class="comparison__table table-striped">
+                <thead>
+                <tr>
+                    <th class="border-0 bg-transparent"></th>
+                    <th class="text-muted" style="border-top-color: gray;border-top-width: 3px;"><span class="js-comparison">Обычная</span></th>
+                    <th class="comparison__head--featured">Стандарт</th>
+                    <th class="comparison__body--secondary" style="border-top-color: black;border-top-width: 4px;">Премиум</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>Вид</th>
+                    <td><img src="./public/assets/img/tablica/1.jpg" alt="comparison" class="comparison__img"></td>
+                    <td class="comparison__body--featured"><img src="./public/assets/img/tablica/2.jpg" alt="comparison" class="comparison__img"></td>
+                    <td class="comparison__body--secondary"><img src="./public/assets/img/tablica/3.jpg" alt="comparison" class="comparison__img"></td>
+                </tr>
+                <tr>
+                    <th>Плотность поликарбоната</th>
+                    <td class="text-muted">0,42 кг/м2</td>
+                    <td class="comparison__body--featured">0,75 кг/м2</td>
+                    <td class="font-weight-bold comparison__body--secondary">0,75 кг/м2</td>
+                </tr>
+                <tr>
+                    <th>Сечение профиля</th>
+                    <td class="text-muted">V-образный</td>
+                    <td class="comparison__body--featured">Труба 20х20мм.</td>
+                    <td class="font-weight-bold comparison__body--secondary">Труба 40х20мм.</td>
+                </tr>
+                <tr>
+                    <th>Цельная дуга</th>
+                    <td class="text-muted"><i class="fa fa-times fa-2x"></i></td>
+                    <td class="comparison__body--featured"><i class="fa fa-check fa-3x text-warning"></i></td>
+                    <td class="comparison__body--secondary"><i class="fa fa-check fa-2x text-success"></i></td>
+                </tr>
+                <tr>
+                    <th>Оцинковка</th>
+                    <td class="text-muted"><i class="fa fa-times fa-2x"></i></td>
+                    <td class="comparison__body--featured"><i class="fa fa-check fa-3x text-warning"></i></td>
+                    <td class="comparison__body--secondary"><i class="fa fa-check fa-2x text-success"></i></td>
+                </tr>
+                <tr>
+                    <th>Защита от ультрофиолета</th>
+                    <td class="text-muted"><i class="fa fa-times fa-2x"></i></td>
+                    <td class="comparison__body--featured"><i class="fa fa-check fa-3x text-warning"></i></td>
+                    <td class="comparison__body--secondary"><i class="fa fa-check fa-2x text-success"></i></td>
+                </tr>
+                <tr>
+                    <th>Розничная цена</th>
+                    <td class="text-muted">252 руб.</td>
+                    <td class="comparison__body--featured">
+                        <div class="small"><s>421 руб.</s></div>
+                        <div class="text-warning text-alt" style="text-shadow: 0px 0px 2px #000000, 0px 0px 2px #000000, 0px 0px 2px #000000, 0px 0px 2px #000000;">295 руб.</div>
+                    </td>
+                    <td class="comparison__body--secondary">
+                        <div class="text-dark small"><s>546 руб.</s></div>
+                        <div class="text-success text-alt">382 руб.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Действия</th>
+                    <td class="comparison__body--secondary" style="border-bottom-color: gray;border-bottom-width: 3px;"><button class="c__btn c__btn--sm text-muted" data-toggle="modal" data-target="#modal-order">Заказать</button></td>
+                    <td class="comparison__footer--featured"><button class="c__btn c__btn--danger transition--slide" data-toggle="modal" data-target="#modal-order" data-animation="animated tada delay-1s">ЗАКАЗАТЬ</button></td>
+                    <td class="comparison__body--secondary" style="border-bottom-color: black;border-bottom-width: 4px;"><button class="c__btn c__btn--success c__btn--sm transition--slide" data-toggle="modal" data-target="#modal-order">Заказать</button></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</section>
+
+ЗАБЛОКИРОВАНО -->
+
+    <header id="section-catalog-header">
+        <div data-animation="animated zoomInUp">КАТАЛОГ ТЕПЛИЦ</div>
+    </header>
+
+    <section id="section-catalog" class="section-catalog hero-hexagons">
+
+        <!-- ЗАБЛОКИРОВАНО
+
+    <div class="container-fluid py-3">
+        <div class="filter__buttons p-3">
+            <div class="h2 text-alt text-center">Фильтры:</div>
+            <div class="filter__buttons__group">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 text-lg-right">
+                        <b>Длина (м): <a href="#modal-question-length" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                    </div>
+                    <div class="col-lg-7">
+                        <a href="javascript:;" class="active filter__button filter__button__custom" data-name="length" data-value="4">Все</a>
+                        <a href="javascript:;" class="filter__button filter__button__custom" data-name="length" data-value="4">4</a>
+                        <a href="javascript:;" class="filter__button filter__button__custom" data-name="length" data-value="6">6</a>
+                        <a href="javascript:;" class="filter__button filter__button__custom" data-name="length" data-value="8">8</a>
+                        <a href="javascript:;" class="filter__button filter__button__custom" data-name="length" data-value="10">10</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filter__buttons__group">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 text-lg-right">
+                        <b>Интервал (м): <a href="#modal-question-interval" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                    </div>
+                    <div class="col-lg-7">
+                        <a href="javascript:;" class="active filter__button filter__button__custom" data-name="interval" data-value="1">Все</a>
+                        <a href="javascript:;" class="filter__button filter__button__custom" data-name="interval" data-value="1">1</a>
+                        <a href="javascript:;" class="filter__button filter__button__custom" data-name="interval" data-value="0_67">0,67</a>
+                        <a href="javascript:;" class="filter__button filter__button__custom" data-name="interval" data-value="0_5">0,5</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filter__buttons__group" data-group="shirina">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 text-lg-right">
+                        <b>Ширина (м): <a href="#modal-question-shirina" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                    </div>
+                    <div class="col-lg-7">
+                        <a href="javascript:;" class="active filter__button" data-filter="">Все</a>
+                        <a href="javascript:;" class="filter__button" data-filter=".filter-shirina-2">2</a>
+                        <a href="javascript:;" class="filter__button" data-filter=".filter-shirina-2_4">2,4</a>
+                        <a href="javascript:;" class="filter__button" data-filter=".filter-shirina-3">3</a>
+                        <a href="javascript:;" class="filter__button" data-filter=".filter-shirina-3_5">3,5</a>
+                        <a href="javascript:;" class="filter__button" data-filter=".filter-shirina-4">4</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filter__buttons__group" data-group="profil">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 text-lg-right">
+                        <b>Профиль (мм): <a href="#modal-question-profil" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                    </div>
+                    <div class="col-lg-7">
+                        <a href="javascript:;" class="active filter__button" data-filter="">Все</a>
+                        <a href="javascript:;" class="filter__button" data-filter=".filter-profil-20">20х20</a>
+                        <a href="javascript:;" class="filter__button" data-filter=".filter-profil-40">40х20</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filter__buttons__group" data-group="kreplenie">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 text-lg-right">
+                        <b>Крепление: <a href="#modal-question-kreplenie" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                    </div>
+                    <div class="col-lg-7">
+                        <a href="javascript:;" class="active filter__button" data-filter="">Все</a>
+                        <a href="javascript:;" class="filter__button" data-filter=".filter-kreplenie-bolt">Болт</a>
+                        <a href="javascript:;" class="filter__button" data-filter=".filter-kreplenie-krab">Краб</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filter__buttons__group" data-group="duga">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 text-lg-right">
+                        <b>Дуга: <a href="#modal-question-duga" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                    </div>
+                    <div class="col-lg-7">
+                        <a href="javascript:;" class="active filter__button" data-filter="">Все</a>
+                        <a href="javascript:;" class="filter__button" data-filter=".filter-duga-1">Стандартная</a>
+                        <a href="javascript:;" class="filter__button" data-filter=".filter-duga-2">Двойная</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    
+    ЗАБЛОКИРОВАНО -->
+
+        <div class="container c__section">
+            <div id="filter" class="row">
+
+                <!-- РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ HFPLTKBNTKM NJDFHJD -->
+
+                <div class="col-lg-12">
+                    <form class="has-calculator catalog__akciya">
+                        <input type="hidden" name="product" value="teplica_3">
+                        <div class="catalog__card catalog__card--lg app-border" style="margin-bottom: 5rem">
+
+                            <div class="catalog__title catalog__title--bordered">Теплица <br class="d-lg-none d-block"> Сибирская Ширина 3м</div>
+
+                            <div class="catalog__block">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+
+                                        <div class="catalog__img has-calculator__img">
+                                            <div class="card__label card__label--orange1 animated pulse infinite"
+                                                style="left: -23px;">
+                                                <i class="fa fa-thumbs-up"></i> ХИТ ПРОДАЖ!
+                                            </div>
+                                            <a href="./public/assets/img/card/sibirskaya_20.jpg" data-fancybox="">
+                                                <span class="img__search-label"><i
+                                                        class="fa fa-search-plus fa-3x"></i></span>
+                                                <img class="img-fluid" src="./public/assets/img/card/sibirskaya_20.jpg">
+                                            </a>
+                                        </div>
+
+                                        <div class="catalog__subblock text-center mt-4">
+                                            <div class="catalog__subblock__title">
+                                                Рассрочка: <a href="#modal-question-bank" data-toggle="modal"><i
+                                                        class="fa fa-question-circle-o fa-lg"
+                                                        aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="catalog__subblock__text">
+                                                <div class="row px-3">
+                                                    <div class="col-4 catalog__bank col-md-2">
+                                                        <a href="#modal-question-bank" data-toggle="modal">
+                                                            <img src="./public/assets/img/bank/halva.jpg"
+                                                                class="img-fluid" alt="halva">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-4 catalog__bank col-md-2">
+                                                        <a href="#modal-question-bank" data-toggle="modal">
+                                                            <img src="./public/assets/img/bank/cherepaha.jpg"
+                                                                class="img-fluid" alt="cherepaha">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-4 catalog__bank col-md-2">
+                                                        <a href="#modal-question-bank" data-toggle="modal">
+                                                            <img src="./public/assets/img/bank/fun.jpg" class="img-fluid"
+                                                                alt="kartafun">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-4 catalog__bank col-md-2">
+                                                        <a href="#modal-question-bank" data-toggle="modal">
+                                                            <img src="./public/assets/img/bank/magnit.jpg"
+                                                                class="img-fluid" alt="magnit">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-4 catalog__bank col-md-2">
+                                                        <a href="#modal-question-bank" data-toggle="modal">
+                                                            <img src="./public/assets/img/bank/pokupok.jpg"
+                                                                class="img-fluid" alt="pokupok">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-4 catalog__bank col-md-2">
+                                                        <a href="#modal-question-bank" data-toggle="modal">
+                                                            <img src="./public/assets/img/bank/smart.jpg"
+                                                                class="img-fluid" alt="smart">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <table class="table table-sm table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Ширина<span class="d-sm-inline d-none"> (м)</span>: <a href="#modal-question-shirina"
+                                                            data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
+                                                                aria-hidden="true"></i></a></th>
+                                                    <td>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="shirina" value="3" checked="">
+                                                            <span class="catalog__text__label">3</span>
+                                                        </label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><span class="d-sm-inline d-none">Длина (м)</span><span class="d-sm-none d-inline">Длина2 (м)</span>: <a href="#modal-question-length"
+                                                            data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
+                                                                aria-hidden="true"></i></a></th>
+                                                    <td>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="length" value="4" checked="">
+                                                            <span class="catalog__input__label">4</span>
+                                                        </label>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="length" value="6">
+                                                            <span class="catalog__input__label">6</span>
+                                                        </label>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="length" value="8">
+                                                            <span class="catalog__input__label">8</span>
+                                                        </label>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="length" value="10">
+                                                            <span class="catalog__input__label">10</span>
+                                                        </label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Интервал (м): <a href="#modal-question-interval"
+                                                            data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
+                                                                aria-hidden="true"></i></a></th>
+                                                    <td>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="interval" value="1" checked="">
+                                                            <span class="catalog__input__label">1</span>
+                                                        </label>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="interval" value="0_67">
+                                                            <span class="catalog__input__label">0,67</span>
+                                                        </label>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="interval" value="0_5">
+                                                            <span class="catalog__input__label">0,5</span>
+                                                        </label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Стрингеры (шт): <a href="#modal-question-stringery"
+                                                        data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
+                                                            aria-hidden="true"></i></a></th>
+                                                <td>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="stringery" value="5" checked="">
+                                                            <span class="catalog__input__label">5</span>
+                                                        </label>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="stringery" value="7">
+                                                            <span class="catalog__input__label">7</span>
+                                                        </label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Профиль (мм): <a href="#modal-question-profil"
+                                                            data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
+                                                                aria-hidden="true"></i></a></th>
+                                                    <td>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="profil" value="20" checked="">
+                                                            <span class="catalog__input__label">20х20</span>
+                                                        </label>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="profil" value="40">
+                                                            <span class="catalog__input__label">40х20</span>
+                                                        </label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Крепление: <a href="#modal-question-kreplenie"
+                                                            data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
+                                                                aria-hidden="true"></i></a></th>
+                                                    <td>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="kreplenie" value="bolt"
+                                                                checked="">
+                                                            <span class="catalog__text__label">Болт</span>
+                                                        </label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Двойная дуга: <a href="#modal-question-duga"
+                                                            data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
+                                                                aria-hidden="true"></i></a></th>
+                                                    <td>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="additional[]" value="dostavka_0"
+                                                                checked="">
+                                                            <span class="catalog__input__label"><span class="d-sm-inline d-none">Разборная</span><span class="d-sm-none d-inline">Разб.</span></span>
+                                                        </label>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="additional[]" value="dostavka_30">
+                                                            <span class="catalog__input__label"><span class="d-sm-inline d-none">Цельная</span><span class="d-sm-none d-inline">Цельн.</span></span>
+                                                        </label>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="catalog__price--old">
+                                            <span class="calculator-price-old">528</span> руб.
+                                        </div>
+                                        <div class="catalog__price catalog__price--lg">
+                                            <span class="calculator-price">264</span> руб.
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                                <div class="input-group input-group-lg mt-3 p-md-3">
+                                    <input type="text" name="phone" class="form-control" placeholder="Телефон"
+                                        required="">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-warning px-xl-5 transition--slide"
+                                            style="border-color: #ef9300;" type="submit">Заказать <span
+                                                class="d-none d-md-inline">по акции</span></button>
+                                    </div>
+                                </div>
+
+                                <div class="catalog__fast">
+                                    Осталось: <span class="presentCol catalog__fast--count text-red"><span>1</span><span>1</span></span> подарков
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ HFPLTKBNTKM NJDFHJD -->
+
+                <div class="col-lg-4">
+                    <form class="has-calculator">
+                        <input type="hidden" name="product" value="teplica_2_24">
+                        <div class="catalog__card">
+
+                            <div class="catalog__title catalog__title--bordered">Теплица Сибирская<br>Шир 2м и 2,4м</div>
+
+                            <div class="catalog__img has-calculator__img">
+                                <div class="card__label card__label--blue animated pulse infinite">
+                                    <i class="fa fa-star"></i> Компактная
+                                </div>
+                                <a href="./public/assets/img/card/sibirskaya_shir_2.jpg" data-fancybox>
+                                    <span class="img__search-label"><i class="fa fa-search-plus fa-3x"></i></span>
+                                    <img class="img-fluid" src="./public/assets/img/card/sibirskaya_shir_2.jpg">
+                                </a>
+                            </div>
+
+                            <div class="catalog__block">
+                                <table class="table table-sm table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <th>Ширина (м): <a href="#modal-question-shirina" data-toggle="modal"><i
+                                                        class="fa fa-question-circle-o fa-lg"
+                                                        aria-hidden="true"></i></a></th>
+                                            <td>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="shirina" value="2" checked>
+                                                    <span class="catalog__input__label">2</span>
+                                                </label>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="shirina" value="2_4">
+                                                    <span class="catalog__input__label">2,4</span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Длина (м): <a href="#modal-question-length" data-toggle="modal"><i
+                                                        class="fa fa-question-circle-o fa-lg"
+                                                        aria-hidden="true"></i></a></th>
+                                            <td>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="length" value="4" checked>
+                                                    <span class="catalog__input__label">4</span>
+                                                </label>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="length" value="6">
+                                                    <span class="catalog__input__label">6</span>
+                                                </label>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="length" value="8">
+                                                    <span class="catalog__input__label">8</span>
+                                                </label>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="length" value="10">
+                                                    <span class="catalog__input__label">10</span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Интервал (м): <a href="#modal-question-interval" data-toggle="modal"><i
+                                                        class="fa fa-question-circle-o fa-lg"
+                                                        aria-hidden="true"></i></a></th>
+                                            <td>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="interval" value="1" checked>
+                                                    <span class="catalog__input__label">1</span>
+                                                </label>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="interval" value="0_67">
+                                                    <span class="catalog__input__label">0,67</span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Профиль (мм): <a href="#modal-question-profil"
+                                                    data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
+                                                        aria-hidden="true"></i></a></th>
+                                            <td>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="profil" value="20" checked="">
+                                                    <span class="catalog__text__label">20х20</span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Крепление: <a href="#modal-question-kreplenie" data-toggle="modal"><i
+                                                        class="fa fa-question-circle-o fa-lg"
+                                                        aria-hidden="true"></i></a></th>
+                                            <td>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="kreplenie" value="bolt" checked>
+                                                    <span class="catalog__text__label">Болт</span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Дуга: <a href="#modal-question-duga" data-toggle="modal"><i
+                                                        class="fa fa-question-circle-o fa-lg"
+                                                        aria-hidden="true"></i></a></th>
+                                            <td>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="additional[]" value="dostavka_0" checked>
+                                                    <span class="catalog__input__label"><span class="d-sm-inline d-none">Разборная</span><span class="d-sm-none d-inline">Разб.</span></span>
+                                                </label>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="additional[]" value="dostavka_20_24">
+                                                    <span class="catalog__input__label"><span class="d-sm-inline d-none">Цельная</span><span class="d-sm-none d-inline">Цельн.</span></span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <hr>
+
+                                <div class="catalog__price--old">
+                                    <span class="calculator-price-old">0</span> руб.
+                                </div>
+                                <div class="catalog__price">
+                                    <span class="calculator-price">0</span> руб.
+                                </div>
+                                <hr>
+
+                                <div class="input-group input-group-lg">
+                                    <input type="text" name="phone" class="form-control" placeholder="Телефон" required>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-warning px-xl-5 transition--slide"
+                                            style="border-color: #ef9300;" type="submit">Заказать</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ HFPLTKBNTKM NJDFHJD -->
+
+                <div class="col-lg-4">
+                    <form class="has-calculator">
+                        <input type="hidden" name="product" value="sibirskaya_krab">
+                        <div class="catalog__card">
+
+                            <div class="catalog__title catalog__title--bordered">Теплица Сибирская<br>Шир 3м - Краб</div>
+
+                            <div class="catalog__img has-calculator__img">
+                                <div class="card__label card__label--blue animated pulse infinite">
+                                    <i class="fa fa-star"></i> Усиленная дуга
+                                </div>
+                                <a href="./public/assets/img/card/sibirskaya_dvoynaya.jpg" data-fancybox>
+                                    <span class="img__search-label"><i class="fa fa-search-plus fa-3x"></i></span>
+                                    <img class="img-fluid" src="./public/assets/img/card/sibirskaya_krab_20.jpg">
+                                </a>
+                            </div>
+
+                            <div class="catalog__block">
+                                <table class="table table-sm table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <th>Ширина (м): <a href="#modal-question-shirina"
+                                                    data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
+                                                        aria-hidden="true"></i></a></th>
+                                            <td>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="shirina" value="3" checked="">
+                                                    <span class="catalog__text__label">3</span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Длина (м): <a href="#modal-question-length" data-toggle="modal"><i
+                                                        class="fa fa-question-circle-o fa-lg"
+                                                        aria-hidden="true"></i></a></th>
+                                            <td>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="length" value="4" checked>
+                                                    <span class="catalog__input__label">4</span>
+                                                </label>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="length" value="6">
+                                                    <span class="catalog__input__label">6</span>
+                                                </label>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="length" value="8">
+                                                    <span class="catalog__input__label">8</span>
+                                                </label>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="length" value="10">
+                                                    <span class="catalog__input__label">10</span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Интервал (м): <a href="#modal-question-interval" data-toggle="modal"><i
+                                                        class="fa fa-question-circle-o fa-lg"
+                                                        aria-hidden="true"></i></a></th>
+                                            <td>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="interval" value="1" checked>
+                                                    <span class="catalog__input__label">1</span>
+                                                </label>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="interval" value="0_67">
+                                                    <span class="catalog__input__label">0,67</span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Профиль (мм): <a href="#modal-question-profil"
+                                                    data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
+                                                        aria-hidden="true"></i></a></th>
+                                            <td>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="hiden" value="20" checked>
+                                                    <span class="catalog__input__label">20х20</span>
+                                                </label>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="hiden" value="40">
+                                                    <span class="catalog__input__label">40х20</span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Крепление: <a href="#modal-question-kreplenie" data-toggle="modal"><i
+                                                        class="fa fa-question-circle-o fa-lg"
+                                                        aria-hidden="true"></i></a></th>
+                                            <td>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="kreplenie" value="bolt" checked>
+                                                    <span class="catalog__text__label">Краб</span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Дуга: <a href="#modal-question-duga" data-toggle="modal"><i
+                                                        class="fa fa-question-circle-o fa-lg"
+                                                        aria-hidden="true"></i></a></th>
+                                            <td>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="additional[]" value="dostavka_0" checked>
+                                                    <span class="catalog__input__label"><span class="d-sm-inline d-none">Разборная</span><span class="d-sm-none d-inline">Разб.</span></span>
+                                                </label>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="additional[]" value="dostavka_30">
+                                                    <span class="catalog__input__label"><span class="d-sm-inline d-none">Цельная</span><span class="d-sm-none d-inline">Цельн.</span></span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <hr>
+
+                                <div class="catalog__price--old">
+                                    <span class="calculator-price-old">0</span> руб.
+                                </div>
+                                <div class="catalog__price">
+                                    <span class="calculator-price">0</span> руб.
+                                </div>
+                                <hr>
+
+                                <div class="input-group input-group-lg">
+                                    <input type="text" name="phone" class="form-control" placeholder="Телефон" required>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-warning px-xl-5 transition--slide"
+                                            style="border-color: #ef9300;" type="submit">Заказать</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ HFPLTKBNTKM NJDFHJD -->
+
+                <div class="col-lg-4">
+                    <form class="has-calculator">
+                        <input type="hidden" name="product" value="teplica_35_4">
+                        <div class="catalog__card">
+
+                            <div class="catalog__title catalog__title--bordered">Теплица Сибирская<br>Шир 3,5м и 4м</div>
+
+                            <div class="catalog__img has-calculator__img">
+                                <div class="card__label card__label--blue animated pulse infinite">
+                                    <i class="fa fa-star"></i> Двустворчатая
+                                </div>
+                                <a href="./public/assets/img/card/sibirskaya_shir_3_5.jpg" data-fancybox>
+                                    <span class="img__search-label"><i class="fa fa-search-plus fa-3x"></i></span>
+                                    <img class="img-fluid" src="./public/assets/img/card/sibirskaya_shir_3_5.jpg">
+                                </a>
+                            </div>
+
+                            <div class="catalog__block">
+                                <table class="table table-sm table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <th>Ширина (м): <a href="#modal-question-shirina" data-toggle="modal"><i
+                                                        class="fa fa-question-circle-o fa-lg"
+                                                        aria-hidden="true"></i></a></th>
+                                            <td>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="shirina" value="3_5" checked>
+                                                    <span class="catalog__input__label">3,5</span>
+                                                </label>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="shirina" value="4">
+                                                    <span class="catalog__input__label">4</span>
+                                                </label>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Длина (м): <a href="#modal-question-length" data-toggle="modal"><i
+                                                        class="fa fa-question-circle-o fa-lg"
+                                                        aria-hidden="true"></i></a></th>
+                                            <td>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="length" value="4" checked>
+                                                    <span class="catalog__input__label">4</span>
+                                                </label>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="length" value="6">
+                                                    <span class="catalog__input__label">6</span>
+                                                </label>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="length" value="8">
+                                                    <span class="catalog__input__label">8</span>
+                                                </label>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="length" value="10">
+                                                    <span class="catalog__input__label">10</span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Интервал (м): <a href="#modal-question-interval" data-toggle="modal"><i
+                                                        class="fa fa-question-circle-o fa-lg"
+                                                        aria-hidden="true"></i></a></th>
+                                            <td>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="interval" value="1" checked>
+                                                    <span class="catalog__input__label">1</span>
+                                                </label>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="interval" value="0_67">
+                                                    <span class="catalog__input__label">0,67</span>
+                                                </label>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="interval" value="0_5">
+                                                    <span class="catalog__input__label">0,5</span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Профиль (мм): <a href="#modal-question-profil"
+                                                    data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
+                                                        aria-hidden="true"></i></a></th>
+                                            <td>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="profil" value="40" checked="">
+                                                    <span class="catalog__text__label">40х20</span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Крепление: <a href="#modal-question-kreplenie" data-toggle="modal"><i
+                                                        class="fa fa-question-circle-o fa-lg"
+                                                        aria-hidden="true"></i></a></th>
+                                            <td>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="kreplenie" value="bolt" checked>
+                                                    <span class="catalog__text__label">Болт</span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Дуга: <a href="#modal-question-duga" data-toggle="modal"><i
+                                                        class="fa fa-question-circle-o fa-lg"
+                                                        aria-hidden="true"></i></a></th>
+                                            <td>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="additional[]" value="dostavka_0" checked>
+                                                    <span class="catalog__input__label"><span class="d-sm-inline d-none">Разборная</span><span class="d-sm-none d-inline">Разб.</span></span>
+                                                </label>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="additional[]" value="dostavka_35_40">
+                                                    <span class="catalog__input__label"><span class="d-sm-inline d-none">Цельная</span><span class="d-sm-none d-inline">Цельн.</span></span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <hr>
+
+                                <div class="catalog__price--old">
+                                    <span class="calculator-price-old">0</span> руб.
+                                </div>
+                                <div class="catalog__price">
+                                    <span class="calculator-price">0</span> руб.
+                                </div>
+                                <hr>
+
+                                <div class="input-group input-group-lg">
+                                    <input type="text" name="phone" class="form-control" placeholder="Телефон" required>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-warning px-xl-5 transition--slide"
+                                            style="border-color: #ef9300;" type="submit">Заказать</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ HFPLTKBNTKM NJDFHJD -->
+
+            </div>
+
+
+            <div id="filter-alert" class="alert alert-danger text-center" role="alert" hidden>
+                <h4 class="alert-heading">Товары с такими параметрами не найдены!</h4>
+                <p>Попробуйте выбрать другие фильтры или свяжитесь с Вашим личным менеджером.</p>
+                <hr>
+                <p class="mb-0">
+                    <a href="#modal-order" data-toggle="modal" class="btn btn-primary">Консультация с менеджером</a>
+                </p>
+            </div>
+
+
+            <div class="jumbotron shadow mt-5 text-center" style="background-color: #dbf0f7;">
+                <p class="h1"><b>Сложный выбор?</b></p>
+
+                <hr>
+
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="manager">
+                            <a href="#modal-order" data-toggle="modal">
+                                <img src="./public/assets/img/contact/konsultant.jpg" class="img-fluid img-thumbnail">
+                                <div class="manager__status">
+                                    <i class="fa fa-circle fa-3x text-warning manager__status-icon"></i>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="mt-3 lead">
+                            Александр Лебедев <span class="badge badge-pill badge-success">Online</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="h1">Компетентный и вежливый менеджер</p>
+                        <p class="h1">Хочет помочь!</p>
+                        <div class="my-3 h3">
+                            <a href="tel:+375297341107" class="text-alt"><img src="../vendor/img/logo_mts_64.jpg"
+                                    width="24"> (29) 734-11-07</a><br>
+                            <a href="tel:+375299654239" class="text-alt"><img src="../vendor/img/logo_velcom_64.jpg"
+                                    width="24"> (29) 965-42-39</a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <p class="lead">Укажите номер и Ваш личный менеджер свяжится с Вами, чтобы помочь!</p>
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" name="message" class="form-control" placeholder="Ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" class="form-control" placeholder="Номер телефона"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-warning btn-lg btn-block"
+                                    style="border-color: #ef9300;">Помощь менеджера</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <header>
+        <div data-animation="animated zoomInUp">Дополнительные комплектующие</div>
+    </header>
+
+    <section id="section-additional" class="c__section text-center hero-hexagons">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 col-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/forto4ka.jpg" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            Форточка
+                        </div>
+                        <hr>
+                        <div class="equipment__price">
+                            20 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/gazlift.jpg" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            Газлифт
+                        </div>
+                        <hr>
+                        <div class="equipment__price">
+                            20 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/lenta.jpg" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            Лента утепления 12 м.
+                        </div>
+                        <hr>
+                        <div class="equipment__price">
+                            10 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/poliv.jpg" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            Авто-полив
+                        </div>
+                        <hr>
+                        <div class="equipment__price">
+                            30 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/podv9zki.jpg" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            Подвязки
+                        </div>
+                        <hr>
+                        <div class="equipment__price">
+                            10 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/pp.jpg" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            П-профиль
+                        </div>
+                        <hr>
+                        <div class="equipment__price">
+                            7 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/pog.jpg" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            Парник "Огурчик"
+                        </div>
+                        <hr>
+                        <div class="equipment__price">
+                            20 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/gryadka.jpg" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            Оцинкованная грядка
+                        </div>
+                        <hr>
+                        <div class="equipment__price">
+                            55 руб.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <header id="section-advantages-header">
+        <div data-animation="animated zoomInUp">Преимущества нашей компании</div>
+    </header>
+
+    <section id="section-advantages" class="c__section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="advantages__card">
+                        <div class="advantages__img">
+                            <i class="fa fa-truck fa-4x"></i>
+                        </div>
+                        <div class="advantages__description">
+                            <div class="advantages__title">
+                                Бесплатная доставка
+                            </div>
+                            <div class="advantages__text">
+                                Быстро и бесплатно! Собственный курьерский отдел.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advantages__card">
+                        <div class="advantages__img">
+                            <i class="fa fa-money fa-4x"></i>
+                        </div>
+                        <div class="advantages__description">
+                            <div class="advantages__title">
+                                Цена
+                            </div>
+                            <div class="advantages__text">
+                                Самые низкие цены - от производителя!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advantages__card">
+                        <div class="advantages__img">
+                            <i class="fa fa-thumbs-o-up fa-4x"></i>
+                        </div>
+                        <div class="advantages__description">
+                            <div class="advantages__title">
+                                Гарантия
+                            </div>
+                            <div class="advantages__text">
+                                Гарантия от производителя 10 лет. Официальный сервисный центр.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="advantages__card">
+                        <div class="advantages__img">
+                            <i class="fa fa-credit-card fa-4x"></i>
+                        </div>
+                        <div class="advantages__description">
+                            <div class="advantages__title">
+                                Рассрочка 0%
+                            </div>
+                            <div class="advantages__text">
+                                До 36 мес. Без процентов. Без поручителей. Без справок о доходах.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advantages__card">
+                        <div class="advantages__img">
+                            <i class="fa fa-file-text-o fa-4x"></i>
+                        </div>
+                        <div class="advantages__description">
+                            <div class="advantages__title">
+                                Сертификаты
+                            </div>
+                            <div class="advantages__text">
+                                Сертификат соответсвия и экспертное заключение!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advantages__card">
+                        <div class="advantages__img">
+                            <i class="fa fa-wrench fa-4x"></i>
+                        </div>
+                        <div class="advantages__description">
+                            <div class="advantages__title">
+                                Сборка и установка
+                            </div>
+                            <div class="advantages__text">
+                                Услуга установки и бесплатная консультация по сборке!
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header id="section-certificate-header">
+        <div data-animation="animated zoomInUp">Сертификаты</div>
+    </header>
+
+    <section id="section-certificate" class="c__section bg-dark text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="./public/assets/img/sertifikaty/sertifikat1.jpg" data-fancybox="cert">
+                        <img class="img-fluid" src="./public/assets/img/sertifikaty/sertifikat1.jpg">
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="./public/assets/img/sertifikaty/sertifikat2.jpg" data-fancybox="cert">
+                        <img class="img-fluid" src="./public/assets/img/sertifikaty/sertifikat2.jpg">
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="./public/assets/img/sertifikaty/sertifikat3.jpg" data-fancybox="cert">
+                        <img class="img-fluid" src="./public/assets/img/sertifikaty/sertifikat3.jpg">
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="mt-5">
+                <button class="c__btn c__btn--danger c__btn--lg" data-toggle="modal" data-target="#modal-order"
+                    data-animation="animated tada delay-1s">Заказать проверенную теплицу</button>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <div data-animation="animated zoomInUp">Отзывы</div>
+    </header>
+
+    <section id="section-review" class="c__section">
+        <div class="container">
+
+            <div class="review__card">
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="./public/assets/img/otziv/evgeniy.jpg" class="img-fluid img-thumbnail rounded-circle">
+                    </div>
+                    <div class="col-md-10">
+                        <div class="review__title">Евгений Дaшков</div>
+                        <p class="text-muted">09.01.20 12:45</p>
+                        <p class="review__text">Купил Сибирскую теплицу, очень доволен. На удивление прочный какркас и
+                            очень легко собирается! Советую всем.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review__card">
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="./public/assets/img/otziv/oksana.jpg" class="img-fluid img-thumbnail rounded-circle">
+                    </div>
+                    <div class="col-md-10">
+                        <div class="review__title">Оксана Карнышева</div>
+                        <p class="text-muted">08.01.20 15:27</p>
+                        <p class="review__text">Уже второй раз заказываю здесть теплицу. Радует компетентная
+                            консультация, бесплатная доставка и вежливый водитель.</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <div class="text-center">
+                <button class="c__btn c__btn--danger c__btn--lg" data-toggle="modal" data-target="#modal-order"
+                    data-animation="animated tada delay-1s">Бесплатная консультация</button>
+            </div>
+        </div>
+    </section>
+
+    <header id="section-gallery-header">
+        <div data-animation="animated zoomInUp">Теплицы наших покупателей</div>
+    </header>
+
+    <section id="section-gallery" class="c__section bg-dark text-center">
+
+        <div class="container">
+            <div id="carousel-gallery" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <div class="row no-gutters">
+                            <div class="col-6 col-lg-4">
+                                <a href="./public/assets/img/klienty/klienty1.jpg" data-fancybox="gallery">
+                                    <img class="img-fluid" src="./public/assets/img/klienty/klienty1.jpg">
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <a href="./public/assets/img/klienty/klienty2.jpg" data-fancybox="gallery">
+                                    <img class="img-fluid" src="./public/assets/img/klienty/klienty2.jpg">
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <a href="./public/assets/img/klienty/klienty3.jpg" data-fancybox="gallery">
+                                    <img class="img-fluid" src="./public/assets/img/klienty/klienty3.jpg">
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <a href="./public/assets/img/klienty/klienty4.jpg" data-fancybox="gallery">
+                                    <img class="img-fluid" src="./public/assets/img/klienty/klienty4.jpg">
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <a href="./public/assets/img/klienty/klienty5.jpg" data-fancybox="gallery">
+                                    <img class="img-fluid" src="./public/assets/img/klienty/klienty5.jpg">
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <a href="./public/assets/img/klienty/klienty6.jpg" data-fancybox="gallery">
+                                    <img class="img-fluid" src="./public/assets/img/klienty/klienty6.jpg">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+
+                        <div class="row no-gutters">
+                            <div class="col-6 col-lg-4">
+                                <a href="./public/assets/img/klienty/klienty3.jpg" data-fancybox="gallery">
+                                    <img class="img-fluid" src="./public/assets/img/klienty/klienty3.jpg">
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <a href="./public/assets/img/klienty/klienty7.jpg" data-fancybox="gallery">
+                                    <img class="img-fluid" src="./public/assets/img/klienty/klienty7.jpg">
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <a href="./public/assets/img/klienty/klienty8.jpg" data-fancybox="gallery">
+                                    <img class="img-fluid" src="./public/assets/img/klienty/klienty8.jpg">
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <a href="./public/assets/img/klienty/klienty6.jpg" data-fancybox="gallery">
+                                    <img class="img-fluid" src="./public/assets/img/klienty/klienty6.jpg">
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <a href="./public/assets/img/klienty/klienty9.jpg" data-fancybox="gallery">
+                                    <img class="img-fluid" src="./public/assets/img/klienty/klienty9.jpg">
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <a href="./public/assets/img/klienty/klienty10.jpg" data-fancybox="gallery">
+                                    <img class="img-fluid" src="./public/assets/img/klienty/klienty10.jpg">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-gallery" role="button" data-slide="prev">
+                    <i class="fa fa-arrow-circle-left fa-3x"></i>
+                </a>
+                <a class="carousel-control-next" href="#carousel-gallery" role="button" data-slide="next">
+                    <i class="fa fa-arrow-circle-right fa-3x"></i>
+                </a>
+            </div>
+
+            <hr>
+            <div class="mt-5">
+                <button class="c__btn c__btn--danger c__btn--lg" data-toggle="modal" data-target="#modal-order"
+                    data-animation="animated tada delay-1s">Заказать проверенную теплицу</button>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <div data-animation="animated zoomInUp">Контакты</div>
+    </header>
+
+    <section id="section-contact" class="c__section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="h1 text-alt">Заказ обратного звонка</div>
+                    <div class="c__bg--black60 text-white p-3 p-md-5">
+                        <p class="h1">Остались вопросы?</p>
+                        <p class="h3">Оставьте ваши данные и получите кометентную консультацию</p>
+                        <hr>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" class="form-control" placeholder="Номер телефона"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-warning btn-lg btn-block"
+                                    style="border-color: #ef9300;">Заказать звонок</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div class="modal fade" id="modal-order">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content bg-warning">
+                <div class="modal-body text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p class="h2">Оставьте ваш номер телефона</p>
+                    <p class="h4">И наш консультант с Вами свяжется</p>
+                    <div class="d-flex justify-content-center align-items-center mb-1 h4">
+                        <img src="../vendor/img/logo_mts_64.jpg" alt="mts" class="img-fluid mr-2" width="24">
+                        <a href="tel:+375297341107" class="text-reset font-weight-bold">(29) 734-11-07</a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center h4">
+                        <img src="../vendor/img/logo_velcom_64.jpg" alt="velcom" class="img-fluid mr-2" width="24">
+                        <a href="tel:+37529965423" class="text-reset font-weight-bold">(29) 965-42-39</a>
+                    </div>
+                    <hr>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-danger btn-lg btn-block">Отправить<span
+                                    class="d-none d-md-inline"> заявку</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ -->
+
+    <div class="modal fade" id="modal-question-length">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p class="h2">Длина теплицы.</p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="./public/assets/img/info/dlina.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-md-8 text-left">
+                            <p class="h4">— Стандартно теплица имеет минимальную <b>длину 4 метра</b>. После чего может
+                                увиличиваться на <b>2 метра</b> без ограничений.</p>
+                            <p class="h4">— <b>Длина</b> теплицы выбирается в зависимости от желаемой длины грядок и
+                                свободного места.</p>
+                            <p class="h4">— Оптимальная <b>длина</b> считается <b>6-8 метров.</b></p>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <p><b>Укажите Ваш телефон</b> и вежливый менеджер проконсультирует <b>Вас</b> подробней!</p>
+                    <form>
+                        <div class="input-group input-group-lg">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-danger">Отправить<span class="d-none d-md-inline">
+                                        заявку</span></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ -->
+
+    <div class="modal fade" id="modal-question-stringery">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p class="h2">Стрингеры — боковые стяжки.</p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="./public/assets/img/info/stringery.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-md-8 text-left">
+                            <p class="h4">— <b>Стрингеры</b> сделаны из стальной трубы. Они расположены вдоль теплицы
+                                и скерепляют между собой дуги. От колличества <b>стрингеров</b> зависит надёжность теплицы 
+                                и её максимальная нагрузка на <b>1 кв/м.</b></p>
+                            <p class="h4">— Оптимальным колличеством <b>стрингеров</b> считается <b>5 и 7 шт.</b></p>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <p><b>Укажите Ваш телефон</b> и вежливый менеджер проконсультирует <b>Вас</b> подробней!</p>
+                    <form>
+                        <div class="input-group input-group-lg">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-danger">Отправить<span class="d-none d-md-inline">
+                                        заявку</span></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ -->
+
+    <div class="modal fade" id="modal-question-interval">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p class="h2">Интервал между дугами.</p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="./public/assets/img/info/interval.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-md-8 text-left">
+                            <p class="h4">— Если <b>Интервал</b> между дугами большой, то материал будет провисать,
+                                особенно под нагрузкой. Если <b>интервал</b> между дугами слишком мал, потребуется
+                                больше работы при креплении покрытия.</p>
+                            <p class="h4">— Оптимальным интервалом считается <b>0,5 - 0,67 м.</b></p>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <p><b>Укажите Ваш телефон</b> и вежливый менеджер проконсультирует <b>Вас</b> подробней!</p>
+                    <form>
+                        <div class="input-group input-group-lg">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-danger">Отправить<span class="d-none d-md-inline">
+                                        заявку</span></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ -->
+
+    <div class="modal fade" id="modal-question-shirina">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p class="h2">Ширина теплицы.</p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="./public/assets/img/info/shirina.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-md-8 text-left">
+                            <p class="h4">— <b>Ширина теплицы</b> выбирается в зависимости от желаемго количества
+                                проходов и грядок, а также свободного места.</p>
+                            <p class="h4">— Оптимальная <b>ширина</b> считается <b>3 метра</b>.</p>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <p><b>Укажите Ваш телефон</b> и вежливый менеджер проконсультирует <b>Вас</b> подробней!</p>
+                    <form>
+                        <div class="input-group input-group-lg">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-danger">Отправить<span class="d-none d-md-inline">
+                                        заявку</span></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ -->
+
+    <div class="modal fade" id="modal-question-profil">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p class="h2">Провиль — сечение трубы.</p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="./public/assets/img/info/profil.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-md-8 text-left">
+                            <p class="h4">— <b>Оцинкованная замкнутая труба</b> - самый жесткий и надежный материал для
+                                каркаса.</p>
+                            <p class="h4">— Чем больше <b>сечение трубы</b>, тем болше устойчевость к снеговой нагрузке.
+                            </p>
+                            <p class="h4">— Оптимальное <b>сечение трубы 40х20</b></p>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <p><b>Укажите Ваш телефон</b> и вежливый менеджер проконсультирует <b>Вас</b> подробней!</p>
+                    <form>
+                        <div class="input-group input-group-lg">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-danger">Отправить<span class="d-none d-md-inline">
+                                        заявку</span></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ -->
+
+    <div class="modal fade" id="modal-question-kreplenie">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p class="h2">Система крепления трубы.</p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="./public/assets/img/info/kreplenie.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-md-8 text-left">
+                            <p class="h4">— Самые распрастранинные системы крепления, это <b>крабовая</b> и
+                                <b>болтовая</b>.</p>
+                            <p class="h4">— Основня разница в площади прикосновения каркаса с поликарбонатом. </p>
+                            <p class="h4">— В <b>краб</b> системе дуги и боковые стяжки распологаются в одной плоскости.
+                            </p>
+                            <p class="h4">— В <b>болтовом</b> соединении стяжки распологаются под дугами.</p>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <p><b>Укажите Ваш телефон</b> и вежливый менеджер проконсультирует <b>Вас</b> подробней!</p>
+                    <form>
+                        <div class="input-group input-group-lg">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-danger">Отправить<span class="d-none d-md-inline">
+                                        заявку</span></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ -->
+
+    <div class="modal fade" id="modal-question-duga">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p class="h2">Тип дуги.</p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="./public/assets/img/info/duga.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-md-8 text-left">
+                            <p class="h4">— Дуги бывают <b>разборные</b>, <b>цельные</b>, <b>двойные разборные</b> и
+                                <b>двойные цельные</b>.</p>
+                            <p class="h4">— <b>Разборные</b> разбираются на зиму и занимают меньше места в разобраном
+                                виде.</p>
+                            <p class="h4">— <b>Цельные</b> выдерживают зимние условия и могут стоять круглый год.</p>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <p><b>Укажите Ваш телефон</b> и вежливый менеджер проконсультирует <b>Вас</b> подробней!</p>
+                    <form>
+                        <div class="input-group input-group-lg">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-danger">Отправить<span class="d-none d-md-inline">
+                                        заявку</span></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ -->
+
+    <div class="modal fade" id="modal-proverca">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <form id="provercaPhone">
+                        <div class="h3">Проверте правельно ли введён номер.</div>
+                        <div class="form-group">
+                            <div class="provercaPhone__textPhone d-block font-weight-bold h2 mt-4"></div>
+                            <input type="tel" name="truePhone"
+                                class="provercaPhone__inputPhone d-none font-weight-bold text-center form-control"
+                                placeholder="Номер телефона">
+                        </div>
+                        <div class="provercaPhone-btn d-block text-center">
+                            <button type="submit" class="btn btn-success provercaPhone-btn__true mx-3">Да, правильно
+                                (Отправить)</button>
+                            <button type="submit" class="btn btn-danger provercaPhone-btn__false mx-3">Нет, не правильно
+                                (Исправить)</button>
+                        </div>
+                        <div class="form-group provercaPhone-btnTwo d-none">
+                            <button type="submit" class="btn h4 btn-warning btn-lg btn-block">Отправить
+                                исправленный</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ -->
+
+    <div class="modal fade" id="modal-question-bank">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content bg-warning">
+                <div class="modal-body text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <p class="h2">Заказать в Рассрочку</p>
+                    <hr>
+                    <p class="h4">Выгодные условия покупки в рассрочку!</p>
+                    <p>
+                        <img src="./public/assets/img/bank/halva.jpg" class="catalog__bank m-1" alt="halva">
+                        <img src="./public/assets/img/bank/cherepaha.jpg" class="catalog__bank m-1" alt="cherepaha">
+                        <img src="./public/assets/img/bank/fun.jpg" class="catalog__bank m-1" alt="kartafun">
+                        <img src="./public/assets/img/bank/magnit.jpg" class="catalog__bank m-1" alt="magnit">
+                        <img src="./public/assets/img/bank/pokupok.jpg" class="catalog__bank m-1" alt="pokupok">
+                        <img src="./public/assets/img/bank/smart.jpg" class="catalog__bank m-1" alt="belarusbank">
+                        <img src="./public/assets/img/bank/belarusbank.jpg" class="catalog__bank m-1" alt="smart">
+                    </p>
+                    <hr>
+                    <p>Укажите номер телефона и менеджер по рассрочкам свяжится с Вами в течении 1 мин!</p>
+                    <form>
+                        <div class="input-group input-group-lg">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона"
+                                required="">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-danger">Отправить<span class="d-none d-md-inline">
+                                        заявку</span></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    <!-- Isotope -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+        integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+
+    <script src="./public/scripts/data.js"></script>
+    <script src="./dist/scripts/c.min.js"></script>
+    <script src="./dist/scripts/js.min.js"></script>
+    <script src="../vendor/js/app.js"></script>
+</body>
+</html>
