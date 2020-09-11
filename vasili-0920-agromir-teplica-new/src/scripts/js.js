@@ -114,7 +114,7 @@ $(document).ready(function () {
             // Using jQuery's animate() method to add smooth page scroll
             $("html, body").animate(
                 {
-                    scrollTop: $(hash).offset().top
+                    scrollTop: $(hash).offset().top - 100
                 },
                 400
             );
@@ -178,5 +178,25 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }catch (e) {console.error(e);}
+
+    try {
+        var btnParam = document.querySelectorAll(".js-calculator-group-values");
+        [].forEach.call(btnParam, function (btnParam) {
+            btnParam.addEventListener("click", function () {
+                if(btnParam.dataset.product){
+                    var formActive = document.querySelector("#section-catalog .has-calculator input[name='product'][value='" + btnParam.dataset.product + "']").parentElement;
+                    formActive.querySelector("input[name='" + btnParam.dataset.name + "'][value='" + btnParam.dataset.value + "']").checked = !0;
+                    formActive.dispatchEvent(new Event("change"));
+                }else{
+                    [].forEach.call(document.querySelectorAll("#section-catalog .has-calculator"), function (formActive) {
+                        formActive.querySelector("input[name='" + btnParam.dataset.name + "'][value='" + btnParam.dataset.value + "']").checked = !0;
+                        formActive.dispatchEvent(new Event("change"))
+                    })
+                }
+            })
+        })
+    } catch (e) {
+        console.error(e)
+    }
 
 });

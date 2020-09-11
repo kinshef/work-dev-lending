@@ -8,8 +8,8 @@ ul{
 }
 
 #section-main {
-    padding-top: 10rem;
-    padding-bottom: 6rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
     background-image: url("../../public/assets/img/back/main_page.jpg");
     background-size: cover;
     background-position: center center;
@@ -163,27 +163,22 @@ header {
     font-size: 2rem;
     font-weight: bold;
 }
-
 @media (min-width: 768px) {
     header {
         font-size: 3rem;
     }
 }
-
 .countdown-week {
     font-size: 1rem;
 }
-
 @media (min-width: 1000px) {
     .countdown-week {
         font-size: 1.8rem;
     }
 }
-
 .section-title {
-    padding-bottom: 75px;
     color: #3f2803;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 60px;
     text-align: center;
     font-weight: bold;
@@ -191,17 +186,14 @@ header {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
 .main__title {
     font-size: 2rem;
     font-weight: 900;
 }
-
 .main__subtitle {
     font-size: 2rem;
     font-weight: 900;
 }
-
 @media (min-width: 1000px) {
     .main__title {
         font-size: 4rem;
@@ -210,7 +202,6 @@ header {
         font-size: 3rem;
     }
 }
-
 .about__title {
     color: yellow;
 }
@@ -232,7 +223,6 @@ header {
     color: white;
     font-size: 2rem;
 }
-
 .leftstr,
 .rightstr {
     float: left;
@@ -335,6 +325,7 @@ header {
     background-color: rgba(0,0,0,.4);
     height: 100%;
 }
+/* .header-phone__wrap, */
 .header-logo__wrap{
     position: absolute;
     z-index: 1;
@@ -434,6 +425,11 @@ header {
 .section-strength__subtitle{
     max-width: 250px;
 }
+@media(max-width: 576px){
+    .section-strength__subtitle{
+        font-size: 0.8rem;
+    }
+}
 
 /* section-catalog */
 .section-catalog__cart-product {
@@ -462,6 +458,7 @@ header {
     color: #fff;
     background-color: #007bff;
     border-color: #007bff;
+    white-space: normal;
 }
 
 .has-calculator__title {
@@ -480,7 +477,7 @@ header {
 .catalog__input__label {
     display: block;
     padding: 0.2rem 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
     text-align: center;
     line-height: 1.6em;
@@ -510,7 +507,7 @@ header {
 .catalog__text__label {
     display: block;
     padding: 0.2rem 0.5rem;
-    font-size: 1.2em;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 1.6em;
     margin: 0.2rem;
@@ -519,17 +516,30 @@ header {
     display:none;
 }
 @media(min-width: 992px) {
-    .catalog__input__label{
+    .catalog__table{
+        font-size: 1.2rem;
+    }
+    .catalog__input__label,
+    .catalog__text__label{
         padding: 0.2rem 1rem;
+        font-size: 1.2rem;
     }
 }
-
 .product-price {
     font-size: 2rem;
 }
-
 .product-price_new {
     font-weight: bold !important;
+}
+@media(max-width: 576px){
+    .product-price{
+        font-size: 1.5rem;
+    }
+    .catalog__table,
+    .catalog__input__label,
+    .catalog__text__label{
+        font-size: 0.8rem;
+    }
 }
 
 
@@ -587,7 +597,11 @@ header {
 .catalog-toggle__container{
     display: none;
 }
-
+@media(max-width: 374px){
+    .catalog-toggle__container{
+        font-size: 14px;
+    }
+}
 
 /* SECTION GUARANTEE */
 .guarantee-content {
