@@ -60,8 +60,6 @@ $(function () {
         return false
     });
 
-
-
     $(window).resize(function() {
         if($(window).width() > 1199) {
             $('.section-header-main,.section-header').mousemove(function(e) {
@@ -72,13 +70,13 @@ $(function () {
         }
     }());
 
-
-
     function parallax(e, target, layer) {
         var x = -((e.pageX / $(window).width()*100) - 50) / layer;
         var y = -((e.pageY / $(window).height()*100) - 50) / (layer/1.5);
         target.style.transform = "translate("+ x +"%, "+ y +"%)";
     };
+
+
 
     $(".owl-carousel-advantages").owlCarousel({
         items: 1,
@@ -112,12 +110,6 @@ $(function () {
         })
     })
 
-
-
-
-
-
-
 })
 
 $("a.smoothscroll").click(function(a) {
@@ -125,6 +117,9 @@ $("a.smoothscroll").click(function(a) {
         scrollTop: $(a).offset().top
     }, 400))
 });
+
+
+
 
 
     // для IE spret operator
