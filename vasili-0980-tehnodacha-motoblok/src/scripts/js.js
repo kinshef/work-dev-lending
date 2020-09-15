@@ -1,6 +1,5 @@
 $(function () {
 
-
     $("form").submit(function (event) {
         event.preventDefault();
 
@@ -25,8 +24,8 @@ $(function () {
             value: location.href
         });
 
-        /*console.log(JSON.stringify(data));
-        return false;*/ // Testing
+        console.log(JSON.stringify(data));
+        return false; // Testing
 
         $.ajax({
             type: "POST",
@@ -60,31 +59,7 @@ $(function () {
         }, 400))
     });
 
- // links hightLight after scroll page
-//   $.fn.nav = function (item) {
-//     var point = {
-//       offset: 0
-//     };
-//     $.extend(point, item);
-//     var links = this;
-//     $(links).each(function (a, index) {
-//       var link = $(index.hash);
-//       var place = $(link).offset();
-//       $(window).scroll(function () {
-//         var newPoint = $(window).scrollTop() + point.offset;
-//         place.top < newPoint && newPoint < place.top + $(link).height() && ($(links).removeClass("active"), $(index).addClass("active"))
-//       })
-//     })
-//   };
-//   $(".js-nav-scroll").nav({
-//     offset: 150
-//   });
-// });
-
 });
-
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
 

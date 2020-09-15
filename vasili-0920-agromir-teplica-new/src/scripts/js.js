@@ -14,11 +14,11 @@ $(document).ready(function () {
             $('.provercaPhone__inputPhone').focus();
         });
 
-        $(".provercaPhone-btn__true").click(function (event) {
+        document.querySelector(".provercaPhone-btn__true").onclick = function (event) {
             event.preventDefault();
             $('#modal-proverca').modal('hide');
             alert(otprRespText);
-        });
+        };
         if(formOtpr.id !== 'provercaPhone'){
             formOtprData = $(formOtpr).serializeArray()
             $(formOtpr).serializeArray().map(function(formData){
@@ -68,8 +68,11 @@ $(document).ready(function () {
             value: location.href
         });
 
-        // console.log(JSON.stringify(data));
-        // return false; // Testing
+        var asd = 'asdasd'
+        otprRespText = asd;
+
+        console.log(JSON.stringify(data));
+        return false; // Testing
 
         $.ajax({
             type: "POST",

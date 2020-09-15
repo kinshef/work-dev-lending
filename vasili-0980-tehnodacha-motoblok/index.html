@@ -12,18 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" integrity="sha256-HtCCUh9Hkh//8U1OwcbD8epVEUdBvuI8wj1KtqMhNkI=" crossorigin="anonymous">
     <!-- Fontawesome -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- Owl carousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" integrity="sha256-AWqwvQ3kg5aA5KcXpX25sYKowsX97sTCTbeo33Yfyk0=" crossorigin="anonymous">
     <!-- Fancybox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
 
-    <!-- <link rel="stylesheet" href="../vendor/lib/lightcountdown/lightcountdown.css"> -->
-
     <link rel="stylesheet" href="./public/style/css.css">
     <link rel="icon" type="image/ico" href="./public/assets/img/favicon.ico">
-
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
     <title>Test</title>
 </head>
@@ -32,18 +25,15 @@
     <section class="section-header sticky-top" id="section-header">
         <div class="container-fluid">
             <div class="row align-items-center text-center font-weight-bold py-1">
-                <div class="col-1 text-left">
+                <div class="col-xl-1 col-md-2 col-3 d-sm-block d-none text-left">
                     <a href="#"><img src="./public/assets/img/logo.png" class="img-fluid"></a>
                 </div>
-                <div class="col-8 text-center">
-                    <div class="header-nav font-weight-bold d-flex align-items-center justify-content-center">
-                        <a href="#section-catalog" class="smoothscroll">Каталог</a>
-                        <a href="#section-catalog" class="smoothscroll text-uppercase">faq</a>
-                        <a href="#section-attachment" class="smoothscroll">Навесное</a>
-                        <a href="#section-reviews" class="smoothscroll">Отзывы</a>
-                    </div>
+                <div class="col-xl-7 col-6 header-nav font-weight-bold d-md-flex d-none align-items-center justify-content-around">
+                    <a href="#section-catalog" class="smoothscroll">Каталог</a>
+                    <a href="#section-specialistHelp" class="smoothscroll">Нужна помощь</a>
+                    <a href="#section-frequentlyQuest" class="smoothscroll">Часто задаваемые вопросы</a>
                 </div>
-                <div class="col-3 d-flex align-items-center justify-content-end">
+                <div class="col-md-4 col-sm-9 col-12 d-flex align-items-center justify-content-end">
                     <div class="text-right d-inline-block">
                         <a href="tel:+375" class="font-weight-bold text-size-5 text-dark">8 (800) 707-08-21</a>
                         <div class="font-weight-light text-size-2">Минск, ул. Чернышевского, 8</div>
@@ -62,7 +52,7 @@
         </a>
     </div>
 
-    <div class="btn-top active">
+    <div class="btn-top">
         <a href="#section-main" class="smoothscroll">
             <i class="fa fa-angle-double-up" aria-hidden="true"></i>
         </a>
@@ -71,7 +61,7 @@
     <section class="section-main text-white" id="section-main">
         <div class="container">
             <div class="row py-5">
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="section_title mb-5">
                         Гироскутеры <span class="text_orenge">от 289 рублей</span><br> с доставкой по Беларуси
                     </div>
@@ -86,8 +76,8 @@
                         </ul>
                         <div class="main-perch__garant text-center p-3 d-flex align-items-center justify-content-center">Гарантия 365 дней!</div>
                     </div>
-                    <div class="text-center">
-                        <a href="#modal-order" data-toggle="modal" class="main-btn btn_orenge text-white font-weight-bold text-uppercase">ЗАКАЗАТЬ звонок</a>
+                    <div class="text-center btm_castom h-auto">
+                        <a href="#modal-order" data-toggle="modal" class="py-2 px-5 h-auto text-uppercase">ЗАКАЗАТЬ звонок</a>
                     </div>
                 </div>
             </div>
@@ -96,19 +86,19 @@
 
     <section class="section-features" id="section-features">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-5 offset-1">
+            <div class="row align-items-center py-3">
+                <div class="col-lg-5 order-lg-1 order-1 offset-lg-1">
                     <div class="features-img my-5">
                         <img src="./public/assets/img/features/featur1.jpg" alt="catalog">
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 order-lg-2 order-2">
                     <div class="h2 mb-4 font-weight-bold">Особенности гироскутера</div>
                     <p>Гироскутер имеет самую главную особенность и преимущество перед многими гиробордами - это, конечно же, размер и компактность. Его легко можно засунуть в сумку или багажник машины, а маленькие модели можно просто нести в руках. Он занимает мало места дома, и Вы даже не заметите его, если поставите в угол комнаты.</p>
                     <p>Цена достаточно низкая, при том, что гироскутеры качественно сделаны. В них стоят, как правило, оригинальные комплектующие, электродвигатели, аккумуляторы, гироскопические датчики. </p>
                     <p>Многие гироскутеры сделаны так, чтобы на них можно было ездить даже в дождь или снег. Компактность и маневренность гироскутера поражает всех тех, кто первый раз встал на это средство передвижения. </p>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 order-lg-3 order-4">
                     <div class="h2 mb-4 font-weight-bold">Конструкция гироскутера и особенности управления</div>
                     <div class="">Конструкция гироскутеров включает следующие компоненты: </div>
                     <ul class="mb-5 pl-4">
@@ -122,7 +112,7 @@
                     </ul>
                     <p>Управление гироскутером – это посильная задача для любого пользователя. И взрослые, и дети легко справляются с мини-сегвеями, и навыки катания вы получите буквально за час тренировок. Наклоняя тело в нужном направлении, вы управляете движением гироскутера за счет гироскопов, которые мгновенно улавливают малейшее изменение в положении тела райдера.</p>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 order-lg-4 order-3">
                     <div class="features-img my-5">
                         <img src="./public/assets/img/features/featur2.jpg" alt="catalog">
                     </div>
@@ -140,10 +130,14 @@
             </div>
             <div class="row my-4">
 
+                <!-- Разделитель товара -->
+
                 <div class="col-lg-4 col-md-6 col-12 my-3">
                     <form class="has-calculator p-3">
                         <input type="hidden" name="form" value="Карточка товара">
+                        <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) -->
                         <input type="hidden" name="product" value="product1">
+                        <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) end -->
                         <div class="row">
                             <div class="col-12">
                                 <div class="has-calculator__img">
@@ -186,18 +180,22 @@
                                 </div>
                             </div>
                             <div class="col-12 my-2">
-                                <div class="btm_castom text-center">
-                                    <a href="" data-toggle="modal" class="transition--slide has-calculator__btnDetails btn-block">Подробнее о товаре</a>
+                                <div class="text-center">
+                                    <a href="" data-toggle="modal" class="transition--slide has-calculator__btnDetails border-radius-30 btn btn-outline-dark btn-block">Подробнее о товаре</a>
                                 </div>
                             </div>
                         </div>
                     </form>
                 </div>
 
+                <!-- Разделитель товара -->
+
                 <div class="col-lg-4 col-md-6 col-12 my-3">
                     <form class="has-calculator p-3">
                         <input type="hidden" name="form" value="Карточка товара">
+                        <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) -->
                         <input type="hidden" name="product" value="product2">
+                        <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) end -->
                         <div class="row">
                             <div class="col-12">
                                 <div class="has-calculator__img">
@@ -240,18 +238,22 @@
                                 </div>
                             </div>
                             <div class="col-12 my-2">
-                                <div class="btm_castom text-center">
-                                    <a href="" data-toggle="modal" class="transition--slide has-calculator__btnDetails btn-block">Подробнее о товаре</a>
+                                <div class="text-center">
+                                    <a href="" data-toggle="modal" class="transition--slide has-calculator__btnDetails border-radius-30 btn btn-outline-dark btn-block">Подробнее о товаре</a>
                                 </div>
                             </div>
                         </div>
                     </form>
                 </div>
+
+                <!-- Разделитель товара -->
 
                 <div class="col-lg-4 col-md-6 col-12 my-3">
                     <form class="has-calculator p-3">
                         <input type="hidden" name="form" value="Карточка товара">
+                        <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) -->
                         <input type="hidden" name="product" value="product3">
+                        <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) end -->
                         <div class="row">
                             <div class="col-12">
                                 <div class="has-calculator__img">
@@ -294,45 +296,536 @@
                                 </div>
                             </div>
                             <div class="col-12 my-2">
-                                <div class="btm_castom text-center">
-                                    <a href="" data-toggle="modal" class="transition--slide has-calculator__btnDetails btn-block">Подробнее о товаре</a>
+                                <div class="text-center">
+                                    <a href="" data-toggle="modal" class="transition--slide has-calculator__btnDetails border-radius-30 btn btn-outline-dark btn-block">Подробнее о товаре</a>
                                 </div>
                             </div>
                         </div>
                     </form>
                 </div>
 
+                <!-- Разделитель товара -->
+
+                <div class="col-lg-4 col-md-6 col-12 my-3">
+                    <form class="has-calculator p-3">
+                        <input type="hidden" name="form" value="Карточка товара">
+                        <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) -->
+                        <input type="hidden" name="product" value="product4">
+                        <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) end -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="has-calculator__img">
+                                    <img src="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-12 border-bottom">
+                                <div class="has-calculator__title  text-size-5"></div>
+                            </div>
+                            <div class="col-12 border-bottom py-2">
+                                <table class="text-size-2 font-weight-light">
+                                    <tbody>
+                                        <tr>
+                                            <td>Двигатель:</td>
+                                            <td>бензиновый, 4-тактый</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Мощность:</td>
+                                            <td>6 л.с.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Вес:</td>
+                                            <td>34 кг.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Страна производитель:</td>
+                                            <td>Германия</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Гарантия:</td>
+                                            <td>2 года</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-12 has-calculator__price pt-2"></div>
+                            <div class="col-10 my-2">
+                                <div class="btm_castom text-center">
+                                    <a href="#modal-product" data-toggle="modal" class="transition--slide btn-block">Оформить заказ</a>
+                                </div>
+                            </div>
+                            <div class="col-12 my-2">
+                                <div class="text-center">
+                                    <a href="" data-toggle="modal" class="transition--slide has-calculator__btnDetails border-radius-30 btn btn-outline-dark btn-block">Подробнее о товаре</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Разделитель товара -->
+
+                <div class="col-lg-4 col-md-6 col-12 my-3">
+                    <form class="has-calculator p-3">
+                        <input type="hidden" name="form" value="Карточка товара">
+                        <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) -->
+                        <input type="hidden" name="product" value="product5">
+                        <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) end -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="has-calculator__img">
+                                    <img src="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-12 border-bottom">
+                                <div class="has-calculator__title  text-size-5"></div>
+                            </div>
+                            <div class="col-12 border-bottom py-2">
+                                <table class="text-size-2 font-weight-light">
+                                    <tbody>
+                                        <tr>
+                                            <td>Двигатель:</td>
+                                            <td>бензиновый, 4-тактый</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Мощность:</td>
+                                            <td>6 л.с.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Вес:</td>
+                                            <td>34 кг.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Страна производитель:</td>
+                                            <td>Германия</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Гарантия:</td>
+                                            <td>2 года</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-12 has-calculator__price pt-2"></div>
+                            <div class="col-10 my-2">
+                                <div class="btm_castom text-center">
+                                    <a href="#modal-product" data-toggle="modal" class="transition--slide btn-block">Оформить заказ</a>
+                                </div>
+                            </div>
+                            <div class="col-12 my-2">
+                                <div class="text-center">
+                                    <a href="" data-toggle="modal" class="transition--slide has-calculator__btnDetails border-radius-30 btn btn-outline-dark btn-block">Подробнее о товаре</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Разделитель товара -->
+
+                <div class="col-lg-4 col-md-6 col-12 my-3">
+                    <form class="has-calculator p-3">
+                        <input type="hidden" name="form" value="Карточка товара">
+                        <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) -->
+                        <input type="hidden" name="product" value="product6">
+                        <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) end -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="has-calculator__img">
+                                    <img src="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-12 border-bottom">
+                                <div class="has-calculator__title  text-size-5"></div>
+                            </div>
+                            <div class="col-12 border-bottom py-2">
+                                <table class="text-size-2 font-weight-light">
+                                    <tbody>
+                                        <tr>
+                                            <td>Двигатель:</td>
+                                            <td>бензиновый, 4-тактый</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Мощность:</td>
+                                            <td>6 л.с.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Вес:</td>
+                                            <td>34 кг.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Страна производитель:</td>
+                                            <td>Германия</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Гарантия:</td>
+                                            <td>2 года</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-12 has-calculator__price pt-2"></div>
+                            <div class="col-10 my-2">
+                                <div class="btm_castom text-center">
+                                    <a href="#modal-product" data-toggle="modal" class="transition--slide btn-block">Оформить заказ</a>
+                                </div>
+                            </div>
+                            <div class="col-12 my-2">
+                                <div class="text-center">
+                                    <a href="" data-toggle="modal" class="transition--slide has-calculator__btnDetails border-radius-30 btn btn-outline-dark btn-block">Подробнее о товаре</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Разделитель товара -->
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="section-specialistHelp" id="section-specialistHelp">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center my-3">
+                    <div class="section_title mb-4">Нужна помощь специалиста в выборе гироскутера?</div>
+                    <div class="text-size-5 mb-5">Оставьте заявку и мы Вам перезвоним!</div>
+                </div>
+                <div class="col-lg-6 offset-lg-3">
+                    <form>
+                        <input type="hidden" name="form" value="Окно 'Нужна помощь специалиста в выборе гироскутера'">
+                        <div class="form-group">
+                            <div class="font-weight-light text-size-6">Имя</div>
+                            <input type="text" name="name" class="form-control border-0 border-radius-30 h-auto p-3" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <div class="font-weight-light text-size-6">Ваш номер телефона</div>
+                            <input type="tel" name="phone" class="form-control border-0 border-radius-30 h-auto p-3" placeholder="+375 (29) 999-99-99" required>
+                        </div>
+                        <div class="btm_castom">
+                            <button type="submit" class="transition--slide btn-block">Оформить заказ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-video py-5" id="section-video">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center my-3">
+                    <div class="text-size-7 font-weight-bold mb-4">Видеообзоры на гироскутеры Smart Balance 10.5 APP и Smart Balance Hummer</div>
+                </div>
+                <div class="col-lg-6 my-2">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/u4zB6HxB1BM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 my-2">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/u4zB6HxB1BM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center my-3">
+                    <div class="text-size-7 font-weight-bold mb-4">Видеообзоры на гироскутеры Smart Balance 10.5 APP и Smart Balance Hummer</div>
+                </div>
+                <div class="col-lg-6 my-2">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/u4zB6HxB1BM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 my-2">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/u4zB6HxB1BM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-frequentlyQuest py-5" id="section-frequentlyQuest">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center my-3">
+                    <div class="section_title mb-4">Часто задаваемые вопросы:</div>
+                </div>
+                
+                <div class="col-lg-8 offset-lg-2 border-bottom border-top border-secondary">
+                    <a class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#navbarToggleExternalContent_1" aria-controls="navbarToggleExternalContent_1"
+                        aria-expanded="false">
+                        <div class="text-size-6 font-weight-bold">Как работает гироскутер? </div>
+                        <div class="navbar-toggler_item"></div>
+                    </a>
+                    <div class="collapse" id="navbarToggleExternalContent_1">
+                        <div class="mb-3">Гироскутер работает на основе системы балансировки гироскопических датчиков. Когда вы стоите на гироскутере, гироскопы улавливают малейшее изменение положения относительно земли и в случаи чего система посылает сигнал двигателям удерживать вас в ровном положении либо двигаться вперед или назад.</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 offset-lg-2 border-bottom border-secondary">
+                    <a class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#navbarToggleExternalContent_2" aria-controls="navbarToggleExternalContent_2"
+                        aria-expanded="false">
+                        <div class="text-size-6 font-weight-bold">Езда на гироскутере опасна? </div>
+                        <div class="navbar-toggler_item"></div>
+                    </a>
+                    <div class="collapse" id="navbarToggleExternalContent_2">
+                        <div class="mb-3">Нет. Но все зависит от того, как на нем кататься. Опасность такая же, как при езде на роликах или скейтборде. Упасть можно, но с кем не бывает.</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 offset-lg-2 border-bottom border-secondary">
+                    <a class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#navbarToggleExternalContent_3" aria-controls="navbarToggleExternalContent_3"
+                        aria-expanded="false">
+                        <div class="text-size-6 font-weight-bold">Со скольки лет можно кататься? </div>
+                        <div class="navbar-toggler_item"></div>
+                    </a>
+                    <div class="collapse" id="navbarToggleExternalContent_3">
+                        <div class="mb-3">Никаких возрастных ограничений нет, но мы рекомендуем покупать гироскутер детям от 5 лет. При выборе модели необходимо проконсультироваться с продавцом касательно минимального веса, с которого начинают срабатывать датчики гироскутера. Обычно это 15 - 20 кг.</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 offset-lg-2 border-bottom border-secondary">
+                    <a class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#navbarToggleExternalContent_4" aria-controls="navbarToggleExternalContent_4"
+                        aria-expanded="false">
+                        <div class="text-size-6 font-weight-bold">Как правильно заряжать гироскутер? </div>
+                        <div class="navbar-toggler_item"></div>
+                    </a>
+                    <div class="collapse" id="navbarToggleExternalContent_4">
+                        <div class="mb-3">Все просто. В комплекте с гироскутером идет зарядное устройство, которое имеет индикатор заряда. Горит красным - заряжается, зеленым - заряжен. Рекомендуется хотя бы раз в месяц подзаряжать аккумулятор и не оставлять его на долгое время на зарядке. Так вы продлите срок службы батареи.</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 offset-lg-2 border-bottom border-secondary">
+                    <a class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#navbarToggleExternalContent_5" aria-controls="navbarToggleExternalContent_5"
+                        aria-expanded="false">
+                        <div class="text-size-6 font-weight-bold">На сколько хватает заряда гироскутера?</div>
+                        <div class="navbar-toggler_item"></div>
+                    </a>
+                    <div class="collapse" id="navbarToggleExternalContent_5">
+                        <div class="mb-3">В среднем на качественной модели этот показатель равен 2.5-3 часа. Но также этот показатель может падать от большого веса водителя, от качества дороги и от того, с какой скоростью вы двигаетесь.</div>
+                    </div>
+                </div>
 
             </div>
         </div>
     </section>
 
+    <section class="section-quality py-5" id="section-quality">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 offset-lg-2 my-3 text-size-5">
+                    <div class="text-size-6 font-weight-bold mb-4">Гироскутеры высокого качества</div>
+                    <p class="font-weight-light"> При покупке у нас гироскутера или сигвея, вы получаете по-настоящему высококачественный продукт, так как мы являемся официальным поставщиком и дистрибьютером гироскутеров и сигвеев в Беларуси. В нашем интернет-магазине вы найдете все необходимые сертификаты качества и надежности изделий.</p>
+                    <p class="font-weight-light"> Наша компания осуществляет контроль качества сигвеев и гироскутеров. На все исправные изделия распространяется гарантия от производителя. Поэтому при покупке нового гироскутера вы не будете разочарованы в его неисправности. Однако, при наличии каких либо неисправностей, вы можете обратиться в сервисный центр, где в кротчайшие сроки вам окажут любую гарантийную или негарантийную помощь. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-delivery py-5" id="section-delivery">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 offset-lg-2 my-5 text-size-5">
+                    <div class="text-size-6 font-weight-bold text-center mb-4">Доставка и оплата</div>
+                    <div class="d-flex align-items-center mt-5">
+                        <div class="delivery-img mr-4">
+                            <img src="./public/assets/img/icon/del1.png">
+                        </div>
+                        <div>
+                            <div class="font-weight-bold text-size-6">Доставка по Минску</div>
+                            <div class="font-weight-light">Доставка по Минску осуществляется <span class="font-weight-bold">курьером</span> в день заказа (6 руб).</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-5">
+                        <div class="delivery-img mr-4">
+                            <img src="./public/assets/img/icon/del2.png">
+                        </div>
+                        <div>
+                            <div class="font-weight-bold text-size-6">Доставка по Беларуси</div>
+                            <div class="font-weight-light">Доставка по Беларуси  <span class="font-weight-bold">курьером</span>  - от 1 до 3 дней (9 руб).</div>
+                            <div class="font-weight-light">Доставка по Беларуси  <span class="font-weight-bold">почтой</span>  - от 1 до 3 дней (6 руб).</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-5">
+                        <div class="delivery-img mr-4">
+                            <img src="./public/assets/img/icon/del3.png">
+                        </div>
+                        <div>
+                            <div class="font-weight-bold text-size-6">Оплата</div>
+                            <div class="font-weight-light">Оплата возможна наличными, картой рассрочки Халва, картой Магнит, (условия уточняйте у менеджера). Оплата производится после проверки и осмотра.</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-5">
+                        <div class="delivery-img mr-4">
+                            <img src="./public/assets/img/icon/del4.png">
+                        </div>
+                        <div>
+                            <div class="font-weight-bold text-size-6">Шоу-рум, самовывоз</div>
+                            <div class="font-weight-light">Выбрать и приобрести товар Вы можете по адресу г. Минск, ул. Чернышевского, 8. Наличие уточняйте по телефону.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 offset-lg-2 py-5">
+                    <div class="quality-text text-center">
+                        <p class="my-3">Уважаемые Клиенты, во избежание недоразумений просим Вас внимательно осматривать товар при его получении, так как претензии к внешнему виду товара и его комплектности Вы можете предъявлять только во время осмотра товара, при его приемке от курьера.</p>
+                        <p class="my-3">Вы вправе потребовать от курьера проверку доставленного Вам товара (внешнего вида, комплектности, работоспособности), после чего оставить свою подпись в гарантийном талоне об отсутствии претензий к изделию.</p>
+                        <p class="my-3">Претензии к внешнему виду и комплектации изделия после заполнения гарантийного талона и отбытия курьера не принимаются.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-installment py-5" id="section-installment">
+        <div class="container">
+            <div class="row mb-5 align-items-center">
+                <div class="col-12 text-center my-3">
+                    <div class="section_title mb-4">Условия и порядок рассрочки</div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="row text-center">
+                        <div class="col-sm-4">
+                            <div class="text-left mb-2">
+                                <div class="font-weight-bold">Халва, </div>
+                                <div class="font-weight-light">МТБанк</div>
+                            </div>
+                            <div class="installment-img mb-3">
+                                <img src="./public/assets/img/bank/bank1.png" class="img-fluid">
+                            </div>
+                            <span class="text-muted px-3 d-inline-block py-2 border-radius-30 border border-secondary">2, 3 или 6 месяцев</span>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="text-left mb-2">
+                                <div class="font-weight-bold">Черепаха, </div>
+                                <div class="font-weight-light">банк ВТБ</div>
+                            </div>
+                            <div class="installment-img mb-3">
+                                <img src="./public/assets/img/bank/bank2.png" class="img-fluid">
+                            </div>
+                            <span class="text-muted px-3 d-inline-block py-2 border-radius-30 border border-secondary">2 месяца</span>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="text-left mb-2">
+                                <div class="font-weight-bold">Карта покупок, </div>
+                                <div class="font-weight-light">Белгазпромбанк</div>
+                            </div>
+                            <div class="installment-img mb-3">
+                                <img src="./public/assets/img/bank/bank3.jpg" class="img-fluid">
+                            </div>
+                            <span class="text-muted px-3 d-inline-block py-2 border-radius-30 border border-secondary">3 месяца</span>
+                        </div>
+                        <div class="col-12 text-left mt-5">
+                            <div>Также есть возможность рассрочки через</div>
+                            <div class="font-weight-bold">ВТБ банк на срок от 3 до 36 месяцев.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 text-size-4">
+                    <div class="mb-3">
+                        <div class="font-weight-bold">По Карте покупок, Халва, Черепаха:</div>
+                        <div>В Минске - по терминалу.</div>
+                        <div>Другие населенные пункты - онлайн оплата.</div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="font-weight-bold">Рассрочка через банк ВТБ:</div>
+                        <div>1. Мы задаем Вам некоторые уточняющие вопросы.</div>
+                        <div>2. Вы высылаете нам на Viber фото Вашего паспорта.</div>
+                        <div>3. С вами связывается специалист из банка для заполнения анкеты и уведомления об одобрении, приглашает Вас для подписания документов в ближайшее отделение банка</div>
+                    </div>
+                    <div class="mb-3">
+                        <div>Без первоначального взноса. Сумма платежа разбивается равными долями на весь период рассрочки.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-questRemain" id="section-questRemain">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center my-3">
+                    <div class="section_title mb-4">Остались вопросы?</div>
+                    <div class="text-size-5 mb-5">Оставьте заявку и наши специалисты Вас проконсультируют!</div>
+                </div>
+                <div class="col-lg-6 offset-lg-3">
+                    <form>
+                        <input type="hidden" name="form" value="Окно 'Остались вопросы?'">
+                        <div class="form-group">
+                            <div class="font-weight-light text-size-6">Имя</div>
+                            <input type="text" name="name" class="form-control border-0 border-radius-30 h-auto p-3" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <div class="font-weight-light text-size-6">Ваш номер телефона</div>
+                            <input type="tel" name="phone" class="form-control border-0 border-radius-30 h-auto p-3" placeholder="+375 (29) 999-99-99" required>
+                        </div>
+                        <div class="btm_castom">
+                            <button type="submit" class="transition--slide btn-block">Оформить заказ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-footer py-4" id="section-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-8 offset-2">
+                    <img src="./public/assets/img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-md col-12">
+                    <div class="section-footer__title">ГАРАНТИИ</div>
+                    <p class="font-weight-light">Мы являемся производителем теплиц. Мы уверенны в используемых материалах, срок эксплуатации наших теплиц свыше 10 лет. Убедитесь в нашем качестве лично!</p>
+                </div>
+                <div class="col-md col-12">
+                    <div class="section-footer__title">ДОСТАВКА</div>
+                    <p class="font-weight-light">Мы доставляем теплицы из поликарбоната во все уголки Беларуси. Бережная перевозка в срок — залог вашего урожая!</p>
+                </div>
+                <div class="col-md col-12">
+                    <div class="section-footer__title">ОПЛАТА</div>
+                    <p class="font-weight-light">Мы делаем все для комфорта наших клиентов. Оплатить товар и доставку Вы можете удобным для Вас способом.</p>
+                </div>
+                <div class="col-md col-12 footer-phone">
+                    <div class="section-footer__title">ЗВОНИТЕ</div>
+                    <div class="font-weight-bold">+375 29 546-89-27</div>
+                    <div class="font-weight-bold">+375 29 335-77-75</div>
+                </div>
+                <div class="col-12 text-center copy">© 2015-2020 «text». Все права защищены.</div>
+            </div>
+        </div>
+    </section>
 
     <!-- modal -->
     <div id="modal-order" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-md">
             <div class="modal-content">
-                <div class="modal-body text-center bg-warning">
+                <div class="modal-body text-center">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                     <div class="my-4">
-                        <p class="h2">Ваш личный менеджер</p>
-                        <p class="h3">Михаил</p>
-                        <p class="h2">(44) 762-43-96, (29) 762-43-96</p>
-                        <hr>
+                        <img src="./public/assets/img/logo.png" alt="logo" class="w-50 img-fluid">
                     </div>
 
-                    <form>
-                        <input type="hidden" name="form" value="Окно заказа">
+                    <form class="text-left my-4">
+                        <input type="hidden" name="form" value="Окно 'Остались вопросы?'">
                         <div class="form-group">
-                            <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                            <div class="font-weight-light text-size-6">Имя</div>
+                            <input type="text" name="name" class="form-control border-radius-30 h-auto p-3" placeholder="Ваше имя">
                         </div>
                         <div class="form-group">
-                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                            <div class="font-weight-light text-size-6">Ваш номер телефона</div>
+                            <input type="tel" name="phone" class="form-control border-radius-30 h-auto p-3" placeholder="+375 (29) 999-99-99" required>
                         </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-danger shadow">Отправить заявку</button>
+                        <div class="btm_castom">
+                            <button type="submit" class="transition--slide btn-block">Оформить заказ</button>
                         </div>
                     </form>
                 </div>
@@ -343,25 +836,24 @@
     <div class="modal fade" id="modal-product">
         <div class="modal-dialog modal-md" role="document">
             <div class="modal-content">
-                <div class="modal-body h-100">
+                <div class="modal-body h-100 py-4">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <div class="font-weight-bold text-size-6">Ваш заказ</div>
+                    <div class="font-weight-bold text-size-6">Ваш заказ:</div>
                     <form class="modal-product-form">
                         <input type="hidden" name="form" value="Форма заказа звонка">
-                        <hr/>
+                        <hr class="border-secondary"/>
                         <div class="product-wrap"></div>
-                        <hr/>
+                        <hr class="border-secondary"/>
                         <div class="font-weight-bold text-right my-2 text-size-4">Сумма: <span class="modal-product__total-price">0</span> р.</div>
-                        <p class="font-weight-light my-4">Оставьте ваше имя и телефон, в течении 15 минут вам наберет специалист и уточнит всю информацию</p>
                         <div class="form-group">
-                            <span>Как вас зовут?</span>
-                            <input type="text" name="name" class="form-control" placeholder="Введите ваше имя">
+                            <div class="font-weight-light text-size-5">Имя</div>
+                            <input type="text" name="name" class="form-control border-radius-30 border border-secondary px-3 text-size-4 py-2 h-auto" placeholder="Введите ваше имя">
                         </div>
                         <div class="form-group">
-                            <span>Ваш номер телефона</span>
-                            <input type="tel" name="phone" class="form-control" placeholder="Введите ваш номер телефона" required>
+                            <div class="font-weight-light text-size-5">Ваш номер телефона</div>
+                            <input type="tel" name="phone" class="form-control border-radius-30 border border-secondary px-3 text-size-4 py-2 h-auto" placeholder="Введите ваш номер телефона" required>
                         </div>
                         <div class="btm_castom text-center">
                             <button type="submit" class="transition--slide btn-block">Отправить заявку</button>
@@ -372,7 +864,7 @@
         </div>
     </div>
 
-
+    <!-- Разделитель модалки товара(кнопки подробнее) -->
 
     <div class="modal fade modal-primer">
         <div class="modal-dialog modal-xl">
@@ -386,8 +878,10 @@
                             <div class="col-sm-12">
                                 <form class="has-calculator__modal">
                                     <input type="hidden" name="form" value="Карточка товара">
+                                    <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) -->
                                     <input type="hidden" name="product" value="product1">
-                                    <div class="row">
+                                    <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) end -->
+                                    <div class="row align-items-center">
                                         <div class="col-sm-6">
                                             <a href="" class="has-calculator__img" data-fancybox="product1">
                                                 <img src="" class="img-fluid">
@@ -396,8 +890,8 @@
                                         <div class="col-sm-6">
                                             <div class="has-calculator__title h4"></div>
                                             <div class="has-calculator__price"></div>
-                                            <div class="btm_castom text-center">
-                                                <a href="#modal-product" data-toggle="modal" class="transition--slide btn-block">Заказать</a>
+                                            <div class="btm_castom">
+                                                <a href="#modal-product" data-toggle="modal" class="transition--slide px-5">Оформит заказ</a>
                                             </div>
                                             <hr/>
                                             <div class="h6">Характеристики:</div>
@@ -422,6 +916,8 @@
                                                 <li>Редуктор: Шестерёнчатый</li>
                                                 <li>Вес: 80 кг.</li>
                                                 <li>Гарантия: 2 года</li>
+                                                <li class="font-weight-bold mt-3">Гарантия: 2 года</li>
+                                                <li class="font-weight-bold mt-3 text-size-5">Гарантия: 2 года</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -433,6 +929,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Разделитель модалки товара(кнопки подробнее) -->
 
     <div class="modal fade modal-primer">
         <div class="modal-dialog modal-xl">
@@ -446,8 +944,10 @@
                             <div class="col-sm-12">
                                 <form class="has-calculator__modal">
                                     <input type="hidden" name="form" value="Карточка товара">
+                                    <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) -->
                                     <input type="hidden" name="product" value="product2">
-                                    <div class="row">
+                                    <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) end -->
+                                    <div class="row align-items-center">
                                         <div class="col-sm-6">
                                             <a href="" class="has-calculator__img" data-fancybox="product1">
                                                 <img src="" class="img-fluid">
@@ -456,8 +956,8 @@
                                         <div class="col-sm-6">
                                             <div class="has-calculator__title h4"></div>
                                             <div class="has-calculator__price"></div>
-                                            <div class="btm_castom text-center">
-                                                <a href="#modal-product" data-toggle="modal" class="transition--slide btn-block">Заказать</a>
+                                            <div class="btm_castom">
+                                                <a href="#modal-product" data-toggle="modal" class="transition--slide px-5">Оформит заказ</a>
                                             </div>
                                             <hr/>
                                             <div class="h6">Характеристики:</div>
@@ -482,6 +982,8 @@
                                                 <li>Редуктор: Шестерёнчатый</li>
                                                 <li>Вес: 80 кг.</li>
                                                 <li>Гарантия: 2 года</li>
+                                                <li class="font-weight-bold mt-3">Гарантия: 2 года</li>
+                                                <li class="font-weight-bold mt-3 text-size-5">Гарантия: 2 года</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -493,6 +995,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Разделитель модалки товара(кнопки подробнее) -->
 
     <div class="modal fade modal-primer">
         <div class="modal-dialog modal-xl">
@@ -506,8 +1010,10 @@
                             <div class="col-sm-12">
                                 <form class="has-calculator__modal">
                                     <input type="hidden" name="form" value="Карточка товара">
+                                    <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) -->
                                     <input type="hidden" name="product" value="product3">
-                                    <div class="row">
+                                    <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) end -->
+                                    <div class="row align-items-center">
                                         <div class="col-sm-6">
                                             <a href="" class="has-calculator__img" data-fancybox="product1">
                                                 <img src="" class="img-fluid">
@@ -516,8 +1022,8 @@
                                         <div class="col-sm-6">
                                             <div class="has-calculator__title h4"></div>
                                             <div class="has-calculator__price"></div>
-                                            <div class="btm_castom text-center">
-                                                <a href="#modal-product" data-toggle="modal" class="transition--slide btn-block">Заказать</a>
+                                            <div class="btm_castom">
+                                                <a href="#modal-product" data-toggle="modal" class="transition--slide px-5">Оформит заказ</a>
                                             </div>
                                             <hr/>
                                             <div class="h6">Характеристики:</div>
@@ -542,6 +1048,8 @@
                                                 <li>Редуктор: Шестерёнчатый</li>
                                                 <li>Вес: 80 кг.</li>
                                                 <li>Гарантия: 2 года</li>
+                                                <li class="font-weight-bold mt-3">Гарантия: 2 года</li>
+                                                <li class="font-weight-bold mt-3 text-size-5">Гарантия: 2 года</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -554,23 +1062,214 @@
         </div>
     </div>
 
+    <!-- Разделитель модалки товара(кнопки подробнее) -->
 
+    <div class="modal fade modal-primer">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body h-100">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <form class="has-calculator__modal">
+                                    <input type="hidden" name="form" value="Карточка товара">
+                                    <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) -->
+                                    <input type="hidden" name="product" value="product4">
+                                    <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) end -->
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-6">
+                                            <a href="" class="has-calculator__img" data-fancybox="product1">
+                                                <img src="" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="has-calculator__title h4"></div>
+                                            <div class="has-calculator__price"></div>
+                                            <div class="btm_castom">
+                                                <a href="#modal-product" data-toggle="modal" class="transition--slide px-5">Оформит заказ</a>
+                                            </div>
+                                            <hr/>
+                                            <div class="h6">Характеристики:</div>
+                                            <ul class="text-size-2 font-weight-light ml-2">
+                                                <li>Производитель: Германия</li>
+                                                <li>Тип двигателя: Бензиновый, 4-ёх тактный</li>
+                                                <li>Мощность: 7 л.с.</li>
+                                                <li>Объём двигателя: 187 куб.см</li>
+                                                <li>Кол-во цилиндров: 1</li>
+                                                <li>Запуск двигателя: Ручной</li>
+                                                <li>Охлаждение: Воздушное</li>
+                                                <li>Ёмкость топливного бака: 3,5 л.</li>
+                                                <li>Тип топлива: АИ-92, АИ-95</li>
+                                                <li>Расход топлива: 0,7 л/ч</li>
+                                                <li>Размер колёс: 4х8</li>
+                                                <li>Дифференциал: Нет</li>
+                                                <li>ВОМ: Нет</li>
+                                                <li>Кол-во передач: 2-1</li>
+                                                <li>Глубина культивации: 15-30 см.</li>
+                                                <li>Ширина культивации: 80-120 см.</li>
+                                                <li>Сцепление: Ременное</li>
+                                                <li>Редуктор: Шестерёнчатый</li>
+                                                <li>Вес: 80 кг.</li>
+                                                <li>Гарантия: 2 года</li>
+                                                <li class="font-weight-bold mt-3">Гарантия: 2 года</li>
+                                                <li class="font-weight-bold mt-3 text-size-5">Гарантия: 2 года</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Разделитель модалки товара(кнопки подробнее) -->
+
+    <div class="modal fade modal-primer">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body h-100">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <form class="has-calculator__modal">
+                                    <input type="hidden" name="form" value="Карточка товара">
+                                    <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) -->
+                                    <input type="hidden" name="product" value="product5">
+                                    <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) end -->
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-6">
+                                            <a href="" class="has-calculator__img" data-fancybox="product1">
+                                                <img src="" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="has-calculator__title h4"></div>
+                                            <div class="has-calculator__price"></div>
+                                            <div class="btm_castom">
+                                                <a href="#modal-product" data-toggle="modal" class="transition--slide px-5">Оформит заказ</a>
+                                            </div>
+                                            <hr/>
+                                            <div class="h6">Характеристики:</div>
+                                            <ul class="text-size-2 font-weight-light ml-2">
+                                                <li>Производитель: Германия</li>
+                                                <li>Тип двигателя: Бензиновый, 4-ёх тактный</li>
+                                                <li>Мощность: 7 л.с.</li>
+                                                <li>Объём двигателя: 187 куб.см</li>
+                                                <li>Кол-во цилиндров: 1</li>
+                                                <li>Запуск двигателя: Ручной</li>
+                                                <li>Охлаждение: Воздушное</li>
+                                                <li>Ёмкость топливного бака: 3,5 л.</li>
+                                                <li>Тип топлива: АИ-92, АИ-95</li>
+                                                <li>Расход топлива: 0,7 л/ч</li>
+                                                <li>Размер колёс: 4х8</li>
+                                                <li>Дифференциал: Нет</li>
+                                                <li>ВОМ: Нет</li>
+                                                <li>Кол-во передач: 2-1</li>
+                                                <li>Глубина культивации: 15-30 см.</li>
+                                                <li>Ширина культивации: 80-120 см.</li>
+                                                <li>Сцепление: Ременное</li>
+                                                <li>Редуктор: Шестерёнчатый</li>
+                                                <li>Вес: 80 кг.</li>
+                                                <li>Гарантия: 2 года</li>
+                                                <li class="font-weight-bold mt-3">Гарантия: 2 года</li>
+                                                <li class="font-weight-bold mt-3 text-size-5">Гарантия: 2 года</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Разделитель модалки товара(кнопки подробнее) -->
+
+    <div class="modal fade modal-primer">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body h-100">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <form class="has-calculator__modal">
+                                    <input type="hidden" name="form" value="Карточка товара">
+                                    <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) -->
+                                    <input type="hidden" name="product" value="product6">
+                                    <!-- для добавления фото, заголовка и цены заполните data.js и введите в value="___" имя продукта(без пробелов) end -->
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-6">
+                                            <a href="" class="has-calculator__img" data-fancybox="product1">
+                                                <img src="" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="has-calculator__title h4"></div>
+                                            <div class="has-calculator__price"></div>
+                                            <div class="btm_castom">
+                                                <a href="#modal-product" data-toggle="modal" class="transition--slide px-5">Оформит заказ</a>
+                                            </div>
+                                            <hr/>
+                                            <div class="h6">Характеристики:</div>
+                                            <ul class="text-size-2 font-weight-light ml-2">
+                                                <li>Производитель: Германия</li>
+                                                <li>Тип двигателя: Бензиновый, 4-ёх тактный</li>
+                                                <li>Мощность: 7 л.с.</li>
+                                                <li>Объём двигателя: 187 куб.см</li>
+                                                <li>Кол-во цилиндров: 1</li>
+                                                <li>Запуск двигателя: Ручной</li>
+                                                <li>Охлаждение: Воздушное</li>
+                                                <li>Ёмкость топливного бака: 3,5 л.</li>
+                                                <li>Тип топлива: АИ-92, АИ-95</li>
+                                                <li>Расход топлива: 0,7 л/ч</li>
+                                                <li>Размер колёс: 4х8</li>
+                                                <li>Дифференциал: Нет</li>
+                                                <li>ВОМ: Нет</li>
+                                                <li>Кол-во передач: 2-1</li>
+                                                <li>Глубина культивации: 15-30 см.</li>
+                                                <li>Ширина культивации: 80-120 см.</li>
+                                                <li>Сцепление: Ременное</li>
+                                                <li>Редуктор: Шестерёнчатый</li>
+                                                <li>Вес: 80 кг.</li>
+                                                <li>Гарантия: 2 года</li>
+                                                <li class="font-weight-bold mt-3">Гарантия: 2 года</li>
+                                                <li class="font-weight-bold mt-3 text-size-5">Гарантия: 2 года</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Разделитель модалки товара(кнопки подробнее) -->
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <!-- Owl carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js" integrity="sha256-s5TTOyp+xlSmsDfr/aZhg0Gz+JejYr5iTJI8JxG1SkM=" crossorigin="anonymous"></script>
     <!-- Fancybox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
 
-    <!-- <script src="../vendor/lib/lightcountdown/lightcountdown.min.js"></script> -->
-
     <script src="./public/scripts/data.js"></script>
-    <!-- <script src="./src/scripts/c.js"></script> -->
-    <script src="./src/scripts/js.js"></script>
-    <!-- <script src="./dist/scripts/c.min.js"></script>
-    <script src="./dist/scripts/js.min.js"></script> -->
+    <script src="./dist/scripts/js.min.js"></script>
 </body>
 </html>
