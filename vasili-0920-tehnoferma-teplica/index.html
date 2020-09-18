@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tehnoferma</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  <!-- Fotorama carousel JS -->
+  <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="src/libs/lightcountdown_v1_2/lightcountdown.css">
+  <link rel="stylesheet" href="public/styles/main.css">
+
+</head>
+
+  <body>
+
+    <header class="header" id="header">
+      <div class="container-fluid full-width">
+        <div class="header-top pt-1 pb-1">
+          <div class="row">
+            <div class="col-lg-6 text-center">
+              <div class="row">
+                <div class="col-6">
+                  <i class="fa fa-volume-control-phone main-color" aria-hidden="true"></i>
+                  <a href="tel:">A1: (029) 123 45 67</a>
+                </div>
+                <div class="col-6">
+                  <i class="fa fa-volume-control-phone main-color" aria-hidden="true"></i>
+                  <a href="tel:">МТС: (029) 123 45 67</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block text-center">
+              <button
+                type="button"
+                class="btn btn__order btn_small"
+                data-toggle="modal" 
+                data-target="#order"
+              >
+                Заказать звонок
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="row">
+            <div class="col-lg-4 mt-3 mb-3 d-none d-lg-flex align-items-center">
+              <img class="ml-5" src="public/assets/img/logo/site_logo.png" alt="logo">
+            </div>
+            <div class="col-lg-8 mt-3 mb-3 d-none d-lg-flex align-items-center">
+              <nav>
+                <ul class="d-flex">
+                  <li>
+                    <a class="ml-3 text-uppercase link smoothscroll js-nav-scroll" href="#section-catalog">каталог</a>
+                  </li>
+                  <li>
+                    <a class="ml-3 text-uppercase link smoothscroll js-nav-scroll" href="#section-dop-catalog">доп. оборудование</a>
+                  </li>
+                  <li>
+                    <a class="ml-3 text-uppercase link smoothscroll" onclick="darkMode()" href="#section-about">доставка</a>
+                  </li>
+                  <li>
+                    <a class="ml-3 text-uppercase link smoothscroll js-nav-scroll" href="#section-help">особенности</a>
+                  </li>
+                  <li>
+                    <a class="ml-3 text-uppercase link smoothscroll js-nav-scroll" href="#footer">контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-6 d-flex d-lg-none justify-content-center align-items-center">
+              <button
+                type="button"
+                class="btn btn__order mb-3"
+                data-toggle="modal" 
+                data-target="#order"
+              >
+                Заказать звонок
+              </button>
+            </div>
+          </div>
+          <div class="border"></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="section-header" id="section-header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 mt-5 mb-5">
+              <div class="row">
+                <div class="col-12 col-lg-8 text-center">
+                  <h1>
+                    Сибирские теплицы напрямую от производителя
+                    <br>Забудьте о наценках магазинов и платной доставке!
+                  </h1>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="section-promo_size bg_colored p-2">
+                    <div class="text-white text-center">
+                      <p class="h2 main-color pt-5">
+                        Ликвидация склада
+                      </p>
+                      <hr>
+                      <script src="//megatimer.ru/get/350ccd6f0c613afdf7ccf7de449e8d19.js"></script>
+                      <p class="h3">В ожидании новой партии мы даем <span class="text-danger">Скидку 30%</span> на весь ассортимент</p>
+                      <p>Количество товара ограничено, успейте заказать свою теплицу со скидкой</p>
+                      <form>
+                        <input type="hidden" name="form" value="Верхняя форма">
+                        <fieldset>
+                          <div class="form-group">
+                            <input
+                              type="tel"
+                              name="phone"
+                              class="form-control"
+                              placeholder="Ваш номер телефона (с кодом)"
+                              required
+                            >
+                          </div>
+                          <button
+                            type="submit"
+                            class="btn main-bg-color btn-block mb-5"
+                          >
+                            Отправить заявку
+                          </button>
+                        </fieldset>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-title">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center mt-5 mb-5">
+              <h2>
+                Наши преимущества
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-about" id="section-about">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card__list">
+                <div class="content">
+                  <div class="icon">
+                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                  </div>
+                  <h5 class="card-title">
+                    Широкий ассортимент
+                  </h5>
+                  <p class="card-text">
+                    На наших складах всегда имеется полный ассортимент теплиц и дополнительного оборудования
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card__list">
+                <div class="content">
+                  <div class="icon">
+                    <i class="fa fa-wrench" aria-hidden="true"></i>
+                  </div>
+                  <h5 class="card-title">
+                    Установка и монтаж под ключ
+                  </h5>
+                  <p class="card-text">
+                    У нас вы можете заказать установку теплицы по ценам ниже рыночных
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card__list">
+                <div class="content">
+                  <div class="icon">
+                    <i class="fa fa-hourglass-start" aria-hidden="true"></i>
+                  </div>
+                  <h5 class="card-title">
+                    Гарантия
+                  </h5>
+                  <p class="card-text">
+                    Мы, как производитель, даем гарантию 10 лет на наши теплицы
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card__list" id="light">
+                <div class="content">
+                  <div class="icon">
+                    <i class="fa fa-rocket" aria-hidden="true"></i>
+                  </div>
+                  <h5 class="card-title">
+                    Бесплатная доставка
+                  </h5>
+                  <p class="card-text">
+                    Мы бесплатно доставим Вам теплицу в любую точку Беларуси
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-catalog">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center mt-5 mb-5">
+              <h2>
+                Каталог теплиц
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-catalog" id="section-catalog">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="fotorama" data-width="700" data-nav="thumbs">
+                <img src="public/assets/img/teplica_mini_1_1.jpg" width="250" height="96" alt="product">
+                <img src="public/assets/img/teplica_mini_1_2.jpg" width="250" height="96" alt="product">
+                <img src="public/assets/img/teplica_mini_1_3.jpg" width="250" height="96" alt="product">
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="col-12 text-center">
+                <h2>
+                  Теплица "Сибирская Мини"
+                </h2>
+              </div>
+              <div class="col-12">
+                <p>
+                 "Сибирская Мини" - это самая компактная теплица в нашей линейке. Она отлично подойдет для использования на мелких участках, либо в ситуациях, требующих экономии места. "Сибирская Мини" изготавливается в двух модификациях с <span class="text-fatty">шириной 2 и 2.5 метра</span>, <span class="text-fatty">высота</span> в обеих модификациях составляет <span class="text-fatty">1.75 метра</span>. Несмотря на свои размеры, "Сибирская Мини" является полноценной теплицей и включает в себя все особенности "Сибирских" теплиц:
+                    <span class="text-italic"><br>-Цельногнутые дуги (разборные дуги в наличии)
+                    <br>-Замкнутый сварной профиль (20х20 мм, сопротивление вертикальной (снеговой) нагрузке до 300 кг на квадратный метр)
+                    <br>-Две двери и две форточки в торцах
+                    <br>-Тепличный поликарбонат EuroTek (толщина от 3 до 6 мм)</span>
+                </p>
+              </div>
+              <div class="col-12 text-center">
+                <span class="main-color h3">
+                  Калькулятор
+                </span>
+              </div>
+              <div class="col-12">
+                <form class="has-calculator">
+                  <input type="hidden" name="product" value="product1">
+                  <div class="col-12 mt-3">
+                    <h3>
+                      Выберите длинну теплицы:
+                    </h3>
+                  </div>
+                  <div class="col-12">
+                    <div class="block-length">
+                      <label class="catalog__input">
+                        <input type="radio" name="length" value="4" checked>
+                        <span class="catalog__input__label">4</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="length" value="6">
+                        <span class="catalog__input__label">6</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="length" value="8">
+                        <span class="catalog__input__label">8</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="length" value="10">
+                        <span class="catalog__input__label">10</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <div class="block-shag">
+                      <h3>
+                        Выберите шаг между дугами:
+                      </h3>
+                      <label class="catalog__input">
+                        <input type="radio" name="interval" value="100" checked>
+                        <span class="catalog__input__label">1</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="interval" value="67">
+                        <span class="catalog__input__label">0.67</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="interval" value="50">
+                        <span class="catalog__input__label">0.5</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <div class="row">
+                      <div class="col-12 col-sm-8 mt-4">
+                        <div class="card__price">
+                          <span class="h2 text-dark">
+                            Цена:
+                          </span>
+                          <span class="h1 main-color">
+                            <span class="catalog__card__price"></span>
+                          </span>
+                          <span class="text-dank h2">
+                            руб.
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-4 mt-4 text-center">
+                        <button
+                          type="button"
+                          class="btn btn__order"
+                          data-toggle="modal" 
+                          data-target="#order"
+                        >
+                          Заказать
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 mt-5 mb-5">
+              <div class="border"></div>
+            </div>  
+          </div>
+            
+          <div class="row mt-5">
+            <div class="col-12 col-lg-6">
+              <div class="fotorama" data-width="700" data-nav="thumbs">
+                <img src="public/assets/img/teplica_20х20_1.jpg" width="250" height="96" alt="product">
+                <img src="public/assets/img/teplica_20х20_2.jpg" width="250" height="96" alt="product">
+                <img src="public/assets/img/teplica_20х20_3.jpg" width="250" height="96" alt="product">
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="col-12 text-center">
+                <h2>
+                  Теплица "Сибирская Сверхпрочная"
+                </h2>
+              </div>
+              <div class="col-12">
+                <p>
+                  "Сибирская Сверхпрочная" - это флагман "Сибирских" теплиц! По статистике за последние 5 лет и на сегодняшний день именно эта модель пользуется наибольшей популярностью у покупателей, ведь в ней сочетаются прочность, размер <span class="text-fatty">(ширина 3 метра, высота 2.1 метра)</span> и приемлемая цена, оставляющая позади теплицы других производителей. И конечно же в "Сибирской Сверхпрочной" имеются все отличительные особенности "Сибирских" теплиц:
+                    <span class="text-italic"><br>-Цельногнутые дуги (разборные дуги в наличии)
+                    <br>-Замкнутый сварной профиль (20х20 мм, сопротивление вертикальной (снеговой) нагрузке до 300 кг на квадратный метр)
+                    <br>-Две двери и две форточки в торцах
+                    <br>-Тепличный поликарбонат EuroTek (толщина от 3 до 6 мм)</span>
+                </p>
+              </div>
+              <div class="col-12 text-center">
+                <span class="main-color h3">
+                  Калькулятор
+                </span>
+              </div>
+              <div class="col-12">
+                <form class="has-calculator">
+                  <input type="hidden" name="product" value="product2">
+                  <div class="col-12 mt-3">
+                    <h3>
+                      Выберите длинну теплицы:
+                    </h3>
+                  </div>
+                  <div class="col-12">
+                    <div class="block-length">
+                      <label class="catalog__input">
+                        <input type="radio" name="length" value="4" checked>
+                        <span class="catalog__input__label">4</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="length" value="6">
+                        <span class="catalog__input__label">6</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="length" value="8">
+                        <span class="catalog__input__label">8</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="length" value="10">
+                        <span class="catalog__input__label">10</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <div class="block-shag">
+                      <h3>
+                        Выберите шаг между дугами:
+                      </h3>
+                      <label class="catalog__input">
+                        <input type="radio" name="interval" value="100" checked>
+                        <span class="catalog__input__label">1</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="interval" value="67">
+                        <span class="catalog__input__label">0.67</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="interval" value="50">
+                        <span class="catalog__input__label">0.5</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <div class="row">
+                      <div class="col-12 col-sm-8 mt-4">
+                        <div class="card__price">
+                          <span class="h2 text-dark">
+                            Цена:
+                          </span>
+                          <span class="h1 main-color">
+                            <span class="catalog__card__price"></span>
+                          </span>
+                          <span class="text-dank h2">
+                            руб.
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-4 mt-4 text-center">
+                        <button
+                          type="button"
+                          class="btn btn__order"
+                          data-toggle="modal" 
+                          data-target="#order"
+                        >
+                          Заказать
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+            
+          <div class="row">
+            <div class="col-12 mt-5 mb-5">
+              <div class="border"></div>
+            </div>  
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-12 col-lg-6">
+              <div class="fotorama" data-width="700" data-nav="thumbs">
+                <img src="public/assets/img/teplica_40х20_1.jpg" width="250" height="96" alt="product">
+                <img src="public/assets/img/teplica_40х20_2.jpg" width="250" height="96" alt="product">
+                <img src="public/assets/img/teplica_40х20_3.jpg" width="250" height="96" alt="product">
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="col-12 text-center">
+                <h2>
+                  Теплица "Сибирская Титан"
+                </h2>
+              </div>
+              <div class="col-12">
+                <p>
+                  Данная цеплица - это ответ на вопрос: "Существует ли теплица прочнее "Сибирской Сверхпрочной"?" Да, существует и это "Сибирская Титан"! Если Вы не привыкли к компромиссам и хотите получить максимально прочную теплицу, доступную на рынке, то "Сибирская Титан" - это то, что Вам нужно. Ведь благодаря профилю 40х20 мм, она способна выдерживать нагрузку до 500 кг на квадратный метр при шаге между дугами 1 метр. А при шаге 0.5 метра "Сибирская Титан" превращается в настоящий бункер, которому не страшны ни обильные снегопады, ни порывистые ветры. <span class="text-fatty">Ширина</span> данной модели составляет <span class="text-fatty">3 метра, высота 2.1 метра</span>. И по традиции в "Сибирской Титан" Вы увидите все особенности "Сибирских" теплиц:
+                    <span class="text-italic"><br>-Цельногнутые дуги (разборные дуги в наличии)
+                    <br>-Замкнутый сварной профиль (40х20 мм, сопротивление вертикальной (снеговой) нагрузке до 500 кг на квадратный метр)
+                    <br>-Две двери и две форточки в торцах
+                    <br>-Тепличный поликарбонат EuroTek (толщина от 3 до 6 мм)</span>
+              <div class="col-12 text-center">
+                <span class="main-color h3">
+                  Калькулятор
+                </span>
+              </div>
+              <div class="col-12">
+                <form class="has-calculator">
+                  <input type="hidden" name="product" value="product2">
+                  <div class="col-12 mt-3">
+                    <h3>
+                      Выберите длинну теплицы:
+                    </h3>
+                  </div>
+                  <div class="col-12">
+                    <div class="block-length">
+                      <label class="catalog__input">
+                        <input type="radio" name="length" value="4" checked>
+                        <span class="catalog__input__label">4</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="length" value="6">
+                        <span class="catalog__input__label">6</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="length" value="8">
+                        <span class="catalog__input__label">8</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="length" value="10">
+                        <span class="catalog__input__label">10</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <div class="block-shag">
+                      <h3>
+                        Выберите шаг между дугами:
+                      </h3>
+                      <label class="catalog__input">
+                        <input type="radio" name="interval" value="100" checked>
+                        <span class="catalog__input__label">1</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="interval" value="67">
+                        <span class="catalog__input__label">0.67</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="interval" value="50">
+                        <span class="catalog__input__label">0.5</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <div class="row">
+                      <div class="col-12 col-sm-8 mt-4">
+                        <div class="card__price">
+                          <span class="h2 text-dark">
+                            Цена:
+                          </span>
+                          <span class="h1 main-color">
+                            <span class="catalog__card__price"></span>
+                          </span>
+                          <span class="text-dank h2">
+                            руб.
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-4 mt-4 text-center">
+                        <button
+                          type="button"
+                          class="btn btn__order"
+                          data-toggle="modal" 
+                          data-target="#order"
+                        >
+                          Заказать
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 mt-5 mb-5">
+              <div class="border"></div>
+            </div>  
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-12 col-lg-6">
+              <div class="fotorama" data-width="700" data-nav="thumbs">
+                <img src="public/assets/img/teplica_2stv_3,5_1.jpg" width="250" height="96" alt="product">
+                <img src="public/assets/img/teplica_2stv_3,5_2.jpg" width="250" height="96" alt="product">
+                <img src="public/assets/img/teplica_2stv_3,5_3.jpg" width="250" height="96" alt="product">
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="col-12 text-center">
+                <h2>
+                  Теплица "Сибирская Богатырь 3,5"
+                </h2>
+              </div>
+              <div class="col-12">
+                <p>
+                  "Сибирская Богатырь" относится к классу теплиц, который находится между потребительскими и промышленными теплицами. <span class="text-fatty">Ширина 3.5 метра, высота 2.1 метра и двустворчатые двери</span> значительно расширят Ваши возможности в обработке почвы и посевов, например позволят Вам загнать в теплицу садовую тачку или даже мотоблок! И конечно же увеличинная ширина даст Вам больше площади для посадки. Данная линейка теплиц изготавливается исключительно из профиля 40х20 мм. Все элементы каркаса сварены так называемым "танковым" швом, который делает любые сварные конструкции практически монолитными, что дает Вашей теплице максимально возможную прочность, а так же предотвращает деформацию конструкции под собственным весом. Все особенности "Сибирских" теплиц сохранены и в линейке "Богатырь":
+                    <span class="text-italic"><br>-Цельногнутые дуги (разборные дуги в наличии)
+                    <br>-Замкнутый сварной профиль (40х20 мм, сопротивление вертикальной (снеговой) нагрузке до 500 кг на квадратный метр)
+                    <br>-Сварные швы повышенной прочности ("танковые швы")
+                    <br>-Две двустворчатые двери и две форточки в торцах
+                    <br>-Тепличный поликарбонат EuroTek (толщина от 3 до 6 мм)</span>
+                </p>
+              </div>
+              <div class="col-12 text-center">
+                <span class="main-color h3">
+                  Калькулятор
+                </span>
+              </div>
+              <div class="col-12">
+                <form class="has-calculator">
+                  <input type="hidden" name="product" value="product3">
+                  <div class="col-12 mt-3">
+                    <h3>
+                      Выберите длинну теплицы:
+                    </h3>
+                  </div>
+                  <div class="col-12">
+                    <div class="block-length">
+                      <label class="catalog__input">
+                        <input type="radio" name="length" value="4" checked>
+                        <span class="catalog__input__label">4</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="length" value="6">
+                        <span class="catalog__input__label">6</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="length" value="8">
+                        <span class="catalog__input__label">8</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="length" value="10">
+                        <span class="catalog__input__label">10</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <div class="block-shag">
+                      <h3>
+                        Выберите шаг между дугами:
+                      </h3>
+                      <label class="catalog__input">
+                        <input type="radio" name="interval" value="100" checked>
+                        <span class="catalog__input__label">1</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="interval" value="67">
+                        <span class="catalog__input__label">0.67</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="interval" value="50">
+                        <span class="catalog__input__label">0.5</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <div class="row">
+                      <div class="col-12 col-sm-8 mt-4">
+                        <div class="card__price">
+                          <span class="h2 text-dark">
+                            Цена:
+                          </span>
+                          <span class="h1 main-color">
+                            <span class="catalog__card__price"></span>
+                          </span>
+                          <span class="text-dank h2">
+                            руб.
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-4 mt-4 text-center">
+                        <button
+                          type="button"
+                          class="btn btn__order"
+                          data-toggle="modal" 
+                          data-target="#order"
+                        >
+                          Заказать
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 mt-5 mb-5">
+              <div class="border"></div>
+            </div>  
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-12 col-lg-6">
+              <div class="fotorama" data-width="700" data-nav="thumbs">
+                <img src="public/assets/img/teplica_2stv_4_1.jpg" width="250" height="96" alt="product">
+                <img src="public/assets/img/teplica_2stv_4_2.jpg" width="250" height="96" alt="product">
+                <img src="public/assets/img/teplica_2stv_4_3.jpg" width="250" height="96" alt="product">
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="col-12 text-center">
+                <h2>
+                  Теплица "Сибирская Богатырь 4"
+                </h2>
+              </div>
+              <div class="col-12">
+                <p>
+                  "Сибирская Богатырь" относится к классу теплиц, который находится между потребительскими и промышленными теплицами. <span class="text-fatty">Ширина 4 метра, высота 2.1 метра и двустворчатые двери</span> значительно расширят Ваши возможности в обработке почвы и посевов, например позволят Вам загнать в теплицу садовую тачку или даже мотоблок! И конечно же увеличинная ширина даст Вам больше площади для посадки. Данная линейка теплиц изготавливается исключительно из профиля 40х20 мм. Все элементы каркаса сварены так называемым "танковым" швом, который делает любые сварные конструкции практически монолитными, что дает Вашей теплице максимально возможную прочность, а так же предотвращает деформацию конструкции под собственным весом. Все особенности "Сибирских" теплиц сохранены и в линейке "Богатырь":
+                    <span class="text-italic"><br>-Цельногнутые дуги (разборные дуги в наличии)
+                    <br>-Замкнутый сварной профиль (40х20 мм, сопротивление вертикальной (снеговой) нагрузке до 500 кг на квадратный метр)
+                    <br>-Сварные швы повышенной прочности ("танковые швы")
+                    <br>-Две двустворчатые двери и две форточки в торцах
+                    <br>-Тепличный поликарбонат EuroTek (толщина от 3 до 6 мм)</span>
+                </p>
+              </div>
+              <div class="col-12 text-center">
+                <span class="main-color h3">
+                  Калькулятор
+                </span>
+              </div>
+              <div class="col-12">
+                <form class="has-calculator">
+                  <input type="hidden" name="product" value="product4">
+                  <div class="col-12 mt-3">
+                    <h3>
+                      Выберите длинну теплицы:
+                    </h3>
+                  </div>
+                  <div class="col-12">
+                    <div class="block-length">
+                      <label class="catalog__input">
+                        <input type="radio" name="length" value="4" checked>
+                        <span class="catalog__input__label">4</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="length" value="6">
+                        <span class="catalog__input__label">6</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="length" value="8">
+                        <span class="catalog__input__label">8</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="length" value="10">
+                        <span class="catalog__input__label">10</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <div class="block-shag">
+                      <h3>
+                        Выберите шаг между дугами:
+                      </h3>
+                      <label class="catalog__input">
+                        <input type="radio" name="interval" value="100" checked>
+                        <span class="catalog__input__label">1</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="interval" value="67">
+                        <span class="catalog__input__label">0.67</span>
+                      </label>
+                      <label class="catalog__input">
+                        <input type="radio" name="interval" value="50">
+                        <span class="catalog__input__label">0.5</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <div class="row">
+                      <div class="col-12 col-sm-8 mt-4">
+                        <div class="card__price">
+                          <span class="h2 text-dark">
+                            Цена:
+                          </span>
+                          <span class="h1 main-color">
+                            <span class="catalog__card__price"></span>
+                          </span>
+                          <span class="text-dank h2">
+                            руб.
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-4 mt-4 text-center pb-5">
+                        <button
+                          type="button"
+                          class="btn btn__order"
+                          data-toggle="modal" 
+                          data-target="#order"
+                        >
+                          Заказать
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="section-title">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center mt-5 mb-5">
+              <h2>
+                Дополнительное оборудование
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-dop-catalog" id="section-dop-catalog">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4 text-center d-flex justify-content-center mt-5">
+              <div class="card">
+                <img src="public/assets/img/poliv.jpg" class="card-img-top" alt="product">
+                <div class="card-body">
+                  <p class="card-text">
+                    Система капельного автополива
+                  </p>
+                  <p class="h4">
+                    Стоимость: <span class="main-color">100</span> руб
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 text-center d-flex justify-content-center mt-5">
+              <div class="card">
+                <img src="public/assets/img/podv9zki.jpg" class="card-img-top" alt="product">
+                <div class="card-body">
+                  <p class="card-text">
+                    Подвязки для теплицы
+                  </p>
+                  <p class="h4">
+                    Стоимость: <span class="main-color">100</span> руб
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 text-center d-flex justify-content-center mt-5">
+              <div class="card">
+                <img src="public/assets/img/ogur4ik.jpg" class="card-img-top" alt="product">
+                <div class="card-body">
+                  <p class="card-text">
+                    Парник "Огурчик"
+                  </p>
+                  <p class="h4">
+                    Стоимость: <span class="main-color">100</span> руб
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 text-center d-flex justify-content-center mt-5">
+              <div class="card">
+                <img src="public/assets/img/lenta_uplotnitelna9.jpg" class="card-img-top" alt="product">
+                <div class="card-body">
+                  <p class="card-text">
+                    Уплотнительные резиновые ленты
+                  </p>
+                  <p class="h4">
+                    Стоимость: <span class="main-color">100</span> руб
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 text-center d-flex justify-content-center mt-5">
+              <div class="card">
+                <img src="public/assets/img/forto4ka.jpg" class="card-img-top" alt="product">
+                <div class="card-body">
+                  <p class="card-text">
+                    Дополнительная боковая форточка
+                  </p>
+                  <p class="h4">
+                    Стоимость: <span class="main-color">100</span> руб
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 text-center d-flex justify-content-center mt-5">
+              <div class="card">
+                <img src="public/assets/img/gazlift.jpg" class="card-img-top" alt="product">
+                <div class="card-body">
+                  <p class="card-text">
+                    Система автоматического проветривания
+                  </p>
+                  <p class="h4">
+                    Стоимость: <span class="main-color">100</span> руб
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 text-center d-flex justify-content-center mt-5">
+              <div class="card">
+                <img src="public/assets/img/lenta_st9jna9.jpg" class="card-img-top" alt="product">
+                <div class="card-body">
+                  <p class="card-text">
+                    Лента для крепления поликарбоната
+                  </p>
+                  <p class="h4">
+                    Стоимость: <span class="main-color">100</span> руб
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 text-center d-flex justify-content-center mt-5">
+              <div class="card">
+                <img src="public/assets/img/gr9dka.jpg" class="card-img-top" alt="product">
+                <div class="card-body">
+                  <p class="card-text">
+                    Оцинкованная грядка
+                  </p>
+                  <p class="h4">
+                    Стоимость: <span class="main-color">100</span> руб
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-help">
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-12 text-center mt-5 mb-5">
+              <h2>
+                Особенности "Сибирских" теплиц
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-help" id="section-help">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mt-5">
+              <div id="helpSlider" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-12 text-center">
+                        <h2 class="text-dark">
+                          Полностью оцинкованный каркас
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 offset-lg-2 col-lg-5">
+                        <img class="img-fluid" src="public/assets/img/ozinkovka.jpg" alt="help">
+                      </div>
+                      <div class="col-12 col-lg-5 text-dark">
+                        Дуги и поперечные планки всех "Сибирских" теплиц оцинкованы методом полного погружения, что надежно защищает каркас от воздействия влаги и надолго сохраняет презентабельный внешний вид Вашей теплицы.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-12 text-center">
+                        <h2 class="text-dark">
+                          Цельногнутые дуги
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 offset-lg-2 col-lg-5">
+                        <img class="img-fluid" src="public/assets/img/dugi.jpeg" alt="help">
+                      </div>
+                      <div class="col-12 col-lg-5 text-dark">
+                        Дуги "Сибирских" теплиц согнуты из цельного куска профиля, что дает прирост сопротивления вертикальной (снеговой) нагрузке до 40% по сравнению со сборными дугами. В различных моделях "Сибирских" теплиц используются дуги из профиля 20х20 мм и 40х20 мм, которые способны выдерживать нагрузку до 300 кг и до 500 кг на квадратный метр соответственно.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-12 text-center">
+                        <h2 class="text-dark">
+                          Каркас из замкнутого сварного профиля
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 offset-lg-2 col-lg-5">
+                        <img class="img-fluid" src="public/assets/img/profil.jpg" alt="help">
+                      </div>
+                      <div class="col-12 col-lg-5 text-dark">
+                        Все элементы каркаса "Сибирских" теплиц выполнены из замкнутого сварного профиля, что обеспечивает более высокую прочность по сравнению с элементами, выполненными из П-образных и Т-образных профилей. 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-12 text-center">
+                        <h2 class="text-dark">
+                          Две двери и две форточки в торцах
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 offset-lg-2 col-lg-5">
+                        <img class="img-fluid" src="public/assets/img/dveri_forto4ki.jpg" alt="help">
+                      </div>
+                      <div class="col-12 col-lg-5 text-dark">
+                        "Сибирские" теплицы всех моделей оборудованы двумя дверями и двумя форточками в торцах, что позволит Вам обеспечить хорошую циркуляцию воздуха в Вашей теплице без дополнительных затрат.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-12 text-center">
+                        <h2 class="text-dark">
+                          Тепличный поликарбонат
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 offset-lg-2 col-lg-5">
+                        <img class="img-fluid" src="public/assets/img/polik.jpg" alt="help">
+                      </div>
+                      <div class="col-12 col-lg-5 text-dark">
+                        В комплекте с "Сибирскими" теплицами поставляется поликарбонат EuroTek российского производства, изготовленый специально для использования в теплицах. Ключевым отличием тепличного поликарбоната EuroTek от обычного является наличие напыления, содержащего в себе:
+                          <br>-Светостабилизаторы, которые обспечивают защиту растений от ультрафиолетового излучения
+                          <br>-Антифоги, предотвращающие образование конденсата
+                          <br>-Адсорберы инфракрасного излучения, препятствующие остыванию воздуха внутри теплицы
+                          <br>-Антистатики, предотвращающие образование статического электричества, которое притягивает пыль и различные мелкие частитцы
+                          <br>-Отпугивающие добавки, которые отпугивают насекомых и мелких грызунов
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#helpSlider" role="button" data-slide="prev">
+                  <span class="text-dark h1">
+                    &#x3c;
+                  </span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#helpSlider" role="button" data-slide="next">
+                  <span class="text-dark h1">
+                    &#x3e;
+                  </span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-12 col-lg-6">
+            <div class="col-12 mt-5 mb-5">
+              <img src="public/assets/img/logo/site_logo.png" alt="logo">
+            </div>
+            <div class="col-12 mt-3">
+              <span class="h4">
+                <i class="fa fa-volume-control-phone main-color" aria-hidden="true"></i>
+              </span>
+              <a class="h5 pl-2 text-white" href="tel:+">МТС: (029) 123 45 67</a>
+            </div>
+            <div class="col-12 mt-3 mb-5">
+              <span class="h4">
+                <i class="fa fa-volume-control-phone main-color" aria-hidden="true"></i>
+              </span>
+              <a class="h5 pl-2 text-white" href="tel:">A1: (029) 123 45 67</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 text-right">
+            <div class="col-12 mt-5 mb-5">
+              <span class="h3 text-white">
+                Обратная связь
+              </span>
+            </div>
+            <div class="col-12 mt-5">
+              <span class="text-white">
+                Введите Ваш номер телефона (с кодом)
+              </span>
+            </div>
+            <div class="col-12 mt-3">
+              <div class="input-group mb-3 d-flex justify-content-end">
+                <input
+                  type="text"
+                  class="phone-input-lib"
+                  placeholder="+375(__)_______"
+                  required
+                >
+                <div class="input-group-append">
+                  <button
+                    class="btn btn__form"
+                    type="button"
+                  >
+                    Отправить
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll up -->
+    <a class="btn scroll-up smoothscroll" href="#section-header">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+
+    <!-- Modal -->
+    <div class="modal fade" id="order" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="col-12 text-right">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="col-12">
+              <p class="sub__title__form text-center">
+                Введите Ваш номер телефона (с кодом)
+              </p>
+            </div>
+            <div class="col-12">
+              <form class="contact__form">
+                <div class="col-12">
+                  <div class="mainform__group text-center w-100 mt-5">
+                    <input
+                      type="tel" 
+                      placeholder="+375(__)_______" 
+                      class="contact__form-input"
+                      required
+                    >
+                  </div>
+                </div>
+                <div class="btn__group text-center mt-5">
+                  <button
+                    type="submit"
+                    class="btn btn__order"
+                  >
+                    Отправить
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Fotorama carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <script src="src/libs/lightcountdown_v1_2/lightcountdown.min.js"></script>
+    <script src="src/libs/jQuery_mask/jquery.inputmask.min.js"></script>
+    <script src="public/scripts/data.js"></script>
+    <script src="dist/scripts/culc.min.js"></script>
+    <script src="dist/scripts/main.min.js"></script>
+
+  </body>
+
+</html>
