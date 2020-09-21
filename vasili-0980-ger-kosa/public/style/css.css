@@ -99,7 +99,7 @@ a:hover{
 }
 .c__btn--lg{
     padding: 1rem 3rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .c__btn--danger{
     color: #543500;
@@ -146,6 +146,9 @@ header{
     header{
         font-size: 3rem;
     }
+    .c__btn--lg{
+        font-size: 2rem;
+    }
 }
 
 .countdown-week{
@@ -157,7 +160,12 @@ header{
         font-size: 1.5rem;
     }
 }
-
+@media (max-width: 374px){
+    .countdown-week .lightcountdown__delimeter:nth-child(6),
+    .countdown-week .lightcountdown__seconds{
+        display: none;
+    }
+}
 .nav__link{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;

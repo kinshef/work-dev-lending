@@ -46,6 +46,14 @@ textarea {
   resize: none;
 }
 
+.section_title{
+  font-size: 2.5rem;
+}
+@media (max-width: 768px) {
+  .section_title{
+    font-size: 1.5rem;
+  }
+}
 /* END RESET */
 
 /* HEADER */
@@ -131,6 +139,7 @@ textarea {
   position: relative;
   transition: all 0.5s ease 0s;
   text-align: center;
+  height: 100%;
 }
 
 .card__list::before {
