@@ -14,8 +14,6 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Owl carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" integrity="sha256-AWqwvQ3kg5aA5KcXpX25sYKowsX97sTCTbeo33Yfyk0=" crossorigin="anonymous">
-    <!-- Fancybox -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./public/style/css.css">
     <link rel="icon" type="image/ico" href="./public/assets/img/favicon.ico">
@@ -26,11 +24,11 @@
     <section class="section-nav" id="section-nav">
         <div class="container">
             <div class="row align-items-center py-xl-4 py-1">
-                <div class="col-12 my-3 my-xl-0 nav-nav text-center text-uppercase d-flex justify-content-between flex-sm-nowrap flex-wrap">
+                <div class="col-12 my-3 my-xl-0 nav-nav text-center text-uppercase d-flex justify-content-around flex-wrap">
                     <a class="nav-nav__item smoothscroll" href="#section-catalog">Каталог</a>
                     <a class="nav-nav__item smoothscroll" href="#section-advantages">Преимущества</a>
-                    <a class="nav-nav__item smoothscroll" href="#section-equipment">Комплектация</a>
-                    <a class="nav-nav__item smoothscroll" href="#section-contact">Контакты</a>
+                    <a class="nav-nav__item smoothscroll" href="#section-additional">Комплектация</a>
+                    <a class="nav-nav__item smoothscroll" href="#section-footer">Контакты</a>
                 </div>
             </div>
         </div>
@@ -109,7 +107,7 @@
                     <img src="./public/assets/img/bank/smart.png" class="img-fluid w-100">
                     <div class="">3 месяца - 4%</div>
                 </div>
-                <div class="col-md col-6 d-md-block d-none">
+                <div class="col-md col-6 d-xl-block d-none">
                     <img src="./public/assets/img/icon/sale.png" class="img-fluid bank-img">
                 </div>
             </div>
@@ -118,23 +116,28 @@
 
     <section class="section-catalog py-5" id="section-catalog">
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-12 catalog-title text-center text-white">
                     <div class="catalog-title__text">Каталог</div>
                 </div>
 
-                <div class="col-4 py-4">
+                <div class="col-xl-4 col-md-6 pt-4 pb-5">
                     <form class="has-calculator">
                         <input type="hidden" name="form" value="Карточка товара">
                         <input type="hidden" name="product" value="mini_2m">
                         <div class="catalog-item text-center font-weight-bold">
                             <div class="row align-items-center pb-3">
                                 <div class="col-12">
-                                    <div class="text-size-7 py-3 px-4 catalog-item__title text-white mx-auto">Мини 2 м</div>
+                                    <div class="section_title py-3 px-4 catalog-item__title text-white mx-auto">Мини 2 м 1</div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="px-1">
+                                    <div class="px-2">
                                         <img src="./public/assets/img/catalog/mini2m.jpg" class="img-fluid">
+                                    </div>
+                                    <div class="garant_10let">
+                                        <div class="mb-1">гарантия</div>
+                                        <div>10</div>
+                                        <div>лет</div>
                                     </div>
                                 </div>
                                 <div class="col-12 castom_input justify-content-around">
@@ -171,24 +174,320 @@
                                         <label for="mini_2m-dugi-50">50</label>
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-sm-6">
                                     <div class="text-white font-weight-light">
                                         <s class="catalog__price"><span class="jPriceOld">0</span> руб.</s><br>
-                                        <div class="catalog__price text-size-7"><span class="jPrice">0</span> руб.</div>
+                                        <div class="catalog__price text-size-7 text-red font-weight-bold"><span class="jPrice">0</span> руб.</div>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <a href="#modal-product1" data-toggle="modal" class="catalog-item__btn text-uppercase p-4 mx-2">Подробнее</a>
+                                <div class="col-sm-6 my-sm-0 mt-5 mb-3">
+                                    <a href="#modal-product1" data-toggle="modal" class="catalog-item__btn text-uppercase p-4">Подробнее</a>
                                 </div>
                             </div>
                             <div class="row align-items-stretch has-calculator__formInput">
-                                <div class="col-md-7 text-center">
-                                    <div class="pl-3 py-3 h-100">
+                                <div class="col-lg-7 text-center">
+                                    <div class="pl-lg-3 px-3 py-2 h-100">
                                         <input type="tel" name="phone" class="border-radius-10 form-control text-center h-100" placeholder="Номер телефона" required="">
                                     </div>
                                 </div>
-                                <div class="col-md-5 text-center">
-                                    <div class="pr-3 py-3">
+                                <div class="col-lg-5 text-center">
+                                    <div class="pr-lg-3 px-3 py-2">
+                                        <button type="submit" class="border-radius-10 catalog_formBtn text-size-5 btn btn-warning w-100 font-weight-bold transition--slide">Забрать!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-xl-4 col-md-6 pt-4 pb-5">
+                    <form class="has-calculator">
+                        <input type="hidden" name="form" value="Карточка товара">
+                        <input type="hidden" name="product" value="mini_2m2">
+                        <div class="catalog-item text-center font-weight-bold">
+                            <div class="row align-items-center pb-3">
+                                <div class="col-12">
+                                    <div class="section_title py-3 px-4 catalog-item__title text-white mx-auto">Мини 2 м 2</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="px-2">
+                                        <img src="./public/assets/img/catalog/mini2m.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-12 castom_input justify-content-around">
+                                    <div class="text-white text-size-7 t_shadow">Длина (м):</div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m2-length-4" type="radio" name="length" value="4" checked="">
+                                        <label for="mini_2m2-length-4">4</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m2-length-6" type="radio" name="length" value="6">
+                                        <label for="mini_2m2-length-6">6</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m2-length-8" type="radio" name="length" value="8">
+                                        <label for="mini_2m2-length-8">8</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m2-length-10" type="radio" name="length" value="10">
+                                        <label for="mini_2m2-length-10">10</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 castom_input justify-content-around">
+                                    <div class="text-white text-size-7 t_shadow">Длина (м):</div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m2-dugi-100" type="radio" name="dugi" value="100" checked="">
+                                        <label for="mini_2m2-dugi-100">100</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m2-dugi-67" type="radio" name="dugi" value="67">
+                                        <label for="mini_2m2-dugi-67">67</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m2-dugi-50" type="radio" name="dugi" value="50">
+                                        <label for="mini_2m2-dugi-50">50</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="text-white font-weight-light">
+                                        <s class="catalog__price"><span class="jPriceOld">0</span> руб.</s><br>
+                                        <div class="catalog__price text-size-7 text-red font-weight-bold"><span class="jPrice">0</span> руб.</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 my-sm-0 mt-5 mb-3">
+                                    <a href="#modal-product2" data-toggle="modal" class="catalog-item__btn text-uppercase p-4">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="row align-items-stretch has-calculator__formInput">
+                                <div class="col-lg-7 text-center">
+                                    <div class="pl-lg-3 px-3 py-2 h-100">
+                                        <input type="tel" name="phone" class="border-radius-10 form-control text-center h-100" placeholder="Номер телефона" required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 text-center">
+                                    <div class="pr-lg-3 px-3 py-2">
+                                        <button type="submit" class="border-radius-10 catalog_formBtn text-size-5 btn btn-warning w-100 font-weight-bold transition--slide">Забрать!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-xl-4 col-md-6 pt-4 pb-5">
+                    <form class="has-calculator">
+                        <input type="hidden" name="form" value="Карточка товара">
+                        <input type="hidden" name="product" value="mini_2m3">
+                        <div class="catalog-item text-center font-weight-bold">
+                            <div class="row align-items-center pb-3">
+                                <div class="col-12">
+                                    <div class="section_title py-3 px-4 catalog-item__title text-white mx-auto">Мини 2 м 3</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="px-2">
+                                        <img src="./public/assets/img/catalog/mini2m.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-12 castom_input justify-content-around">
+                                    <div class="text-white text-size-7 t_shadow">Длина (м):</div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m3-length-4" type="radio" name="length" value="4" checked="">
+                                        <label for="mini_2m3-length-4">4</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m3-length-6" type="radio" name="length" value="6">
+                                        <label for="mini_2m3-length-6">6</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m3-length-8" type="radio" name="length" value="8">
+                                        <label for="mini_2m3-length-8">8</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m3-length-10" type="radio" name="length" value="10">
+                                        <label for="mini_2m3-length-10">10</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 castom_input justify-content-around">
+                                    <div class="text-white text-size-7 t_shadow">Длина (м):</div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m3-dugi-100" type="radio" name="dugi" value="100" checked="">
+                                        <label for="mini_2m3-dugi-100">100</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m3-dugi-67" type="radio" name="dugi" value="67">
+                                        <label for="mini_2m3-dugi-67">67</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m3-dugi-50" type="radio" name="dugi" value="50">
+                                        <label for="mini_2m3-dugi-50">50</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="text-white font-weight-light">
+                                        <s class="catalog__price"><span class="jPriceOld">0</span> руб.</s><br>
+                                        <div class="catalog__price text-size-7 text-red font-weight-bold"><span class="jPrice">0</span> руб.</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 my-sm-0 mt-5 mb-3">
+                                    <a href="#modal-product3" data-toggle="modal" class="catalog-item__btn text-uppercase p-4">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="row align-items-stretch has-calculator__formInput">
+                                <div class="col-lg-7 text-center">
+                                    <div class="pl-lg-3 px-3 py-2 h-100">
+                                        <input type="tel" name="phone" class="border-radius-10 form-control text-center h-100" placeholder="Номер телефона" required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 text-center">
+                                    <div class="pr-lg-3 px-3 py-2">
+                                        <button type="submit" class="border-radius-10 catalog_formBtn text-size-5 btn btn-warning w-100 font-weight-bold transition--slide">Забрать!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-xl-4 col-md-6 pt-4 pb-5">
+                    <form class="has-calculator">
+                        <input type="hidden" name="form" value="Карточка товара">
+                        <input type="hidden" name="product" value="mini_2m4">
+                        <div class="catalog-item text-center font-weight-bold">
+                            <div class="row align-items-center pb-3">
+                                <div class="col-12">
+                                    <div class="section_title py-3 px-4 catalog-item__title text-white mx-auto">Мини 2 м 4</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="px-2">
+                                        <img src="./public/assets/img/catalog/mini2m.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-12 castom_input justify-content-around">
+                                    <div class="text-white text-size-7 t_shadow">Длина (м):</div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m4-length-4" type="radio" name="length" value="4" checked="">
+                                        <label for="mini_2m4-length-4">4</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m4-length-6" type="radio" name="length" value="6">
+                                        <label for="mini_2m4-length-6">6</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m4-length-8" type="radio" name="length" value="8">
+                                        <label for="mini_2m4-length-8">8</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m4-length-10" type="radio" name="length" value="10">
+                                        <label for="mini_2m4-length-10">10</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 castom_input justify-content-around">
+                                    <div class="text-white text-size-7 t_shadow">Длина (м):</div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m4-dugi-100" type="radio" name="dugi" value="100" checked="">
+                                        <label for="mini_2m4-dugi-100">100</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m4-dugi-67" type="radio" name="dugi" value="67">
+                                        <label for="mini_2m4-dugi-67">67</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m4-dugi-50" type="radio" name="dugi" value="50">
+                                        <label for="mini_2m4-dugi-50">50</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="text-white font-weight-light">
+                                        <s class="catalog__price"><span class="jPriceOld">0</span> руб.</s><br>
+                                        <div class="catalog__price text-size-7 text-red font-weight-bold"><span class="jPrice">0</span> руб.</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 my-sm-0 mt-5 mb-3">
+                                    <a href="#modal-product4" data-toggle="modal" class="catalog-item__btn text-uppercase p-4">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="row align-items-stretch has-calculator__formInput">
+                                <div class="col-lg-7 text-center">
+                                    <div class="pl-lg-3 px-3 py-2 h-100">
+                                        <input type="tel" name="phone" class="border-radius-10 form-control text-center h-100" placeholder="Номер телефона" required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 text-center">
+                                    <div class="pr-lg-3 px-3 py-2">
+                                        <button type="submit" class="border-radius-10 catalog_formBtn text-size-5 btn btn-warning w-100 font-weight-bold transition--slide">Забрать!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-xl-4 col-md-6 pt-4 pb-5">
+                    <form class="has-calculator">
+                        <input type="hidden" name="form" value="Карточка товара">
+                        <input type="hidden" name="product" value="mini_2m5">
+                        <div class="catalog-item text-center font-weight-bold">
+                            <div class="row align-items-center pb-3">
+                                <div class="col-12">
+                                    <div class="section_title py-3 px-4 catalog-item__title text-white mx-auto">Мини 2 м 5</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="px-2">
+                                        <img src="./public/assets/img/catalog/mini2m.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-12 castom_input justify-content-around">
+                                    <div class="text-white text-size-7 t_shadow">Длина (м):</div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m5-length-4" type="radio" name="length" value="4" checked="">
+                                        <label for="mini_2m5-length-4">4</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m5-length-6" type="radio" name="length" value="6">
+                                        <label for="mini_2m5-length-6">6</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m5-length-8" type="radio" name="length" value="8">
+                                        <label for="mini_2m5-length-8">8</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m5-length-10" type="radio" name="length" value="10">
+                                        <label for="mini_2m5-length-10">10</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 castom_input justify-content-around">
+                                    <div class="text-white text-size-7 t_shadow">Длина (м):</div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m5-dugi-100" type="radio" name="dugi" value="100" checked="">
+                                        <label for="mini_2m5-dugi-100">100</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m5-dugi-67" type="radio" name="dugi" value="67">
+                                        <label for="mini_2m5-dugi-67">67</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m5-dugi-50" type="radio" name="dugi" value="50">
+                                        <label for="mini_2m5-dugi-50">50</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="text-white font-weight-light">
+                                        <s class="catalog__price"><span class="jPriceOld">0</span> руб.</s><br>
+                                        <div class="catalog__price text-size-7 text-red font-weight-bold"><span class="jPrice">0</span> руб.</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 my-sm-0 mt-5 mb-3">
+                                    <a href="#modal-product5" data-toggle="modal" class="catalog-item__btn text-uppercase p-4">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="row align-items-stretch has-calculator__formInput">
+                                <div class="col-lg-7 text-center">
+                                    <div class="pl-lg-3 px-3 py-2 h-100">
+                                        <input type="tel" name="phone" class="border-radius-10 form-control text-center h-100" placeholder="Номер телефона" required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 text-center">
+                                    <div class="pr-lg-3 px-3 py-2">
                                         <button type="submit" class="border-radius-10 catalog_formBtn text-size-5 btn btn-warning w-100 font-weight-bold transition--slide">Забрать!</button>
                                     </div>
                                 </div>
@@ -201,10 +500,186 @@
         </div>
     </section>
 
+    <section class="section-advantages py-5" id="section-advantages">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-12 advantages-title text-white mb-4">
+                    <div class="advantages-title__text">
+                        <img src="./public/assets/img/icon/adv_title.png" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-xl-4 my-3 col-md-6">
+                    <div class="advantages-item">
+                        <img src="./public/assets/img/advantages/adv1.png" class="img-fluid mb-3" alt="advantage_item">
+                        <div class="text-uppercase font-weight-bold text-white section_title">Уплотненный поликарбонат</div>
+                    </div>
+                </div>
+                <div class="col-xl-4 my-3 col-md-6">
+                    <div class="advantages-item">
+                        <img src="./public/assets/img/advantages/adv2.png" class="img-fluid mb-3" alt="advantage_item">
+                        <div class="text-uppercase font-weight-bold text-white section_title">Уплотненный поликарбонат</div>
+                    </div>
+                </div>
+                <div class="col-xl-4 my-3 col-md-6">
+                    <div class="advantages-item">
+                        <img src="./public/assets/img/advantages/adv3.png" class="img-fluid mb-3" alt="advantage_item">
+                        <div class="text-uppercase font-weight-bold text-white section_title">Уплотненный поликарбонат</div>
+                    </div>
+                </div>
+                <div class="col-xl-4 my-3 col-md-6">
+                    <div class="advantages-item">
+                        <img src="./public/assets/img/advantages/adv4.png" class="img-fluid mb-3" alt="advantage_item">
+                        <div class="text-uppercase font-weight-bold text-white section_title">Уплотненный поликарбонат</div>
+                    </div>
+                </div>
+                <div class="col-xl-4 my-3 col-md-6">
+                    <div class="advantages-item">
+                        <img src="./public/assets/img/advantages/adv5.png" class="img-fluid mb-3" alt="advantage_item">
+                        <div class="text-uppercase font-weight-bold text-white section_title">Уплотненный поликарбонат</div>
+                    </div>
+                </div>
+                <div class="col-xl-4 my-3 col-md-6">
+                    <div class="advantages-item">
+                        <img src="./public/assets/img/advantages/adv6.png" class="img-fluid mb-3" alt="advantage_item">
+                        <div class="text-uppercase font-weight-bold text-white section_title">Уплотненный поликарбонат</div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </section>
 
+    <section class="section-additional c__section" id="section-additional">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-12">
+                    <div class="additional-title font-weight-bold text-white mb-4">комплектация</div>
+                </div>
 
+                <div class="col-md-4 col-sm-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/forto4ka.jpg" class="img-fluid w-100">
+                        </div>
+                        <div class="equipment__text">
+                            Форточка
+                        </div>
+                        <hr>
+                        <div class="equipment__price">
+                            27 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/gazlift.jpg" class="img-fluid w-100">
+                        </div>
+                        <div class="equipment__text">
+                            Газлифт
+                        </div>
+                        <hr>
+                        <div class="equipment__price">
+                            27 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/lenta.jpg" class="img-fluid w-100">
+                        </div>
+                        <div class="equipment__text">
+                            Лента утепления 12 м.
+                        </div>
+                        <hr>
+                        <div class="equipment__price">
+                            13 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/poliv.jpg" class="img-fluid w-100">
+                        </div>
+                        <div class="equipment__text">
+                            Авто-полив
+                        </div>
+                        <hr>
+                        <div class="equipment__price">
+                            39 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/podv9zki.jpg" class="img-fluid w-100">
+                        </div>
+                        <div class="equipment__text">
+                            Подвязки
+                        </div>
+                        <hr>
+                        <div class="equipment__price">
+                            13 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/pp.jpg" class="img-fluid w-100">
+                        </div>
+                        <div class="equipment__text">
+                            П-профиль
+                        </div>
+                        <hr>
+                        <div class="equipment__price">
+                            18 руб.
+                        </div>
+                    </div>
+                </div>
     
+            </div>
+        </div>
+    </section>
+
+    <section class="section-footer py-5" id="section-footer">
+        <div class="container-fluid">
+            <div class="row text-white text-center align-items-center">
+                <div class="col-xl-5 col-lg-6">
+                    <a href="tel:+375291111111" class="section_title my-2 font-weight-bold text-white d-flex justify-content-center align-items-center"><img src="./public/assets/img/icon/logo_a1.png" class="img-fluid mr-3" alt="logo_A1">+375 (29) 111-11-11</a>
+                    <a href="tel:+375291111111" class="section_title my-2 font-weight-bold text-white d-flex justify-content-center align-items-center"><img src="./public/assets/img/icon/logo_mts.png" class="img-fluid mr-3" alt="logo_mts">+375 (33) 111-11-11</a>
+                    <div class="ml-5 my-2 text-size-7 font-weight-bold text-uppercase">связь со специалистами!</div>
+                </div>
+                <div class="col-xl-2 d-xl-block d-none">
+                    <img src="./public/assets/img/icon/logo_phone.png" class="img-fluid mb-3" alt="footer_item">
+                    <div class="text-uppercase font-weight-bold text-white section_title">Контакты</div>
+                </div>
+                <div class="col-xl-5 col-lg-6">
+                    <div class="mb-5">
+                        <div class="my-2 text-size-7 font-weight-bold text-uppercase">наши специалисты</div>
+                        <div class="my-2 text-size-7 font-weight-bold text-uppercase">скоро свяжутся с вами!</div>
+                        <form>
+                            <input type="hidden" name="form" value="главная форма">
+                            <div class="row text-center align-items-stretch px-3">
+                                <div class="col-sm-7 offset-sm-1 px-2 my-2 text-center">
+                                    <input type="tel" name="phone" class="form-control text-center h-100" placeholder="Номер телефона" required="">
+                                </div>
+                                <div class="col-sm-4 px-2 my-2 text-sm-left text-center">
+                                    <button type="submit" class="footer_formBtn px-3 py-2 btn mx-3">
+                                        <img src="./public/assets/img/icon/logo_arrowRight.png" alt="form_btn">
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- modal -->
     <div id="modal-order" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -219,7 +694,6 @@
                         <p class="h2">(44) 762-43-96, (29) 762-43-96</p>
                         <hr>
                     </div>
-
                     <form>
                         <input type="hidden" name="form" value="Окно заказа">
                         <div class="form-group">
@@ -248,8 +722,8 @@
                         <input type="hidden" name="form" value="Окно подробнее">
                         <input type="hidden" name="product" value="mini_2m">
                         <div class="row align-items-center">
-                            <div class="col-12 mb-1">
-                                <p class="text-size-6 text-uppercase text-white px-4 d-inline-block py-2">Мини 2 м</p>
+                            <div class="col-12">
+                                <div class="section_title text-uppercase text-white">Мини 2 м 1</div>
                             </div>
                             <div class="col-12 mb-3">
                                 <div class="owl-carousel owl-modal-catalog owl-theme">
@@ -267,7 +741,7 @@
                             </div>
                             <div class="py-2 col-md-5">
                                 <div class="castom_input text-white d-inline-block p-2">
-                                    <div class="">Длинна (м):</div>
+                                    <div class="text-white text-size-7 t_shadow">Длина (м):</div>
                                     <div class="c__input d-inline-block">
                                         <input id="mini_2m-length-1-modal" type="radio" name="length" value="4"
                                             checked="">
@@ -288,14 +762,12 @@
                                 </div>
                             </div>
                             <div class="py-2 col-md-2">
-                                <s class="text-size-2"><span class="calculator-price-old"
-                                        data-animation="animated tada delay-1s">348</span> руб.</s><br>
-                                <span class="text-size-7 font-weight-bold text-red"><span class="calculator-price"
-                                        data-animation="animated tada delay-1s">274</span> руб.</span>
+                                <s class="text-size-2 text-white"><span class="jPriceOld">348</span> руб.</s><br>
+                                <span class="text-size-7 font-weight-bold text-red"><span class="jPrice">274</span> руб.</span>
                             </div>
                             <div class="py-2 col-md-5">
                                 <div class="castom_input text-white d-inline-block p-2">
-                                    <div class="">Шаг дуг (м):</div>
+                                    <div class="text-white text-size-7 t_shadow">Шаг дуг (м):</div>
                                     <div class="c__input d-inline-block">
                                         <input id="mini_2m-dugi-50-modal" type="radio" name="dugi" value="50" checked="">
                                         <label for="mini_2m-dugi-50-modal">0.5</label>
@@ -310,91 +782,726 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 mt-2">
-                                <a href="#modal-order" data-toggle="modal" data-dismiss="modal"
-                                class="btn btn-catalog btn-catalog__yellow font-weight-bold text-size-6">Купить</a>
-                            </div>
-                            <div class="col-12 py-3">
-                                <div class="modal-product__info">
-                                    <div class="row">
-                                        <div class="col-md-6 pr-md-1">
-                                            <div class="bg_whiteGreen rounded p-2 h-100">
-                                                <div class="text-white mb-2 text-size-5">Характеристики</div>
-                                                <div class="d-flex text-white align-items-center mb-2">
-                                                    <div class="w-100">Длина</div>
-                                                    <div class="w-100">от 4 до 30 метров</div>
-                                                </div>
-                                                <div class="d-flex text-white align-items-center mb-2">
-                                                    <div class="w-100">Длина</div>
-                                                    <div class="w-100">от 4 до 30 метров</div>
-                                                </div>
-                                                <div class="d-flex text-white align-items-center mb-2">
-                                                    <div class="w-100">Длина</div>
-                                                    <div class="w-100">от 4 до 30 метров</div>
-                                                </div>
-                                                <div class="d-flex text-white align-items-center mb-2">
-                                                    <div class="w-100">Длина</div>
-                                                    <div class="w-100">от 4 до 30 метров</div>
-                                                </div>
-                                                <div class="d-flex text-white align-items-center mb-2">
-                                                    <div class="w-100">Длина</div>
-                                                    <div class="w-100">от 4 до 30 метров</div>
-                                                </div>
-                                                <div class="d-flex text-white align-items-center mb-2">
-                                                    <div class="w-100">Длина</div>
-                                                    <div class="w-100">от 4 до 30 метров</div>
-                                                </div>
-                                                <div class="d-flex text-white align-items-center mb-2">
-                                                    <div class="w-100">Длина</div>
-                                                    <div class="w-100">от 4 до 30 метров</div>
-                                                </div>
-                                                <div class="d-flex text-white align-items-center mb-2">
-                                                    <div class="w-100">Длина</div>
-                                                    <div class="w-100">от 4 до 30 метров</div>
-                                                </div>
-                                                <div class="d-flex text-white align-items-center mb-2">
-                                                    <div class="w-100">Длина</div>
-                                                    <div class="w-100">от 4 до 30 метров</div>
-                                                </div>
-                                                <div class="d-flex text-white align-items-center mb-2">
-                                                    <div class="w-100">Длина</div>
-                                                    <div class="w-100">от 4 до 30 метров</div>
-                                                </div>
-                                                <div class="d-flex text-white align-items-center mb-2">
-                                                    <div class="w-100">Длина</div>
-                                                    <div class="w-100">от 4 до 30 метров</div>
-                                                </div>
-                                            </div>
+                            <div class="col-12 my-2">
+                                <form>
+                                    <input type="hidden" name="form" value="главная форма">
+                                    <div class="row text-center align-items-stretch px-3">
+                                        <div class="col-md-7 px-2 my-2 text-center">
+                                            <input type="tel" name="phone" class="form-control text-center h-100" placeholder="Номер телефона" required="">
                                         </div>
-                                        <div class="col-md-6 pl-md-1">
-                                            <div class="bg_whiteGreen rounded p-2">
-                                                <div class="text-white mb-2 text-size-5">Характеристики</div>
-                                                <ul class="text-left lst_disc">
-                                                    <li>Комплект дуг;</li>
-                                                    <li>Комплект дуг;</li>
-                                                    <li>Комплект дуг;</li>
-                                                    <li>Комплект дуг;</li>
-                                                    <li>Комплект дуг;</li>
-                                                </ul>
-                                                <div class="text-white mb-2 text-size-5">Характеристики</div>
-                                                <ul class="text-left lst_disc">
-                                                    <li>Комплект дуг;</li>
-                                                    <li>Комплект дуг;</li>
-                                                    <li>Комплект дуг;</li>
-                                                    <li>Комплект дуг;</li>
-                                                    <li>Комплект дуг;</li>
-                                                </ul>
-                                                <div class="text-white mb-2 text-size-5">Характеристики</div>
-                                                <ul class="text-left lst_disc">
-                                                    <li>Комплект дуг;</li>
-                                                    <li>Комплект дуг;</li>
-                                                    <li>Комплект дуг;</li>
-                                                    <li>Комплект дуг;</li>
-                                                    <li>Комплект дуг;</li>
-                                                </ul>
-                                            </div>
+                                        <div class="col-md-5 px-2 my-2 text-center">
+                                            <button type="submit" class="catalog_formBtn text-size-5 btn btn-warning w-100 font-weight-bold transition--slide">отправить заявку</button>
                                         </div>
                                     </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="px-md-4 px-0">
+                                    <table class="bg-white table table-sm table-striped">
+                                        <tbody>
+                                            <div class="text-white bg-dark py-2 text-size-5 font-weight-bold">Характеристики</div>
+                                            <tr>
+                                                <th>Напряжение</th>
+                                                <td>220/230 B</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Частота:</th>
+                                                <td>50/60 Гц</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Номинальный входной ток:</th>
+                                                <td>24 A</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диапазон регулировки:</th>
+                                                <td>20-200 A</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-6 pl-md-1">
+                                <div class="text-size-7 font-weight-bold">Комплектация:</div>
+                                <ul class="text-left lst_disc">
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                </ul>
+                                <div class="text-size-7 font-weight-bold">Дополнительно:</div>
+                                <ul class="text-left lst_disc">
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cumque earum;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                </ul>
+                                <div class="text-size-7 font-weight-bold">Описание:</div>
+                                <div class="text-left">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cumque earum itaque dignissimos cupiditate obcaecati mollitia eaque sint aliquam voluptate? At vel illo veniam molestiae adipisci quae quos provident soluta?
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-product2" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body text-center bg_whiteGreen">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <form class="has-calculator text-center">
+                        <input type="hidden" name="form" value="Окно подробнее">
+                        <input type="hidden" name="product" value="mini_2m2">
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="section_title text-uppercase text-white">Мини 2 м 2</div>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <div class="owl-carousel owl-modal-catalog owl-theme">
+                                    <div class="item px-5 text-center">
+                                        <div class="dop-img">
+                                            <img src="./public/assets/img/catalog/mini2m.jpg" alt="product" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item px-5 text-center">
+                                        <div class="dop-img">
+                                            <img src="./public/assets/img/catalog/mini2m.jpg" alt="product" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-2 col-md-5">
+                                <div class="castom_input text-white d-inline-block p-2">
+                                    <div class="text-white text-size-7 t_shadow">Длина (м):</div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m2-length-1-modal" type="radio" name="length" value="4"
+                                            checked="">
+                                        <label for="mini_2m2-length-1-modal">4</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m2-length-2-modal" type="radio" name="length" value="6">
+                                        <label for="mini_2m2-length-2-modal">6</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m2-length-3-modal" type="radio" name="length" value="8">
+                                        <label for="mini_2m2-length-3-modal">8</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m2-length-10-modal" type="radio" name="length" value="10">
+                                        <label for="mini_2m2-length-10-modal">10</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-2 col-md-2">
+                                <s class="text-size-2 text-white"><span class="jPriceOld">348</span> руб.</s><br>
+                                <span class="text-size-7 font-weight-bold text-red"><span class="jPrice">274</span> руб.</span>
+                            </div>
+                            <div class="py-2 col-md-5">
+                                <div class="castom_input text-white d-inline-block p-2">
+                                    <div class="text-white text-size-7 t_shadow">Шаг дуг (м):</div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m2-dugi-50-modal" type="radio" name="dugi" value="50" checked="">
+                                        <label for="mini_2m2-dugi-50-modal">0.5</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m2-dugi-67-modal" type="radio" name="dugi" value="67">
+                                        <label for="mini_2m2-dugi-67-modal">0.67</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m2-dugi-100-modal" type="radio" name="dugi" value="100">
+                                        <label for="mini_2m2-dugi-100-modal">1</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 my-2">
+                                <form>
+                                    <input type="hidden" name="form" value="главная форма">
+                                    <div class="row text-center align-items-stretch px-3">
+                                        <div class="col-md-7 px-2 my-2 text-center">
+                                            <input type="tel" name="phone" class="form-control text-center h-100" placeholder="Номер телефона" required="">
+                                        </div>
+                                        <div class="col-md-5 px-2 my-2 text-center">
+                                            <button type="submit" class="catalog_formBtn text-size-5 btn btn-warning w-100 font-weight-bold transition--slide">отправить заявку</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="px-md-4 px-0">
+                                    <table class="bg-white table table-sm table-striped">
+                                        <tbody>
+                                            <div class="text-white bg-dark py-2 text-size-5 font-weight-bold">Характеристики</div>
+                                            <tr>
+                                                <th>Напряжение</th>
+                                                <td>220/230 B</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Частота:</th>
+                                                <td>50/60 Гц</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Номинальный входной ток:</th>
+                                                <td>24 A</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диапазон регулировки:</th>
+                                                <td>20-200 A</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-6 pl-md-1">
+                                <div class="text-size-7 font-weight-bold">Комплектация:</div>
+                                <ul class="text-left lst_disc">
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                </ul>
+                                <div class="text-size-7 font-weight-bold">Дополнительно:</div>
+                                <ul class="text-left lst_disc">
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cumque earum;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                </ul>
+                                <div class="text-size-7 font-weight-bold">Описание:</div>
+                                <div class="text-left">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cumque earum itaque dignissimos cupiditate obcaecati mollitia eaque sint aliquam voluptate? At vel illo veniam molestiae adipisci quae quos provident soluta?
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-product3" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body text-center bg_whiteGreen">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <form class="has-calculator text-center">
+                        <input type="hidden" name="form" value="Окно подробнее">
+                        <input type="hidden" name="product" value="mini_2m3">
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="section_title text-uppercase text-white">Мини 2 м 3</div>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <div class="owl-carousel owl-modal-catalog owl-theme">
+                                    <div class="item px-5 text-center">
+                                        <div class="dop-img">
+                                            <img src="./public/assets/img/catalog/mini2m.jpg" alt="product" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item px-5 text-center">
+                                        <div class="dop-img">
+                                            <img src="./public/assets/img/catalog/mini2m.jpg" alt="product" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-2 col-md-5">
+                                <div class="castom_input text-white d-inline-block p-2">
+                                    <div class="text-white text-size-7 t_shadow">Длина (м):</div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m3-length-1-modal" type="radio" name="length" value="4"
+                                            checked="">
+                                        <label for="mini_2m3-length-1-modal">4</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m3-length-2-modal" type="radio" name="length" value="6">
+                                        <label for="mini_2m3-length-2-modal">6</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m3-length-3-modal" type="radio" name="length" value="8">
+                                        <label for="mini_2m3-length-3-modal">8</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m3-length-10-modal" type="radio" name="length" value="10">
+                                        <label for="mini_2m3-length-10-modal">10</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-2 col-md-2">
+                                <s class="text-size-2 text-white"><span class="jPriceOld">348</span> руб.</s><br>
+                                <span class="text-size-7 font-weight-bold text-red"><span class="jPrice">274</span> руб.</span>
+                            </div>
+                            <div class="py-2 col-md-5">
+                                <div class="castom_input text-white d-inline-block p-2">
+                                    <div class="text-white text-size-7 t_shadow">Шаг дуг (м):</div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m3-dugi-50-modal" type="radio" name="dugi" value="50" checked="">
+                                        <label for="mini_2m3-dugi-50-modal">0.5</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m3-dugi-67-modal" type="radio" name="dugi" value="67">
+                                        <label for="mini_2m3-dugi-67-modal">0.67</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m3-dugi-100-modal" type="radio" name="dugi" value="100">
+                                        <label for="mini_2m3-dugi-100-modal">1</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 my-2">
+                                <form>
+                                    <input type="hidden" name="form" value="главная форма">
+                                    <div class="row text-center align-items-stretch px-3">
+                                        <div class="col-md-7 px-2 my-2 text-center">
+                                            <input type="tel" name="phone" class="form-control text-center h-100" placeholder="Номер телефона" required="">
+                                        </div>
+                                        <div class="col-md-5 px-2 my-2 text-center">
+                                            <button type="submit" class="catalog_formBtn text-size-5 btn btn-warning w-100 font-weight-bold transition--slide">отправить заявку</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="px-md-4 px-0">
+                                    <table class="bg-white table table-sm table-striped">
+                                        <tbody>
+                                            <div class="text-white bg-dark py-2 text-size-5 font-weight-bold">Характеристики</div>
+                                            <tr>
+                                                <th>Напряжение</th>
+                                                <td>220/230 B</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Частота:</th>
+                                                <td>50/60 Гц</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Номинальный входной ток:</th>
+                                                <td>24 A</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диапазон регулировки:</th>
+                                                <td>20-200 A</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-6 pl-md-1">
+                                <div class="text-size-7 font-weight-bold">Комплектация:</div>
+                                <ul class="text-left lst_disc">
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                </ul>
+                                <div class="text-size-7 font-weight-bold">Дополнительно:</div>
+                                <ul class="text-left lst_disc">
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cumque earum;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                </ul>
+                                <div class="text-size-7 font-weight-bold">Описание:</div>
+                                <div class="text-left">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cumque earum itaque dignissimos cupiditate obcaecati mollitia eaque sint aliquam voluptate? At vel illo veniam molestiae adipisci quae quos provident soluta?
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-product4" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body text-center bg_whiteGreen">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <form class="has-calculator text-center">
+                        <input type="hidden" name="form" value="Окно подробнее">
+                        <input type="hidden" name="product" value="mini_2m4">
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="section_title text-uppercase text-white">Мини 2 м 4</div>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <div class="owl-carousel owl-modal-catalog owl-theme">
+                                    <div class="item px-5 text-center">
+                                        <div class="dop-img">
+                                            <img src="./public/assets/img/catalog/mini2m.jpg" alt="product" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item px-5 text-center">
+                                        <div class="dop-img">
+                                            <img src="./public/assets/img/catalog/mini2m.jpg" alt="product" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-2 col-md-5">
+                                <div class="castom_input text-white d-inline-block p-2">
+                                    <div class="text-white text-size-7 t_shadow">Длина (м):</div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m4-length-1-modal" type="radio" name="length" value="4"
+                                            checked="">
+                                        <label for="mini_2m4-length-1-modal">4</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m4-length-2-modal" type="radio" name="length" value="6">
+                                        <label for="mini_2m4-length-2-modal">6</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m4-length-3-modal" type="radio" name="length" value="8">
+                                        <label for="mini_2m4-length-3-modal">8</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m4-length-10-modal" type="radio" name="length" value="10">
+                                        <label for="mini_2m4-length-10-modal">10</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-2 col-md-2">
+                                <s class="text-size-2 text-white"><span class="jPriceOld">348</span> руб.</s><br>
+                                <span class="text-size-7 font-weight-bold text-red"><span class="jPrice">274</span> руб.</span>
+                            </div>
+                            <div class="py-2 col-md-5">
+                                <div class="castom_input text-white d-inline-block p-2">
+                                    <div class="text-white text-size-7 t_shadow">Шаг дуг (м):</div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m4-dugi-50-modal" type="radio" name="dugi" value="50" checked="">
+                                        <label for="mini_2m4-dugi-50-modal">0.5</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m4-dugi-67-modal" type="radio" name="dugi" value="67">
+                                        <label for="mini_2m4-dugi-67-modal">0.67</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m4-dugi-100-modal" type="radio" name="dugi" value="100">
+                                        <label for="mini_2m4-dugi-100-modal">1</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 my-2">
+                                <form>
+                                    <input type="hidden" name="form" value="главная форма">
+                                    <div class="row text-center align-items-stretch px-3">
+                                        <div class="col-md-7 px-2 my-2 text-center">
+                                            <input type="tel" name="phone" class="form-control text-center h-100" placeholder="Номер телефона" required="">
+                                        </div>
+                                        <div class="col-md-5 px-2 my-2 text-center">
+                                            <button type="submit" class="catalog_formBtn text-size-5 btn btn-warning w-100 font-weight-bold transition--slide">отправить заявку</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="px-md-4 px-0">
+                                    <table class="bg-white table table-sm table-striped">
+                                        <tbody>
+                                            <div class="text-white bg-dark py-2 text-size-5 font-weight-bold">Характеристики</div>
+                                            <tr>
+                                                <th>Напряжение</th>
+                                                <td>220/230 B</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Частота:</th>
+                                                <td>50/60 Гц</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Номинальный входной ток:</th>
+                                                <td>24 A</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диапазон регулировки:</th>
+                                                <td>20-200 A</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-6 pl-md-1">
+                                <div class="text-size-7 font-weight-bold">Комплектация:</div>
+                                <ul class="text-left lst_disc">
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                </ul>
+                                <div class="text-size-7 font-weight-bold">Дополнительно:</div>
+                                <ul class="text-left lst_disc">
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cumque earum;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                </ul>
+                                <div class="text-size-7 font-weight-bold">Описание:</div>
+                                <div class="text-left">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cumque earum itaque dignissimos cupiditate obcaecati mollitia eaque sint aliquam voluptate? At vel illo veniam molestiae adipisci quae quos provident soluta?
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-product5" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body text-center bg_whiteGreen">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <form class="has-calculator text-center">
+                        <input type="hidden" name="form" value="Окно подробнее">
+                        <input type="hidden" name="product" value="mini_2m5">
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="section_title text-uppercase text-white">Мини 2 м 5</div>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <div class="owl-carousel owl-modal-catalog owl-theme">
+                                    <div class="item px-5 text-center">
+                                        <div class="dop-img">
+                                            <img src="./public/assets/img/catalog/mini2m.jpg" alt="product" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item px-5 text-center">
+                                        <div class="dop-img">
+                                            <img src="./public/assets/img/catalog/mini2m.jpg" alt="product" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-2 col-md-5">
+                                <div class="castom_input text-white d-inline-block p-2">
+                                    <div class="text-white text-size-7 t_shadow">Длина (м):</div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m5-length-1-modal" type="radio" name="length" value="4"
+                                            checked="">
+                                        <label for="mini_2m5-length-1-modal">4</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m5-length-2-modal" type="radio" name="length" value="6">
+                                        <label for="mini_2m5-length-2-modal">6</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m5-length-3-modal" type="radio" name="length" value="8">
+                                        <label for="mini_2m5-length-3-modal">8</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m5-length-10-modal" type="radio" name="length" value="10">
+                                        <label for="mini_2m5-length-10-modal">10</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-2 col-md-2">
+                                <s class="text-size-2 text-white"><span class="jPriceOld">348</span> руб.</s><br>
+                                <span class="text-size-7 font-weight-bold text-red"><span class="jPrice">274</span> руб.</span>
+                            </div>
+                            <div class="py-2 col-md-5">
+                                <div class="castom_input text-white d-inline-block p-2">
+                                    <div class="text-white text-size-7 t_shadow">Шаг дуг (м):</div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m5-dugi-50-modal" type="radio" name="dugi" value="50" checked="">
+                                        <label for="mini_2m5-dugi-50-modal">0.5</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m5-dugi-67-modal" type="radio" name="dugi" value="67">
+                                        <label for="mini_2m5-dugi-67-modal">0.67</label>
+                                    </div>
+                                    <div class="c__input d-inline-block">
+                                        <input id="mini_2m5-dugi-100-modal" type="radio" name="dugi" value="100">
+                                        <label for="mini_2m5-dugi-100-modal">1</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 my-2">
+                                <form>
+                                    <input type="hidden" name="form" value="главная форма">
+                                    <div class="row text-center align-items-stretch px-3">
+                                        <div class="col-md-7 px-2 my-2 text-center">
+                                            <input type="tel" name="phone" class="form-control text-center h-100" placeholder="Номер телефона" required="">
+                                        </div>
+                                        <div class="col-md-5 px-2 my-2 text-center">
+                                            <button type="submit" class="catalog_formBtn text-size-5 btn btn-warning w-100 font-weight-bold transition--slide">отправить заявку</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="px-md-4 px-0">
+                                    <table class="bg-white table table-sm table-striped">
+                                        <tbody>
+                                            <div class="text-white bg-dark py-2 text-size-5 font-weight-bold">Характеристики</div>
+                                            <tr>
+                                                <th>Напряжение</th>
+                                                <td>220/230 B</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Частота:</th>
+                                                <td>50/60 Гц</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Номинальный входной ток:</th>
+                                                <td>24 A</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диапазон регулировки:</th>
+                                                <td>20-200 A</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Диаметр электрода:</th>
+                                                <td>1.6 мм</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-6 pl-md-1">
+                                <div class="text-size-7 font-weight-bold">Комплектация:</div>
+                                <ul class="text-left lst_disc">
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                </ul>
+                                <div class="text-size-7 font-weight-bold">Дополнительно:</div>
+                                <ul class="text-left lst_disc">
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cumque earum;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                    <li>Комплект дуг;</li>
+                                </ul>
+                                <div class="text-size-7 font-weight-bold">Описание:</div>
+                                <div class="text-left">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cumque earum itaque dignissimos cupiditate obcaecati mollitia eaque sint aliquam voluptate? At vel illo veniam molestiae adipisci quae quos provident soluta?
                                 </div>
                             </div>
                         </div>
@@ -410,13 +1517,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- Owl carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js" integrity="sha256-s5TTOyp+xlSmsDfr/aZhg0Gz+JejYr5iTJI8JxG1SkM=" crossorigin="anonymous"></script>
-    <!-- Fancybox -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
 
     <script src="./public/scripts/data.js"></script>
-    <script src="./src/scripts/c.js"></script>
-    <script src="./src/scripts/js.js"></script>
-    <!-- <script src="./dist/scripts/c.min.js"></script>
-    <script src="./dist/scripts/js.min.js"></script> -->
+    <script src="./dist/scripts/c.min.js"></script>
+    <script src="./dist/scripts/js.min.js"></script>
 </body>
 </html>

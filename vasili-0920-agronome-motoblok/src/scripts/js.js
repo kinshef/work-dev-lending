@@ -53,22 +53,56 @@ $(function () {
         return false
     });
 
-
-    $('.owl-modal-catalog').owlCarousel({
-        items:1,
-        loop: true,
-        navText: ['<span class="fa fa-5x fa-angle-left" aria-hidden="true"></span>', '<i class="fa fa-5x fa-angle-right" aria-hidden="true"></i>'],
-        nav: true,
-        autoheight: false,
-        dots: false
-    })
-    
-
     $("a.smoothscroll").click(function(a) {
         "" !== this.hash && (a.preventDefault(), a = this.hash, $("html, body").animate({
             scrollTop: $(a).offset().top
         }, 400))
     });
+
+});
+document.addEventListener("DOMContentLoaded", function () {
+
+    // section-calculator
+    try{
+        var calculationPages = document.querySelectorAll('.calculation-pages>div');
+        var calculatorBtnNextBottom = document.querySelector('.cost-calculation div.next-bottom');
+        var calculatorBtnPrevBottom = document.querySelector('.cost-calculation div.prev-bottom');
+        var pageTo = 0;
+        function disabledBtn() {
+            if(0 !== pageTo){
+                calculatorBtnPrevBottom.classList.remove('disabled');
+            }else{
+                calculatorBtnPrevBottom.classList.add('disabled');
+            }
+            if(calculationPages.length-1 > pageTo){
+                calculatorBtnNextBottom.classList.remove('disabled');
+            }else{
+                calculatorBtnNextBottom.classList.add('disabled');
+            }
+        }
+        disabledBtn()
+        calculatorBtnNextBottom.onclick = function () {
+            if(!this.classList.contains('disabled')){
+                calculationPages[pageTo].classList.remove('activ');
+                pageTo++;
+                calculationPages[pageTo].classList.add('activ');
+                disabledBtn()
+            }
+        }
+        calculatorBtnPrevBottom.onclick = function () {
+            if(!this.classList.contains('disabled')){
+                calculationPages[pageTo].classList.remove('activ');
+                pageTo--;
+                calculationPages[pageTo].classList.add('activ');
+                disabledBtn()
+            }
+        }
+    }catch (e) {
+        console.error(e);
+    }
+    // section-calculator end
+
+
 
 });
 
