@@ -54,7 +54,7 @@
                     <div class="row align-items-center my-3">
                         <div class="col-4 text-center">
                             <div class="main-left_img">
-                                <img src="./public/assets/img/icon/present.png" class="w-50">
+                                <img src="./public/assets/img/icon/present.png">
                             </div>
                         </div>
                         <div class="col-8">
@@ -62,32 +62,49 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 text-center">
+                <div class="col-lg-4 offset-lg-1 text-center">
                     <div class="bg_black--op50 d-inline-block p-4">
                         <div class="text-size-7 mb-5">
-                            <a href="tel:+375291111111" class="font-weight-bold text-white d-flex justify-content-center align-items-center"><img src="./public/assets/img/icon/logo_a1.png" class="img-fluid mr-3" alt="logo_A1">+375 (29) 111-11-11</a>
-                            <a href="tel:+375291111111" class="font-weight-bold text-white d-flex justify-content-center align-items-center"><img src="./public/assets/img/icon/logo_mts.png" class="img-fluid mr-3" alt="logo_mts">+375 (33) 111-11-11</a>
+                            <a href="tel:+375291111111" class="font-weight-bold text-white d-flex justify-content-center align-items-center my-2"><img src="./public/assets/img/icon/logo_a1.png" class="img-fluid mr-3" alt="logo_A1">+375 (29) 111-11-11</a>
+                            <a href="tel:+375291111111" class="font-weight-bold text-white d-flex justify-content-center align-items-center my-2"><img src="./public/assets/img/icon/logo_mts.png" class="img-fluid mr-3" alt="logo_mts">+375 (33) 111-11-11</a>
                         </div>
-                        <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam minima ut modi incidunt maxime laboriosam repellat. Suscipit, eligendi, ut quibusdam voluptatum, at maxime dolores explicabo porro voluptatibus obcaecati soluta quos!</div>
+                        <div class="text-size-7 font-weight-bold">Вы можете заказать звонок и наш консультант свяжется с вами</div>
+                        <a href="#modal-order" data-toggle="modal" class="btm my-2 font-weight-bold border-radius-10 btn-danger py-2 px-5 text-size-6 d-inline-block">Оставить заявку</a>
                     </div>
-                    <!-- <div class="bg_blackRed text-size-7 border-radius-10 font-weight-bold d-inline-block p-2">Выгодное
-                        предложение от SellHoz</div>
-                    <a href="#modal-order" data-toggle="modal"
-                        class="btm font-weight-bold border-radius-10 btn-warning py-2 px-5 text-size-6 d-inline-block b_shadow">Оставить
-                        заявку</a> -->
-
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section-delivery py-5" id="section-delivery">
+    <section class="section-delivery py-4" id="section-delivery">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="section_title">Бесплатная доставка</div>
-                    <div class="section_title">по Беларуси</div>
-                    <div class="h5 mt-4">в любую точку РБ в течении 1-3 дней</div>
+            <div class="row text-white">
+                <div class="col-6">
+                    <div class="section_title font-weight-bold">Быстрая доставка</div>
+                </div>
+                <div class="col-6">
+                    <span class="w-25 d-inline-block delivery-light mr-5"></span>
+                    <span class="w-25 d-inline-block delivery-light mr-5"></span>
+                    <span class="w-25 d-inline-block delivery-light mr-5"></span>
+                </div>
+                <div class="col-6">
+                    <img src="./public/assets/img/icon/drive.png" class="img-fluid w-100 mt-5" alt="drive">
+                </div>
+                <div class="col-6 text-center">
+                    <div class="h-100 d-flex flex-column justify-content-between text-left font-weight-bold">
+                        <div>
+                            <div class="d-flex align-items-center my-3">
+                                <img src="./public/assets/img/icon/dataIcon.png" class="img-fluid delivery-imgIcon mr-3" alt="dataIcon">
+                                <div class="section_title">Мы доставим ваш товар в течении <span class="text-red">1</span>-<span class="text-red">3</span>x <span class="text-red">дней</span></div>
+                            </div>
+                            <div class="d-flex align-items-center my-3">
+                                <img src="./public/assets/img/icon/clock.png" class="img-fluid delivery-imgIcon mr-3" alt="dataIcon">
+                                <div class="section_title">В любое <span class="text-red">удобное для вас</span> время</div>
+                            </div>
+                        </div>
+                        <div class="text-black text-size-7 delivery-zvezd my-4">расчёт только после доставки товара</div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -170,359 +187,112 @@
         </div>
     </section>
 
-    <section class="section-calculator py-4" id="section-calculator">
-        <div class="container-fluid">
-            <form class="cost-calculation">
-                <input type="hidden" name="form" value="Калькулятор">
-                <div class="row text-dark calculation-pages py-4">
-                    <div class="col-12 cost-calculation__item activ">
-                        <div class="row align-items-center justify-content-center">
-                            <div class="col-12 my-3">
-                                <div class="section_title">Какая длинна теплицы вам необходима?</div>
-                            </div>
-                            <div class="col-md-6 offset-md-3 text-md-left justify-content-center d-flex flex-wrap">
-                                <div class="c__input">
-                                    <input id="length-4" type="radio" name="length" value="4" checked="">
-                                    <label for="length-4">4 метра</label>
-                                </div>
-                                <div class="c__input">
-                                    <input id="length-6" type="radio" name="length" value="6">
-                                    <label for="length-6">6 метра</label>
-                                </div>
-                                <div class="c__input">
-                                    <input id="length-8" type="radio" name="length" value="8">
-                                    <label for="length-8">8 метра</label>
-                                </div>
-                                <div class="c__input">
-                                    <input id="length-10" type="radio" name="length" value="10">
-                                    <label for="length-10">10 метра</label>
-                                </div>
-                                <div class="c__input">
-                                    <input id="length-dr" type="radio" name="length" value="Dr">
-                                    <label for="length-dr">Друбая</label>
-                                </div>
-                            </div>
-                            <div class="col-md-3 d-md-block d-none text-right">
-                                <img src="./public/assets/img/icon/calc.png" class="img-fluid mr-5">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 cost-calculation__item">
-                        <div class="row align-items-center">
-                            <div class="col-12 my-3">
-                                <div class="section_title text-white">Укажите ширину теплицы.</div>
-                            </div>
-                            <div class="col-md-6 offset-md-3 text-md-left justify-content-center d-flex flex-wrap">
-                                <div class="c__input">
-                                    <input id="width-200" type="radio" name="width" value="200" checked="">
-                                    <label for="width-200">2 метра</label>
-                                </div>
-                                <div class="c__input">
-                                    <input id="width-240" type="radio" name="width" value="240">
-                                    <label for="width-240">2.4 метра</label>
-                                </div>
-                                <div class="c__input">
-                                    <input id="width-300" type="radio" name="width" value="300">
-                                    <label for="width-300">3 метра</label>
-                                </div>
-                                <div class="c__input">
-                                    <input id="width-350" type="radio" name="width" value="350">
-                                    <label for="width-350">3.5 метра</label>
-                                </div>
-                                <div class="c__input">
-                                    <input id="width-400" type="radio" name="width" value="400">
-                                    <label for="width-400">4 метра</label>
-                                </div>
-                                <div class="c__input">
-                                    <input id="width-dr" type="radio" name="width" value="Dr">
-                                    <label for="width-dr">Друбая</label>
-                                </div>
-                            </div>
-                            <div class="col-md-3 d-md-block d-none text-right">
-                                <img src="./public/assets/img/icon/calc.png" class="img-fluid mr-5">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 cost-calculation__item">
-                        <div class="row align-items-center">
-                            <div class="col-12 my-3">
-                                <div class="section_title text-white">Какой шаг дуги вам подойдет?</div>
-                            </div>
-                            <div class="col-md-6 offset-md-3 text-md-left justify-content-center d-flex flex-wrap">
-                                <div class="c__input">
-                                    <input id="shagDugi-100" type="radio" name="shagDugi" value="100" checked="">
-                                    <label for="shagDugi-100">1 метр</label>
-                                </div>
-                                <div class="c__input">
-                                    <input id="shagDugi-67" type="radio" name="shagDugi" value="67">
-                                    <label for="shagDugi-67">0.67 метра</label>
-                                </div>
-                                <div class="c__input">
-                                    <input id="shagDugi-50" type="radio" name="shagDugi" value="50">
-                                    <label for="shagDugi-50">0.5 метра</label>
-                                </div>
-                            </div>
-                            <div class="col-md-3 d-md-block d-none text-right">
-                                <img src="./public/assets/img/icon/calc.png" class="img-fluid mr-5">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 cost-calculation__item">
-                        <div class="row align-items-center">
-                            <div class="col-12 my-3">
-                                <div class="section_title text-white">Укажите сечение дуги.</div>
-                            </div>
-                            <div class="col-md-6 offset-md-3 text-md-left justify-content-center d-flex flex-wrap">
-                                <div class="c__input">
-                                    <input id="sechenieDugi-20x20" type="radio" name="sechenieDugi" value="20x20"
-                                        checked="">
-                                    <label for="sechenieDugi-20x20">20x20 мм</label>
-                                </div>
-                                <div class="c__input">
-                                    <input id="sechenieDugi-40x20" type="radio" name="sechenieDugi" value="40x20">
-                                    <label for="sechenieDugi-40x20">40x20 мм</label>
-                                </div>
-                            </div>
-                            <div class="col-md-3 d-md-block d-none text-right">
-                                <img src="./public/assets/img/icon/calc.png" class="img-fluid mr-5">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 cost-calculation__item">
-                        <div class="row align-items-center">
-                            <div class="col-12 my-3">
-                                <div class="section_title text-white">Какой бюджет вы планируете потратить?</div>
-                            </div>
-                            <div class="col-md-3 offset-md-3 text-md-left justify-content-center d-flex flex-wrap">
-                                <div class="form-group">
-                                    <input type="text" name="budget" class="form-control border-radius-10"
-                                        placeholder="_____ BYN">
-                                </div>
-                            </div>
-                            <div class="col-6 d-md-block d-none text-right">
-                                <img src="./public/assets/img/icon/calc.png" class="img-fluid mr-5">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 cost-calculation__item">
-                        <div class="row">
-                            <div class="col-12 my-3">
-                                <div class="section_title">Для Вас мы нашли несколько отличных вариантов.
-                                    Оставьте ваш контактный номер, чтобы мы могли связаться с вами и рассказать о них.
-                                </div>
-                            </div>
-                            <div class="col-md-6 offset-md-3">
-                                <div class="form-group">
-                                    <input type="tel" name="phone" class="form-control border-radius-10"
-                                        placeholder="Номер телефона" required>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit"
-                                        class="btn calculator__btn font-weight-bold btn-warning btn-block b_shadow border-radius-10">Отправить
-                                        заявку</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 justify-content-center d-flex align-items-center">
-                        <div
-                            class="btn border-radius-10 b_shadow prev-bottom mx-3 py-2 btn-secondary font-weight-bold px-5 text-size-5">
-                            Назад</div>
-                        <div
-                            class="btn border-radius-10 b_shadow next-bottom mx-3 py-2 btn-danger font-weight-bold px-5 text-size-7">
-                            Далее</div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <section class="section-catalog py-5" id="section-catalog">
+    <section class="section-catalog" id="section-catalog">
+        <div class="section_title py-2 text_black mb-4 bg-dark text-white">Каталог культиваторов</div>
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12">
-                    <div class="section_title text_black mb-4">Каталог культиваторов</div>
-                </div>
 
                 <div class="col-12 py-4">
                     <form class="has-calculator">
                         <input type="hidden" name="form" value="Карточка товара">
                         <input type="hidden" name="product" value="Shtenli">
                         <div class="row text-center align-items-center font-weight-bold">
-                            <div class="col-md-9 tr-translate-y50">
-                                <div
-                                    class="text-size-7 py-2 px-4 mx-auto bg_blackRed border-radius-10 d-inline-block text-white">
-                                    Shtenli</div>
-                            </div>
-                            <div class="col-md-3 tr-translate-y50">
-                                <div class="py-1 px-4 mx-auto my-3 bg-warning border-radius-10 d-inline-block">Уточняйте
-                                    наличие</div>
+                            <div class="col-12 tr-translate-y50">
+                                <div class="section_title py-2 px-4 mx-auto bg_blackRed border-radius-10 d-inline-block text-white">Shtenli</div>
                             </div>
                             <div class="col-12">
                                 <div class="catalog-item pt-4">
                                     <div class="row">
+                                        <div class="col-12 castom_input py-3">
+                                            <div class="c__input d-inline-block">
+                                                <input id="Shtenli-1000-6" type="radio" name="option"
+                                                    value="1000-6" checked="">
+                                                <label for="Shtenli-1000-6">1000 (6)</label>
+                                            </div>
+                                            <div class="c__input d-inline-block">
+                                                <input id="Shtenli-2000K2NS" type="radio" name="option"
+                                                    value="2000K2NS">
+                                                <label for="Shtenli-2000K2NS">2000 K2NS</label>
+                                            </div>
+                                            <div class="c__input d-inline-block">
+                                                <input id="Shtenli-7000EXPERT" type="radio" name="option"
+                                                    value="7000EXPERT">
+                                                <label for="Shtenli-7000EXPERT">7000 EXPERT</label>
+                                            </div>
+                                            <div class="c__input d-inline-block">
+                                                <input id="Shtenli-8000EXPERT" type="radio" name="option"
+                                                    value="8000EXPERT">
+                                                <label for="Shtenli-8000EXPERT">8000 EXPERT</label>
+                                            </div>
+                                            <div class="c__input d-inline-block">
+                                                <input id="Shtenli-500-7" type="radio" name="option" value="500-7">
+                                                <label for="Shtenli-500-7">500 (7)</label>
+                                            </div>
+                                            <div class="c__input d-inline-block">
+                                                <input id="Shtenli-900L-8L" type="radio" name="option"
+                                                    value="900L-8L">
+                                                <label for="Shtenli-900L-8L">900 L (8-L)</label>
+                                            </div>
+                                            <div class="c__input d-inline-block">
+                                                <input id="Shtenli-900-8" type="radio" name="option" value="900-8">
+                                                <label for="Shtenli-900-8">900 (8)</label>
+                                            </div>
+                                        </div>
                                         <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center">
                                             <img src="./public/assets/img/catalog/cat1.png" class="img-fluid catalog__price jUrmImg">
-                                            <div class="catalog-present d-inline-flex flex-wrap align-items-center justify-content-center">
+                                            <!-- <div class="catalog-present d-inline-flex flex-wrap align-items-center justify-content-center">
                                                 <div>
                                                     <img src="./public/assets/img/icon/pod1.png" class="img-fluid mx-2">
                                                     <img src="./public/assets/img/icon/pod2.png" class="img-fluid mx-2">
                                                 </div>
                                                 <div class="section_title font-weight-bold mx-2">в подарок</div>
+                                            </div> -->
+                                        </div>
+                                        <div class="col-lg-8 px-5 mt-4 d-flex align-items-stretch justify-content-center flex-wrap">
+                                            <div class="col-12 py-3">
+                                                <div class="row border-radius-10">
+                                                    <div class="col-md-6 text-size-5">
+                                                        <ul class="text-left font-weight-normal">
+                                                            <li>- Марка двигателя: GX 160 (бензин)</li>
+                                                            <li>- Объем двигателя: 121 куб.см.</li>
+                                                            <li>- Мощность двигателя: 6ю0 лс.</li>
+                                                            <li>- Объем топливного бака: 2.0 л</li>
+                                                            <li>- Объем масляного бака: 1.0 л</li>
+                                                            <li>- расход топлива: 0.395 л</li>
+                                                            <li>- Запуск двигателя: Ручной</li>
+                                                            <li>- Охлаждение: Воздушное</li>
+                                                            <li>- Трансмиссия: Шестеренчатый редуктор</li>
+                                                            <li>- Количество передача: 1</li>
+                                                            <li>- Пониженная передача: Нет</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6 text-size-5">
+                                                        <ul class="text-left font-weight-normal">
+                                                            <li>- Минимальная ширина обработки: 20 см</li>
+                                                            <li>- Максимальная ширина обработки: 85 см</li>
+                                                            <li>- Максимальная глубина обработки: 20 см</li>
+                                                            <li>- Вал отбора мощности: Нет</li>
+                                                            <li>- Дифференциал: Нет</li>
+                                                            <li>- Колёса: Нет</li>
+                                                            <li>- Тактность двигателя: 4-х тактный</li>
+                                                            <li>- Вес: 47 кг</li>
+                                                        </ul>
+                                                        <div class="py-1">
+                                                            <a href="#modal-order" data-toggle="modal"
+                                                                class="bg_gray py-2 border-radius-10 d-block font-weight-bold">Посчитать<br> с навесным оборудованием</a>
+                                                        </div>
+                                                        <div class="py-1 text-left text-size-7 font-weight-bold">
+                                                            Цена: <span class="catalog__price"><span class="jPrice">0</span> руб.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-8 castom_input px-5 mt-4 d-flex align-items-stretch justify-content-center flex-wrap">
-                                            <div class="col-12">
-                                                <div class="c__input d-inline-block">
-                                                    <input id="Shtenli-2000K2NS" type="radio" name="option"
-                                                        value="2000K2NS" checked="">
-                                                    <label for="Shtenli-2000K2NS">2000 K2NS</label>
-                                                </div>
-                                                <div class="c__input d-inline-block">
-                                                    <input id="Shtenli-7000EXPERT" type="radio" name="option"
-                                                        value="7000EXPERT">
-                                                    <label for="Shtenli-7000EXPERT">7000 EXPERT</label>
-                                                </div>
-                                                <div class="c__input d-inline-block">
-                                                    <input id="Shtenli-8000EXPERT" type="radio" name="option"
-                                                        value="8000EXPERT">
-                                                    <label for="Shtenli-8000EXPERT">8000 EXPERT</label>
-                                                </div>
-                                                <div class="c__input d-inline-block">
-                                                    <input id="Shtenli-1000-6" type="radio" name="option"
-                                                        value="1000-6">
-                                                    <label for="Shtenli-1000-6">1000 (6)</label>
-                                                </div>
-                                                <div class="c__input d-inline-block">
-                                                    <input id="Shtenli-500-7" type="radio" name="option" value="500-7">
-                                                    <label for="Shtenli-500-7">500 (7)</label>
-                                                </div>
-                                                <div class="c__input d-inline-block">
-                                                    <input id="Shtenli-900-8" type="radio" name="option" value="900-8">
-                                                    <label for="Shtenli-900-8">900 (8)</label>
-                                                </div>
-                                                <div class="c__input d-inline-block">
-                                                    <input id="Shtenli-900L-8L" type="radio" name="option"
-                                                        value="900L-8L">
-                                                    <label for="Shtenli-900L-8L">900 L (8-L)</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 py-3">
-                                                <div class="row bg_lightGray border-radius-10">
-                                                    <div class="col-md-6 text-size-5">
-                                                        <ul class="font-weight-light">
-                                                            <li class="d-flex align-items-center my-2"><img
-                                                                    src="./public/assets/img/icon/gl.png" class="img-fluid mr-2"
-                                                                    alt="icon"> Производитель: Германия</li>
-                                                            <li class="d-flex align-items-center my-2"><img
-                                                                    src="./public/assets/img/icon/gl.png" class="img-fluid mr-2"
-                                                                    alt="icon"> Мощность: <span class="catalog__price"><span
-                                                                        class="jPower">0</span> л.с.</span></li>
-                                                            <li class="d-flex align-items-center my-2"><img
-                                                                    src="./public/assets/img/icon/gl.png" class="img-fluid mr-2"
-                                                                    alt="icon"> Колеса: <span class="catalog__price"><span
-                                                                        class="jRazmKoles0">0</span>x<span
-                                                                        class="jRazmKoles1">0</span></span></li>
-                                                            <li class="d-flex align-items-center my-2"><img
-                                                                    src="./public/assets/img/icon/gl.png" class="img-fluid mr-2"
-                                                                    alt="icon"> Тип двигателя: <span
-                                                                    class="catalog__price jEngine">Дизельный</span></li>
-                                                            <li class="d-flex align-items-center my-2"><img
-                                                                    src="./public/assets/img/icon/gl.png" class="img-fluid mr-2"
-                                                                    alt="icon"> Привод: <span
-                                                                    class="jPrivod catalog__price">Шестерёнчатый</span></li>
-                                                            <li class="d-flex align-items-center my-2"><img
-                                                                    src="./public/assets/img/icon/gl.png" class="img-fluid mr-2"
-                                                                    alt="icon"> Количество передач: <span
-                                                                    class="catalog__price"><span
-                                                                        class="jKolGear0">0</span>(<span
-                                                                        class="jKolGear1">0</span> вперёд/<span
-                                                                        class="jKolGear2">0</span> назад)</span></li>
-                                                            <li class="d-flex align-items-center my-2"><img
-                                                                    src="./public/assets/img/icon/gl.png" class="img-fluid mr-2"
-                                                                    alt="icon"> Расход топлива: <span
-                                                                    class="catalog__price"><span class="jRaskhod">0</span>
-                                                                    л/ч</span></li>
-                                                            <li class="d-flex align-items-center my-2"><img
-                                                                    src="./public/assets/img/icon/gl.png" class="img-fluid mr-2"
-                                                                    alt="icon">Ширина обработки: <span
-                                                                    class="catalog__price"><span
-                                                                        class="jShirinaObr0">0</span>-<span
-                                                                        class="jShirinaObr1">0</span> мм</span></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-md-6 text-size-5">
-                                                        <ul class="font-weight-light">
-                                                            <li class="d-flex align-items-center my-2"><img
-                                                                    src="./public/assets/img/icon/gl.png" class="img-fluid mr-2"
-                                                                    alt="icon">Объём топливного бака: <span
-                                                                    class="catalog__price"><span class="jTankVolume">0</span>
-                                                                    л</span></li>
-                                                            <li class="d-flex align-items-center my-2"><img
-                                                                    src="./public/assets/img/icon/gl.png" class="img-fluid mr-2"
-                                                                    alt="icon">Глубина обработки: <span
-                                                                    class="catalog__price"><span
-                                                                        class="jGlubinaObr0">0</span>-<span
-                                                                        class="jGlubinaObr1">0</span> мм</span></li>
-                                                            <li class="d-flex align-items-center my-2"><img
-                                                                    src="./public/assets/img/icon/gl.png" class="img-fluid mr-2"
-                                                                    alt="icon">Комплектация: <span
-                                                                    class="jEquipment catalog__price">Прицеп</span></li>
-                                                            <li class="d-flex align-items-center my-2"><img
-                                                                    src="./public/assets/img/icon/gl.png" class="img-fluid mr-2"
-                                                                    alt="icon">Бардачок: <span
-                                                                    class="jBox catalog__price">нет</span></li>
-                                                            <li class="d-flex align-items-center my-2"><img
-                                                                    src="./public/assets/img/icon/gl.png" class="img-fluid mr-2"
-                                                                    alt="icon">Фара: <span
-                                                                    class="jFara catalog__price">нет</span></li>
-                                                            <li class="d-flex align-items-center my-2"><img
-                                                                    src="./public/assets/img/icon/gl.png" class="img-fluid mr-2"
-                                                                    alt="icon">Вес: <span class="catalog__price"><span
-                                                                        class="jVes">0</span> кг</span></li>
-                                                            <li class="d-flex align-items-center my-2"><img
-                                                                    src="./public/assets/img/icon/gl.png" class="img-fluid mr-2"
-                                                                    alt="icon">Гарантия: 2 года</li>
-                                                        </ul>
-                                                        <div class="py-2 py-sm-3 py-1">
-                                                            <a href="#modal-question-bank" data-toggle="modal"
-                                                                class="catalog__banck font-weight-bold">Рассрочка по карте</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <form>
-                                                    <div class="row align-items-center">
-                                                        <div
-                                                            class="col-xxl-6 col-sm-7 text-center text-sm-right pr-sm-0 pr-3 my-sm-0 my-2">
-                                                            <input type="tel" name="phone"
-                                                                class="form-control bg-danger text-white text-center"
-                                                                placeholder="_________Телефона" required>
-                                                        </div>
-                                                        <div
-                                                            class="col-xxl-3 col-sm-5 text-center text-sm-left pl-sm-0 pl-3 my-sm-0 my-2">
-                                                            <button type="submit"
-                                                                class="btn btn-warning text-white">Получить
-                                                                консультацию</button>
-                                                        </div>
-                                                        <div class="col-xxl-3 col-md-6">
-                                                            <div
-                                                                class="bg_purple py-3 h-100 justify-content-around d-flex align-items-center">
-                                                                <div class="text-size-7 font-weight-bold">Цена:</div>
-                                                                <div class="product-prise font-weight-bold text-size-6">
-                                                                    <div class="product-prise__old catalog__price"><span
-                                                                            class="jPriceOld">0</span> руб.</div>
-                                                                    <div class="product-prise__item catalog__price">
-                                                                        <span class="jPrice">0</span> руб.</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
+                                        <div class="col-8 py-3">
+                                            <div class="px-3 section_title text-left">Модель: <span>asd</span></div>
+                                        </div>
+                                        <div class="col-4 py-3">
+                                            <a href="#modal-order" data-toggle="modal" class="btm my-2 font-weight-bold border-radius-10 btn-danger py-2 px-5 text-size-6 d-inline-block">Купить</a>
                                         </div>
                                     </div>
                                 </div>
@@ -531,7 +301,7 @@
                     </form>
                 </div>
 
-                <div class="col-12 py-4">
+                <!-- <div class="col-12 py-4">
                     <form class="has-calculator">
                         <input type="hidden" name="form" value="Карточка товара">
                         <input type="hidden" name="product" value="Shtenli1030">
@@ -719,9 +489,9 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div> -->
 
-                <div class="col-12 py-4">
+                <!-- <div class="col-12 py-4">
                     <form class="has-calculator">
                         <input type="hidden" name="form" value="Карточка товара">
                         <input type="hidden" name="product" value="Shtenli1900">
@@ -892,13 +662,10 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div> -->
 
-                <div class="col-12">
-                    <div class="section_title text_black mb-4">Каталог мотоблоков</div>
-                </div>
 
-                <div class="col-12 py-4">
+                <!-- <div class="col-12 py-4">
                     <form class="has-calculator">
                         <input type="hidden" name="form" value="Карточка товара">
                         <input type="hidden" name="product" value="ShtenliPro1030">
@@ -1062,9 +829,9 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div> -->
 
-                <div class="col-12 py-4">
+                <!-- <div class="col-12 py-4">
                     <form class="has-calculator">
                         <input type="hidden" name="form" value="Карточка товара">
                         <input type="hidden" name="product" value="ShtenliPro1900P">
@@ -1245,9 +1012,9 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div> -->
 
-                <div class="col-12 py-4">
+                <!-- <div class="col-12 py-4">
                     <form class="has-calculator">
                         <input type="hidden" name="form" value="Карточка товара">
                         <input type="hidden" name="product" value="ShtenliG">
@@ -1405,9 +1172,9 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div> -->
 
-                <div class="col-12 py-4">
+                <!-- <div class="col-12 py-4">
                     <form class="has-calculator">
                         <input type="hidden" name="form" value="Карточка товара">
                         <input type="hidden" name="product" value="ShtenliT-180LUX">
@@ -1557,7 +1324,13 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div> -->
+
+            </div>
+        </div>
+        <div class="section_title py-2 text_black mb-4 bg-dark text-white">Каталог мотоблоков</div>
+        <div class="container">
+            <div class="row align-items-center">
 
             </div>
         </div>
@@ -2176,8 +1949,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <script src="./public/scripts/data.js"></script>
-    <script src="./dist/scripts/c.min.js"></script>
-    <script src="./dist/scripts/js.min.js"></script>
+    <script src="./src/scripts/c.js"></script>
+    <script src="./src/scripts/js.js"></script>
 </body>
 
 </html>

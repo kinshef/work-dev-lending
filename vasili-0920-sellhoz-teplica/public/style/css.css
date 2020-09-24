@@ -252,11 +252,11 @@ a:hover {
 .catalog-title{
   background: url(../assets/img/icon/cat1.png) no-repeat center top;
   background-size: contain;
-  padding-top: 20rem;
+  padding-top: 12rem;
 }
 .catalog-title__text{
-  font-size: 220px;
-  line-height: 220px;
+  font-size: 170px;
+  line-height: 170px;
   font-weight: 900;
   background-color: #292828;
   display: inline-block;
@@ -335,9 +335,6 @@ a:hover {
   .has-calculator__formInput{
     margin-top: -0px;
     transform: translate(0, 0%);
-  }
-  .catalog-title{
-    padding-top: 12rem;
   }
   .catalog-title__text{
     font-size: 150px;
