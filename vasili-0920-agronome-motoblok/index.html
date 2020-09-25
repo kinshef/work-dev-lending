@@ -27,10 +27,11 @@
         <div class="container">
             <div class="row align-items-center text-white py-xl-4 py-1">
                 <div class="col-12 nav-nav text-center d-flex justify-content-end flex-wrap">
-                    <a class="nav-nav__item smoothscroll" href="#section-main">Главная</a>
-                    <a class="nav-nav__item smoothscroll" href="#section-equipment">Комплектующие</a>
-                    <a class="nav-nav__item smoothscroll" href="#section-advantages">Преимущества</a>
-                    <a class="nav-nav__item smoothscroll" href="#section-consultation">Контакты</a>
+                    <a class="nav-nav__item smoothscroll" href="#section-main">О нас</a>
+                    <a class="nav-nav__item smoothscroll" href="#section-equipment">Культиваторы</a>
+                    <a class="nav-nav__item smoothscroll" href="#section-advantages">Мотоблоки</a>
+                    <a class="nav-nav__item smoothscroll" href="#section-consultation">Доп. товары</a>
+                    <a class="nav-nav__item smoothscroll" href="#section-consultation">Рассрочка</a>
                 </div>
             </div>
         </div>
@@ -44,7 +45,7 @@
                     <div class="row align-items-center my-3">
                         <div class="col-4 text-center">
                             <div class="main-left_img">
-                                <img src="./public/assets/img/icon/two_years_garantee.png">
+                                <img src="./public/assets/img/icon/two_years_garantee.jpg">
                             </div>
                         </div>
                         <div class="col-8">
@@ -54,7 +55,7 @@
                     <div class="row align-items-center my-3">
                         <div class="col-4 text-center">
                             <div class="main-left_img">
-                                <img src="./public/assets/img/icon/present.png">
+                                <img src="./public/assets/img/icon/present.jpg">
                             </div>
                         </div>
                         <div class="col-8">
@@ -239,57 +240,71 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center">
-                                            <img src="./public/assets/img/catalog/cat1.png" class="img-fluid catalog__price jUrmImg">
-                                            <!-- <div class="catalog-present d-inline-flex flex-wrap align-items-center justify-content-center">
-                                                <div>
-                                                    <img src="./public/assets/img/icon/pod1.png" class="img-fluid mx-2">
-                                                    <img src="./public/assets/img/icon/pod2.png" class="img-fluid mx-2">
-                                                </div>
-                                                <div class="section_title font-weight-bold mx-2">в подарок</div>
-                                            </div> -->
+                                            <div class="px-4">
+                                                <img src="./public/assets/img/catalog/cat1.png" class="img-fluid catalog__price jUrmImg">
+                                            </div>
                                         </div>
                                         <div class="col-lg-8 px-5 mt-4 d-flex align-items-stretch justify-content-center flex-wrap">
                                             <div class="col-12 py-3">
                                                 <div class="row border-radius-10">
                                                     <div class="col-md-6 text-size-5">
-                                                        <ul class="text-left font-weight-normal">
+                                                        <ul class="text-left font-weight-normal catalog__price">
                                                             <li>- Марка двигателя: GX 160 (бензин)</li>
                                                             <li>- Объем двигателя: 121 куб.см.</li>
-                                                            <li>- Мощность двигателя: 6ю0 лс.</li>
-                                                            <li>- Объем топливного бака: 2.0 л</li>
+                                                            <li>- Мощность двигателя: <span class="jPower"></span> лс.</li>
+                                                            <li>- Объем топливного бака: <span class="jTankVolume"></span> л</li>
                                                             <li>- Объем масляного бака: 1.0 л</li>
-                                                            <li>- расход топлива: 0.395 л</li>
-                                                            <li>- Запуск двигателя: Ручной</li>
+                                                            <li>- расход топлива: <span class="jRaskhod"></span> л/ч</li>
+                                                            <li>- Запуск двигателя: Ручной л</li>
                                                             <li>- Охлаждение: Воздушное</li>
-                                                            <li>- Трансмиссия: Шестеренчатый редуктор</li>
-                                                            <li>- Количество передача: 1</li>
+                                                            <li>- Трансмиссия: <span class="jPrivod"></span> редуктор</li>
+                                                            <li>- Количество передача: <span class="catalog__price"><span class="jKolGear0">8</span>(<span class="jKolGear1">6</span> вперёд/<span class="jKolGear2">2</span> назад)</span></li>
                                                             <li>- Пониженная передача: Нет</li>
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-6 text-size-5">
-                                                        <ul class="text-left font-weight-normal">
-                                                            <li>- Минимальная ширина обработки: 20 см</li>
-                                                            <li>- Максимальная ширина обработки: 85 см</li>
-                                                            <li>- Максимальная глубина обработки: 20 см</li>
+                                                        <ul class="text-left font-weight-normal catalog__price">
+                                                            <li>- Минимальная ширина обработки: <span class="jShirinaObr0"></span> мм</li>
+                                                            <li>- Максимальная ширина обработки: <span class="jShirinaObr1"></span> мм</li>
+                                                            <li>- Максимальная глубина обработки: <span class="catalog__price"><span class="jGlubinaObr0">150</span>-<span class="jGlubinaObr1">300</span> мм</span></li>
                                                             <li>- Вал отбора мощности: Нет</li>
                                                             <li>- Дифференциал: Нет</li>
-                                                            <li>- Колёса: Нет</li>
-                                                            <li>- Тактность двигателя: 4-х тактный</li>
-                                                            <li>- Вес: 47 кг</li>
+                                                            <li>- Колёса: <span class="catalog__price"><span class="jRazmKoles0">4</span>x<span class="jRazmKoles1">8</span></span></li>
+                                                            <li>- Тактность двигателя: <span class="jEngine"></span></li>
+                                                            <li>- Вес: <span class="jVes"></span> кг</li>
                                                         </ul>
-                                                        <div class="py-1">
-                                                            <a href="#modal-order" data-toggle="modal"
-                                                                class="bg_gray py-2 border-radius-10 d-block font-weight-bold">Посчитать<br> с навесным оборудованием</a>
-                                                        </div>
-                                                        <div class="py-1 text-left text-size-7 font-weight-bold">
-                                                            Цена: <span class="catalog__price"><span class="jPrice">0</span> руб.</span>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-8">
+                                            <div class="catalog-present d-inline-flex flex-wrap align-items-center justify-content-center">
+                                                <div>
+                                                    <div class="d-inline-block p-4 rounded-circle catalog-present__item d-inline-flex align-items-center justify-content-center flex-column">
+                                                        <div class="">asd</div>
+                                                        <img src="./public/assets/img/icon/pod1.png" class="img-fluid mx-2">
+                                                    </div>
+                                                    <div class="d-inline-block p-4 rounded-circle catalog-present__item d-inline-flex align-items-center justify-content-center flex-column">
+                                                        <div class="">asd</div>
+                                                        <img src="./public/assets/img/icon/pod2.png" class="img-fluid mx-2">
+                                                    </div>
+                                                </div>
+                                                <div class="section_title font-weight-bold mx-2">в подарок!</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="px-3">
+                                                <div class="py-1">
+                                                    <a href="#modal-order" data-toggle="modal"
+                                                        class="bg_gray py-2 border-radius-10 d-block font-weight-bold">Посчитать<br> с навесным оборудованием</a>
+                                                </div>
+                                                <div class="py-1 text-left text-size-7 font-weight-bold">
+                                                    Цена: <span class="catalog__price"><span class="jPrice">0</span> руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="col-8 py-3">
-                                            <div class="px-3 section_title text-left">Модель: <span>asd</span></div>
+                                            <div class="px-3 section_title text-left catalog__price">Модель: <span class="jModel"></span></div>
                                         </div>
                                         <div class="col-4 py-3">
                                             <a href="#modal-order" data-toggle="modal" class="btm my-2 font-weight-bold border-radius-10 btn-danger py-2 px-5 text-size-6 d-inline-block">Купить</a>

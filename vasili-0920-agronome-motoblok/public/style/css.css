@@ -227,7 +227,7 @@ a:hover {
   transition: all 0.5s;
 }
 .nav-nav__item:hover{
-  color: #fff;
+  color: red;
 }
 @media(max-width: 768px){
   .nav-nav__item{
@@ -373,6 +373,11 @@ a:hover {
   font-size: 1.3rem;
   line-height: 1rem;
   font-weight: 700;
+}
+.catalog-present__item{
+  height: 140px;
+  width: 140px;
+  background-color: #af1313;
 }
 @media (max-width: 1600px){
   .castom_input .c__input label{
