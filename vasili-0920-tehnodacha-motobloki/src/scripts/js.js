@@ -166,29 +166,48 @@ document.addEventListener("DOMContentLoaded", function () {
         displayResult()
     
     
-        Array.prototype.forEach.call(document.querySelectorAll('.has-calculator, .modal-primer'), function (item) {
+        Array.prototype.forEach.call(document.querySelectorAll('.has-calculator'), function (item) {
             var itemProduct = item.querySelector('input[name="product"]').value;
             
-            if(item.classList.contains("modal-primer")){
-                item.id = 'modal-'+item.querySelector('input[name="product"]').value+'-primer';
+            var rendering = function(input_item){
+                input_item.querySelector('.has-calculator__title').textContent = calculatorData[itemProduct].title;
+                input_item.querySelector('.has-calculator__price').textContent = calculatorData[itemProduct].price+' руб.';
+                if(calculatorData[itemProduct].priceOld){
+                    input_item.querySelector('.has-calculator__priceOld').textContent = calculatorData[itemProduct].priceOld+ ' руб.';
+                }
+                input_item.querySelector('.has-calculator__img').href = calculatorData[itemProduct].img;
+                input_item.querySelector('.has-calculator__img img').src = calculatorData[itemProduct].img;
+                var addParameterToCard = function(nameClass, indexDataParam){
+                    if(item.querySelector('table .'+nameClass)){
+                        item.querySelector('.'+nameClass).textContent = calculatorData[itemProduct].parametrs[indexDataParam];
+                    }
+                }
+                addParameterToCard('has-calculator__engine', 1);
+                addParameterToCard('has-calculator__power', 3);
+                addParameterToCard('has-calculator__ves', 21);
+                addParameterToCard('has-calculator__manufacturer', 0);
+                addParameterToCard('has-calculator__warranty', 22);
+                addParameterToCard('has-calculator__liftCapacity', 23);
             }
+            rendering(item);
 
-            if(item.querySelector('.has-calculator__img').href){
-                item.querySelector('.has-calculator__img').dataset.fancybox = itemProduct;
-                item.querySelector('.has-calculator__img').href = calculatorData[itemProduct].img;
-            }
-            item.querySelector('.has-calculator__img img').src = calculatorData[itemProduct].img;
             if(item.querySelector('.has-calculator__btnDetails')){
                 item.querySelector('.has-calculator__btnDetails').href = '#modal-'+ itemProduct +'-primer';
+                item.querySelector('.has-calculator__btnDetails').onclick = function (){
+                    document.querySelector('.modal-primer').id = 'modal-'+item.querySelector('input[name="product"]').value+'-primer';
+                    document.querySelector('.modal-primer input[name="product"]').value = itemProduct;
+                    rendering(document.querySelector('.modal-primer'));
+                    for(var i=0; i<document.querySelectorAll('.modal-primer .modal-primer__parametrs').length; i++){
+                        document.querySelectorAll('.modal-primer .modal-primer__parametrs')[i].textContent = calculatorData[itemProduct].parametrs[i];
+                    }
+                }
             }
-            item.querySelector('.has-calculator__title').textContent = calculatorData[itemProduct].title;
-            item.querySelector('.has-calculator__price').innerHTML = '<div class="h3 text-red d-inline-block"><span class="jPrice">'+calculatorData[itemProduct].price+'</span> руб.</div>';
-            if(calculatorData[itemProduct].priceOld){
-                item.querySelector('.has-calculator__price').innerHTML += '<s class="h5 text-muted font-weight-light d-inline-block mx-2"><span class="jPriceOld">'+calculatorData[itemProduct].price+'</span> руб.</s>';
-            }
-            item.onclick = function () {
-                if(event.target && event.target.getAttribute('href') === ('#modal-product')) {
+            var addingGoods = function (event) {
+                if(event.target.getAttribute('href') === '#modal-product') {
                     $('.modal').modal('hide');
+                    if(this.classList.contains("modal-primer")){
+                        itemProduct = this.querySelector('input[name="product"]').value;
+                    }
                     if(oldJson.hasOwnProperty(itemProduct)){
                         var nevValCol = ++oldJson[itemProduct].col;
                         var nevValPrice = oldJson[itemProduct].onePrice * nevValCol;
@@ -202,6 +221,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 }
             }
+            item.onclick = addingGoods;
+            document.querySelector('.modal-primer').onclick = addingGoods;
         })
     } catch (error) {
         console.log(error);
