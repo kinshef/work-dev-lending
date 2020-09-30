@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+
+
+/*.fone_roboto{
+  font-family: Roboto, sans-serif;
+}*/
+/*@font-face {
+  font-family: "Phenomena";
+  src: url("../font/Phenomena/Phenomena-ExtraBold.eot");
+  src: url("../font/Phenomena/Phenomena-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("../font/Phenomena/Phenomena-ExtraBold.woff") format("woff"), 
+    url("../font/Phenomena/Phenomena-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}*/
+/*.font-weight-800{
+  font-weight: 800;
+}*/
+
+body {
+  font-family: Roboto, serif;
+}
+textarea{
+  resize: none;
+}
+ul{
+  padding-left: 0;
+}
+li{
+  list-style-type: none;
+}
+section{
+  /* overflow: hidden; */
+}
+/* Fix bootstrap */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1520px;
+  }
+}
+.modal-xl {
+  max-width: 1140px;
+}
+.carousel-control-prev,
+.carousel-control-next{
+  text-shadow: 2px 2px 2px black;
+}
+/* Reset */
+a {
+  color: #000;
+}
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+.opasiti-75{
+  opacity: .75;
+}
+.opasiti-50{
+  opacity: .50;
+}
+.border-radius-30{
+  border-radius: 30px;
+}
+.border-radius-15{
+  border-radius: 15px;
+  overflow: hidden;
+}
+.border-radius-10{
+  border-radius: 10px;
+  overflow: hidden;
+}
+.text-size-1{
+  font-size: 0.8em;
+}
+.text-size-2{
+  font-size: 0.9em;
+}
+.text-size-4{
+  font-size: 1.1em;
+}
+.text-size-5{
+  font-size: 1.2em;
+}
+.text-size-6{
+  font-size: 1.4em;
+}
+.text-size-7{
+  font-size: 1.7em;
+}
+.text-red{
+  color: red;
+}
+.text_green{
+  color: #368a38;
+}
+.c__section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.section_title{
+  font-size: 3rem;
+}
+@media (max-width: 768px) {
+  .section_title{
+    font-size: 2rem;
+  }
+}
+
+/* btn */
+.transition--slide {
+  position: relative;
+  overflow: hidden;
+}
+.transition--slide::before {
+  margin-left: 60px;
+  content: "";
+  width: 30px;
+  height: 300px;
+  background: #ffffff80;
+  -webkit-animation-delay: .05s;
+          animation-delay: .05s;
+  position: absolute;
+  left: -40px;
+  top: -150px;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+  -webkit-animation-name: slideme;
+          animation-name: slideme;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+@-webkit-keyframes slideme {
+  0% {
+    left: -30px;
+    margin-left: 0;
+  }
+  30% {
+    left: 110%;
+    margin-left: 80px;
+  }
+  100% {
+    left: 110%;
+    margin-left: 80px;
+  }
+}
+@keyframes slideme {
+  0% {
+    left: -30px;
+    margin-left: 0;
+  }
+  30% {
+    left: 110%;
+    margin-left: 80px;
+  }
+  100% {
+    left: 110%;
+    margin-left: 80px;
+  }
+}
+
+/* Custom */
+/* section-nav */
+.nav__logoWrap img{
+  max-width: 70px;
+  object-fit: contain;
+}
+.nav-iconClock img{
+  max-width: 60px;
+  object-fit: contain;
+}
+.nav__phoneWrap img{
+  max-width: 30px;
+}
+.nav__modalOrder a{
+  color: #368a38;
+  text-decoration: underline;
+  transition: all .4s;
+}
+.section-nav{
+  position: absolute;
+  overflow: visible;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+}
+.section-nav .main-nav {
+  border-radius: 15px;
+  background-color: #ffffff;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  border: 1px solid rgba(54,138,56,0.3);
+  transform: translate(0,50%);
+  transition: all .4s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 10px 10px 0px rgba(54,138,56,0.3);
+}
+.section-nav .main-nav.fixHead{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  z-index: 5;
+  border-radius: 0 0 15px 15px;
+  transform: translate(0);
+}
+.main-nav a.active,
+.main-nav a:hover{
+  color: #f68341;
+}
+.main-nav a:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 70%;
+  height: 2px;
+  background-color: none;
+  transition: all .4s;
+}
+.main-nav a.active:before,
+.main-nav a:hover:before{
+  background-color: #f68341;
+}
+
+/* section-header */
+.section-header {
+  overflow: hidden;
+  position: relative;
+  background: url("../assets/img/back/gory-derevya-peyzazh.jpg") no-repeat 100% 50%;
+  background-size: cover;
+  min-height: 80vh;
+  /* padding-top: 5rem; */
+  z-index: 1;
+}
+.section-header::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0.1)));
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.1));
+}
+.section-header:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  opacity: 0.65;
+  transform: translate(-25%, -50%)rotate(-60deg);
+  background-color: #ffffff;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  box-shadow: 0px 0px 50px 100px rgba(255,255,255,1);
+}
+.sale-block {
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  right: 0;
+  border-radius: 50%;
+  height: 12rem;
+  width: 12rem;
+  background-color: #f68341;
+}
+.youtube-btn {
+  margin-left: 6rem;
+  width: 4rem;
+}
+
+.header-bonus{
+  border: #4c933f solid 5px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.header-bonus__svgWrap{
+  cursor: pointer;
+}
+.header-bonus__svgWrap svg{
+  background-color: red;
+  width: 60px;
+}
+
+
+
+
+
+
+
+
+
+.h200{
+  height: 2000px; 
+}
