@@ -53,6 +53,18 @@ $(function () {
         return false
     });
 
+
+
+    $(".owl-carousel-modal").owlCarousel({
+        items: 1,
+        nav: true,
+        loop: true,
+        dots: false,
+        autoHeight:true,
+        navText: ['<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-angle-left fa-stack-1x fa-inverse"></i></span>', '<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-angle-right fa-stack-1x fa-inverse"></i></span>'],
+    });
+
+
 // $("a.smoothscroll").click(function(a) {
 //     "" !== this.hash && (a.preventDefault(), a = this.hash, $("html, body").animate({
 //         scrollTop: $(a).offset().top
@@ -81,7 +93,7 @@ $(function () {
 
 var mainNav = document.querySelector('.main-nav');
 document.onscroll = function () {
-    if(window.pageYOffset >= 100){
+    if(window.pageYOffset >= 100 && document.body.offsetWidth >= 992 || window.pageYOffset >= 240 && document.body.offsetWidth < 992){
         mainNav.classList.add('fixHead');
     } else {
         mainNav.classList.remove('fixHead');
@@ -108,11 +120,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     headerBlock.addEventListener("mousemove", function (event) {
-        blockMove(event);
-        if (event.clientX > maxClientX || event.clientY > maxClientY) {
-            blockStop();
+        if(document.body.offsetWidth > 1200){
+            blockMove(event);
+            if (event.clientX > maxClientX || event.clientY > maxClientY) {
+                blockStop();
+            }
         }
-    }); 
+    });
     headerBlock.addEventListener("mouseout", function () {
         blockStop();
     });

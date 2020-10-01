@@ -1,22 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
 
-
-/*.fone_roboto{
-  font-family: Roboto, sans-serif;
-}*/
-/*@font-face {
-  font-family: "Phenomena";
-  src: url("../font/Phenomena/Phenomena-ExtraBold.eot");
-  src: url("../font/Phenomena/Phenomena-ExtraBold.eot?#iefix") format("embedded-opentype"),
-    url("../font/Phenomena/Phenomena-ExtraBold.woff") format("woff"), 
-    url("../font/Phenomena/Phenomena-ExtraBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 800;
-}*/
-/*.font-weight-800{
-  font-weight: 800;
-}*/
-
 body {
   font-family: Roboto, serif;
 }
@@ -28,9 +11,6 @@ ul{
 }
 li{
   list-style-type: none;
-}
-section{
-  /* overflow: hidden; */
 }
 /* Fix bootstrap */
 @media (min-width: 1600px) {
@@ -243,7 +223,8 @@ a:hover {
   background: url("../assets/img/back/gory-derevya-peyzazh.jpg") no-repeat 100% 50%;
   background-size: cover;
   min-height: 80vh;
-  /* padding-top: 5rem; */
+  padding-top: 9rem;
+  padding-bottom: 5rem;
   z-index: 1;
 }
 .section-header::before {
@@ -260,12 +241,12 @@ a:hover {
   content: '';
   position: absolute;
   z-index: -1;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  left: 0;
+  height: 200rem;
+  width: 140rem;
+  top: -125rem;
+  left: -70rem;
   opacity: 0.65;
-  transform: translate(-25%, -50%)rotate(-60deg);
+  transform: rotate(30deg);
   background-color: #ffffff;
   background-position: center center;
   border-color: transparent;
@@ -280,13 +261,11 @@ a:hover {
   border-radius: 50%;
   height: 12rem;
   width: 12rem;
-  background-color: #f68341;
+  background-color: #368a38;
 }
 .youtube-btn {
-  margin-left: 6rem;
   width: 4rem;
 }
-
 .header-bonus{
   border: #4c933f solid 5px;
   border-radius: 10px;
@@ -297,7 +276,128 @@ a:hover {
 }
 .header-bonus__svgWrap svg{
   background-color: red;
-  width: 60px;
+  width: 50px;
+}
+.header-bonus img{
+  max-width: 80px;
+}
+.header__imgWrap{
+  max-width: 500px;
+  max-height: 600px;
+  transform: translate(-30%);
+  display: flex;
+}
+.header__imgWrap:last-child{
+  transform: translate(-45%);
+}
+.header__imgWrap img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+@media(max-width: 1200px){
+  .header__imgWrap:last-child,
+  .header__imgWrap{
+    transform: translate(-0%);
+  }
+  .header__imgWrap img{
+    max-width: 135%;
+  }
+}
+@media(max-width: 992px){
+  .section-header{
+    padding-top: 19rem;
+  }
+  .header__imgWrap img{
+    max-width: 100%;
+  }
+  .sale-block{
+    top: auto;
+    right: 1rem;
+    bottom: 3rem;
+  }
+}
+@media(max-width: 576px){
+  .section-header{
+    padding-top: 24rem;
+  }
+  .sale-block{
+    right: -5rem;
+    bottom: 1rem;
+  }
+  .sale-block__text {
+    max-width: 100px;
+  }
+  .header-bonus__svgWrap svg {
+    width: 30px;
+  }
+  .section-header:after{
+    left: -85rem;
+  }
+}
+
+/* section-order */
+.section-order {
+  position: relative;
+  background: url("../assets/img/back/podlozhka-min.webp") no-repeat center center;
+  background-size: auto 100%;
+  z-index: 1;
+  padding: 5rem 0;
+  margin: -5rem 0;
+}
+.section-order img {
+  max-width: 6rem;
+}
+
+/* section-catalog */
+.hero-hexagons{
+  background-image: url("../assets/img/back/bg_catalog.svg");
+}
+.catalog-card{
+  position: relative;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: white;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0.1rem 0.3rem 1rem rgba(0,0,0,0.6) !important;
+}
+.catalog-card__title {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+  border-radius: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+  background-image: linear-gradient(0deg, #5a9d0f, #81c916);
+}
+.catalog-card__table{
+  text-align: left;
+}
+.catalog-card__table th{
+  color: green;
+}
+.catalog-card__label{
+  position: absolute;
+  top:0;
+  right:0;
+  font-size: 1.5rem;
+  transform: translate(-10%,-50%);
+}
+.catalog-card__price{
+  background: #b9ed82;
+}
+.btn_catalog{
+  background-color: transparent;
+  border: 2px solid green;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color:blue;
+}
+.btn_catalog:hover{
+  background-color: green;
+  color:#fff;
 }
 
 
@@ -308,6 +408,46 @@ a:hover {
 
 
 
-.h200{
-  height: 2000px; 
+
+
+
+
+/* modal-product */
+.modal-product .close{
+  position: absolute;
+  top: -25px;
+  right: -56px;
+  z-index: 2;
+  padding: 1rem;
+}
+@media(max-width: 700px){
+  .modal-product .close{
+    top: 0;
+    right: 0;
+  }
+}
+.modal-product ul> li>span{
+  color: green;
+  font-weight: 700;
+}
+.owl-carousel-modal{
+  overflow: hidden;
+}
+.owl-carousel-modal .owl-nav .owl-prev,
+.owl-carousel-modal .owl-nav .owl-next{
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  font-size: 24px;
+  opacity: 0.7;
+}
+.owl-carousel-modal .owl-nav .owl-prev{
+  left: 1rem;
+}
+.owl-carousel-modal .owl-nav .owl-next{
+  right: 1rem;
+}
+.owl-carousel-modal .owl-nav .owl-prev:hover,
+.owl-carousel-modal .owl-nav .owl-next:hover{
+  opacity: 1;
 }
