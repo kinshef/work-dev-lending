@@ -157,6 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
   $(".js-nav-scroll").nav({
     offset: 150
   });
+  
 });
 
   //Close consultation modal
