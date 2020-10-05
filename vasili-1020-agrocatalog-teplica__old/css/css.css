@@ -335,14 +335,26 @@ max-width: 6rem;
 /* section-header-main */
 .section-header-main{
   font-family: 'Ubuntu', sans-serif;
-  background: url(../img/back/tepl2.png) no-repeat 5% center;
-  background-size: contain;
+  background: url(../img/back/tepl2.png) no-repeat 10% center;
+  background-size: auto 55%;
+  position: relative;
+  z-index: 0;
+  overflow-x: hidden;
+}
+.section-header-main::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  width: 100%;
+  background: url(../img/back/grass.png) center center;
+  background-size: auto 100%;
 }
 .main-form{
   background-color: #f4ede5;
-}
-.main-form:before{
-  content: '';
+  margin-bottom: 10rem;
 }
 .main-form__title{
   color: #746d6d;
@@ -355,16 +367,84 @@ max-width: 6rem;
   font-style: italic;
   border: 3px solid #7dce33;
 }
-
-
-
-
-
-
-
-
-
-
+.main-form::before{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  right: 0;
+  transform: translate(50%);
+  top: 0;
+  bottom: 0;
+  background: url(../img/icons/vegetables.png) no-repeat right center;
+  background-size: contain;
+}
+.main-form::after{
+  content: '';
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  transform: translate(50%);
+  height: 120px;
+  width: 120px;
+  background: url(../img/icons/peper.png) no-repeat right center;
+  background-size: contain;
+}
+.main-timer{
+  background-color: #f4ede5;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.main-timer__text,
+.main-timer__title{
+  color: #34692c;
+}
+.main-timer__text{
+  font-size: 0.9em;
+}
+.main-timer .countdown-week{
+  font-family: 'Ubuntu', sans-serif;
+}
+.main-timer .countdown-week .lightcountdown__digit{
+  background-color: transparent;
+  color: #000;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: auto;
+}
+.main-timer .countdown-week .lightcountdown__delimeter{
+  padding: 0;
+}
+.main-timer .countdown-week .lightcountdown__text{
+  font-weight: 300;
+  font-size: 0.4em;
+  margin: 0;
+}
+.main-timer .countdown-week .lightcountdown__item{
+  margin: 0 0.25rem;
+}
+.main-timer::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  transform: translate(-20%,20%);
+  height: 120px;
+  width: 120px;
+  background: url(../img/icons/shildik.png) no-repeat right center;
+  background-size: contain;
+}
+@media(max-width: 992px){
+  .main-timer .countdown-week{
+    font-size: 1.6rem;
+  }
+  .main-form{
+    margin-bottom: 2rem;
+  }
+}
 
 /* ADVANTAGES */
 #section-company{

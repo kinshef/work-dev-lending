@@ -271,6 +271,20 @@ a:hover {
   background-color: red;
   width: 50px;
 }
+.header-bonus__svgText{
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+  top: 0;
+  transform: translate(0, -100%);
+  z-index: 1;
+  min-width: 200px;
+  transition: all .6s;
+  opacity: 0;
+  pointer-events: none;
+}
+.header-bonus__svgWrap:hover .header-bonus__svgText{
+  opacity: 1;
+  pointer-events: painted;
+}
 .header-bonus img{
   max-width: 80px;
 }
@@ -327,6 +341,9 @@ a:hover {
   }
   .section-header:after{
     left: -85rem;
+  }
+  .header-bonus__svgText{
+    display: none;
   }
 }
 
@@ -392,6 +409,30 @@ a:hover {
 .btn_catalog:hover{
   background-color: green;
   color:#fff;
+}
+.catalog-plus{
+  cursor: pointer;
+  top: 0;
+  right: 0;
+}
+.catalog-plus svg{
+  background-color: red;
+  width: 40px;
+}
+.catalog-plus__text{
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+  top: 0;
+  right: 0;
+  transform: translate(0, -100%);
+  z-index: 1;
+  min-width: 200px;
+  transition: all .6s;
+  opacity: 0;
+  pointer-events: none;
+}
+.catalog-plus:hover .catalog-plus__text{
+  opacity: 1;
+  pointer-events: painted;
 }
 
 /* section-video */
