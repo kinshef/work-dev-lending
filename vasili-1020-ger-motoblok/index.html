@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" integrity="sha256-HtCCUh9Hkh//8U1OwcbD8epVEUdBvuI8wj1KtqMhNkI=" crossorigin="anonymous">
     <!-- Fontawesome -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Owl carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" integrity="sha256-AWqwvQ3kg5aA5KcXpX25sYKowsX97sTCTbeo33Yfyk0=" crossorigin="anonymous">
     <!-- Fancybox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
 
@@ -174,92 +176,8 @@
 
     <section id="section-catalog" class="section-catalog hero-hexagons">
 
-    <div class="container-fluid py-3">
-        <div class="filter__buttons p-3">
-            <div class="h2 text-alt text-center">Фильтры:</div>
-            <div class="filter__buttons__group">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 text-lg-right">
-                        <b>Длина (м): <a href="#modal-question-length" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
-                    </div>
-                    <div class="col-lg-7">
-                        <a href="javascript:;" class="active filter__button filter__button__custom" data-name="length" data-value="4">Все</a>
-                        <a href="javascript:;" class="filter__button filter__button__custom" data-name="length" data-value="4">4</a>
-                        <a href="javascript:;" class="filter__button filter__button__custom" data-name="length" data-value="6">6</a>
-                        <a href="javascript:;" class="filter__button filter__button__custom" data-name="length" data-value="8">8</a>
-                        <a href="javascript:;" class="filter__button filter__button__custom" data-name="length" data-value="10">10</a>
-                    </div>
-                </div>
-            </div>
-            <div class="filter__buttons__group">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 text-lg-right">
-                        <b>Интервал (м): <a href="#modal-question-interval" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
-                    </div>
-                    <div class="col-lg-7">
-                        <a href="javascript:;" class="active filter__button filter__button__custom" data-name="interval" data-value="1">Все</a>
-                        <a href="javascript:;" class="filter__button filter__button__custom" data-name="interval" data-value="1">1</a>
-                        <a href="javascript:;" class="filter__button filter__button__custom" data-name="interval" data-value="0_67">0,67</a>
-                        <a href="javascript:;" class="filter__button filter__button__custom" data-name="interval" data-value="0_5">0,5</a>
-                    </div>
-                </div>
-            </div>
-            <div class="filter__buttons__group" data-group="shirina">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 text-lg-right">
-                        <b>Ширина (м): <a href="#modal-question-shirina" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
-                    </div>
-                    <div class="col-lg-7">
-                        <a href="javascript:;" class="active filter__button" data-filter="">Все</a>
-                        <a href="javascript:;" class="filter__button" data-filter=".filter-shirina-2">2</a>
-                        <a href="javascript:;" class="filter__button" data-filter=".filter-shirina-2_4">2,4</a>
-                        <a href="javascript:;" class="filter__button" data-filter=".filter-shirina-3">3</a>
-                        <a href="javascript:;" class="filter__button" data-filter=".filter-shirina-3_5">3,5</a>
-                        <a href="javascript:;" class="filter__button" data-filter=".filter-shirina-4">4</a>
-                    </div>
-                </div>
-            </div>
-            <div class="filter__buttons__group" data-group="profil">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 text-lg-right">
-                        <b>Профиль (мм): <a href="#modal-question-profil" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
-                    </div>
-                    <div class="col-lg-7">
-                        <a href="javascript:;" class="active filter__button" data-filter="">Все</a>
-                        <a href="javascript:;" class="filter__button" data-filter=".filter-profil-20">20х20</a>
-                        <a href="javascript:;" class="filter__button" data-filter=".filter-profil-40">40х20</a>
-                    </div>
-                </div>
-            </div>
-            <div class="filter__buttons__group" data-group="kreplenie">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 text-lg-right">
-                        <b>Крепление: <a href="#modal-question-kreplenie" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
-                    </div>
-                    <div class="col-lg-7">
-                        <a href="javascript:;" class="active filter__button" data-filter="">Все</a>
-                        <a href="javascript:;" class="filter__button" data-filter=".filter-kreplenie-bolt">Болт</a>
-                        <a href="javascript:;" class="filter__button" data-filter=".filter-kreplenie-krab">Краб</a>
-                    </div>
-                </div>
-            </div>
-            <div class="filter__buttons__group" data-group="duga">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 text-lg-right">
-                        <b>Дуга: <a href="#modal-question-duga" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
-                    </div>
-                    <div class="col-lg-7">
-                        <a href="javascript:;" class="active filter__button" data-filter="">Все</a>
-                        <a href="javascript:;" class="filter__button" data-filter=".filter-duga-1">Стандартная</a>
-                        <a href="javascript:;" class="filter__button" data-filter=".filter-duga-2">Двойная</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
         <div class="container c__section">
-            <div id="filter" class="row">
+            <div class="row">
 
                 <!-- РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ HFPLTKBNTKM NJDFHJD -->
 
@@ -268,7 +186,7 @@
                         <div class="catalog__akciya">
                             <img src="./public/assets/img/icon/podarok.png" alt="akciya">
                         </div>
-                        <input type="hidden" name="product" value="teplica_3">
+                        <input type="hidden" name="product" value="product1">
                         <div class="catalog__card catalog__card--lg app-border" style="margin-bottom: 5rem">
 
                             <div class="catalog__title catalog__title--bordered"><span class="d-sm-inline d-none">Теплица <br class="d-lg-none d-block"> Сибирская Ширина 3м</span><span class="d-sm-none d-inline">Сибирская <br class="d-lg-none d-block">Ширина 3м</span></div>
@@ -280,18 +198,18 @@
 
                                         <div class="tab-content">
                                             
-                                            <div class="tab-pane fade show active" id="tab-content-teplica_3-dop1">
+                                            <div class="tab-pane fade show active" id="tab-content-product1-dop1">
                                                 <div class="catalog__img has-calculator__img">
                                                     <div class="card__label card__label--orange1 animated pulse infinite">
                                                         <i class="fa fa-thumbs-up"></i> ХИТ ПРОДАЖ!
                                                     </div>
-                                                    <a href="" data-fancybox="">
-                                                        <img class="img-fluid" src="">
+                                                    <a href="./public/assets/img/card/sibirskaya_20.jpg" data-fancybox="">
+                                                        <img class="img-fluid" src="./public/assets/img/card/sibirskaya_20.jpg">
                                                     </a>
                                                 </div>
                                             </div>
 
-                                            <div class="tab-pane fade" id="tab-content-teplica_3-dop2">
+                                            <div class="tab-pane fade" id="tab-content-product1-dop2">
                                                 <div class="catalog__img">
                                                     <div class="card__label card__label--orange1 animated pulse infinite">
                                                         <i class="fa fa-thumbs-up"></i> ХИТ ПРОДАЖ!
@@ -302,7 +220,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="tab-pane fade" id="tab-content-teplica_3-dop3">
+                                            <div class="tab-pane fade" id="tab-content-product1-dop3">
                                                 <div class="catalog__img">
                                                     <div class="card__label card__label--orange1 animated pulse infinite">
                                                         <i class="fa fa-thumbs-up"></i> ХИТ ПРОДАЖ!
@@ -313,7 +231,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="tab-pane fade" id="tab-content-teplica_3-dop4">
+                                            <div class="tab-pane fade" id="tab-content-product1-dop4">
                                                 <div class="catalog__img">
                                                     <div class="card__label card__label--orange1 animated pulse infinite">
                                                         <i class="fa fa-thumbs-up"></i> ХИТ ПРОДАЖ!
@@ -324,7 +242,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="tab-pane fade" id="tab-content-teplica_3-dop5">
+                                            <div class="tab-pane fade" id="tab-content-product1-dop5">
                                                 <div class="catalog__img">
                                                     <div class="card__label card__label--orange1 animated pulse infinite">
                                                         <i class="fa fa-thumbs-up"></i> ХИТ ПРОДАЖ!
@@ -340,16 +258,16 @@
                                         <ul class="nav d-flex justify-content-around align-items-center">
                                             
                                             <li class="nav-item">
-                                                <a class="nav-link active" data-toggle="tab" href="#tab-content-teplica_3-dop1">
+                                                <a class="nav-link active" data-toggle="tab" href="#tab-content-product1-dop1">
                                                     <div class="tab-content__imgDop text-center has-calculator__img">
-                                                        <img src="" class="img-fluid">
+                                                        <img src="./public/assets/img/card/sibirskaya_20.jpg" class="img-fluid">
                                                         <div class="font-weight-bold text-uppercase mt-2">Автополив</div>
                                                     </div>
                                                 </a>
                                             </li>
 
                                             <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#tab-content-teplica_3-dop2">
+                                                <a class="nav-link" data-toggle="tab" href="#tab-content-product1-dop2">
                                                     <div class="tab-content__imgDop text-center">
                                                         <img src="./public/assets/img/dop/dop1.png" class="img-fluid">
                                                         <div class="font-weight-bold text-uppercase mt-2">Автополив</div>
@@ -358,7 +276,7 @@
                                             </li>
 
                                             <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#tab-content-teplica_3-dop3">
+                                                <a class="nav-link" data-toggle="tab" href="#tab-content-product1-dop3">
                                                     <div class="tab-content__imgDop text-center">
                                                         <img src="./public/assets/img/dop/dop2.png" class="img-fluid">
                                                         <div class="font-weight-bold text-uppercase mt-2">Автополив</div>
@@ -367,7 +285,7 @@
                                             </li>
 
                                             <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#tab-content-teplica_3-dop4">
+                                                <a class="nav-link" data-toggle="tab" href="#tab-content-product1-dop4">
                                                     <div class="tab-content__imgDop text-center">
                                                         <img src="./public/assets/img/dop/dop3.png" class="img-fluid">
                                                         <div class="font-weight-bold text-uppercase mt-2">Автополив</div>
@@ -376,7 +294,7 @@
                                             </li>
 
                                             <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#tab-content-teplica_3-dop5">
+                                                <a class="nav-link" data-toggle="tab" href="#tab-content-product1-dop5">
                                                     <div class="tab-content__imgDop text-center">
                                                         <img src="./public/assets/img/dop/dop4.png" class="img-fluid">
                                                         <div class="font-weight-bold text-uppercase mt-2">Автополив</div>
@@ -391,104 +309,83 @@
                                         <table class="table table-sm table-striped">
                                             <tbody>
                                                 <tr>
-                                                    <th><span class="d-sm-inline d-none">Ширина (м): </span><span class="d-sm-none d-inline">Ширина: </span><a href="#modal-question-shirina"
-                                                            data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
-                                                                aria-hidden="true"></i></a></th>
+                                                    <th>
+                                                        <span class="d-sm-inline d-none">Ширина (м): </span>
+                                                        <span class="d-sm-none d-inline">Ширина: </span>
+                                                        <a href="#modal-question-shirina" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        </a>
+                                                    </th>
                                                     <td>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="shirina" value="3" checked="">
-                                                            <span class="catalog__text__label">3</span>
-                                                        </label>
+                                                        <span class="catalog__text__label">3</span>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th><span class="d-sm-inline d-none">Длина (м): </span><span class="d-sm-none d-inline">Длина: </span><a href="#modal-question-length"
-                                                            data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
-                                                                aria-hidden="true"></i></a></th>
+                                                    <th>
+                                                        <span class="d-sm-inline d-none">Длина (м): </span>
+                                                        <span class="d-sm-none d-inline">Длина: </span>
+                                                        <a href="#modal-question-length" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        </a>
+                                                    </th>
                                                     <td>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="length" value="4" checked="">
-                                                            <span class="catalog__input__label">4</span>
-                                                        </label>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="length" value="6">
-                                                            <span class="catalog__input__label">6</span>
-                                                        </label>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="length" value="8">
-                                                            <span class="catalog__input__label">8</span>
-                                                        </label>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="length" value="10">
-                                                            <span class="catalog__input__label">10</span>
-                                                        </label>
+                                                        <span class="catalog__text__label">4</span>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th><span class="d-sm-inline d-none">Интервал (м): </span><span class="d-sm-none d-inline">Интервал: </span><a href="#modal-question-interval"
-                                                            data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
-                                                                aria-hidden="true"></i></a></th>
+                                                    <th>
+                                                        <span class="d-sm-inline d-none">Интервал (м): </span>
+                                                        <span class="d-sm-none d-inline">Интервал: </span>
+                                                        <a href="#modal-question-interval" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        </a>
+                                                    </th>
                                                     <td>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="interval" value="1" checked="">
-                                                            <span class="catalog__input__label">1</span>
-                                                        </label>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="interval" value="0_67">
-                                                            <span class="catalog__input__label">0,67</span>
-                                                        </label>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="interval" value="0_5">
-                                                            <span class="catalog__input__label">0,5</span>
-                                                        </label>
+                                                        <span class="catalog__text__label">4</span>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th><span class="d-sm-inline d-none">Стрингеры (шт): </span><span class="d-sm-none d-inline">Стрингер: </span><a href="#modal-question-stringery"
-                                                        data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
-                                                            aria-hidden="true"></i></a></th>
-                                                <td>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="stringery" value="5" checked="">
-                                                            <span class="catalog__input__label">5</span>
-                                                        </label>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="stringery" value="7">
-                                                            <span class="catalog__input__label">7</span>
-                                                        </label>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th><span class="d-sm-inline d-none">Профиль (мм): </span><span class="d-sm-none d-inline">Труба: </span><a href="#modal-question-profil"
-                                                            data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
-                                                                aria-hidden="true"></i></a></th>
+                                                    <th>
+                                                        <span class="d-sm-inline d-none">Стрингеры (шт): </span>
+                                                        <span class="d-sm-none d-inline">Стрингер: </span>
+                                                        <a href="#modal-question-stringery" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        </a>
+                                                    </th>
                                                     <td>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="profil" value="20" checked="">
-                                                            <span class="catalog__input__label">20х20</span>
-                                                        </label>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="profil" value="40">
-                                                            <span class="catalog__input__label">40х20</span>
-                                                        </label>
+                                                        <span class="catalog__text__label">4</span>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th>Крепеж: <a href="#modal-question-kreplenie"
-                                                            data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
-                                                                aria-hidden="true"></i></a></th>
+                                                    <th>
+                                                        <span class="d-sm-inline d-none">Профиль (мм): </span>
+                                                        <span class="d-sm-none d-inline">Труба: </span>
+                                                        <a href="#modal-question-profil" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        </a>
+                                                    </th>
                                                     <td>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="kreplenie" value="bolt"
-                                                                checked="">
-                                                            <span class="catalog__text__label">Болт</span>
-                                                        </label>
+                                                        <span class="catalog__text__label">20х20</span>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th>Дуга: <a href="#modal-question-duga"
-                                                            data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
-                                                                aria-hidden="true"></i></a></th>
+                                                    <th>
+                                                        <span class="">Крепеж: </span>
+                                                        <a href="#modal-question-kreplenie" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        </a>
+                                                    </th>
+                                                    <td>
+                                                        <span class="catalog__text__label">Болт</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <span class="">Дуга: </span>
+                                                        <a href="#modal-question-duga" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        </a>
+                                                    </th>
                                                     <td>
                                                         <label class="catalog__input m-0">
                                                             <input type="radio" name="additional[]" value="dostavka_0"
@@ -504,48 +401,69 @@
                                             </tbody>
                                         </table>
 
+                                        <div>
+                                            <hr>
+                                            <a class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                                                data-target="#catalogDopKompl_1" aria-controls="catalogDopKompl_1"
+                                                aria-expanded="false">
+                                                <div class="text-size-6 font-weight-bold btn btn-primary">↓ Дополнительная комплектация ↓</div>
+                                            </a>
+                                            <div class="collapse row" id="catalogDopKompl_1">
+                                                <ul class="col-6">
+                                                    <li>- Форточка</li>
+                                                    <li>- Автоинтеллект</li>
+                                                    <li>- Лента утепления</li>
+                                                    <li>- Автополив</li>
+                                                </ul>
+                                                <ul class="col-6">
+                                                    <li>- Форточка</li>
+                                                    <li>- Автоинтеллект</li>
+                                                    <li>- Лента утепления</li>
+                                                    <li>- Автополив</li>
+                                                </ul>
+                                            </div>
+                                            <hr>
+                                        </div>
+
+                                        <a href="#modal-product-product1" data-toggle="modal" class="btn-link">Полная характеристика</a>
+
                                         <div class="catalog__subblock text-center mt-4">
                                             <div class="catalog__subblock__title">
-                                                Рассрочка: <a href="#modal-question-bank" data-toggle="modal"><i
-                                                        class="fa fa-question-circle-o fa-lg"
-                                                        aria-hidden="true"></i></a>
+                                                <span class="">Рассрочка: </span>
+                                                <a href="#modal-question-bank" data-toggle="modal">
+                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                             <div class="catalog__subblock__text">
                                                 <div class="row px-3">
                                                     <div class="col-4 catalog__bank col-md-2">
                                                         <a href="#modal-question-bank" data-toggle="modal">
-                                                            <img src="./public/assets/img/bank/halva.jpg"
-                                                                class="img-fluid" alt="halva">
+                                                            <img src="./public/assets/img/bank/halva.jpg" class="img-fluid" alt="halva">
                                                         </a>
                                                     </div>
                                                     <div class="col-4 catalog__bank col-md-2">
                                                         <a href="#modal-question-bank" data-toggle="modal">
-                                                            <img src="./public/assets/img/bank/cherepaha.jpg"
-                                                                class="img-fluid" alt="cherepaha">
+                                                            <img src="./public/assets/img/bank/cherepaha.jpg" class="img-fluid" alt="cherepaha">
                                                         </a>
                                                     </div>
                                                     <div class="col-4 catalog__bank col-md-2">
                                                         <a href="#modal-question-bank" data-toggle="modal">
-                                                            <img src="./public/assets/img/bank/fun.jpg" class="img-fluid"
-                                                                alt="kartafun">
+                                                            <img src="./public/assets/img/bank/fun.jpg" class="img-fluid" alt="kartafun">
                                                         </a>
                                                     </div>
                                                     <div class="col-4 catalog__bank col-md-2">
                                                         <a href="#modal-question-bank" data-toggle="modal">
-                                                            <img src="./public/assets/img/bank/magnit.jpg"
-                                                                class="img-fluid" alt="magnit">
+                                                            <img src="./public/assets/img/bank/magnit.jpg" class="img-fluid" alt="magnit">
                                                         </a>
                                                     </div>
                                                     <div class="col-4 catalog__bank col-md-2">
                                                         <a href="#modal-question-bank" data-toggle="modal">
-                                                            <img src="./public/assets/img/bank/pokupok.jpg"
-                                                                class="img-fluid" alt="pokupok">
+                                                            <img src="./public/assets/img/bank/pokupok.jpg" class="img-fluid" alt="pokupok">
                                                         </a>
                                                     </div>
                                                     <div class="col-4 catalog__bank col-md-2">
                                                         <a href="#modal-question-bank" data-toggle="modal">
-                                                            <img src="./public/assets/img/bank/smart.jpg"
-                                                                class="img-fluid" alt="smart">
+                                                            <img src="./public/assets/img/bank/smart.jpg" class="img-fluid" alt="smart">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -553,10 +471,10 @@
                                         </div>
 
                                         <div class="catalog__price--old">
-                                            <span class="calculator-price-old">528</span> руб.
+                                            <span class="calculator-price-old">0</span> руб.
                                         </div>
                                         <div class="catalog__price catalog__price--lg">
-                                            <span class="calculator-price">264</span> руб.
+                                            <span class="calculator-price">0</span> руб.
                                         </div>
 
 
@@ -591,7 +509,7 @@
                         <div class="catalog__akciya">
                             <img src="./public/assets/img/icon/podarok1.png" alt="akciya">
                         </div>
-                        <input type="hidden" name="product" value="teplica_4">
+                        <input type="hidden" name="product" value="product2">
                         <div class="catalog__card catalog__card--lg app-border" style="margin-bottom: 5rem">
 
                             <div class="catalog__title catalog__title--bordered"><span class="d-sm-inline d-none">Теплица <br class="d-lg-none d-block"> Сибирская Ширина 3м</span><span class="d-sm-none d-inline">Сибирская <br class="d-lg-none d-block">Ширина 3м</span></div>
@@ -603,18 +521,18 @@
 
                                         <div class="tab-content">
                                             
-                                            <div class="tab-pane fade show active" id="tab-content-teplica_4-dop1">
+                                            <div class="tab-pane fade show active" id="tab-content-product2-dop1">
                                                 <div class="catalog__img has-calculator__img">
                                                     <div class="card__label card__label--orange1 animated pulse infinite">
                                                         <i class="fa fa-thumbs-up"></i> ХИТ ПРОДАЖ!
                                                     </div>
-                                                    <a href="" data-fancybox="">
-                                                        <img class="img-fluid" src="">
+                                                    <a href="./public/assets/img/card/sibirskaya_20.jpg" data-fancybox="">
+                                                        <img class="img-fluid" src="./public/assets/img/card/sibirskaya_20.jpg">
                                                     </a>
                                                 </div>
                                             </div>
 
-                                            <div class="tab-pane fade" id="tab-content-teplica_4-dop2">
+                                            <div class="tab-pane fade" id="tab-content-product2-dop2">
                                                 <div class="catalog__img">
                                                     <div class="card__label card__label--orange1 animated pulse infinite">
                                                         <i class="fa fa-thumbs-up"></i> ХИТ ПРОДАЖ!
@@ -625,7 +543,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="tab-pane fade" id="tab-content-teplica_4-dop3">
+                                            <div class="tab-pane fade" id="tab-content-product2-dop3">
                                                 <div class="catalog__img">
                                                     <div class="card__label card__label--orange1 animated pulse infinite">
                                                         <i class="fa fa-thumbs-up"></i> ХИТ ПРОДАЖ!
@@ -636,7 +554,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="tab-pane fade" id="tab-content-teplica_4-dop4">
+                                            <div class="tab-pane fade" id="tab-content-product2-dop4">
                                                 <div class="catalog__img">
                                                     <div class="card__label card__label--orange1 animated pulse infinite">
                                                         <i class="fa fa-thumbs-up"></i> ХИТ ПРОДАЖ!
@@ -647,7 +565,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="tab-pane fade" id="tab-content-teplica_4-dop5">
+                                            <div class="tab-pane fade" id="tab-content-product2-dop5">
                                                 <div class="catalog__img">
                                                     <div class="card__label card__label--orange1 animated pulse infinite">
                                                         <i class="fa fa-thumbs-up"></i> ХИТ ПРОДАЖ!
@@ -663,16 +581,16 @@
                                         <ul class="nav d-flex justify-content-around align-items-center">
                                             
                                             <li class="nav-item">
-                                                <a class="nav-link active" data-toggle="tab" href="#tab-content-teplica_4-dop1">
+                                                <a class="nav-link active" data-toggle="tab" href="#tab-content-product2-dop1">
                                                     <div class="tab-content__imgDop text-center has-calculator__img">
-                                                        <img src="" class="img-fluid">
+                                                        <img src="./public/assets/img/card/sibirskaya_20.jpg" class="img-fluid">
                                                         <div class="font-weight-bold text-uppercase mt-2">Автополив</div>
                                                     </div>
                                                 </a>
                                             </li>
 
                                             <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#tab-content-teplica_4-dop2">
+                                                <a class="nav-link" data-toggle="tab" href="#tab-content-product2-dop2">
                                                     <div class="tab-content__imgDop text-center">
                                                         <img src="./public/assets/img/dop/dop1.png" class="img-fluid">
                                                         <div class="font-weight-bold text-uppercase mt-2">Автополив</div>
@@ -681,7 +599,7 @@
                                             </li>
 
                                             <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#tab-content-teplica_4-dop3">
+                                                <a class="nav-link" data-toggle="tab" href="#tab-content-product2-dop3">
                                                     <div class="tab-content__imgDop text-center">
                                                         <img src="./public/assets/img/dop/dop2.png" class="img-fluid">
                                                         <div class="font-weight-bold text-uppercase mt-2">Автополив</div>
@@ -690,7 +608,7 @@
                                             </li>
 
                                             <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#tab-content-teplica_4-dop4">
+                                                <a class="nav-link" data-toggle="tab" href="#tab-content-product2-dop4">
                                                     <div class="tab-content__imgDop text-center">
                                                         <img src="./public/assets/img/dop/dop3.png" class="img-fluid">
                                                         <div class="font-weight-bold text-uppercase mt-2">Автополив</div>
@@ -699,7 +617,7 @@
                                             </li>
 
                                             <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#tab-content-teplica_4-dop5">
+                                                <a class="nav-link" data-toggle="tab" href="#tab-content-product2-dop5">
                                                     <div class="tab-content__imgDop text-center">
                                                         <img src="./public/assets/img/dop/dop4.png" class="img-fluid">
                                                         <div class="font-weight-bold text-uppercase mt-2">Автополив</div>
@@ -708,111 +626,89 @@
                                             </li>
                                             
                                         </ul>
-
                                     </div>
 
                                     <div class="col-lg-6">
                                         <table class="table table-sm table-striped">
                                             <tbody>
                                                 <tr>
-                                                    <th><span class="d-sm-inline d-none">Ширина (м): </span><span class="d-sm-none d-inline">Ширина: </span><a href="#modal-question-shirina"
-                                                            data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
-                                                                aria-hidden="true"></i></a></th>
+                                                    <th>
+                                                        <span class="d-sm-inline d-none">Ширина (м): </span>
+                                                        <span class="d-sm-none d-inline">Ширина: </span>
+                                                        <a href="#modal-question-shirina" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        </a>
+                                                    </th>
                                                     <td>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="shirina" value="3" checked="">
-                                                            <span class="catalog__text__label">3</span>
-                                                        </label>
+                                                        <span class="catalog__text__label">3</span>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th><span class="d-sm-inline d-none">Длина (м): </span><span class="d-sm-none d-inline">Длина: </span><a href="#modal-question-length"
-                                                            data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
-                                                                aria-hidden="true"></i></a></th>
+                                                    <th>
+                                                        <span class="d-sm-inline d-none">Длина (м): </span>
+                                                        <span class="d-sm-none d-inline">Длина: </span>
+                                                        <a href="#modal-question-length" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        </a>
+                                                    </th>
                                                     <td>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="length" value="4" checked="">
-                                                            <span class="catalog__input__label">4</span>
-                                                        </label>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="length" value="6">
-                                                            <span class="catalog__input__label">6</span>
-                                                        </label>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="length" value="8">
-                                                            <span class="catalog__input__label">8</span>
-                                                        </label>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="length" value="10">
-                                                            <span class="catalog__input__label">10</span>
-                                                        </label>
+                                                        <span class="catalog__text__label">4</span>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th><span class="d-sm-inline d-none">Интервал (м): </span><span class="d-sm-none d-inline">Интервал: </span><a href="#modal-question-interval"
-                                                            data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
-                                                                aria-hidden="true"></i></a></th>
+                                                    <th>
+                                                        <span class="d-sm-inline d-none">Интервал (м): </span>
+                                                        <span class="d-sm-none d-inline">Интервал: </span>
+                                                        <a href="#modal-question-interval" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        </a>
+                                                    </th>
                                                     <td>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="interval" value="1" checked="">
-                                                            <span class="catalog__input__label">1</span>
-                                                        </label>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="interval" value="0_67">
-                                                            <span class="catalog__input__label">0,67</span>
-                                                        </label>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="interval" value="0_5">
-                                                            <span class="catalog__input__label">0,5</span>
-                                                        </label>
+                                                        <span class="catalog__text__label">4</span>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th><span class="d-sm-inline d-none">Стрингеры (шт): </span><span class="d-sm-none d-inline">Стрингер: </span><a href="#modal-question-stringery"
-                                                        data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
-                                                            aria-hidden="true"></i></a></th>
-                                                <td>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="stringery" value="5" checked="">
-                                                            <span class="catalog__input__label">5</span>
-                                                        </label>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="stringery" value="7">
-                                                            <span class="catalog__input__label">7</span>
-                                                        </label>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th><span class="d-sm-inline d-none">Профиль (мм): </span><span class="d-sm-none d-inline">Труба: </span><a href="#modal-question-profil"
-                                                            data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
-                                                                aria-hidden="true"></i></a></th>
+                                                    <th>
+                                                        <span class="d-sm-inline d-none">Стрингеры (шт): </span>
+                                                        <span class="d-sm-none d-inline">Стрингер: </span>
+                                                        <a href="#modal-question-stringery" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        </a>
+                                                    </th>
                                                     <td>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="profil" value="20" checked="">
-                                                            <span class="catalog__input__label">20х20</span>
-                                                        </label>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="profil" value="40">
-                                                            <span class="catalog__input__label">40х20</span>
-                                                        </label>
+                                                        <span class="catalog__text__label">4</span>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th>Крепеж: <a href="#modal-question-kreplenie"
-                                                            data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
-                                                                aria-hidden="true"></i></a></th>
+                                                    <th>
+                                                        <span class="d-sm-inline d-none">Профиль (мм): </span>
+                                                        <span class="d-sm-none d-inline">Труба: </span>
+                                                        <a href="#modal-question-profil" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        </a>
+                                                    </th>
                                                     <td>
-                                                        <label class="catalog__input m-0">
-                                                            <input type="radio" name="kreplenie" value="bolt"
-                                                                checked="">
-                                                            <span class="catalog__text__label">Болт</span>
-                                                        </label>
+                                                        <span class="catalog__text__label">20х20</span>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th>Дуга: <a href="#modal-question-duga"
-                                                            data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
-                                                                aria-hidden="true"></i></a></th>
+                                                    <th>
+                                                        <span class="">Крепеж: </span>
+                                                        <a href="#modal-question-kreplenie" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        </a>
+                                                    </th>
+                                                    <td>
+                                                        <span class="catalog__text__label">Болт</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <span class="">Дуга: </span>
+                                                        <a href="#modal-question-duga" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        </a>
+                                                    </th>
                                                     <td>
                                                         <label class="catalog__input m-0">
                                                             <input type="radio" name="additional[]" value="dostavka_0"
@@ -828,48 +724,69 @@
                                             </tbody>
                                         </table>
 
+                                        <div>
+                                            <hr>
+                                            <a class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                                                data-target="#catalogDopKompl_2" aria-controls="catalogDopKompl_2"
+                                                aria-expanded="false">
+                                                <div class="text-size-6 font-weight-bold btn btn-primary">↓ Дополнительная комплектация ↓</div>
+                                            </a>
+                                            <div class="collapse row" id="catalogDopKompl_2">
+                                                <ul class="col-6">
+                                                    <li>- Форточка</li>
+                                                    <li>- Автоинтеллект</li>
+                                                    <li>- Лента утепления</li>
+                                                    <li>- Автополив</li>
+                                                </ul>
+                                                <ul class="col-6">
+                                                    <li>- Форточка</li>
+                                                    <li>- Автоинтеллект</li>
+                                                    <li>- Лента утепления</li>
+                                                    <li>- Автополив</li>
+                                                </ul>
+                                            </div>
+                                            <hr>
+                                        </div>
+
+                                        <a href="#modal-product-product1" data-toggle="modal" class="btn-link">Полная характеристика</a>
+
                                         <div class="catalog__subblock text-center mt-4">
                                             <div class="catalog__subblock__title">
-                                                Рассрочка: <a href="#modal-question-bank" data-toggle="modal"><i
-                                                        class="fa fa-question-circle-o fa-lg"
-                                                        aria-hidden="true"></i></a>
+                                                <span class="">Рассрочка: </span>
+                                                <a href="#modal-question-bank" data-toggle="modal">
+                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                             <div class="catalog__subblock__text">
                                                 <div class="row px-3">
                                                     <div class="col-4 catalog__bank col-md-2">
                                                         <a href="#modal-question-bank" data-toggle="modal">
-                                                            <img src="./public/assets/img/bank/halva.jpg"
-                                                                class="img-fluid" alt="halva">
+                                                            <img src="./public/assets/img/bank/halva.jpg" class="img-fluid" alt="halva">
                                                         </a>
                                                     </div>
                                                     <div class="col-4 catalog__bank col-md-2">
                                                         <a href="#modal-question-bank" data-toggle="modal">
-                                                            <img src="./public/assets/img/bank/cherepaha.jpg"
-                                                                class="img-fluid" alt="cherepaha">
+                                                            <img src="./public/assets/img/bank/cherepaha.jpg" class="img-fluid" alt="cherepaha">
                                                         </a>
                                                     </div>
                                                     <div class="col-4 catalog__bank col-md-2">
                                                         <a href="#modal-question-bank" data-toggle="modal">
-                                                            <img src="./public/assets/img/bank/fun.jpg" class="img-fluid"
-                                                                alt="kartafun">
+                                                            <img src="./public/assets/img/bank/fun.jpg" class="img-fluid" alt="kartafun">
                                                         </a>
                                                     </div>
                                                     <div class="col-4 catalog__bank col-md-2">
                                                         <a href="#modal-question-bank" data-toggle="modal">
-                                                            <img src="./public/assets/img/bank/magnit.jpg"
-                                                                class="img-fluid" alt="magnit">
+                                                            <img src="./public/assets/img/bank/magnit.jpg" class="img-fluid" alt="magnit">
                                                         </a>
                                                     </div>
                                                     <div class="col-4 catalog__bank col-md-2">
                                                         <a href="#modal-question-bank" data-toggle="modal">
-                                                            <img src="./public/assets/img/bank/pokupok.jpg"
-                                                                class="img-fluid" alt="pokupok">
+                                                            <img src="./public/assets/img/bank/pokupok.jpg" class="img-fluid" alt="pokupok">
                                                         </a>
                                                     </div>
                                                     <div class="col-4 catalog__bank col-md-2">
                                                         <a href="#modal-question-bank" data-toggle="modal">
-                                                            <img src="./public/assets/img/bank/smart.jpg"
-                                                                class="img-fluid" alt="smart">
+                                                            <img src="./public/assets/img/bank/smart.jpg" class="img-fluid" alt="smart">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -877,10 +794,10 @@
                                         </div>
 
                                         <div class="catalog__price--old">
-                                            <span class="calculator-price-old">528</span> руб.
+                                            <span class="calculator-price-old">0</span> руб.
                                         </div>
                                         <div class="catalog__price catalog__price--lg">
-                                            <span class="calculator-price">264</span> руб.
+                                            <span class="calculator-price">0</span> руб.
                                         </div>
 
 
@@ -912,7 +829,7 @@
 
                 <div class="col-lg-4">
                     <form class="has-calculator">
-                        <input type="hidden" name="product" value="teplica_2_24">
+                        <input type="hidden" name="product" value="product3">
                         <div class="catalog__card">
 
                             <div class="catalog__title catalog__title--bordered"><span class="d-sm-inline d-none">Теплица <br class="d-lg-none d-block"> Сибирская Шир 2м и 2,4м</span><span class="d-sm-none d-inline">Сибирская <br class="d-lg-none d-block">Шир 2м и 2,4м</span></div>
@@ -923,20 +840,20 @@
 
                             <div class="tab-content">
                                             
-                                <div class="tab-pane fade show active" id="tab-content-teplica_2_24-dop1">
+                                <div class="tab-pane fade show active" id="tab-content-product3-dop1">
                                     
                                     <div class="catalog__img has-calculator__img">
                                         <div class="card__label card__label--blue animated pulse infinite">
                                             <i class="fa fa-star"></i> Компактная
                                         </div>
-                                        <a href="" data-fancybox>
-                                            <img class="img-fluid" src="">
+                                        <a href="./public/assets/img/card/sibirskaya_20.jpg" data-fancybox>
+                                            <img class="img-fluid" src="./public/assets/img/card/sibirskaya_20.jpg">
                                         </a>
                                     </div>
 
                                 </div>
 
-                                <div class="tab-pane fade" id="tab-content-teplica_2_24-dop2">
+                                <div class="tab-pane fade" id="tab-content-product3-dop2">
                                     <div class="catalog__img">
                                         <a href="./public/assets/img/card/sibirskaya_dvoynaya.jpg" data-fancybox="">
                                             <img class="img-fluid" src="./public/assets/img/card/sibirskaya_dvoynaya.jpg">
@@ -944,7 +861,7 @@
                                     </div>
                                 </div>
 
-                                <div class="tab-pane fade" id="tab-content-teplica_2_24-dop3">
+                                <div class="tab-pane fade" id="tab-content-product3-dop3">
                                     <div class="catalog__img">
                                         <a href="./public/assets/img/card/sibirskaya_krab_40.jpg" data-fancybox="">
                                             <img class="img-fluid" src="./public/assets/img/card/sibirskaya_krab_40.jpg">
@@ -952,7 +869,7 @@
                                     </div>
                                 </div>
 
-                                <div class="tab-pane fade" id="tab-content-teplica_2_24-dop4">
+                                <div class="tab-pane fade" id="tab-content-product3-dop4">
                                     <div class="catalog__img">
                                         <a href="./public/assets/img/card/sibirskaya_20.jpg" data-fancybox="">
                                             <img class="img-fluid" src="./public/assets/img/card/sibirskaya_20.jpg">
@@ -960,7 +877,7 @@
                                     </div>
                                 </div>
 
-                                <div class="tab-pane fade" id="tab-content-teplica_2_24-dop5">
+                                <div class="tab-pane fade" id="tab-content-product3-dop5">
                                     <div class="catalog__img">
                                         <a href="./public/assets/img/card/sibirskaya_20.jpg" data-fancybox="">
                                             <img class="img-fluid" src="./public/assets/img/card/sibirskaya_20.jpg">
@@ -973,16 +890,16 @@
                             <ul class="nav d-flex justify-content-around align-items-center">
                                 
                                 <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#tab-content-teplica_2_24-dop1">
+                                    <a class="nav-link active" data-toggle="tab" href="#tab-content-product3-dop1">
                                         <div class="tab-content__imgDop text-center has-calculator__img">
-                                            <img src="" class="img-fluid">
+                                            <img src="./public/assets/img/card/sibirskaya_20.jpg" class="img-fluid">
                                             <div class="text-uppercase font-weight-bold mt-2">Автополив</div>
                                         </div>
                                     </a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab-content-teplica_2_24-dop2">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-content-product3-dop2">
                                         <div class="tab-content__imgDop text-center">
                                             <img src="./public/assets/img/dop/dop1.png" class="img-fluid">
                                             <div class="text-uppercase font-weight-bold mt-2">Автополив</div>
@@ -991,7 +908,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab-content-teplica_2_24-dop3">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-content-product3-dop3">
                                         <div class="tab-content__imgDop text-center">
                                             <img src="./public/assets/img/dop/dop2.png" class="img-fluid">
                                             <div class="text-uppercase font-weight-bold mt-2">Автополив</div>
@@ -1000,7 +917,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab-content-teplica_2_24-dop4">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-content-product3-dop4">
                                         <div class="tab-content__imgDop text-center">
                                             <img src="./public/assets/img/dop/dop3.png" class="img-fluid">
                                             <div class="text-uppercase font-weight-bold mt-2">Автополив</div>
@@ -1009,7 +926,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab-content-teplica_2_24-dop5">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-content-product3-dop5">
                                         <div class="tab-content__imgDop text-center">
                                             <img src="./public/assets/img/dop/dop4.png" class="img-fluid">
                                             <div class="text-uppercase font-weight-bold mt-2">Автополив</div>
@@ -1023,84 +940,67 @@
                                 <table class="table table-sm table-striped">
                                     <tbody>
                                         <tr>
-                                            <th>Ширина: <a href="#modal-question-shirina" data-toggle="modal"><i
-                                                        class="fa fa-question-circle-o fa-lg"
-                                                        aria-hidden="true"></i></a></th>
+                                            <th>
+                                                <span class="">Ширина: </span>
+                                                <a href="#modal-question-shirina" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                </a>
+                                            </th>
                                             <td>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="shirina" value="2" checked>
-                                                    <span class="catalog__input__label">2</span>
-                                                </label>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="shirina" value="2_4">
-                                                    <span class="catalog__input__label">2,4</span>
-                                                </label>
+                                                <span class="catalog__text__label">2</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>Длина: <a href="#modal-question-length" data-toggle="modal"><i
-                                                        class="fa fa-question-circle-o fa-lg"
-                                                        aria-hidden="true"></i></a></th>
+                                            <th>
+                                                <span class="">Длина: </span>
+                                                <a href="#modal-question-length" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                </a>
+                                            </th>
                                             <td>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="length" value="4" checked>
-                                                    <span class="catalog__input__label">4</span>
-                                                </label>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="length" value="6">
-                                                    <span class="catalog__input__label">6</span>
-                                                </label>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="length" value="8">
-                                                    <span class="catalog__input__label">8</span>
-                                                </label>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="length" value="10">
-                                                    <span class="catalog__input__label">10</span>
-                                                </label>
+                                                <span class="catalog__text__label">4</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>Интервал: <a href="#modal-question-interval" data-toggle="modal"><i
-                                                        class="fa fa-question-circle-o fa-lg"
-                                                        aria-hidden="true"></i></a></th>
+                                            <th>
+                                                <span class="">Интервал: </span>
+                                                <a href="#modal-question-interval" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                </a>
+                                            </th>
                                             <td>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="interval" value="1" checked>
-                                                    <span class="catalog__input__label">1</span>
-                                                </label>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="interval" value="0_67">
-                                                    <span class="catalog__input__label">0,67</span>
-                                                </label>
+                                                <span class="catalog__text__label">1</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>Труба: <a href="#modal-question-profil"
-                                                    data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
-                                                        aria-hidden="true"></i></a></th>
+                                            <th>
+                                                <span class="">Труба: </span>
+                                                <a href="#modal-question-profil" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                </a>
+                                            </th>
                                             <td>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="profil" value="20" checked="">
-                                                    <span class="catalog__text__label">20х20</span>
-                                                </label>
+                                                <span class="catalog__text__label">20х20</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>Крепеж: <a href="#modal-question-kreplenie" data-toggle="modal"><i
-                                                        class="fa fa-question-circle-o fa-lg"
-                                                        aria-hidden="true"></i></a></th>
+                                            <th>
+                                                <span class="">Крепеж: </span>
+                                                <a href="#modal-question-kreplenie" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                </a>
+                                            </th>
                                             <td>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="kreplenie" value="bolt" checked>
-                                                    <span class="catalog__text__label">Болт</span>
-                                                </label>
+                                                <span class="catalog__text__label">Болт</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>Дуга: <a href="#modal-question-duga" data-toggle="modal"><i
-                                                        class="fa fa-question-circle-o fa-lg"
-                                                        aria-hidden="true"></i></a></th>
+                                            <th>
+                                                <span class="">Дуга: </span>
+                                                <a href="#modal-question-duga" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                </a>
+                                            </th>
                                             <td>
                                                 <label class="catalog__input m-0">
                                                     <input type="radio" name="additional[]" value="dostavka_0" checked>
@@ -1115,6 +1015,32 @@
                                     </tbody>
                                 </table>
 
+                                <div>
+                                    <hr>
+                                    <a class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                                        data-target="#catalogDopKompl_3" aria-controls="catalogDopKompl_3"
+                                        aria-expanded="false">
+                                        <div class="text-size-6 font-weight-bold btn btn-primary">↓ Дополнительная комплектация ↓</div>
+                                    </a>
+                                    <div class="collapse row" id="catalogDopKompl_3">
+                                        <ul class="col-6">
+                                            <li>- Форточка</li>
+                                            <li>- Автоинтеллект</li>
+                                            <li>- Лента утепления</li>
+                                            <li>- Автополив</li>
+                                        </ul>
+                                        <ul class="col-6">
+                                            <li>- Форточка</li>
+                                            <li>- Автоинтеллект</li>
+                                            <li>- Лента утепления</li>
+                                            <li>- Автополив</li>
+                                        </ul>
+                                    </div>
+                                    <hr>
+                                </div>
+
+                                <a href="#modal-product-product1" data-toggle="modal" class="btn-link">Полная характеристика</a>
+
                                 <hr>
 
                                 <div class="catalog__price--old">
@@ -1142,27 +1068,27 @@
 
                 <div class="col-lg-4">
                     <form class="has-calculator">
-                        <input type="hidden" name="product" value="sibirskaya_krab">
+                        <input type="hidden" name="product" value="product4">
                         <div class="catalog__card">
 
                             <div class="catalog__title catalog__title--bordered"><span class="d-sm-inline d-none">Теплица <br class="d-lg-none d-block"> Сибирская Шир 3м - Краб</span><span class="d-sm-none d-inline">Сибирская <br class="d-lg-none d-block">Шир 3м - Краб</span></div>
                             
                             <div class="tab-content">
                                             
-                                <div class="tab-pane fade show active" id="tab-content-sibirskaya_krab-dop1">
+                                <div class="tab-pane fade show active" id="tab-content-product4-dop1">
                                     
                                     <div class="catalog__img has-calculator__img">
                                         <div class="card__label card__label--blue animated pulse infinite">
                                             <i class="fa fa-star"></i> Компактная
                                         </div>
-                                        <a href="" data-fancybox>
-                                            <img class="img-fluid" src="">
+                                        <a href="./public/assets/img/card/sibirskaya_20.jpg" data-fancybox>
+                                            <img class="img-fluid" src="./public/assets/img/card/sibirskaya_20.jpg">
                                         </a>
                                     </div>
 
                                 </div>
 
-                                <div class="tab-pane fade" id="tab-content-sibirskaya_krab-dop2">
+                                <div class="tab-pane fade" id="tab-content-product4-dop2">
                                     <div class="catalog__img">
                                         <a href="./public/assets/img/card/sibirskaya_dvoynaya.jpg" data-fancybox="">
                                             <img class="img-fluid" src="./public/assets/img/card/sibirskaya_dvoynaya.jpg">
@@ -1170,7 +1096,7 @@
                                     </div>
                                 </div>
 
-                                <div class="tab-pane fade" id="tab-content-sibirskaya_krab-dop3">
+                                <div class="tab-pane fade" id="tab-content-product4-dop3">
                                     <div class="catalog__img">
                                         <a href="./public/assets/img/card/sibirskaya_krab_40.jpg" data-fancybox="">
                                             <img class="img-fluid" src="./public/assets/img/card/sibirskaya_krab_40.jpg">
@@ -1178,7 +1104,7 @@
                                     </div>
                                 </div>
 
-                                <div class="tab-pane fade" id="tab-content-sibirskaya_krab-dop4">
+                                <div class="tab-pane fade" id="tab-content-product4-dop4">
                                     <div class="catalog__img">
                                         <a href="./public/assets/img/card/sibirskaya_20.jpg" data-fancybox="">
                                             <img class="img-fluid" src="./public/assets/img/card/sibirskaya_20.jpg">
@@ -1186,7 +1112,7 @@
                                     </div>
                                 </div>
 
-                                <div class="tab-pane fade" id="tab-content-sibirskaya_krab-dop5">
+                                <div class="tab-pane fade" id="tab-content-product4-dop5">
                                     <div class="catalog__img">
                                         <a href="./public/assets/img/card/sibirskaya_20.jpg" data-fancybox="">
                                             <img class="img-fluid" src="./public/assets/img/card/sibirskaya_20.jpg">
@@ -1199,16 +1125,16 @@
                             <ul class="nav d-flex justify-content-around align-items-center">
                                 
                                 <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#tab-content-sibirskaya_krab-dop1">
+                                    <a class="nav-link active" data-toggle="tab" href="#tab-content-product4-dop1">
                                         <div class="tab-content__imgDop text-center has-calculator__img">
-                                            <img src="" class="img-fluid">
+                                            <img src="./public/assets/img/card/sibirskaya_20.jpg" class="img-fluid">
                                             <div class="text-uppercase font-weight-bold mt-2">Автополив</div>
                                         </div>
                                     </a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab-content-sibirskaya_krab-dop2">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-content-product4-dop2">
                                         <div class="tab-content__imgDop text-center">
                                             <img src="./public/assets/img/dop/dop1.png" class="img-fluid">
                                             <div class="text-uppercase font-weight-bold mt-2">Автополив</div>
@@ -1217,7 +1143,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab-content-sibirskaya_krab-dop3">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-content-product4-dop3">
                                         <div class="tab-content__imgDop text-center">
                                             <img src="./public/assets/img/dop/dop2.png" class="img-fluid">
                                             <div class="text-uppercase font-weight-bold mt-2">Автополив</div>
@@ -1226,7 +1152,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab-content-sibirskaya_krab-dop4">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-content-product4-dop4">
                                         <div class="tab-content__imgDop text-center">
                                             <img src="./public/assets/img/dop/dop3.png" class="img-fluid">
                                             <div class="text-uppercase font-weight-bold mt-2">Автополив</div>
@@ -1235,7 +1161,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link " data-toggle="tab" href="#tab-content-sibirskaya_krab-dop5">
+                                    <a class="nav-link " data-toggle="tab" href="#tab-content-product4-dop5">
                                         <div class="tab-content__imgDop text-center">
                                             <img src="./public/assets/img/dop/dop4.png" class="img-fluid">
                                             <div class="text-uppercase font-weight-bold mt-2">Автополив</div>
@@ -1249,97 +1175,106 @@
                                 <table class="table table-sm table-striped">
                                     <tbody>
                                         <tr>
-                                            <th>Ширина: <a href="#modal-question-shirina"
-                                                    data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
-                                                        aria-hidden="true"></i></a></th>
+                                            <th>
+                                                <span class="">Ширина: </span>
+                                                <a href="#modal-question-shirina" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                </a>
+                                            </th>
                                             <td>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="shirina" value="3" checked="">
-                                                    <span class="catalog__text__label">3</span>
-                                                </label>
+                                                <span class="catalog__text__label">2</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>Длина: <a href="#modal-question-length" data-toggle="modal"><i
-                                                        class="fa fa-question-circle-o fa-lg"
-                                                        aria-hidden="true"></i></a></th>
+                                            <th>
+                                                <span class="">Длина: </span>
+                                                <a href="#modal-question-length" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                </a>
+                                            </th>
                                             <td>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="length" value="4" checked>
-                                                    <span class="catalog__input__label">4</span>
-                                                </label>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="length" value="6">
-                                                    <span class="catalog__input__label">6</span>
-                                                </label>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="length" value="8">
-                                                    <span class="catalog__input__label">8</span>
-                                                </label>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="length" value="10">
-                                                    <span class="catalog__input__label">10</span>
-                                                </label>
+                                                <span class="catalog__text__label">4</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>Интервал: <a href="#modal-question-interval" data-toggle="modal"><i
-                                                        class="fa fa-question-circle-o fa-lg"
-                                                        aria-hidden="true"></i></a></th>
+                                            <th>
+                                                <span class="">Интервал: </span>
+                                                <a href="#modal-question-interval" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                </a>
+                                            </th>
                                             <td>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="interval" value="1" checked>
-                                                    <span class="catalog__input__label">1</span>
-                                                </label>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="interval" value="0_67">
-                                                    <span class="catalog__input__label">0,67</span>
-                                                </label>
+                                                <span class="catalog__text__label">1</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>Труба: <a href="#modal-question-profil"
-                                                    data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
-                                                        aria-hidden="true"></i></a></th>
+                                            <th>
+                                                <span class="">Труба: </span>
+                                                <a href="#modal-question-profil" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                </a>
+                                            </th>
                                             <td>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="hiden" value="20" checked>
-                                                    <span class="catalog__input__label">20х20</span>
-                                                </label>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="hiden" value="40">
-                                                    <span class="catalog__input__label">40х20</span>
-                                                </label>
+                                                <span class="catalog__text__label">20х20</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>Крепеж: <a href="#modal-question-kreplenie" data-toggle="modal"><i
-                                                        class="fa fa-question-circle-o fa-lg"
-                                                        aria-hidden="true"></i></a></th>
+                                            <th>
+                                                <span class="">Крепеж: </span>
+                                                <a href="#modal-question-kreplenie" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                </a>
+                                            </th>
                                             <td>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="kreplenie" value="krab" checked>
-                                                    <span class="catalog__text__label">Краб</span>
-                                                </label>
+                                                <span class="catalog__text__label">Болт</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>Дуга: <a href="#modal-question-duga" data-toggle="modal"><i
-                                                        class="fa fa-question-circle-o fa-lg"
-                                                        aria-hidden="true"></i></a></th>
+                                            <th>
+                                                <span class="">Дуга: </span>
+                                                <a href="#modal-question-duga" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                </a>
+                                            </th>
                                             <td>
                                                 <label class="catalog__input m-0">
                                                     <input type="radio" name="additional[]" value="dostavka_0" checked>
                                                     <span class="catalog__input__label">Разбор</span>
                                                 </label>
                                                 <label class="catalog__input m-0">
-                                                    <input type="radio" name="additional[]" value="dostavka_30">
+                                                    <input type="radio" name="additional[]" value="dostavka_20_24">
                                                     <span class="catalog__input__label">Цельн</span>
                                                 </label>
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
+
+                                <div>
+                                    <hr>
+                                    <a class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                                        data-target="#catalogDopKompl_4" aria-controls="catalogDopKompl_4"
+                                        aria-expanded="false">
+                                        <div class="text-size-6 font-weight-bold btn btn-primary">↓ Дополнительная комплектация ↓</div>
+                                    </a>
+                                    <div class="collapse row" id="catalogDopKompl_4">
+                                        <ul class="col-6">
+                                            <li>- Форточка</li>
+                                            <li>- Автоинтеллект</li>
+                                            <li>- Лента утепления</li>
+                                            <li>- Автополив</li>
+                                        </ul>
+                                        <ul class="col-6">
+                                            <li>- Форточка</li>
+                                            <li>- Автоинтеллект</li>
+                                            <li>- Лента утепления</li>
+                                            <li>- Автополив</li>
+                                        </ul>
+                                    </div>
+                                    <hr>
+                                </div>
+
+                                <a href="#modal-product-product1" data-toggle="modal" class="btn-link">Полная характеристика</a>
 
                                 <hr>
 
@@ -1368,25 +1303,25 @@
 
                 <div class="col-lg-4">
                     <form class="has-calculator">
-                        <input type="hidden" name="product" value="teplica_35_4">
+                        <input type="hidden" name="product" value="product5">
                         <div class="catalog__card">
 
                             <div class="catalog__title catalog__title--bordered"><span class="d-sm-inline d-none">Теплица <br class="d-lg-none d-block"> Сибирская Шир 3,5м и 4м</span><span class="d-sm-none d-inline">Сибирская <br class="d-lg-none d-block">Шир 3,5м и 4м</span></div>
                             
                             <div class="tab-content">
                                             
-                                <div class="tab-pane fade show active" id="tab-content-teplica_35_4-dop1">
+                                <div class="tab-pane fade show active" id="tab-content-product5-dop1">
                                     <div class="catalog__img has-calculator__img">
                                         <div class="card__label card__label--blue animated pulse infinite">
                                             <i class="fa fa-star"></i> Компактная
                                         </div>
-                                        <a href="" data-fancybox>
-                                            <img class="img-fluid" src="">
+                                        <a href="./public/assets/img/card/sibirskaya_20.jpg" data-fancybox>
+                                            <img class="img-fluid" src="./public/assets/img/card/sibirskaya_20.jpg">
                                         </a>
                                     </div>
                                 </div>
 
-                                <div class="tab-pane fade" id="tab-content-teplica_35_4-dop2">
+                                <div class="tab-pane fade" id="tab-content-product5-dop2">
                                     <div class="catalog__img">
                                         <a href="./public/assets/img/card/sibirskaya_dvoynaya.jpg" data-fancybox="">
                                             <img class="img-fluid" src="./public/assets/img/card/sibirskaya_dvoynaya.jpg">
@@ -1394,7 +1329,7 @@
                                     </div>
                                 </div>
 
-                                <div class="tab-pane fade" id="tab-content-teplica_35_4-dop3">
+                                <div class="tab-pane fade" id="tab-content-product5-dop3">
                                     <div class="catalog__img">
                                         <a href="./public/assets/img/card/sibirskaya_krab_40.jpg" data-fancybox="">
                                             <img class="img-fluid" src="./public/assets/img/card/sibirskaya_krab_40.jpg">
@@ -1402,7 +1337,7 @@
                                     </div>
                                 </div>
 
-                                <div class="tab-pane fade" id="tab-content-teplica_35_4-dop4">
+                                <div class="tab-pane fade" id="tab-content-product5-dop4">
                                     <div class="catalog__img">
                                         <a href="./public/assets/img/card/sibirskaya_20.jpg" data-fancybox="">
                                             <img class="img-fluid" src="./public/assets/img/card/sibirskaya_20.jpg">
@@ -1410,7 +1345,7 @@
                                     </div>
                                 </div>
 
-                                <div class="tab-pane fade" id="tab-content-teplica_35_4-dop5">
+                                <div class="tab-pane fade" id="tab-content-product5-dop5">
                                     <div class="catalog__img">
                                         <a href="./public/assets/img/card/sibirskaya_20.jpg" data-fancybox="">
                                             <img class="img-fluid" src="./public/assets/img/card/sibirskaya_20.jpg">
@@ -1423,16 +1358,16 @@
                             <ul class="nav d-flex justify-content-around align-items-center">
                                 
                                 <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#tab-content-teplica_35_4-dop1">
+                                    <a class="nav-link active" data-toggle="tab" href="#tab-content-product5-dop1">
                                         <div class="tab-content__imgDop text-center has-calculator__img">
-                                            <img src="" class="img-fluid">
+                                            <img src="./public/assets/img/card/sibirskaya_20.jpg" class="img-fluid">
                                             <div class="text-uppercase font-weight-bold mt-2">Автополив</div>
                                         </div>
                                     </a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab-content-teplica_35_4-dop2">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-content-product5-dop2">
                                         <div class="tab-content__imgDop text-center">
                                             <img src="./public/assets/img/dop/dop1.png" class="img-fluid">
                                             <div class="text-uppercase font-weight-bold mt-2">Автополив</div>
@@ -1441,7 +1376,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab-content-teplica_35_4-dop3">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-content-product5-dop3">
                                         <div class="tab-content__imgDop text-center">
                                             <img src="./public/assets/img/dop/dop2.png" class="img-fluid">
                                             <div class="text-uppercase font-weight-bold mt-2">Автополив</div>
@@ -1450,7 +1385,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab-content-teplica_35_4-dop4">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-content-product5-dop4">
                                         <div class="tab-content__imgDop text-center">
                                             <img src="./public/assets/img/dop/dop3.png" class="img-fluid">
                                             <div class="text-uppercase font-weight-bold mt-2">Автополив</div>
@@ -1459,7 +1394,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab-content-teplica_35_4-dop5">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-content-product5-dop5">
                                         <div class="tab-content__imgDop text-center">
                                             <img src="./public/assets/img/dop/dop4.png" class="img-fluid">
                                             <div class="text-uppercase font-weight-bold mt-2">Автополив</div>
@@ -1473,102 +1408,106 @@
                                 <table class="table table-sm table-striped">
                                     <tbody>
                                         <tr>
-                                            <th>Ширина: <a href="#modal-question-shirina" data-toggle="modal"><i
-                                                        class="fa fa-question-circle-o fa-lg"
-                                                        aria-hidden="true"></i></a></th>
+                                            <th>
+                                                <span class="">Ширина: </span>
+                                                <a href="#modal-question-shirina" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                </a>
+                                            </th>
                                             <td>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="shirina" value="3_5" checked>
-                                                    <span class="catalog__input__label">3,5</span>
-                                                </label>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="shirina" value="4">
-                                                    <span class="catalog__input__label">4</span>
-                                                </label>
-                                                
+                                                <span class="catalog__text__label">2</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>Длина: <a href="#modal-question-length" data-toggle="modal"><i
-                                                        class="fa fa-question-circle-o fa-lg"
-                                                        aria-hidden="true"></i></a></th>
+                                            <th>
+                                                <span class="">Длина: </span>
+                                                <a href="#modal-question-length" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                </a>
+                                            </th>
                                             <td>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="length" value="4" checked>
-                                                    <span class="catalog__input__label">4</span>
-                                                </label>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="length" value="6">
-                                                    <span class="catalog__input__label">6</span>
-                                                </label>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="length" value="8">
-                                                    <span class="catalog__input__label">8</span>
-                                                </label>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="length" value="10">
-                                                    <span class="catalog__input__label">10</span>
-                                                </label>
+                                                <span class="catalog__text__label">4</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>Интервал: <a href="#modal-question-interval" data-toggle="modal"><i
-                                                        class="fa fa-question-circle-o fa-lg"
-                                                        aria-hidden="true"></i></a></th>
+                                            <th>
+                                                <span class="">Интервал: </span>
+                                                <a href="#modal-question-interval" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                </a>
+                                            </th>
                                             <td>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="interval" value="1" checked>
-                                                    <span class="catalog__input__label">1</span>
-                                                </label>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="interval" value="0_67">
-                                                    <span class="catalog__input__label">0,67</span>
-                                                </label>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="interval" value="0_5">
-                                                    <span class="catalog__input__label">0,5</span>
-                                                </label>
+                                                <span class="catalog__text__label">1</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>Труба: <a href="#modal-question-profil"
-                                                    data-toggle="modal"><i class="fa fa-question-circle-o fa-lg"
-                                                        aria-hidden="true"></i></a></th>
+                                            <th>
+                                                <span class="">Труба: </span>
+                                                <a href="#modal-question-profil" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                </a>
+                                            </th>
                                             <td>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="profil" value="40" checked="">
-                                                    <span class="catalog__text__label">40х20</span>
-                                                </label>
+                                                <span class="catalog__text__label">20х20</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>Крепеж: <a href="#modal-question-kreplenie" data-toggle="modal"><i
-                                                        class="fa fa-question-circle-o fa-lg"
-                                                        aria-hidden="true"></i></a></th>
+                                            <th>
+                                                <span class="">Крепеж: </span>
+                                                <a href="#modal-question-kreplenie" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                </a>
+                                            </th>
                                             <td>
-                                                <label class="catalog__input m-0">
-                                                    <input type="radio" name="kreplenie" value="bolt" checked>
-                                                    <span class="catalog__text__label">Болт</span>
-                                                </label>
+                                                <span class="catalog__text__label">Болт</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>Дуга: <a href="#modal-question-duga" data-toggle="modal"><i
-                                                        class="fa fa-question-circle-o fa-lg"
-                                                        aria-hidden="true"></i></a></th>
+                                            <th>
+                                                <span class="">Дуга: </span>
+                                                <a href="#modal-question-duga" class="animate__heartBeat d-inline-block" data-toggle="modal">
+                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                </a>
+                                            </th>
                                             <td>
                                                 <label class="catalog__input m-0">
                                                     <input type="radio" name="additional[]" value="dostavka_0" checked>
                                                     <span class="catalog__input__label">Разбор</span>
                                                 </label>
                                                 <label class="catalog__input m-0">
-                                                    <input type="radio" name="additional[]" value="dostavka_35_40">
+                                                    <input type="radio" name="additional[]" value="dostavka_20_24">
                                                     <span class="catalog__input__label">Цельн</span>
                                                 </label>
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
+
+                                <div>
+                                    <hr>
+                                    <a class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                                        data-target="#catalogDopKompl_5" aria-controls="catalogDopKompl_5"
+                                        aria-expanded="false">
+                                        <div class="text-size-6 font-weight-bold btn btn-primary">↓ Дополнительная комплектация ↓</div>
+                                    </a>
+                                    <div class="collapse row" id="catalogDopKompl_5">
+                                        <ul class="col-6">
+                                            <li>- Форточка</li>
+                                            <li>- Автоинтеллект</li>
+                                            <li>- Лента утепления</li>
+                                            <li>- Автополив</li>
+                                        </ul>
+                                        <ul class="col-6">
+                                            <li>- Форточка</li>
+                                            <li>- Автоинтеллект</li>
+                                            <li>- Лента утепления</li>
+                                            <li>- Автополив</li>
+                                        </ul>
+                                    </div>
+                                    <hr>
+                                </div>
+
+                                <a href="#modal-product-product1" data-toggle="modal" class="btn-link">Полная характеристика</a>
 
                                 <hr>
 
@@ -1597,22 +1536,58 @@
 
             </div>
 
-
-            <div id="filter-alert" class="alert alert-danger text-center" role="alert" hidden>
-                <h4 class="alert-heading">Товары с такими параметрами не найдены!</h4>
-                <p>Попробуйте выбрать другие фильтры или свяжитесь с Вашим личным менеджером.</p>
-                <hr>
-                <p class="mb-0">
-                    <a href="#modal-order" data-toggle="modal" class="btn btn-primary">Консультация с менеджером</a>
-                </p>
+            <div class="row font-weight-bold h5 py-3 jumbotron shadow text-center">
+                <div class="col-12">
+                    <div class="h1 font-weight-bold">Купить в рассрочку не проблема!</div>
+                    <div class="section_title mb-4">до 8 месяцев</div>
+                </div>
+                <div class="col-md col-6">
+                    <img src="./public/assets/img/bank/halva.png" class="img-fluid w-100">
+                    <div class="">2 месяца - 9%</div>
+                    <div class="">6 месяца - 20%</div>
+                </div>
+                <div class="col-md col-6">
+                    <img src="./public/assets/img/bank/magnit.png" class="img-fluid w-100">
+                    <div class="">3 месяца - 4%</div>
+                </div>
+                <div class="col-md col-6">
+                    <img src="./public/assets/img/bank/cherepaha.png" class="img-fluid w-100">
+                    <div class="">8 месяца - 4%</div>
+                </div>
+                <div class="col-md col-6">
+                    <img src="./public/assets/img/bank/pokupok.png" class="img-fluid w-100">
+                    <div class="">4 месяца - 4%</div>
+                </div>
+                <div class="col-md col-6">
+                    <img src="./public/assets/img/bank/fun.png" class="img-fluid w-100">
+                    <div class="">3 месяца - 9%</div>
+                </div>
+                <div class="col-md col-6">
+                    <img src="./public/assets/img/bank/smart.png" class="img-fluid w-100">
+                    <div class="">3 месяца - 4%</div>
+                </div>
+                <div class="col-12">
+                    <hr>
+                    <div class="col-md-6 offset-md-3">
+                        <p class="lead">Укажите номер и Ваш личный менеджер свяжится с Вами, чтобы помочь!</p>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" name="message" class="form-control" placeholder="Ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required="">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-warning btn-lg btn-block" style="border-color: #ef9300;">Помощь менеджера</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-
 
             <div class="jumbotron shadow mt-5 text-center" style="background-color: #dbf0f7;">
                 <p class="h1"><b>Сложный выбор?</b></p>
-
                 <hr>
-
                 <div class="row align-items-center">
                     <div class="col-md-6">
                         <div class="manager">
@@ -1639,9 +1614,7 @@
                         </div>
                     </div>
                 </div>
-
                 <hr>
-
                 <p class="lead">Укажите номер и Ваш личный менеджер свяжится с Вами, чтобы помочь!</p>
                 <div class="row">
                     <div class="col-md-6 offset-md-3">
@@ -1899,17 +1872,17 @@
     <section id="section-certificate" class="c__section bg-dark text-center">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-4">
                     <a href="./public/assets/img/sertifikaty/sertifikat1.jpg" data-fancybox="cert">
                         <img class="img-fluid" src="./public/assets/img/sertifikaty/sertifikat1.jpg">
                     </a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-4">
                     <a href="./public/assets/img/sertifikaty/sertifikat2.jpg" data-fancybox="cert">
                         <img class="img-fluid" src="./public/assets/img/sertifikaty/sertifikat2.jpg">
                     </a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-4">
                     <a href="./public/assets/img/sertifikaty/sertifikat3.jpg" data-fancybox="cert">
                         <img class="img-fluid" src="./public/assets/img/sertifikaty/sertifikat3.jpg">
                     </a>
@@ -1919,6 +1892,97 @@
             <div class="mt-5">
                 <button class="c__btn c__btn--danger c__btn--lg" data-toggle="modal" data-target="#modal-order"
                     data-animation="animated tada delay-1s">Заказать проверенную теплицу</button>
+            </div>
+        </div>
+    </section>
+
+    <header id="section-gallery-header">
+        <div data-animation="animated zoomInUp">Видеообзоры бетономешалок SHTENLI</div>
+    </header>
+    
+    <section id="section-gallery" class="c__section bg-dark text-center">
+    
+        <div class="container">
+    
+            <div class="row">
+    
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="pb-1 h5 m-0 font-weight-bold text-white">Видеообзор от телемаркет</div>
+                    <a href="https://www.youtube.com/watch?v=xCSpnvK3fcc" data-fancybox="gallery">
+                        <div class="position-relative">
+                            <img class="img-fluid gallery__img" src="./public/assets/img/video/1.jpg">
+                            <div class="gallery__icon">
+                                <i class="fa fa-youtube-play animated pulse infinite"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="pb-1 h5 m-0 font-weight-bold text-white">Отзывы, обзор, советы</div>
+                    <a href="https://www.youtube.com/watch?v=7eKCH5BX_Z0&t=5s" data-fancybox="gallery">
+                        <div class="position-relative">
+                            <img class="img-fluid gallery__img" src="./public/assets/img/video/2.jpg">
+                            <div class="gallery__icon">
+                                <i class="fa fa-youtube-play animated pulse infinite"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="pb-1 h5 m-0 font-weight-bold text-white">Видеоинструкция по сборке</div>
+                    <a href="https://www.youtube.com/watch?v=DtGpM95OXP4" data-fancybox="gallery">
+                        <div class="position-relative">
+                            <img class="img-fluid gallery__img" src="./public/assets/img/video/3.jpg">
+                            <div class="gallery__icon">
+                                <i class="fa fa-youtube-play animated pulse infinite"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="pb-1 h5 m-0 font-weight-bold text-white">1. Видеоотзыв от покупателя</div>
+                    <a href="https://www.youtube.com/watch?v=GaVHDgdzOB8" data-fancybox="gallery">
+                        <div class="position-relative">
+                            <img class="img-fluid gallery__img" src="./public/assets/img/video/4.jpg">
+                            <div class="gallery__icon">
+                                <i class="fa fa-youtube-play animated pulse infinite"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="pb-1 h5 m-0 font-weight-bold text-white">2. Видеоотзыв от покупателя</div>
+                    <a href="https://www.youtube.com/watch?v=WsztlAJs_EI" data-fancybox="gallery">
+                        <div class="position-relative">
+                            <img class="img-fluid gallery__img" src="./public/assets/img/video/5.jpg">
+                            <div class="gallery__icon">
+                                <i class="fa fa-youtube-play animated pulse infinite"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="pb-1 h5 m-0 font-weight-bold text-white">3. Видеоотзыв от покупателя</div>
+                    <a href="https://www.youtube.com/watch?v=lZB9fG3oKfw" data-fancybox="gallery">
+                        <div class="position-relative">
+                            <img class="img-fluid gallery__img" src="./public/assets/img/video/6.jpg">
+                            <div class="gallery__icon">
+                                <i class="fa fa-youtube-play animated pulse infinite"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+            </div>
+    
+            <hr>
+            <div class="mt-5">
+                <button class="c__btn c__btn--danger c__btn--lg" data-toggle="modal" data-target="#modal-order" data-animation="animated tada delay-1s">Заказать проверенную Бетономешалку</button>
             </div>
         </div>
     </section>
@@ -1966,14 +2030,14 @@
         </div>
     </section>
 
-    <header id="section-gallery-header">
+    <header id="section-gallery2-header">
         <div data-animation="animated zoomInUp">Теплицы наших покупателей</div>
     </header>
 
-    <section id="section-gallery" class="c__section bg-dark text-center">
+    <section id="section-gallery2" class="c__section bg-dark text-center">
 
         <div class="container">
-            <div id="carousel-gallery" class="carousel slide" data-ride="carousel">
+            <div id="carousel-gallery2" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
 
@@ -2091,6 +2155,35 @@
                             </div>
                         </form>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-raccoon" class="c__section section-raccoon">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-right p-0">
+                    <div class="raccoon-imgWrap">
+                        <div class="raccoon-dialog bg-warning d-inline-block p-4">
+                            <form class="raccoon-form text-center">
+                                <div class="mb-2">
+                                    <div class="h4" data-animation="animated flipInX">Остались вопровы?</div>
+                                    <div data-animation="animated flipInX delay-1s">Оставьте ваш номер телефона</div>
+                                    <div data-animation="animated flipInX delay-2s">И наш консультант с Вами свяжется</div>
+                                </div>
+                                <div class="form-group" data-animation="animated flipInX delay-3s">
+                                    <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                </div>
+                                <div class="form-group" data-animation="animated flipInX delay-4s">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Номер телефона"
+                                        required>
+                                </div>
+                                <button type="submit" data-animation="animated flipInX delay-5s" class="c__btn c__btn--danger">Заказать звонок</button>
+                            </form>
+                        </div>
+                        <img src="./public/assets/img/icon/raccoon.png" class="" alt="raccoonPng">
                     </div>
                 </div>
             </div>
@@ -2484,6 +2577,481 @@
 
     <!-- РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ -->
 
+    <div class="modal fade" id="modal-product-product1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body h-100">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 card-product__container">
+                                <form class="jForm">
+                                    <input type="hidden" name="form" value="Карточка товара">
+                                    <input type="hidden" name="subject" value="Перезвонить по мотоблоку">
+                                    <input type="hidden" name="product" value="Культиватор Shtenli 1000">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_20.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_shir_2.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_shir_2_4.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_shir_3_5.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_shir_4.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <table class="table card-product__table card-product__table_color_green">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Культиватор SHTENLI 2000 1
+                                                            <div class="card-product__raiting"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                            <ul>
+                                                <li>Производитель: Германия</li>
+                                                <li>Тип двигателя: Бензиновый, 2-ух тактный</li>
+                                                <li>Марка двигателя: HONDA</li>
+                                                <li>Мощность: 3.0 л.с.</li>
+                                                <li>Объём двигателя: 62 куб.см</li>
+                                                <li>Кол-во цилиндров: 1</li>
+                                                <li>Запуск двигателя: Механический стартер</li>
+                                                <li>Охлаждение: Воздушное</li>
+                                                <li>Объем топливного бака: 1.2 л.</li>
+                                                <li>Объем масляного бака: 0.5 л.</li>
+                                                <li>Тип топлива: АИ-92, АИ-95</li>
+                                                <li>Расход топлива: 0,2 л/ч</li>
+                                                <li>Дифференциал: Нет</li>
+                                                <li>ВОМ: Нет</li>
+                                                <li>Кол-во передач: 1 вперед</li>
+                                                <li>Глубина культивации: 12 см.</li>
+                                                <li>Ширина культивации: 20-40 см.</li>
+                                                <li>Сцепление: Ременное</li>
+                                                <li>Редуктор: Шестерёнчатый</li>
+                                                <li>Вес: 30 кг.</li>
+                                                <li>Гарантия: 2 года</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 text-center card-product__price-container">
+                                            <div class="product_card-prices text-center">
+                                                <span class="product_card-price text-red h4 font-weight-bold"><span>442</span>&nbsp;руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-group input-group-lg">
+                                                <input type="text" name="phone" class="form-control" placeholder="Телефон" required>
+                                                <div class="input-group-append">
+                                                    <button class="btn text-white bg-success px-lg-5" type="submit">Заказать</button>
+                                                </div>
+                                            </div>                        
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ -->
+
+    <div class="modal fade" id="modal-product-product2">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body h-100">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 card-product__container">
+                                <form class="jForm">
+                                    <input type="hidden" name="form" value="Карточка товара">
+                                    <input type="hidden" name="subject" value="Перезвонить по мотоблоку">
+                                    <input type="hidden" name="product" value="Культиватор Shtenli 1000">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_20.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_shir_2.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_shir_2_4.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_shir_3_5.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_shir_4.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <table class="table card-product__table card-product__table_color_green">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Культиватор SHTENLI 2000 2
+                                                            <div class="card-product__raiting"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                            <ul>
+                                                <li>Производитель: Германия</li>
+                                                <li>Тип двигателя: Бензиновый, 2-ух тактный</li>
+                                                <li>Марка двигателя: HONDA</li>
+                                                <li>Мощность: 3.0 л.с.</li>
+                                                <li>Объём двигателя: 62 куб.см</li>
+                                                <li>Кол-во цилиндров: 1</li>
+                                                <li>Запуск двигателя: Механический стартер</li>
+                                                <li>Охлаждение: Воздушное</li>
+                                                <li>Объем топливного бака: 1.2 л.</li>
+                                                <li>Объем масляного бака: 0.5 л.</li>
+                                                <li>Тип топлива: АИ-92, АИ-95</li>
+                                                <li>Расход топлива: 0,2 л/ч</li>
+                                                <li>Дифференциал: Нет</li>
+                                                <li>ВОМ: Нет</li>
+                                                <li>Кол-во передач: 1 вперед</li>
+                                                <li>Глубина культивации: 12 см.</li>
+                                                <li>Ширина культивации: 20-40 см.</li>
+                                                <li>Сцепление: Ременное</li>
+                                                <li>Редуктор: Шестерёнчатый</li>
+                                                <li>Вес: 30 кг.</li>
+                                                <li>Гарантия: 2 года</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 text-center card-product__price-container">
+                                            <div class="product_card-prices text-center">
+                                                <span class="product_card-price text-red h4 font-weight-bold"><span>442</span>&nbsp;руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-group input-group-lg">
+                                                <input type="text" name="phone" class="form-control" placeholder="Телефон" required>
+                                                <div class="input-group-append">
+                                                    <button class="btn text-white bg-success px-lg-5" type="submit">Заказать</button>
+                                                </div>
+                                            </div>                        
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ -->
+
+    <div class="modal fade" id="modal-product-product3">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body h-100">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 card-product__container">
+                                <form class="jForm">
+                                    <input type="hidden" name="form" value="Карточка товара">
+                                    <input type="hidden" name="subject" value="Перезвонить по мотоблоку">
+                                    <input type="hidden" name="product" value="Культиватор Shtenli 1000">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_20.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_shir_2.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_shir_2_4.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_shir_3_5.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_shir_4.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <table class="table card-product__table card-product__table_color_green">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Культиватор SHTENLI 2000 3
+                                                            <div class="card-product__raiting"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                            <ul>
+                                                <li>Производитель: Германия</li>
+                                                <li>Тип двигателя: Бензиновый, 2-ух тактный</li>
+                                                <li>Марка двигателя: HONDA</li>
+                                                <li>Мощность: 3.0 л.с.</li>
+                                                <li>Объём двигателя: 62 куб.см</li>
+                                                <li>Кол-во цилиндров: 1</li>
+                                                <li>Запуск двигателя: Механический стартер</li>
+                                                <li>Охлаждение: Воздушное</li>
+                                                <li>Объем топливного бака: 1.2 л.</li>
+                                                <li>Объем масляного бака: 0.5 л.</li>
+                                                <li>Тип топлива: АИ-92, АИ-95</li>
+                                                <li>Расход топлива: 0,2 л/ч</li>
+                                                <li>Дифференциал: Нет</li>
+                                                <li>ВОМ: Нет</li>
+                                                <li>Кол-во передач: 1 вперед</li>
+                                                <li>Глубина культивации: 12 см.</li>
+                                                <li>Ширина культивации: 20-40 см.</li>
+                                                <li>Сцепление: Ременное</li>
+                                                <li>Редуктор: Шестерёнчатый</li>
+                                                <li>Вес: 30 кг.</li>
+                                                <li>Гарантия: 2 года</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 text-center card-product__price-container">
+                                            <div class="product_card-prices text-center">
+                                                <span class="product_card-price text-red h4 font-weight-bold"><span>442</span>&nbsp;руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-group input-group-lg">
+                                                <input type="text" name="phone" class="form-control" placeholder="Телефон" required>
+                                                <div class="input-group-append">
+                                                    <button class="btn text-white bg-success px-lg-5" type="submit">Заказать</button>
+                                                </div>
+                                            </div>                        
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ -->
+
+    <div class="modal fade" id="modal-product-product4">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body h-100">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 card-product__container">
+                                <form class="jForm">
+                                    <input type="hidden" name="form" value="Карточка товара">
+                                    <input type="hidden" name="subject" value="Перезвонить по мотоблоку">
+                                    <input type="hidden" name="product" value="Культиватор Shtenli 1000">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_20.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_shir_2.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_shir_2_4.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_shir_3_5.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_shir_4.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <table class="table card-product__table card-product__table_color_green">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Культиватор SHTENLI 2000 4
+                                                            <div class="card-product__raiting"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                            <ul>
+                                                <li>Производитель: Германия</li>
+                                                <li>Тип двигателя: Бензиновый, 2-ух тактный</li>
+                                                <li>Марка двигателя: HONDA</li>
+                                                <li>Мощность: 3.0 л.с.</li>
+                                                <li>Объём двигателя: 62 куб.см</li>
+                                                <li>Кол-во цилиндров: 1</li>
+                                                <li>Запуск двигателя: Механический стартер</li>
+                                                <li>Охлаждение: Воздушное</li>
+                                                <li>Объем топливного бака: 1.2 л.</li>
+                                                <li>Объем масляного бака: 0.5 л.</li>
+                                                <li>Тип топлива: АИ-92, АИ-95</li>
+                                                <li>Расход топлива: 0,2 л/ч</li>
+                                                <li>Дифференциал: Нет</li>
+                                                <li>ВОМ: Нет</li>
+                                                <li>Кол-во передач: 1 вперед</li>
+                                                <li>Глубина культивации: 12 см.</li>
+                                                <li>Ширина культивации: 20-40 см.</li>
+                                                <li>Сцепление: Ременное</li>
+                                                <li>Редуктор: Шестерёнчатый</li>
+                                                <li>Вес: 30 кг.</li>
+                                                <li>Гарантия: 2 года</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 text-center card-product__price-container">
+                                            <div class="product_card-prices text-center">
+                                                <span class="product_card-price text-red h4 font-weight-bold"><span>442</span>&nbsp;руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-group input-group-lg">
+                                                <input type="text" name="phone" class="form-control" placeholder="Телефон" required>
+                                                <div class="input-group-append">
+                                                    <button class="btn text-white bg-success px-lg-5" type="submit">Заказать</button>
+                                                </div>
+                                            </div>                        
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ -->
+
+    <div class="modal fade" id="modal-product-product5">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body h-100">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 card-product__container">
+                                <form class="jForm">
+                                    <input type="hidden" name="form" value="Карточка товара">
+                                    <input type="hidden" name="subject" value="Перезвонить по мотоблоку">
+                                    <input type="hidden" name="product" value="Культиватор Shtenli 1000">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_20.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_shir_2.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_shir_2_4.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_shir_3_5.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="./public/assets/img/card/sibirskaya_shir_4.jpg" alt="certificate" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <table class="table card-product__table card-product__table_color_green">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Культиватор SHTENLI 2000 5
+                                                            <div class="card-product__raiting"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                            <ul>
+                                                <li>Производитель: Германия</li>
+                                                <li>Тип двигателя: Бензиновый, 2-ух тактный</li>
+                                                <li>Марка двигателя: HONDA</li>
+                                                <li>Мощность: 3.0 л.с.</li>
+                                                <li>Объём двигателя: 62 куб.см</li>
+                                                <li>Кол-во цилиндров: 1</li>
+                                                <li>Запуск двигателя: Механический стартер</li>
+                                                <li>Охлаждение: Воздушное</li>
+                                                <li>Объем топливного бака: 1.2 л.</li>
+                                                <li>Объем масляного бака: 0.5 л.</li>
+                                                <li>Тип топлива: АИ-92, АИ-95</li>
+                                                <li>Расход топлива: 0,2 л/ч</li>
+                                                <li>Дифференциал: Нет</li>
+                                                <li>ВОМ: Нет</li>
+                                                <li>Кол-во передач: 1 вперед</li>
+                                                <li>Глубина культивации: 12 см.</li>
+                                                <li>Ширина культивации: 20-40 см.</li>
+                                                <li>Сцепление: Ременное</li>
+                                                <li>Редуктор: Шестерёнчатый</li>
+                                                <li>Вес: 30 кг.</li>
+                                                <li>Гарантия: 2 года</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 text-center card-product__price-container">
+                                            <div class="product_card-prices text-center">
+                                                <span class="product_card-price text-red h4 font-weight-bold"><span>442</span>&nbsp;руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-group input-group-lg">
+                                                <input type="text" name="phone" class="form-control" placeholder="Телефон" required>
+                                                <div class="input-group-append">
+                                                    <button class="btn text-white bg-success px-lg-5" type="submit">Заказать</button>
+                                                </div>
+                                            </div>                        
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ -->
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
@@ -2493,6 +3061,8 @@
     <!-- Isotope -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
         integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+    <!-- Owl carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js" integrity="sha256-s5TTOyp+xlSmsDfr/aZhg0Gz+JejYr5iTJI8JxG1SkM=" crossorigin="anonymous"></script>
 
     <script src="./public/scripts/data.js"></script>
     <script src="./src/scripts/c.js"></script>

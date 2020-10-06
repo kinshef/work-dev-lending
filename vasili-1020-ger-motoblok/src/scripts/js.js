@@ -196,9 +196,31 @@ $(document).ready(function () {
         }
     });
 
+    $(".owl-carousel-prodyctsImg").owlCarousel({
+        items: 1,
+        nav: true,
+        loop: true,
+        autoHeight:true,
+        navText: ['<i class="fa fa-lg fa-2x fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-lg fa-2x fa-angle-right" aria-hidden="true"></i>'],
+    });
+
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+
+
+    try {
+        var raccoon = document.querySelector('.section-raccoon');
+        document.onscroll = function () {
+            if(window.pageYOffset >= 11500){
+                raccoon.classList.add('active');
+            } else {
+                raccoon.classList.remove('active');
+            }
+        };
+    } catch (error) {
+        console.log(error);
+    }
 
     try{
         /* Animate blocks */
@@ -231,7 +253,5 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector('.online_now').textContent = sessionStorage.getItem('onlineNow')
     }, 7500)
     // изменения "Сейчас на сайте" end
-
-
 
 });
