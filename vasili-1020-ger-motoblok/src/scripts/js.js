@@ -212,7 +212,7 @@ document.addEventListener("DOMContentLoaded", function () {
     try {
         var raccoon = document.querySelector('.section-raccoon');
         document.onscroll = function () {
-            if(window.pageYOffset >= 11500){
+            if(window.pageYOffset >= document.querySelector('#section-contact').offsetTop-100){
                 raccoon.classList.add('active');
             } else {
                 raccoon.classList.remove('active');
