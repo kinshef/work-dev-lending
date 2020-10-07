@@ -35,6 +35,15 @@ $(document).ready(function () {
         }
     }
 
+    try {
+        $('.equipment__card').each(function(event,el){
+            var asd = $('.equipment__price span', el).text() * 1.27;
+            $('.equipment__price-old span', el).text(asd.toFixed())
+        })
+    } catch (error) {
+        console.log(error);
+    }
+
     // Form submit
     $("form").submit(function (event) {
         event.preventDefault();
@@ -196,14 +205,6 @@ $(document).ready(function () {
         }
     });
 
-    $(".owl-carousel-prodyctsImg").owlCarousel({
-        items: 1,
-        nav: true,
-        loop: true,
-        autoHeight:true,
-        navText: ['<i class="fa fa-lg fa-2x fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-lg fa-2x fa-angle-right" aria-hidden="true"></i>'],
-    });
-
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -212,7 +213,17 @@ document.addEventListener("DOMContentLoaded", function () {
     try {
         var raccoon = document.querySelector('.section-raccoon');
         document.onscroll = function () {
-            if(window.pageYOffset >= document.querySelector('#section-contact').offsetTop-100){
+            
+            var targetPosition = {
+                top: window.pageYOffset + raccoon.getBoundingClientRect().top,
+                bottom: window.pageYOffset + raccoon.getBoundingClientRect().bottom
+            },
+            windowPosition = {
+                top: window.pageYOffset,
+                bottom: window.pageYOffset + document.documentElement.clientHeight
+            };
+            
+            if(targetPosition.bottom > windowPosition.top && targetPosition.top < windowPosition.bottom){
                 raccoon.classList.add('active');
             } else {
                 raccoon.classList.remove('active');

@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" integrity="sha256-HtCCUh9Hkh//8U1OwcbD8epVEUdBvuI8wj1KtqMhNkI=" crossorigin="anonymous">
     <!-- Fontawesome -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- Owl carousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" integrity="sha256-AWqwvQ3kg5aA5KcXpX25sYKowsX97sTCTbeo33Yfyk0=" crossorigin="anonymous">
     <!-- Fancybox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+    <!-- Fotorama carousel JS -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+
 
     <link rel="stylesheet" href="./public/style/css.css">
     <link rel="icon" type="image/ico" href="./public/assets/img/favicon.ico">
@@ -112,7 +113,6 @@
 
                                 <div class="row">
                                     <div class="col-lg-6">
-
                                         <div class="tab-content">
                                             
                                             <div class="tab-pane fade show active" id="tab-content-product1-dop1">
@@ -222,15 +222,15 @@
 
                                     </div>
 
-                                    <div class="col-lg-6">
-                                        <table class="table table-sm table-striped">
+                                    <div class="col-lg-6 text-center">
+                                        <table class="table table-sm table-striped text-left">
                                             <tbody>
                                                 <tr>
                                                     <th>
-                                                        <span class="d-sm-inline d-none">Ширина (м): </span>
-                                                        <span class="d-sm-none d-inline">Ширина: </span>
-                                                        <a href="#modal-question-shirina" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        <a href="#modal-question-shirina" class="d-inline-block" data-toggle="modal">
+                                                            <span class="d-sm-inline d-none">Ширина (м): </span>
+                                                            <span class="d-sm-none d-inline">Ширина: </span>
+                                                            <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                         </a>
                                                     </th>
                                                     <td>
@@ -239,10 +239,10 @@
                                                 </tr>
                                                 <tr>
                                                     <th>
-                                                        <span class="d-sm-inline d-none">Длина (м): </span>
-                                                        <span class="d-sm-none d-inline">Длина: </span>
-                                                        <a href="#modal-question-length" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        <a href="#modal-question-length" class="d-inline-block" data-toggle="modal">
+                                                            <span class="d-sm-inline d-none">Длина (м): </span>
+                                                            <span class="d-sm-none d-inline">Длина: </span>
+                                                            <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                         </a>
                                                     </th>
                                                     <td>
@@ -251,10 +251,10 @@
                                                 </tr>
                                                 <tr>
                                                     <th>
-                                                        <span class="d-sm-inline d-none">Интервал (м): </span>
-                                                        <span class="d-sm-none d-inline">Интервал: </span>
-                                                        <a href="#modal-question-interval" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        <a href="#modal-question-interval" class="d-inline-block" data-toggle="modal">
+                                                            <span class="d-sm-inline d-none">Интервал (м): </span>
+                                                            <span class="d-sm-none d-inline">Интервал: </span>
+                                                            <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                         </a>
                                                     </th>
                                                     <td>
@@ -263,10 +263,10 @@
                                                 </tr>
                                                 <tr>
                                                     <th>
-                                                        <span class="d-sm-inline d-none">Стрингеры (шт): </span>
-                                                        <span class="d-sm-none d-inline">Стрингер: </span>
-                                                        <a href="#modal-question-stringery" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        <a href="#modal-question-stringery" class="d-inline-block" data-toggle="modal">
+                                                            <span class="d-sm-inline d-none">Стрингеры (шт): </span>
+                                                            <span class="d-sm-none d-inline">Стрингер: </span>
+                                                            <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                         </a>
                                                     </th>
                                                     <td>
@@ -275,10 +275,10 @@
                                                 </tr>
                                                 <tr>
                                                     <th>
-                                                        <span class="d-sm-inline d-none">Профиль (мм): </span>
-                                                        <span class="d-sm-none d-inline">Труба: </span>
-                                                        <a href="#modal-question-profil" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        <a href="#modal-question-profil" class="d-inline-block" data-toggle="modal">
+                                                            <span class="d-sm-inline d-none">Профиль (мм): </span>
+                                                            <span class="d-sm-none d-inline">Труба: </span>
+                                                            <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                         </a>
                                                     </th>
                                                     <td>
@@ -287,9 +287,9 @@
                                                 </tr>
                                                 <tr>
                                                     <th>
-                                                        <span class="">Крепеж: </span>
-                                                        <a href="#modal-question-kreplenie" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        <a href="#modal-question-kreplenie" class="d-inline-block" data-toggle="modal">
+                                                            <span class="">Крепеж: </span>
+                                                            <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                         </a>
                                                     </th>
                                                     <td>
@@ -298,9 +298,9 @@
                                                 </tr>
                                                 <tr>
                                                     <th>
-                                                        <span class="">Дуга: </span>
-                                                        <a href="#modal-question-duga" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        <a href="#modal-question-duga" class="d-inline-block" data-toggle="modal">
+                                                            <span class="">Дуга: </span>
+                                                            <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                         </a>
                                                     </th>
                                                     <td>
@@ -344,7 +344,7 @@
 
                                         <a href="#modal-product-product1" data-toggle="modal" class="btn-link">Полная характеристика</a>
 
-                                        <div class="catalog__subblock text-center mt-4">
+                                        <div class="catalog__subblock mt-4">
                                             <div class="catalog__subblock__title">
                                                 <span class="">Рассрочка: </span>
                                                 <a href="#modal-question-bank" data-toggle="modal">
@@ -434,7 +434,7 @@
                             <div class="catalog__block">
 
                                 <div class="row">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 text-center">
 
                                         <div class="tab-content">
                                             
@@ -545,15 +545,15 @@
 
                                     </div>
 
-                                    <div class="col-lg-6">
-                                        <table class="table table-sm table-striped">
+                                    <div class="col-lg-6 text-center">
+                                        <table class="table table-sm table-striped text-left">
                                             <tbody>
                                                 <tr>
                                                     <th>
-                                                        <span class="d-sm-inline d-none">Ширина (м): </span>
-                                                        <span class="d-sm-none d-inline">Ширина: </span>
-                                                        <a href="#modal-question-shirina" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        <a href="#modal-question-shirina" class="d-inline-block" data-toggle="modal">
+                                                            <span class="d-sm-inline d-none">Ширина (м): </span>
+                                                            <span class="d-sm-none d-inline">Ширина: </span>
+                                                            <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                         </a>
                                                     </th>
                                                     <td>
@@ -562,10 +562,10 @@
                                                 </tr>
                                                 <tr>
                                                     <th>
-                                                        <span class="d-sm-inline d-none">Длина (м): </span>
-                                                        <span class="d-sm-none d-inline">Длина: </span>
-                                                        <a href="#modal-question-length" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        <a href="#modal-question-length" class="d-inline-block" data-toggle="modal">
+                                                            <span class="d-sm-inline d-none">Длина (м): </span>
+                                                            <span class="d-sm-none d-inline">Длина: </span>
+                                                            <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                         </a>
                                                     </th>
                                                     <td>
@@ -574,10 +574,10 @@
                                                 </tr>
                                                 <tr>
                                                     <th>
-                                                        <span class="d-sm-inline d-none">Интервал (м): </span>
-                                                        <span class="d-sm-none d-inline">Интервал: </span>
-                                                        <a href="#modal-question-interval" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        <a href="#modal-question-interval" class="d-inline-block" data-toggle="modal">
+                                                            <span class="d-sm-inline d-none">Интервал (м): </span>
+                                                            <span class="d-sm-none d-inline">Интервал: </span>
+                                                            <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                         </a>
                                                     </th>
                                                     <td>
@@ -586,10 +586,10 @@
                                                 </tr>
                                                 <tr>
                                                     <th>
-                                                        <span class="d-sm-inline d-none">Стрингеры (шт): </span>
-                                                        <span class="d-sm-none d-inline">Стрингер: </span>
-                                                        <a href="#modal-question-stringery" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        <a href="#modal-question-stringery" class="d-inline-block" data-toggle="modal">
+                                                            <span class="d-sm-inline d-none">Стрингеры (шт): </span>
+                                                            <span class="d-sm-none d-inline">Стрингер: </span>
+                                                            <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                         </a>
                                                     </th>
                                                     <td>
@@ -598,10 +598,10 @@
                                                 </tr>
                                                 <tr>
                                                     <th>
-                                                        <span class="d-sm-inline d-none">Профиль (мм): </span>
-                                                        <span class="d-sm-none d-inline">Труба: </span>
-                                                        <a href="#modal-question-profil" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        <a href="#modal-question-profil" class="d-inline-block" data-toggle="modal">
+                                                            <span class="d-sm-inline d-none">Профиль (мм): </span>
+                                                            <span class="d-sm-none d-inline">Труба: </span>
+                                                            <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                         </a>
                                                     </th>
                                                     <td>
@@ -610,9 +610,9 @@
                                                 </tr>
                                                 <tr>
                                                     <th>
-                                                        <span class="">Крепеж: </span>
-                                                        <a href="#modal-question-kreplenie" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        <a href="#modal-question-kreplenie" class="d-inline-block" data-toggle="modal">
+                                                            <span class="">Крепеж: </span>
+                                                            <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                         </a>
                                                     </th>
                                                     <td>
@@ -621,9 +621,9 @@
                                                 </tr>
                                                 <tr>
                                                     <th>
-                                                        <span class="">Дуга: </span>
-                                                        <a href="#modal-question-duga" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                        <a href="#modal-question-duga" class="d-inline-block" data-toggle="modal">
+                                                            <span class="">Дуга: </span>
+                                                            <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                         </a>
                                                     </th>
                                                     <td>
@@ -667,7 +667,7 @@
 
                                         <a href="#modal-product-product2" data-toggle="modal" class="btn-link">Полная характеристика</a>
 
-                                        <div class="catalog__subblock text-center mt-4">
+                                        <div class="catalog__subblock mt-4">
                                             <div class="catalog__subblock__title">
                                                 <span class="">Рассрочка: </span>
                                                 <a href="#modal-question-bank" data-toggle="modal">
@@ -852,14 +852,14 @@
                                 <img class="img-fluid my-2" src="./public/assets/img/card/dop.jpg">
                             </div>
 
-                            <div class="catalog__block">
-                                <table class="table table-sm table-striped">
+                            <div class="catalog__block text-center">
+                                <table class="table table-sm table-striped text-left">
                                     <tbody>
                                         <tr>
                                             <th>
-                                                <span class="">Ширина: </span>
-                                                <a href="#modal-question-shirina" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                <a href="#modal-question-shirina" class="d-inline-block" data-toggle="modal">
+                                                    <span class="">Ширина: </span>
+                                                    <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                 </a>
                                             </th>
                                             <td>
@@ -868,9 +868,9 @@
                                         </tr>
                                         <tr>
                                             <th>
-                                                <span class="">Длина: </span>
-                                                <a href="#modal-question-length" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                <a href="#modal-question-length" class="d-inline-block" data-toggle="modal">
+                                                    <span class="">Длина: </span>
+                                                    <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                 </a>
                                             </th>
                                             <td>
@@ -879,9 +879,9 @@
                                         </tr>
                                         <tr>
                                             <th>
-                                                <span class="">Интервал: </span>
-                                                <a href="#modal-question-interval" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                <a href="#modal-question-interval" class="d-inline-block" data-toggle="modal">
+                                                    <span class="">Интервал: </span>
+                                                    <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                 </a>
                                             </th>
                                             <td>
@@ -890,9 +890,9 @@
                                         </tr>
                                         <tr>
                                             <th>
-                                                <span class="">Труба: </span>
-                                                <a href="#modal-question-profil" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                <a href="#modal-question-profil" class="d-inline-block" data-toggle="modal">
+                                                    <span class="">Труба: </span>
+                                                    <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                 </a>
                                             </th>
                                             <td>
@@ -901,9 +901,9 @@
                                         </tr>
                                         <tr>
                                             <th>
-                                                <span class="">Крепеж: </span>
-                                                <a href="#modal-question-kreplenie" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                <a href="#modal-question-kreplenie" class="d-inline-block" data-toggle="modal">
+                                                    <span class="">Крепеж: </span>
+                                                    <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                 </a>
                                             </th>
                                             <td>
@@ -912,9 +912,9 @@
                                         </tr>
                                         <tr>
                                             <th>
-                                                <span class="">Дуга: </span>
-                                                <a href="#modal-question-duga" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                <a href="#modal-question-duga" class="d-inline-block" data-toggle="modal">
+                                                    <span class="">Дуга: </span>
+                                                    <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                 </a>
                                             </th>
                                             <td>
@@ -1086,14 +1086,14 @@
                                 <img class="img-fluid my-2" src="./public/assets/img/card/dop.jpg">
                             </div>
 
-                            <div class="catalog__block">
-                                <table class="table table-sm table-striped">
+                            <div class="catalog__block text-center">
+                                <table class="table table-sm table-striped text-left">
                                     <tbody>
                                         <tr>
                                             <th>
-                                                <span class="">Ширина: </span>
-                                                <a href="#modal-question-shirina" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                <a href="#modal-question-shirina" class="d-inline-block" data-toggle="modal">
+                                                    <span class="">Ширина: </span>
+                                                    <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                 </a>
                                             </th>
                                             <td>
@@ -1102,9 +1102,9 @@
                                         </tr>
                                         <tr>
                                             <th>
-                                                <span class="">Длина: </span>
-                                                <a href="#modal-question-length" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                <a href="#modal-question-length" class="d-inline-block" data-toggle="modal">
+                                                    <span class="">Длина: </span>
+                                                    <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                 </a>
                                             </th>
                                             <td>
@@ -1113,9 +1113,9 @@
                                         </tr>
                                         <tr>
                                             <th>
-                                                <span class="">Интервал: </span>
-                                                <a href="#modal-question-interval" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                <a href="#modal-question-interval" class="d-inline-block" data-toggle="modal">
+                                                    <span class="">Интервал: </span>
+                                                    <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                 </a>
                                             </th>
                                             <td>
@@ -1124,9 +1124,9 @@
                                         </tr>
                                         <tr>
                                             <th>
-                                                <span class="">Труба: </span>
-                                                <a href="#modal-question-profil" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                <a href="#modal-question-profil" class="d-inline-block" data-toggle="modal">
+                                                    <span class="">Труба: </span>
+                                                    <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                 </a>
                                             </th>
                                             <td>
@@ -1135,9 +1135,9 @@
                                         </tr>
                                         <tr>
                                             <th>
-                                                <span class="">Крепеж: </span>
-                                                <a href="#modal-question-kreplenie" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                <a href="#modal-question-kreplenie" class="d-inline-block" data-toggle="modal">
+                                                    <span class="">Крепеж: </span>
+                                                    <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                 </a>
                                             </th>
                                             <td>
@@ -1146,9 +1146,9 @@
                                         </tr>
                                         <tr>
                                             <th>
-                                                <span class="">Дуга: </span>
-                                                <a href="#modal-question-duga" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                <a href="#modal-question-duga" class="d-inline-block" data-toggle="modal">
+                                                    <span class="">Дуга: </span>
+                                                    <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                 </a>
                                             </th>
                                             <td>
@@ -1318,14 +1318,14 @@
                                 <img class="img-fluid my-2" src="./public/assets/img/card/dop.jpg">
                             </div>
 
-                            <div class="catalog__block">
-                                <table class="table table-sm table-striped">
+                            <div class="catalog__block text-center">
+                                <table class="table table-sm table-striped text-left">
                                     <tbody>
                                         <tr>
                                             <th>
-                                                <span class="">Ширина: </span>
-                                                <a href="#modal-question-shirina" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                <a href="#modal-question-shirina" class="d-inline-block" data-toggle="modal">
+                                                    <span class="">Ширина: </span>
+                                                    <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                 </a>
                                             </th>
                                             <td>
@@ -1334,9 +1334,9 @@
                                         </tr>
                                         <tr>
                                             <th>
-                                                <span class="">Длина: </span>
-                                                <a href="#modal-question-length" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                <a href="#modal-question-length" class="d-inline-block" data-toggle="modal">
+                                                    <span class="">Длина: </span>
+                                                    <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                 </a>
                                             </th>
                                             <td>
@@ -1345,9 +1345,9 @@
                                         </tr>
                                         <tr>
                                             <th>
-                                                <span class="">Интервал: </span>
-                                                <a href="#modal-question-interval" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                <a href="#modal-question-interval" class="d-inline-block" data-toggle="modal">
+                                                    <span class="">Интервал: </span>
+                                                    <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                 </a>
                                             </th>
                                             <td>
@@ -1356,9 +1356,9 @@
                                         </tr>
                                         <tr>
                                             <th>
-                                                <span class="">Труба: </span>
-                                                <a href="#modal-question-profil" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                <a href="#modal-question-profil" class="d-inline-block" data-toggle="modal">
+                                                    <span class="">Труба: </span>
+                                                    <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                 </a>
                                             </th>
                                             <td>
@@ -1367,9 +1367,9 @@
                                         </tr>
                                         <tr>
                                             <th>
-                                                <span class="">Крепеж: </span>
-                                                <a href="#modal-question-kreplenie" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                <a href="#modal-question-kreplenie" class="d-inline-block" data-toggle="modal">
+                                                    <span class="">Крепеж: </span>
+                                                    <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                 </a>
                                             </th>
                                             <td>
@@ -1378,9 +1378,9 @@
                                         </tr>
                                         <tr>
                                             <th>
-                                                <span class="">Дуга: </span>
-                                                <a href="#modal-question-duga" class="animate__heartBeat d-inline-block" data-toggle="modal">
-                                                    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                                <a href="#modal-question-duga" class="d-inline-block" data-toggle="modal">
+                                                    <span class="">Дуга: </span>
+                                                    <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                                 </a>
                                             </th>
                                             <td>
@@ -1569,8 +1569,11 @@
                             Форточка
                         </div>
                         <hr>
+                        <s class="equipment__price-old">
+                            <span>0</span> руб.
+                        </s>
                         <div class="equipment__price">
-                            20 руб.
+                            <span>20</span> руб.
                         </div>
                     </div>
                 </div>
@@ -1583,8 +1586,11 @@
                             Газлифт
                         </div>
                         <hr>
+                        <s class="equipment__price-old">
+                            <span>0</span> руб.
+                        </s>
                         <div class="equipment__price">
-                            20 руб.
+                            <span>20</span> руб.
                         </div>
                     </div>
                 </div>
@@ -1597,8 +1603,11 @@
                             Лента утепления 12 м.
                         </div>
                         <hr>
+                        <s class="equipment__price-old">
+                            <span>0</span> руб.
+                        </s>
                         <div class="equipment__price">
-                            10 руб.
+                            <span>10</span> руб.
                         </div>
                     </div>
                 </div>
@@ -1611,8 +1620,11 @@
                             Авто-полив
                         </div>
                         <hr>
+                        <s class="equipment__price-old">
+                            <span>0</span> руб.
+                        </s>
                         <div class="equipment__price">
-                            30 руб.
+                            <span>30</span> руб.
                         </div>
                     </div>
                 </div>
@@ -1625,8 +1637,11 @@
                             Подвязки
                         </div>
                         <hr>
+                        <s class="equipment__price-old">
+                            <span>0</span> руб.
+                        </s>
                         <div class="equipment__price">
-                            10 руб.
+                            <span>10</span> руб.
                         </div>
                     </div>
                 </div>
@@ -1639,8 +1654,11 @@
                             П-профиль
                         </div>
                         <hr>
+                        <s class="equipment_pprice-old">
+                            <span>0</span> руб.
+                        </s>
                         <div class="equipment__price">
-                            7 руб.
+                            <span>7</span> руб.
                         </div>
                     </div>
                 </div>
@@ -1653,8 +1671,11 @@
                             Парник "Огурчик"
                         </div>
                         <hr>
+                        <s class="equipment__price-old">
+                            <span>0</span> руб.
+                        </s>
                         <div class="equipment__price">
-                            20 руб.
+                            <span>20</span> руб.
                         </div>
                     </div>
                 </div>
@@ -1667,8 +1688,11 @@
                             Оцинкованная грядка
                         </div>
                         <hr>
+                        <s class="equipment__price-old">
+                            <span>0</span> руб.
+                        </s>
                         <div class="equipment__price">
-                            55 руб.
+                            <span>55</span> руб.
                         </div>
                     </div>
                 </div>
@@ -1820,7 +1844,7 @@
     
             <div class="row">
     
-                <div class="col-md-6 col-lg-4 mb-5">
+                <div class="col-6 col-lg-4 mb-5">
                     <div class="pb-1 h5 m-0 font-weight-bold text-white">Видеообзор от телемаркет</div>
                     <a href="https://www.youtube.com/watch?v=xCSpnvK3fcc" data-fancybox="gallery">
                         <div class="position-relative">
@@ -1832,7 +1856,7 @@
                     </a>
                 </div>
     
-                <div class="col-md-6 col-lg-4 mb-5">
+                <div class="col-6 col-lg-4 mb-5">
                     <div class="pb-1 h5 m-0 font-weight-bold text-white">Отзывы, обзор, советы</div>
                     <a href="https://www.youtube.com/watch?v=7eKCH5BX_Z0&t=5s" data-fancybox="gallery">
                         <div class="position-relative">
@@ -1844,7 +1868,7 @@
                     </a>
                 </div>
     
-                <div class="col-md-6 col-lg-4 mb-5">
+                <div class="col-6 col-lg-4 mb-5">
                     <div class="pb-1 h5 m-0 font-weight-bold text-white">Видеоинструкция по сборке</div>
                     <a href="https://www.youtube.com/watch?v=DtGpM95OXP4" data-fancybox="gallery">
                         <div class="position-relative">
@@ -1856,7 +1880,7 @@
                     </a>
                 </div>
     
-                <div class="col-md-6 col-lg-4 mb-5">
+                <div class="col-6 col-lg-4 mb-5">
                     <div class="pb-1 h5 m-0 font-weight-bold text-white">1. Видеоотзыв от покупателя</div>
                     <a href="https://www.youtube.com/watch?v=GaVHDgdzOB8" data-fancybox="gallery">
                         <div class="position-relative">
@@ -1868,7 +1892,7 @@
                     </a>
                 </div>
     
-                <div class="col-md-6 col-lg-4 mb-5">
+                <div class="col-6 col-lg-4 mb-5">
                     <div class="pb-1 h5 m-0 font-weight-bold text-white">2. Видеоотзыв от покупателя</div>
                     <a href="https://www.youtube.com/watch?v=WsztlAJs_EI" data-fancybox="gallery">
                         <div class="position-relative">
@@ -1880,7 +1904,7 @@
                     </a>
                 </div>
     
-                <div class="col-md-6 col-lg-4 mb-5">
+                <div class="col-6 col-lg-4 mb-5">
                     <div class="pb-1 h5 m-0 font-weight-bold text-white">3. Видеоотзыв от покупателя</div>
                     <a href="https://www.youtube.com/watch?v=lZB9fG3oKfw" data-fancybox="gallery">
                         <div class="position-relative">
@@ -2091,11 +2115,10 @@
                                 <div class="form-group" data-animation="animated flipInX delay-3s">
                                     <input type="text" name="name" class="form-control" placeholder="Ваше имя">
                                 </div>
-                                <div class="form-group" data-animation="animated flipInX delay-4s">
-                                    <input type="tel" name="phone" class="form-control" placeholder="Номер телефона"
-                                        required>
+                                <div class="form-group" data-animation="animated flipInX delay-3s">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
                                 </div>
-                                <button type="submit" data-animation="animated flipInX delay-5s" class="c__btn c__btn--danger">Заказать звонок</button>
+                                <button type="submit" data-animation="animated flipInX delay-3s" class="c__btn c__btn--danger">Заказать звонок</button>
                             </form>
                         </div>
                         
@@ -2502,28 +2525,16 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-sm-12 card-product__container">
-                                <form class="jForm">
-                                    <input type="hidden" name="form" value="Карточка товара">
-                                    <input type="hidden" name="subject" value="Перезвонить по мотоблоку">
-                                    <input type="hidden" name="product" value="Культиватор Shtenli 1000">
+                                <form class="has-calculator">
+                                    <input type="hidden" name="product" value="product1">
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_20.jpg" alt="certificate" class="img-fluid">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_shir_2.jpg" alt="certificate" class="img-fluid">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_shir_2_4.jpg" alt="certificate" class="img-fluid">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_shir_3_5.jpg" alt="certificate" class="img-fluid">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_shir_4.jpg" alt="certificate" class="img-fluid">
-                                                </div>
+                                            <div class="fotorama" data-nav="thumbs">
+                                                <img src="./public/assets/img/card/sibirskaya_20.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_2.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_2_4.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_3_5.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_4.jpg" width="16" height="9" alt="certificate" class="img-fluid">
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
@@ -2563,10 +2574,16 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 text-center card-product__price-container">
-                                            <div class="product_card-prices text-center">
-                                                <span class="product_card-price text-red h4 font-weight-bold"><span>442</span>&nbsp;руб.</span>
+                                            
+                                            <div class="catalog__price--old">
+                                                <span class="calculator-price-old">0</span> руб.
                                             </div>
+                                            <div class="catalog__price catalog__price--lg">
+                                                <span class="calculator-price">0</span> руб.
+                                            </div>
+                                            
                                         </div>
+                                        
                                         <div class="col-md-6">
                                             <div class="input-group input-group-lg">
                                                 <input type="text" name="phone" class="form-control" placeholder="Телефон" required>
@@ -2597,28 +2614,16 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-sm-12 card-product__container">
-                                <form class="jForm">
-                                    <input type="hidden" name="form" value="Карточка товара">
-                                    <input type="hidden" name="subject" value="Перезвонить по мотоблоку">
-                                    <input type="hidden" name="product" value="Культиватор Shtenli 1000">
+                                <form class="has-calculator">
+                                    <input type="hidden" name="product" value="product2">
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_20.jpg" alt="certificate" class="img-fluid">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_shir_2.jpg" alt="certificate" class="img-fluid">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_shir_2_4.jpg" alt="certificate" class="img-fluid">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_shir_3_5.jpg" alt="certificate" class="img-fluid">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_shir_4.jpg" alt="certificate" class="img-fluid">
-                                                </div>
+                                            <div class="fotorama" data-nav="thumbs">
+                                                <img src="./public/assets/img/card/sibirskaya_20.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_2.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_2_4.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_3_5.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_4.jpg" width="16" height="9" alt="certificate" class="img-fluid">
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
@@ -2658,8 +2663,11 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 text-center card-product__price-container">
-                                            <div class="product_card-prices text-center">
-                                                <span class="product_card-price text-red h4 font-weight-bold"><span>442</span>&nbsp;руб.</span>
+                                            <div class="catalog__price--old">
+                                                <span class="calculator-price-old">0</span> руб.
+                                            </div>
+                                            <div class="catalog__price catalog__price--lg">
+                                                <span class="calculator-price">0</span> руб.
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -2692,28 +2700,16 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-sm-12 card-product__container">
-                                <form class="jForm">
-                                    <input type="hidden" name="form" value="Карточка товара">
-                                    <input type="hidden" name="subject" value="Перезвонить по мотоблоку">
-                                    <input type="hidden" name="product" value="Культиватор Shtenli 1000">
+                                <form class="has-calculator">
+                                    <input type="hidden" name="product" value="product3">
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_20.jpg" alt="certificate" class="img-fluid">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_shir_2.jpg" alt="certificate" class="img-fluid">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_shir_2_4.jpg" alt="certificate" class="img-fluid">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_shir_3_5.jpg" alt="certificate" class="img-fluid">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_shir_4.jpg" alt="certificate" class="img-fluid">
-                                                </div>
+                                            <div class="fotorama" data-nav="thumbs">
+                                                <img src="./public/assets/img/card/sibirskaya_20.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_2.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_2_4.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_3_5.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_4.jpg" width="16" height="9" alt="certificate" class="img-fluid">
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
@@ -2753,8 +2749,11 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 text-center card-product__price-container">
-                                            <div class="product_card-prices text-center">
-                                                <span class="product_card-price text-red h4 font-weight-bold"><span>442</span>&nbsp;руб.</span>
+                                            <div class="catalog__price--old">
+                                                <span class="calculator-price-old">0</span> руб.
+                                            </div>
+                                            <div class="catalog__price catalog__price--lg">
+                                                <span class="calculator-price">0</span> руб.
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -2787,28 +2786,16 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-sm-12 card-product__container">
-                                <form class="jForm">
-                                    <input type="hidden" name="form" value="Карточка товара">
-                                    <input type="hidden" name="subject" value="Перезвонить по мотоблоку">
-                                    <input type="hidden" name="product" value="Культиватор Shtenli 1000">
+                                <form class="has-calculator">
+                                    <input type="hidden" name="product" value="product4">
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_20.jpg" alt="certificate" class="img-fluid">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_shir_2.jpg" alt="certificate" class="img-fluid">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_shir_2_4.jpg" alt="certificate" class="img-fluid">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_shir_3_5.jpg" alt="certificate" class="img-fluid">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_shir_4.jpg" alt="certificate" class="img-fluid">
-                                                </div>
+                                            <div class="fotorama" data-nav="thumbs">
+                                                <img src="./public/assets/img/card/sibirskaya_20.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_2.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_2_4.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_3_5.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_4.jpg" width="16" height="9" alt="certificate" class="img-fluid">
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
@@ -2848,8 +2835,11 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 text-center card-product__price-container">
-                                            <div class="product_card-prices text-center">
-                                                <span class="product_card-price text-red h4 font-weight-bold"><span>442</span>&nbsp;руб.</span>
+                                            <div class="catalog__price--old">
+                                                <span class="calculator-price-old">0</span> руб.
+                                            </div>
+                                            <div class="catalog__price catalog__price--lg">
+                                                <span class="calculator-price">0</span> руб.
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -2882,28 +2872,16 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-sm-12 card-product__container">
-                                <form class="jForm">
-                                    <input type="hidden" name="form" value="Карточка товара">
-                                    <input type="hidden" name="subject" value="Перезвонить по мотоблоку">
-                                    <input type="hidden" name="product" value="Культиватор Shtenli 1000">
+                                <form class="has-calculator">
+                                    <input type="hidden" name="product" value="product5">
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_20.jpg" alt="certificate" class="img-fluid">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_shir_2.jpg" alt="certificate" class="img-fluid">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_shir_2_4.jpg" alt="certificate" class="img-fluid">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_shir_3_5.jpg" alt="certificate" class="img-fluid">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="./public/assets/img/card/sibirskaya_shir_4.jpg" alt="certificate" class="img-fluid">
-                                                </div>
+                                            <div class="fotorama" data-nav="thumbs">
+                                                <img src="./public/assets/img/card/sibirskaya_20.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_2.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_2_4.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_3_5.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_4.jpg" width="16" height="9" alt="certificate" class="img-fluid">
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
@@ -2943,8 +2921,11 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 text-center card-product__price-container">
-                                            <div class="product_card-prices text-center">
-                                                <span class="product_card-price text-red h4 font-weight-bold"><span>442</span>&nbsp;руб.</span>
+                                            <div class="catalog__price--old">
+                                                <span class="calculator-price-old">0</span> руб.
+                                            </div>
+                                            <div class="catalog__price catalog__price--lg">
+                                                <span class="calculator-price">0</span> руб.
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -2976,12 +2957,14 @@
     <!-- Isotope -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
         integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-    <!-- Owl carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js" integrity="sha256-s5TTOyp+xlSmsDfr/aZhg0Gz+JejYr5iTJI8JxG1SkM=" crossorigin="anonymous"></script>
+    <!-- Fotorama carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
     <script src="./public/scripts/data.js"></script>
-    <script src="./dist/scripts/c.min.js"></script>
-    <script src="./dist/scripts/js.min.js"></script>
+    <!-- <script src="./dist/scripts/c.min.js"></script>
+    <script src="./dist/scripts/js.min.js"></script> -->
+    <script src="./src/scripts/c.js"></script>
+    <script src="./src/scripts/js.js"></script>
     <script src="../vendor/js/app.js"></script>
 </body>
 </html>

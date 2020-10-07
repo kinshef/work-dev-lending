@@ -44,6 +44,12 @@
   .h3{
       font-size: 1.5rem;
   }
+  .h4{
+      font-size: 1.25rem;
+  }
+  .h5{
+      font-size: 1rem;
+  }
 }
 .btn{
   white-space: normal;
@@ -618,7 +624,7 @@ header{
   margin-left: 60px;
   content: " ";
   width: 30px;
-  height: 300px;
+  height: 500px;
   background: #ffffff80;
   -webkit-animation-delay: .05s;
           animation-delay: .05s;
@@ -895,51 +901,4 @@ header{
     border-bottom-color: #ffc107;
     border-left-color: #ffc107;
   }
-}
-
-/*slaider modal */
-.card-product__container .owl-dots{
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  bottom: 0;
-}
-.card-product__container .owl-nav .owl-prev,
-.card-product__container .owl-nav .owl-next{
-  position: absolute;
-  top: 50%;
-  transform: translate(0,-50%);
-  height: 100px;
-  line-height: 100px;
-  width: 30px;
-  text-align: center;
-  color: #000;
-  font-size: 22px;
-  font-weight: 700;
-  background-color: rgba(255,255,255,.5);
-  
-}
-.card-product__container .owl-nav .owl-prev{
-  left: 0;
-  border-radius: 0 50% 50% 0;
-}
-.card-product__container .owl-nav .owl-prev:hover,
-.card-product__container .owl-dots .owl-dot:hover,
-.card-product__container .owl-nav .owl-next:hover{
-  background-color: rgba(255,255,255,.8);
-}
-.card-product__container .owl-nav .owl-next{
-  right: 0;
-  border-radius: 50% 0 0 50%;
-}
-.card-product__container .owl-dots .owl-dot{
-  background-color: rgba(255,255,255,.4);
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 2px;
-}
-.card-product__container .owl-dots .owl-dot.active{
-  background-color: rgba(255,255,255,.8);
 }
