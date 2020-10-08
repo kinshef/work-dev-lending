@@ -102,6 +102,22 @@ li{
   75% {transform: scale(1.03);}
   100% {transform: scale(1);}
 }
+/* tada_castom */
+.tada_castom{
+  -webkit-animation-name: tada_castom;
+          animation-name: tada_castom;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@keyframes tada_castom {
+  0% {transform: scale(1);} 
+  5% {transform: scale(0.9) rotate(-3deg);} 
+  7%, 11%, 15%, 19%, 23% {transform: scale(1.1) rotate(3deg);} 
+  9%, 13%, 17%, 21% {transform: scale(1.1) rotate(-3deg);} 
+  25% {transform: scale(1) rotate(0);} 
+}
 
 /* Custom */
 .text-red{color: red;}
@@ -473,6 +489,15 @@ header{
 .catalog__bank{
   padding: 5px;
 }
+.bank-item{
+  font-size: 0.8em;
+}
+@media(max-width: 768px){
+  .bank-item{
+    padding: 0.15rem;
+    font-size: 0.6em;
+  }
+}
 .catalog__input {
   display: inline-block;
 }
@@ -728,6 +753,8 @@ header{
 /* section-raccoon */
 .section-raccoon{
   overflow: hidden;
+  background: url(../assets/img/back/bg_raccoon.jpg) no-repeat center center;
+  background-size: cover;
 }
 .raccoon-imgWrap{
   height: 20rem;
@@ -747,6 +774,7 @@ header{
 }
 .raccoon-dialog{
   position: absolute;
+  border-radius: 10px;
 }
 .raccoon-dialog::before{
   content: '';
@@ -755,7 +783,7 @@ header{
 	border-top-color: #ffc107;
 	border-left-color: #ffc107;
 	bottom: 1rem;
-	right: -30px;
+  right: -30px;
 }
 .active.section-raccoon .raccoon-dialog{
   -webkit-animation-name: fadeInBottomRight__castom;
@@ -767,7 +795,7 @@ header{
   top: 0%;
   left: 0%;
   opacity: 1;
-  transform: scale(1) rotate(0deg)translate(-90%,0%);
+  transform: scale(1) rotate(0deg)translate(-100%,0%);
 }
 .section-raccoon .raccoon-dialog{
   -webkit-animation-name: fadeInTopLeft__castom;
@@ -823,7 +851,7 @@ header{
     opacity: 1;
     top: 0%;
     left: 0%;
-    transform: scale(1) rotate(0deg)translate(-90%,0%);
+    transform: scale(1) rotate(0deg)translate(-100%,0%);
   }
 }
 @keyframes fadeInTopLeft__castom{
@@ -867,7 +895,7 @@ header{
     opacity: 1;
     top: 0%;
     left: 0%;
-    transform: scale(1) rotate(0deg)translate(-90%,0%);
+    transform: scale(1) rotate(0deg)translate(-100%,0%);
   }
 }
 @media(max-width: 657px){

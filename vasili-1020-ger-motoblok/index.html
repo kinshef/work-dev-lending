@@ -1455,28 +1455,28 @@
                     <div class="h1 font-weight-bold">Купить в рассрочку не проблема!</div>
                     <div class="section_title mb-4">до 8 месяцев</div>
                 </div>
-                <div class="col-md col-6">
+                <div class="col-2 bank-item">
                     <img src="./public/assets/img/bank/halva.png" class="img-fluid w-100">
                     <div class="">2 месяца - 9%</div>
                     <div class="">6 месяца - 20%</div>
                 </div>
-                <div class="col-md col-6">
+                <div class="col-2 bank-item">
                     <img src="./public/assets/img/bank/magnit.png" class="img-fluid w-100">
                     <div class="">3 месяца - 4%</div>
                 </div>
-                <div class="col-md col-6">
+                <div class="col-2 bank-item">
                     <img src="./public/assets/img/bank/cherepaha.png" class="img-fluid w-100">
                     <div class="">8 месяца - 4%</div>
                 </div>
-                <div class="col-md col-6">
+                <div class="col-2 bank-item">
                     <img src="./public/assets/img/bank/pokupok.png" class="img-fluid w-100">
                     <div class="">4 месяца - 4%</div>
                 </div>
-                <div class="col-md col-6">
+                <div class="col-2 bank-item">
                     <img src="./public/assets/img/bank/fun.png" class="img-fluid w-100">
                     <div class="">3 месяца - 9%</div>
                 </div>
-                <div class="col-md col-6">
+                <div class="col-2 bank-item">
                     <img src="./public/assets/img/bank/smart.png" class="img-fluid w-100">
                     <div class="">3 месяца - 4%</div>
                 </div>
@@ -1654,7 +1654,7 @@
                             П-профиль
                         </div>
                         <hr>
-                        <s class="equipment_pprice-old">
+                        <s class="equipment__price-old">
                             <span>0</span> руб.
                         </s>
                         <div class="equipment__price">
@@ -2118,7 +2118,10 @@
                                 <div class="form-group" data-animation="animated flipInX delay-3s">
                                     <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
                                 </div>
-                                <button type="submit" data-animation="animated flipInX delay-3s" class="c__btn c__btn--danger">Заказать звонок</button>
+                                <div data-animation="animated flipInX delay-3s">
+                                    <button type="submit" data-animation="animated tada_castom delay-4s" class="c__btn c__btn--danger">Заказать звонок</button>
+                                </div>
+                                
                             </form>
                         </div>
                         
@@ -2961,10 +2964,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
     <script src="./public/scripts/data.js"></script>
-    <!-- <script src="./dist/scripts/c.min.js"></script>
-    <script src="./dist/scripts/js.min.js"></script> -->
-    <script src="./src/scripts/c.js"></script>
-    <script src="./src/scripts/js.js"></script>
+    <script src="./dist/scripts/c.min.js"></script>
+    <script src="./dist/scripts/js.min.js"></script>
     <script src="../vendor/js/app.js"></script>
 </body>
 </html>
