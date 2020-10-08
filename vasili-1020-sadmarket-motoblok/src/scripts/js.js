@@ -35,6 +35,16 @@ $(function () {
         }
     }
 
+
+    try {
+        $('.equipment__card').each(function(event,el){
+            var asd = $('.equipment__price span', el).text() * 1.27;
+            $('.equipment__price-old span', el).text(asd.toFixed())
+        })
+    } catch (error) {
+        console.log(error);
+    }
+
     $("form").submit(function (event) {
         event.preventDefault();
 
@@ -129,11 +139,6 @@ $(function () {
         }
     });
 
-
-    $(".catalog-toggle__btn").click(function () {
-        var a = $(this).parent(".catalog-toggle").find(".catalog-toggle__container");
-        a.length && a.slideToggle()
-    })
 });
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -190,17 +195,18 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(error);
     }
 
-    try {
-        var a = document.querySelectorAll(".js-calculator-group-values");
-        [].forEach.call(a, function (a) {
-            a.addEventListener("click", function () {
-                [].forEach.call(document.querySelectorAll("#section-catalog .has-calculator"), function (b) {
-                    b.querySelector("input[name='" + a.dataset.name + "'][value='" + a.dataset.value + "']").checked = !0;
-                    b.dispatchEvent(new Event("change"))
-                })
-            })
-        })
-    } catch (c) {
-        console.error(c)
-    }
+    // try {
+    //     var a = document.querySelectorAll(".js-calculator-group-values");
+    //     [].forEach.call(a, function (a) {
+    //         a.addEventListener("click", function () {
+    //             [].forEach.call(document.querySelectorAll("#section-catalog .has-calculator"), function (b) {
+    //                 b.querySelector("input[name='" + a.dataset.name + "'][value='" + a.dataset.value + "']").checked = !0;
+    //                 b.dispatchEvent(new Event("change"))
+    //             })
+    //         })
+    //     })
+    // } catch (c) {
+    //     console.error(c)
+    // }
+    
 });

@@ -13,6 +13,8 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Fancybox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+    <!-- Fotorama carousel JS -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./public/style/css.css">
     <link rel="icon" type="image/ico" href="./public/assets/img/favicon.ico">
@@ -60,7 +62,7 @@
                 <div class="col-lg-3 col-3 d-md-block d-none">
                     <a href="#"><img class="img-fluid h-auto" src="./public/assets/img/icon/logo.jpg" alt="logo"></a>
                 </div>
-                <div class="col-lg-4 col-md-5 col-6">
+                <div class="col-xl-3 col-lg-4 col-md-5 col-6">
                     <div class="row">
                         <div class="phone-block d-flex align-items-center">
                             <img src="./public/assets/img/icon/call_mts_24.jpg" alt="icon">
@@ -74,8 +76,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-6 text-md-left header-call">
-                    <div class="btn_custom btn_small">
+                <div class="col-xl-4 col-lg-3 col-md-4 col-6 text-md-left header-call">
+                    <div class="btn_custom btn_small d-flex align-items-center">
                         <a class="smoothscroll transition--slide" data-target="#modal-order"  data-toggle="modal">
                             <img src="./public/assets/img/icon/call.png" alt="icon">
                             Заказать звонок
@@ -253,15 +255,90 @@
             <div class="section-catalog__cart-product">
                 <form class="has-calculator">
                     <input type="hidden" name="product" value="product1">
-                    <input type="hidden" name="additional[]" value="dostavka_0">
                     <div class="row">
                         <div class="col-12">
                             <div class="h2 has-calculator__title">Телица Сибирская Ширина 3м</div>
                         </div>
                         <div class="col-md-4 mb-3 col-12 has-calculator__img">
-                            <a href="./public/assets/img/card/sibirskaya_dvoynaya.jpg" data-fancybox>
-                                <img class="w-100 h-auto" src="./public/assets/img/card/sibirskaya_dvoynaya.jpg">
-                            </a>
+
+                            <div class="tab-content">
+                                            
+                                <div class="tab-pane fade show active" id="tab-content-product1-dop1">
+                                    <a href="./public/assets/img/card/sibirskaya_dvoynaya.jpg" data-fancybox>
+                                        <img class="w-100 h-auto" src="./public/assets/img/card/sibirskaya_dvoynaya.jpg">
+                                    </a>
+                                </div>
+
+                                <div class="tab-pane fade" id="tab-content-product1-dop2">
+                                    <a href="./public/assets/img/card/sibirskaya_dvoynaya.jpg" data-fancybox>
+                                        <img class="w-100 h-auto" src="./public/assets/img/card/sibirskaya_dvoynaya.jpg">
+                                    </a>
+                                </div>
+
+                                <div class="tab-pane fade" id="tab-content-product1-dop3">
+                                    <a href="./public/assets/img/card/sibirskaya_dvoynaya.jpg" data-fancybox>
+                                        <img class="w-100 h-auto" src="./public/assets/img/card/sibirskaya_dvoynaya.jpg">
+                                    </a>
+                                </div>
+
+                                <div class="tab-pane fade" id="tab-content-product1-dop4">
+                                    <a href="./public/assets/img/card/sibirskaya_dvoynaya.jpg" data-fancybox>
+                                        <img class="w-100 h-auto" src="./public/assets/img/card/sibirskaya_dvoynaya.jpg">
+                                    </a>
+                                </div>
+
+                                <div class="tab-pane fade" id="tab-content-product1-dop5">
+                                    <a href="./public/assets/img/card/sibirskaya_dvoynaya.jpg" data-fancybox>
+                                        <img class="w-100 h-auto" src="./public/assets/img/card/sibirskaya_dvoynaya.jpg">
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <ul class="nav d-flex justify-content-around align-items-center">
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#tab-content-product1-dop1">
+                                        <div class="tab-content__imgDop text-center">
+                                            <img src="./public/assets/img/card/sibirskaya_dvoynaya.jpg" class="img-fluid">
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-content-product1-dop2">
+                                        <div class="tab-content__imgDop text-center">
+                                            <img src="./public/assets/img/card/sibirskaya_dvoynaya.jpg" class="img-fluid">
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-content-product1-dop3">
+                                        <div class="tab-content__imgDop text-center">
+                                            <img src="./public/assets/img/card/sibirskaya_dvoynaya.jpg" class="img-fluid">
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-content-product1-dop4">
+                                        <div class="tab-content__imgDop text-center">
+                                            <img src="./public/assets/img/card/sibirskaya_dvoynaya.jpg" class="img-fluid">
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-content-product1-dop5">
+                                        <div class="tab-content__imgDop text-center">
+                                            <img src="./public/assets/img/card/sibirskaya_dvoynaya.jpg" class="img-fluid">
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+
                         </div>
                         <div class="col-md-8 col-12">
 
@@ -269,9 +346,11 @@
                                 <tbody>
                                 <tr>
                                     <th>
-                                        <span>Ширина (м):</span>
-                                        <a href="#modal-question-shirina" data-toggle="modal">
-                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                        <a href="#modal-question-shirina" class="d-flex" data-toggle="modal">
+                                            <span>Ширина (м):</span>
+                                            <div class="transition--slide d-inline-block mx-2">
+                                                <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                            </div>
                                         </a>
                                     </th>
                                     <td>
@@ -280,9 +359,9 @@
                                 </tr>
                                 <tr>
                                     <th>
-                                        <span>Длина (м): </span>
                                         <a href="#modal-question-length" data-toggle="modal">
-                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                            <span>Длина (м): </span>
+                                            <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                         </a>
                                     </th>
                                     <td>
@@ -291,9 +370,9 @@
                                 </tr>
                                 <tr>
                                     <th>
-                                        <span>Интервал (м): </span>
                                         <a href="#modal-question-interval" data-toggle="modal">
-                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                            <span>Интервал (м): </span>
+                                            <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                         </a>
                                     </th>
                                     <td>
@@ -302,9 +381,9 @@
                                 </tr>
                                 <tr>
                                     <th>
-                                        <span>Стрингеры (шт): </span>
                                         <a href="#modal-question-stringery" data-toggle="modal">
-                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                            <span>Стрингеры (шт): </span>
+                                            <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                         </a>
                                     </th>
                                     <td>
@@ -313,9 +392,9 @@
                                 </tr>
                                 <tr>
                                     <th>
-                                        <span>Профиль (мм): </span>
                                         <a href="#modal-question-profil" data-toggle="modal">
-                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                            <span>Профиль (мм): </span>
+                                            <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                         </a>
                                     </th>
                                     <td>
@@ -324,9 +403,9 @@
                                 </tr>
                                 <tr>
                                     <th>
-                                        <span>Крепление: </span>
                                         <a href="#modal-question-kreplenie" data-toggle="modal">
-                                            <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+                                            <span>Крепление: </span>
+                                            <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i>
                                         </a>
                                     </th>
                                     <td>
@@ -339,28 +418,27 @@
                             <hr>
 
                             <div class="col-12">
-
-                                <div class="catalog-toggle">
-                                    <button type="button" class="btn catalog-btn-custom catalog-toggle__btn">↓ Дополнительная комплектация ↓</button>
-                                    <hr>
-                                    <div class="catalog-toggle__container">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                 -Форточка<br>
-                                                 -Автоинтеллект<br>
-                                                 -Лента утепления<br>
-                                                 -Автополив
-                                            </div>
-                                            <div class="col-6">
-                                                 -П-профиль<br>
-                                                 -Лента крепления<br>
-                                                 -Подвязки<br>
-                                                 -Оцинкованная грядка
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="d-flex align-items-center justify-content-around">
+                                    <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#catalogDopKompl_1" aria-controls="catalogDopKompl_1" aria-expanded="true">
+                                        <div class="text-size-6 font-weight-bold btn btn-primary">↓ Дополнительная комплектация ↓</div>
+                                    </a>
+                                    <a href="#modal-product-product1" data-toggle="modal" class="btn-link">Полная характеристика</a>
                                 </div>
-
+                                <div class="row collapse" id="catalogDopKompl_1">
+                                    <ul class="col-6">
+                                        <li>- Форточка</li>
+                                        <li>- Автоинтеллект</li>
+                                        <li>- Лента утепления</li>
+                                        <li>- Автополив</li>
+                                    </ul>
+                                    <ul class="col-6">
+                                        <li>- Форточка</li>
+                                        <li>- Автоинтеллект</li>
+                                        <li>- Лента утепления</li>
+                                        <li>- Автополив</li>
+                                    </ul>
+                                </div>
+                                <hr>
                             </div>
                         </div>
                         <div class="col-6 text-center">
@@ -398,6 +476,151 @@
 
             <!-- РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ HFPLTKBNTKM NJDFHJD -->
 
+        </div>
+    </section>
+
+    <section id="section-additional" class="c__section text-center">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 col-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/forto4ka.jpg" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            Форточка
+                        </div>
+                        <hr>
+                        <s class="equipment__price-old">
+                            <span>0</span> руб.
+                        </s>
+                        <div class="equipment__price">
+                            <span>20</span> руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/gazlift.jpg" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            Газлифт
+                        </div>
+                        <hr>
+                        <s class="equipment__price-old">
+                            <span>0</span> руб.
+                        </s>
+                        <div class="equipment__price">
+                            <span>20</span> руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/lenta.jpg" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            Лента утепления 12 м.
+                        </div>
+                        <hr>
+                        <s class="equipment__price-old">
+                            <span>0</span> руб.
+                        </s>
+                        <div class="equipment__price">
+                            <span>10</span> руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/poliv.jpg" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            Авто-полив
+                        </div>
+                        <hr>
+                        <s class="equipment__price-old">
+                            <span>0</span> руб.
+                        </s>
+                        <div class="equipment__price">
+                            <span>30</span> руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/podv9zki.jpg" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            Подвязки
+                        </div>
+                        <hr>
+                        <s class="equipment__price-old">
+                            <span>0</span> руб.
+                        </s>
+                        <div class="equipment__price">
+                            <span>10</span> руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/pp.jpg" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            П-профиль
+                        </div>
+                        <hr>
+                        <s class="equipment__price-old">
+                            <span>0</span> руб.
+                        </s>
+                        <div class="equipment__price">
+                            <span>7</span> руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/pog.jpg" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            Парник "Огурчик"
+                        </div>
+                        <hr>
+                        <s class="equipment__price-old">
+                            <span>0</span> руб.
+                        </s>
+                        <div class="equipment__price">
+                            <span>20</span> руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="equipment__card">
+                        <div class="equipment__img">
+                            <img src="./public/assets/img/additional/gryadka.jpg" class="img-fluid">
+                        </div>
+                        <div class="equipment__text">
+                            Оцинкованная грядка
+                        </div>
+                        <hr>
+                        <s class="equipment__price-old">
+                            <span>0</span> руб.
+                        </s>
+                        <div class="equipment__price">
+                            <span>55</span> руб.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -1154,12 +1377,102 @@
 
     <!-- РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ -->
 
+    <div class="modal fade" id="modal-product-product1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body h-100">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 card-product__container">
+                                <form class="has-calculator">
+                                    <input type="hidden" name="product" value="product1">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="fotorama" data-nav="thumbs">
+                                                <img src="./public/assets/img/card/sibirskaya_20.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_2.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_2_4.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_3_5.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                                <img src="./public/assets/img/card/sibirskaya_shir_4.jpg" width="16" height="9" alt="certificate" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <table class="table card-product__table card-product__table_color_green">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Культиватор SHTENLI 2000 1
+                                                            <div class="card-product__raiting"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                            <ul>
+                                                <li>Производитель: Германия</li>
+                                                <li>Тип двигателя: Бензиновый, 2-ух тактный</li>
+                                                <li>Марка двигателя: HONDA</li>
+                                                <li>Мощность: 3.0 л.с.</li>
+                                                <li>Объём двигателя: 62 куб.см</li>
+                                                <li>Кол-во цилиндров: 1</li>
+                                                <li>Запуск двигателя: Механический стартер</li>
+                                                <li>Охлаждение: Воздушное</li>
+                                                <li>Объем топливного бака: 1.2 л.</li>
+                                                <li>Объем масляного бака: 0.5 л.</li>
+                                                <li>Тип топлива: АИ-92, АИ-95</li>
+                                                <li>Расход топлива: 0,2 л/ч</li>
+                                                <li>Дифференциал: Нет</li>
+                                                <li>ВОМ: Нет</li>
+                                                <li>Кол-во передач: 1 вперед</li>
+                                                <li>Глубина культивации: 12 см.</li>
+                                                <li>Ширина культивации: 20-40 см.</li>
+                                                <li>Сцепление: Ременное</li>
+                                                <li>Редуктор: Шестерёнчатый</li>
+                                                <li>Вес: 30 кг.</li>
+                                                <li>Гарантия: 2 года</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 text-center card-product__price-container">
+                                            
+                                            <s class="text-muted">
+                                                <span class="calculator-price-old">0</span> руб.
+                                            </s>
+                                            <div class="text-red h4 font-weight-bold">
+                                                <span class="calculator-price">0</span> руб.
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                        <div class="col-md-6">
+                                            <div class="input-group input-group-lg">
+                                                <input type="text" name="phone" class="form-control" placeholder="Телефон" required>
+                                                <div class="input-group-append">
+                                                    <button class="btn text-white bg-success px-lg-5" type="submit">Заказать</button>
+                                                </div>
+                                            </div>                        
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ РАЗДЕЛИТЕЛЬ ПОЯСНЕНИЙ -->
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- Fancybox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    <!-- Fotorama carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
     <script src="./public/scripts/data.js"></script>
     <script src="./src/scripts/c.js"></script>
