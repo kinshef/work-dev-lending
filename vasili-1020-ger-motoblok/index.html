@@ -94,8 +94,95 @@
 
     <section id="section-catalog" class="section-catalog hero-hexagons">
 
+        <div class="container-fluid py-3">
+            <div class="container-fluid py-3">
+                <div class="filter__buttons p-3">
+                    <div class="h2 text-alt text-center">Фильтры:</div>
+                    <div class="filter__buttons__group">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 text-lg-right">
+                                <b>Длина (м): <a href="#modal-question-length" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                            </div>
+                            <div class="col-lg-7">
+                                <a href="javascript:;" class="active filter__button filter__button__custom" data-name="length" data-value="4">Все</a>
+                                <a href="javascript:;" class="filter__button filter__button__custom" data-name="length" data-value="4">4</a>
+                                <a href="javascript:;" class="filter__button filter__button__custom" data-name="length" data-value="6">6</a>
+                                <a href="javascript:;" class="filter__button filter__button__custom" data-name="length" data-value="8">8</a>
+                                <a href="javascript:;" class="filter__button filter__button__custom" data-name="length" data-value="10">10</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__buttons__group">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 text-lg-right">
+                                <b>Интервал (м): <a href="#modal-question-interval" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                            </div>
+                            <div class="col-lg-7">
+                                <a href="javascript:;" class="active filter__button filter__button__custom" data-name="interval" data-value="1">Все</a>
+                                <a href="javascript:;" class="filter__button filter__button__custom" data-name="interval" data-value="1">1</a>
+                                <a href="javascript:;" class="filter__button filter__button__custom" data-name="interval" data-value="0_67">0,67</a>
+                                <a href="javascript:;" class="filter__button filter__button__custom" data-name="interval" data-value="0_5">0,5</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__buttons__group" data-group="shirina">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 text-lg-right">
+                                <b>Ширина (м): <a href="#modal-question-shirina" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                            </div>
+                            <div class="col-lg-7">
+                                <a href="javascript:;" class="active filter__button" data-filter="">Все</a>
+                                <a href="javascript:;" class="filter__button" data-filter=".filter-shirina-2">2</a>
+                                <a href="javascript:;" class="filter__button" data-filter=".filter-shirina-2_4">2,4</a>
+                                <a href="javascript:;" class="filter__button" data-filter=".filter-shirina-3">3</a>
+                                <a href="javascript:;" class="filter__button" data-filter=".filter-shirina-3_5">3,5</a>
+                                <a href="javascript:;" class="filter__button" data-filter=".filter-shirina-4">4</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__buttons__group" data-group="profil">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 text-lg-right">
+                                <b>Профиль (мм): <a href="#modal-question-profil" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                            </div>
+                            <div class="col-lg-7">
+                                <a href="javascript:;" class="active filter__button" data-filter="">Все</a>
+                                <a href="javascript:;" class="filter__button" data-filter=".filter-profil-20">20х20</a>
+                                <a href="javascript:;" class="filter__button" data-filter=".filter-profil-40">40х20</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__buttons__group" data-group="kreplenie">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 text-lg-right">
+                                <b>Крепление: <a href="#modal-question-kreplenie" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                            </div>
+                            <div class="col-lg-7">
+                                <a href="javascript:;" class="active filter__button" data-filter="">Все</a>
+                                <a href="javascript:;" class="filter__button" data-filter=".filter-kreplenie-bolt">Болт</a>
+                                <a href="javascript:;" class="filter__button" data-filter=".filter-kreplenie-krab">Краб</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__buttons__group" data-group="duga">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 text-lg-right">
+                                <b>Дуга: <a href="#modal-question-duga" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                            </div>
+                            <div class="col-lg-7">
+                                <a href="javascript:;" class="active filter__button" data-filter="">Все</a>
+                                <a href="javascript:;" class="filter__button" data-filter=".filter-duga-1">Стандартная</a>
+                                <a href="javascript:;" class="filter__button" data-filter=".filter-duga-2">Двойная</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
         <div class="container c__section">
-            <div class="row">
+            <div id="filter" class="row">
 
                 <!-- РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ HFPLTKBNTKM NJDFHJD -->
 
@@ -1448,6 +1535,15 @@
 
                 <!-- РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ РАЗДЕЛИТЕЛЬ ТОВАРОВ HFPLTKBNTKM NJDFHJD -->
 
+            </div>
+
+            <div id="filter-alert" class="alert alert-danger text-center" role="alert" hidden>
+                <h4 class="alert-heading">Товары с такими параметрами не найдены!</h4>
+                <p>Попробуйте выбрать другие фильтры или свяжитесь с Вашим личным менеджером.</p>
+                <hr>
+                <p class="mb-0">
+                    <a href="#modal-order" data-toggle="modal" class="btn btn-primary">Консультация с менеджером</a>
+                </p>
             </div>
 
             <div class="row font-weight-bold h5 py-3 jumbotron shadow text-center">
@@ -2965,7 +3061,8 @@
 
     <script src="./public/scripts/data.js"></script>
     <script src="./dist/scripts/c.min.js"></script>
-    <script src="./dist/scripts/js.min.js"></script>
+    <script src="./src/scripts/js.js"></script>
+    <!-- <script src="./dist/scripts/js.min.js"></script> -->
     <script src="../vendor/js/app.js"></script>
 </body>
 </html>

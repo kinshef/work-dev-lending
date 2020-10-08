@@ -340,6 +340,37 @@ header{
 /* COMPARISON */
 
 /*Catalog*/
+.filter__buttons {
+  /*text-transform: uppercase;*/
+  font-weight: bold;
+  background: linear-gradient(0deg, #66d1ffa3, #66d1ff50);
+  box-shadow: 0 0 0px 3px #ffffff96;
+  border-radius: 15px;
+}
+.filter__buttons .filter__button {
+  display: inline-flex;
+  margin: 0.5rem;
+  padding: 5px 15px;
+  border-radius: 4px;
+  text-shadow: 0px 0px 4px white;
+  color: #000;
+  background-color: #eee;
+}
+.filter__buttons .filter__button:hover {
+  background-color: #ddd;
+  text-decoration: none;
+}
+.filter__buttons .filter__button.active {
+  font-weight: bolder;
+  color: #543500;
+  background-color: #ffc107;
+  box-shadow: 0 0 0px 3px #ffffff96;
+}
+.filter__buttons .filter__button.active:hover {
+  color: #543500;
+  background-color: #ffc107;
+}
+
 .catalog__card{
   position: relative;
   margin-bottom: 2rem;

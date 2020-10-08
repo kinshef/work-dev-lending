@@ -210,6 +210,27 @@ $(document).ready(function () {
 document.addEventListener("DOMContentLoaded", function () {
 
 
+
+	try {
+		var a = document.querySelectorAll(".filter__buttons .filter__button__custom");
+		[].forEach.call(a, function(a) {
+			a.addEventListener("click", function() {
+				var c = a.closest(".filter__buttons__group");
+				Array.prototype.forEach.call(c.querySelectorAll(".filter__button__custom"), function(a) {
+					a.classList.remove("active")
+				});
+				a.classList.add("active");
+				[].forEach.call(document.querySelectorAll("#filter .has-calculator"), function(c) {
+					c.querySelector("input[name='" + a.dataset.name + "'][value='" + a.dataset.value + "']").checked = !0;
+					c.dispatchEvent(new Event("change"))
+				})
+			})
+		})
+	} catch(c) {
+		console.error(c)
+	}
+
+
     try {
         var raccoon = document.querySelector('.section-raccoon');
         document.onscroll = function () {
