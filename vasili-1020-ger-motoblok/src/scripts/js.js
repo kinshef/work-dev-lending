@@ -209,27 +209,45 @@ $(document).ready(function () {
 
 document.addEventListener("DOMContentLoaded", function () {
 
-
-
+    // фильтр
 	try {
-		var a = document.querySelectorAll(".filter__buttons .filter__button__custom");
-		[].forEach.call(a, function(a) {
-			a.addEventListener("click", function() {
-				var c = a.closest(".filter__buttons__group");
-				Array.prototype.forEach.call(c.querySelectorAll(".filter__button__custom"), function(a) {
-					a.classList.remove("active")
-				});
-				a.classList.add("active");
-				[].forEach.call(document.querySelectorAll("#filter .has-calculator"), function(c) {
-					c.querySelector("input[name='" + a.dataset.name + "'][value='" + a.dataset.value + "']").checked = !0;
-					c.dispatchEvent(new Event("change"))
-				})
-			})
-		})
-	} catch(c) {
-		console.error(c)
+        var filterСalc = function(){
+            var allForms = document.querySelectorAll("#filter .has-calculator");
+            allForms.forEach(function(hasFormAll){
+                hasFormAll.classList.remove('remove');
+            });
+            [].forEach.call(document.querySelectorAll(".filter__buttons .filter__buttons__group"), function(group) {
+                [].forEach.call(group.querySelectorAll(".filter__button.active"), function(group__btn) {
+                    allForms.forEach(function(hasForm){
+                        if(!(hasForm.querySelector("input[name='" + group.dataset.group + "'][value='" + group__btn.dataset.value + "']") || group__btn.dataset.value === 'all' )){
+                            console.log(hasForm)
+                            hasForm.classList.add('remove');
+                        }
+                    });
+                });
+                if(allForms.length === document.querySelectorAll("#filter .has-calculator.remove").length){
+                    document.querySelector("#filter-alert").hidden=false;
+                }else{
+                    document.querySelector("#filter-alert").hidden=true;
+                }
+            });
+        };
+        filterСalc();
+        [].forEach.call(document.querySelectorAll(".filter__buttons .filter__buttons__group"), function(group) {
+            group.addEventListener("click", function(even) {
+                if(even.target.classList.contains('filter__button')){
+                    Array.prototype.forEach.call(group.querySelectorAll(".filter__buttons .filter__button"), function(a) {
+                        a.classList.remove("active")
+                    });
+                    even.target.classList.add("active");
+                    filterСalc();
+                }
+            });
+		});
+	} catch(error) {
+		console.error(error)
 	}
-
+    // фильтр end
 
     try {
         var raccoon = document.querySelector('.section-raccoon');

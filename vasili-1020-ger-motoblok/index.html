@@ -98,84 +98,105 @@
             <div class="container-fluid py-3">
                 <div class="filter__buttons p-3">
                     <div class="h2 text-alt text-center">Фильтры:</div>
-                    <div class="filter__buttons__group">
-                        <div class="row align-items-center">
-                            <div class="col-lg-5 text-lg-right">
-                                <b>Длина (м): <a href="#modal-question-length" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
-                            </div>
-                            <div class="col-lg-7">
-                                <a href="javascript:;" class="active filter__button filter__button__custom" data-name="length" data-value="4">Все</a>
-                                <a href="javascript:;" class="filter__button filter__button__custom" data-name="length" data-value="4">4</a>
-                                <a href="javascript:;" class="filter__button filter__button__custom" data-name="length" data-value="6">6</a>
-                                <a href="javascript:;" class="filter__button filter__button__custom" data-name="length" data-value="8">8</a>
-                                <a href="javascript:;" class="filter__button filter__button__custom" data-name="length" data-value="10">10</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filter__buttons__group">
-                        <div class="row align-items-center">
-                            <div class="col-lg-5 text-lg-right">
-                                <b>Интервал (м): <a href="#modal-question-interval" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
-                            </div>
-                            <div class="col-lg-7">
-                                <a href="javascript:;" class="active filter__button filter__button__custom" data-name="interval" data-value="1">Все</a>
-                                <a href="javascript:;" class="filter__button filter__button__custom" data-name="interval" data-value="1">1</a>
-                                <a href="javascript:;" class="filter__button filter__button__custom" data-name="interval" data-value="0_67">0,67</a>
-                                <a href="javascript:;" class="filter__button filter__button__custom" data-name="interval" data-value="0_5">0,5</a>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="filter__buttons__group" data-group="shirina">
                         <div class="row align-items-center">
                             <div class="col-lg-5 text-lg-right">
                                 <b>Ширина (м): <a href="#modal-question-shirina" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
                             </div>
                             <div class="col-lg-7">
-                                <a href="javascript:;" class="active filter__button" data-filter="">Все</a>
-                                <a href="javascript:;" class="filter__button" data-filter=".filter-shirina-2">2</a>
-                                <a href="javascript:;" class="filter__button" data-filter=".filter-shirina-2_4">2,4</a>
-                                <a href="javascript:;" class="filter__button" data-filter=".filter-shirina-3">3</a>
-                                <a href="javascript:;" class="filter__button" data-filter=".filter-shirina-3_5">3,5</a>
-                                <a href="javascript:;" class="filter__button" data-filter=".filter-shirina-4">4</a>
+                                <div class="active filter__button" data-value="all">Все</div>
+                                <div class="filter__button" data-value="2">2</div>
+                                <div class="filter__button" data-value="2_4">2,4</div>
+                                <div class="filter__button" data-value="3">3</div>
+                                <div class="filter__button" data-value="3_5">3,5</div>
+                                <div class="filter__button" data-value="4">4</div>
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="filter__buttons__group" data-group="length">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 text-lg-right">
+                                <b>Длина (м): <a href="#modal-question-length" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="active filter__button" data-value="all">Все</div>
+                                <div class="filter__button" data-value="4">4</div>
+                                <div class="filter__button" data-value="6">6</div>
+                                <div class="filter__button" data-value="8">8</div>
+                                <div class="filter__button" data-value="10">10</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter__buttons__group" data-group="interval">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 text-lg-right">
+                                <b>Интервал (м): <a href="#modal-question-interval" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="active filter__button" data-value="all">Все</div>
+                                <div class="filter__button" data-value="1">1</div>
+                                <div class="filter__button" data-value="0_67">0,67</div>
+                                <div class="filter__button" data-value="0_5">0,5</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter__buttons__group" data-group="stringery">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 text-lg-right">
+                                <b>Стрингеры (шт): <a href="#modal-question-stringery" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="active filter__button" data-value="all">Все</div>
+                                <div class="filter__button" data-value="5">5</div>
+                                <div class="filter__button" data-value="6">6</div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="filter__buttons__group" data-group="profil">
                         <div class="row align-items-center">
                             <div class="col-lg-5 text-lg-right">
                                 <b>Профиль (мм): <a href="#modal-question-profil" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
                             </div>
                             <div class="col-lg-7">
-                                <a href="javascript:;" class="active filter__button" data-filter="">Все</a>
-                                <a href="javascript:;" class="filter__button" data-filter=".filter-profil-20">20х20</a>
-                                <a href="javascript:;" class="filter__button" data-filter=".filter-profil-40">40х20</a>
+                                <div class="active filter__button" data-value="all">Все</div>
+                                <div class="filter__button" data-value="20">20х20</div>
+                                <div class="filter__button" data-value="40">40х20</div>
                             </div>
                         </div>
                     </div>
+
                     <div class="filter__buttons__group" data-group="kreplenie">
                         <div class="row align-items-center">
                             <div class="col-lg-5 text-lg-right">
                                 <b>Крепление: <a href="#modal-question-kreplenie" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
                             </div>
                             <div class="col-lg-7">
-                                <a href="javascript:;" class="active filter__button" data-filter="">Все</a>
-                                <a href="javascript:;" class="filter__button" data-filter=".filter-kreplenie-bolt">Болт</a>
-                                <a href="javascript:;" class="filter__button" data-filter=".filter-kreplenie-krab">Краб</a>
+                                <a class="active filter__button" data-value="all">Все</a>
+                                <a class="filter__button" data-value="bolt">Болт</a>
+                                <a class="filter__button" data-value="krab">Краб</a>
                             </div>
                         </div>
                     </div>
-                    <div class="filter__buttons__group" data-group="duga">
+
+                    <div class="filter__buttons__group" data-group="additional[]">
                         <div class="row align-items-center">
                             <div class="col-lg-5 text-lg-right">
                                 <b>Дуга: <a href="#modal-question-duga" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
                             </div>
                             <div class="col-lg-7">
-                                <a href="javascript:;" class="active filter__button" data-filter="">Все</a>
-                                <a href="javascript:;" class="filter__button" data-filter=".filter-duga-1">Стандартная</a>
-                                <a href="javascript:;" class="filter__button" data-filter=".filter-duga-2">Двойная</a>
+                                <div class="active filter__button" data-value="all">Все</div>
+                                <div class="filter__button" data-value="dostavka_0">Разборная 0</div>
+                                <div class="filter__button" data-value="dostavka_20_24">Цельная 20_24</div>
+                                <div class="filter__button" data-value="dostavka_30">Цельная 30</div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -321,7 +342,10 @@
                                                         </a>
                                                     </th>
                                                     <td>
-                                                        <span class="catalog__text__label">3</span>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="shirina" value="3" checked="">
+                                                                <span class="catalog__text__label">3</span>
+                                                        </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -333,7 +357,10 @@
                                                         </a>
                                                     </th>
                                                     <td>
-                                                        <span class="catalog__text__label">4</span>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="length" value="4" checked="">
+                                                                <span class="catalog__text__label">4</span>
+                                                        </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -345,7 +372,10 @@
                                                         </a>
                                                     </th>
                                                     <td>
-                                                        <span class="catalog__text__label">4</span>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="interval" value="1" checked="">
+                                                                <span class="catalog__text__label">1</span>
+                                                        </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -357,7 +387,10 @@
                                                         </a>
                                                     </th>
                                                     <td>
-                                                        <span class="catalog__text__label">4</span>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="stringery" value="5" checked="">
+                                                                <span class="catalog__text__label">5</span>
+                                                        </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -369,7 +402,10 @@
                                                         </a>
                                                     </th>
                                                     <td>
-                                                        <span class="catalog__text__label">20х20</span>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="profil" value="20" checked="">
+                                                                <span class="catalog__text__label">20х20</span>
+                                                        </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -380,7 +416,10 @@
                                                         </a>
                                                     </th>
                                                     <td>
-                                                        <span class="catalog__text__label">Болт</span>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="kreplenie" value="krab" checked="">
+                                                                <span class="catalog__text__label">Краб</span>
+                                                        </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -644,7 +683,10 @@
                                                         </a>
                                                     </th>
                                                     <td>
-                                                        <span class="catalog__text__label">3</span>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="shirina" value="4" checked="">
+                                                                <span class="catalog__text__label">4</span>
+                                                        </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -656,7 +698,10 @@
                                                         </a>
                                                     </th>
                                                     <td>
-                                                        <span class="catalog__text__label">4</span>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="length" value="6" checked="">
+                                                                <span class="catalog__text__label">6</span>
+                                                        </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -668,7 +713,10 @@
                                                         </a>
                                                     </th>
                                                     <td>
-                                                        <span class="catalog__text__label">4</span>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="interval" value="50" checked="">
+                                                                <span class="catalog__text__label">0.5</span>
+                                                        </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -680,7 +728,10 @@
                                                         </a>
                                                     </th>
                                                     <td>
-                                                        <span class="catalog__text__label">4</span>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="stringery" value="6" checked="">
+                                                                <span class="catalog__text__label">6</span>
+                                                        </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -692,7 +743,10 @@
                                                         </a>
                                                     </th>
                                                     <td>
-                                                        <span class="catalog__text__label">20х20</span>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="profil" value="20" checked="">
+                                                                <span class="catalog__text__label">20х20</span>
+                                                        </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -703,7 +757,10 @@
                                                         </a>
                                                     </th>
                                                     <td>
-                                                        <span class="catalog__text__label">Болт</span>
+                                                        <label class="catalog__input m-0">
+                                                            <input type="radio" name="kreplenie" value="bolt" checked="">
+                                                                <span class="catalog__text__label">Болт</span>
+                                                        </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -950,7 +1007,10 @@
                                                 </a>
                                             </th>
                                             <td>
-                                                <span class="catalog__text__label">2</span>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="shirina" value="3" checked="">
+                                                        <span class="catalog__text__label">3</span>
+                                                </label>
                                             </td>
                                         </tr>
                                         <tr>
@@ -961,7 +1021,10 @@
                                                 </a>
                                             </th>
                                             <td>
-                                                <span class="catalog__text__label">4</span>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="length" value="8" checked="">
+                                                        <span class="catalog__text__label">8</span>
+                                                </label>
                                             </td>
                                         </tr>
                                         <tr>
@@ -972,7 +1035,10 @@
                                                 </a>
                                             </th>
                                             <td>
-                                                <span class="catalog__text__label">1</span>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="interval" value="0_67" checked="">
+                                                        <span class="catalog__text__label">0.67</span>
+                                                </label>
                                             </td>
                                         </tr>
                                         <tr>
@@ -983,7 +1049,10 @@
                                                 </a>
                                             </th>
                                             <td>
-                                                <span class="catalog__text__label">20х20</span>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="profil" value="40" checked="">
+                                                        <span class="catalog__text__label">40х20</span>
+                                                </label>
                                             </td>
                                         </tr>
                                         <tr>
@@ -994,7 +1063,10 @@
                                                 </a>
                                             </th>
                                             <td>
-                                                <span class="catalog__text__label">Болт</span>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="kreplenie" value="bolt" checked="">
+                                                        <span class="catalog__text__label">Болт</span>
+                                                </label>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1184,7 +1256,10 @@
                                                 </a>
                                             </th>
                                             <td>
-                                                <span class="catalog__text__label">2</span>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="shirina" value="3" checked="">
+                                                        <span class="catalog__text__label">3</span>
+                                                </label>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1195,7 +1270,10 @@
                                                 </a>
                                             </th>
                                             <td>
-                                                <span class="catalog__text__label">4</span>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="length" value="10" checked="">
+                                                        <span class="catalog__text__label">10</span>
+                                                </label>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1206,7 +1284,10 @@
                                                 </a>
                                             </th>
                                             <td>
-                                                <span class="catalog__text__label">1</span>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="interval" value="1" checked="">
+                                                        <span class="catalog__text__label">1</span>
+                                                </label>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1217,7 +1298,10 @@
                                                 </a>
                                             </th>
                                             <td>
-                                                <span class="catalog__text__label">20х20</span>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="profil" value="20" checked="">
+                                                        <span class="catalog__text__label">20х20</span>
+                                                </label>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1228,7 +1312,10 @@
                                                 </a>
                                             </th>
                                             <td>
-                                                <span class="catalog__text__label">Болт</span>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="kreplenie" value="bolt" checked="">
+                                                        <span class="catalog__text__label">Болт</span>
+                                                </label>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1416,7 +1503,10 @@
                                                 </a>
                                             </th>
                                             <td>
-                                                <span class="catalog__text__label">2</span>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="shirina" value="3" checked="">
+                                                        <span class="catalog__text__label">3</span>
+                                                </label>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1427,7 +1517,10 @@
                                                 </a>
                                             </th>
                                             <td>
-                                                <span class="catalog__text__label">4</span>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="length" value="4" checked="">
+                                                        <span class="catalog__text__label">4</span>
+                                                </label>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1438,7 +1531,10 @@
                                                 </a>
                                             </th>
                                             <td>
-                                                <span class="catalog__text__label">1</span>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="interval" value="1" checked="">
+                                                        <span class="catalog__text__label">1</span>
+                                                </label>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1449,7 +1545,10 @@
                                                 </a>
                                             </th>
                                             <td>
-                                                <span class="catalog__text__label">20х20</span>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="profil" value="20" checked="">
+                                                        <span class="catalog__text__label">20х20</span>
+                                                </label>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1460,7 +1559,10 @@
                                                 </a>
                                             </th>
                                             <td>
-                                                <span class="catalog__text__label">Болт</span>
+                                                <label class="catalog__input m-0">
+                                                    <input type="radio" name="kreplenie" value="bolt" checked="">
+                                                        <span class="catalog__text__label">Болт</span>
+                                                </label>
                                             </td>
                                         </tr>
                                         <tr>
@@ -3061,8 +3163,7 @@
 
     <script src="./public/scripts/data.js"></script>
     <script src="./dist/scripts/c.min.js"></script>
-    <script src="./src/scripts/js.js"></script>
-    <!-- <script src="./dist/scripts/js.min.js"></script> -->
+    <script src="./dist/scripts/js.min.js"></script>
     <script src="../vendor/js/app.js"></script>
 </body>
 </html>

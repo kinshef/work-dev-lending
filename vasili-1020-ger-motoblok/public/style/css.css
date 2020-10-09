@@ -111,6 +111,13 @@ li{
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
+@-webkit-keyframes tada_castom {
+  0% {transform: scale(1);} 
+  5% {transform: scale(0.9) rotate(-3deg);} 
+  7%, 11%, 15%, 19%, 23% {transform: scale(1.1) rotate(3deg);} 
+  9%, 13%, 17%, 21% {transform: scale(1.1) rotate(-3deg);} 
+  25% {transform: scale(1) rotate(0);} 
+}
 @keyframes tada_castom {
   0% {transform: scale(1);} 
   5% {transform: scale(0.9) rotate(-3deg);} 
@@ -341,7 +348,6 @@ header{
 
 /*Catalog*/
 .filter__buttons {
-  /*text-transform: uppercase;*/
   font-weight: bold;
   background: linear-gradient(0deg, #66d1ffa3, #66d1ff50);
   box-shadow: 0 0 0px 3px #ffffff96;
@@ -355,6 +361,8 @@ header{
   text-shadow: 0px 0px 4px white;
   color: #000;
   background-color: #eee;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 .filter__buttons .filter__button:hover {
   background-color: #ddd;
@@ -592,6 +600,9 @@ header{
 .col-lg-4 .tab-content__imgDop{
   max-width: 80px;
 }
+.has-calculator{
+  transition: all 0.4s;
+}
 .has-calculator .nav-link{
   border: 2px solid #ccc;
   box-shadow: 5px 5px 10px #aaa;
@@ -602,6 +613,11 @@ header{
 .has-calculator .nav-link.active{
   border: 2px solid red;
   box-shadow: 2px 2px 5px red;
+}
+.has-calculator.remove{
+  opacity: 0;
+  height: 0;
+  pointer-events: none;
 }
 @media(max-width: 992px){
   .col-lg-4 .tab-content__imgDop{
