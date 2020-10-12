@@ -220,7 +220,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 [].forEach.call(group.querySelectorAll(".filter__button.active"), function(group__btn) {
                     allForms.forEach(function(hasForm){
                         if(!(hasForm.querySelector("input[name='" + group.dataset.group + "'][value='" + group__btn.dataset.value + "']") || group__btn.dataset.value === 'all' )){
-                            console.log(hasForm)
                             hasForm.classList.add('remove');
                         }
                     });

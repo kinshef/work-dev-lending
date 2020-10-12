@@ -367,12 +367,12 @@ header{
 .filter__buttons .filter__button:hover {
   background-color: #ddd;
   text-decoration: none;
+  box-shadow: 0 0 0px 3px transparent;
 }
 .filter__buttons .filter__button.active {
-  font-weight: bolder;
   color: #543500;
   background-color: #ffc107;
-  box-shadow: 0 0 0px 3px #ffffff96;
+  box-shadow: 0 0 0px 3px rgba(255, 255, 255, 0.6);
 }
 .filter__buttons .filter__button.active:hover {
   color: #543500;
