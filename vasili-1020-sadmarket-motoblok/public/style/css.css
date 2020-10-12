@@ -26,17 +26,27 @@ ul{
 li{
 	list-style-type: none;
 }
-
+.btn{
+    white-space: normal;
+}
+.close{
+	position: relative;
+	z-index: 111;
+}
 /* Fix bootstrap */
 @media (min-width: 1600px) {
 	.container {
 		max-width: 1520px;
 	}
 	.col-xxl-6{
-		-ms-flex: 0 0 50%;
 		flex: 0 0 50%;
 		max-width: 50%;
 	}
+	.col-xxl-8 {
+		flex: 0 0 66.666667%;
+		max-width: 66.666667%;
+	}
+	
 }
 .modal-xl {
 	max-width: 1140px;
@@ -178,9 +188,9 @@ a:hover {
 /* MOBILE MENU */
 .mobile-menu__btn {
 	position: fixed;
-	top: 10px;
-	right: 10px;
-	font-size: 2rem;
+	top: 0px;
+	right: 0px;
+	left: 0;
 	z-index: 3;
 	display: none;
 }
@@ -199,13 +209,13 @@ a:hover {
 }
 #mobile-btn_show {
 	position: fixed;
-	top: 10px;
+	top: 0px;
 	right: 10px;
 }
 #mobile-btn_close {
 	display: none;
 	position: absolute;
-	top: 10px;
+	top: 0px;
 	right: 10px;
 }
 .menu-block {
@@ -231,7 +241,7 @@ a:hover {
 	margin-right: auto;
 	display: inline-block;
 	letter-spacing: 3px;
-	padding: 0px 39px;
+	width: 100%;
 	box-shadow: 0 4px 0 #5c8200, 0 25px 15px -10px #86c66e;
 	transition: all .5s;
 	text-align: center;
@@ -252,10 +262,10 @@ a:hover {
 /* Custom */
 /* section-header */
 .section-header {
-	position: fixed;
+	/* position: fixed; */
 	width: 100%;
 	background-color: #fff;
-	z-index: 11;
+	/* z-index: 11; */
 	border-bottom: 3px solid green;
 }
 .header_colored {
@@ -297,9 +307,6 @@ a:hover {
 }
 
 /* section-header-main */
-.section-header-main {
-	padding-top: 100px;
-}
 .header-main {
 	position: relative;
 	padding: 5rem 0;
@@ -336,11 +343,6 @@ a:hover {
 }
 .section-header-hidden {
 	display: none;
-}
-@media (max-width: 577px) {
-	.section-header-main {
-		padding-top: 10px ;
-	}
 }
 
 /* header-about */
@@ -674,17 +676,14 @@ a:hover {
 .reviews {
 	background: url("../../public/assets/img/back/greenhoouse-reviews.jpg") 50% 100% no-repeat;
 }
-
-@media (max-width: 991px) {
-	.reviews {
-		background: url("../../public/assets/img/back/greenhoouse-reviews-medium.jpg") 50% 0% no-repeat;
-		background-size: contain;
+@media (max-width: 1600px){
+	.c__section{
+		padding: 0;
 	}
 }
-
-@media (max-width: 767px) {
-	.reviews {
-		background: none
+@media (max-width: 1200px){
+	.reviews{
+		background: none;
 	}
 }
 

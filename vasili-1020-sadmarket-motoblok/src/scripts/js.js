@@ -35,7 +35,6 @@ $(function () {
         }
     }
 
-
     try {
         $('.equipment__card').each(function(event,el){
             var asd = $('.equipment__price span', el).text() * 1.27;
@@ -70,7 +69,7 @@ $(function () {
         });
         data.push({
             name: "title",
-            value: "Теплица"
+            value: "Мотоблок"
         });
         data.push({
             name: "link",
@@ -194,19 +193,5 @@ document.addEventListener("DOMContentLoaded", function () {
     } catch (error) {
         console.log(error);
     }
-
-    // try {
-    //     var a = document.querySelectorAll(".js-calculator-group-values");
-    //     [].forEach.call(a, function (a) {
-    //         a.addEventListener("click", function () {
-    //             [].forEach.call(document.querySelectorAll("#section-catalog .has-calculator"), function (b) {
-    //                 b.querySelector("input[name='" + a.dataset.name + "'][value='" + a.dataset.value + "']").checked = !0;
-    //                 b.dispatchEvent(new Event("change"))
-    //             })
-    //         })
-    //     })
-    // } catch (c) {
-    //     console.error(c)
-    // }
     
 });

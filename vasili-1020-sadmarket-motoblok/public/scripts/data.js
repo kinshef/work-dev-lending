@@ -25,7 +25,7 @@ var calculator = {
 
     "additional": {
         //КОМПЛЕКТАЦИЯ И ДОСТАВКА КОМПЛЕКТАЦИЯ И ДОСТАВКА КОМПЛЕКТАЦИЯ И ДОСТАВКА 
-        "dostavka_0": 0,
+        "dostavka_0": 10,
         "dostavka_20_24": 49,
         "dostavka_30": 77,
         "dostavka_35_40": 90

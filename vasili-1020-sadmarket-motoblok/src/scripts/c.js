@@ -13,6 +13,9 @@ $(document).ready(function () {
         additional.each(function (i, e) {
             sum += calculator.additional[$(e).val()]
         });
+        $("input[name='additional[]'][type='hidden']", form).each(function (i, e) {
+            sum += calculator.additional[$(e).val()]
+        });
 
         var animateBlock = $('.catalog__price', form);
         var out = $('.calculator-price', form);
