@@ -33,7 +33,26 @@
       display: block!important;
   }
 }
-
+@media (max-width: 1600px){
+  .modal-dialog {
+      max-width: 1100px;
+  }
+}
+@media (max-width: 1200px){
+  .modal-dialog {
+      max-width: 900px;
+  }
+}
+@media (max-width: 992px){
+  .modal-dialog {
+      max-width: 700px;
+  }
+}
+@media (max-width: 768px){
+  .modal-dialog {
+      max-width: 500px;
+  }
+}
 @media (max-width: 576px){
   .h1{
       font-size: 2rem;
@@ -76,32 +95,44 @@ li{
 .animate__heartBeat{
   -webkit-animation-name: animate__heartBeat;
           animation-name: animate__heartBeat;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  color: red;
-}
-@-webkit-keyframes animate__heartBeat{
-  0% {transform: scale(1);}
-  25% {transform: scale(.97);}
-  35% {transform: scale(.9);}
-  45% {transform: scale(1.1);}
-  55% {transform: scale(.9);}
-  65% {transform: scale(1.1);}
-  75% {transform: scale(1.03);}
-  100% {transform: scale(1);}
+  transform: scale(1);
+  color: black;
 }
 @keyframes animate__heartBeat{
-  0% {transform: scale(1);}
-  25% {transform: scale(.97);}
-  35% {transform: scale(.9);}
-  45% {transform: scale(1.1);}
-  55% {transform: scale(.9);}
-  65% {transform: scale(1.1);}
-  75% {transform: scale(1.03);}
-  100% {transform: scale(1);}
-}
+  0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(.97);
+    }
+    35% {
+      transform: scale(.9);
+      color: black;
+    }
+    45% {
+      transform: scale(1.1);
+      color: red;
+    }
+    55% {
+      transform: scale(.9);
+      color: black;
+    }
+    65% {
+      transform: scale(1.1);
+      color: red;
+    }
+    75% {
+      transform: scale(1.03);
+      color: black;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 /* tada_castom */
 .tada_castom{
   -webkit-animation-name: tada_castom;
@@ -595,9 +626,6 @@ header{
   text-shadow: 3px 3px 3px white, -3px -3px 3px white, -3px 3px 3px white, 3px -3px 3px white;
 }
 .tab-content__imgDop{
-  max-width: 100px;
-}
-.col-lg-4 .tab-content__imgDop{
   max-width: 80px;
 }
 .has-calculator{
