@@ -14,9 +14,6 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Fancybox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
-    <!-- Fotorama carousel JS -->
-    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-
 
     <link rel="stylesheet" href="./public/style/css.css">
     <link rel="icon" type="image/ico" href="./public/assets/img/favicon.ico">
@@ -102,7 +99,9 @@
                     <div class="filter__buttons__group" data-group="shirina">
                         <div class="row align-items-center">
                             <div class="col-lg-5 text-lg-right">
-                                <b>Ширина (м): <a href="#modal-question-shirina" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                                <a href="#modal-question-shirina" data-toggle="modal">
+                                    <b>Ширина (м): <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i></b>
+                                </a>
                             </div>
                             <div class="col-lg-7">
                                 <div class="active filter__button" data-value="all">Все</div>
@@ -118,7 +117,9 @@
                     <div class="filter__buttons__group" data-group="length">
                         <div class="row align-items-center">
                             <div class="col-lg-5 text-lg-right">
-                                <b>Длина (м): <a href="#modal-question-length" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                                <a href="#modal-question-length" data-toggle="modal">
+                                    <b>Длина (м): <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i></b>
+                                </a>
                             </div>
                             <div class="col-lg-7">
                                 <div class="active filter__button" data-value="all">Все</div>
@@ -133,7 +134,9 @@
                     <div class="filter__buttons__group" data-group="interval">
                         <div class="row align-items-center">
                             <div class="col-lg-5 text-lg-right">
-                                <b>Интервал (м): <a href="#modal-question-interval" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                                <a href="#modal-question-interval" data-toggle="modal">
+                                    <b>Интервал (м): <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i></b>
+                                </a>
                             </div>
                             <div class="col-lg-7">
                                 <div class="active filter__button" data-value="all">Все</div>
@@ -147,7 +150,9 @@
                     <div class="filter__buttons__group" data-group="stringery">
                         <div class="row align-items-center">
                             <div class="col-lg-5 text-lg-right">
-                                <b>Стрингеры (шт): <a href="#modal-question-stringery" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                                <a href="#modal-question-stringery" data-toggle="modal">
+                                    <b>Стрингеры (шт): <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i></b>
+                                </a>
                             </div>
                             <div class="col-lg-7">
                                 <div class="active filter__button" data-value="all">Все</div>
@@ -160,7 +165,9 @@
                     <div class="filter__buttons__group" data-group="profil">
                         <div class="row align-items-center">
                             <div class="col-lg-5 text-lg-right">
-                                <b>Профиль (мм): <a href="#modal-question-profil" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                                <a href="#modal-question-profil" data-toggle="modal">
+                                    <b>Профиль (мм): <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i></b>
+                                </a>
                             </div>
                             <div class="col-lg-7">
                                 <div class="active filter__button" data-value="all">Все</div>
@@ -173,12 +180,14 @@
                     <div class="filter__buttons__group" data-group="kreplenie">
                         <div class="row align-items-center">
                             <div class="col-lg-5 text-lg-right">
-                                <b>Крепление: <a href="#modal-question-kreplenie" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                                <a href="#modal-question-kreplenie" data-toggle="modal">
+                                    <b>Крепление: <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i></b>
+                                </a>
                             </div>
                             <div class="col-lg-7">
-                                <a class="active filter__button" data-value="all">Все</a>
-                                <a class="filter__button" data-value="bolt">Болт</a>
-                                <a class="filter__button" data-value="krab">Краб</a>
+                                <div class="active filter__button" data-value="all">Все</div>
+                                <div class="filter__button" data-value="bolt">Болт</div>
+                                <div class="filter__button" data-value="krab">Краб</div>
                             </div>
                         </div>
                     </div>
@@ -186,7 +195,9 @@
                     <div class="filter__buttons__group" data-group="additional[]">
                         <div class="row align-items-center">
                             <div class="col-lg-5 text-lg-right">
-                                <b>Дуга: <a href="#modal-question-duga" data-toggle="modal"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></a></b>
+                                <a href="#modal-question-duga" data-toggle="modal">
+                                    <b>Дуга: <i class="fa fa-question-circle-o fa-lg animate__heartBeat" aria-hidden="true"></i></b>
+                                </a>
                             </div>
                             <div class="col-lg-7">
                                 <div class="active filter__button" data-value="all">Все</div>
@@ -330,7 +341,7 @@
                                     </div>
 
                                     <div class="col-lg-6 text-center">
-                                        <table class="table table-sm table-striped text-left">
+                                        <table class="table catalog__table table-sm table-striped text-left">
                                             <tbody>
                                                 <tr>
                                                     <th>
@@ -671,7 +682,7 @@
                                     </div>
 
                                     <div class="col-lg-6 text-center">
-                                        <table class="table table-sm table-striped text-left">
+                                        <table class="table catalog__table table-sm table-striped text-left">
                                             <tbody>
                                                 <tr>
                                                     <th>
@@ -996,7 +1007,7 @@
                             </div>
 
                             <div class="catalog__block text-center">
-                                <table class="table table-sm table-striped text-left">
+                                <table class="table catalog__table table-sm table-striped text-left">
                                     <tbody>
                                         <tr>
                                             <th>
@@ -1245,7 +1256,7 @@
                             </div>
 
                             <div class="catalog__block text-center">
-                                <table class="table table-sm table-striped text-left">
+                                <table class="table catalog__table table-sm table-striped text-left">
                                     <tbody>
                                         <tr>
                                             <th>
@@ -1492,7 +1503,7 @@
                             </div>
 
                             <div class="catalog__block text-center">
-                                <table class="table table-sm table-striped text-left">
+                                <table class="table catalog__table table-sm table-striped text-left">
                                     <tbody>
                                         <tr>
                                             <th>
@@ -2304,18 +2315,16 @@
                         <img src="./public/assets/img/icon/raccoon.png" class="" alt="raccoonPng">
                         <div class="raccoon-dialog bg-warning d-inline-block p-4">
                             <form class="raccoon-form text-center">
+                                <input type="hidden" name="section" value="Енот со скидкой">
                                 <div class="mb-2">
-                                    <div class="h4" data-animation="animated flipInX">Остались вопровы?</div>
-                                    <div data-animation="animated flipInX delay-1s">Оставьте ваш номер телефона</div>
-                                    <div data-animation="animated flipInX delay-2s">И наш консультант с Вами свяжется</div>
+                                    <div class="h4" data-animation="animated flipInX">Эй! Псссс!</div>
+                                    <div data-animation="animated flipInX delay-2s">Хочешь купить Теплицу ещё дешевле?</div>
+                                    <div data-animation="animated flipInX delay-3s">Оставь свой номер я всё устрою!</div>
                                 </div>
-                                <div class="form-group" data-animation="animated flipInX delay-3s">
-                                    <input type="text" name="name" class="form-control" placeholder="Ваше имя">
-                                </div>
-                                <div class="form-group" data-animation="animated flipInX delay-3s">
+                                <div class="form-group" data-animation="animated flipInX delay-4s">
                                     <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
                                 </div>
-                                <div data-animation="animated flipInX delay-3s">
+                                <div data-animation="animated flipInX delay-4s">
                                     <button type="submit" data-animation="animated tada_castom delay-4s" class="c__btn c__btn--danger">Заказать звонок</button>
                                 </div>
                                 
@@ -3627,8 +3636,6 @@
     <!-- Isotope -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
         integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-    <!-- Fotorama carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
     <script src="./public/scripts/data.js"></script>
     <script src="./src/scripts/c.js"></script>

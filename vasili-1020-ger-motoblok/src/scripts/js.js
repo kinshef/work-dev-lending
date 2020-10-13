@@ -186,6 +186,14 @@ $(document).ready(function () {
     }
     presentDown(sessionStorage.getItem('presentNumber'), sessionStorage.getItem('presentTimeout'))
 
+    try {
+        $('.catalog__table a, .filter__buttons a').click(function(){
+            $('.catalog__table i, .filter__buttons i').removeClass('animate__heartBeat')
+        })
+    } catch(error) {
+		console.error(error)
+	}
+
     // Smooth scroll
     $(".smoothscroll").click(function (event) {
         if (this.hash !== "") {

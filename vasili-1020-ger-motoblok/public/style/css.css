@@ -104,35 +104,35 @@ li{
 }
 @keyframes animate__heartBeat{
   0% {
-      transform: scale(1);
-    }
-    25% {
-      transform: scale(.97);
-    }
-    35% {
-      transform: scale(.9);
-      color: black;
-    }
-    45% {
-      transform: scale(1.1);
-      color: red;
-    }
-    55% {
-      transform: scale(.9);
-      color: black;
-    }
-    65% {
-      transform: scale(1.1);
-      color: red;
-    }
-    75% {
-      transform: scale(1.03);
-      color: black;
-    }
-    100% {
-      transform: scale(1);
-    }
+    transform: scale(1);
   }
+  25% {
+    transform: scale(.97);
+  }
+  35% {
+    transform: scale(.9);
+    color: black;
+  }
+  45% {
+    transform: scale(1.1);
+    color: #9b2d30;
+  }
+  55% {
+    transform: scale(.9);
+    color: black;
+  }
+  65% {
+    transform: scale(1.1);
+    color: #9b2d30;
+  }
+  75% {
+    transform: scale(1.03);
+    color: black;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* tada_castom */
 .tada_castom{
   -webkit-animation-name: tada_castom;
@@ -561,6 +561,7 @@ header{
 }
 .bank-item{
   font-size: 0.8em;
+  border-radius: 10px;
 }
 @media(max-width: 768px){
   .bank-item{
@@ -835,8 +836,8 @@ header{
   height: 20rem;
   position: relative;
   display: inline-block;
-  transform: translate(190%);
-  transition: all 1s;
+  transform: translate(90%);
+  /* transition: all 4s; */
 }
 .raccoon-imgWrap img{
   height: 100%;
@@ -845,8 +846,24 @@ header{
      object-fit: contain;
 }
 .active.section-raccoon .raccoon-imgWrap{
-  transform: translate(0%);
+  /* transform: translate(90%); */
+  /* animation-delay: 2s;
+  -webkit-animation-name: raccoon-imgWrap__animate;
+          animation-name: raccoon-imgWrap__animate;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  transform: translate(0%); */
 }
+/* @keyframes raccoon-imgWrap__animate{
+  0% {
+    transform: translate(90%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+} */
 .raccoon-dialog{
   position: absolute;
   border-radius: 10px;
@@ -861,12 +878,6 @@ header{
   right: -30px;
 }
 .active.section-raccoon .raccoon-dialog{
-  -webkit-animation-name: fadeInBottomRight__castom;
-          animation-name: fadeInBottomRight__castom;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
   top: 0%;
   left: 0%;
   opacity: 1;
@@ -875,59 +886,15 @@ header{
 .section-raccoon .raccoon-dialog{
   -webkit-animation-name: fadeInTopLeft__castom;
           animation-name: fadeInTopLeft__castom;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   opacity: 0;
   top: 80%;
   left: 20%;
-  transition: all 0.7s;
+  transition: all 1s;
   transform: scale(0) rotate(-45deg)translate(-50%,-50%);
-}
-@-webkit-keyframes fadeInTopLeft__castom{
-  100% {
-    opacity: 0;
-    top: 80%;
-    left: 20%;
-    transform: scale(0) rotate(-45deg)translate(-50%,-50%);
-  }
-  75% {
-    top: 60%;
-    left: 15%;
-    transform: scale(0.4) rotate(-45deg)translate(-50%,-50%);
-  }
-  65% {
-    top: 50%;
-    left: 15%;
-    transform: scale(0.5) rotate(-40deg)translate(-50%,-50%);
-  }
-  55% {
-    top: 40%;
-    left: 15%;
-    transform: scale(0.6) rotate(-35deg)translate(-50%,-40%);
-  }
-  45% {
-    top: 30%;
-    left: 15%;
-    transform: scale(0.7) rotate(-30deg)translate(-60%,-30%);
-  }
-  35% {
-    top: 20%;
-    left: 10%;
-    transform: scale(0.8) rotate(-20deg)translate(-70%,-20%);
-  }
-  25% {
-    top: 10%;
-    left: 5%;
-    transform: scale(0.9) rotate(-10deg)translate(-80%,-10%);
-  }
-  0% {
-    opacity: 1;
-    top: 0%;
-    left: 0%;
-    transform: scale(1) rotate(0deg)translate(-100%,0%);
-  }
 }
 @keyframes fadeInTopLeft__castom{
   100% {
