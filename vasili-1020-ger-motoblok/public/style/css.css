@@ -95,42 +95,57 @@ li{
 .animate__heartBeat{
   -webkit-animation-name: animate__heartBeat;
           animation-name: animate__heartBeat;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   transform: scale(1);
   color: black;
 }
+@-webkit-keyframes animate__heartBeat{
+  0% {
+      transform: scale(1);
+      color: black;
+  }
+  14% {
+      transform: scale(1.3);
+      color: #9b2d30;
+  }
+  28% {
+      transform: scale(1);
+      color: black;
+  }
+  42% {
+      transform: scale(1.3);
+      color: #9b2d30;
+  }
+  56%{
+    color: black;
+  }
+  70% {
+      transform: scale(1);
+  }
+}
 @keyframes animate__heartBeat{
   0% {
     transform: scale(1);
-  }
-  25% {
-    transform: scale(.97);
-  }
-  35% {
-    transform: scale(.9);
     color: black;
   }
-  45% {
-    transform: scale(1.1);
-    color: #9b2d30;
+  14% {
+      transform: scale(1.3);
+      color: #9b2d30;
   }
-  55% {
-    transform: scale(.9);
-    color: black;
+  28% {
+      transform: scale(1);
+      color: black;
   }
-  65% {
-    transform: scale(1.1);
-    color: #9b2d30;
+  42% {
+      transform: scale(1.3);
+      color: #9b2d30;
   }
-  75% {
-    transform: scale(1.03);
-    color: black;
-  }
-  100% {
-    transform: scale(1);
+  70% {
+      transform: scale(1);
+      color: black;
   }
 }
 /* tada_castom */
@@ -409,7 +424,6 @@ header{
   color: #543500;
   background-color: #ffc107;
 }
-
 .catalog__card{
   position: relative;
   margin-bottom: 2rem;
@@ -831,13 +845,7 @@ header{
   overflow: hidden;
   background: url(../assets/img/back/bg_raccoon.jpg) no-repeat center center;
   background-size: cover;
-}
-.raccoon-imgWrap{
-  height: 20rem;
-  position: relative;
-  display: inline-block;
-  transform: translate(90%);
-  /* transition: all 4s; */
+  padding: 2rem 0;
 }
 .raccoon-imgWrap img{
   height: 100%;
@@ -845,28 +853,92 @@ header{
   -o-object-fit: contain;
      object-fit: contain;
 }
-.active.section-raccoon .raccoon-imgWrap{
-  /* transform: translate(90%); */
-  /* animation-delay: 2s;
+.section-raccoon .raccoon-imgWrap{
+  height: 20rem;
+  position: relative;
+  display: inline-block;
+  transform: translate(90%);
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   -webkit-animation-name: raccoon-imgWrap__animate;
           animation-name: raccoon-imgWrap__animate;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  transform: translate(0%); */
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
-/* @keyframes raccoon-imgWrap__animate{
+.active.section-raccoon .raccoon-imgWrap{
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+@-webkit-keyframes raccoon-imgWrap__animate{
   0% {
     transform: translate(90%);
   }
   100% {
     transform: translate(0%);
   }
-} */
-.raccoon-dialog{
-  position: absolute;
-  border-radius: 10px;
+}
+@keyframes raccoon-imgWrap__animate{
+  0% {
+    transform: translate(90%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+.section-raccoon .raccoon-dialog__text{
+  transition: all 0.4s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  height: 0px;
+  overflow: hidden;
+  -webkit-animation-name: appearance__animate;
+          animation-name: appearance__animate;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.active.section-raccoon .raccoon-dialog__text{
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+@-webkit-keyframes appearance__animate{
+  0% {
+    height: 0px;
+    overflow: hidden;
+  }
+  99% {
+    height: 171px;
+    overflow: hidden;
+  }
+  100% {
+    height: 171px;
+    overflow: visible;
+  }
+}
+@keyframes appearance__animate{
+  0% {
+    height: 0px;
+    overflow: hidden;
+  }
+  99% {
+    height: 171px;
+    overflow: hidden;
+  }
+  100% {
+    height: 171px;
+    overflow: visible;
+  }
 }
 .raccoon-dialog::before{
   content: '';
@@ -878,97 +950,170 @@ header{
   right: -30px;
 }
 .active.section-raccoon .raccoon-dialog{
-  top: 0%;
-  left: 0%;
-  opacity: 1;
-  transform: scale(1) rotate(0deg)translate(-100%,0%);
-}
-.section-raccoon .raccoon-dialog{
-  -webkit-animation-name: fadeInTopLeft__castom;
-          animation-name: fadeInTopLeft__castom;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  -webkit-animation-name: appearance-chat__animate;
+          animation-name: appearance-chat__animate;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  opacity: 0;
-  top: 80%;
-  left: 20%;
-  transition: all 1s;
-  transform: scale(0) rotate(-45deg)translate(-50%,-50%);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
-@keyframes fadeInTopLeft__castom{
-  100% {
+@-webkit-keyframes appearance-chat__animate{
+  0% {
     opacity: 0;
-    top: 80%;
     left: 20%;
     transform: scale(0) rotate(-45deg)translate(-50%,-50%);
   }
-  75% {
-    top: 60%;
+  25% {
     left: 15%;
     transform: scale(0.4) rotate(-45deg)translate(-50%,-50%);
   }
-  65% {
-    top: 50%;
+  35% {
     left: 15%;
     transform: scale(0.5) rotate(-40deg)translate(-50%,-50%);
   }
-  55% {
-    top: 40%;
-    left: 15%;
-    transform: scale(0.6) rotate(-35deg)translate(-50%,-40%);
-  }
   45% {
-    top: 30%;
     left: 15%;
-    transform: scale(0.7) rotate(-30deg)translate(-60%,-30%);
+    transform: scale(0.6) rotate(-35deg)translate(-50%,-50%);
   }
-  35% {
-    top: 20%;
+  55% {
+    left: 15%;
+    transform: scale(0.7) rotate(-30deg)translate(-60%,-50%);
+  }
+  65% {
     left: 10%;
-    transform: scale(0.8) rotate(-20deg)translate(-70%,-20%);
+    transform: scale(0.8) rotate(-20deg)translate(-70%,-50%);
+  }
+  75% {
+    left: 5%;
+    transform: scale(0.9) rotate(-10deg)translate(-80%,-50%);
+  }
+  100% {
+    opacity: 1;
+    left: 0%;
+    transform: scale(1) rotate(0deg)translate(-100%,-50%);
+  }
+}
+@keyframes appearance-chat__animate{
+  0% {
+    opacity: 0;
+    left: 20%;
+    transform: scale(0) rotate(-45deg)translate(-50%,-50%);
   }
   25% {
-    top: 10%;
-    left: 5%;
-    transform: scale(0.9) rotate(-10deg)translate(-80%,-10%);
+    left: 15%;
+    transform: scale(0.4) rotate(-45deg)translate(-50%,-50%);
   }
-  0% {
+  35% {
+    left: 15%;
+    transform: scale(0.5) rotate(-40deg)translate(-50%,-50%);
+  }
+  45% {
+    left: 15%;
+    transform: scale(0.6) rotate(-35deg)translate(-50%,-50%);
+  }
+  55% {
+    left: 15%;
+    transform: scale(0.7) rotate(-30deg)translate(-60%,-50%);
+  }
+  65% {
+    left: 10%;
+    transform: scale(0.8) rotate(-20deg)translate(-70%,-50%);
+  }
+  75% {
+    left: 5%;
+    transform: scale(0.9) rotate(-10deg)translate(-80%,-50%);
+  }
+  100% {
     opacity: 1;
-    top: 0%;
     left: 0%;
-    transform: scale(1) rotate(0deg)translate(-100%,0%);
+    transform: scale(1) rotate(0deg)translate(-100%,-50%);
   }
 }
 @media(max-width: 657px){
-  .raccoon-imgWrap{
+  @-webkit-keyframes appearance__animate{
+    0% {
+      height: 0px;
+      overflow: hidden;
+    }
+    99% {
+      height: 230px;
+      overflow: hidden;
+    }
+    100% {
+      height: 230px;
+      overflow: visible;
+    }
+  }
+  @keyframes appearance__animate{
+    0% {
+      height: 0px;
+      overflow: hidden;
+    }
+    99% {
+      height: 230px;
+      overflow: hidden;
+    }
+    100% {
+      height: 230px;
+      overflow: visible;
+    }
+  }
+  .section-raccoon .raccoon-imgWrap img{
+    width: 280px;
     height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .raccoon-imgWrap img{
-    width: 320px;
     margin-left: auto;
+    transform: translate(100%);
+    display: block;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-name: bounceInRight;
+            animation-name: bounceInRight;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
   }
-  .section-raccoon .raccoon-dialog{
+  .active.section-raccoon .raccoon-imgWrap img{
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+  }
+  .section-raccoon .raccoon-imgWrap{
+    width: 100%;
+    height: auto;
+    transform: translate(0%);
     -webkit-animation: none;
-            animation: none;
-    position: static;
-    width: 320px;
-    margin: 0 auto;
+        animation: none;
     transform: translate(0%,0%);
+    text-align: left;
   }
   .active.section-raccoon .raccoon-dialog{
-    -webkit-animation: none;
-            animation: none;
+    -webkit-animation-name: bounceInRight;
+            animation-name: bounceInRight;
+    width: 320px;
+    position: relative;
+    top: auto;
+    left: calc(50% - 160px);
     transform: translate(0%,0%);
   }
-  .raccoon-dialog::before{
-    bottom: auto;
-    top: -30px;
+  .section-raccoon .raccoon-dialog::before{
+    bottom: -30px;
     right: 3rem;
-    border-top-color: transparent;
-    border-bottom-color: #ffc107;
-    border-left-color: #ffc107;
+    border-left-color: transparent;
+    border-right-color: #ffc107;
+  }
+}
+@media(max-width: 425px){
+  .section-raccoon .raccoon-dialog::before{
+    right: auto;
+    left: 3rem;
   }
 }
