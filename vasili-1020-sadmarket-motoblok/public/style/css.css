@@ -84,6 +84,9 @@ a:hover {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
+.white-nowrap{
+	white-space: nowrap;
+}
 .btn_green {
 	color: #fff;
 	background: linear-gradient(#92cf00, #6e9c00);
@@ -333,43 +336,104 @@ a:hover {
 	}
 }
 
-/* section-header-main */
-.header-main {
-	position: relative;
-	padding: 5rem 0;
+/* section-main */
+.main-form{
+	background-color: rgba(0,0,0,0.8);
+	background-image: url("../../public/assets/img/icon/main_label_h.jpg"), url("../../public/assets/img/icon/main_label_h.jpg"), url("../../public/assets/img/icon/main_label_v.jpg"), url("../../public/assets/img/icon/main_label_v.jpg");
+	background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+	background-position: top, bottom, left, right;
 }
-.header-main__title {
-	font-size: 50px;
-	line-height: 90px;
-	font-weight: bold;
-	color: #3f2803;
-	font-family: Lora, serif;
-	text-transform: uppercase;
-	letter-spacing: 1px;
+.main-form .btn_custom a{
+	font-size: 26px;
 }
-.header-main__subtitle {
-	font-family: Lora, serif;
-	color: #80b500;
-	margin: 0;
-	padding-top: 1rem;
-	font-weight: 600;
-	font-size: 38px;
-	line-height: 40px;
+.main__title{
+	font-weight: 700;
+	font-size: 1.5rem;
+	max-width: 500px;
+	margin: auto;
 }
-@media(max-width: 769px) {
-	.header-main__title {
-		font-size: 40px;
-	}
-	.header-main__subtitle {
-		font-size: 22px;
-		padding: 0;
-	}
-	.header-main {
-		padding: 0;
-	}
+.main__subtitle{
+	font-size: 1rem;
 }
-.section-header-hidden {
+.main__presentCol{
+	white-space: nowrap;
+}
+.main__presentCol span{
+	display: inline-block;
+	margin: 0 1px 0;
+	padding: 0.3em;
+	background-color: white;
+	font-size: 1.1em;
+}
+.main-form:before{
+	content: '';
+	position: absolute;
 	display: none;
+	top: 0;
+	right: -80px;
+	z-index: 2;
+	width: 200px;
+	height: 200px;
+	background: url(../../public/assets/img/icon/greenhouse-warranty.png) no-repeat center center;
+	background-size: contain;
+}
+@media (min-width: 320px) { /* YA DOPISAL */
+	.main-form:before{
+		display: block;
+		top: -30px;
+		right: -20px;
+		width: 110px;
+		height: 110px;
+	}
+}
+@media (min-width: 375px) { /* YA DOPISAL */
+	.main-form:before{
+		display: block;
+		top: 75px;
+		right: -10px;
+		width: 100px;
+		height: 100px;
+	}
+}
+@media (min-width: 425px) { /* YA DOPISAL */
+	.main-form:before{
+		display: block;
+		top: 65px;
+		right: -10px;
+		width: 120px;
+		height: 120px;
+	}
+}
+@media (min-width: 768px) { /* YA DOPISAL */
+	.main__title{
+		font-size: 4rem;
+	}
+	.main__subtitle{
+		font-size: 3rem;
+	}
+	.main-form:before{
+		display: block;
+		width: 200px;
+		height: 200px;
+		top: 0;
+		right: -80px;
+	}
+}
+@media (min-width: 992px) {
+	.main__title{
+		font-size: 3rem;
+	}
+	.main__subtitle{
+		font-size: 3rem;
+	}
+}
+@media (min-width: 1200px) {
+	.main__title{
+		font-size: 3rem;
+	}
+	.main__subtitle{
+		font-size: 2rem;
+	}
 }
 
 /* header-about */
@@ -549,8 +613,8 @@ a:hover {
 .has-calculator__img .nav-link{
 	padding: 0.25rem;
 }
-.tab-content__imgDop{
-	max-width: 80px;
+.nav-item{
+	flex: 1;
 }
 .card-product__container .nav-link,
 .has-calculator__img .nav-link{

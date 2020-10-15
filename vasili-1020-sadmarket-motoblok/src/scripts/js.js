@@ -121,6 +121,70 @@ $(function () {
     });
 
     try {
+        var presentDown = function(activData, timeout){
+            if(activData !== sessionStorage.getItem('presentNumber')){
+                sessionStorage.setItem('presentNumber', activData);
+            }
+            if(!activData){
+                sessionStorage.setItem('presentNumber', 18);
+                activData = 18;
+            }
+            if(timeout !== sessionStorage.getItem('presentNumber')){
+                sessionStorage.setItem('presentTimeout', timeout);
+            }
+            if(!sessionStorage.getItem('presentNumber')){
+                sessionStorage.setItem('presentTimeout', 10000);
+                activData = 10000;
+            }
+    
+            var decorateNumber = function(activData){
+                $('.presentCol').each(function(ind, el){
+                    $('span', el).each(function(item, index){
+                        index.textContent = String(activData)[item];
+                        if(index.textContent.length < 1){
+                            index.parentNode.removeChild(index);
+                        }
+                    })
+                })
+                $('span', $('.presentCol__remainder')).each(function(item, index){
+                    var remainderGifts = String(50-activData)[item];
+                    if(item === 1){
+                        switch (+remainderGifts) {
+                            case 1:
+                                $('.presentCol__gifts').text('подарок');
+                                break;
+                            case 2:
+                                $('.presentCol__gifts').text('подарка');
+                                break;
+                            case 3:
+                                $('.presentCol__gifts').text('подарка');
+                                break;
+                            case 4:
+                                $('.presentCol__gifts').text('подарка');
+                                break;
+                            default:
+                                $('.presentCol__gifts').text('подарков');
+                                break;
+                        }
+                    }
+                    index.textContent = remainderGifts;
+                })
+            }
+    
+            decorateNumber(+activData)
+    
+            if(+activData > 8){
+                setTimeout(function(){
+                    presentDown(--activData,Number(timeout)+10000);
+                }, timeout)
+            }
+        }
+        presentDown(sessionStorage.getItem('presentNumber'), sessionStorage.getItem('presentTimeout'))    
+    } catch(error) {
+		console.error(error)
+	}
+
+    try {
         $('.catalog__table a').click(function(){
             $('.catalog__table i').removeClass('animate__heartBeat')
         })
