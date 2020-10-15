@@ -187,8 +187,8 @@ $(document).ready(function () {
     presentDown(sessionStorage.getItem('presentNumber'), sessionStorage.getItem('presentTimeout'))
 
     try {
-        $('.catalog__table a, .filter__buttons a').click(function(){
-            $('.catalog__table i, .filter__buttons i').removeClass('animate__heartBeat')
+        $('.catalog__table a,.catalog__subblock__title a, .filter__buttons a').click(function(){
+            $('.catalog__table i,.catalog__subblock__title i, .filter__buttons i').removeClass('animate__heartBeat')
         })
     } catch(error) {
 		console.error(error)
