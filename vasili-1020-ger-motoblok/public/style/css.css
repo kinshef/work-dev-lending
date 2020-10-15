@@ -892,6 +892,7 @@ header{
   }
 }
 .section-raccoon .raccoon-dialog__text{
+  font-weight: 600;
   transition: all 0.4s;
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
@@ -953,6 +954,7 @@ header{
   position: absolute;
   border-radius: 10px;
   top: 50%;
+  min-width: 360px;
   -webkit-animation-name: appearance-chat__animate;
           animation-name: appearance-chat__animate;
   -webkit-animation-duration: 0.5s;
@@ -1034,7 +1036,7 @@ header{
     transform: scale(1) rotate(0deg)translate(-100%,-50%);
   }
 }
-@media(max-width: 657px){
+@media(max-width: 700px){
   @-webkit-keyframes appearance__animate{
     0% {
       height: 0px;
@@ -1099,6 +1101,7 @@ header{
     -webkit-animation-name: bounceInRight;
             animation-name: bounceInRight;
     width: 320px;
+    min-width: auto;
     position: relative;
     top: auto;
     left: calc(50% - 160px);
