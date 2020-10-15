@@ -120,6 +120,14 @@ $(function () {
         "#modal" !== window.location.hash && $(".modal").modal("hide")
     });
 
+    try {
+        $('.catalog__table a').click(function(){
+            $('.catalog__table i').removeClass('animate__heartBeat')
+        })
+    } catch(error) {
+		console.error(error)
+	}
+
     $(".smoothscroll").click(function (event) {
         if (this.hash !== "") {
             // Prevent default anchor click behavior
