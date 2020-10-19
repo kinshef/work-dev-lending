@@ -57,6 +57,7 @@ textarea {
   background-image: url("../assets/img/bg/bg3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 6rem;
 }
 
 .main-title {
@@ -256,6 +257,28 @@ textarea {
 }
 
 /* END SECTION ABOUT */
+
+/* section-order */
+.section-catalogDop,
+.section-order {
+  position: relative;
+  background: url("../assets/img/bg/podlozhka-min.webp") no-repeat center center;
+  background-size: auto 100%;
+  z-index: 1;
+  padding: 5rem 0;
+  margin: -5rem 0;
+}
+.section-catalogDop img,
+.section-order img {
+  max-width: 6rem;
+}
+.catalogDop__prise{
+  border-radius: 15px;
+  background-color: rgba(255,255,255,.7);
+  color: #000;
+  font-size: 1.2rem;
+  padding: 0.25rem 1.5rem;
+}
 
 /* CUSTOM */
 .border_shadow {
