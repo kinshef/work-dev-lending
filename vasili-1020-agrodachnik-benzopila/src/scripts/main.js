@@ -72,8 +72,17 @@ $(document).ready(function () {
       );
     }
   });
-});
 
+  $(".owl-carousel-modal").owlCarousel({
+    items: 1,
+    nav: true,
+    loop: true,
+    dots: false,
+    autoHeight:true,
+    navText: ['<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-angle-left fa-stack-1x fa-inverse"></i></span>', '<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-angle-right fa-stack-1x fa-inverse"></i></span>'],
+  });
+
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   try {

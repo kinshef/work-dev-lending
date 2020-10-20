@@ -44,6 +44,7 @@ textarea {
 
 /* HEADER */
 .header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -358,5 +359,44 @@ textarea {
     font-weight: 700;
 }
 
-
 /* END CUSTOM */
+
+/* modal-product */
+.modal-product .close{
+  position: absolute;
+  top: -25px;
+  right: -56px;
+  z-index: 2;
+  padding: 1rem;
+}
+@media(max-width: 700px){
+  .modal-product .close{
+    top: 0;
+    right: 0;
+  }
+}
+.modal-product ul> li>span{
+  color: green;
+  font-weight: 700;
+}
+.owl-carousel-modal{
+  overflow: hidden;
+}
+.owl-carousel-modal .owl-nav .owl-prev,
+.owl-carousel-modal .owl-nav .owl-next{
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  font-size: 24px;
+  opacity: 0.7;
+}
+.owl-carousel-modal .owl-nav .owl-prev{
+  left: 1rem;
+}
+.owl-carousel-modal .owl-nav .owl-next{
+  right: 1rem;
+}
+.owl-carousel-modal .owl-nav .owl-prev:hover,
+.owl-carousel-modal .owl-nav .owl-next:hover{
+  opacity: 1;
+}
