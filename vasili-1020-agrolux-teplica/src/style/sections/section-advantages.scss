@@ -1,0 +1,50 @@
+.section-advantages {
+  padding: 72px 0;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+      width: calc(50% - 16px);
+      padding: 0 16px;
+    }
+  }
+
+  &__listTitle {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 0;
+
+    &::before {
+      font-family: FontAwesome;
+      content: '\f05d';
+      font-weight: 100;
+      font-size: 32px;
+      color: rgba(244, 67, 54, 0.8);
+      margin-right: 8px;
+    }
+  }
+
+  &__listText {
+    padding-left: 36px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .section-advantages__list li {
+    width: calc(100%);
+    padding: 0 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-advantages__list li {
+    width: calc(100%);
+    padding: 0 16px;
+  }
+}

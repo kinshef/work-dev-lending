@@ -1,0 +1,27 @@
+.page-header {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(62, 88, 69, 0.4);
+  color: white;
+  padding: 8px 0;
+
+  a.page-header__phone {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  &__text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page-header {
+    background: transparent;
+  }
+}
