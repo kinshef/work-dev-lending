@@ -182,3 +182,18 @@ document.addEventListener("DOMContentLoaded", function () {
             mainNav.classList.remove('fixHead');
         }
     };
+    try {
+      var navHiden = 1;
+      window.addEventListener("scroll", function () {
+        var scrollWotch = document.body.scrollTop || document.documentElement.scrollTop;
+        if(scrollWotch != navHiden){
+          if(scrollWotch > navHiden){
+            document.getElementById("section-nav").classList.remove("js-scroll-down");
+          }else{
+            document.getElementById("section-nav").classList.add("js-scroll-down");
+          }
+        }
+      })
+    } catch (error) {
+      console.error(error)
+    }
