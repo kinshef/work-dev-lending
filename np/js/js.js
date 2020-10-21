@@ -1,181 +1,116 @@
-
-
-
-var $jscomp = $jscomp || {};
-$jscomp.scope = {};
-$jscomp.arrayIteratorImpl = function (c) {
-    var b = 0;
-    return function () {
-        return b < c.length ? {
-            done: !1,
-            value: c[b++]
-        } : {
-            done: !0
-        }
-    }
-};
-$jscomp.arrayIterator = function (c) {
-    return {
-        next: $jscomp.arrayIteratorImpl(c)
-    }
-};
-$jscomp.makeIterator = function (c) {
-    var b = "undefined" != typeof Symbol && Symbol.iterator && c[Symbol.iterator];
-    return b ? b.call(c) : $jscomp.arrayIterator(c)
-};
-$jscomp.arrayFromIterator = function (c) {
-    for (var b, a = []; !(b = c.next()).done;) a.push(b.value);
-    return a
-};
-$jscomp.arrayFromIterable = function (c) {
-    return c instanceof Array ? c : $jscomp.arrayFromIterator($jscomp.makeIterator(c))
-};
-
-
-
-
-
-
-    try {
-        [].forEach.call(document.querySelectorAll("[data-animation]"), function (a) {
-            var b = new IntersectionObserver(function (c) {
-                c.forEach(function (c) {
-                    if (c.isIntersecting) {
-                        var d = a.dataset.animation.split(" ");
-                        a.classList.add.apply(a.classList, $jscomp.arrayFromIterable(d));
-                        a.addEventListener("animationend", function e() {
-                            a.classList.remove.apply(a.classList, $jscomp.arrayFromIterable(d));
-                            a.removeEventListener("animationend", e)
-                        });
-                        b.unobserve(a)
-                    }
-                })
-            });
-            b.observe(a)
-        })
-    } catch (a) {
-        console.error(a)
-    }
-
-
-
-
-
-
-
-
-
-
 $(document).ready(function () {
-    // Form submit
-    $("form").submit(function (event) {
-        event.preventDefault();
 
-        if(typeof sessionStorage !== 'undefined'){
-            if(sessionStorage.getItem('formSubmitted')){
-                if(!confirm('Вы уже отправили заявку, повторить?')){return false}
-            }else{
-                sessionStorage.setItem('formSubmitted', 'true')
-            }
-        }
-        var data = $(this).serializeArray();
-        data.push({
-            name: "source",
-            value: "Test"
-        });
-        data.push({
-            name: "title",
-            value: "Test message"
-        });
-        data.push({
-            name: "link",
-            value: location.href
-        });
+  // Form submit
+  $("form").submit(function (event) {
+    event.preventDefault();
 
-        /*console.log(JSON.stringify(data));
-        return false;*/ // Testing
-
-        $.ajax({
-            type: "POST",
-            url: "https://skidka-tut.by/action/index.php",
-            headers: {'X-Requested-With': 'XMLHttpRequest'},
-            dataType: "json",
-            data: data,
-        }).done(function (response) {
-            alert(response.text);
-        }).fail(function (error, textStatus) {
-            console.log(error, textStatus);
-            alert('Извините, произошла ошибка запроса. Свяжитесь с менеджером по телефону!');
-        });
-
-        // Event dispatcher for IE9+ included
-        if(typeof(Event) === 'function') {
-            document.dispatchEvent(new Event('app.form.send'));
-        }else{
-            var ev = document.createEvent('Event');
-            ev.initEvent('app.form.send', false, false);
-            document.dispatchEvent(ev);
-        }
-
-        //console.log(JSON.stringify(data))
-        return false
+    if (typeof sessionStorage !== 'undefined') {
+      if (sessionStorage.getItem('formSubmitted')) {
+        if (!confirm('Вы уже отправили заявку, повторить?')) { return false }
+      } else {
+        sessionStorage.setItem('formSubmitted', 'true')
+      }
+    }
+    var data = $(this).serializeArray();
+    data.push({
+      name: "source",
+      value: "Test"
+    });
+    data.push({
+      name: "title",
+      value: "Test message"
+    });
+    data.push({
+      name: "link",
+      value: location.href
     });
 
-    $("body").mouseleave(function (event) {
-        if (typeof sessionStorage !== "undefined") {
-            if (!sessionStorage.getItem("modalLeaveShowed") && event.clientY < -12) {
-                sessionStorage.setItem("modalLeaveShowed", "true");
-                $("#modal-leave").modal("show");
-            }
-        }
+    /*console.log(JSON.stringify(data));
+    return false;*/ // Testing
+
+    $.ajax({
+      type: "POST",
+      url: "https://skidka-tut.by/action/index.php",
+      headers: { 'X-Requested-With': 'XMLHttpRequest' },
+      dataType: "json",
+      data: data,
+    }).done(function (response) {
+      alert(response.text);
+    }).fail(function (error, textStatus) {
+      console.log(error, textStatus);
+      alert('Извините, произошла ошибка запроса. Свяжитесь с менеджером по телефону!');
     });
 
-    // Smooth scroll
-    $(".smoothscroll").click(function (event) {
-        if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
+    // Event dispatcher for IE9+ included
+    if (typeof (Event) === 'function') {
+      document.dispatchEvent(new Event('app.form.send'));
+    } else {
+      var ev = document.createEvent('Event');
+      ev.initEvent('app.form.send', false, false);
+      document.dispatchEvent(ev);
+    }
 
-            // Store hash
-            var hash = this.hash;
+    //console.log(JSON.stringify(data))
+    return false
+  });
 
-            // Using jQuery's animate() method to add smooth page scroll
-            $("html, body").animate(
-                {
-                    scrollTop: $(hash).offset().top - 100
-                },
-                400
-            );
-        }
-    });
+  // Smooth scroll
+  $(".smoothscroll").click(function (event) {
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash;
+      // Using jQuery's animate() method to add smooth page scroll
+      $("html, body").animate({
+          scrollTop: $(hash).offset().top - 100
+      },400);
+    }
+  });
 
-	// Show popup when user leave site
-    $('body').mouseleave(function (event) {
-        if (typeof sessionStorage !== 'undefined') {
-            if (!sessionStorage.getItem('modalLeaveShowed') && event.clientY < -12) {
-                sessionStorage.setItem('modalLeaveShowed', 'true');
-                $('#modal-leave').modal('show');
-            }
-        }
-    });
-
+  // Show popup when user leave site
+  $('body').mouseleave(function (event) {
+    if (typeof sessionStorage !== 'undefined') {
+      if (!sessionStorage.getItem('modalLeaveShowed') && event.clientY < -12) {
+        sessionStorage.setItem('modalLeaveShowed', 'true');
+        $('#modal-leave').modal('show');
+      }
+    }
+  });
+  
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-
-    try {
-        // countdown
-        let dateEnd = new Date();
-        dateEnd.setDate(dateEnd.getDay() ? dateEnd.getDate() - dateEnd.getDay() + 8 : dateEnd.getDate() + 1);
-        dateEnd.setHours(0, 0, 0);
-        new LightCountdown(".countdown-week", dateEnd, {
-            animation: "animated flipInX", 
-            animationDuration: "600ms"
+  try {
+    // countdown
+    let dateEnd = new Date();
+    dateEnd.setDate(dateEnd.getDay() ? dateEnd.getDate() - dateEnd.getDay() + 8 : dateEnd.getDate() + 1);
+    dateEnd.setHours(0, 0, 0);
+    let countdown = new LightCountdown(".countdown-week", dateEnd, { animation: "animated flipInX", animationDuration: "600ms" });
+  } catch (e) {
+    console.error(e);
+  }
+  
+  try{
+        /* Animate blocks */
+        [].forEach.call(document.querySelectorAll('[data-animation]'), function(observable){
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const fx = observable.dataset.animation.split(' ');
+                        observable.classList.add(...fx);
+                        observable.addEventListener('animationend', function handler() {
+                            observable.classList.remove(...fx);
+                            observable.removeEventListener('animationend', handler);
+                        });
+                        /*Comment this line to repeat animation when viewport return to element*/
+                        observer.unobserve(observable);
+                    }
+                });
+            });
+            observer.observe(observable);
         });
-    } catch (e) {
-        console.error(e);
-    }
-
+    }catch (e) {console.error(e);}
 
   // light link on scroll page
   try {
@@ -195,6 +130,49 @@ document.addEventListener("DOMContentLoaded", function () {
     console.error(error)
   }
 
+ // links hightLight after scroll page
+  $.fn.nav = function (item) {
+    var point = {
+      offset: 0
+    };
+    $.extend(point, item);
+    var links = this;
+    $(links).each(function (a, index) {
+      var link = $(index.hash);
+      var place = $(link).offset();
+      $(window).scroll(function () {
+        var newPoint = $(window).scrollTop() + point.offset;
+        place.top < newPoint && newPoint < place.top + $(link).height() && ($(links).removeClass("active"), $(index).addClass("active"))
+      })
+    })
+  };
+  $(".js-nav-scroll").nav({
+    offset: 150
+  });
+  
+});
+
+  //Close consultation modal
+  $('.modal-consultation__close').click(function () {
+    $("#modal-consultation").removeClass("shown")
+  });
+  //Close gift modal
+  $('.modal-gift__close').click(function () {
+    $("#modal-gift").removeClass("shown")
+  });
+
+  // Show popup #modal-consultation when user scrolls site to the section catalog
+  $(window).on("scroll", function () {
+    $(this).scrollTop() > $("#product").offset().top && "undefined" !== typeof sessionStorage && !sessionStorage.getItem("modalConsultationShowed") &&
+      (sessionStorage.setItem("modalConsultationShowed", "true"), $("#modal-gift").addClass("shown"))
+  });
+
+  // Show popup #modal-gift after 60 sec
+  setTimeout(function () {
+    "undefined" === typeof sessionStorage || sessionStorage.getItem("modalGiftShowed") || (sessionStorage.setItem("modalGiftShowed", "true"), $("#modal-consultation").addClass("shown"))
+  }, 10000);
+
+
 
     var mainNav = document.querySelector('.main-nav');
     document.onscroll = function () {
@@ -204,16 +182,3 @@ document.addEventListener("DOMContentLoaded", function () {
             mainNav.classList.remove('fixHead');
         }
     };
-
-
-
-
-
-
-
-
-
-
-});
-
-
