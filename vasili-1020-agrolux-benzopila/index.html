@@ -22,27 +22,33 @@
 
 <body>
 
-    <section class="section-main" id="section-main">
+    <header id="page-header" class="page-header leap-fix">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-4 mt-5 mb-5">
-                    <a href="#header">
-                        <img src="public/assets/img/icons/logo-light.png" alt="logo">
-                    </a>
+            <div class="row d-flex align-items-center">
+                <div class="d-none d-lg-block col-lg-1">
+                    <img src="./public/assets/img/logo.png" alt="Логотип" class="img-fluid">
                 </div>
-                <div class="col-12 col-lg-4 mt-5 mb-5 text-center">
-
+                <div class="d-none d-lg-block col-lg-3">
+                    <p class="mb-0 page-header__text h5">Сверхпрочные теплицы из поликарбоната</p>
                 </div>
-                <div class="col-12 col-lg-4 mt-5 mb-5 text-right">
-                    <div class="d-flex flex-column align-items-end">
-                        <a href="tel:+375293527111" class="text-white">+375 (29) 352-71-11</a>
-                        <a href="tel:+375333527111" class="text-white">+375 (33) 352-71-11</a>
-                        <a class="main-link" href="#modal-order" data-toggle="modal">
-                            Обратный звонок
-                        </a>
+                <div class="col-12 col-lg-8">
+                    <div class="d-flex justify-content-between justify-content-lg-end align-items-center flex-row">
+                        <div class="d-flex flex-column align-items-start align-items-lg-end mr-lg-4">
+                            <a class="page-header__phone" href="tel:+375293527111">+375 (29) 352-71-11</a>
+                            <a class="page-header__phone" href="tel:+375333527111">+375 (33) 352-71-11</a>
+                            <p class="mb-0">Ежедневно с 8:00 до 23:00</p>
+                        </div>
+                        <div>
+                            <a class="btn btn-lg btn-transparent" data-toggle="modal" data-target="#modal-order">Заказать звонок</a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </header>
+
+    <section class="section-main" id="section-main">
+        <div class="container">
             <div class="row">
                 <div class="col-12 offset-lg-3 col-lg-6 text-center mt-5 mb-5">
 
