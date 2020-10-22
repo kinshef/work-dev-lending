@@ -21,8 +21,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
     integrity="sha256-HtCCUh9Hkh//8U1OwcbD8epVEUdBvuI8wj1KtqMhNkI=" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/calculator.css">
+  <link rel="stylesheet" href="./public/style/main.css">
+  <link rel="stylesheet" href="./public/style/calculator.css">
   <link rel="stylesheet" href="../vendor/lib/lightcountdown_v1_2/lightcountdown.css">
   <title>Мотоблоки</title>
 </head>
@@ -32,7 +32,7 @@
     <div class="section-nav">
       <div class="nav__top">
         <div class="nav__logo">
-          <img src="img/logo/logotip.png.png" class="nav__logo__img" width="36">
+          <img src="./public/assets/img/logo/logotip.png.png" class="nav__logo__img" width="36">
         </div>
         <div class="nav__contacts">
           <div class="nav__contact">
@@ -79,13 +79,13 @@
         <div class="col-lg-5 offset-lg-6 mt-5">
           <div class="d-flex justify-content-center align-items-center header-phone-wrap mt-5">
             <div class="header-phone animated infinite pulse">
-              <img src="img/icons/phone-24px.svg" alt="phone">
+              <img src="./public/assets/img/icons/phone-24px.svg" alt="phone">
             </div>
             <div class="header-phone-text pl-2">
               <a href="tel:+375445330486">+375445330486</a>
-              <img class="img-fluid" src="img/logo/a1.png" alt="a1"><br />
+              <img class="img-fluid" src="./public/assets/img/logo/a1.png" alt="a1"><br />
               <a href="tel:+375295330486">+375295330486</a>
-              <img class="img-fluid" src="img/logo/mts.png" alt="mts">
+              <img class="img-fluid" src="./public/assets/img/logo/mts.png" alt="mts">
             </div>
           </div>
         </div>
@@ -93,9 +93,9 @@
       <div class="row justify-content-center text-center">
         <div class="col-12 col-md-6 col-lg-5 text-white align-self-end">
           <div class="header-wrapper">
-            <img class="img-fluid" src="img/motoblock.png" alt="motoblock">
+            <img class="img-fluid" src="./public/assets/img/motoblock.png" alt="motoblock">
             <div class="content">
-                <img class="col-12 img-fluid w-100" src="img/banner1.png" alt="">
+                <img class="col-12 img-fluid w-100" src="./public/assets/img/banner1.png" alt="">
             </div>
           </div>
         </div>
@@ -156,7 +156,7 @@
         <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
           <div class="card border-0" style="width: 30rem;">
             <h5 class="card-title text-center catalog-title">Культиватор SHTENLI 7000 (6 л.с)</h5>
-            <img src="img/bg/7000.jpg" class="card-img-top" alt="bgimg">
+            <img src="./public/assets/img/bg/7000.jpg" class="card-img-top" alt="bgimg">
             <div class="card-body">
             </div>
             <ul class="list-group list-group-flush">
@@ -170,14 +170,33 @@
                 </div>
               </li>
             </ul>
+            <form class="my-3">
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Имя</label>
+                <div class="col-9">
+                  <input class="form-control" type="text" name="client" placeholder="Ваше имя">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Телефон</label>
+                <div class="col-9">
+                  <input class="form-control" type="tel" name="phone" placeholder="Введите номер телефона" required="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-6 offset-3">
+                  <button type="submit" class="btn w-100 btn-danger">Отправить</button>
+                </div>
+              </div>
+            </form>
             <div class="row">
               <div class="col">
                 <button type="button" class="btn btn-warning btn-catalog w-100" data-toggle="modal"
                   data-target="#modal-product-1">Подробнее</button>
               </div>
               <div class="col">
-                <button type="button" data-toggle="modal" data-target="#order"
-                  class="btn btn-warning btn-catalog w-100">Заказать</button>
+                <button type="button" data-toggle="modal" data-target="#product-komplect-1"
+                  class="btn btn-warning btn-catalog w-100">Комплектация</button>
               </div>
             </div>
           </div>
@@ -185,7 +204,7 @@
         <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
           <div class="card border-0" style="width: 30rem;">
             <h5 class="card-title text-center catalog-title">Культиватор SHTENLI 500 (7 л.с)</h5>
-            <img src="img/bg/500-хит.jpg" class="card-img-top" alt="bgimg">
+            <img src="./public/assets/img/bg/500-хит.jpg" class="card-img-top" alt="bgimg">
             <div class="card-body">
             </div>
             <ul class="list-group list-group-flush">
@@ -199,14 +218,33 @@
                 </div>
               </li>
             </ul>
+            <form class="my-3">
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Имя</label>
+                <div class="col-9">
+                  <input class="form-control" type="text" name="client" placeholder="Ваше имя">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Телефон</label>
+                <div class="col-9">
+                  <input class="form-control" type="tel" name="phone" placeholder="Введите номер телефона" required="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-6 offset-3">
+                  <button type="submit" class="btn w-100 btn-danger">Отправить</button>
+                </div>
+              </div>
+            </form>
             <div class="row">
               <div class="col">
                 <button type="button" class="btn btn-warning btn-catalog w-100" data-toggle="modal"
                   data-target="#modal-product-2">Подробнее</button>
               </div>
               <div class="col">
-                <button type="button" data-toggle="modal" data-target="#order"
-                  class="btn btn-warning btn-catalog w-100">Заказать</button>
+                <button type="button" data-toggle="modal" data-target="#product-komplect-2"
+                  class="btn btn-warning btn-catalog w-100">Комплектация</button>
               </div>
             </div>
           </div>
@@ -214,7 +252,7 @@
         <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
           <div class="card border-0" style="width: 30rem;">
             <h5 class="card-title text-center catalog-title">Культиватор SHTENLI 900 (8 л.с)</h5>
-            <img src="img/bg/900.jpg" class="card-img-top" alt="bgimg">
+            <img src="./public/assets/img/bg/900.jpg" class="card-img-top" alt="bgimg">
             <div class="card-body">
             </div>
             <ul class="list-group list-group-flush">
@@ -228,14 +266,33 @@
                 </div>
               </li>
             </ul>
+            <form class="my-3">
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Имя</label>
+                <div class="col-9">
+                  <input class="form-control" type="text" name="client" placeholder="Ваше имя">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Телефон</label>
+                <div class="col-9">
+                  <input class="form-control" type="tel" name="phone" placeholder="Введите номер телефона" required="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-6 offset-3">
+                  <button type="submit" class="btn w-100 btn-danger">Отправить</button>
+                </div>
+              </div>
+            </form>
             <div class="row">
               <div class="col">
                 <button type="button" class="btn btn-warning btn-catalog w-100" data-toggle="modal"
                   data-target="#modal-product-3">Подробнее</button>
               </div>
               <div class="col">
-                <button type="button" data-toggle="modal" data-target="#order"
-                  class="btn btn-warning btn-catalog w-100">Заказать</button>
+                <button type="button" data-toggle="modal" data-target="#product-komplect-3"
+                  class="btn btn-warning btn-catalog w-100">Комплектация</button>
               </div>
             </div>
           </div>
@@ -245,7 +302,7 @@
         <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
           <div class="card border-0" style="width: 30rem;">
             <h5 class="card-title text-center catalog-title">Мотоблок SHTENLI 1030L (8,5 л.с)</h5>
-            <img src="img/bg/1030.jpg" class="card-img-top" alt="bgimg">
+            <img src="./public/assets/img/bg/1030.jpg" class="card-img-top" alt="bgimg">
             <div class="card-body">
             </div>
             <ul class="list-group list-group-flush">
@@ -259,14 +316,33 @@
                 </div>
               </li>
             </ul>
+            <form class="my-3">
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Имя</label>
+                <div class="col-9">
+                  <input class="form-control" type="text" name="client" placeholder="Ваше имя">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Телефон</label>
+                <div class="col-9">
+                  <input class="form-control" type="tel" name="phone" placeholder="Введите номер телефона" required="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-6 offset-3">
+                  <button type="submit" class="btn w-100 btn-danger">Отправить</button>
+                </div>
+              </div>
+            </form>
             <div class="row">
               <div class="col">
                 <button type="button" class="btn btn-warning btn-catalog w-100" data-toggle="modal"
                   data-target="#modal-product-4">Подробнее</button>
               </div>
               <div class="col">
-                <button type="button" data-toggle="modal" data-target="#order"
-                  class="btn btn-warning btn-catalog w-100">Заказать</button>
+                <button type="button" data-toggle="modal" data-target="#product-komplect-4"
+                  class="btn btn-warning btn-catalog w-100">Комплектация</button>
               </div>
             </div>
           </div>
@@ -274,7 +350,7 @@
         <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
           <div class="card border-0" style="width: 30rem;">
             <h5 class="card-title text-center catalog-title">Мотоблок SHTENLI 1030P (8,5 л.с)</h5>
-            <img src="img/bg/1030.jpg" class="card-img-top" alt="bgimg">
+            <img src="./public/assets/img/bg/1030.jpg" class="card-img-top" alt="bgimg">
             <div class="card-body">
             </div>
             <ul class="list-group list-group-flush">
@@ -288,14 +364,33 @@
                 </div>
               </li>
             </ul>
+            <form class="my-3">
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Имя</label>
+                <div class="col-9">
+                  <input class="form-control" type="text" name="client" placeholder="Ваше имя">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Телефон</label>
+                <div class="col-9">
+                  <input class="form-control" type="tel" name="phone" placeholder="Введите номер телефона" required="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-6 offset-3">
+                  <button type="submit" class="btn w-100 btn-danger">Отправить</button>
+                </div>
+              </div>
+            </form>
             <div class="row">
               <div class="col">
                 <button type="button" class="btn btn-warning btn-catalog w-100" data-toggle="modal"
                   data-target="#modal-product-5">Подробнее</button>
               </div>
               <div class="col">
-                <button type="button" data-toggle="modal" data-target="#order"
-                  class="btn btn-warning btn-catalog w-100">Заказать</button>
+                <button type="button" data-toggle="modal" data-target="#product-komplect-5"
+                  class="btn btn-warning btn-catalog w-100">Комплектация</button>
               </div>
             </div>
           </div>
@@ -303,7 +398,7 @@
         <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
           <div class="card border-0" style="width: 30rem;">
             <h5 class="card-title text-center catalog-title">Мотоблок SHTENLI 1900PL (14 л.с)</h5>
-            <img src="img/bg/1900PL.jpg" class="card-img-top" alt="bgimg">
+            <img src="./public/assets/img/bg/1900PL.jpg" class="card-img-top" alt="bgimg">
             <div class="card-body">
             </div>
             <ul class="list-group list-group-flush">
@@ -317,14 +412,33 @@
                 </div>
               </li>
             </ul>
+            <form class="my-3">
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Имя</label>
+                <div class="col-9">
+                  <input class="form-control" type="text" name="client" placeholder="Ваше имя">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Телефон</label>
+                <div class="col-9">
+                  <input class="form-control" type="tel" name="phone" placeholder="Введите номер телефона" required="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-6 offset-3">
+                  <button type="submit" class="btn w-100 btn-danger">Отправить</button>
+                </div>
+              </div>
+            </form>
             <div class="row">
               <div class="col">
                 <button type="button" class="btn btn-warning btn-catalog w-100" data-toggle="modal"
                   data-target="#modal-product-6">Подробнее</button>
               </div>
               <div class="col">
-                <button type="button" data-toggle="modal" data-target="#order"
-                  class="btn btn-warning btn-catalog w-100">Заказать</button>
+                <button type="button" data-toggle="modal" data-target="#product-komplect-6"
+                  class="btn btn-warning btn-catalog w-100">Комплектация</button>
               </div>
             </div>
           </div>
@@ -334,7 +448,7 @@
         <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
           <div class="card border-0" style="width: 30rem;">
             <h5 class="card-title text-center catalog-title">Мотоблок SHTENLI 1900P (14 л.с)</h5>
-            <img src="img/bg/1900.jpg" class="card-img-top" alt="bgimg">
+            <img src="./public/assets/img/bg/1900.jpg" class="card-img-top" alt="bgimg">
             <div class="card-body">
             </div>
             <ul class="list-group list-group-flush">
@@ -348,14 +462,33 @@
                 </div>
               </li>
             </ul>
+            <form class="my-3">
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Имя</label>
+                <div class="col-9">
+                  <input class="form-control" type="text" name="client" placeholder="Ваше имя">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Телефон</label>
+                <div class="col-9">
+                  <input class="form-control" type="tel" name="phone" placeholder="Введите номер телефона" required="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-6 offset-3">
+                  <button type="submit" class="btn w-100 btn-danger">Отправить</button>
+                </div>
+              </div>
+            </form>
             <div class="row">
               <div class="col">
                 <button type="button" class="btn btn-warning btn-catalog w-100" data-toggle="modal"
                   data-target="#modal-product-7">Подробнее</button>
               </div>
               <div class="col">
-                <button type="button" data-toggle="modal" data-target="#order"
-                  class="btn btn-warning btn-catalog w-100">Заказать</button>
+                <button type="button" data-toggle="modal" data-target="#product-komplect-7"
+                  class="btn btn-warning btn-catalog w-100">Комплектация</button>
               </div>
             </div>
           </div>
@@ -363,7 +496,7 @@
         <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
           <div class="card border-0" style="width: 30rem;">
             <h5 class="card-title text-center catalog-title">Мотоблок SHTENLI 1900P (16 л.с)</h5>
-            <img src="img/bg/1900.jpg" class="card-img-top" alt="bgimg">
+            <img src="./public/assets/img/bg/1900.jpg" class="card-img-top" alt="bgimg">
             <div class="card-body">
             </div>
             <ul class="list-group list-group-flush">
@@ -377,14 +510,33 @@
                 </div>
               </li>
             </ul>
+            <form class="my-3">
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Имя</label>
+                <div class="col-9">
+                  <input class="form-control" type="text" name="client" placeholder="Ваше имя">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Телефон</label>
+                <div class="col-9">
+                  <input class="form-control" type="tel" name="phone" placeholder="Введите номер телефона" required="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-6 offset-3">
+                  <button type="submit" class="btn w-100 btn-danger">Отправить</button>
+                </div>
+              </div>
+            </form>
             <div class="row">
               <div class="col">
                 <button type="button" class="btn btn-warning btn-catalog w-100" data-toggle="modal"
                   data-target="#modal-product-8">Подробнее</button>
               </div>
               <div class="col">
-                <button type="button" data-toggle="modal" data-target="#order"
-                  class="btn btn-warning btn-catalog w-100">Заказать</button>
+                <button type="button" data-toggle="modal" data-target="#product-komplect-8"
+                  class="btn btn-warning btn-catalog w-100">Комплектация</button>
               </div>
             </div>
           </div>
@@ -392,7 +544,7 @@
         <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
           <div class="card border-0" style="width: 30rem;">
             <h5 class="card-title text-center catalog-title">Мотоблок SHTENLI 1900P (18 л.с)</h5>
-            <img src="img/bg/1900-хит.jpg" class="card-img-top" alt="bgimg">
+            <img src="./public/assets/img/bg/1900-хит.jpg" class="card-img-top" alt="bgimg">
             <div class="card-body">
             </div>
             <ul class="list-group list-group-flush">
@@ -406,14 +558,33 @@
                 </div>
               </li>
             </ul>
+            <form class="my-3">
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Имя</label>
+                <div class="col-9">
+                  <input class="form-control" type="text" name="client" placeholder="Ваше имя">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Телефон</label>
+                <div class="col-9">
+                  <input class="form-control" type="tel" name="phone" placeholder="Введите номер телефона" required="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-6 offset-3">
+                  <button type="submit" class="btn w-100 btn-danger">Отправить</button>
+                </div>
+              </div>
+            </form>
             <div class="row">
               <div class="col">
                 <button type="button" class="btn btn-warning btn-catalog w-100" data-toggle="modal"
                   data-target="#modal-product-9">Подробнее</button>
               </div>
               <div class="col">
-                <button type="button" data-toggle="modal" data-target="#order"
-                  class="btn btn-warning btn-catalog w-100">Заказать</button>
+                <button type="button" data-toggle="modal" data-target="#product-komplect-9"
+                  class="btn btn-warning btn-catalog w-100">Комплектация</button>
               </div>
             </div>
           </div>
@@ -423,7 +594,7 @@
         <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
           <div class="card border-0" style="width: 30rem;">
             <h5 class="card-title text-center catalog-title">Мотоблок SHTENLI 1900PK (14 л.с)</h5>
-            <img src="img/bg/1900К.jpg" class="card-img-top" alt="bgimg">
+            <img src="./public/assets/img/bg/1900К.jpg" class="card-img-top" alt="bgimg">
             <div class="card-body">
             </div>
             <ul class="list-group list-group-flush">
@@ -437,14 +608,33 @@
                 </div>
               </li>
             </ul>
+            <form class="my-3">
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Имя</label>
+                <div class="col-9">
+                  <input class="form-control" type="text" name="client" placeholder="Ваше имя">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Телефон</label>
+                <div class="col-9">
+                  <input class="form-control" type="tel" name="phone" placeholder="Введите номер телефона" required="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-6 offset-3">
+                  <button type="submit" class="btn w-100 btn-danger">Отправить</button>
+                </div>
+              </div>
+            </form>
             <div class="row">
               <div class="col">
                 <button type="button" class="btn btn-warning btn-catalog w-100" data-toggle="modal"
                   data-target="#modal-product-10">Подробнее</button>
               </div>
               <div class="col">
-                <button type="button" data-toggle="modal" data-target="#order"
-                  class="btn btn-warning btn-catalog w-100">Заказать</button>
+                <button type="button" data-toggle="modal" data-target="#product-komplect-10"
+                  class="btn btn-warning btn-catalog w-100">Комплектация</button>
               </div>
             </div>
           </div>
@@ -452,7 +642,7 @@
         <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
           <div class="card border-0" style="width: 30rem;">
             <h5 class="card-title text-center catalog-title">Мотоблок SHTENLI 1900PK (16 л.с)</h5>
-            <img src="img/bg/1900К.jpg" class="card-img-top" alt="bgimg">
+            <img src="./public/assets/img/bg/1900К.jpg" class="card-img-top" alt="bgimg">
             <div class="card-body">
             </div>
             <ul class="list-group list-group-flush">
@@ -466,14 +656,33 @@
                 </div>
               </li>
             </ul>
+            <form class="my-3">
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Имя</label>
+                <div class="col-9">
+                  <input class="form-control" type="text" name="client" placeholder="Ваше имя">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Телефон</label>
+                <div class="col-9">
+                  <input class="form-control" type="tel" name="phone" placeholder="Введите номер телефона" required="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-6 offset-3">
+                  <button type="submit" class="btn w-100 btn-danger">Отправить</button>
+                </div>
+              </div>
+            </form>
             <div class="row">
               <div class="col">
                 <button type="button" class="btn btn-warning btn-catalog w-100" data-toggle="modal"
                   data-target="#modal-product-11">Подробнее</button>
               </div>
               <div class="col">
-                <button type="button" data-toggle="modal" data-target="#order"
-                  class="btn btn-warning btn-catalog w-100">Заказать</button>
+                <button type="button" data-toggle="modal" data-target="#product-komplect-11"
+                  class="btn btn-warning btn-catalog w-100">Комплектация</button>
               </div>
             </div>
           </div>
@@ -481,7 +690,7 @@
         <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
           <div class="card border-0" style="width: 30rem;">
             <h5 class="card-title text-center catalog-title">Мотоблок SHTENLI 1900PK (18 л.с)</h5>
-            <img src="img/bg/1900К.jpg" class="card-img-top" alt="bgimg">
+            <img src="./public/assets/img/bg/1900К.jpg" class="card-img-top" alt="bgimg">
             <div class="card-body">
             </div>
             <ul class="list-group list-group-flush">
@@ -495,14 +704,33 @@
                 </div>
               </li>
             </ul>
+            <form class="my-3">
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Имя</label>
+                <div class="col-9">
+                  <input class="form-control" type="text" name="client" placeholder="Ваше имя">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Телефон</label>
+                <div class="col-9">
+                  <input class="form-control" type="tel" name="phone" placeholder="Введите номер телефона" required="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-6 offset-3">
+                  <button type="submit" class="btn w-100 btn-danger">Отправить</button>
+                </div>
+              </div>
+            </form>
             <div class="row">
               <div class="col">
                 <button type="button" class="btn btn-warning btn-catalog w-100" data-toggle="modal"
                   data-target="#modal-product-12">Подробнее</button>
               </div>
               <div class="col">
-                <button type="button" data-toggle="modal" data-target="#order"
-                  class="btn btn-warning btn-catalog w-100">Заказать</button>
+                <button type="button" data-toggle="modal" data-target="#product-komplect-12"
+                  class="btn btn-warning btn-catalog w-100">Комплектация</button>
               </div>
             </div>
           </div>
@@ -515,7 +743,7 @@
         <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
           <div class="card border-0" style="width: 30rem;">
             <h5 class="card-title text-center catalog-title">Мотоблок SHTENLI G-180 (8 л.с)</h5>
-            <img src="img/bg/Дизель.jpg" class="card-img-top" alt="bgimg">
+            <img src="./public/assets/img/bg/Дизель.jpg" class="card-img-top" alt="bgimg">
             <div class="card-body">
             </div>
             <ul class="list-group list-group-flush">
@@ -529,14 +757,33 @@
                 </div>
               </li>
             </ul>
+            <form class="my-3">
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Имя</label>
+                <div class="col-9">
+                  <input class="form-control" type="text" name="client" placeholder="Ваше имя">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Телефон</label>
+                <div class="col-9">
+                  <input class="form-control" type="tel" name="phone" placeholder="Введите номер телефона" required="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-6 offset-3">
+                  <button type="submit" class="btn w-100 btn-danger">Отправить</button>
+                </div>
+              </div>
+            </form>
             <div class="row">
               <div class="col">
                 <button type="button" class="btn btn-warning btn-catalog w-100" data-toggle="modal"
                   data-target="#modal-product-13">Подробнее</button>
               </div>
               <div class="col">
-                <button type="button" data-toggle="modal" data-target="#order"
-                  class="btn btn-warning btn-catalog w-100">Заказать</button>
+                <button type="button" data-toggle="modal" data-target="#product-komplect-13"
+                  class="btn btn-warning btn-catalog w-100">Комплектация</button>
               </div>
             </div>
           </div>
@@ -544,7 +791,7 @@
         <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
           <div class="card border-0" style="width: 30rem;">
             <h5 class="card-title text-center catalog-title">Мотоблок SHTENLI G-185 (10.5 л.с)</h5>
-            <img src="img/bg/Дизель.jpg" class="card-img-top" alt="bgimg">
+            <img src="./public/assets/img/bg/Дизель.jpg" class="card-img-top" alt="bgimg">
             <div class="card-body">
             </div>
             <ul class="list-group list-group-flush">
@@ -558,14 +805,33 @@
                 </div>
               </li>
             </ul>
+            <form class="my-3">
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Имя</label>
+                <div class="col-9">
+                  <input class="form-control" type="text" name="client" placeholder="Ваше имя">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Телефон</label>
+                <div class="col-9">
+                  <input class="form-control" type="tel" name="phone" placeholder="Введите номер телефона" required="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-6 offset-3">
+                  <button type="submit" class="btn w-100 btn-danger">Отправить</button>
+                </div>
+              </div>
+            </form>
             <div class="row">
               <div class="col">
                 <button type="button" class="btn btn-warning btn-catalog w-100" data-toggle="modal"
                   data-target="#modal-product-14">Подробнее</button>
               </div>
               <div class="col">
-                <button type="button" data-toggle="modal" data-target="#order"
-                  class="btn btn-warning btn-catalog w-100">Заказать</button>
+                <button type="button" data-toggle="modal" data-target="#product-komplect-14"
+                  class="btn btn-warning btn-catalog w-100">Комплектация</button>
               </div>
             </div>
           </div>
@@ -573,7 +839,7 @@
         <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
           <div class="card border-0" style="width: 30rem;">
             <h5 class="card-title text-center catalog-title">Мотоблок SHTENLI G-192 (12 л.с)</h5>
-            <img src="img/bg/Дизель.jpg" class="card-img-top" alt="bgimg">
+            <img src="./public/assets/img/bg/Дизель.jpg" class="card-img-top" alt="bgimg">
             <div class="card-body">
             </div>
             <ul class="list-group list-group-flush">
@@ -587,14 +853,33 @@
                 </div>
               </li>
             </ul>
+            <form class="my-3">
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Имя</label>
+                <div class="col-9">
+                  <input class="form-control" type="text" name="client" placeholder="Ваше имя">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Телефон</label>
+                <div class="col-9">
+                  <input class="form-control" type="tel" name="phone" placeholder="Введите номер телефона" required="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-6 offset-3">
+                  <button type="submit" class="btn w-100 btn-danger">Отправить</button>
+                </div>
+              </div>
+            </form>
             <div class="row">
               <div class="col">
                 <button type="button" class="btn btn-warning btn-catalog w-100" data-toggle="modal"
                   data-target="#modal-product-15">Подробнее</button>
               </div>
               <div class="col">
-                <button type="button" data-toggle="modal" data-target="#order"
-                  class="btn btn-warning btn-catalog w-100">Заказать</button>
+                <button type="button" data-toggle="modal" data-target="#product-komplect-15"
+                  class="btn btn-warning btn-catalog w-100">Комплектация</button>
               </div>
             </div>
           </div>
@@ -608,7 +893,7 @@
         <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
           <div class="card border-0" style="width: 30rem;">
             <h5 class="card-title text-center catalog-title">Адаптер двухколёсный</h5>
-            <img src="img/bg/adapter.jpg" class="card-img-top" alt="bgimg">
+            <img src="./public/assets/img/bg/adapter.jpg" class="card-img-top" alt="bgimg">
             <div class="card-body">
             </div>
             <ul class="list-group list-group-flush">
@@ -622,14 +907,33 @@
                 </div>
               </li>
             </ul>
+            <form class="my-3">
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Имя</label>
+                <div class="col-9">
+                  <input class="form-control" type="text" name="client" placeholder="Ваше имя">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Телефон</label>
+                <div class="col-9">
+                  <input class="form-control" type="tel" name="phone" placeholder="Введите номер телефона" required="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-6 offset-3">
+                  <button type="submit" class="btn w-100 btn-danger">Отправить</button>
+                </div>
+              </div>
+            </form>
             <div class="row">
               <div class="col">
                 <button type="button" class="btn btn-warning btn-catalog w-100" data-toggle="modal"
                   data-target="#modal-product-adapter1">Подробнее</button>
               </div>
               <div class="col">
-                <button type="button" data-toggle="modal" data-target="#order"
-                  class="btn btn-warning btn-catalog w-100">Заказать</button>
+                <button type="button" data-toggle="modal" data-target="#product-komplect-16"
+                  class="btn btn-warning btn-catalog w-100">Комплектация</button>
               </div>
             </div>
           </div>
@@ -637,7 +941,7 @@
         <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
           <div class="card border-0" style="width: 30rem;">
             <h5 class="card-title text-center catalog-title">Адаптер АМ-4</h5>
-            <img src="img/bg/adapter4.jpg" class="card-img-top" alt="bgimg">
+            <img src="./public/assets/img/bg/adapter4.jpg" class="card-img-top" alt="bgimg">
             <div class="card-body">
             </div>
             <ul class="list-group list-group-flush">
@@ -651,14 +955,33 @@
                 </div>
               </li>
             </ul>
+            <form class="my-3">
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Имя</label>
+                <div class="col-9">
+                  <input class="form-control" type="text" name="client" placeholder="Ваше имя">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Телефон</label>
+                <div class="col-9">
+                  <input class="form-control" type="tel" name="phone" placeholder="Введите номер телефона" required="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-6 offset-3">
+                  <button type="submit" class="btn w-100 btn-danger">Отправить</button>
+                </div>
+              </div>
+            </form>
             <div class="row">
               <div class="col">
                 <button type="button" class="btn btn-warning btn-catalog w-100" data-toggle="modal"
                   data-target="#modal-product-adapter2">Подробнее</button>
               </div>
               <div class="col">
-                <button type="button" data-toggle="modal" data-target="#order"
-                  class="btn btn-warning btn-catalog w-100">Заказать</button>
+                <button type="button" data-toggle="modal" data-target="#product-komplect-17"
+                  class="btn btn-warning btn-catalog w-100">Комплектация</button>
               </div>
             </div>
           </div>
@@ -666,7 +989,7 @@
         <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
           <div class="card border-0" style="width: 30rem;">
             <h5 class="card-title text-center catalog-title">Адаптер АМ-5</h5>
-            <img src="img/bg/adapter5.jpg" class="card-img-top" alt="bgimg">
+            <img src="./public/assets/img/bg/adapter5.jpg" class="card-img-top" alt="bgimg">
             <div class="card-body">
             </div>
             <ul class="list-group list-group-flush">
@@ -680,14 +1003,33 @@
                 </div>
               </li>
             </ul>
+            <form class="my-3">
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Имя</label>
+                <div class="col-9">
+                  <input class="form-control" type="text" name="client" placeholder="Ваше имя">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-3 col-form-label text-right font-weight-bold">Телефон</label>
+                <div class="col-9">
+                  <input class="form-control" type="tel" name="phone" placeholder="Введите номер телефона" required="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-6 offset-3">
+                  <button type="submit" class="btn w-100 btn-danger">Отправить</button>
+                </div>
+              </div>
+            </form>
             <div class="row">
               <div class="col">
                 <button type="button" class="btn btn-warning btn-catalog w-100" data-toggle="modal"
                   data-target="#modal-product-adapter3">Подробнее</button>
               </div>
               <div class="col">
-                <button type="button" data-toggle="modal" data-target="#order"
-                  class="btn btn-warning btn-catalog w-100">Заказать</button>
+                <button type="button" data-toggle="modal" data-target="#product-komplect-18"
+                  class="btn btn-warning btn-catalog w-100">Комплектация</button>
               </div>
             </div>
           </div>
@@ -785,7 +1127,7 @@
             <div class="card-header bg-info text-white text-center font-weight-bold h4">
               ПЛУГ<br>
             </div>
-            <img class="img-fluid" src="img/produkt/plug.jpg" alt="Card image cap">
+            <img class="img-fluid" src="./public/assets/img/produkt/plug.jpg" alt="Card image cap">
             <div class="card-block text-center pt-4">
               <p class="card-text h2"><span class="text-red h1 font-weight-bold">31</span> руб.</p>
               <p class="card-text text-muted"><s>62 руб.</s></p>
@@ -799,7 +1141,7 @@
             <div class="card-header bg-warning text-white text-center font-weight-bold h4">
               КОПАТЕЛЬ<br>
             </div>
-            <img class="img-fluid" src="img/produkt/kartofkop.jpg" alt="Card image cap">
+            <img class="img-fluid" src="./public/assets/img/produkt/kartofkop.jpg" alt="Card image cap">
             <div class="card-block text-center pt-4">
               <p class="card-text h2"><span class="text-red h1 font-weight-bold">33</span> руб.</p>
               <p class="card-text text-muted"><s>58 руб.</s></p>
@@ -814,7 +1156,7 @@
             <div class="card-header bg-primary text-white text-center font-weight-bold h4">
               ОКУЧНИК<br>
             </div>
-            <img class="img-fluid" src="img/produkt/okucnik2.jpg" alt="Card image cap">
+            <img class="img-fluid" src="./public/assets/img/produkt/okucnik2.jpg" alt="Card image cap">
             <div class="card-block text-center pt-4">
               <p class="card-text h2"><span class="text-red h1 font-weight-bold">33</span> руб.</p>
               <p class="card-text text-muted"><s>54 руб.</s></p>
@@ -829,7 +1171,7 @@
             <div class="card-header bg-success text-white text-center font-weight-bold h4">
               СЦЕПКА<br>
             </div>
-            <img class="img-fluid" src="img/produkt/scepka-MTZ.jpg" alt="Card image cap">
+            <img class="img-fluid" src="./public/assets/img/produkt/scepka-MTZ.jpg" alt="Card image cap">
             <div class="card-block text-center pt-4">
               <p class="card-text h2"><span class="text-red h1 font-weight-bold">33</span> руб.</p>
               <p class="card-text text-muted"><s>54 руб.</s></p>
@@ -847,7 +1189,7 @@
             <div class="card-header bg-info text-white text-center font-weight-bold h4">
               ПРИЦЕП<br>
             </div>
-            <img class="img-fluid" src="img/produkt/pricep.jpg" alt="Card image cap">
+            <img class="img-fluid" src="./public/assets/img/produkt/pricep.jpg" alt="Card image cap">
             <div class="card-block text-center pt-4">
               <p class="card-text h2"><span class="text-red h1 font-weight-bold">591</span> руб.</p>
               <p class="card-text text-muted"><s>797 руб.</s></p>
@@ -862,7 +1204,7 @@
             <div class="card-header bg-warning text-white text-center font-weight-bold h4">
               САЖАЛКА<br>
             </div>
-            <img class="img-fluid" src="img/produkt/sajalka.jpg" alt="Card image cap">
+            <img class="img-fluid" src="./public/assets/img/produkt/sajalka.jpg" alt="Card image cap">
             <div class="card-block text-center pt-4">
               <p class="card-text h2"><span class="text-red h1 font-weight-bold">396</span> руб.</p>
               <p class="card-text text-muted"><s>534 руб.</s></p>
@@ -877,7 +1219,7 @@
             <div class="card-header bg-primary text-white text-center font-weight-bold h4">
               КОПАЛКА<br>
             </div>
-            <img class="img-fluid" src="img/produkt/kopalka.jpg" alt="Card image cap">
+            <img class="img-fluid" src="./public/assets/img/produkt/kopalka.jpg" alt="Card image cap">
             <div class="card-block text-center pt-4">
               <p class="card-text h2"><span class="text-red h1 font-weight-bold">557</span> руб.</p>
               <p class="card-text text-muted"><s>751 руб.</s></p>
@@ -892,7 +1234,7 @@
             <div class="card-header bg-success text-white text-center font-weight-bold h4">
               ГРУНТОЗАЦЕПЫ<br>
             </div>
-            <img class="img-fluid" src="img/produkt/grunt.jpg" alt="Card image cap">
+            <img class="img-fluid" src="./public/assets/img/produkt/grunt.jpg" alt="Card image cap">
             <div class="card-block text-center pt-4">
               <p class="card-text h2"><span class="text-red h1 font-weight-bold">68</span> руб.</p>
               <p class="card-text text-muted"><s>91 руб.</s></p>
@@ -913,7 +1255,7 @@
       <div class="row">
         <div class="col-md-6">
           <div class="row advantages2__item">
-            <div class="col-md-4"><img src="img/dvigatel.png" alt="" class="img-fluid"></div>
+            <div class="col-md-4"><img src="./public/assets/img/dvigatel.png" alt="" class="img-fluid"></div>
             <div class="col-md-8 py-4">
               <p class="h4">Четырёхтактный двигатель Аналог Honda.</p>
               <p>Наибольшее отношение мощности к рабочему объёму двигателя, более длительный срок службы и
@@ -923,7 +1265,7 @@
         </div>
         <div class="col-md-6">
           <div class="row advantages2__item">
-            <div class="col-md-4"><img src="img/karb.png" alt="" class="img-fluid"></div>
+            <div class="col-md-4"><img src="./public/assets/img/karb.png" alt="" class="img-fluid"></div>
             <div class="col-md-8 py-4">
               <p class="h4">Качественный карбюратор.</p>
               <p>Усовершенствованный карбюратор для лучшей подачи топливовоздушной смеси в двигатель.</p>
@@ -932,7 +1274,7 @@
         </div>
         <div class="col-md-6">
           <div class="row advantages2__item">
-            <div class="col-md-4 text-center"><img src="img/korobka.png" alt="" class="img-fluid"></div>
+            <div class="col-md-4 text-center"><img src="./public/assets/img/korobka.png" alt="" class="img-fluid"></div>
             <div class="col-md-8 py-4">
               <p class="h4">Шестерёнчатая коробка передач.</p>
               <p>Способна переносить нагрузки при самой тяжёлой эксплуатации!</p>
@@ -941,7 +1283,7 @@
         </div>
         <div class="col-md-6">
           <div class="row advantages2__item">
-            <div class="col-md-4"><img src="img/krilo.png" alt="" class="img-fluid"></div>
+            <div class="col-md-4"><img src="./public/assets/img/krilo.png" alt="" class="img-fluid"></div>
             <div class="col-md-8 py-4">
               <p class="h4">Штампованные крылья.</p>
               <p>Мощные крылья из толстого металла надёжно защищают в процессе работы.</p>
@@ -950,7 +1292,7 @@
         </div>
         <div class="col-md-6">
           <div class="row advantages2__item">
-            <div class="col-md-4"><img src="img/filtr.png" alt="" class="img-fluid"></div>
+            <div class="col-md-4"><img src="./public/assets/img/filtr.png" alt="" class="img-fluid"></div>
             <div class="col-md-8 py-4">
               <p class="h4">Воздушный фильтр.</p>
               <p>Расположенный в масляной ванне, обеспечивает надёжную работу в пыльных условиях и
@@ -960,7 +1302,7 @@
         </div>
         <div class="col-md-6">
           <div class="row advantages2__item">
-            <div class="col-md-4"><img src="img/koleso.png" alt="" class="img-fluid"></div>
+            <div class="col-md-4"><img src="./public/assets/img/koleso.png" alt="" class="img-fluid"></div>
             <div class="col-md-8 py-4">
               <p class="h4">Колесо с SD протектором.</p>
               <p>Облегчает транспортировку и увеличивает проходимость для проведения работ.</p>
@@ -984,7 +1326,7 @@
           <div class="owl-carousel owl-reviews owl-theme text-center">
             <div class="item">
               <div class="slaider-img-wrap">
-                <img src="img/user/rev1.jpg">
+                <img src="./public/assets/img/user/rev1.jpg">
               </div>
               <div class="h3 font-weight-bold">Анатолий</div>
               <div>
@@ -995,7 +1337,7 @@
             </div>
             <div class="item">
               <div class="slaider-img-wrap">
-                <img src="img/user/rev2.jpg">
+                <img src="./public/assets/img/user/rev2.jpg">
               </div>
               <div class="h3 font-weight-bold">Виктор Дымарь</div>
               <div>
@@ -1004,7 +1346,7 @@
             </div>
             <div class="item">
               <div class="slaider-img-wrap">
-                <img src="img/user/rev3.jpg">
+                <img src="./public/assets/img/user/rev3.jpg">
               </div>
               <div class="h3 font-weight-bold">Никита Кривицкий</div>
               <div>
@@ -1014,7 +1356,7 @@
             </div>
             <div class="item">
               <div class="slaider-img-wrap">
-                <img src="img/user/rev4.jpg">
+                <img src="./public/assets/img/user/rev4.jpg">
               </div>
               <div class="h3 font-weight-bold">Павел Кудинов</div>
               <div>
@@ -1025,7 +1367,7 @@
             </div>
             <div class="item">
               <div class="slaider-img-wrap">
-                <img src="img/user/rev5.jpg">
+                <img src="./public/assets/img/user/rev5.jpg">
               </div>
               <div class="h3 font-weight-bold">Александр Федорчук</div>
               <div>
@@ -1044,7 +1386,7 @@
       <div class="h1 text-center text-white">Остались вопросы?</div>
       <div class="row mt-5">
         <div class="col-md-5 text-center">
-          <p class="px-5"><img src="img/manager.png" alt="manager" class="img-fluid"></p>
+          <p class="px-5"><img src="./public/assets/img/manager.png" alt="manager" class="img-fluid"></p>
           <p class="p-3 bg-dark text-white h2">Николай Иванович, менеджер магазина</p>
         </div>
         <div class="col-md-7 text-center text-md-left">
@@ -1058,11 +1400,11 @@
               <div class="c__bg__white--60 p-3">
                 <div class="flex-column justify-content-center align-items-center h3">
                   <div class="d-flex align-items-center mb-1">
-                    <img src="img/icons/logo_velcom_64.jpg" alt="velcom" class="img-fluid mr-2" width="24">
+                    <img src="./public/assets/img/icons/logo_velcom_64.jpg" alt="velcom" class="img-fluid mr-2" width="24">
                     <a href="tel:++375445330486" class="--font__bold text-white">(44) 533-04-86</a>
                   </div>
                   <div class="d-flex align-items-center">
-                    <img src="img/icons/logo_mts_64.jpg" alt="mts" class="img-fluid mr-2" width="24">
+                    <img src="./public/assets/img/icons/logo_mts_64.jpg" alt="mts" class="img-fluid mr-2" width="24">
                     <a href="tel:+375295330486" class="--font__bold text-white">(29) 533-04-86</a>
                   </div>
                 </div>
@@ -1108,13 +1450,13 @@
                     <div class="col-sm-6">
                       <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
                         <div class="item">
-                          <img src="img/catalog-1/shtenli-7000.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog-1/shtenli-7000.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog-1/shtenli-7000.1.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog-1/shtenli-7000.1.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog-1/shtenli-7000.2.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog-1/shtenli-7000.2.jpg" alt="certificate" class="img-fluid">
                         </div>
 
                       </div>
@@ -1197,16 +1539,16 @@
                     <div class="col-sm-6">
                       <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
                         <div class="item">
-                          <img src="img/catalog/shtenli-500-1.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-500-1.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-500-2.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-500-2.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-500-3.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-500-3.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-500-4.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-500-4.jpg" alt="certificate" class="img-fluid">
                         </div>
 
                       </div>
@@ -1266,7 +1608,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-500-bonus2.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-500-bonus2.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Культиватор Shtenli 500 (7 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока
@@ -1281,7 +1623,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-500-bonus5.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-500-bonus5.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Культиватор Shtenli 500 (7 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока <br>3. Плуг <br>4.
@@ -1321,19 +1663,19 @@
                     <div class="col-sm-6">
                       <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
                         <div class="item">
-                          <img src="img/catalog/shtenli-900-1.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-900-1.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-900-2.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-900-2.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-900-3.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-900-3.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-900-4.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-900-4.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-900-5.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-900-5.jpg" alt="certificate" class="img-fluid">
                         </div>
                       </div>
                     </div>
@@ -1392,7 +1734,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-900-bonus2.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-900-bonus2.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Культиватор Shtenli 900 (8 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока
@@ -1407,7 +1749,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-900-bonus5.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-900-bonus5.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Культиватор Shtenli 900 (8 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока <br>3. Плуг <br>4.
@@ -1448,16 +1790,16 @@
                     <div class="col-sm-6">
                       <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
                         <div class="item">
-                          <img src="img/catalog/shtenli-1030-1.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1030-1.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1030-2.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1030-2.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1030-3.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1030-3.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1030-4.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1030-4.jpg" alt="certificate" class="img-fluid">
                         </div>
                       </div>
                     </div>
@@ -1517,7 +1859,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1030-bonus2.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1030-bonus2.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1030L (8.5 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока
@@ -1532,7 +1874,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1030-bonus5.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1030-bonus5.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1030L (8.5 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока <br>3. Плуг большой
@@ -1548,7 +1890,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1030-bonus6.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1030-bonus6.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотблок Shtenli 1030L (8.5 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока <br>3. Плуг большой
@@ -1588,16 +1930,16 @@
                     <div class="col-sm-6">
                       <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
                         <div class="item">
-                          <img src="img/catalog/shtenli-1030-1.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1030-1.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1030-2.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1030-2.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1030-3.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1030-3.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1030-4.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1030-4.jpg" alt="certificate" class="img-fluid">
                         </div>
                       </div>
                     </div>
@@ -1657,7 +1999,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1030-bonus2.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1030-bonus2.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1030P (8.5 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока
@@ -1672,7 +2014,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1030-bonus5.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1030-bonus5.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1030P (8.5 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока <br>3. Плуг большой
@@ -1688,7 +2030,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1030-bonus6.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1030-bonus6.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1030P (8.5 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока <br>3. Плуг большой
@@ -1728,16 +2070,16 @@
                     <div class="col-sm-6">
                       <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900L-2.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900L-2.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900L-1.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900L-1.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900L-3.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900L-3.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900L-4.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900L-4.jpg" alt="certificate" class="img-fluid">
                         </div>
                       </div>
                     </div>
@@ -1796,7 +2138,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1900l-bonus2.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1900l-bonus2.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1900PL (14 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока
@@ -1811,7 +2153,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1900l-bonus5.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1900l-bonus5.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1900PL (14 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока <br>3. Плуг большой
@@ -1827,7 +2169,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1900l-bonus6.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1900l-bonus6.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1900PL (14 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока <br>3. Плуг большой
@@ -1867,19 +2209,19 @@
                     <div class="col-sm-6">
                       <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900.1.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900.1.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900.2.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900.2.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900.3.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900.3.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900.4.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900.4.jpg" alt="certificate" class="img-fluid">
                         </div>
                       </div>
                     </div>
@@ -1938,7 +2280,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1900-bonus2.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1900-bonus2.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1900P (14 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока
@@ -1953,7 +2295,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1900-bonus5.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1900-bonus5.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1900P (14 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока <br>3. Плуг большой
@@ -1969,7 +2311,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1900-bonus6.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1900-bonus6.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1900P (14 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока <br>3. Плуг большой
@@ -2009,19 +2351,19 @@
                     <div class="col-sm-6">
                       <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900.1.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900.1.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900.2.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900.2.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900.3.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900.3.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900.4.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900.4.jpg" alt="certificate" class="img-fluid">
                         </div>
                       </div>
                     </div>
@@ -2080,7 +2422,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1900-bonus2.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1900-bonus2.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1900P (16 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока
@@ -2095,7 +2437,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1900-bonus5.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1900-bonus5.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1900P (16 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока <br>3. Плуг большой
@@ -2111,7 +2453,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1900-bonus6-1.jpg"
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1900-bonus6-1.jpg"
                         alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
@@ -2152,19 +2494,19 @@
                     <div class="col-sm-6">
                       <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900.1.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900.1.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900.2.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900.2.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900.3.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900.3.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900.4.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900.4.jpg" alt="certificate" class="img-fluid">
                         </div>
                       </div>
                     </div>
@@ -2223,7 +2565,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1900-bonus2.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1900-bonus2.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1900P (18 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока
@@ -2238,7 +2580,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1900-bonus5.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1900-bonus5.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1900P (18 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока <br>3. Плуг большой
@@ -2254,7 +2596,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1900-bonus6.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1900-bonus6.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1900P (18 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока <br>3. Плуг большой
@@ -2294,19 +2636,19 @@
                     <div class="col-sm-6">
                       <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900K-1.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900K-1.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900K-2.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900K-2.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900K-3.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900K-3.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900K-4.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900K-4.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900K-5.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900K-5.jpg" alt="certificate" class="img-fluid">
                         </div>
                       </div>
                     </div>
@@ -2365,7 +2707,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1900k-bonus2.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1900k-bonus2.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1900PK (14 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока
@@ -2380,7 +2722,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1900k-bonus5.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1900k-bonus5.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1900PK (14 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока <br>3. Плуг большой
@@ -2396,7 +2738,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1900k-bonus6.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1900k-bonus6.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1900PK (14 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока <br>3. Плуг большой
@@ -2436,19 +2778,19 @@
                     <div class="col-sm-6">
                       <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900K-1.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900K-1.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900K-2.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900K-2.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900K-3.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900K-3.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900K-4.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900K-4.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900K-5.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900K-5.jpg" alt="certificate" class="img-fluid">
                         </div>
                       </div>
                     </div>
@@ -2507,7 +2849,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1900k-bonus2.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1900k-bonus2.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1900PK (16 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока
@@ -2522,7 +2864,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1900k-bonus5.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1900k-bonus5.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1900PK (16 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока <br>3. Плуг большой
@@ -2538,7 +2880,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1900k-bonus6.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1900k-bonus6.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1900PK (16 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока <br>3. Плуг большой
@@ -2578,19 +2920,19 @@
                     <div class="col-sm-6">
                       <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900K-1.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900K-1.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900K-2.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900K-2.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900K-3.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900K-3.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900K-4.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900K-4.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-1900K-5.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-1900K-5.jpg" alt="certificate" class="img-fluid">
                         </div>
                       </div>
                     </div>
@@ -2649,7 +2991,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1900k-bonus2.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1900k-bonus2.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1900PK (18 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока
@@ -2664,7 +3006,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1900k-bonus5.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1900k-bonus5.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1900PK (18 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока <br>3. Плуг большой
@@ -2680,7 +3022,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/shtenli-1900k-bonus6.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/shtenli-1900k-bonus6.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Мотоблок Shtenli 1900PK (18 л.с.)<br>1. Фреза <br>2. Сцепка для мотоблока <br>3. Плуг большой
@@ -2720,19 +3062,19 @@
                     <div class="col-sm-6">
                       <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
                         <div class="item">
-                          <img src="img/catalog/shtenli-g192-1.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-g192-1.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-g192-2.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-g192-2.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-g192-3.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-g192-3.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-g192-4.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-g192-4.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-g192-5.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-g192-5.jpg" alt="certificate" class="img-fluid">
                         </div>
                       </div>
                     </div>
@@ -2791,7 +3133,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/starter.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/starter.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Электростартер для дизельного мотоблока
@@ -2806,7 +3148,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/freza.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/freza.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Фреза для дизельного мотоблока
@@ -2821,7 +3163,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/plug.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/plug.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Плуг для дизельного мотоблока
@@ -2836,7 +3178,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/sidenie.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/sidenie.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Сиденье для дизельного мотоблока
@@ -2851,7 +3193,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/scitki.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/scitki.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Щитки на колеса дизельного мотоблока
@@ -2866,7 +3208,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/zaschita.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/zaschita.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Защита на ремни дизельного мотоблока
@@ -2881,7 +3223,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/sazalka.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/sazalka.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Сажалка для дизельного мотоблока
@@ -2896,7 +3238,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/okuchnik2.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/okuchnik2.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Окучник двойной для дизельного мотоблока
@@ -2911,7 +3253,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/plug2.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/plug2.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Плуг двойной для дизельного мотоблока
@@ -2950,19 +3292,19 @@
                     <div class="col-sm-6">
                       <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
                         <div class="item">
-                          <img src="img/catalog/shtenli-g192-1.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-g192-1.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-g192-2.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-g192-2.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-g192-3.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-g192-3.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-g192-4.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-g192-4.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-g192-5.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-g192-5.jpg" alt="certificate" class="img-fluid">
                         </div>
                       </div>
                     </div>
@@ -3021,7 +3363,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/starter.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/starter.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Электростартер для дизельного мотоблока
@@ -3036,7 +3378,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/freza.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/freza.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Фреза для дизельного мотоблока
@@ -3051,7 +3393,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/plug.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/plug.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Плуг для дизельного мотоблока
@@ -3066,7 +3408,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/sidenie.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/sidenie.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Сиденье для дизельного мотоблока
@@ -3081,7 +3423,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/scitki.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/scitki.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Щитки на колеса дизельного мотоблока
@@ -3096,7 +3438,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/zaschita.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/zaschita.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Защита на ремни дизельного мотоблока
@@ -3111,7 +3453,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/sazalka.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/sazalka.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Сажалка для дизельного мотоблока
@@ -3126,7 +3468,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/okuchnik2.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/okuchnik2.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Окучник двойной для дизельного мотоблока
@@ -3141,7 +3483,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/plug2.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/plug2.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Плуг двойной для дизельного мотоблока
@@ -3180,19 +3522,19 @@
                     <div class="col-sm-6">
                       <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
                         <div class="item">
-                          <img src="img/catalog/shtenli-g192-1.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-g192-1.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-g192-2.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-g192-2.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-g192-3.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-g192-3.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-g192-4.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-g192-4.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/shtenli-g192-5.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/shtenli-g192-5.jpg" alt="certificate" class="img-fluid">
                         </div>
                       </div>
                     </div>
@@ -3251,7 +3593,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/starter.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/starter.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Электростартер для дизельного мотоблока
@@ -3266,7 +3608,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/freza.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/freza.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Фреза для дизельного мотоблока
@@ -3281,7 +3623,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/plug.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/plug.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Плуг для дизельного мотоблока
@@ -3296,7 +3638,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/sidenie.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/sidenie.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Сиденье для дизельного мотоблока
@@ -3311,7 +3653,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/scitki.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/scitki.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Щитки на колеса дизельного мотоблока
@@ -3326,7 +3668,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/zaschita.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/zaschita.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Защита на ремни дизельного мотоблока
@@ -3341,7 +3683,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/sazalka.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/sazalka.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Сажалка для дизельного мотоблока
@@ -3356,7 +3698,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/okuchnik2.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/okuchnik2.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Окучник двойной для дизельного мотоблока
@@ -3371,7 +3713,7 @@
                   <hr class="mt-3">
                   <div class="row align-items-center">
                     <div class="col-12 col-lg-4">
-                      <img class="img-fluid img-thumbnail" src="img/catalog/plug2.jpg" alt="certificate">
+                      <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/plug2.jpg" alt="certificate">
                     </div>
                     <div class="col-12 col-lg-4">
                       Плуг двойной для дизельного мотоблока
@@ -3410,19 +3752,19 @@
                     <div class="col-sm-6">
                       <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
                         <div class="item">
-                          <img src="img/catalog/adapter1.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/adapter1.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/adapter2.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/adapter2.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/adapter3.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/adapter3.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/adapter4.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/adapter4.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/adapter5.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/adapter5.jpg" alt="certificate" class="img-fluid">
                         </div>
                       </div>
                     </div>
@@ -3495,19 +3837,19 @@
                     <div class="col-sm-6">
                       <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
                         <div class="item">
-                          <img src="img/catalog/adapter4,1.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/adapter4,1.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/adapter4,2.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/adapter4,2.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/adapter4,3.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/adapter4,3.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/adapter4,4.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/adapter4,4.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/adapter4,5.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/adapter4,5.jpg" alt="certificate" class="img-fluid">
                         </div>
                       </div>
                     </div>
@@ -3580,19 +3922,19 @@
                     <div class="col-sm-6">
                       <div class="owl-carousel owl-carousel-prodyctsImg owl-theme">
                         <div class="item">
-                          <img src="img/catalog/adapter5.1.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/adapter5.1.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/adapter5.2.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/adapter5.2.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/adapter5.3.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/adapter5.3.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/adapter5.4.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/adapter5.4.jpg" alt="certificate" class="img-fluid">
                         </div>
                         <div class="item">
-                          <img src="img/catalog/adapter5.5.jpg" alt="certificate" class="img-fluid">
+                          <img src="./public/assets/img/catalog/adapter5.5.jpg" alt="certificate" class="img-fluid">
                         </div>
                       </div>
                     </div>
@@ -3709,6 +4051,1051 @@
     </table>
   </div>
 
+
+  <div class="modal fade modal-komplect" id="product-komplect-1">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body h-100">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="has-calculator__modal">
+                  <div class="row align-items-center">
+                      
+                    <div class="col-12 text-center">
+                      <div class="h1">Комплектация</div>
+                      <hr>
+                    </div>
+
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <hr>
+                      </div>
+                      
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-komplect" id="product-komplect-2">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body h-100">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="has-calculator__modal">
+                  <div class="row align-items-center">
+                      
+                    <div class="col-12 text-center">
+                      <div class="h1">Комплектация</div>
+                      <hr>
+                    </div>
+
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <hr>
+                      </div>
+                      
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-komplect" id="product-komplect-3">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body h-100">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="has-calculator__modal">
+                  <div class="row align-items-center">
+                      
+                    <div class="col-12 text-center">
+                      <div class="h1">Комплектация</div>
+                      <hr>
+                    </div>
+
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <hr>
+                      </div>
+                      
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-komplect" id="product-komplect-4">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body h-100">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="has-calculator__modal">
+                  <div class="row align-items-center">
+                      
+                    <div class="col-12 text-center">
+                      <div class="h1">Комплектация</div>
+                      <hr>
+                    </div>
+
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <hr>
+                      </div>
+                      
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-komplect" id="product-komplect-5">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body h-100">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="has-calculator__modal">
+                  <div class="row align-items-center">
+                      
+                    <div class="col-12 text-center">
+                      <div class="h1">Комплектация</div>
+                      <hr>
+                    </div>
+
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <hr>
+                      </div>
+                      
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-komplect" id="product-komplect-6">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body h-100">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="has-calculator__modal">
+                  <div class="row align-items-center">
+                      
+                    <div class="col-12 text-center">
+                      <div class="h1">Комплектация</div>
+                      <hr>
+                    </div>
+
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <hr>
+                      </div>
+                      
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-komplect" id="product-komplect-7">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body h-100">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="has-calculator__modal">
+                  <div class="row align-items-center">
+                      
+                    <div class="col-12 text-center">
+                      <div class="h1">Комплектация</div>
+                      <hr>
+                    </div>
+
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <hr>
+                      </div>
+                      
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-komplect" id="product-komplect-8">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body h-100">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="has-calculator__modal">
+                  <div class="row align-items-center">
+                      
+                    <div class="col-12 text-center">
+                      <div class="h1">Комплектация</div>
+                      <hr>
+                    </div>
+
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <hr>
+                      </div>
+                      
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-komplect" id="product-komplect-9">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body h-100">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="has-calculator__modal">
+                  <div class="row align-items-center">
+                      
+                    <div class="col-12 text-center">
+                      <div class="h1">Комплектация</div>
+                      <hr>
+                    </div>
+
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <hr>
+                      </div>
+                      
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-komplect" id="product-komplect-10">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body h-100">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="has-calculator__modal">
+                  <div class="row align-items-center">
+                      
+                    <div class="col-12 text-center">
+                      <div class="h1">Комплектация</div>
+                      <hr>
+                    </div>
+
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <hr>
+                      </div>
+                      
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-komplect" id="product-komplect-11">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body h-100">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="has-calculator__modal">
+                  <div class="row align-items-center">
+                      
+                    <div class="col-12 text-center">
+                      <div class="h1">Комплектация</div>
+                      <hr>
+                    </div>
+
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <hr>
+                      </div>
+                      
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-komplect" id="product-komplect-12">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body h-100">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="has-calculator__modal">
+                  <div class="row align-items-center">
+                      
+                    <div class="col-12 text-center">
+                      <div class="h1">Комплектация</div>
+                      <hr>
+                    </div>
+
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <hr>
+                      </div>
+                      
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-komplect" id="product-komplect-13">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body h-100">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="has-calculator__modal">
+                  <div class="row align-items-center">
+                      
+                    <div class="col-12 text-center">
+                      <div class="h1">Комплектация</div>
+                      <hr>
+                    </div>
+
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <hr>
+                      </div>
+                      
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-komplect" id="product-komplect-14">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body h-100">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="has-calculator__modal">
+                  <div class="row align-items-center">
+                      
+                    <div class="col-12 text-center">
+                      <div class="h1">Комплектация</div>
+                      <hr>
+                    </div>
+
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <hr>
+                      </div>
+                      
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-komplect" id="product-komplect-15">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body h-100">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="has-calculator__modal">
+                  <div class="row align-items-center">
+                      
+                    <div class="col-12 text-center">
+                      <div class="h1">Комплектация</div>
+                      <hr>
+                    </div>
+
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <hr>
+                      </div>
+                      
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-komplect" id="product-komplect-16">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body h-100">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="has-calculator__modal">
+                  <div class="row align-items-center">
+                      
+                    <div class="col-12 text-center">
+                      <div class="h1">Комплектация</div>
+                      <hr>
+                    </div>
+
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <hr>
+                      </div>
+                      
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-komplect" id="product-komplect-17">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body h-100">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="has-calculator__modal">
+                  <div class="row align-items-center">
+                      
+                    <div class="col-12 text-center">
+                      <div class="h1">Комплектация</div>
+                      <hr>
+                    </div>
+
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <hr>
+                      </div>
+                      
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-komplect" id="product-komplect-18">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body h-100">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="has-calculator__modal">
+                  <div class="row align-items-center">
+                      
+                    <div class="col-12 text-center">
+                      <div class="h1">Комплектация</div>
+                      <hr>
+                    </div>
+
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <hr>
+                      </div>
+                      
+                      <div class="col-12 text-center col-lg-4">
+                        <img class="img-fluid img-thumbnail" src="./public/assets/img/catalog/adapter1.jpg" alt="certificate">
+                      </div>
+                      <div class="col-12 text-lg-left text-center col-lg-4 text-left">
+                        Культиватор Shtenli 1000<br>1. Фреза <br>2. Сцепка для мотоблока
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="product_card-prices text-center">
+                          <s class="h5 text-muted"><span>1125</span>&nbsp;руб</s><br>
+                          <span class="h3 text-red font-weight-bold"><span>678</span>&nbsp;руб</span>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -3720,8 +5107,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"
     integrity="sha256-s5TTOyp+xlSmsDfr/aZhg0Gz+JejYr5iTJI8JxG1SkM=" crossorigin="anonymous"></script>
 
-  <script src="js/js.min.js"></script>
-  <script src="js/calculator.js"></script>
+  <script src="./dist/scripts/js.min.js"></script>
+  <script src="./dist/scripts/calculator.min.js"></script>
   <script src="../vendor/lib/lightcountdown_v1_2/lightcountdown.min.js"></script>
   <script src="//code.jivosite.com/widget/GQPzuMDRQV" async></script>
 </body>
