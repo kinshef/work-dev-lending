@@ -117,4 +117,34 @@ document.addEventListener("DOMContentLoaded", function () {
   } catch (e) {
     console.error(e);
   }
+
+  try {
+    var scanText = function(param){
+      var maxHidP = 0;
+      for(var i=0; i<param.length;i++){
+        if(maxHidP<param[i].scrollHeight){
+          maxHidP = param[i].scrollHeight;
+          for(var j=0; j<param.length;j++){
+            if(param[j].scrollHeight < maxHidP){
+              param[j].style.height = maxHidP + 'px';
+            }
+          }
+        }
+      }
+    }
+    scanText(document.querySelectorAll('.catalog__parameter'))
+    window.onresize = function() {
+      if (document.body.clientWidth > 768){
+        scanText(document.querySelectorAll('.catalog__parameter'))
+      }else{
+        for(var j=0; j<catalogParameter.length;j++){
+          catalogParameter[j].style.height = 'auto';
+        }
+      }
+    }
+  } catch (e) {
+    console.error(e);
+  }
+
+
 });

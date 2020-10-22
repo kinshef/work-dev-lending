@@ -55,6 +55,10 @@ textarea {
   resize: none;
 }
 
+.btn{
+  white-space: normal;
+}
+
 /* END RESET */
 
 /* SECTION header */
@@ -116,35 +120,15 @@ a.btn-transparent:hover {
   text-shadow: 1px 1px 2px black, 0 0 1em black;
 }
 
-@media screen and (min-width: 1024px) {
-  .block-wrapper {
-    padding-bottom: 15rem;
-  }
+.block-wrapper {
+  padding: 10rem 0;
 }
 
 /* END SECTION MAIN */
 
 /* SECTION CATALOG */
-.left-wrapper,
-.right-wrapper {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100% 100%;
-}
-
-.left-wrapper {
-  background-image: url("../assets/img/bg/catalog1.png");
-  background-attachment: fixed;
-}
-
-.right-wrapper {
-  background-image: url("../assets/img/bg/catalog2.png");
-  background-attachment: fixed;
-}
-
-.catalog__parameter {
-  display: flex;
-  flex-direction: column;
+.cart-wrapper {
+  background: #302217;
 }
 
 .calculator-price {
@@ -200,7 +184,8 @@ a.btn-transparent:hover {
 .about-wrapper {
   background-image: url('../assets/img/bg/about-bg.jpg');
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center top;
+  background-size: contain;
 }
 
 /* END SECTION ABOUT */
@@ -280,17 +265,20 @@ a.btn-transparent:hover {
   position: relative;
   width: 5rem;
   height: 5rem;
-}
-
-.icon:hover {
-  animation-name: fly;
-  animation-duration: 2s;
+  transition: all 2s;
+  transform: translateY(0);
   cursor: pointer;
+}
+@media(min-width: 768px){
+  .icon:hover {
+    transform: translateY(-40px) rotateY(720deg);
+  }
 }
 
 .icon_big {
   width: 6.6rem;
   height: 6.7rem;
+  min-width: 6.5rem;
   background-image: url("../assets/img/icons/sprite.png");
 }
 
@@ -309,6 +297,12 @@ a.btn-transparent:hover {
 
 .icon-title {
   width: 250px;
+}
+@media(max-width:768px){
+  .icon-title {
+    width: 160px;
+    font-size: 16px;
+  }
 }
 
 /* END ICONS */
@@ -358,7 +352,7 @@ a.btn-transparent:hover {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.1;
+  opacity: 0.15;
   background: transparent;
 }
 
@@ -376,7 +370,6 @@ a.btn-transparent:hover {
   transition: all 0.3s ease-in-out;
   display: inline-block;
   text-align: center;
-  white-space: nowrap;
   color: #fff !important;
   text-transform: uppercase;
   background: #ff7d00;
@@ -406,6 +399,22 @@ a.btn-transparent:hover {
   background: transparent;
 }
 
+.custom-input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.custom-input::-moz-placeholder {
+  color: #fff;
+}
+
+.custom-input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.custom-input::-ms-input-placeholder {
+  color: #fff;
+}
+
 .custom-input::placeholder {
   color: #fff;
 }
@@ -417,6 +426,22 @@ a.btn-transparent:hover {
 
 .modal-input:focus {
   background: transparent;
+}
+
+.modal-input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-input::placeholder {
@@ -495,16 +520,3 @@ a.btn-transparent:hover {
 }
 
 /* END CUSTOM */
-
-/* ANIMATE ICONS */
-@keyframes fly {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(-50px) rotateY(500deg);
-  }
-}
-
-/* END ANIMATE ICONS */
