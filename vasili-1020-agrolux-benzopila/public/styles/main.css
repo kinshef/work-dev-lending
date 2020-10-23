@@ -216,10 +216,7 @@ a.btn-transparent:hover {
 
 /* SECTION FAST */
 .section-fast {
-  background-image: url("../assets/img/bg/form2-bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
+  background: #ff8e02;
 }
 
 /* END SECTION FAST */
