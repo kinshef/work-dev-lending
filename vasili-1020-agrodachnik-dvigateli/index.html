@@ -1,0 +1,1980 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+
+    <link rel="stylesheet" href="public/libs/lightcountdown_v1_2/lightcountdown.css">
+    <link rel="stylesheet" href="public/style/main.css">
+
+    <title>Двигатели</title>
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 d-none d-lg-block">
+                    <div class="logo">
+                        <a href="#header">
+                            <img class="img-fluid" src="public/assets/img/logo/logo2017.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mt-3 d-none d-lg-block">
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa fa-clock-o text-warning" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-11">
+                            <div class="col-12">
+                                <span class="text-white">
+                                    Пн-Пт 8:00 - 23:00
+                                </span>
+                            </div>
+                            <div class="col-12">
+                                <span class="text-danger">
+                                    Сб-Вс: 9:00 - 23:00
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="row">
+                        <div class="col-6 d-flex flex-column align-items-center mt-3">
+                            <span class="text-warning">
+                                Отдел продаж
+                            </span>
+                            <a class="text-white" href="tel:+375295650281">+37529 565 02 81</a>
+                        </div>
+                        <div class="col-6 d-flex flex-column align-items-center mt-3">
+                            <span class="text-warning">
+                                Отдел запчастей
+                            </span>
+                            <a class="text-white" href="tel:+375445650281">+37544 565 02 81</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2 mb-3 d-flex align-items-center justify-content-center">
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-order">Заказать звонок</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid full-width">
+            <div class="border-top border-warning"></div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="row">
+                        <div class="col-12 bg-danger">
+                            <div class="nav">
+                                <div class="btn-group">
+                                    <div class="col-12 d-flex flex-column d-lg-block">
+                                        <a class="btn btn-danger text-left smoothscroll" href="#main-section">Главная</a>
+                                        <a class="btn btn-danger text-left smoothscroll" href="#section-callback">Доставка и оплата</a>
+                                        <a class="btn btn-danger text-left smoothscroll" href="#section-catalog">Каталог товаров</a>
+                                        <a class="btn btn-danger text-left smoothscroll" href="#section-sale">Акции</a>
+                                        <a class="btn btn-danger text-left smoothscroll" href="#footer">О нас</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="border-bottom border-warning"></div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="main-section" id="main-section">
+            <div class="container-fluid full-width">
+                <div class="row">
+                    <div class="col-12 col-lg-3 mt-5 mb-5 pt-5 pb-5">
+                        <div class="main-form bg_dark p-5">
+                            <form>
+                                <div class="col-12 text-center font-weight-bold mb-5">
+                                    <span class="text-warning">
+                                        Обратная
+                                    </span>
+                                    <span class="text-white">
+                                        Связь
+                                    </span>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Введите ваш комментарий" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Введите ваше имя" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Введите ваш телефон" required>
+                                </div>
+                                <button type="submit" class="btn btn-warning w-100">
+                                    Отправить заявку
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 offset-lg-3 col-lg-3 mt-5">
+                        <div class="row">
+                            <div class="col-12 col-md-6 text-center">
+                                <img src="public/assets/img/banners/vector.png" alt="banner">
+                            </div>
+                            <div class="col-12 col-md-6 text-center">
+                                <img src="public/assets/img/banners/vector2.jpg" alt="banner">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid full-width">
+                <div class="row">
+                    <div class="col-12 bg-danger">
+                        <div class="border-top border-warning"></div>
+                        <div class="col-12 text-center p-2">
+                            <span class="text-white font-weight-bold title-section">
+                                Акции и скидки
+                            </span>
+                        </div>
+                        <div class="border-bottom border-warning"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-sale" id="section-sale">
+            <div class="container-fluid full-width">
+                <div class="row">
+                    <div class="col-12 col-md-6 d-flex justify-content-center">
+                        <img class="img-fluid w-100" src="public/assets/img/banners/bg2.jpg" alt="sale">
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <p class="h1 app-ff--alt text-red">Лучшее предложение</p>
+                        <p>Только до конца недели у нас действуют специальные скидки.</p>
+                        <hr>
+                        <button data-target="#modal-order" data-toggle="modal" class="btn main-btn text-uppercase">Заказать
+                        </button>
+                        <div class="countdown-week mt-5"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid full-width">
+                <div class="row">
+                    <div class="col-12 bg-danger">
+                        <div class="border-top border-warning"></div>
+                        <div class="col-12 text-center p-2">
+                            <span class="text-white font-weight-bold title-section">
+                                Двигатели под шпонку
+                            </span>
+                        </div>
+                        <div class="border-bottom border-warning"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-catalog" id="section-catalog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 mb-5">
+                        <div class="card" id="V-TWIN">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-200 6.5 л.с.</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 196 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под шпонку
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Нет
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            277
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            375
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 mb-5">
+                        <div class="card" id="IGX">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-210 6.5 л.с.</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 196 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 20мм под шпонку
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Нет
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            257
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            363
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 mb-5">
+                        <div class="card" id="GC">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-270 9 л.с.</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 264 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под шпонку
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Нет
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            411
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            520
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 mb-5">
+                        <div class="card" id="GS">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-270e 9 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 264 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под шпонку
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Есть
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            559
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            660
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-5 pb-2">
+                        <div class="card" id="Mini-4-Stroke">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-390 13 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 389 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под шпонку
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Нет
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            506
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            610
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-5 pb-2">
+                        <div class="card" id="GX">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-390e 13 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 389 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под шпонку
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Есть
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            615
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            722
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-5 pb-2">
+                        <div class="card" id="GX">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-420 16 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 418 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под шпонку
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Нет
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            581
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            689
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-5 pb-2">
+                        <div class="card" id="GX">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-420e 16 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 418 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под шпонку
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Есть
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            686
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            767
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-5 pb-2">
+                        <div class="card" id="GX">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-450 18 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 447 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под шпонку
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Нет
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            615
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            722
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-5 pb-2">
+                        <div class="card" id="GX">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-450e 18 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 447 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под шпонку
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Есть
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            728
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            839
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-5 pb-2">
+                        <div class="card" id="GX">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-470 18,5 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 468 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под шпонку
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Нет
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            682
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            801
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-5 pb-2">
+                        <div class="card" id="GX">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-470e 18,5 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 468 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под шпонку
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Есть
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            784
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            893
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-catalog" id="section-catalog2">
+            <div class="container-fluid full-width">
+                <div class="row">
+                    <div class="col-12 bg-danger">
+                        <div class="border-top border-warning"></div>
+                        <div class="col-12 text-center p-2">
+                            <span class="text-white font-weight-bold title-section">
+                                Двигатели под шлиц
+                            </span>
+                        </div>
+                        <div class="border-bottom border-warning"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 mb-5 pb-2">
+                        <div class="card" id="GX">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-260s 8,5 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 249 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под шлиц
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Нет
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            288
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            401
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 mb-5 pb-2">
+                        <div class="card" id="GX">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-270s 9 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 264 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под шлиц
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Нет
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            463
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            580
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 mb-5 pb-2">
+                        <div class="card" id="GX">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-390s 13 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 389 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под шлиц
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Нет
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            490
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            601
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 mb-5 pb-2">
+                        <div class="card" id="GX">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-390se 13 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 389 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под шлиц
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Есть
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            657
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            763
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-5 pb-2">
+                        <div class="card" id="GX">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-420s 16 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 418 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под шлиц
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Нет
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            559
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            640
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-5 pb-2">
+                        <div class="card" id="GX">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-420se 16 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 418 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под шлиц
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Есть
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            713
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            822
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-5 pb-2">
+                        <div class="card" id="GX">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-450s 18 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 447 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под шлиц
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Нет
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            650
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            744
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-5 pb-2">
+                        <div class="card" id="GX">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-450se 18 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 447 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под шлиц
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Есть
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            755
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            864
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-5 pb-2">
+                        <div class="card" id="GX">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-470s 18,5 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 468 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под шлиц
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Нет
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            584
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            699
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-5 pb-2">
+                        <div class="card" id="GX">
+                            <img src="public/assets/img/catalog/product.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель / <span class="text-danger text-uppercase">GX-470se 18,5 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 468 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под шлиц
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Есть
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            811
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            923
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-catalog" id="section-catalog3">
+            <div class="container-fluid full-width">
+                <div class="row">
+                    <div class="col-12 bg-danger">
+                        <div class="border-top border-warning"></div>
+                        <div class="col-12 text-center p-2">
+                            <span class="text-white font-weight-bold title-section">
+                                Дизельные двигатели
+                            </span>
+                        </div>
+                        <div class="border-bottom border-warning"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 mb-5 pb-5">
+                        <div class="card" id="GX">
+                            <img src="public/assets/img/catalog/productdizel.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель дизельный / <span class="text-danger text-uppercase">R180NDL 10,5 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 280 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под крепление для минитракторов
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Нет
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            1678
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            1801
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 mb-5 pb-5">
+                        <div class="card" id="GX">
+                            <img src="public/assets/img/catalog/productdizel.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель дизельный / <span class="text-danger text-uppercase">R180NDL 10,5 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 280 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25мм под крепление для минитракторов
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Есть
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            1817
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            1999
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 mb-5 pb-5">
+                        <div class="card" id="GX">
+                            <img src="public/assets/img/catalog/productdizel.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель дизельный / <span class="text-danger text-uppercase">R192NDL 12 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 320 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25 мм под мотоблок типа G-185, G-192
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер:</span> Есть
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            1916
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            2020
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 mb-5 pb-5">
+                        <div class="card" id="GX">
+                            <img src="public/assets/img/catalog/productdizel.jpg" class="card-img-top img-fluid" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Двигатель дизельный / <span class="text-danger text-uppercase">R195NDL 18 л.с</span>
+                                </h5>
+                                <div class="col-12">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span class="title-value">Производитель:</span> Япония (аналог HONDA)
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Обьем двигателя:</span> 573 Куб/см
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Вал:</span> 25 мм под мотоблок типа G-185, G-192
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Электростартер</span>: Есть
+                                        </li>
+                                        <li>
+                                            <span class="title-value">Тип двигателя:</span> OHV, 4-x такт., 1 цилиндровый.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <p>
+                                        <span class="text-danger font-weight-bold">
+                                            2028
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <s>
+                                            2230
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </s>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <a href="#" class="btn btn-danger">
+                                        Купить сейчас!
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-callback bg-danger" id="section-callback">
+            <div class="container">
+                <div class="banners-wrapper">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img class="img-fluid" src="public/assets/img/icons/dostavka.png" alt="icon">
+                                </div>
+                                <div class="col-9">
+                                    <div class="col-12 text-center">
+                                        <span class="text-uppercase font-weight-bold">
+                                            Весь товар в наличии
+                                        </span>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        Только оригинальные двигатели!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img class="img-fluid" src="public/assets/img/icons/dostavka.png" alt="icon">
+                                </div>
+                                <div class="col-9">
+                                    <div class="col-12 text-center">
+                                        <span class="text-uppercase font-weight-bold">
+                                            Подарок при покупке
+                                        </span>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        Набор инструментов при покупке бензинового двигателя
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img class="img-fluid" src="public/assets/img/icons/dostavka.png" alt="icon">
+                                </div>
+                                <div class="col-9">
+                                    <div class="col-12 text-center">
+                                        <span class="text-uppercase font-weight-bold">
+                                            Бесплатная доставка
+                                        </span>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        По всей Беларуси в течении 1-3 дней!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img class="img-fluid" src="public/assets/img/icons/dostavka.png" alt="icon">
+                                </div>
+                                <div class="col-9">
+                                    <div class="col-12 text-center">
+                                        <span class="text-uppercase font-weight-bold">
+                                            Гарантия 24 месяца
+                                        </span>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        В официальном сервисном центре
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 d-flex justify-content-center mt-5 mb-5">
+                        <h2 class="text-black title-question">
+                            Не знаете какой двигатель необходим именно вам?
+                        </h2>
+                        <p class="text-black title-question2">
+                            Оставте заявку на бесплтаную консультацию, мы поможем с выбором, ответим на все вопросы, рассчитаем время доставки, расскажем об условиях оплаты, а так же о проводимых акциях! 
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center mt-5 mb-5">
+                        <div class="w-100 bg_dark p-5">
+                            <form>
+                                <div class="col-12 text-center font-weight-bold mb-5">
+                                    <h2 class="text-white text-left">
+                                        Не готовы заказать?
+                                    </h2>
+                                    <p class="text-white text-left">
+                                        Бесплатно получите профессиональную консультацию
+                                    </p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Введите ваше имя">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Введите номер телефона">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-warning w-100">
+                                    Получить консультацию
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-banners" id="section-banners">
+            <div class="container-fluid full-width">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 p-0">
+                        <div class="content-item">
+                            <div class="col-12">
+                                <img class="img-fluid" src="public/assets/img/catalog/performance.jpg" alt="product">
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="corner-overlay-content">
+                                Производительность.
+                            </div>
+                            <div class="overlay-content">
+                                <h2 class="text-center text-white">
+                                    Превосходная надежность гарантированно!
+                                </h2>
+                                <p class="text-white">GX устанавливает стандарты надежности и работоспособности двигателей. Наши двигатели построены с использованием высококачественных компонентов, предназначенных для оптимальной работы в самых суровых условиях.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0">
+                        <div class="content-item">
+                            <div class="col-12">
+                                <img class="img-fluid" src="public/assets/img/catalog/reliability.jpg" alt="product">
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="corner-overlay-content">
+                                Качество.
+                            </div>
+                            <div class="overlay-content">
+                                <h2 class="text-center text-white">
+                                    Высокий стандарт!
+                                </h2>
+                                <p class="text-white">Лучшая топливная экономичность. Более высокая выходная мощность. Более тихая работа. Легче в использовании. Независимо от того, как вы определяете превосходные характеристики двигателя, двигатели GX устанавливают стандарт.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0">
+                        <div class="content-item">
+                            <div class="col-12">
+                                <img class="img-fluid" src="public/assets/img/catalog/stab.jpg" alt="product">
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="corner-overlay-content">
+                                Стабильность.
+                            </div>
+                            <div class="overlay-content">
+                                <h2 class="text-center text-white">
+                                    Легкий запуск!
+                                </h2>
+                                <p class="text-white">Двигатели GX известны тем, что легко и стабильно заводятся. Их уникальность от автоматической механической системы декомпрессии до сверхмощных возвратных тросов и более совершенной системы регулировки угла опережения зажигания - эти двигатели разработаны с учетом быстрого и легкого запуска.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-7 mt-5 index_up">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 d-flex flex-column align-items-center mt-3">
+                            <h4 class="text-warning">
+                                Информация:
+                            </h4>
+                            <ul>
+                                <li class="text-white">
+                                    Главная
+                                </li>
+                                <li class="text-white">
+                                    О нас
+                                </li>
+                                <li class="text-white">
+                                    Доставка и оплата
+                                </li>
+                                <li class="text-white">
+                                    Каталог
+                                </li>
+                                <li class="text-white">
+                                    Акции
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 mt-5 mb-5 d-flex flex-column align-items-center">
+                            <h4 class="text-warning">
+                                Наши контакты:
+                            </h4>
+                            <div class="row">
+                                <div class="col-12 d-flex flex-column align-items-center mt-3">
+                                    <span class="text-warning">
+                                        Отдел продаж
+                                    </span>
+                                    <a class="text-white" href="tel:+375295650281">+37529 565 02 81</a>
+                                </div>
+                                <div class="col-12 d-flex flex-column align-items-center mt-3">
+                                    <a class="text-white" href="tel:+375445650281">+37544 565 02 81</a>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-warning mt-3" data-toggle="modal" data-target="#modal-order">
+                                Заказать звонок
+                            </button>
+                        </div>
+                        <div class="col-12 col-sm-6 mt-5 mb-5 d-flex flex-column align-items-center">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img class="img-fluid" src="public/assets/img/logo/logo2018.png" alt="logo">
+                                </div>
+                                <div class="col-9 text-white">
+                                    Интернет-магазин садового инвентаря и техники.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 mt-5 mb-5 index_up">
+                    <div class="main-form">
+                        <form>
+                            <div class="col-12 text-center font-weight-bold">
+                                <h2 class="text-warning">
+                                    Заказать звонок
+                                </h2>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Введите ваш комментарий" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Введите ваше имя" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Введите ваш телефон" required>
+                            </div>
+                            <button type="submit" class="btn btn-warning w-100">
+                                Отправить заявку
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="modal-order" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <p>
+                            <img src="public/assets/img/logo/logo2017.png" alt="Logo" class="img-fluid" style="max-height: 200px;">
+                        </p>
+                        <div class="bg_dark text-white my-4">
+                            <p class="h2">Ваш личный менеджер</p>
+                            <p class="h3">Иван Николаевич</p>
+                            <div class="h2">
+                                <img src="public/assets/img/icons/logo_mts_64.jpg" width="20">
+                                (29) 565-02-81
+                                <br>
+                                <img src="public/assets/img/icons/logo_A1_56.png" width="20">
+                                (44) 565-02-81
+                            </div>
+                        </div>
+                        <form>
+                            <input type="hidden" name="form" value="Окно заказа">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="comment" class="form-control" rows="3" placeholder="Оставьте сообщение..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-danger btn-block btn-lg">Отправить заявку</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+    <script src="public/libs/lightcountdown_v1_2/lightcountdown.min.js"></script>
+    <script src="dist/scripts/js.min.js"></script>
+
+</body>
+
+</html>
