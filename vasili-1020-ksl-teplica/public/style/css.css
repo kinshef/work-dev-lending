@@ -61,21 +61,27 @@ a:hover {
 }
 .text-size-1{
   font-size: 0.8em;
+  line-height: normal;
 }
 .text-size-2{
   font-size: 0.9em;
+  line-height: normal;
 }
 .text-size-4{
   font-size: 1.1em;
+  line-height: normal;
 }
 .text-size-5{
   font-size: 1.2em;
+  line-height: normal;
 }
 .text-size-6{
   font-size: 1.4em;
+  line-height: normal;
 }
 .text-size-7{
   font-size: 1.7em;
+  line-height: normal;
 }
 .text-red{
   color: red;
@@ -197,7 +203,7 @@ a:hover {
 }
 .main-wrap__title{
   margin-top: 10%;
-  margin-bottom: 4%;
+  margin-bottom: 6%;
   font-size: 3.2em;
   line-height: normal;
   transform: translate(-5%);
@@ -215,51 +221,22 @@ a:hover {
   background: url(../assets/img/back/header-text.png) no-repeat right center;
   background-size: contain;
 }
-@media(max-width: 1600px){
-  .main-wrap__title{
-    margin-top: 15%;
-    margin-bottom: 0%;
-  }
-}
-@media(max-width: 1200px){
-  .main-wrap__title{
-    font-size: 2.5em;
-  }
-  .main-wrap__text{
-    font-size: 0.8em;
-  }
-}
-@media(max-width: 992px){
-  .main-wrap__title{
-    margin-top: 22%;
-    font-size: 2em;
-  }
-}
-@media(max-width: 768px){
-  .main-wrap:before{
-    display: none;
-  }
-}
-
-
-
-
-.main-advantages__itemOne{
+.main-advantages__itemOne,
+.main-advantages__itemThree{
+  height: 220px;
   background-color: #7cb615;
   color: #fff;
+}
+.main-advantages__itemOne{
   border-radius: 0 200px 0 0;
-  height: 220px;
 }
 .main-advantages__itemThree{
-  background-color: #7cb615;
-  color: #fff;
   border-radius: 200px 0 0 0;
-  height: 220px;
 }
 .main-advantages__itemFour{
   position: relative;
-  height: 220px;
   z-index: 1;
+  height: 220px;
 }
 .main-advantages__itemFour::before{
   content: '';
@@ -275,7 +252,37 @@ a:hover {
 }
 
 
-
+@media(max-width: 1600px){
+  .main-wrap__title{
+    margin-top: 12%;
+    margin-bottom: 0%;
+  }
+}
+@media(max-width: 1200px){
+  .main-wrap__title{
+    font-size: 2.5em;
+  }
+  .main-wrap__text{
+    font-size: 0.8em;
+  }
+}
+@media(max-width: 992px){
+  .main-wrap__title{
+    margin-top: 17%;
+    font-size: 2em;
+  }
+  .main-advantages__items img{
+    max-width: 60px;
+  }
+  .main-advantages__items{
+    font-size: 0.8em;
+  }
+}
+@media(max-width: 768px){
+  .main-wrap:before{
+    display: none;
+  }
+}
 
 
 
