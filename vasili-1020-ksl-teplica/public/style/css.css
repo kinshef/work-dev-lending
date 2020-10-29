@@ -168,6 +168,34 @@ a:hover {
 .btn{
   white-space: normal;
 }
+/* btn_custom */
+.btn_custom{
+  background: #ffae00;
+  text-shadow: 0 1px 0 rgba(0,0,0,.6);
+  text-align: center;
+  padding: 15px;
+  border-radius: 40px;
+  color: #fff;
+  box-shadow: 0 4px 0 #e5680c, 0 25px 15px -10px rgba(162,76,13,.8);
+  transition: all 0.3s;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: calc(100% - 1rem);
+  margin: 0.5rem auto 1rem;
+  cursor: pointer;
+}
+.btn_custom:active{
+  background: #dcab00;
+  box-shadow: none;
+  top: 4px;
+}
+.btn_custom:hover{
+  color: #fff;
+}
+
 /* section-nav */
 .section-nav{
   position: fixed;
@@ -250,8 +278,16 @@ a:hover {
   max-width: 33.333333%;
   width: 100%;
 }
-
-
+.main-advantages__btnWrap{
+  border: 9px solid #64a111;
+  border-radius: 50px;
+  height: auto;
+}
+.main-advantages__btnWrap a.btn_custom{
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: 600;
+}
 @media(max-width: 1600px){
   .main-wrap__title{
     margin-top: 12%;
@@ -265,17 +301,18 @@ a:hover {
   .main-wrap__text{
     font-size: 0.8em;
   }
+  .main-advantages__items img{
+    max-width: 60px;
+  }
+
+  .main-advantages__item{
+    font-size: 1em;
+  }
 }
 @media(max-width: 992px){
   .main-wrap__title{
     margin-top: 17%;
     font-size: 2em;
-  }
-  .main-advantages__items img{
-    max-width: 60px;
-  }
-  .main-advantages__items{
-    font-size: 0.8em;
   }
 }
 @media(max-width: 768px){
@@ -284,6 +321,35 @@ a:hover {
   }
 }
 
-
-
-
+/* section-review */
+.owl-carousel-review{
+  overflow: hidden;
+}
+.owl-carousel-review .owl-nav .owl-prev,
+.owl-carousel-review .owl-nav .owl-next{
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  font-size: 24px;
+  background: rgba(255, 255, 255, 0.5);
+  color: #fa990e;
+  border: 5px solid #fa990e;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.owl-carousel-review .owl-nav .owl-prev{
+  left: 1rem;
+  border-radius: 0 0 0 30px;
+}
+.owl-carousel-review .owl-nav .owl-next{
+  right: 1rem;
+  border-radius: 0 0 30px 0;
+}
+.owl-carousel-review .owl-nav .owl-prev:hover,
+.owl-carousel-review .owl-nav .owl-next:hover{
+  color: #a6cd5f;
+}

@@ -1,6 +1,5 @@
 $(function () {
 
-
     $("form").submit(function (event) {
         event.preventDefault();
 
@@ -59,6 +58,19 @@ $(function () {
 //         scrollTop: $(a).offset().top
 //     }, 400))
 // });
+
+
+    $(".owl-carousel-review").owlCarousel({
+        items: 1,
+        nav: true,
+        margin: 100,
+        loop: true,
+        dots: false,
+        autoHeight:true,
+        navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+        // navText: ['<i class="fa fa-lg fa-angle-left"></i>', '<i class="fa fa-lg fa-angle-right"></i>'],
+        // navText: ['<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-angle-left fa-stack-1x fa-inverse"></i></span>', '<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-angle-right fa-stack-1x fa-inverse"></i></span>'],
+    });
 
  // links hightLight after scroll page
 //   $.fn.nav = function (item) {
