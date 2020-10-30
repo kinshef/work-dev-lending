@@ -14,6 +14,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         360, // Вес: ___ кг
         './public/assets/img/catalog/cat1.png', // url img product
+        'Shtenli', // Модель: ____________
       ],
       "2000K2NS": [
         693, // Цена: __ руб
@@ -28,6 +29,7 @@ var calculatorData = {
         [4,8], // Размер колес: ___x___
         320, // Вес: ___ кг
         './public/assets/img/catalog/cat2.png', // url img product
+        'Shtenli asdasdWW2', // Модель: ____________
       ],
       "7000EXPERT": [
         793, // Цена: __ руб
@@ -42,6 +44,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         340, // Вес: ___ кг
         './public/assets/img/catalog/catalog2.png', // url img product
+        'Shtenli asdasdWW3', // Модель: ____________
       ],
       "8000EXPERT": [
         813, // Цена: __ руб
@@ -56,6 +59,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         350, // Вес: ___ кг
         './public/assets/img/catalog/catalog3.png', // url img product
+        'Shtenli asdasdWW', // Модель: ____________
       ],
       "500-7": [
         833, // Цена: __ руб
@@ -70,6 +74,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         370, // Вес: ___ кг
         './public/assets/img/catalog/catalog5.png', // url img product
+        'Shtenli asdasdWW', // Модель: ____________
       ],
       "900-8": [
         843, // Цена: __ руб
@@ -84,6 +89,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         380, // Вес: ___ кг
         './public/assets/img/catalog/catalog7.png', // url img product
+        'Shtenli asdasdWW', // Модель: ____________
       ],
       "900L-8L": [
         853, // Цена: __ руб
@@ -98,6 +104,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         390, // Вес: ___ кг
         './public/assets/img/catalog/catalog8.png', // url img product
+        'Shtenli asdasdWW', // Модель: ____________
       ],
     },
     "Shtenli1030": { //product
@@ -114,6 +121,7 @@ var calculatorData = {
         [4,8], // Размер колес: ___x___
         320, // Вес: ___ кг
         './public/assets/img/catalog/catalog1.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli 1030', // Модель: ____________
       ],
       "1030L(7x12)": [
         793, // Цена: __ руб
@@ -128,6 +136,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         340, // Вес: ___ кг
         './public/assets/img/catalog/catalog2.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
       "1030L(6Lx12)": [
         813, // Цена: __ руб
@@ -142,6 +151,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         350, // Вес: ___ кг
         './public/assets/img/catalog/catalog3.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
       "1030(6Lx12)": [
         823, // Цена: __ руб
@@ -156,6 +166,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         360, // Вес: ___ кг
         './public/assets/img/catalog/catalog4.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
       "1030(7x12)": [
         833, // Цена: __ руб
@@ -170,6 +181,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         370, // Вес: ___ кг
         './public/assets/img/catalog/catalog5.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
       "1030PL(6Lx12)": [
         843, // Цена: __ руб
@@ -184,6 +196,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         380, // Вес: ___ кг
         './public/assets/img/catalog/catalog7.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
       "1030PL(7x12)": [
         853, // Цена: __ руб
@@ -198,6 +211,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         390, // Вес: ___ кг
         './public/assets/img/catalog/catalog8.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
       "1030P(6Lx12)": [
         853, // Цена: __ руб
@@ -212,6 +226,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         390, // Вес: ___ кг
         './public/assets/img/catalog/catalog8.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
       "1030P(7x12)": [
         873, // Цена: __ руб
@@ -226,6 +241,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         410, // Вес: ___ кг
         './public/assets/img/catalog/catalog8.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
     },
     "Shtenli1900": { //product
@@ -242,6 +258,7 @@ var calculatorData = {
         [4,8], // Размер колес: ___x___
         320, // Вес: ___ кг
         './public/assets/img/catalog/catalog1.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli 1900', // Модель: ____________
       ],
       "1900P(16-P)": [
         793, // Цена: __ руб
@@ -256,6 +273,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         340, // Вес: ___ кг
         './public/assets/img/catalog/catalog2.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
       "1900P(14-PL)": [
         813, // Цена: __ руб
@@ -270,6 +288,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         350, // Вес: ___ кг
         './public/assets/img/catalog/catalog3.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
       "1900P(14-P)": [
         823, // Цена: __ руб
@@ -284,6 +303,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         360, // Вес: ___ кг
         './public/assets/img/catalog/catalog4.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
       "1900P(18-P)": [
         833, // Цена: __ руб
@@ -298,6 +318,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         370, // Вес: ___ кг
         './public/assets/img/catalog/catalog5.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
     },
     "ShtenliPro1030": { //product
@@ -314,6 +335,7 @@ var calculatorData = {
         [4,8], // Размер колес: ___x___
         320, // Вес: ___ кг
         './public/assets/img/catalog/catalog1.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli 1030', // Модель: ____________
       ],
       "1030Pro(7Lx12)": [
         793, // Цена: __ руб
@@ -328,6 +350,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         340, // Вес: ___ кг
         './public/assets/img/catalog/catalog2.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
       "1030PPro(6Lx12)": [
         813, // Цена: __ руб
@@ -342,6 +365,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         350, // Вес: ___ кг
         './public/assets/img/catalog/catalog3.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
       "1030PPro(7Lx12)": [
         823, // Цена: __ руб
@@ -356,6 +380,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         360, // Вес: ___ кг
         './public/assets/img/catalog/catalog4.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
     },
     "ShtenliPro1900P": { //product
@@ -372,6 +397,7 @@ var calculatorData = {
         [4,8], // Размер колес: ___x___
         320, // Вес: ___ кг
         './public/assets/img/catalog/catalog1.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli 1900P', // Модель: ____________
       ],
       "1900PPro(16-P)": [
         793, // Цена: __ руб
@@ -386,6 +412,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         340, // Вес: ___ кг
         './public/assets/img/catalog/catalog2.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
       "1900PPro(18-P)": [
         813, // Цена: __ руб
@@ -400,6 +427,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         350, // Вес: ___ кг
         './public/assets/img/catalog/catalog3.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
       "1900PPro(14-PK1)": [
         823, // Цена: __ руб
@@ -414,6 +442,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         360, // Вес: ___ кг
         './public/assets/img/catalog/catalog4.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
       "1900PPro(16-PK1)": [
         843, // Цена: __ руб
@@ -428,6 +457,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         380, // Вес: ___ кг
         './public/assets/img/catalog/catalog4.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
       "1900PPro(18-PK1)": [
         863, // Цена: __ руб
@@ -442,6 +472,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         400, // Вес: ___ кг
         './public/assets/img/catalog/catalog4.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
     },
     "ShtenliG": { //product
@@ -458,6 +489,7 @@ var calculatorData = {
         [4,8], // Размер колес: ___x___
         320, // Вес: ___ кг
         './public/assets/img/catalog/catalog1.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli G', // Модель: ____________
       ],
       "G-185(10.5)": [
         793, // Цена: __ руб
@@ -472,6 +504,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         340, // Вес: ___ кг
         './public/assets/img/catalog/catalog2.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
       "G-192(12)": [
         813, // Цена: __ руб
@@ -486,6 +519,7 @@ var calculatorData = {
         [6,12], // Размер колес: ___x___
         350, // Вес: ___ кг
         './public/assets/img/catalog/catalog3.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli asdasdWW', // Модель: ____________
       ],
     },
     "ShtenliT-180LUX": { //product
@@ -502,6 +536,7 @@ var calculatorData = {
         [4,8], // Размер колес: ___x___
         320, // Вес: ___ кг
         './public/assets/img/catalog/catalog8.png', // url img product './public/assets/img/catalog/_____'
+        'Shtenli T-180 LUX', // Модель: ____________
       ],
     },
   }

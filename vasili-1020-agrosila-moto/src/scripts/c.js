@@ -153,7 +153,11 @@ $(document).ready(function() {
         });
 
         if(calculatorData.product[product][option][11] !== $('.jUrmImg', form).attr('src')){
-            $('.jUrmImg', form).attr('src', calculatorData.product[product][option][12]);
+            $('.jUrmImg', form).attr('src', calculatorData.product[product][option][11]);
+        };
+
+        if(calculatorData.product[product][option][12] !== $('.jModal', form).text()){
+            $('.jModal', form).text(calculatorData.product[product][option][12])
         };
   });
   $("form.has-calculator").change();
