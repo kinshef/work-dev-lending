@@ -518,6 +518,17 @@ a:hover {
   z-index: 11;
   transform: scale(1.2);
 }
+.catalog-brtDetails{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  transform: all 0.4s
+}
+.catalog-brtDetails:hover {
+  opacity: 1;
+}
 
 /* section-equipment */
 .section-equipment{
