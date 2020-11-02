@@ -29,9 +29,6 @@ ul{
 li{
   list-style-type: none;
 }
-section{
-  overflow: hidden;
-}
 /* Fix bootstrap */
 @media (min-width: 1600px) {
   .container {
@@ -165,6 +162,12 @@ a:hover {
 .text_green{
   color: #63a211;
 }
+.bg_green{
+  background-color: #7cb615;
+}
+.bg_blackGreen{
+  background-color: #66b329;
+}
 .btn{
   white-space: normal;
 }
@@ -191,6 +194,7 @@ a:hover {
   background: #dcab00;
   box-shadow: none;
   top: 4px;
+  outline: none;
 }
 .btn_custom:hover{
   color: #fff;
@@ -352,4 +356,102 @@ a:hover {
 .owl-carousel-review .owl-nav .owl-prev:hover,
 .owl-carousel-review .owl-nav .owl-next:hover{
   color: #a6cd5f;
+}
+
+/* section-howToSave */
+.section-howToSave{
+  position: relative;
+}
+.howToSave-wrap{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+.howToSave-wrap__form{
+  margin: 10rem 0;
+}
+.square-value__3{
+  width: 3rem;
+  height: 3rem;
+}
+.square-value__5{
+  width: 5rem;
+  height: 5rem;
+}
+.square-value__6{
+  width: 6rem;
+  height: 6rem;
+}
+.square-value__7{
+  width: 7rem;
+  height: 7rem;
+}
+.square-value__14{
+  width: 14rem;
+  height: 14rem;
+}
+.square-value__17{
+  width: 17rem;
+  height: 17rem;
+}
+.radius__leftTop{
+  border-radius: 70% 0 0 0;
+}
+.radius__leftBottom{
+  border-radius: 0 0 0 70%;
+}
+.radius__rightTop{
+  border-radius: 0 70% 0 0;
+}
+.radius__rightBottom{
+  border-radius: 0 0 70% 0;
+}
+.square__1{
+ top: 0;
+ right: 0;
+}
+.square__2{
+  bottom: 0;
+  left: 0;
+}
+.square__3{
+  top: 0;
+  left: 0;
+}
+.square__4{
+  bottom: 0;
+  right: 0;
+}
+.square__5{
+  bottom: 0;
+  left: 0;
+}
+.square__upToDown,
+.square__upToDown__reverse {
+  transition: all .3s;
+  animation-timing-function: ease-in-out;
+  animation-name: upToDown;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.square__upToDown{
+  animation-direction: alternate;
+}
+.square__upToDown__reverse {
+  animation-direction: alternate-reverse;
+}
+@keyframes upToDown {
+  0% {
+    transform: translateY(-15%)
+  }
+  100% {
+    transform: translateY(15%)
+  }
+}
+
+/* section-highClass */
+.section-highClass{
+  background: url(../assets/img/back/standarts-bg.jpg);
 }
