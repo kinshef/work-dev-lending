@@ -453,5 +453,37 @@ a:hover {
 
 /* section-highClass */
 .section-highClass{
-  background: url(../assets/img/back/standarts-bg.jpg);
+  background: url(../assets/img/back/standarts-bg.jpg) no-repeat center center;
+  background-size: 100% auto;
+}
+.highClass{
+  padding: 5rem 0;
+}
+.square__6{
+  top: 0;
+  right: 0;
+}
+.square__7{
+  left: 0;
+  top: 7rem;
+}
+.highClass__ul li{
+  padding-left: 2rem;
+  position: relative;
+}
+.highClass__ul li:before{
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: calc(50% - 5px);
+  border: 3px solid #f0aa06;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.square__warranty{
+  color: #000;
+  font-size: 2em;
+  padding-left: 4rem;
+  line-height: normal;
 }
