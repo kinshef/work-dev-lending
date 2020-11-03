@@ -457,7 +457,7 @@ a:hover {
   background-size: 100% auto;
 }
 .highClass{
-  padding: 5rem 0;
+  padding: 10rem 0 0;
 }
 .square__6{
   top: 0;
@@ -466,6 +466,9 @@ a:hover {
 .square__7{
   left: 0;
   top: 7rem;
+}
+.highClass__ul{
+  margin-bottom: 10rem;
 }
 .highClass__ul li{
   padding-left: 2rem;
@@ -483,7 +486,10 @@ a:hover {
 }
 .square__warranty{
   color: #000;
-  font-size: 2em;
+  font-size: 2.4em;
   padding-left: 4rem;
   line-height: normal;
+  margin-right: -15px;
+  width: 16rem;
+  margin: 1rem 0;
 }
