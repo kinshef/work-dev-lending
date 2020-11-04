@@ -616,3 +616,23 @@ a:hover {
   border-color: #7cb615;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* modal-product */
+.modal-product .modal-content{
+  border-radius: 50px;
+  overflow: hidden;
+}
+
