@@ -310,21 +310,97 @@
                 </div>
 
                 <div class="col-12">
-                    <form class="catalog-form my-5">
+                    <form class="catalog-form my-5 has-calculator">
+                        <input type="hidden" name="form" value="Карточка товара">
+                        <input type="hidden" name="product" value="product1">
                         <div class="catalog-form__top">
                             <div class="row">
-                                <div class="col-6 text-right">
-                                    <img src="./public/assets/img/catalog/1 (1).jpg" class="radius__leftTop">
+                                <div class="col-3 offset-3">
+                                    <div class="owl-carousel owl-carousel-catalog owl-theme radius__leftTop">
+                                        <div class="item catalog-wrap">
+                                            <img src="./public/assets/img/catalog/1 (1).jpg" class="img-fluid ml-auto">
+                                        </div>
+                                        <div class="item catalog-wrap">
+                                            <img src="./public/assets/img/catalog/1 (2).jpg" class="img-fluid ml-auto">
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-4">
-                                    <div class="font-weight-bold section_title w-50">Новатор Титан</div>
-                                    <span>Ширина теплицы</span>
-                                    <span class="ml-auto">3 м</span>
+                                    <div class="font-weight-bold section_title line-height-1 w-50">Новатор Титан</div>
+                                    <table class="w-75 table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td>Ширина теплицы</td>
+                                                <td>3 <span class="text_green">м</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Расстояние между дугами</td>
+                                                <td>1 <span class="text_green">м</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Профиль дуги</td>
+                                                <td>20x40 <span class="text_green">мм</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Профиль основания</td>
+                                                <td>40x40 <span class="text_green">мм</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-12 text-center my-3">
+                                <div class="text-size-7">Индивидуальные характеристики</div>
+                            </div>
+                            <div class="col-4 castom_input text-right">
+                                <div class="text-size-6 mb-2">Длина теплицы (<span class="text_green">м</span>):</div>
+                                <div class="c__input d-inline-block">
+                                    <input id="product1-length-4" type="radio" name="length" value="4" checked="">
+                                    <label for="product1-length-4">4</label>
+                                </div>
+                                <div class="c__input d-inline-block">
+                                    <input id="product1-length-6" type="radio" name="length" value="6">
+                                    <label for="product1-length-6">6</label>
+                                </div>
+                                <div class="c__input d-inline-block">
+                                    <input id="product1-length-8" type="radio" name="length" value="8">
+                                    <label for="product1-length-8">8</label>
+                                </div>
+                                <div class="c__input d-inline-block">
+                                    <input id="product1-length-10" type="radio" name="length" value="10">
+                                    <label for="product1-length-10">10</label>
+                                </div>
+                                <div class="c__input d-inline-block">
+                                    <input id="product1-length-12" type="radio" name="length" value="12">
+                                    <label for="product1-length-12">12</label>
+                                </div>
+                            </div>
+                            <div class="col-4 castom_input text-center">
+                                <div class="text-size-6 mb-2">Толщина поликарбоната (<span class="text_green">м</span>):</div>
+                                <div class="c__input d-inline-block">
+                                    <input id="product1-tolshchina-4" type="radio" name="tolshchina" value="4" checked="">
+                                    <label for="product1-tolshchina-4">4</label>
+                                </div>
+                                <div class="c__input d-inline-block">
+                                    <input id="product1-tolshchina-6" type="radio" name="tolshchina" value="6">
+                                    <label for="product1-tolshchina-6">6</label>
+                                </div>
+                            </div>
+                            <div class="col-4 text-left">
+                                <div class="font-weight-light">
+                                    <s class="catalog__price">Цена: <span class="jPriceOld">0</span> р.</s><br>
+                                    <div class="catalog__price text-size-7 font-weight-bold"><span class="jPrice">0</span> р.</div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center py-5">
+                                <a href="#modal-product1" data-toggle="modal" class="btn_custom text-uppercase w-auto px-5 font-weight-bold text-size-6">подробнее</a>
                             </div>
                         </div>
                     </form>
                 </div>
+
             </div>
         </div>
     </section>
@@ -362,6 +438,39 @@
         </div>
     </div>
 
+    <div id="modal-product1" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-center bg-warning">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="my-4">
+                        <p class="h2">Ваш личный менеджер</p>
+                        <p class="h3">Михаил</p>
+                        <p class="h2">(44) 762-43-96, (29) 762-43-96</p>
+                        <hr>
+                    </div>
+
+                    <form>
+                        <input type="hidden" name="form" value="Окно заказа">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-danger shadow">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
@@ -373,8 +482,8 @@
 
     <!-- <script src="../vendor/lib/lightcountdown/lightcountdown.min.js"></script> -->
 
-    <!-- <script src="./public/scripts/data.js"></script> -->
-    <!-- <script src="./src/scripts/c.js"></script> -->
+    <script src="./public/scripts/data.js"></script>
+    <script src="./src/scripts/c.js"></script>
     <script src="./src/scripts/js.js"></script>
 </body>
 </html>

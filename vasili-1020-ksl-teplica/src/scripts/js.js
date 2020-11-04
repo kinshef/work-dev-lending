@@ -68,8 +68,14 @@ $(function () {
         dots: false,
         autoHeight:true,
         navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
-        // navText: ['<i class="fa fa-lg fa-angle-left"></i>', '<i class="fa fa-lg fa-angle-right"></i>'],
-        // navText: ['<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-angle-left fa-stack-1x fa-inverse"></i></span>', '<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-angle-right fa-stack-1x fa-inverse"></i></span>'],
+    });
+    $(".owl-carousel-catalog").owlCarousel({
+        items: 1,
+        nav: true,
+        loop: true,
+        dots: false,
+        autoHeight:true,
+        navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
     });
 
  // links hightLight after scroll page

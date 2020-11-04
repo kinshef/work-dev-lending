@@ -4,9 +4,10 @@ $(document).ready(function() {
       var form = this;
       var product = $("input[name='product']", form).val();
       var length = $("input[name='length']:checked", form).val();
+      var tolshchina = $("input[name='tolshchina']:checked", form).val();
       var sum = 0;
       
-      sum += calculatorData[product][length];
+      sum += calculatorData[product][length][tolshchina];
 
       var out = $('.jPrice', form);
       var outOld = $('.jPriceOld', form);
@@ -15,8 +16,8 @@ $(document).ready(function() {
       $({ animateNumber: animateFrom }).animate({ animateNumber: sum }, {
           duration: 800,
           step: function (animateNumber){
-              out.text(Number(animateNumber).toFixed() + " руб.");
-              outOld.text(Number(animateNumber * 1.4).toFixed() + " руб.");
+              out.text(Number(animateNumber).toFixed());
+              outOld.text(Number(animateNumber * 1.4).toFixed());
           },
           complete: function() {
               out.data("animateFrom", Number(sum).toFixed());
