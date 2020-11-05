@@ -78,6 +78,17 @@ $(function () {
         navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
     });
 
+    $(".owl-carousel-modal").owlCarousel({
+        items: 1,
+        nav: true,
+        loop: true,
+        autoHeight:true,
+        dotsData: true,
+        dots: true,
+        navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+    });
+
+
  // links hightLight after scroll page
 //   $.fn.nav = function (item) {
 //     var point = {
