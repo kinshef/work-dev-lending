@@ -19,6 +19,21 @@ li{
     max-width: 1520px;
   }
 }
+@media (min-width: 1600px) {
+  .offset-xxl-2 {
+    margin-left: 16.666667%;
+  }
+  .col-xxl-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-xxl-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+}
 .modal-xl {
   max-width: 1140px;
 }
@@ -455,6 +470,11 @@ a:hover {
 .square-value__14{
   width: 14rem;
   height: 14rem;
+}
+@media(max-width: 1200px){
+  .howToSave-wrap__form{
+    margin: 0;
+  }
 }
 
 /* section-highClass */
