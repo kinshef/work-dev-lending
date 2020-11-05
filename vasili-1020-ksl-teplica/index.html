@@ -219,8 +219,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-2 position-relative">
-                    <div class="square__upToDown square__1 position-absolute square-value__7 radius__leftBottom bg_green"></div>
-                    <div class="square__upToDown__reverse square__2 position-absolute square-value__3 radius__leftTop bg_green"></div>
+                    <div class="square__upToDown top-0 right-0 position-absolute square-value__7 radius__leftBottom bg_green"></div>
+                    <div class="square__upToDown__reverse bottom-0 left-0 position-absolute square-value__3 radius__leftTop bg_green"></div>
                 </div>
                 <div class="col-7 py-5">
                     <div class="h2 m-0">
@@ -231,9 +231,9 @@
                     <div class="font-weight-light">Не требовать ремонта, не заставлять нервничать при сильных ветрах и снегопадах, окупать себя хорошим урожаем.</div>
                 </div>
                 <div class="col-3 position-relative">
-                    <div class="square__upToDown square__3 position-absolute square-value__3 radius__leftBottom bg_blackGreen"></div>
-                    <div class="square__upToDown__reverse square__4 position-absolute square-value__14 radius__rightTop bg_blackGreen"></div>
-                    <div class="square__upToDown__reverse square__5 position-absolute square-value__5 radius__leftBottom bg_blackGreen"></div>
+                    <div class="square__upToDown top-0 left-0 position-absolute square-value__3 radius__leftBottom bg_blackGreen"></div>
+                    <div class="square__upToDown__reverse bottom-0 right-0 position-absolute square-value__14 radius__rightTop bg_blackGreen"></div>
+                    <div class="square__upToDown__reverse bottom-0 left-0 position-absolute square-value__5 radius__leftBottom bg_blackGreen"></div>
                 </div>
             </div>
         </div>
@@ -243,12 +243,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-2">
-                    <div class="square__upToDown__reverse square__6 position-absolute square-value__3 radius__rightBottom bg-white"></div>
-                    <div class="square__upToDown square__7 position-absolute square-value__14 radius__leftTop bg-white"></div>
+                    <div class="square__upToDown__reverse top-0 right-0 position-absolute square-value__3 radius__rightBottom bg-white"></div>
+                    <div class="square__upToDown left-0 square__1 position-absolute square-value__14 radius__leftTop bg-white"></div>
                 </div>
                 <div class="col-4">
                     <div class="highClass text-white font-weight-light text-right">
-                        <div class="text-uppercase text-size-7 text-left font-weight-bold mb-4 castom_shadow">ПОЛИКАРБОНАТ ВЫСОКОГО КЛАССА</div>
+                        <div class="text-uppercase text-size-7 text-left font-weight-bold mb-4 castom_shadow__title">ПОЛИКАРБОНАТ ВЫСОКОГО КЛАССА</div>
                         <ul class="text-size-5 text-left orange__ul">
                             <li>Высокая теплоизоляция - <span class="font-weight-bold">выдерживает перепады от -50°С до +60°С.</span></li>
                             <li><span class="font-weight-bold">Рассеивает солнечный свет,</span> защищая растения от ожогов.</li>
@@ -271,7 +271,7 @@
             <div class="row">
                 <div class="col-4 offset-6">
                     <div class="prochnKarkas text-white font-weight-light">
-                        <div class="text-uppercase text-size-7 font-weight-bold mb-4 castom_shadow">МАКСИМАЛЬНАЯ ПРОЧНОСТЬ КАРКАСА</div>
+                        <div class="text-uppercase text-size-7 font-weight-bold mb-4 castom_shadow__title">МАКСИМАЛЬНАЯ ПРОЧНОСТЬ КАРКАСА</div>
                         <ul class="text-size-5 green__ul">
                             <li>Высокая теплоизоляция - <span class="font-weight-bold">выдерживает перепады от -50°С до +60°С.</span></li>
                             <li><span class="font-weight-bold">Рассеивает солнечный свет,</span> защищая растения от ожогов.</li>
@@ -302,6 +302,10 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-2">
+                    <div class="square__upToDown__reverse top-0 left-0 position-absolute square-value__7 radius__leftBottom bg_orange"></div>
+                    <div class="square__upToDown square__2 right-0 position-absolute square-value__3 radius__rightTop bg_orange"></div>
+                </div>
                 <div class="col-12">
                     <div class="section_title text-center text-uppercase">
                         <div class="font-weight-bold">ДОКАЗАЛИ СВОЮ НАДЕЖНОСТЬ</div>
@@ -395,7 +399,7 @@
                                 </div>
                             </div>
                             <div class="col-12 text-center py-5">
-                                <a href="#modal-product1" data-toggle="modal" class="btn_custom text-uppercase w-auto px-5 font-weight-bold text-size-6">подробнее</a>
+                                <a href="#modal-product1" data-toggle="modal" class="btn_custom btn_product text-uppercase w-auto px-5 font-weight-bold text-size-6">подробнее</a>
                             </div>
                         </div>
                     </form>
@@ -441,19 +445,25 @@
     <div id="modal-product1" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-body text-center">
+                <div class="modal-body p-0 text-center">
                     <div class="container">
                         <div class="row">
                             <div class="col-3 offset-1">
-
+                                <a href="#modal-product3" data-toggle="modal" class="modal-prBtn">
+                                    <div class="modal-prBtn__prevIcon"><i class="fa fa-chevron-left"></i></div>
+                                    <div class="font-weight-light">Новатор Премиум</div>
+                                </a>
                             </div>
                             <div class="col-4">
-                                <div class="font-weight-bold section_title">
+                                <div class="font-weight-bold section_title my-3">
                                     Новатор Титан
                                 </div>
                             </div>
-                            <div class="col-3">
-
+                            <div class="col-3 ">
+                                <a href="#modal-product1" data-toggle="modal" class="modal-prBtn">
+                                    <div class="modal-prBtn__nextIcon"><i class="fa fa-chevron-right"></i></div>
+                                    <div class="font-weight-light">Новатор Премиум</div>
+                                </a>
                             </div>
                             <div class="col-1">
                                 <button type="button" class="close p-3" data-dismiss="modal" aria-label="Close">
@@ -479,57 +489,109 @@
                                 </div>
                             </div>
 
+
                             <div class="col-8 offset-2 text-left">
                                 <div class="font-weight-bold text-size-7 mt-3">Характеристики:</div>
                             </div>
-                            <div class="col-3">
 
+                            <div class="col-3">
+                                <div class="square__upToDown__reverse right-0 square__modal_1 right-0 position-absolute square-value__10 radius__leftBottom bg_green"></div>
+                                <div class="square__upToDown square__modal_2 position-absolute square-value__3 radius__leftTop bg_green"></div>
                             </div>
-                            <div class="col-7">
-                                <ul class="text-size-5 green__ul text-left font-weight-light py-2">
-                                    <li class="li-line my-2">
+                            <div class="col-7 text-left">
+                                <ul class="text-size-5 green__ul font-weight-light py-2">
+                                    <li class="li-line my-3">
                                         <div>Производитель</div>
                                         <div class="li-line__dotted"></div>
                                         <div>Ижевск</div>
                                     </li>
-                                    <li class="li-line">
+                                    <li class="li-line my-3">
                                         <div>Размер базового модуля</div>
                                         <div class="li-line__dotted"></div>
                                         <div>3х4 <span class="text_green">м</span></div>
                                     </li>
-                                    <li class="li-line">
+                                    <li class="li-line my-3">
                                         <div>Профиль основания</div>
                                         <div class="li-line__dotted"></div>
                                         <div>жесткие стальные трубы, 40х40 <span class="text_green">мм</span></div>
                                     </li>
-                                    <li class="li-line">
+                                    <li class="li-line my-3">
                                         <div>Профиль арок</div>
                                         <div class="li-line__dotted"></div>
                                         <div>стальные трубы, загнутые по ребру, 20х40 <span class="text_green">мм</span></div>
                                     </li>
-                                    <li class="li-line">
+                                    <li class="li-line my-3">
                                         <div>Двери и форточки</div>
                                         <div class="li-line__dotted"></div>
                                         <div>2 <span class="text_green">мм</span></div>
                                     </li>
                                  </ul>
+                                <div class="font-weight-light">Изначально длина <span class="font-weight-normal">конструкции равна 4 метрам, но она легко увеличивается (кратно 2 метрам).</span> Установить добавочные элементы и нарастить площадь теплицы можно сразу или же спустя некоторое время, когда в этом возникнет необходимость.</div>
                             </div>
 
 
-                            <!-- <div class="col-10 offset-1">
-                                <form>
+                            <div class="col-8 offset-2 text-left">
+                                <div class="font-weight-bold text-size-7 mt-3">Также в базовый комплект входят:</div>
+                            </div>
+
+                            <div class="col-4 offset-3 text-left">
+                                <ul class="text-size-5 green__ul font-weight-light py-2">
+                                    <li class="my-3"><span class="font-weight-bold">Ручки с защелкиванием;</span></li>
+                                    <li class="my-3"><span class="font-weight-bold">Фиксаторы,</span> предотвращающие запахивание форточек и дверей;</li>
+                                    <li class="my-3"><span class="font-weight-bold">Специальные петли</span> для подвязывания растений.</li>
+                                 </ul>
+                            </div>
+                            <div class="col-4 offset-1">
+                                <div class="square__upToDown__reverse top-0 left-0 position-absolute square-value__14 radius__rightTop bg_orange"></div>
+                            </div>
+
+
+                            <div class="col-8 offset-2 text-left">
+                                <div class="font-weight-bold text-size-7 mt-3">Дополнительные опции:</div>
+                            </div>
+
+                            <div class="col-3">
+                                <div class="square__upToDown right-0 square__modal_1 right-0 position-absolute square-value__10 radius__leftBottom bg_green"></div>
+                                <div class="square__upToDown__reverse square__modal_3 position-absolute square-value__3 radius__leftBottom bg_green"></div>
+                            </div>
+                            <div class="col-7 text-left">
+                                <ul class="text-size-5 green__ul font-weight-light py-2">
+                                    <li class="my-3"><span class="font-weight-bold">Перегородки для разделения культур</span> (позволяют обеспечить разницу климатических условий);</li>
+                                    <li class="my-3"><span class="font-weight-bold">Системы капельного полива</span> (ручные, полуавтоматические, автоматические);</li>
+                                    <li class="my-3"><span class="font-weight-bold">Механизмы, обеспечивающие автопроветривание</span> (форточки монтируются в любое место крыши, гидроцилиндры для автоматического открывания).</li>
+                                 </ul>
+                            </div>
+                            <div class="col-2">
+                                <div class="square__upToDown square__modal_4 position-absolute square-value__5 radius__rightBottom bg_orange"></div>
+                            </div>
+
+
+                            <div class="col-12 bg_green modal-form">
+                                <form class="py-5">
                                     <input type="hidden" name="form" value="Окно заказа">
-                                    <div class="form-group">
-                                        <input type="text" name="name" class="form-control" placeholder="Ваше имя">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-danger shadow">Отправить заявку</button>
+                                    <div class="row">
+                                        <div class="col-12 mb-3">
+                                            <div class="text-uppercase text-size-7 castom_shadow__title text-white font-weight-bold">ЗАКАЖИТЕ КОНСУЛЬТАЦИЮ</div>
+                                            <div class="font-weight-light text-white text-size-5 castom_shadow__text">Ответ в течение 15 мин</div>
+                                        </div>
+                                        <div class="col-4 offset-2">
+                                            <div class="form-group">
+                                                <input type="text" name="name" class="form-control border-radius-30 h-auto p-3" placeholder="Ваше имя">
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="form-group">
+                                                <input type="tel" name="phone" class="form-control border-radius-30 h-auto p-3" placeholder="Номер телефона" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <button type="submit" class="d-block text-size-5 font-weight-bold w-50 btn_custom text-uppercase border-0">ЗАКАЗАТЬ Консультацию</button>
+                                            </div> 
+                                        </div>
                                     </div>
                                 </form>
-                            </div> -->
+                            </div>
 
                         </div>
                     </div>

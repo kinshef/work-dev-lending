@@ -1,23 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
 
-
-/*.fone_roboto{
-  font-family: Roboto, sans-serif;
-}*/
-/*@font-face {
-  font-family: "Phenomena";
-  src: url("../font/Phenomena/Phenomena-ExtraBold.eot");
-  src: url("../font/Phenomena/Phenomena-ExtraBold.eot?#iefix") format("embedded-opentype"),
-    url("../font/Phenomena/Phenomena-ExtraBold.woff") format("woff"), 
-    url("../font/Phenomena/Phenomena-ExtraBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 800;
-}*/
-/*.font-weight-800{
-  font-weight: 800;
-}*/
-
 body {
   font-family: Roboto, serif;
 }
@@ -169,11 +152,17 @@ a:hover {
 .bg_blackGreen{
   background-color: #66b329;
 }
+.bg_orange{
+  background-color: #ffb600;
+}
 .btn{
   white-space: normal;
 }
-.castom_shadow{
+.castom_shadow__title{
   text-shadow: 0 2px 0 rgba(0,0,0,.4);
+}
+.castom_shadow__text{
+  text-shadow: 0 1px 0 rgba(0,0,0,.4);
 }
 .line-height-1{
   line-height: 1;
@@ -189,6 +178,18 @@ a:hover {
 }
 .radius__rightBottom{
   border-radius: 0 0 70% 0;
+}
+.top-0{
+  top: 0;
+}
+.left-0{
+  left: 0;
+}
+.bottom-0{
+  bottom: 0;
+}
+.right-0{
+  right: 0;
 }
 .square__upToDown,
 .square__upToDown__reverse {
@@ -211,11 +212,6 @@ a:hover {
   100% {
     transform: translateY(15%)
   }
-}
-
-.green__ul,
-.orange__ul{
-  margin-bottom: 5rem;
 }
 .green__ul li,
 .orange__ul li{
@@ -452,29 +448,13 @@ a:hover {
   width: 7rem;
   height: 7rem;
 }
+.square-value__10{
+  width: 10rem;
+  height: 10rem;
+}
 .square-value__14{
   width: 14rem;
   height: 14rem;
-}
-.square__1{
- top: 0;
- right: 0;
-}
-.square__2{
-  bottom: 0;
-  left: 0;
-}
-.square__3{
-  top: 0;
-  left: 0;
-}
-.square__4{
-  bottom: 0;
-  right: 0;
-}
-.square__5{
-  bottom: 0;
-  left: 0;
 }
 
 /* section-highClass */
@@ -485,13 +465,14 @@ a:hover {
 .highClass{
   padding: 10rem 0 0;
 }
-.square__6{
-  top: 0;
-  right: 0;
+.section-highClass .orange__ul{
+  margin-bottom: 5rem;
 }
-.square__7{
-  left: 0;
+.square__1{
   top: 7rem;
+}
+.square__2{
+  bottom: -10rem;
 }
 .highClass__warranty{
   color: #000;
@@ -526,6 +507,9 @@ a:hover {
   font-size: 2em;
   line-height: 0.8em;
 }
+.section-prochnKarkas .green__ul{
+  margin-bottom: 5rem;
+}
 
 /* section-catalog */
 .catalog-form__top{
@@ -555,6 +539,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s;
 }
 .owl-carousel-catalog .owl-next{
   transform: translate(100%);
@@ -591,11 +576,61 @@ a:hover {
 .castom_input .c__input label:hover {
   border-color: #7cb615;
 }
+.btn_product{
+  position: relative;
+}
+.btn_product:before,
+.btn_product:after{
+  content: '';
+  position: absolute;
+  top: calc(50% - 1.5px);
+  width: 75%;
+  height: 3px;
+  background-color: #000;
+  border-radius: 2px
+}
+.btn_product:before{
+  left: -100%;
+}
+.btn_product:after{
+  right: -100%;
+}
 
 /* modal-product */
 .modal-product .modal-content{
   border-radius: 50px;
-  overflow: hidden;
+  box-shadow: 0 20px 40px #000;
+}
+.modal-prBtn{
+  padding: 1rem 0;
+  display: block;
+  transition: all 0.3s;
+}
+.modal-prBtn__nextIcon,
+.modal-prBtn__prevIcon{
+  padding: 0.6rem 0.7rem 0.4rem;
+  font-size: 24px;
+  color: #fa990e;
+  transition: all 0.3s;
+  border: 5px solid #fa990e;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-prBtn__prevIcon {
+  border-radius: 70% 0 0 0;
+}
+.modal-prBtn__nextIcon{
+  border-radius: 0 70% 0 0;
+}
+.modal-prBtn:hover{
+  color: #fa990e;
+}
+.modal-prBtn:hover .modal-prBtn__prevIcon,
+.modal-prBtn:hover .modal-prBtn__nextIcon{
+  color: #a6cd5f;
+  border: 5px solid #ffb600;
 }
 .owl-carousel-modal .owl-stage-outer{
   border-radius: 20rem 20rem 0 0;
@@ -635,6 +670,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s;
 }
 .owl-carousel-modal .owl-next{
   border-radius: 0 0 70% 0;
@@ -647,10 +683,8 @@ a:hover {
 .owl-carousel-modal .owl-nav .owl-prev:hover,
 .owl-carousel-modal .owl-nav .owl-next:hover{
   color: #a6cd5f;
+  border: 5px solid #ffb600;
 }
-
-
-
 .li-line{
   display: flex;
   justify-content: space-between;
@@ -669,4 +703,21 @@ a:hover {
   left: 0.25rem;
   right: 0.25rem;
 }
-
+.square__modal_1{
+  top: 2rem;
+}
+.square__modal_2{
+  left: 2rem;
+  bottom: -2rem;
+}
+.square__modal_3{
+  left: -2rem;
+  bottom: 2rem;
+}
+.square__modal_4{
+  right: -3rem;
+  top: 0;
+}
+.modal-form{
+  border-radius: 0 0 50px 50px;
+}
