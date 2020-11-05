@@ -157,7 +157,7 @@ a:hover {
 }
 
 /* Custom */
-.text_orenge{
+.text_orange{
   color: #ffb600;
 }
 .text_green{
@@ -211,6 +211,33 @@ a:hover {
   100% {
     transform: translateY(15%)
   }
+}
+
+.green__ul,
+.orange__ul{
+  margin-bottom: 5rem;
+}
+.green__ul li,
+.orange__ul li{
+  padding-left: 2rem;
+  position: relative;
+  text-shadow: 0 1px 0 rgba(0,0,0,.4);
+}
+.green__ul li:before,
+.orange__ul li:before{
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: calc(50% - 5px);
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.orange__ul li:before{
+  border: 3px solid #f0aa06;
+}
+.green__ul li:before{
+  border: 3px solid #7aa40e;
 }
 /* btn_custom */
 .btn_custom{
@@ -421,10 +448,6 @@ a:hover {
   width: 5rem;
   height: 5rem;
 }
-.square-value__6{
-  width: 6rem;
-  height: 6rem;
-}
 .square-value__7{
   width: 7rem;
   height: 7rem;
@@ -432,10 +455,6 @@ a:hover {
 .square-value__14{
   width: 14rem;
   height: 14rem;
-}
-.square-value__17{
-  width: 17rem;
-  height: 17rem;
 }
 .square__1{
  top: 0;
@@ -474,24 +493,6 @@ a:hover {
   left: 0;
   top: 7rem;
 }
-.highClass__ul{
-  margin-bottom: 5rem;
-}
-.highClass__ul li{
-  padding-left: 2rem;
-  position: relative;
-  text-shadow: 0 1px 0 rgba(0,0,0,.4);
-}
-.highClass__ul li:before{
-  content: '';
-  position: absolute;
-  left: 8px;
-  top: calc(50% - 5px);
-  border: 3px solid #f0aa06;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-}
 .highClass__warranty{
   color: #000;
   font-size: 2.4em;
@@ -512,24 +513,6 @@ a:hover {
 }
 .prochnKarkas{
   padding: 10rem 0 0;
-}
-.prochnKarkas__ul{
-  margin-bottom: 5rem;
-}
-.prochnKarkas__ul li{
-  padding-left: 2rem;
-  position: relative;
-  text-shadow: 0 1px 0 rgba(0,0,0,.4);
-}
-.prochnKarkas__ul li:before{
-  content: '';
-  position: absolute;
-  left: 8px;
-  top: calc(50% - 5px);
-  border: 3px solid #7aa40e;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
 }
 .prochnKarkas__warranty{
   color: #000;
@@ -584,9 +567,6 @@ a:hover {
 .owl-carousel-catalog .owl-nav .owl-next:hover{
   color: #a6cd5f;
 }
-
-
-
 .castom_input .c__input input {
   display: none;
 }
@@ -612,28 +592,14 @@ a:hover {
   border-color: #7cb615;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* modal-product */
 .modal-product .modal-content{
   border-radius: 50px;
   overflow: hidden;
 }
-
-
 .owl-carousel-modal .owl-stage-outer{
   border-radius: 20rem 20rem 0 0;
 }
-
-
 .owl-carousel-modal .owl-dots{
   display: flex;
   justify-content: space-between;
@@ -655,8 +621,6 @@ a:hover {
   border: 5px solid #7cb615;
   transition: border 0.3s;
 }
-
-
 .owl-carousel-modal .owl-next,
 .owl-carousel-modal .owl-prev{
   position: absolute;
@@ -685,4 +649,24 @@ a:hover {
   color: #a6cd5f;
 }
 
+
+
+.li-line{
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+.li-line__dotted{
+  position: relative;
+  width: 100%;
+  align-content: stretch;
+}
+.li-line__dotted::after{
+  content: '';
+  position: absolute;
+  border-bottom: 1px dotted  #000;
+  top: 55%;
+  left: 0.25rem;
+  right: 0.25rem;
+}
 
