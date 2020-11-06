@@ -6,11 +6,12 @@ $(document).ready(function () {
 
         var product = $("input[name='product']", form).val();
         var length = $("input[name='length']:checked", form).val();
+        var dugi = $("input[name='dugi']:checked", form).val();
         var additional = $("input[name='additional[]']:checked", form);
 
         var sum = 0;
 
-        sum += calculator.products[product][length];
+        sum += calculator.products[product][length][dugi];
 
         additional.each(function (i, e) {
             sum += calculator.additional[$(e).val()]
