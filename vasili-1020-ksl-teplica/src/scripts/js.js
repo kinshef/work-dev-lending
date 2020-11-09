@@ -88,6 +88,35 @@ $(function () {
         navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
     });
 
+    $('.modal-prBtn').click(function(){
+        // console.log($('.modal-product'));
+        // $('.modal-product').each(function(indx, elem){
+        //     if(elem.classList.contains('show')){
+        //         console.log(elem)
+        //         elem.modal('toggle');
+        //     }
+        // })
+        // console.log($($(this).attr('href')));
+        // console.log(this);
+        // $(".modal").modal("hide");
+        // $('.modal-product').modal('hide');
+        // $('.modal-product').modal('dispose');
+        // $('.modal-product').hide()
+        // $($(this).attr('href')).modal('show');
+        // $("body").addClass('modal-open');
+        // $($(this).attr('href')).show()
+
+        var hideModal = function(asd){
+            var showModal = function(modal){
+                modal.modal('show');
+            }
+            $(".modal").modal("hide");
+            showModal($($(asd).attr('href')))
+        }
+        hideModal(this);
+    })
+
+
 
  // links hightLight after scroll page
 //   $.fn.nav = function (item) {

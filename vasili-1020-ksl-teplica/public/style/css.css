@@ -324,9 +324,9 @@ a:hover {
 
 /* section-main */
 .section-main{
-  padding: 10rem 0;
+  padding-top: 10rem;
   background: url(../assets/img/back/header-bg.jpg) no-repeat center top;
-  background-size: content;
+  background-size: contain;
 }
 .main-wrap{
   position: relative;
@@ -384,6 +384,7 @@ a:hover {
   border: 9px solid #64a111;
   border-radius: 50px;
   height: auto;
+  width: 80%;
 }
 .main-advantages__btnWrap a.btn_custom{
   padding: 20px;
@@ -425,6 +426,9 @@ a:hover {
   .main-wrap:before{
     display: none;
   }
+  .main-advantages__btnWrap{
+    width: 100%;
+  }
 }
 
 /* section-review */
@@ -445,11 +449,11 @@ a:hover {
   justify-content: center;
 }
 .owl-carousel-review .owl-nav .owl-prev{
-  left: -3rem;
+  left: -3.5rem;
   border-radius: 0 0 0 30px;
 }
 .owl-carousel-review .owl-nav .owl-next{
-  right: -3rem;
+  right: -3.5rem;
   border-radius: 0 0 30px 0;
 }
 .owl-carousel-review .owl-nav .owl-prev:hover,
@@ -693,13 +697,19 @@ a:hover {
   width: 75%;
   white-space: nowrap;
 }
-.catalog-form__table td{
-  /* padding: 0 .75rem; */
+@media(max-width: 768px){
+  .catalog-form__top{
+    background: none;
+    padding: 0;
+  }
+  .btn_product:before, .btn_product:after{
+    display: none;
+  }
+  .catalog-form__table{
+    width: 100%;
+    white-space: normal;
+  }
 }
-
-
-
-
 
 
 
@@ -832,4 +842,48 @@ a:hover {
 }
 .modal-form{
   border-radius: 0 0 50px 50px;
+}
+.modal-product .btn_custom{
+  width: 50%;
+}
+@media(max-width: 992px){
+  .owl-carousel-modal .owl-dot {
+    max-height: 5rem;
+    max-width: 6rem;
+  }
+  .owl-carousel-modal .owl-dots{
+    padding: 0.5rem 3rem;
+  }
+  .owl-carousel-modal .owl-prev {
+    left: 0rem;
+  }
+  .owl-carousel-modal .owl-next {
+    right: 0rem;
+  }
+  .owl-carousel-modal .owl-next, .owl-carousel-modal .owl-prev{
+    bottom: 3rem;
+  }
+}
+@media(max-width: 430px){
+  .owl-carousel-modal .owl-dot{
+    width: 30px;
+    height: 30px;
+  }
+  .owl-carousel-modal .owl-dots{
+    justify-content: center;
+  }
+  .owl-carousel-modal .owl-dot img{
+    border-width: 3px;
+    border-radius: 50%;
+  }
+  .owl-carousel-modal .owl-dot.active img{
+    border-width: 3px;
+  }
+  .owl-carousel-modal .owl-next, .owl-carousel-modal .owl-prev {
+    bottom: 0;
+    transform: translate(0, 0);
+  }
+  .modal-product .btn_custom{
+    width: 100%;
+  }
 }
