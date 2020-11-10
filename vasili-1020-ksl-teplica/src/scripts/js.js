@@ -53,12 +53,11 @@ $(function () {
         return false
     });
 
-// $("a.smoothscroll").click(function(a) {
-//     "" !== this.hash && (a.preventDefault(), a = this.hash, $("html, body").animate({
-//         scrollTop: $(a).offset().top
-//     }, 400))
-// });
-
+    $("a.smoothscroll").click(function(a) {
+        "" !== this.hash && (a.preventDefault(), a = this.hash, $("html, body").animate({
+            scrollTop: $(a).offset().top
+        }, 400))
+    });
 
     $(".owl-carousel-review").owlCarousel({
         items: 1,
@@ -77,7 +76,6 @@ $(function () {
         autoHeight:true,
         navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
     });
-
     $(".owl-carousel-modal").owlCarousel({
         items: 1,
         nav: true,
@@ -88,67 +86,43 @@ $(function () {
         navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
     });
 
-    $('.modal-prBtn').click(function(){
-        // console.log($('.modal-product'));
-        // $('.modal-product').each(function(indx, elem){
-        //     if(elem.classList.contains('show')){
-        //         console.log(elem)
-        //         elem.modal('toggle');
-        //     }
-        // })
-        // console.log($($(this).attr('href')));
-        // console.log(this);
-        // $(".modal").modal("hide");
-        // $('.modal-product').modal('hide');
-        // $('.modal-product').modal('dispose');
-        // $('.modal-product').hide()
-        // $($(this).attr('href')).modal('show');
-        // $("body").addClass('modal-open');
-        // $($(this).attr('href')).show()
-
-        var hideModal = function(asd){
-            var showModal = function(modal){
-                modal.modal('show');
+    // fix problems when changing modals
+    $('.modal-prBtn').click(function changeBody(){
+        setTimeout(function(){
+            if($('body').hasClass('modal-open')){
+                changeBody()
+            }else{
+                $('body').addClass('modal-open');
             }
-            $(".modal").modal("hide");
-            showModal($($(asd).attr('href')))
-        }
-        hideModal(this);
+        }, 40)
     })
-
-
-
- // links hightLight after scroll page
-//   $.fn.nav = function (item) {
-//     var point = {
-//       offset: 0
-//     };
-//     $.extend(point, item);
-//     var links = this;
-//     $(links).each(function (a, index) {
-//       var link = $(index.hash);
-//       var place = $(link).offset();
-//       $(window).scroll(function () {
-//         var newPoint = $(window).scrollTop() + point.offset;
-//         place.top < newPoint && newPoint < place.top + $(link).height() && ($(links).removeClass("active"), $(index).addClass("active"))
-//       })
-//     })
-//   };
-//   $(".js-nav-scroll").nav({
-//     offset: 150
-//   });
-// });
+    // fix problems when changing modals end
 
 });
 document.addEventListener("DOMContentLoaded", function () {
 
-/* countdown */
-    // try {
-    //     var dateEnd = new Date();
-    //     dateEnd.setDate(dateEnd.getDay() ? dateEnd.getDate() - dateEnd.getDay() + 8 : dateEnd.getDate() + 1);
-    //     dateEnd.setHours(0, 0, 0);
-    //     var countdown = new LightCountdown(".countdown-week", dateEnd, {animation: "animated flipInX", animationDuration: "600ms"});
-    // } catch (e) {console.error(e);}
+    try {
+        var raccoon = document.querySelector('.section-weWork');
+        document.onscroll = function () {
+            
+            var targetPosition = {
+                top: window.pageYOffset + raccoon.getBoundingClientRect().top,
+                bottom: window.pageYOffset + raccoon.getBoundingClientRect().bottom
+            },
+            windowPosition = {
+                top: window.pageYOffset,
+                bottom: window.pageYOffset + document.documentElement.clientHeight
+            };
+            
+            if(targetPosition.bottom > windowPosition.top && targetPosition.top < windowPosition.bottom){
+                raccoon.classList.add('active');
+            } else {
+                raccoon.classList.remove('active');
+            }
+        };
+    } catch (error) {
+        console.log(error);
+    }
 
 });
 
