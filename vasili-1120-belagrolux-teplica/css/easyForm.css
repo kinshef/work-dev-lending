@@ -1,0 +1,53 @@
+.validation_message{}
+
+.easyForm .f_row{padding-bottom:10px;}
+.easyForm input.f_txt{width:100%;padding:8px 20px;border: 1px solid #e0e1e1; background-color: #fbfcfc;border-radius:25px;}
+.easyForm input.f_ver{width:100%;padding:0 20px;border: 1px solid #e0e1e1; background-color: #fbfcfc;line-height:38px;border-radius:25px;}
+.easyForm textarea.f_txtarea{width:100%;height:80px;padding:0 10px;border: 1px solid #e0e1e1; background-color: #fbfcfc;line-height:38px;}
+.easyForm label{margin-right:20px;}
+.easyForm select{width:100%;padding:0 10px;border: 1px solid #e0e1e1; background-color: #fbfcfc;}
+.easyForm .f_sendbutton input[type='submit']{
+    width: 100%;
+    -webkit-box-shadow: 0 1px 6px rgba(0,0,0,0.12);
+    box-shadow: 0 1px 6px rgba(0,0,0,0.12);
+    -webkit-transition: -webkit-box-shadow 0.2s ease-out, background-color 0.2s ease;
+    transition: box-shadow 0.2s ease-out, background-color 0.2s ease;
+    background-color: #007dd1;
+    border: 0;
+    line-height: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+	border-radius:25px;
+}
+.easyForm .f_sendbutton input[type='submit']:hover{
+	background: #445bdd;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+}
+.easyForm checkbox{border:solid 1px white;}
+
+.easyForm_errors{position:fixed;right:0;top:0;width:250px;z-index:10000;background:#cc0000;color:white;padding:10px;border-radius:5px;}
+
+.easyForm input.invalid,.easyForm textarea.invalid,.easyForm select.invalid{border-color:#cc0000;}
+.easyForm input.required,.easyForm textarea.required,.easyForm select.invalid,.easyForm radio.invalid,.easyForm checkbox.invalid{border-color:#cc0000;}
+
+div.required{border:solid 1px #cc0000;}
+.f_zagol{
+	font-size:22px;
+	font-weight:300;
+	text-align:center;
+	margin-bottom:20px;
+}
+.red{
+	color: #FF0000;
+}
+.form-box{
+	background-color: rgba(255,255,255,0.82);
+    border-radius: 5px;
+	padding:40px 30px;
+}
+.form-order{
+	width: 300px;
+    margin: 0 auto;
+}

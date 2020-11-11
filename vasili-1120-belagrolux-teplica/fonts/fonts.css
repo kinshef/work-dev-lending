@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900&display=swap&subset=cyrillic');
+
+@font-face {
+    font-family: neuron-extrabold;
+    src: url('./neuron-extrabold.eot');
+    src: url('./neuron-extrabold.eot?#iefix') format('embedded-opentype'),
+    url('./neuron-extrabold.woff') format('woff'),
+    url('./neuron-extrabold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: neuron-black;
+    src: url('./neuron-black.eot');
+    src: url('./neuron-black.eot?#iefix') format('embedded-opentype'),
+    url('./neuron-black.woff') format('woff'),
+    url('./neuron-black.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: neuron;
+    src: url('./neuron.eot');
+    src: url('./neuron.eot?#iefix') format('embedded-opentype'),
+    url('./neuron.woff') format('woff'),
+    url('./neuron.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: neuron-demibold;
+    src: url('./neuron-demibold.eot');
+    src: url('./neuron-demibold.eot?#iefix') format('embedded-opentype'),
+    url('./neuron-demibold.woff') format('woff'),
+    url('./neuron-demibold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: neuron-bold;
+    src: url('./neuron-bold.eot');
+    src: url('./neuron-bold.eot?#iefix') format('embedded-opentype'),
+    url('./neuron-bold.woff') format('woff'),
+    url('./neuron-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: droid_sans;
+    src: url('./droidsans.eot');
+    src: url('./droidsans.eot?#iefix') format('embedded-opentype'),
+    url('./droidsans.woff') format('woff'),
+    url('./droidsans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: droid_sans_bold;
+    src: url('./droidsans-bold.eot');
+    src: url('./droidsans-bold.eot?#iefix') format('embedded-opentype'),
+    url('./droidsans-bold.woff') format('woff'),
+    url('./droidsans-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal
+}
