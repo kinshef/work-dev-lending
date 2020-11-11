@@ -150,25 +150,31 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         var windscroll = $(window).scrollTop();
-        if (windscroll >= 500) {
-            $('body').addClass('scrolled');
-            if (windscroll >= 600) {
-                $('body').addClass('is-left-sidebar');
-                $('section[data-anchor]').each(function (i) {
-                    if ($(this).position().top - 200 <= windscroll + 140) {
-                        $('.left-sidebar i.current').removeClass('current');
-                        $('.left-sidebar i').eq(i).addClass('current');
-                    }
-                });
+        console.log(window.innerWidth)
+        if(window.innerWidth > 576){
+            if (windscroll >= 500) {
+                $('#section-nav').css('display', 'block')
+                $('body').addClass('scrolled');
+                if (windscroll >= 600) {
+                    $('body').addClass('is-left-sidebar');
+                    $('section[data-anchor]').each(function (i) {
+                        if ($(this).position().top - 200 <= windscroll + 140) {
+                            $('.left-sidebar i.current').removeClass('current');
+                            $('.left-sidebar i').eq(i).addClass('current');
+                        }
+                    });
+                } else {
+                    $('body').removeClass('is-left-sidebar');
+                }
             } else {
-                $('body').removeClass('is-left-sidebar');
+                $('body').removeClass('scrolled').removeClass('is-left-sidebar');
+                $('.left-sidebar i.current').removeClass('current');
+                $('.left-sidebar i:first').addClass('current');
             }
-        } else {
-            $('body').removeClass('scrolled').removeClass('is-left-sidebar');
-            $('.left-sidebar i.current').removeClass('current');
-            $('.left-sidebar i:first').addClass('current');
+        }else{
+            $('body').addClass('scrolled');
+            $('#section-nav').css('display', 'none');
         }
-
     }).scroll();
 
 

@@ -103,9 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
         c();
         // e()
     })
-});
-
-document.addEventListener("DOMContentLoaded", function () {
 
     var cardText = document.querySelectorAll('.card.product_card--shadow>.card-body>.card-text');
     var maxHidP = 0;
@@ -117,10 +114,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     }
-
-});
-
-document.addEventListener('DOMContentLoaded', function(){
 
     try{
         /* countdown */

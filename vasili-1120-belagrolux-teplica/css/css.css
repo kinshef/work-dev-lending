@@ -208,9 +208,9 @@ body {
         color: #FFFFFF;
         font-family: neuron, sans-serif;
         font-size: 18px;
-        line-height: 40px;
+        /* line-height: 40px; */
         text-align: center;
-        padding: 0 11px;
+        padding: 5px 11px;
         text-shadow: 1px -1px 3px rgba(106, 143, 27, 0.7);
         text-transform: uppercase;
         border-bottom-color: transparent;
