@@ -46,6 +46,9 @@ li{
 .modal-xl {
   max-width: 1140px;
 }
+button.close{
+  z-index: 100;
+}
 .carousel-control-prev,
 .carousel-control-next{
   text-shadow: 2px 2px 2px black;
