@@ -150,7 +150,6 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         var windscroll = $(window).scrollTop();
-        console.log(window.innerWidth)
         if(window.innerWidth > 576){
             if (windscroll >= 500) {
                 $('#section-nav').css('display', 'block')

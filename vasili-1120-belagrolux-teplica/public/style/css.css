@@ -1,4 +1,4 @@
-@import url('../fonts/fonts.css');
+@import url('../assets/fonts/fonts.css');
 
 body {
     font-family: neuron, sans-serif;
@@ -332,16 +332,16 @@ body.is-left-sidebar .left-sidebar .ico-title.current:after {
 
 
 body.is-left-sidebar .left-sidebar .ico-top {
-    background: url('../img/ico-sprite.png') no-repeat 0 0
+    background: url('../assets/img/ico-sprite.png') no-repeat 0 0
 }
 
 body.is-left-sidebar .left-sidebar .ico-advantages {
-    background: url('../img/ico-sprite.png') no-repeat -21px 0;
+    background: url('../assets/img/ico-sprite.png') no-repeat -21px 0;
 }
 
 body.is-left-sidebar .left-sidebar .ico-advantages:hover,
 body.is-left-sidebar .left-sidebar .ico-advantages.current {
-    background: url('../img/ico-sprite.png') no-repeat -21px -21px;
+    background: url('../assets/img/ico-sprite.png') no-repeat -21px -21px;
 }
 
 body.is-left-sidebar .left-sidebar .ico-advantages:hover:after,
@@ -350,12 +350,12 @@ body.is-left-sidebar .left-sidebar .ico-advantages.current:after {
 }
 
 body.is-left-sidebar .left-sidebar .ico-catalog {
-    background: url('../img/ico-sprite.png') no-repeat -42px 0
+    background: url('../assets/img/ico-sprite.png') no-repeat -42px 0
 }
 
 body.is-left-sidebar .left-sidebar .ico-catalog:hover,
 body.is-left-sidebar .left-sidebar .ico-catalog.current {
-    background: url('../img/ico-sprite.png') no-repeat -42px -21px
+    background: url('../assets/img/ico-sprite.png') no-repeat -42px -21px
 }
 
 body.is-left-sidebar .left-sidebar .ico-catalog:hover:after,
@@ -364,12 +364,12 @@ body.is-left-sidebar .left-sidebar .ico-catalog.current:after {
 }
 
 body.is-left-sidebar .left-sidebar .ico-additional {
-    background: url('../img/ico-sprite.png') no-repeat -126px 0
+    background: url('../assets/img/ico-sprite.png') no-repeat -126px 0
 }
 
 body.is-left-sidebar .left-sidebar .ico-additional:hover,
 body.is-left-sidebar .left-sidebar .ico-additional.current {
-    background: url('../img/ico-sprite.png') no-repeat -126px -21px
+    background: url('../assets/img/ico-sprite.png') no-repeat -126px -21px
 }
 
 body.is-left-sidebar .left-sidebar .ico-additional:hover:after,
@@ -378,12 +378,12 @@ body.is-left-sidebar .left-sidebar .ico-additional.current:after {
 }
 
 body.is-left-sidebar .left-sidebar .ico-profit {
-    background: url('../img/ico-sprite.png') no-repeat -63px 0
+    background: url('../assets/img/ico-sprite.png') no-repeat -63px 0
 }
 
 body.is-left-sidebar .left-sidebar .ico-profit:hover,
 body.is-left-sidebar .left-sidebar .ico-profit.current {
-    background: url('../img/ico-sprite.png') no-repeat -63px -21px
+    background: url('../assets/img/ico-sprite.png') no-repeat -63px -21px
 }
 
 body.is-left-sidebar .left-sidebar .ico-profit:hover:after,
@@ -392,12 +392,12 @@ body.is-left-sidebar .left-sidebar .ico-profit.current:after {
 }
 
 body.is-left-sidebar .left-sidebar .ico-comparison {
-    background: url('../img/ico-sprite.png') no-repeat -84px 0
+    background: url('../assets/img/ico-sprite.png') no-repeat -84px 0
 }
 
 body.is-left-sidebar .left-sidebar .ico-comparison:hover,
 body.is-left-sidebar .left-sidebar .ico-comparison.current {
-    background: url('../img/ico-sprite.png') no-repeat -84px -21px
+    background: url('../assets/img/ico-sprite.png') no-repeat -84px -21px
 }
 
 body.is-left-sidebar .left-sidebar .ico-comparison:hover:after,
@@ -406,12 +406,12 @@ body.is-left-sidebar .left-sidebar .ico-comparison.current:after {
 }
 
 body.is-left-sidebar .left-sidebar .ico-benefits {
-    background: url('../img/ico-sprite.png') no-repeat -105px 0
+    background: url('../assets/img/ico-sprite.png') no-repeat -105px 0
 }
 
 body.is-left-sidebar .left-sidebar .ico-benefits:hover,
 body.is-left-sidebar .left-sidebar .ico-benefits.current {
-    background: url('../img/ico-sprite.png') no-repeat -105px -21px
+    background: url('../assets/img/ico-sprite.png') no-repeat -105px -21px
 }
 
 body.is-left-sidebar .left-sidebar .ico-benefits:hover:after,
@@ -420,12 +420,12 @@ body.is-left-sidebar .left-sidebar .ico-benefits.current:after {
 }
 
 body.is-left-sidebar .left-sidebar .ico-certificates {
-    background: url('../img/ico-sprite.png') no-repeat -126px 0
+    background: url('../assets/img/ico-sprite.png') no-repeat -126px 0
 }
 
 body.is-left-sidebar .left-sidebar .ico-certificates:hover,
 body.is-left-sidebar .left-sidebar .ico-certificates.current {
-    background: url('../img/ico-sprite.png') no-repeat -126px -21px
+    background: url('../assets/img/ico-sprite.png') no-repeat -126px -21px
 }
 
 body.is-left-sidebar .left-sidebar .ico-certificates:hover:after,
@@ -434,14 +434,14 @@ body.is-left-sidebar .left-sidebar .ico-certificates.current:after {
 }
 
 body.is-left-sidebar .left-sidebar .ico-bottom {
-    background: url('../img/ico-sprite.png') no-repeat -168px 0
+    background: url('../assets/img/ico-sprite.png') no-repeat -168px 0
 }
 
 /*----------------- end of Nav ----------------------*/
 
 /*-----------------section-main----------------------*/
 #section-main {
-    background-image: url("../img/back/fon-main.jpg");
+    background-image: url("../assets/img/back/fon-main.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -806,7 +806,7 @@ body.is-left-sidebar .left-sidebar .ico-bottom {
 
 /*--------------------section-installation---------------------*/
 .section-installation {
-    background: url("../img/meneger.jpg") no-repeat center bottom;
+    background: url("../assets/img/meneger.jpg") no-repeat center bottom;
 }
 
 .section-installation .h2 {
@@ -841,7 +841,7 @@ body.is-left-sidebar .left-sidebar .ico-bottom {
     width: 115px;
     height: 115px;
     border-radius: 58px;
-    background: url("../img/sale.png") no-repeat center center;
+    background: url("../assets/img/sale.png") no-repeat center center;
     position: absolute;
     z-index: 99;
     color: #fff;
@@ -862,7 +862,7 @@ body.is-left-sidebar .left-sidebar .ico-bottom {
     position: relative;
     margin-top: 39px;
     padding: 25px 35px;
-    background: rgba(0, 0, 0, 0) url("../img/bg_orange.jpg") no-repeat center center;
+    background: rgba(0, 0, 0, 0) url("../assets/img/bg_orange.jpg") no-repeat center center;
     background-color: #FFC632;
     background-size: cover;
 }
@@ -930,7 +930,7 @@ body.is-left-sidebar .left-sidebar .ico-bottom {
 
 /*--------------------section-question-------------------------*/
 .section-question {
-    background-image: url('../img/fon-last.jpg');
+    background-image: url('../assets/img/fon-last.jpg');
     background-size: cover;
     background-position: center;
 }
