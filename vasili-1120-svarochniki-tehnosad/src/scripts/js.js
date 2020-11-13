@@ -53,6 +53,20 @@ $(function () {
         return false
     });
 
+
+
+
+    var owl = $(".owl-carousel-mine").owlCarousel({
+        items: 1,
+        nav: true,
+        loop: true,
+        dots: false,
+        autoHeight:true,
+        navText: ['<i class="fa fa-2x fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-2x fa-angle-right" aria-hidden="true"></i>'],
+    });
+
+
+
 // $("a.smoothscroll").click(function(a) {
 //     "" !== this.hash && (a.preventDefault(), a = this.hash, $("html, body").animate({
 //         scrollTop: $(a).offset().top
@@ -84,14 +98,14 @@ $(function () {
 document.addEventListener("DOMContentLoaded", function () {
 
     try {
-        var prScroll = window.pageYOffset/(document.querySelector('.section-mine').offsetHeight/100);
-        document.querySelector('.header-content__items').style.clipPath = 'inset(0 0 0 '+prScroll+'%)';
-        window.addEventListener("scroll", function () {
-            prScroll = window.pageYOffset/(document.querySelector('.section-mine').offsetHeight/100);
+        var leftInset = function () {
+            prScroll = window.pageYOffset/(document.querySelector('.header-content').offsetWidth/100);
             if(prScroll<100){
-                document.querySelector('.header-content__items').style.clipPath = 'inset(0 0 0 '+prScroll+'%)';
+                document.querySelector('.header-content__items').style.clipPath = 'inset(0 0 0 calc('+prScroll+'% - '+(document.querySelector('.section-mine').offsetHeight - document.querySelector('.header-content').offsetWidth)+'px))';
             }
-        });
+        }
+        leftInset()
+        window.addEventListener("scroll", leftInset);
     } catch (e) {
         console.error(e);
     }
