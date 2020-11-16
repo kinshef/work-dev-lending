@@ -55,15 +55,23 @@ $(function () {
 
 
 
-
-    var owl = $(".owl-carousel-mine").owlCarousel({
-        items: 1,
-        nav: true,
-        loop: true,
+    $('.slider-mine__img').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.slider-mine__text',
+        arrows: true,
         dots: false,
-        autoHeight:true,
-        navText: ['<i class="fa fa-2x fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-2x fa-angle-right" aria-hidden="true"></i>'],
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
     });
+    $('.slider-mine__text').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.slider-mine__img',
+        arrows: false,
+        dots: true,
+    });
+
 
 
 
@@ -99,12 +107,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     try {
         var leftInset = function () {
-            prScroll = window.pageYOffset/(document.querySelector('.header-content').offsetWidth/100);
-            if(prScroll<100){
-                document.querySelector('.header-content__items').style.clipPath = 'inset(0 0 0 calc('+prScroll+'% - '+(document.querySelector('.section-mine').offsetHeight - document.querySelector('.header-content').offsetWidth)+'px))';
+            var prScroll = window.pageYOffset - (document.querySelector('.section-mine').offsetHeight - document.querySelector('.header-content').offsetWidth);
+            if(prScroll>0 && prScroll<document.querySelector('.section-mine').offsetHeight){
+                document.querySelector('.header-content__items').style.clipPath = 'inset(0 0 0 '+prScroll+'px)';
             }
         }
-        leftInset()
+        setTimeout(leftInset,0);
         window.addEventListener("scroll", leftInset);
     } catch (e) {
         console.error(e);
@@ -117,6 +125,22 @@ document.addEventListener("DOMContentLoaded", function () {
     //     dateEnd.setHours(0, 0, 0);
     //     var countdown = new LightCountdown(".countdown-week", dateEnd, {animation: "animated flipInX", animationDuration: "600ms"});
     // } catch (e) {console.error(e);}
+
+
+
+
+    try {
+        var mainNav = document.querySelector('.section-header');
+        document.onscroll = function () {
+            if(window.pageYOffset >= 100){
+                mainNav.classList.add('fixHead');
+            } else {
+                mainNav.classList.remove('fixHead');
+            }
+        };
+    } catch (error) {
+        console.error(error)
+      }
 
 });
 

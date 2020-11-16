@@ -17,6 +17,11 @@
     <!-- Fancybox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
 
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
     <!-- <link rel="stylesheet" href="../vendor/lib/lightcountdown/lightcountdown.css"> -->
 
     <link rel="stylesheet" href="./public/style/css.css">
@@ -88,24 +93,64 @@
     </section>
 
     <section class="section-mine" id="section-mine">
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <div class="owl-carousel owl-carousel-mine owl-theme text-center">
-                        <div class="item">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-5">
+                    <div class="slider-mine__img text-center">
+                        <div>
                             <img src="./public/assets/img/main_slider/privyu1_-724x1024.jpg" class="w-100 h-auto img-fluid">
                         </div>
-                        <div class="item">
+                        <div>
                             <img src="./public/assets/img/main_slider/privyu2_-711x1024.jpg" class="w-100 h-auto img-fluid">
                         </div>
-                        <div class="item">
+                        <div>
                             <img src="./public/assets/img/main_slider/privyu_3-711x1024.jpg" class="w-100 h-auto img-fluid">
                         </div>
                     </div>
-                    <div class="my-5">asdasd</div>
-                    <div class="my-5">asdasd</div>
-                    <div class="my-5">asdasd</div>
-                    <div class="my-5">asdasd</div>
+                    <div class="slider-mine__arrow">
+                        <div class="prev"><i class="fa fa-lg fa-angle-double-left" aria-hidden="true"></i></div>
+                        <div class="next"><i class="fa fa-lg fa-angle-double-right" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+                <div class="col-6 text-white">
+                    <div class="m-5 text_yellow text-size-7 font-weight-bold">Доставляем вкусную пиццу на пос. Котовского</div>
+                    <div class="slider-mine__text">
+                        <div class="px-5">
+                            <div class="font-weight-bold section_title">
+                                <div>У нас появились Хот-доги!</div>
+                                <div>Аналогов в Одессе нет.</div>                                   
+                            </div>
+                            <div class="h5 font-weight-light mt-4">
+                                <div>Пробуйте наши вкуснейшие хот-доги и хот-дог меню.</div>
+                                <div>Голодными не останетесь</div>
+                            </div>
+                            <a href="http://tut.od.ua/#menu" class="link text-white">Узнать больше</a>
+                        </div>
+                        <div class="px-5">
+                            <div class="font-weight-bold section_title">
+                                <div>У нас появились Хот-доги!</div>
+                                <div>Аналогов в Одессе нет.</div>                                   
+                            </div>
+                            <div class="h5 font-weight-light mt-4">
+                                <div>Пробуйте наши вкуснейшие хот-доги и хот-дог меню.</div>
+                                <div>Голодными не останетесь</div>
+                            </div>
+                            <a href="http://tut.od.ua/#menu" class="link text-white">Узнать больше</a>
+                        </div>
+                        <div class="px-5">
+                            <div class="font-weight-bold section_title">
+                                <div>У нас появились Хот-доги!</div>
+                                <div>Аналогов в Одессе нет.</div>                                   
+                            </div>
+                            <div class="h5 font-weight-light mt-4">
+                                <div>Пробуйте наши вкуснейшие хот-доги и хот-дог меню.</div>
+                                <div>Голодными не останетесь</div>
+                            </div>
+                            <a href="http://tut.od.ua/#menu" class="link text-white">Узнать больше</a>
+                        </div>
+                    </div>
+                    <div class="mx-5 text-size-7 font-weight-bold">Сочная. Вкусная. Для вас.</div>
+                    <div class="mx-5 text-size-6 font-weight-light">Приходите в гости: <i class="fa fa-lg text_yellow mx-2 fa-map-marker" aria-hidden="true"></i>  г. Одесса, <a class="text_yellow font-weight-bold" href="#">ул. Семена Палия120/1</a></div>
                 </div>
             </div>
         </div>
@@ -161,7 +206,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js" integrity="sha256-s5TTOyp+xlSmsDfr/aZhg0Gz+JejYr5iTJI8JxG1SkM=" crossorigin="anonymous"></script>
     <!-- Fancybox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
-
+    <!-- slick-carousel -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
     <!-- <script src="../vendor/lib/lightcountdown/lightcountdown.min.js"></script> -->
 
     <script src="./public/scripts/data.js"></script>
