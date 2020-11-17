@@ -45,6 +45,9 @@ section{
 .carousel-control-next{
   text-shadow: 2px 2px 2px black;
 }
+.btn{
+  white-space: normal;
+}
 /* Reset */
 a {
   color: #000;
@@ -52,18 +55,6 @@ a {
 a:hover {
   color: #000;
   text-decoration: none;
-}
-.opasiti-75{
-  opacity: .75;
-}
-.opasiti-50{
-  opacity: .50;
-}
-.border-radius-30{
-  border-radius: 30px;
-}
-.border-radius-15{
-  border-radius: 15px;
 }
 .text-size-1{
   font-size: 0.8em;

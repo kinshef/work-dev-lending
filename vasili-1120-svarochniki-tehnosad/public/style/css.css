@@ -42,6 +42,9 @@ li{
 .carousel-control-next{
   text-shadow: 2px 2px 2px black;
 }
+.btn{
+  white-space: normal;
+}
 /* Reset */
 a {
   color: #000;
@@ -55,6 +58,9 @@ a:hover {
 }
 .opasiti-50{
   opacity: .50;
+}
+.line-height-1{
+  line-height: 1;
 }
 .border-radius-30{
   border-radius: 30px;
@@ -180,22 +186,6 @@ a:hover {
   right: 0;
   z-index: 1;
 }
-.header-content{
-  transform: rotate(-90deg);
-  transform-origin: top left;
-  width: 100vh;
-  position: absolute;
-  top: 100vh;
-  left: 0;
-}
-.header-content__items{
-  z-index: 3;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  color: #111;
-}
 .section-header svg{
   min-height: 30px;
   min-width: 30px;
@@ -234,8 +224,6 @@ a:hover {
 
 
 .slider-mine__img {
-  margin-left: 5rem;
-  width: calc(100% - 5rem);
   cursor: pointer;
 }
 .slider-mine__arrow div{
@@ -337,6 +325,90 @@ a:hover {
 
 
 /* section-catalog */
-.section-catalog{
-  height: 120vh;
+.modal-product .slick-prev,
+.section-catalog .slick-prev{
+  z-index: 1;
+  left: 1rem;
 }
+.modal-product .slick-next,
+.section-catalog .slick-next{
+  z-index: 1;
+  right: 1rem;
+}
+.section-catalog .slick-dots{
+  z-index: 1;
+  bottom: 0;
+}
+.catalog-cart{
+  border: 3px solid #24232c;
+  border-radius: 4px 4px 35px 35px;
+  transition: all 0.5s;
+}
+.catalog-cart:hover{
+  background: #ffce1c;
+  border-color: #ffce1c;
+  color: #000 !important;
+}
+
+
+
+
+
+
+
+.catalog-form__phone{
+  width: 100%;
+  position: relative;
+}
+.catalog-form__phone input {
+  width: 100%;
+  height: 60px;
+  border: 1px solid rgba(255,255,255,.3);
+  background-color: #121218;
+  border-radius: 30px;
+  padding: 0 200px 0 30px;
+  outline: none;
+}
+.catalog-form__phone::after {
+  content: '\f2c0';
+  font-family: FontAwesome;
+  font-size: 14px;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.catalog-form__phone span{
+  position: absolute;
+  top: -15px;
+  left: 30px;
+  background-color: #121218;
+  padding: 0 5px;
+}
+.castom_btn{
+  height: 50px;
+  background: -webkit-gradient(linear,left top, left bottom,from(#5a805b),to(#346135));
+  background: linear-gradient(to bottom,#5a805b 0%,#346135 100%);
+  border-radius: 30px;
+  color: #fff;
+  border: none;
+}
+.catalog-cart .castom_btn{
+  position: absolute;
+  right: 5px;
+  top: calc(50% - 25px);
+}
+
+/* @media(max-width: 1100px){
+  .catalog-form__phone{
+    margin: 1rem 0;
+  }
+  .catalog-form__phone input{
+    padding-right: 30px;
+  }
+  .catalog-cart .castom_btn{
+    position: static;
+    width: 100%;
+  }
+} */
