@@ -44,6 +44,7 @@ li{
 }
 .btn{
   white-space: normal;
+  transition: all 0.5s;
 }
 /* Reset */
 a {
@@ -184,7 +185,7 @@ a:hover {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
 }
 .section-header svg{
   min-height: 30px;
@@ -342,32 +343,30 @@ a:hover {
 .catalog-cart{
   border: 3px solid #24232c;
   border-radius: 4px 4px 35px 35px;
-  transition: all 0.5s;
+  transition: all 0.4s;
 }
-.catalog-cart:hover{
-  background: #ffce1c;
-  border-color: #ffce1c;
-  color: #000 !important;
-}
-
-
-
-
-
-
-
-.catalog-form__phone{
-  width: 100%;
-  position: relative;
-}
-.catalog-form__phone input {
-  width: 100%;
-  height: 60px;
+.input-group{
   border: 1px solid rgba(255,255,255,.3);
   background-color: #121218;
   border-radius: 30px;
-  padding: 0 200px 0 30px;
-  outline: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  transition: background 0.4s;
+}
+.input-group::before{
+  content: 'Ваш номер телефона:';
+  background-color: #121218;
+  padding: 0 5px;
+  position: absolute;
+  top: -10px;
+  left: 30px;
+  border-radius: 20px;
+  transition: all 0.4s;
+}
+.catalog-form__phone{
+  position: relative;
+  flex: 1;
 }
 .catalog-form__phone::after {
   content: '\f2c0';
@@ -379,26 +378,71 @@ a:hover {
   -webkit-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
 }
-.catalog-form__phone span{
-  position: absolute;
-  top: -15px;
-  left: 30px;
-  background-color: #121218;
-  padding: 0 5px;
-}
-.castom_btn{
-  height: 50px;
-  background: -webkit-gradient(linear,left top, left bottom,from(#5a805b),to(#346135));
-  background: linear-gradient(to bottom,#5a805b 0%,#346135 100%);
-  border-radius: 30px;
-  color: #fff;
+.catalog-form__phone input {
+  width: 100%;
+  min-width: 170px;
+  height: 60px;
+  background-color: transparent;
   border: none;
+  padding-left: 35px;
+  color: #fff;
+  outline: none;
+  transition: all 0.4s;
 }
-.catalog-cart .castom_btn{
-  position: absolute;
-  right: 5px;
-  top: calc(50% - 25px);
+.catalog-cart .input-group button{
+  min-height: 50px;
+  background: #ffce1c;
+  border-radius: 30px;
+  color: #000;
+  border: none;
+  margin: 5px;
+  max-width: calc(100% - 10px);
+  transition: all 0.4s;
+  flex: 1;
+  z-index: 1;
 }
+
+
+
+.catalog-cart:hover .input-group input{
+  color: #000;
+}
+.catalog-cart:hover .input-group::before,
+.catalog-cart:hover{
+  background: #ffce1c;
+  border-color: #ffce1c;
+  color: #000 !important;
+}
+.catalog-cart:hover .input-group button,
+.catalog-cart:hover .modal-product{
+  border-color: transparent;
+  background-color: #ef2539;
+  color: #fff;
+}
+.catalog-cart:hover .input-group{
+  background: #ffce1c;
+  border-color: #121218;
+  color: #000;
+  box-shadow: 0px 1.7rem 2rem 0.1rem rgba(216,0,46,0.35);
+}
+.catalog-cart:hover th,
+.catalog-cart:hover td{
+  border-color: #121218;
+}
+.catalog-filter{
+  position: sticky;
+  top: 10rem;
+}
+.catalog-filter a{
+  color: #fff;
+  font-size: 2em;
+  font-weight: 300;
+}
+.catalog-filter .js-nav-scroll.active{
+  color: #ffce1c;
+}
+
+
 
 /* @media(max-width: 1100px){
   .catalog-form__phone{
