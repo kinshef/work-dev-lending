@@ -29,6 +29,9 @@ ul{
 li{
   list-style-type: none;
 }
+a:focus{
+  outline: none;
+}
 /* Fix bootstrap */
 @media (min-width: 1600px) {
   .container {
@@ -442,17 +445,60 @@ a:hover {
   color: #ffce1c;
 }
 
+/* section-delivery */
+.section-delivery{
+  background-color: #0e0e0f;
+  background-image: url(../assets/img/icons/ill-2.png);
+  background-position: 5% 90%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.section-delivery>svg{
+  max-width: 400px;
+  position: absolute;
+  bottom: 0;
+  left: 12%;
+  fill: #1e1d27;
+  z-index: -1;
+}
+
+/* section-aboutUs */
+.section-aboutUs{
+  position: relative;
+  background-image: url(../assets/img/back/bg-pattern.svg);
+}
+.aboutUs_foto{
+  height: 200px;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #000;
+}
+.aboutUs_foto:nth-child(1){
+  z-index: 4;
+}
+.aboutUs_foto:nth-child(2){
+  z-index: 3;
+  transform: translateX(-10%);
+  background-color: rgba(0,0,0,0.7);
+}
+.aboutUs_foto:nth-child(3){
+  z-index: 2;
+  transform: translateX(-20%);
+}
+.aboutUs_foto:nth-child(4){
+  z-index: 1;
+  transform: translateX(-30%);
+}
 
 
-/* @media(max-width: 1100px){
-  .catalog-form__phone{
-    margin: 1rem 0;
-  }
-  .catalog-form__phone input{
-    padding-right: 30px;
-  }
-  .catalog-cart .castom_btn{
-    position: static;
-    width: 100%;
-  }
-} */
+.section-aboutUs::before {
+  content: '';
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  bottom: 0;
+  width: 10%;
+  background-color: #ffce1c;
+}
