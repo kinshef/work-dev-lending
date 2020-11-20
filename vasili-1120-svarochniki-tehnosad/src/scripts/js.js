@@ -61,8 +61,8 @@ $(function () {
         asNavFor: '.slider-mine__text',
         arrows: true,
         dots: false,
-        prevArrow: $('.prev'),
-        nextArrow: $('.next'),
+        prevArrow: $('.slider-mine__prev'),
+        nextArrow: $('.slider-mine__next'),
     });
     $('.slider-mine__text').slick({
         slidesToShow: 1,
@@ -84,6 +84,14 @@ $(function () {
         $('.single-modal').slick('refresh');
     })
 
+    $('.single-reviews').slick({
+        dots: true,
+        prevArrow: $('.single-reviews__prev'),
+        nextArrow: $('.single-reviews__next'),
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
 
     $("a.smoothscroll").click(function(a) {
         "" !== this.hash && (a.preventDefault(), a = this.hash, $("html, body").animate({
