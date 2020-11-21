@@ -29,19 +29,19 @@
     <section class="section-header" id="section-header">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="col-3 text-right bg_yellow text-center">
+                <div class="col-3 bg_yellow text-center">
                     <div class="logo d-flex align-items-center">
                         <img src="./public/assets/img/icons/logo.png" class="img-fluid">
                         <div class="font-weight-bold">Доставка вкусной пиццы в Суворовском районе</div>
                     </div>
                 </div>
                 <div class="col-4 d-flex justify-content-around align-items-center">
-                    <a class="text-white" href="#">О нас</a>
-                    <a class="text-white" href="#">Меню</a>
-                    <a class="text-white" href="#">Доставка и оплата</a>
-                    <a class="text-white" href="#">Отзывы</a>
-                    <a class="text-white" href="#">Акции и события</a>
-                    <a class="text-white" href="#">Контакты</a>
+                    <a class="smoothscroll text-white" href="#section-mine">О нас</a>
+                    <a class="smoothscroll text-white" href="#section-catalog">Меню</a>
+                    <a class="smoothscroll text-white" href="#section-delivery">Доставка и оплата</a>
+                    <a class="smoothscroll text-white" href="#section-reviews">Отзывы</a>
+                    <a class="smoothscroll text-white" href="#section-promotions">Акции и события</a>
+                    <a class="smoothscroll text-white" href="#section-contact">Контакты</a>
                 </div>
                 <div class="col-5 d-flex align-items-center justify-content-around">
                     <div class="mx-3 d-inline-flex justify-content-around align-items-center">
@@ -65,12 +65,6 @@
                         </div>
                     </div>
                     <a href="#modal-order" data-toggle="modal" class="btn btn-warning">Заказать звонок</a>
-                    <!-- <div class="mx-3 d-inline-flex justify-content-around align-items-center">
-                        <svg class="mr-3 svg_white" viewBox="0 0 38.79 48.37">
-                            <path d="M37.35 46l-5.27-5V9.44a91.6 91.6 0 0 1 5.27 30.7zm-10.88.95l4.9-4.62 4.9 4.62zm-1.09-6.8a91.6 91.6 0 0 1 5.27-30.7V41l-5.27 5zm-1.44 6.8H1.44v-6.8A91.64 91.64 0 0 1 7.91 6.23h22.4a93.06 93.06 0 0 0-6.37 33.91zM8.14 2.16a.72.72 0 0 1 .72-.72h21.91a2.15 2.15 0 0 0-.12.72v2.63H8.14zm23.95 0a.72.72 0 1 1 1.44 0v2.63h-1.44zm.34 4.07H35V2.16A2.16 2.16 0 0 0 32.81 0H8.86A2.16 2.16 0 0 0 6.7 2.16v3.21A93.09 93.09 0 0 0 0 40.14v8.23h38.79v-8.23a93.07 93.07 0 0 0-6.36-33.91z" fill-rule="evenodd"></path>
-                        </svg>
-                        <div class="text-white font-weight-bold">0</div>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -108,7 +102,7 @@
                                 <div>Пробуйте наши вкуснейшие хот-доги и хот-дог меню.</div>
                                 <div>Голодными не останетесь</div>
                             </div>
-                            <a href="http://tut.od.ua/#menu" class="link text-white">Узнать больше</a>
+                            <a href="#section-catalog" class="smoothscroll link text-white">Узнать больше</a>
                         </div>
                         <div class="px-5">
                             <div class="font-weight-bold section_title">
@@ -621,7 +615,7 @@
                 </div>
 
                 <div class="col-md-10 offset-md-2 my-5">
-                    <div class="text-size-5">Если есть срочные вопросы, свяжитесь с нами использовав <a class="smoothscroll text-white" href="#section-contect">Контакты</a></div>
+                    <div class="text-size-5">Если есть срочные вопросы, свяжитесь с нами использовав <a class="smoothscroll text-white" href="#section-contact">Контакты</a></div>
                 </div>
 
             </div>
@@ -729,7 +723,7 @@
                 <div class="row">
                     <div class="col-md-10 offset-md-2 mb-5">
                         <div class="section_title text-white">Отзывы о нас</div>
-                        <a class="text_yellow text-size-5" href="#">Оставить свой отзыв</a>
+                        <a class="btn text_yellow text-size-5 p-0" data-toggle="modal" data-target="#callback">Оставить свой отзыв</a>
                     </div>
                     <div class="col-2">
                         <div class="d-flex align-items-center justify-content-center h-100">
@@ -775,6 +769,122 @@
         </div>
     </section>
 
+    <section class="section-promotions py-5 text-white" id="section-promotions">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-10 offset-md-2 my-3">
+                    <div class="section_title font-weight-bold my-3">Акции и новости</div>
+                    <div class="my-3 font-weight-light">У нас новая акция, каждый кто закажет от <br> 199 грн, получает бесплатно дополнительный презент</div>
+                </div>
+                <div class="col-md-5 offset-md-2 col-6">
+                    <a data-fancybox="" href="https://www.youtube.com/watch?v=xlRVbfynNvY" class="v-item my-3">
+						<span class="v-icon"></span>
+						<span class="v-ttl">Лучшая коса для новичка</span>
+						<img src="./public/assets/img/video/v-tmb-01.jpg" class="img-fluid">
+                    </a>
+                    <a href="#modal-news2" data-toggle="modal" class="v-item my-3">
+						<span class="v-ttl">Не много о Хот-догах</span>
+						<img src="./public/assets/img/video/kkk-600x296.jpg" class="img-fluid">
+					</a>
+                </div>
+                <div class="col-md-5 col-6">
+                    <a href="#modal-news1" data-toggle="modal" class="v-item my-3">
+						<span class="v-ttl">Не много о Хот-догах</span>
+						<img src="./public/assets/img/video/dlya-insty-600x600.jpg" class="img-fluid">
+					</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-contact py-5 text-white" id="section-contact">
+        <div class="container">
+            <div class="contact-wrap bg_black">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-10 my-5">
+                        <div class="my-3 section_title">Контакты</div>
+                        <div class="my-3 text-size-5 font-weight-light">У нас новая акция, каждый кто закажет от <br> 199 грн, получает бесплатно дополнительный презент</div>
+                    </div>
+                    <div class="col-5">
+                        <div class="contact-map">
+                            <img src="./public/assets/img/back/gallery-1.jpg" class="mw-100">
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="text-size-7 mb-4 font-weight-bold">г. Одесса, ул. Семена Палия 120/1</div>
+                        <a class="section_title text_yellow d-block" href="tel:380961533456">
+                            <span>+38 (096) 15 33 456</span> 
+                            <svg viewBox="0 0 51.15 56.03">
+                                <path d="M48.66 33.81c-1 3.76-5.84 8.44-9.72 9.31a71.3 71.3 0 0 1-15.32 1.24.36.36 0 0 0-.27.11l-9.82 10.08a.59.59 0 0 1-1-.41V43.48a.37.37 0 0 0-.3-.36c-3.88-.86-8.76-5.54-9.72-9.31a51.15 51.15 0 0 1 0-21.94c1-3.76 5.84-8.44 9.72-9.31a71.25 71.25 0 0 1 26.74 0c3.88.86 8.76 5.54 9.72 9.31a51.1 51.1 0 0 1 0 21.94" fill="#511485" fill-rule="evenodd"></path>
+                                <path d="M44 38.62a12 12 0 0 0 3.39-5.09 50.09 50.09 0 0 0 1.16-10.69 50.08 50.08 0 0 0-1.15-10.69A12 12 0 0 0 44 7.06a12.46 12.46 0 0 0-5.3-3.23 70.13 70.13 0 0 0-26.26 0 12.45 12.45 0 0 0-5.29 3.23 12 12 0 0 0-3.4 5.1 49.91 49.91 0 0 0 0 21.37 12 12 0 0 0 3.4 5.09 12.5 12.5 0 0 0 5.27 3.22 1.67 1.67 0 0 1 1.39 1.64v8.94l8.63-8.85a1.66 1.66 0 0 1 .56-.38 1.65 1.65 0 0 1 .66-.12 69.64 69.64 0 0 0 7.54-.2 70.61 70.61 0 0 0 7.51-1A12.46 12.46 0 0 0 44 38.62m5.92-4.49a14.53 14.53 0 0 1-4.12 6.36 15 15 0 0 1-6.57 3.89 73.13 73.13 0 0 1-7.78 1.05 72.07 72.07 0 0 1-7.4.21l-9.54 9.79a1.86 1.86 0 0 1-1.41.57 1.9 1.9 0 0 1-1.31-.53 1.86 1.86 0 0 1-.58-1.36v-10a15.9 15.9 0 0 1-5.86-3.7 14.54 14.54 0 0 1-4.12-6.36 52.4 52.4 0 0 1 0-22.49 14.54 14.54 0 0 1 4.12-6.37 15 15 0 0 1 6.58-3.89 72.36 72.36 0 0 1 27.22 0 15 15 0 0 1 6.65 3.89 14.53 14.53 0 0 1 4.12 6.36 52.67 52.67 0 0 1 1.22 11.25 52.67 52.67 0 0 1-1.22 11.24z" fill="#fff"></path>
+                                <path d="M34 38.74c-.6-.18-1.17-.3-1.69-.52-5.47-2.27-10.51-5.2-14.49-9.69A37.61 37.61 0 0 1 12.28 20c-.71-1.45-1.31-2.95-1.92-4.44s.26-2.77 1.13-3.79a8.92 8.92 0 0 1 3-2.24 1.92 1.92 0 0 1 2.4.57 30.91 30.91 0 0 1 3.71 5.19 2.47 2.47 0 0 1-.69 3.35c-.28.19-.54.41-.8.63a2.61 2.61 0 0 0-.6.63 1.74 1.74 0 0 0-.12 1.53 13.82 13.82 0 0 0 7.76 8.6 4 4 0 0 0 2 .48c1.22-.14 1.61-1.48 2.46-2.17a2.32 2.32 0 0 1 2.79-.12c.9.57 1.77 1.18 2.63 1.79a30.06 30.06 0 0 1 2.48 1.89 2 2 0 0 1 .59 2.43 8.22 8.22 0 0 1-3.53 3.89 8.55 8.55 0 0 1-1.53.49c-.6-.18.52-.16 0 0M25.59 7.68a14.54 14.54 0 0 1 14.29 12c.21 1.21.29 2.44.39 3.66a.86.86 0 0 1-.81 1c-.57 0-.83-.47-.87-1-.07-1-.13-2-.27-3.05A12.79 12.79 0 0 0 28 9.65c-.8-.14-1.62-.18-2.42-.26-.51-.05-1.18-.08-1.29-.72a.87.87 0 0 1 .86-1h.42c7.16.2-.14 0 0 0" fill="#fff" fill-rule="evenodd"></path>
+                                <path d="M36.47 21.78a3.33 3.33 0 0 1-.07.5.81.81 0 0 1-1.53.08 2.17 2.17 0 0 1-.09-.69 8.67 8.67 0 0 0-1.1-4.35 8.09 8.09 0 0 0-3.39-3.18 9.76 9.76 0 0 0-2.71-.83c-.41-.07-.82-.11-1.23-.17a.78.78 0 0 1-.74-.88.77.77 0 0 1 .86-.76 11.25 11.25 0 0 1 4.69 1.22 9.48 9.48 0 0 1 5.16 7.37c0 .15.06.3.07.45 0 .37 0 .74.07 1.24 0 .09 0-.49 0 0" fill="#fff" fill-rule="evenodd"></path>
+                                <path d="M32 21.6a.88.88 0 0 1-1-.87 9 9 0 0 0-.17-1.14 3.22 3.22 0 0 0-1.19-1.86 3.1 3.1 0 0 0-1-.47c-.44-.13-.9-.09-1.33-.2a.82.82 0 0 1-.66-.95.86.86 0 0 1 .91-.69c2.77.2 4.76 1.63 5 4.9a2.26 2.26 0 0 1 0 .69.71.71 0 0 1-.64.58c-.6 0 .27 0 0 0" fill="#fff" fill-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a class="section_title text_yellow d-block" href="tel:380961533456">+38 (096) 15 33 456</a>
+                        <a href="mailto:info@tut.od.ua" class="text-white mt-4 d-block text-size-6"><span>info@tut.od.ua</span></a>
+                        <div class="my-4 d-flex align-items-center">
+                            <svg viewBox="0 0 512 512" fill="#fff" class="m-3">
+                                <path d="M507 1.31a10 10 0 0 0-10 .08L313.66 109.76A10 10 0 1 0 323.83 127l131.49-77.78-244.91 254.12L88.6 266.07l159-94a10 10 0 0 0-10.18-17.22L58.91 260.39a10 10 0 0 0 2.16 18.17l145.47 44.5 64.18 116.81a2.37 2.37 0 0 0 .21.31 10 10 0 0 0 15.55 2l73.79-72.12 138.81 42.47A10 10 0 0 0 512 403V10a10 10 0 0 0-5-8.69zM271.26 329.23a10 10 0 0 0-1.78 5.69v61.18l-43.82-79.76 193.92-201.22zm18.22 82.08v-62.87l49 15zM492 389.48l-196.5-60.11L492 45.7z"></path>
+                                <path d="M164.42 347.58a10 10 0 0 0-14.14 0l-93.35 93.35a10 10 0 0 0 14.14 14.14l93.35-93.35a10 10 0 0 0 0-14.14zM40.07 471.93a10 10 0 0 0-14.14 0l-23 23a10 10 0 1 0 14.14 14.14l23-23a10 10 0 0 0 0-14.14zM142.65 494.34a10 10 0 1 0 2.93 7.07 10.07 10.07 0 0 0-2.93-7.07zM217.05 419.94a10 10 0 0 0-14.14 0l-49.45 49.45a10 10 0 1 0 14.14 14.14l49.45-49.45a10 10 0 0 0 0-14.14zM387.7 416.14a10 10 0 0 0-14.14 0L324 465.72a10 10 0 1 0 14.14 14.14l49.58-49.58a10 10 0 0 0-.02-14.14zM283.5 136.31a10 10 0 1 0 2.93 7.08 10.08 10.08 0 0 0-2.93-7.08z"></path>
+                            </svg>
+                            <div class="w-75">Хотите у нас работать? Хотите с нами сотрудничать? Есть предложения или пожелания?</div>
+                        </div>
+                        <a href="#modal-order" data-toggle="modal" class="btn text-size-7 px-5 font-weight-bold text-uppercase py-3 btn-warning">Напишите нам</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-delivery2 py-5 text-white" id="section-delivery2">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-1 p-0 d-md-block d-none">
+                    <img src="./public/assets/img/icons/footer-ill-left.png" class="mw-100">
+                </div>
+                <div class="col-md-9">
+                    <a class="menu-toggler collapsed" type="button" data-toggle="collapse" data-target="#menuToggle_1" aria-controls="menuToggle_1" aria-expanded="false">
+                        <div class="text-size-7 mb-2 font-weight-bold">Доставка пиццы в Одессе</div>
+                        <span class="text-muted">Еда в одесской пицеерии PizzaTut никого не оставит равнодушным. Пиццы и хот-доги в ассортименте  пиццерии — это вкуснейшая еда в Суворовском районе, приготовленная из продуктов высокого качества. Пицца в пиццерии <span class="menu-toggler_item">...</span></span>
+                        <div class="collapse" id="menuToggle_1">
+                            <span class="mb-3 text-muted"> PizzaTut готовятся исключительно на тонком корже. В нашем меню вкуснейшая пицца Одессы, хот-доги, блины, салаты и различные напитки — это далеко не полный перечень предложений из меню pizzaTUT, в котором каждый найдет еду себе по вкусу. Доставка вкуснейшей пиццы по поселку Котовского, а на заказы от 199 грн. мы предоставляем съедобные подарки. У нас есть бесплатная доставка на заказы от 240 грн. Пиццерия PizzaTut создана для того, чтобы вкусно поесть, атакже для отличного семейного отдыха в уютной обстановке.</span>
+                        </div>
+                        <div class="d-block btn px-0 text-left">Показать больше</div>
+                    </a>
+                </div>
+                <div class="col-md-2 p-0 d-md-block d-none text-right">
+                    <img src="./public/assets/img/icons/footer-ill-right.png" class="mw-100">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section-footer py-5 text-white" id="section-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="logo d-flex align-items-center">
+                        <img src="./public/assets/img/icons/logo.png" class="img-fluid">
+                        <div class="font-weight-light p-3">
+                            <span>Доставка вкусной пиццы в Суворовском районе</span>
+                            <span>© 2015 - 2018</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 d-flex flex-wrap justify-content-around align-items-center">
+                    <a class="smoothscroll text-white" href="#section-mine">О нас</a>
+                    <a class="smoothscroll text-white" href="#section-catalog">Меню</a>
+                    <a class="smoothscroll text-white" href="#section-delivery">Доставка и оплата</a>
+                    <a class="smoothscroll text-white" href="#section-reviews">Отзывы</a>
+                    <a class="smoothscroll text-white" href="#section-promotions">Акции и события</a>
+                    <a class="smoothscroll text-white" href="#section-contact">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
     <!-- modal -->
     <div id="modal-order" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
@@ -788,6 +898,122 @@
                         <p class="h2">Ваш личный менеджер</p>
                         <p class="h3">Михаил</p>
                         <p class="h2">(44) 762-43-96, (29) 762-43-96</p>
+                        <hr>
+                    </div>
+
+                    <form>
+                        <input type="hidden" name="form" value="Окно заказа">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-danger shadow">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content callback">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center">ОСТАВЬТЕ ОТЗЫВ</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <form>
+                                    <div class="col-12 mt-3">
+                                        <input class="form-control callback__input" type="text" placeholder="Введите имя">
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <input class="form-control callback__input" type="text" placeholder="Введите город">
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <input class="form-control callback__input" type="text" placeholder="Введите номер телефона">
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <div class="fl_upld">
+                                            <label><input id="fl_inp" type="file" name="file">Выберите файл</label>
+                                            <div id="fl_nm">Файл не выбран</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <textarea class="form-control callback__input" cols="30" rows="10" style="resize: none;">                    </textarea>
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <button class="callback-modal__btn w-100" type="button">Оставить отзыв</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-news1" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-center bg-warning">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="my-4">
+                        <p class="h2">Ваш личный менеджер</p>
+                        <p class="h3">Михаил</p>
+                        <p class="h2">(44) 762-43-96, (29) 762-43-96</p>
+                        <hr>
+                    </div>
+
+                    <div class="my-3">
+                        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora tenetur officia neque. Beatae tempora quos, cum similique odit laudantium aut nam minus necessitatibus nisi, quam fugiat aperiam, dolor nulla vero!</div>
+                        <hr>
+                    </div>
+
+                    <form>
+                        <input type="hidden" name="form" value="Окно заказа">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-danger shadow">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-news2" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-center bg-warning">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="my-4">
+                        <p class="h2">Ваш личный менеджер</p>
+                        <p class="h3">Михаил</p>
+                        <p class="h2">(44) 762-43-96, (29) 762-43-96</p>
+                        <hr>
+                    </div>
+
+                    <div class="my-3">
+                        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora tenetur officia neque. Beatae tempora quos, cum similique odit laudantium aut nam minus necessitatibus nisi, quam fugiat aperiam, dolor nulla vero!</div>
                         <hr>
                     </div>
 

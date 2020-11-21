@@ -95,7 +95,7 @@ $(function () {
 
     $("a.smoothscroll").click(function(a) {
         "" !== this.hash && (a.preventDefault(), a = this.hash, $("html, body").animate({
-            scrollTop: $(a).offset().top
+            scrollTop: $(a).offset().top - 150
         }, 400))
     });
 
