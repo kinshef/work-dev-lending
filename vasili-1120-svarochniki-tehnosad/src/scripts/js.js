@@ -53,8 +53,6 @@ $(function () {
         return false
     });
 
-
-
     $('.slider-mine__img').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -121,17 +119,6 @@ $(function () {
 
 });
 document.addEventListener("DOMContentLoaded", function () {
-
-/* countdown */
-    // try {
-    //     var dateEnd = new Date();
-    //     dateEnd.setDate(dateEnd.getDay() ? dateEnd.getDate() - dateEnd.getDay() + 8 : dateEnd.getDate() + 1);
-    //     dateEnd.setHours(0, 0, 0);
-    //     var countdown = new LightCountdown(".countdown-week", dateEnd, {animation: "animated flipInX", animationDuration: "600ms"});
-    // } catch (e) {console.error(e);}
-
-
-
 
     try {
         var mainNav = document.querySelector('.section-header');
