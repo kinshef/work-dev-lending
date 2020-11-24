@@ -886,4 +886,15 @@ a:hover {
 .fl_upld label:hover {
   cursor: pointer;
 }
+.modal-product .close{
+  padding: 15px;
+    background-color: #ffce1c;
+    color: #000;
+    opacity: 0.9;
+    transform: translate(0px, -100%);
+}
+.modal-product .close:not(:disabled):not(.disabled):focus, 
+.modal-product .close:not(:disabled):not(.disabled):hover{
+  opacity: 1;
+}
 /* ----------------------------------------------------- */
