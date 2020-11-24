@@ -1,0 +1,3276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#7cb615">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    integrity="sha256-HtCCUh9Hkh//8U1OwcbD8epVEUdBvuI8wj1KtqMhNkI=" crossorigin="anonymous">
+  <!-- Fontawesome -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Owl carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"
+    integrity="sha256-AWqwvQ3kg5aA5KcXpX25sYKowsX97sTCTbeo33Yfyk0=" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./public/style/css.css">
+  <link rel="icon" type="image/ico" href="./public/assets/img/favicon.ico">
+  <title>Test</title>
+</head>
+
+<body>
+
+  <section class="section-nav" id="section-nav">
+    <div class="container">
+      <div class="row align-items-center py-xl-4 py-1">
+        <div class="col-xl-3 col-6 d-md-flex d-none align-items-center">
+          <img src="./public/assets/img/icons/logo.png" class="img-fluid mr-2">
+          <div class="logo__text d-flex flex-column justify-content-center pr-3">
+            <div class="mb-2 text-size-6"><span class="font-weight-bold">KSL.by</span><br><span
+                class="font-weight-light">Магазин садовой техники</span></div>
+            <div class="text-size-2 font-weight-light">Изготовление и продажа пластиковых погребов</div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-6 d-md-flex d-none align-items-center justify-content-center">
+          <i class="mr-2 text_green fa fa-3x fa-clock-o" aria-hidden="true"></i>
+          <div class="logo__text d-flex flex-column justify-content-center pr-3">
+            <div class="text-size-4 font-weight-bold">График работы:</div>
+            <div class="text-size-2"><span class="font-weight-light">ежедневно c</span> <span
+                class="font-weight-bold">8:00 - 23:00</span></div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 text-center">
+          <a href="tel:+375295774518" class="font-weight-bold h5 my-sm-2 my-1 d-block">
+            <i class="fa fa-lg mr-2 text_green fa-mobile" aria-hidden="true"></i>
+            <span>+375 (29) 577-45-18</span>
+          </a>
+          <a href="tel:+375445774518" class="font-weight-bold h5 my-sm-2 my-1 d-block">
+            <i class="fa fa-lg mr-2 text_green fa-mobile" aria-hidden="true"></i>
+            <span>+375 (44) 577-45-18</span>
+          </a>
+        </div>
+        <div class="col-xl-3 col-sm-6">
+          <a href="#modal-order" data-toggle="modal"
+            class="d-block p-sm-3 p-2 mt-sm-2 mb-sm-3 my-1 mx-auto btn_custom text-uppercase">Круглосуточная
+            Консультация</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-main" id="section-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-4">
+          <div class="main-wrap d-flex flex-column">
+            <div class="row align-items-center my-md-0 my-3">
+              <div class="col-12">
+                <div class="main-wrap__title">ПОЛИКАРБОНАТНЫЕ <span class="text-size-7 font-weight-bold">ТЕПЛИЦЫ</span>
+                </div>
+              </div>
+
+              <div class="col-8 offset-4">
+                <span class="main-wrap__text my-1 d-inline-block text_green">ВЫБРАННЫЕ</span>
+              </div>
+
+              <div class="col-2 offset-2 text-center">
+                <img src="./public/assets/img/icons/oneGramata.png" class="img-fluid mr-2">
+              </div>
+              <div class="col-8 text-size-7">
+                <span class="main-wrap__text my-1 d-inline-block text_green">РОССИЙСКИМИ САДОВОДАМИ</span>
+              </div>
+
+              <div class="col-2 offset-2 text-center">
+                <img src="./public/assets/img/icons/auto.png" class="img-fluid mr-2">
+              </div>
+              <div class="col-8 text-size-5">
+                <span class="main-wrap__text my-1 d-inline-block"><span class="font-weight-bold">Доставка за 2
+                    деня</span> в любую точку Беларуси</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 order-lg-1 order-2 d-flex flex-column align-items-center justify-content-end">
+          <img src="./public/assets/img/icons/dialog.png" class="img-fluid mb-2">
+          <div class="text-size-7 text-uppercase">
+            <div class="text-size-7">честные</div>
+            <div class="text-size-7 font-weight-bold">отзывы</div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-2 order-1">
+          <div class="main-advantages">
+            <div class="row main-advantages__items">
+              <div class="col-4  pr-0">
+                <div
+                  class="main-advantages__item main-advantages__itemOne text-size-6 d-flex flex-column align-items-start justify-content-center px-3">
+                  <img src="./public/assets/img/icons/calc.png" class="img-fluid mb-1">
+                  <div class="font-weight-light">Самые</div>
+                  <div class="font-weight-bold">выгодные цены</div>
+                  <div class="font-weight-normal">в Беларуси</div>
+                </div>
+              </div>
+              <div class="col-4 p-0">
+                <div
+                  class="main-advantages__item text-center text-size-6 d-flex flex-column align-items-center justify-content-center h-100">
+                  <img src="./public/assets/img/icons/prof.png" class="img-fluid mb-1">
+                  <div class="font-weight-bold"><span class="d-sm-block d-none">Профессиональная</span> <span
+                      class="d-sm-none d-block">Профес-<br /> сиональная</span></div>
+                  <div class="font-weight-bold">сборка</div>
+                  <div class="font-weight-normal">в день доставки</div>
+                </div>
+              </div>
+              <div class="col-4 pl-0">
+                <div
+                  class="main-advantages__item text-right main-advantages__itemThree text-size-6 d-flex flex-column align-items-end justify-content-center px-3">
+                  <img src="./public/assets/img/icons/oplata.png" class="img-fluid mb-1">
+                  <div>
+                    <span class="font-weight-bold">Оплата</span>
+                    <span class="font-weight-normal">при получении</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 main-advantages__itemFour">
+                <div class="text-white d-flex align-items-center justify-content-center h-100 p-3">
+                  <div class="main-advantages__btnWrap text-uppercase text-center">
+                    <a href="#modal-order" data-toggle="modal" class="d-block btn_custom">узнать подробности</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-review py-5" id="section-review">
+    <div class="container">
+      <div class="row">
+        <div class="col-8 offset-2">
+          <div class="owl-carousel owl-carousel-review owl-theme">
+            <div class="item">
+              <div class="row align-items-center">
+                <div class="col-md-3 offset-md-1 text-center">
+                  <img src="./public/assets/img/rev/1.png" class="w-100 h-auto img-fluid">
+                  <div class="text-size-6 my-2">Михаил Лядов</div>
+                </div>
+                <div class="col-md-7">
+                  <div class="text-size-5 text_green">
+                    «Одним словом, всем советую»
+                  </div>
+                  <div class="">
+                    2 года назад решил купить наконец надежную теплицу, так как те, которые покупали ранее, падали как
+                    картонные, при учете немаленькой стоимости. Надоело заморачиваться с подпорками, хотелось купить и
+                    забыть. Так и вышло – до сих пор как стояла, так и стоит, несколько раз приезжал ее проверять зимой,
+                    все в полном порядке. Одним словом, всем советую. Спасибо.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row align-items-center">
+                <div class="col-md-3 offset-md-1 text-center">
+                  <img src="./public/assets/img/rev/2.png" class="w-100 h-auto img-fluid">
+                  <div class="text-size-6 my-2">Михаил Лядов</div>
+                </div>
+                <div class="col-md-7">
+                  <div class="text-size-5 text_green">
+                    «Одним словом, всем советую»
+                  </div>
+                  <div class="">
+                    2 года назад решил купить наконец надежную теплицу, так как те, которые покупали ранее, падали как
+                    картонные, при учете немаленькой стоимости. Надоело заморачиваться с подпорками, хотелось купить и
+                    забыть. Так и вышло – до сих пор как стояла, так и стоит, несколько раз приезжал ее проверять зимой,
+                    все в полном порядке. Одним словом, всем советую. Спасибо.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-howToSave" id="section-howToSave">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-7 col-md-8 offset-xxl-2 text-size-7 py-5">
+          <div class="text-uppercase text-size-4 font-weight-normal">УЗНАЙТЕ</div>
+          <div class="text-uppercase text-size-7 font-weight-bold">КАК СЭКОНОМИТЬ</div>
+          <div class="text-uppercase text-size-6 mb-3">ПРИ ВЫБОРЕ ТЕПЛИЦЫ</div>
+          <div class="font-weight-normal"><span class="font-weight-bold">Оставьте заявку,</span> и наш специалист Вам
+            перезвонит.</div>
+        </div>
+        <div class="col-xl-6 offset-xl-4 col-sm-10 offset-sm-2">
+          <form class="howToSave-form">
+            <div class="row">
+              <div class="col-sm-6">
+                <input type="text" name="name" class="form-control my-sm-0 my-2 border-radius-30 h-auto p-3"
+                  placeholder="Ваше имя">
+              </div>
+              <div class="col-sm-6">
+                <input type="tel" name="phone" class="form-control my-sm-0 my-2 border-radius-30 h-auto p-3"
+                  placeholder="Номер телефона" required="">
+              </div>
+              <div class="col-12 text-center my-3">
+                <button type="submit" class="d-block w-75 btn_custom text-uppercase border-0">ЗАКАЗАТЬ
+                  Консультацию</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-reliable" id="section-reliable">
+    <div class="container">
+      <div class="row">
+        <div class="col-2 position-relative d-sm-block d-none">
+          <div class="square__upToDown top-0 right-0 position-absolute square-value__7 radius__leftBottom bg_green">
+          </div>
+          <div
+            class="square__upToDown__reverse bottom-0 left-0 position-absolute square-value__3 radius__leftTop bg_green">
+          </div>
+        </div>
+        <div class="col-lg-7 col-sm-10 py-5">
+          <div class="h2 m-0">
+            <div class="text-uppercase text-size-7 font-weight-light">ВЫСОКИЕ СТАНДАРТЫ</div>
+            <div class="text-uppercase text-size-6 font-weight-bold">НАДЕЖНЫХ ТЕПЛИЦ</div>
+          </div>
+          <div class="font-weight-bold">Показатель качества теплицы прост - она должна прослужить Вам долгие годы.</div>
+          <div class="font-weight-light">Не требовать ремонта, не заставлять нервничать при сильных ветрах и снегопадах,
+            окупать себя хорошим урожаем.</div>
+        </div>
+        <div class="col-3 position-relative d-lg-block d-none">
+          <div class="square__upToDown top-0 left-0 position-absolute square-value__3 radius__leftBottom bg_blackGreen">
+          </div>
+          <div
+            class="square__upToDown__reverse bottom-0 right-0 position-absolute square-value__14 radius__rightTop bg_blackGreen">
+          </div>
+          <div
+            class="square__upToDown__reverse d-xl-block d-none bottom-0 left-0 position-absolute square-value__5 radius__leftBottom bg_blackGreen">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-highClass" id="section-highClass">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-2 col-1 d-lg-block d-none">
+          <div
+            class="square__upToDown__reverse d-xxl-block d-none top-0 right-0 position-absolute square-value__3 radius__rightBottom bg-white">
+          </div>
+          <div class="square__upToDown left-0 square__1 position-absolute square-value__14 radius__leftTop bg-white">
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-5 col-sm-6">
+          <div class="highClass text-white font-weight-light text-right">
+            <div class="text-uppercase text-size-7 text-left font-weight-bold mb-4 castom_shadow__title">ПОЛИКАРБОНАТ
+              ВЫСОКОГО КЛАССА</div>
+            <ul class="text-size-5 text-left orange__ul">
+              <li>Высокая теплоизоляция - <span class="font-weight-bold">выдерживает перепады от -50°С до +60°С.</span>
+              </li>
+              <li><span class="font-weight-bold">Рассеивает солнечный свет,</span> защищая растения от ожогов.</li>
+              <li><span class="font-weight-bold">Не трескается, выдерживает удары</span> и сильные снеговые нагрузки.
+              </li>
+              <li><span class="font-weight-bold">Не мутнеет</span> под солнцем долгие годы.</li>
+            </ul>
+            <div class="font-weight-bold d-inline-block bg-white radius__leftTop text-left highClass__warranty">
+              <div class="font-weight-normal">до</div>
+              <div class="text-size-7"><span>15</span> лет</div>
+              <div class="font-weight-normal">гарантии</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-prochnKarkas" id="section-prochnKarkas">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 offset-sm-6 col-12">
+          <div class="prochnKarkas text-white font-weight-light">
+            <div class="text-uppercase text-size-7 font-weight-bold mb-4 castom_shadow__title">МАКСИМАЛЬНАЯ ПРОЧНОСТЬ
+              КАРКАСА</div>
+            <ul class="text-size-5 green__ul">
+               <li><span class="font-weight-bold">Оцинкованная труба.</span> Двойная оцинковка металла норвежским цинком.</li>
+                <li>Цинкование - <span class="font-weight-bold">при температуре около 460 °C</span>
+              </li>
+              <li><span class="font-weight-bold">Заводское производство. </span> На долгий срок сохраняет металлические элементы от ржавчины без нанесение краски.
+              </li>
+              <li><span class="font-weight-bold">Повышенная прочность. </span> Выдержит любой дождь-град, ветер и снежную зиму.</li>
+            </ul>
+            <div class="font-weight-bold d-inline-block prochnKarkas__warranty radius__rightTop text-center bg-white">
+              <div class="text-size-7"><span>2</span> года</div>
+              <div class="font-weight-normal">гарантии</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center py-4">
+          <div class="font-weight-bold text-size-7">Вы застрахованы от некачественных подделок.</div>
+          <div class="text-size-5">Если качество теплицы окажется ниже заявленного, мы вернем Вам деньги.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-catalog" id="section-catalog">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center pb-3">
+          <a href="#catalog__product1" class="smoothscroll d-sm-block d-none">
+            <img src="./public/assets/img/icons/cetalog-topBtn.png" class="img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 d-md-block d-none">
+          <div
+            class="square__upToDown__reverse top-0 left-0 position-absolute square-value__7 radius__leftBottom bg_orange">
+          </div>
+          <div class="square__upToDown square__2 right-0 position-absolute square-value__3 radius__rightTop bg_orange">
+          </div>
+        </div>
+        <div class="col-md-8 offset-md-2 col-12">
+          <div class="section_title text-center text-uppercase">
+            <div class="font-weight-bold">ДОКАЗАЛИ СВОЮ НАДЕЖНОСТЬ</div>
+            <div class="font-weight-normal">ПРИ ЛЮБЫХ ПОГОДНЫХ УСЛОВИЯХ</div>
+          </div>
+        </div>
+
+
+        <div class="col-12" id="catalog__product1">
+          <form class="catalog-form my-5 has-calculator">
+            <input type="hidden" name="form" value="Карточка товара">
+            <input type="hidden" name="product" value="mini">
+            <div class="catalog-form__top">
+              <div class="row">
+                <div class="col-lg-4 offset-lg-2 offset-1 col-md-5 col-9">
+                  <div class="owl-carousel owl-carousel-catalog owl-theme radius__leftTop">
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/mini1.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/mini2.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/mini3.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/mini4.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/mini5.jpg" class="img-fluid ml-auto">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12 my-md-0 my-3">
+                  <div class="font-weight-bold section_title line-height-1 ml-md-0 mx-auto w-50">Теплица Мини</div>
+                  <table class="table catalog-form__table table-borderless ml-md-0 mx-auto">
+                    <tbody>
+                      <tr>
+                        <td>Ширина теплицы</td>
+                        <td>2 или 2.4 <span class="text_green">м</span></td>
+                      </tr>
+                        <tr>
+                        <td>Высота теплицы</td>
+                        <td>1.90 или 1.75 <span class="text_green">м</span></td>
+                      </tr>
+                        <tr>
+                        <td>Профиль дуги</td>
+                        <td>20x20 <span class="text_green">мм</span></td>
+                      </tr>
+                      <tr>
+                        <td>Расстояние между дугами</td>
+                        <td>1 и 0.67 <span class="text_green">м</span></td>
+                      </tr>
+                      <tr>
+                        <td>Защита каркаса</td>
+                        <td>Погружная оцинковка <span class="text_green"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-12 text-center my-3">
+                <div class="text-size-7">Индивидуальные характеристики</div>
+              </div>
+              <div class="col-lg-4 castom_input my-lg-0 my-3 text-center text-lg-right">
+                <div class="text-size-6 mb-2">Длина теплицы (<span class="text_green">м</span>):</div>
+                <div class="c__input d-inline-block">
+                  <input id="product1-length-4" type="radio" name="length" value="4" checked="">
+                  <label for="product1-length-4">4</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product1-length-6" type="radio" name="length" value="6">
+                  <label for="product1-length-6">6</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product1-length-8" type="radio" name="length" value="8">
+                  <label for="product1-length-8">8</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product1-length-10" type="radio" name="length" value="10">
+                  <label for="product1-length-10">10</label>
+                </div>
+              </div>
+              <div class="col-lg-4 castom_input my-lg-0 my-3 text-center text-lg-center">
+                <div class="text-size-6 mb-2">Расстояние между дугами (<span class="text_green">м</span>):</div>
+                <div class="c__input d-inline-block">
+                  <input id="product1-shag-100" type="radio" name="tolshchina" value="100" checked="">
+                  <label for="product1-shag-100">100</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product1-shag-67" type="radio" name="tolshchina" value="67">
+                  <label for="product1-shag-67">67</label>
+                </div>
+              </div>
+              <div class="col-lg-4 my-lg-0 my-3 text-center text-lg-left">
+                <div class="font-weight-light">
+                  <s class="catalog__price">Цена: <span class="jPriceOld">0</span> р.</s><br>
+                  <div class="catalog__price text-size-7 font-weight-bold"><span class="jPrice">0</span> р.</div>
+                </div>
+              </div>
+              <div class="col-12 text-center py-5">
+                <a href="#modal-product1" data-toggle="modal"
+                  class="btn_custom btn_product text-uppercase w-auto px-5 font-weight-bold text-size-6">подробнее</a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="col-12" id="catalog__product2">
+          <form class="catalog-form my-5 has-calculator">
+            <input type="hidden" name="form" value="Карточка товара">
+            <input type="hidden" name="product" value="ocinkovochka">
+            <div class="catalog-form__top">
+              <div class="row">
+                <div class="col-lg-4 offset-lg-2 offset-1 col-md-5 col-9">
+                  <div class="owl-carousel owl-carousel-catalog owl-theme radius__leftTop">
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/ocinkovka1.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/ocinkovka2.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/ocinkovka3.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/ocinkovka4.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/ocinkovka5.jpg" class="img-fluid ml-auto">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12 my-md-0 my-3">
+                  <div class="font-weight-bold section_title line-height-1 ml-md-0 mx-auto w-50">Теплица Оцинковочка
+                  </div>
+                  <table class="table catalog-form__table table-borderless ml-md-0 mx-auto">
+                    <tbody>
+                      <tr>
+                        <td>Ширина теплицы</td>
+                        <td>3 <span class="text_green">м</span></td>
+                      </tr>
+                        <tr>
+                        <td>Высота теплицы</td>
+                        <td>2.10 <span class="text_green">м</span></td>
+                      </tr>
+                        <tr>
+                        <td>Профиль дуги</td>
+                        <td>20x20 <span class="text_green">мм</span></td>
+                      </tr>
+                      <tr>
+                        <td>Расстояние между дугами</td>
+                        <td>1, 0.67 и 0.5 <span class="text_green">м</span></td>
+                      </tr>
+                      <tr>
+                        <td>Защита каркаса</td>
+                        <td>Напыление <span class="text_green"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-12 text-center my-3">
+                <div class="text-size-7">Индивидуальные характеристики</div>
+              </div>
+              <div class="col-lg-4 castom_input my-lg-0 my-3 text-center text-lg-right">
+                <div class="text-size-6 mb-2">Длина теплицы (<span class="text_green">м</span>):</div>
+                <div class="c__input d-inline-block">
+                  <input id="product2-length-4" type="radio" name="length" value="4" checked="">
+                  <label for="product2-length-4">4</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product2-length-6" type="radio" name="length" value="6">
+                  <label for="product2-length-6">6</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product2-length-8" type="radio" name="length" value="8">
+                  <label for="product2-length-8">8</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product2-length-10" type="radio" name="length" value="10">
+                  <label for="product2-length-10">10</label>
+                </div>
+              </div>
+              <div class="col-lg-4 castom_input my-lg-0 my-3 text-center text-lg-center">
+                <div class="text-size-6 mb-2">Расстояние между дугами (<span class="text_green">м</span>):</div>
+                <div class="c__input d-inline-block">
+                  <input id="product2-shag-100" type="radio" name="tolshchina" value="100" checked="">
+                  <label for="product2-shag-100">100</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product2-shag-67" type="radio" name="tolshchina" value="67">
+                  <label for="product2-shag-67">67</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product2-shag-50" type="radio" name="tolshchina" value="50">
+                  <label for="product2-shag-50">50</label>
+                </div>
+              </div>
+              <div class="col-lg-4 my-lg-0 my-3 text-center text-lg-left">
+                <div class="font-weight-light">
+                  <s class="catalog__price">Цена: <span class="jPriceOld">0</span> р.</s><br>
+                  <div class="catalog__price text-size-7 font-weight-bold"><span class="jPrice">0</span> р.</div>
+                </div>
+              </div>
+              <div class="col-12 text-center py-5">
+                <a href="#modal-product2" data-toggle="modal"
+                  class="btn_custom btn_product text-uppercase w-auto px-5 font-weight-bold text-size-6">подробнее</a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="col-12" id="catalog__product3">
+          <form class="catalog-form my-5 has-calculator">
+            <input type="hidden" name="form" value="Карточка товара">
+            <input type="hidden" name="product" value="sibirskaya-standart">
+            <div class="catalog-form__top">
+              <div class="row">
+                <div class="col-lg-4 offset-lg-2 offset-1 col-md-5 col-9">
+                  <div class="owl-carousel owl-carousel-catalog owl-theme radius__leftTop">
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/sibirskay1.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/sibirskay2.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/sibirskay3.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/sibirskay4.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/sibirskay5.jpg" class="img-fluid ml-auto">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12 my-md-0 my-3">
+                  <div class="font-weight-bold section_title line-height-1 ml-md-0 mx-auto w-50">Теплица Сибирская</div>
+                  <div class="text_green">Отличное соотношение цена/качество.</div>
+                  <table class="table catalog-form__table table-borderless ml-md-0 mx-auto">
+                     <tbody>
+                      <tr>
+                        <td>Ширина теплицы</td>
+                        <td>3 <span class="text_green">м</span></td>
+                      </tr>
+                        <tr>
+                        <td>Высота теплицы</td>
+                        <td>2.10 <span class="text_green">м</span></td>
+                      </tr>
+                        <tr>
+                        <td>Профиль дуги</td>
+                        <td>20x20 <span class="text_green">мм</span></td>
+                      </tr>
+                      <tr>
+                        <td>Расстояние между дугами</td>
+                        <td>1, 0.67 и 0.5 <span class="text_green">м</span></td>
+                      </tr>
+                      <tr>
+                        <td>Защита каркаса</td>
+                        <td>Погружная оцинковка <span class="text_green"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-12 text-center my-3">
+                <div class="text-size-7">Индивидуальные характеристики</div>
+              </div>
+              <div class="col-lg-4 castom_input my-lg-0 my-3 text-center text-lg-right">
+                <div class="text-size-6 mb-2">Длина теплицы (<span class="text_green">м</span>):</div>
+                <div class="c__input d-inline-block">
+                  <input id="product3-length-4" type="radio" name="length" value="4" checked="">
+                  <label for="product3-length-4">4</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product3-length-6" type="radio" name="length" value="6">
+                  <label for="product3-length-6">6</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product3-length-8" type="radio" name="length" value="8">
+                  <label for="product3-length-8">8</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product3-length-10" type="radio" name="length" value="10">
+                  <label for="product3-length-10">10</label>
+                </div>
+              </div>
+              <div class="col-lg-4 castom_input my-lg-0 my-3 text-center text-lg-center">
+                <div class="text-size-6 mb-2">Расстояние между дугами (<span class="text_green">м</span>):</div>
+                <div class="c__input d-inline-block">
+                  <input id="product3-shag-100" type="radio" name="tolshchina" value="100" checked="">
+                  <label for="product3-shag-100">100</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product3-shag-67" type="radio" name="tolshchina" value="67">
+                  <label for="product3-shag-67">67</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product3-shag-50" type="radio" name="tolshchina" value="50">
+                  <label for="product3-shag-50">50</label>
+                </div>
+              </div>
+              <div class="col-lg-4 my-lg-0 my-3 text-center text-lg-left">
+                <div class="font-weight-light">
+                  <s class="catalog__price">Цена: <span class="jPriceOld">0</span> р.</s><br>
+                  <div class="catalog__price text-size-7 font-weight-bold"><span class="jPrice">0</span> р.</div>
+                </div>
+              </div>
+              <div class="col-12 text-center py-5">
+                <a href="#modal-product3" data-toggle="modal"
+                  class="btn_custom btn_product text-uppercase w-auto px-5 font-weight-bold text-size-6">подробнее</a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="col-12" id="catalog__product4">
+          <form class="catalog-form my-5 has-calculator">
+            <input type="hidden" name="form" value="Карточка товара">
+            <input type="hidden" name="product" value="sibirskaya-titan">
+            <div class="catalog-form__top">
+              <div class="row">
+                <div class="col-lg-4 offset-lg-2 offset-1 col-md-5 col-9">
+                  <div class="owl-carousel owl-carousel-catalog owl-theme radius__leftTop">
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/xxl1.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/xxl2.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/xxl3.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/xxl4.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/xxl5.jpg" class="img-fluid ml-auto">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12 my-md-0 my-3">
+                  <div class="font-weight-bold section_title line-height-1 ml-md-0 mx-auto w-50">Теплица XXL/Титан</div>
+                  <div class="text_green">Отличное соотношение цена/качество.</div>
+                  <table class="table catalog-form__table table-borderless ml-md-0 mx-auto">
+                    <tbody>
+                      <tr>
+                        <td>Ширина теплицы</td>
+                        <td>3 <span class="text_green">м</span></td>
+                      </tr>
+                        <tr>
+                        <td>Высота теплицы</td>
+                        <td>2.10 <span class="text_green">м</span></td>
+                      </tr>
+                        <tr>
+                        <td>Профиль дуги</td>
+                        <td>40x20 <span class="text_green">мм</span></td>
+                      </tr>
+                      <tr>
+                        <td>Расстояние между дугами</td>
+                        <td>1, 0.67 и 0.5 <span class="text_green">м</span></td>
+                      </tr>
+                      <tr>
+                        <td>Защита каркаса</td>
+                        <td>Погружная оцинковка <span class="text_green"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-12 text-center my-3">
+                <div class="text-size-7">Индивидуальные характеристики</div>
+              </div>
+              <div class="col-lg-4 castom_input my-lg-0 my-3 text-center text-lg-right">
+                <div class="text-size-6 mb-2">Длина теплицы (<span class="text_green">м</span>):</div>
+                <div class="c__input d-inline-block">
+                  <input id="product4-length-4" type="radio" name="length" value="4" checked="">
+                  <label for="product4-length-4">4</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product4-length-6" type="radio" name="length" value="6">
+                  <label for="product4-length-6">6</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product4-length-8" type="radio" name="length" value="8">
+                  <label for="product4-length-8">8</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product4-length-10" type="radio" name="length" value="10">
+                  <label for="product4-length-10">10</label>
+                </div>
+              </div>
+              <div class="col-lg-4 castom_input my-lg-0 my-3 text-center text-lg-center">
+                <div class="text-size-6 mb-2">Расстояние между дугами (<span class="text_green">м</span>):</div>
+                <div class="c__input d-inline-block">
+                  <input id="product4-shag-100" type="radio" name="tolshchina" value="100" checked="">
+                  <label for="product4-shag-100">100</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product4-shag-67" type="radio" name="tolshchina" value="67">
+                  <label for="product4-shag-67">67</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product4-shag-50" type="radio" name="tolshchina" value="50">
+                  <label for="product4-shag-50">50</label>
+                </div>
+              </div>
+              <div class="col-lg-4 my-lg-0 my-3 text-center text-lg-left">
+                <div class="font-weight-light">
+                  <s class="catalog__price">Цена: <span class="jPriceOld">0</span> р.</s><br>
+                  <div class="catalog__price text-size-7 font-weight-bold"><span class="jPrice">0</span> р.</div>
+                </div>
+              </div>
+              <div class="col-12 text-center py-5">
+                <a href="#modal-product4" data-toggle="modal"
+                  class="btn_custom btn_product text-uppercase w-auto px-5 font-weight-bold text-size-6">подробнее</a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="col-12" id="catalog__product5">
+          <form class="catalog-form my-5 has-calculator">
+            <input type="hidden" name="form" value="Карточка товара">
+            <input type="hidden" name="product" value="kaplya">
+            <div class="catalog-form__top">
+              <div class="row">
+                <div class="col-lg-4 offset-lg-2 offset-1 col-md-5 col-9">
+                  <div class="owl-carousel owl-carousel-catalog owl-theme radius__leftTop">
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/kaply1.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/kaply2.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/kaply3.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/kaply4.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/kaply5.jpg" class="img-fluid ml-auto">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12 my-md-0 my-3">
+                  <div class="font-weight-bold section_title line-height-1 ml-md-0 mx-auto w-50">Теплица Капелька</div>
+                  <div class="text_green">Отличное соотношение цена/качество.</div>
+                  <table class="table catalog-form__table table-borderless ml-md-0 mx-auto">
+                    <tbody>
+                      <tr>
+                        <td>Ширина теплицы</td>
+                        <td>3 <span class="text_green">м</span></td>
+                      </tr>
+                        <tr>
+                        <td>Высота теплицы</td>
+                        <td>2.30 <span class="text_green">м</span></td>
+                      </tr>
+                        <tr>
+                        <td>Профиль дуги</td>
+                        <td>40x20 <span class="text_green">мм</span></td>
+                      </tr>
+                      <tr>
+                        <td>Расстояние между дугами</td>
+                        <td>1, 0.67 и 0.5 <span class="text_green">м</span></td>
+                      </tr>
+                      <tr>
+                        <td>Защита каркаса</td>
+                        <td>Погружная оцинковка <span class="text_green"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-12 text-center my-3">
+                <div class="text-size-7">Индивидуальные характеристики</div>
+              </div>
+              <div class="col-lg-4 castom_input my-lg-0 my-3 text-center text-lg-right">
+                <div class="text-size-6 mb-2">Длина теплицы (<span class="text_green">м</span>):</div>
+                <div class="c__input d-inline-block">
+                  <input id="product5-length-4" type="radio" name="length" value="4" checked="">
+                  <label for="product5-length-4">4</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product5-length-6" type="radio" name="length" value="6">
+                  <label for="product5-length-6">6</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product5-length-8" type="radio" name="length" value="8">
+                  <label for="product5-length-8">8</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product5-length-10" type="radio" name="length" value="10">
+                  <label for="product5-length-10">10</label>
+                </div>
+              </div>
+              <div class="col-lg-4 castom_input my-lg-0 my-3 text-center text-lg-center">
+                <div class="text-size-6 mb-2">Расстояние между дугами (<span class="text_green">м</span>):</div>
+                <div class="c__input d-inline-block">
+                  <input id="product5-shag-100" type="radio" name="tolshchina" value="100" checked>
+                  <label for="product5-shag-100">100</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product5-shag-67" type="radio" name="tolshchina" value="67">
+                  <label for="product5-shag-67">67</label>
+                </div>
+              </div>
+              <div class="col-lg-4 my-lg-0 my-3 text-center text-lg-left">
+                <div class="font-weight-light">
+                  <s class="catalog__price">Цена: <span class="jPriceOld">0</span> р.</s><br>
+                  <div class="catalog__price text-size-7 font-weight-bold"><span class="jPrice">0</span> р.</div>
+                </div>
+              </div>
+              <div class="col-12 text-center py-5">
+                <a href="#modal-product5" data-toggle="modal"
+                  class="btn_custom btn_product text-uppercase w-auto px-5 font-weight-bold text-size-6">подробнее</a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="col-12" id="catalog__product6">
+          <form class="catalog-form my-5 has-calculator">
+            <input type="hidden" name="form" value="Карточка товара">
+            <input type="hidden" name="product" value="domik">
+            <div class="catalog-form__top">
+              <div class="row">
+                <div class="col-lg-4 offset-lg-2 offset-1 col-md-5 col-9">
+                  <div class="owl-carousel owl-carousel-catalog owl-theme radius__leftTop">
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/domik1.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/domik2.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/domik3.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/domik4.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/domik5.jpg" class="img-fluid ml-auto">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12 my-md-0 my-3">
+                  <div class="font-weight-bold section_title line-height-1 ml-md-0 mx-auto w-50">Теплица Двускатная
+                  </div>
+                  <div class="text_green">Отличное соотношение цена/качество.</div>
+                  <table class="table catalog-form__table table-borderless ml-md-0 mx-auto">
+                    <tbody>
+                      <tr>
+                        <td>Ширина теплицы</td>
+                        <td>2.85 <span class="text_green">м</span></td>
+                      </tr>
+                        <tr>
+                        <td>Высота теплицы</td>
+                        <td>2.40 <span class="text_green">м</span></td>
+                      </tr>
+                        <tr>
+                        <td>Профиль дуги</td>
+                        <td>40x20 <span class="text_green">мм</span></td>
+                      </tr>
+                      <tr>
+                        <td>Расстояние между дугами</td>
+                        <td>1 <span class="text_green">м</span></td>
+                      </tr>
+                      <tr>
+                        <td>Защита каркаса</td>
+                        <td>Погружная оцинковка <span class="text_green"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-12 text-center my-3">
+                <div class="text-size-7">Индивидуальные характеристики</div>
+              </div>
+              <div class="col-lg-4 castom_input my-lg-0 my-3 text-center text-lg-right">
+                <div class="text-size-6 mb-2">Длина теплицы (<span class="text_green">м</span>):</div>
+                <div class="c__input d-inline-block">
+                  <input id="product6-length-4" type="radio" name="length" value="4" checked="">
+                  <label for="product6-length-4">4</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product6-length-6" type="radio" name="length" value="6">
+                  <label for="product6-length-6">6</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product6-length-8" type="radio" name="length" value="8">
+                  <label for="product6-length-8">8</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product6-length-10" type="radio" name="length" value="10">
+                  <label for="product6-length-10">10</label>
+                </div>
+              </div>
+              <div class="col-lg-4 castom_input my-lg-0 my-3 text-center text-lg-center">
+                <div class="text-size-6 mb-2">Расстояние между дугами (<span class="text_green">м</span>):</div>
+                <div class="c__input d-inline-block">
+                  <input id="product6-shag-100" type="radio" name="tolshchina" value="100" checked="">
+                  <label for="product6-shag-100">100</label>
+                </div>
+              </div>
+              <div class="col-lg-4 my-lg-0 my-3 text-center text-lg-left">
+                <div class="font-weight-light">
+                  <s class="catalog__price">Цена: <span class="jPriceOld">0</span> р.</s><br>
+                  <div class="catalog__price text-size-7 font-weight-bold"><span class="jPrice">0</span> р.</div>
+                </div>
+              </div>
+              <div class="col-12 text-center py-5">
+                <a href="#modal-product6" data-toggle="modal"
+                  class="btn_custom btn_product text-uppercase w-auto px-5 font-weight-bold text-size-6">подробнее</a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="col-12" id="catalog__product7">
+          <form class="catalog-form my-5 has-calculator">
+            <input type="hidden" name="form" value="Карточка товара">
+            <input type="hidden" name="product" value="shirokaya-3_5m">
+            <div class="catalog-form__top">
+              <div class="row">
+                <div class="col-lg-4 offset-lg-2 offset-1 col-md-5 col-9">
+                  <div class="owl-carousel owl-carousel-catalog owl-theme radius__leftTop">
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/3.5w1.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/3.5w2.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/3.5w3.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/3.5w4.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/3.5w5.jpg" class="img-fluid ml-auto">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12 my-md-0 my-3">
+                  <div class="font-weight-bold section_title line-height-1 ml-md-0 mx-auto w-50">Теплица Агровеликан 3.5
+                    ширина</div>
+                  <div class="text_green">Отличное соотношение цена/качество.</div>
+                  <table class="table catalog-form__table table-borderless ml-md-0 mx-auto">
+                    <tbody>
+                      <tr>
+                        <td>Ширина теплицы</td>
+                        <td>3.5 <span class="text_green">м</span></td>
+                      </tr>
+                        <tr>
+                        <td>Высота теплицы</td>
+                        <td>2.10 <span class="text_green">м</span></td>
+                      </tr>
+                        <tr>
+                        <td>Профиль дуги</td>
+                        <td>40x20 <span class="text_green">мм</span></td>
+                      </tr>
+                      <tr>
+                        <td>Расстояние между дугами</td>
+                        <td>1, 0.67 и 0.5 <span class="text_green">м</span></td>
+                      </tr>
+                      <tr>
+                        <td>Защита каркаса</td>
+                        <td>Погружная оцинковка <span class="text_green"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-12 text-center my-3">
+                <div class="text-size-7">Индивидуальные характеристики</div>
+              </div>
+              <div class="col-lg-4 castom_input my-lg-0 my-3 text-center text-lg-right">
+                <div class="text-size-6 mb-2">Длина теплицы (<span class="text_green">м</span>):</div>
+                <div class="c__input d-inline-block">
+                  <input id="product7-length-4" type="radio" name="length" value="4" checked="">
+                  <label for="product7-length-4">4</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product7-length-6" type="radio" name="length" value="6">
+                  <label for="product7-length-6">6</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product7-length-8" type="radio" name="length" value="8">
+                  <label for="product7-length-8">8</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product7-length-10" type="radio" name="length" value="10">
+                  <label for="product7-length-10">10</label>
+                </div>
+              </div>
+              <div class="col-lg-4 castom_input my-lg-0 my-3 text-center text-lg-center">
+                <div class="text-size-6 mb-2">Расстояние между дугами (<span class="text_green">м</span>):</div>
+                <div class="c__input d-inline-block">
+                  <input id="product7-shag-100" type="radio" name="tolshchina" value="100" checked="">
+                  <label for="product7-shag-100">100</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product7-shag-67" type="radio" name="tolshchina" value="67">
+                  <label for="product7-shag-67">67</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product7-shag-50" type="radio" name="tolshchina" value="50">
+                  <label for="product7-shag-50">50</label>
+                </div>
+              </div>
+              <div class="col-lg-4 my-lg-0 my-3 text-center text-lg-left">
+                <div class="font-weight-light">
+                  <s class="catalog__price">Цена: <span class="jPriceOld">0</span> р.</s><br>
+                  <div class="catalog__price text-size-7 font-weight-bold"><span class="jPrice">0</span> р.</div>
+                </div>
+              </div>
+              <div class="col-12 text-center py-5">
+                <a href="#modal-product7" data-toggle="modal"
+                  class="btn_custom btn_product text-uppercase w-auto px-5 font-weight-bold text-size-6">подробнее</a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="col-12" id="catalog__product8">
+          <form class="catalog-form my-5 has-calculator">
+            <input type="hidden" name="form" value="Карточка товара">
+            <input type="hidden" name="product" value="shirokaya-4m">
+            <div class="catalog-form__top">
+              <div class="row">
+                <div class="col-lg-4 offset-lg-2 offset-1 col-md-5 col-9">
+                  <div class="owl-carousel owl-carousel-catalog owl-theme radius__leftTop">
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/4w1.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/4w2.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/4w3.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/4w4.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="public/assets/img/catalog/4w5.jpg" class="img-fluid ml-auto">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12 my-md-0 my-3">
+                  <div class="font-weight-bold section_title line-height-1 ml-md-0 mx-auto w-50">Теплица Агровеликан 4
+                    ширина</div>
+                  <div class="text_green">Отличное соотношение цена/качество.</div>
+                  <table class="table catalog-form__table table-borderless ml-md-0 mx-auto">
+                    <tbody>
+                      <tr>
+                        <td>Ширина теплицы</td>
+                        <td>4 <span class="text_green">м</span></td>
+                      </tr>
+                        <tr>
+                        <td>Высота теплицы</td>
+                        <td>2.10 <span class="text_green">м</span></td>
+                      </tr>
+                        <tr>
+                        <td>Профиль дуги</td>
+                        <td>40x20 <span class="text_green">мм</span></td>
+                      </tr>
+                      <tr>
+                        <td>Расстояние между дугами</td>
+                        <td>1, 0.67 и 0.5 <span class="text_green">м</span></td>
+                      </tr>
+                      <tr>
+                        <td>Защита каркаса</td>
+                        <td>Погружная оцинковка <span class="text_green"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-12 text-center my-3">
+                <div class="text-size-7">Индивидуальные характеристики</div>
+              </div>
+              <div class="col-lg-4 castom_input my-lg-0 my-3 text-center text-lg-right">
+                <div class="text-size-6 mb-2">Длина теплицы (<span class="text_green">м</span>):</div>
+                <div class="c__input d-inline-block">
+                  <input id="product8-length-4" type="radio" name="length" value="4" checked="">
+                  <label for="product8-length-4">4</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product8-length-6" type="radio" name="length" value="6">
+                  <label for="product8-length-6">6</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product8-length-8" type="radio" name="length" value="8">
+                  <label for="product8-length-8">8</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product8-length-10" type="radio" name="length" value="10">
+                  <label for="product8-length-10">10</label>
+                </div>
+              </div>
+              <div class="col-lg-4 castom_input my-lg-0 my-3 text-center text-lg-center">
+                <div class="text-size-6 mb-2">Расстояние между дугами (<span class="text_green">м</span>):</div>
+                <div class="c__input d-inline-block">
+                  <input id="product8-shag-100" type="radio" name="tolshchina" value="100" checked="">
+                  <label for="product8-shag-100">100</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product8-shag-67" type="radio" name="tolshchina" value="67">
+                  <label for="product8-shag-67">67</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product8-shag-50" type="radio" name="tolshchina" value="50">
+                  <label for="product8-shag-50">50</label>
+                </div>
+              </div>
+              <div class="col-lg-4 my-lg-0 my-3 text-center text-lg-left">
+                <div class="font-weight-light">
+                  <s class="catalog__price">Цена: <span class="jPriceOld">0</span> р.</s><br>
+                  <div class="catalog__price text-size-7 font-weight-bold"><span class="jPrice">0</span> р.</div>
+                </div>
+              </div>
+              <div class="col-12 text-center py-5">
+                <a href="#modal-product8" data-toggle="modal"
+                  class="btn_custom btn_product text-uppercase w-auto px-5 font-weight-bold text-size-6">подробнее</a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="col-12" id="catalog__product9">
+          <form class="catalog-form my-5 has-calculator">
+            <input type="hidden" name="form" value="Карточка товара">
+            <input type="hidden" name="product" value="sibirskaya-ferma">
+            <div class="catalog-form__top">
+              <div class="row">
+                <div class="col-lg-4 offset-lg-2 offset-1 col-md-5 col-9">
+                  <div class="owl-carousel owl-carousel-catalog owl-theme radius__leftTop">
+                    <div class="item catalog-wrap">
+                      <img src="./public/assets/img/catalog/ferma1.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="./public/assets/img/catalog/ferma2.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="./public/assets/img/catalog/ferma3.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="./public/assets/img/catalog/ferma4.jpg" class="img-fluid ml-auto">
+                    </div>
+                    <div class="item catalog-wrap">
+                      <img src="./public/assets/img/catalog/ferma5.jpg" class="img-fluid ml-auto">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12 my-md-0 my-3">
+                  <div class="font-weight-bold section_title line-height-1 ml-md-0 mx-auto w-50">Теплица Ферма</div>
+                  <div class="text_green">Отличное соотношение цена/качество.</div>
+                  <table class="table catalog-form__table table-borderless ml-md-0 mx-auto">
+                    <tbody>
+                      <tr>
+                        <td>Ширина теплицы</td>
+                        <td>3 <span class="text_green">м</span></td>
+                      </tr>
+                        <tr>
+                        <td>Высота теплицы</td>
+                        <td>2.10 <span class="text_green">м</span></td>
+                      </tr>
+                        <tr>
+                        <td>Профиль дуги</td>
+                        <td>20x20 2-я дуга <span class="text_green">мм</span></td>
+                      </tr>
+                      <tr>
+                        <td>Расстояние между дугами</td>
+                        <td>1 и 0.67 <span class="text_green">м</span></td>
+                      </tr>
+                      <tr>
+                        <td>Защита каркаса</td>
+                        <td>Погружная оцинковка <span class="text_green"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-12 text-center my-3">
+                <div class="text-size-7">Индивидуальные характеристики</div>
+              </div>
+              <div class="col-lg-4 castom_input my-lg-0 my-3 text-center text-lg-right">
+                <div class="text-size-6 mb-2">Длина теплицы (<span class="text_green">м</span>):</div>
+                <div class="c__input d-inline-block">
+                  <input id="product9-length-4" type="radio" name="length" value="4" checked="">
+                  <label for="product9-length-4">4</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product9-length-6" type="radio" name="length" value="6">
+                  <label for="product9-length-6">6</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product9-length-8" type="radio" name="length" value="8">
+                  <label for="product9-length-8">8</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product9-length-10" type="radio" name="length" value="10">
+                  <label for="product9-length-10">10</label>
+                </div>
+              </div>
+              <div class="col-lg-4 castom_input my-lg-0 my-3 text-center text-lg-center">
+                <div class="text-size-6 mb-2">Расстояние между дугами (<span class="text_green">м</span>):</div>
+                <div class="c__input d-inline-block">
+                  <input id="product9-shag-100" type="radio" name="tolshchina" value="100" checked="">
+                  <label for="product9-shag-100">100</label>
+                </div>
+                <div class="c__input d-inline-block">
+                  <input id="product9-shag-67" type="radio" name="tolshchina" value="67">
+                  <label for="product9-shag-67">67</label>
+                </div>
+              </div>
+              <div class="col-lg-4 my-lg-0 my-3 text-center text-lg-left">
+                <div class="font-weight-light">
+                  <s class="catalog__price">Цена: <span class="jPriceOld">0</span> р.</s><br>
+                  <div class="catalog__price text-size-7 font-weight-bold"><span class="jPrice">0</span> р.</div>
+                </div>
+              </div>
+              <div class="col-12 text-center py-5">
+                <a href="#modal-product9" data-toggle="modal"
+                  class="btn_custom btn_product text-uppercase w-auto px-5 font-weight-bold text-size-6">подробнее</a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section-howToSave2" id="section-howToSave2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-4 text-size-7 py-5">
+          <div class="text-uppercase text-size-4 font-weight-normal">УЗНАЙТЕ,</div>
+          <div class="text-uppercase text-size-7 font-weight-bold">КАК СЭКОНОМИТЬ</div>
+          <div class="text-uppercase text-size-6 mb-3">ПРИ ВЫБОРЕ ТЕПЛИЦЫ</div>
+          <div class="font-weight-normal"><span class="font-weight-bold">Оставьте заявку,</span> и наш специалист Вам
+            перезвонит.</div>
+        </div>
+        <div class="col-xl-6 offset-xl-2 col-sm-10">
+          <form class="howToSave-form">
+            <div class="row">
+              <div class="col-sm-6">
+                <input type="text" name="name" class="form-control my-sm-0 my-2 border-radius-30 h-auto p-3"
+                  placeholder="Ваше имя">
+              </div>
+              <div class="col-sm-6">
+                <input type="tel" name="phone" class="form-control my-sm-0 my-2 border-radius-30 h-auto p-3"
+                  placeholder="Номер телефона" required="">
+              </div>
+              <div class="col-12 text-center my-3">
+                <button type="submit" class="d-block w-75 btn_custom text-uppercase border-0">ЗАКАЗАТЬ
+                  Консультацию</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-installation my-5" id="section-installation">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-2 position-relative d-lg-block d-none">
+          <div class="square__upToDown top-0 right-0 position-absolute square-value__7 radius__leftBottom bg_green">
+          </div>
+          <div
+            class="square__upToDown__reverse bottom-0 left-0 position-absolute square-value__3 radius__leftTop bg_green">
+          </div>
+        </div>
+        <div class="col-lg-8 col-12 text-center">
+          <div class="font-weight-light section-installation__title">БЫСТРЫЙ</div>
+          <div class="font-weight-bold section-installation__subtitle mb-2">МОНТАЖ ТЕПЛИЦЫ</div>
+          <div class="font-weight-bold section-installation__text">Сделать все самостоятельно или заказать
+            профессиональный монтаж? Выбор за Вами.</div>
+        </div>
+        <div class="col-2 position-relative d-lg-block d-none">
+          <div
+            class="square__upToDown__reverse borrom-0 left-0 position-absolute square-value__10 radius__rightTop bg_orange">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-assembly" id="section-assembly">
+    <div class="container-fluid">
+      <div class="row align-items-stretch text-white">
+        <div class="col-sm-6 section-assemLeft">
+          <div class="row mx-0">
+            <div class="col-xl-5 col-3 d-lg-block d-none">
+              <div
+                class="square__upToDown__reverse d-xxl-block d-none top-0 right-0 position-absolute square-value__3 radius__rightBottom bg-white">
+              </div>
+              <div
+                class="square__upToDown left-0 square__1 position-absolute square-value__14 radius__leftTop bg-white">
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="text-uppercase section_title text-left line-height-1 font-weight-bold castom_shadow__title">
+                ПРОФЕССИОНАЛЬНАЯ СБОРКА</div>
+              <div class="text-uppercase text-size-5 text-left line-height-1 castom_shadow__title mb-4">
+              </div>
+              <div class="line-height-1 text-size-5 mb-4 castom_shadow__text font-weight-light">
+                Если Вы хотите избавить себя от хлопот и исключить ошибки, доверьте монтаж нашим специалистам. <span
+                  class="font-weight-bold">Всего за несколько часов теплица будет установлена на участке.</span>
+              </div>
+              <div class="line-height-1 text-size-5 mb-4 castom_shadow__text font-weight-light">
+                Стоимость монтажа - от 100  рублей, в зависимости от размера теплицы.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 section-assemRight">
+          <div class="row mx-0">
+            <div class="col-xl-6 offset-xl-1">
+              <div
+                class="text-uppercase section_title text-left line-height-1 font-weight-bold castom_shadow__title mb-4">
+                САМОСТОЯТЕЛЬНАЯ СБОРКА</div>
+              <div class="line-height-1 text-size-5 mb-4 castom_shadow__text font-weight-light">
+                Теплицу можно собрать самостоятельно - это не сложно, благодаря подробной инструкции. <span
+                  class="font-weight-bold">С монтажом справится даже непрофессионал.</span>
+              </div>
+              <div class="">
+                <button type="submit" class="d-block w-75 btn_custom border-0">Руководство о монтаже теплиц и инструкции
+                  по сборке</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-reviewTo" id="section-reviewTo">
+    <div class="container">
+      <div class="row">
+        <div class="col-2 position-relative d-lg-block d-none">
+          <div class="square__upToDown top-0 right-0 position-absolute square-value__7 radius__leftBottom bg_green">
+          </div>
+        </div>
+        <div class="col-lg-8 text-center">
+          <div class="d-flex align-items-center justify-content-center">
+            <div class="section_title line-height-1">
+              <div class="font-weight-bold">БЕСПЛАТНАЯ ДОСТАВКА В ВАШ ГОРОД</div>
+            </div>
+            <img src="./public/assets/img/icons/auto.png" class="img-fluid mx-4">
+          </div>
+          <div class="font-weight-bold text-size-5 my-2 mb-5">Сделать все самостоятельно или заказать профессиональный
+            монтаж? Выбор за Вами.</div>
+        </div>
+        <div class="col-2 position-relative d-lg-block d-none">
+          <div
+            class="square__upToDown__reverse top-0 left-0 position-absolute square-value__5 radius__rightBottom bg_orange">
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-stretch">
+        <div class="col-xxl-2 col-1 d-lg-block d-none">
+          <div
+            class="square__upToDown__reverse top-0 left-0 position-absolute square-value__5 radius__rightTop bg_green">
+          </div>
+          <div class="square__upToDown bottom-0 right-0 position-absolute square-value__3 radius__leftTop bg_green">
+          </div>
+        </div>
+        <div class="col-1 d-lg-block d-none">
+          <div
+            class="square__upToDown__reverse reviewTo__square1 position-absolute square-value__7 radius__rightBottom bg_green">
+          </div>
+        </div>
+        <div class="col-xxl-3 col-lg-4 col-sm-6 my-sm-0 my-2">
+          <div class="reviewTo-left h-100 text-sm-center text-right pl-sm-3 py-5 pl-5 pr-3 text-size-5">
+            <img src="./public/assets/img/icons/colend.png" class="img-fluid">
+            <div class="mt-sm-5 mt-3 font-weight-light">Теплица будет доставлена</div>
+            <div class="font-weight-bold">в любой удобный для Вас день.</div>
+          </div>
+        </div>
+        <div class="col-xxl-3 col-lg-4 col-sm-6 my-sm-0 my-2">
+          <div class="reviewTo-right h-100 text-sm-center text-right pl-sm-3 py-5 pl-5 pr-3 text-size-5">
+            <img src="./public/assets/img/icons/dogovor.png" class="img-fluid">
+            <div class="mt-sm-5 mt-3 font-weight-light">Работаем без предоплаты.</div>
+            <div class="font-weight-bold">Оплата только после получения и проверки качества.</div>
+          </div>
+        </div>
+        <div class="col-xxl-3 col-2 position-relative d-lg-block d-none">
+          <div
+            class="square__upToDown__reverse reviewTo__square2 position-absolute square-value__14 radius__leftBottom bg_orange">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-weWork py-5" id="section-weWork">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-sm-8">
+          <div class="text-uppercase font-weight-bold section_title">КАК МЫ РАБОТАЕМ</div>
+        </div>
+        <div class="col-xl-8 col-12">
+          <div class="weWork-flower text-right">
+            <img src="./public/assets/img/icons/flower.png" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xl-2 col-md-3 col-6">
+          <div class="weWork-flower__item1">
+            <div class="text_green section_title font-weight-light">.01</div>
+            <div class="text-size-5">
+              Вы оставляете заявку на сайте.
+            </div>
+            <a href="#modal-order" data-toggle="modal"
+              class="d-block p-sm-3 p-2 mt-sm-2 mb-sm-3 my-1 mx-auto btn_custom text-uppercase">Оставить заявку</a>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-3 col-6">
+          <div class="weWork-flower__item2">
+            <div class="text_green section_title font-weight-light">.02</div>
+            <div class="text-size-5">
+              Мы перезваниваем, даем подробную консультацию.
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-3 col-6">
+          <div class="weWork-flower__item3">
+            <div class="text_green section_title font-weight-light">.03</div>
+            <div class="text-size-5">
+              Доставляем Вам теплицу за 2 деня. Монтируем на участке.(не в день приёмки)
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-3 col-6">
+          <div class="weWork-flower__item4">
+            <div class="text_green section_title font-weight-light">.04</div>
+            <div class="text-size-5">
+              Вы вносите оплату, получаете документы и гарантии.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-howToSave" id="section-howToSave3">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-7 col-md-8 offset-xxl-2 text-size-7 py-5">
+          <div class="text-uppercase text-size-4 font-weight-normal">УЗНАЙТЕ,</div>
+          <div class="text-uppercase text-size-7 font-weight-bold">КАК СЭКОНОМИТЬ</div>
+          <div class="text-uppercase text-size-6 mb-3">ПРИ ВЫБОРЕ ТЕПЛИЦЫ</div>
+          <div class="font-weight-normal"><span class="font-weight-bold">Оставьте заявку,</span> и наш специалист Вам
+            перезвонит.</div>
+        </div>
+        <div class="col-xl-6 offset-xl-4 col-sm-10 offset-sm-2">
+          <form class="howToSave-form">
+            <div class="row">
+              <div class="col-sm-6">
+                <input type="text" name="name" class="form-control my-sm-0 my-2 border-radius-30 h-auto p-3"
+                  placeholder="Ваше имя">
+              </div>
+              <div class="col-sm-6">
+                <input type="tel" name="phone" class="form-control my-sm-0 my-2 border-radius-30 h-auto p-3"
+                  placeholder="Номер телефона" required="">
+              </div>
+              <div class="col-12 text-center my-3">
+                <button type="submit" class="d-block w-75 btn_custom text-uppercase border-0">ЗАКАЗАТЬ
+                  Консультацию</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-footer" id="section-footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-3 col-6 d-md-flex d-none align-items-center">
+          <img src="./public/assets/img/icons/logo.png" class="img-fluid mr-2">
+          <div class="logo__text d-flex flex-column justify-content-center pr-3">
+            <div class="mb-2 text-size-6"><span class="font-weight-bold">KSL.by</span><br><span
+                class="font-weight-light">Магазин садовой техники</span></div>
+            <div class="text-size-2 font-weight-light">Теплицы №1 в РБ</div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-6 d-md-flex d-none align-items-center justify-content-center">
+          <i class="mr-2 text_green fa fa-3x fa-clock-o" aria-hidden="true"></i>
+          <div class="logo__text d-flex flex-column justify-content-center pr-3">
+            <div class="text-size-4 font-weight-bold">График работы:</div>
+            <div class="text-size-2"><span class="font-weight-light">ежедневно c</span> <span
+                class="font-weight-bold">8:00 - 23:00</span></div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 text-center">
+          <a href="tel:+375295774518" class="font-weight-bold h5 my-sm-2 my-1 d-block">
+            <i class="fa fa-lg mr-2 text_green fa-mobile" aria-hidden="true"></i>
+            <span>+375 (29) 577-45-18</span>
+          </a>
+          <a href="tel:+375445774518" class="font-weight-bold h5 my-sm-2 my-1 d-block">
+            <i class="fa fa-lg mr-2 text_green fa-mobile" aria-hidden="true"></i>
+            <span>+375 (44) 577-45-18</span>
+          </a>
+        </div>
+        <div class="col-xl-3 col-sm-6">
+          <a href="#modal-order" data-toggle="modal"
+            class="d-block p-sm-3 p-2 mt-sm-2 mb-sm-3 my-1 mx-auto btn_custom text-uppercase">ЗАКАЗАТЬ Консультацию</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- modal -->
+  <div id="modal-order" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <button type="button" class="close p-3" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="text-size-6">&times;</span>
+          </button>
+          <form class="py-4">
+            <input type="hidden" name="form" value="Окно заказа">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 mb-4">
+                  <div class="section_title line-height-1">ЗАКАЖИТЕ КОНСУЛЬТАЦИЮ</div>
+                  <div class="font-weight-light text-size-5">Ответ в течение 15 мин</div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control border-radius-30 h-auto p-3"
+                      placeholder="Ваше имя">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input type="tel" name="phone" class="form-control border-radius-30 h-auto p-3"
+                      placeholder="Номер телефона" required="">
+                  </div>
+                </div>
+                <div class="col-sm-8 offset-sm-2">
+                  <div class="form-group">
+                    <button type="submit"
+                      class="d-block text-size-5 font-weight-bold btn_custom text-uppercase border-0">ЗАКАЗАТЬ
+                      Консультацию</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="modal-product1" class="modal fade modal-product" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body p-0 text-center">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-sm-4 col-6 order-sm-1 order-1">
+                <a href="#modal-product9" data-dismiss="modal" data-toggle="modal" class="modal-prBtn">
+                  <div class="modal-prBtn__prevIcon"><i class="fa fa-chevron-left"></i></div>
+                  <div class="font-weight-light">Теплица Ферма 2-я дуга</div>
+                </a>
+              </div>
+              <div class="col-sm-4 order-sm-2 order-3">
+                <div class="font-weight-bold section_title my-sm-3">
+                  Теплица Мини
+                </div>
+              </div>
+              <div class="col-sm-4 col-6 order-sm-3 order-2">
+                <a href="#modal-product2" data-dismiss="modal" data-toggle="modal" class="modal-prBtn">
+                  <div class="modal-prBtn__nextIcon"><i class="fa fa-chevron-right"></i></div>
+                  <div class="font-weight-light">Теплица Оцинковочка</div>
+                </a>
+              </div>
+              <button type="button" class="close p-3 position-absolute top-0 right-0" data-dismiss="modal"
+                aria-label="Close">
+                <span class="text-size-6" aria-hidden="true">&#10005;</span>
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-xl-10 offset-xl-1 col-12">
+                <div class="owl-carousel owl-carousel-modal owl-theme">
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/mini1-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/mini1-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/mini2-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/mini2-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/mini3-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/mini3-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/mini4-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/mini4-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/mini5-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/mini5-1.jpg" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Характеристики:</div>
+              </div>
+              <div class="col-3 d-lg-block d-none">
+                <div
+                  class="square__upToDown__reverse right-0 square__modal_1 right-0 position-absolute square-value__10 radius__leftBottom bg_green">
+                </div>
+                <div
+                  class="square__upToDown square__modal_2 position-absolute square-value__3 radius__leftTop bg_green">
+                </div>
+              </div>
+              <div class="col-lg-7 col-10 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="li-line my-3">
+                    <div>Производитель</div>
+                    <div class="li-line__dotted"></div>
+                    <div>Ижевск</div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Размер базового модуля</div>
+                    <div class="li-line__dotted"></div>
+                    <div>3х4 <span class="text_green">м</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Профиль основания</div>
+                    <div class="li-line__dotted"></div>
+                    <div>жесткие стальные трубы, 40х40 <span class="text_green">мм</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Профиль арок</div>
+                    <div class="li-line__dotted"></div>
+                    <div>стальные трубы, загнутые по ребру, 20х40 <span class="text_green">мм</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Двери и форточки</div>
+                    <div class="li-line__dotted"></div>
+                    <div>2 <span class="text_green">мм</span></div>
+                  </li>
+                </ul>
+                <div class="font-weight-light">Изначально длина <span class="font-weight-normal">конструкции равна 4
+                    метрам, но она легко увеличивается (кратно 2 метрам).</span> Установить добавочные элементы и
+                  нарастить площадь теплицы можно сразу или же спустя некоторое время, когда в этом возникнет
+                  необходимость.</div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Также в базовый комплект входят:</div>
+              </div>
+              <div class="col-lg-4 offset-lg-3 col-md-7 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="my-3"><span class="font-weight-bold">Ручки с защелкиванием;</span></li>
+                  <li class="my-3"><span class="font-weight-bold">Фиксаторы,</span> предотвращающие запахивание форточек
+                    и дверей;</li>
+                  <li class="my-3"><span class="font-weight-bold">Специальные петли</span> для подвязывания растений.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4 offset-1 d-md-block d-none">
+                <div
+                  class="square__upToDown__reverse top-0 left-0 position-absolute square-value__14 radius__rightTop bg_orange">
+                </div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Дополнительные опции:</div>
+              </div>
+              <div class="col-3 d-md-block d-none">
+                <div
+                  class="square__upToDown right-0 square__modal_1 right-0 position-absolute square-value__10 radius__leftBottom bg_green">
+                </div>
+                <div
+                  class="square__upToDown__reverse square__modal_3 position-absolute square-value__3 radius__leftBottom bg_green">
+                </div>
+              </div>
+              <div class="col-md-7 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="my-3"><span class="font-weight-bold">Перегородки для разделения культур</span> (позволяют
+                    обеспечить разницу климатических условий);</li>
+                  <li class="my-3"><span class="font-weight-bold">Системы капельного полива</span> (ручные,
+                    полуавтоматические, автоматические);</li>
+                  <li class="my-3"><span class="font-weight-bold">Механизмы, обеспечивающие автопроветривание</span>
+                    (форточки монтируются в любое место крыши, гидроцилиндры для автоматического открывания).</li>
+                </ul>
+              </div>
+              <div class="col-2 d-md-block d-none">
+                <div
+                  class="square__upToDown square__modal_4 position-absolute square-value__5 radius__rightBottom bg_orange">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 bg_green modal-form">
+                <form class="py-5">
+                  <input type="hidden" name="form" value="Окно заказа">
+                  <div class="row">
+                    <div class="col-12 mb-3">
+                      <div class="text-uppercase text-size-7 castom_shadow__title text-white font-weight-bold">ЗАКАЖИТЕ
+                        КОНСУЛЬТАЦИЮ</div>
+                      <div class="font-weight-light text-white text-size-5 castom_shadow__text">Ответ в течение 15 мин
+                      </div>
+                    </div>
+                    <div class="col-md-4 offset-md-2 col-sm-6">
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-control border-radius-30 h-auto p-3"
+                          placeholder="Ваше имя">
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                      <div class="form-group">
+                        <input type="tel" name="phone" class="form-control border-radius-30 h-auto p-3"
+                          placeholder="Номер телефона" required="">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <button type="submit"
+                          class="d-block text-size-5 font-weight-bold btn_custom text-uppercase border-0">ЗАКАЗАТЬ
+                          Консультацию</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="modal-product2" class="modal fade modal-product" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body p-0 text-center">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-sm-4 col-6 order-sm-1 order-1">
+                <a href="#modal-product1" data-dismiss="modal" data-toggle="modal" class="modal-prBtn">
+                  <div class="modal-prBtn__prevIcon"><i class="fa fa-chevron-left"></i></div>
+                  <div class="font-weight-light">Теплица Мини</div>
+                </a>
+              </div>
+              <div class="col-sm-4 order-sm-2 order-3">
+                <div class="font-weight-bold section_title my-sm-3">
+                  Теплица Оцинковочка
+                </div>
+              </div>
+              <div class="col-sm-4 col-6 order-sm-3 order-2">
+                <a href="#modal-product3" data-dismiss="modal" data-toggle="modal" class="modal-prBtn">
+                  <div class="modal-prBtn__nextIcon"><i class="fa fa-chevron-right"></i></div>
+                  <div class="font-weight-light">Теплица Сибирская</div>
+                </a>
+              </div>
+              <button type="button" class="close p-3 position-absolute top-0 right-0" data-dismiss="modal"
+                aria-label="Close">
+                <span class="text-size-6" aria-hidden="true">&#10005;</span>
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-xl-10 offset-xl-1 col-12">
+                <div class="owl-carousel owl-carousel-modal owl-theme">
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/ocinkovka1-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/ocinkovka1-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/ocinkovka2-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/ocinkovka2-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/ocinkovka3-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/ocinkovka3-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/ocinkovka4-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/ocinkovka4-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/ocinkovka5-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/ocinkovka5-1.jpg" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Характеристики:</div>
+              </div>
+              <div class="col-3 d-lg-block d-none">
+                <div
+                  class="square__upToDown__reverse right-0 square__modal_1 right-0 position-absolute square-value__10 radius__leftBottom bg_green">
+                </div>
+                <div
+                  class="square__upToDown square__modal_2 position-absolute square-value__3 radius__leftTop bg_green">
+                </div>
+              </div>
+              <div class="col-lg-7 col-10 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="li-line my-3">
+                    <div>Производитель</div>
+                    <div class="li-line__dotted"></div>
+                    <div>Ижевск</div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Размер базового модуля</div>
+                    <div class="li-line__dotted"></div>
+                    <div>3х4 <span class="text_green">м</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Профиль основания</div>
+                    <div class="li-line__dotted"></div>
+                    <div>жесткие стальные трубы, 40х40 <span class="text_green">мм</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Профиль арок</div>
+                    <div class="li-line__dotted"></div>
+                    <div>стальные трубы, загнутые по ребру, 20х40 <span class="text_green">мм</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Двери и форточки</div>
+                    <div class="li-line__dotted"></div>
+                    <div>2 <span class="text_green">мм</span></div>
+                  </li>
+                </ul>
+                <div class="font-weight-light">Изначально длина <span class="font-weight-normal">конструкции равна 4
+                    метрам, но она легко увеличивается (кратно 2 метрам).</span> Установить добавочные элементы и
+                  нарастить площадь теплицы можно сразу или же спустя некоторое время, когда в этом возникнет
+                  необходимость.</div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Также в базовый комплект входят:</div>
+              </div>
+              <div class="col-lg-4 offset-lg-3 col-md-7 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="my-3"><span class="font-weight-bold">Ручки с защелкиванием;</span></li>
+                  <li class="my-3"><span class="font-weight-bold">Фиксаторы,</span> предотвращающие запахивание форточек
+                    и дверей;</li>
+                  <li class="my-3"><span class="font-weight-bold">Специальные петли</span> для подвязывания растений.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4 offset-1 d-md-block d-none">
+                <div
+                  class="square__upToDown__reverse top-0 left-0 position-absolute square-value__14 radius__rightTop bg_orange">
+                </div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Дополнительные опции:</div>
+              </div>
+              <div class="col-3 d-md-block d-none">
+                <div
+                  class="square__upToDown right-0 square__modal_1 right-0 position-absolute square-value__10 radius__leftBottom bg_green">
+                </div>
+                <div
+                  class="square__upToDown__reverse square__modal_3 position-absolute square-value__3 radius__leftBottom bg_green">
+                </div>
+              </div>
+              <div class="col-md-7 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="my-3"><span class="font-weight-bold">Перегородки для разделения культур</span> (позволяют
+                    обеспечить разницу климатических условий);</li>
+                  <li class="my-3"><span class="font-weight-bold">Системы капельного полива</span> (ручные,
+                    полуавтоматические, автоматические);</li>
+                  <li class="my-3"><span class="font-weight-bold">Механизмы, обеспечивающие автопроветривание</span>
+                    (форточки монтируются в любое место крыши, гидроцилиндры для автоматического открывания).</li>
+                </ul>
+              </div>
+              <div class="col-2 d-md-block d-none">
+                <div
+                  class="square__upToDown square__modal_4 position-absolute square-value__5 radius__rightBottom bg_orange">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 bg_green modal-form">
+                <form class="py-5">
+                  <input type="hidden" name="form" value="Окно заказа">
+                  <div class="row">
+                    <div class="col-12 mb-3">
+                      <div class="text-uppercase text-size-7 castom_shadow__title text-white font-weight-bold">ЗАКАЖИТЕ
+                        КОНСУЛЬТАЦИЮ</div>
+                      <div class="font-weight-light text-white text-size-5 castom_shadow__text">Ответ в течение 15 мин
+                      </div>
+                    </div>
+                    <div class="col-md-4 offset-md-2 col-sm-6">
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-control border-radius-30 h-auto p-3"
+                          placeholder="Ваше имя">
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                      <div class="form-group">
+                        <input type="tel" name="phone" class="form-control border-radius-30 h-auto p-3"
+                          placeholder="Номер телефона" required="">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <button type="submit"
+                          class="d-block text-size-5 font-weight-bold btn_custom text-uppercase border-0">ЗАКАЗАТЬ
+                          Консультацию</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="modal-product3" class="modal fade modal-product" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body p-0 text-center">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-sm-4 col-6 order-sm-1 order-1">
+                <a href="#modal-product2" data-dismiss="modal" data-toggle="modal" class="modal-prBtn">
+                  <div class="modal-prBtn__prevIcon"><i class="fa fa-chevron-left"></i></div>
+                  <div class="font-weight-light">Теплица Оцинковочка</div>
+                </a>
+              </div>
+              <div class="col-sm-4 order-sm-2 order-3">
+                <div class="font-weight-bold section_title my-sm-3">
+                  Теплица Сибирская
+                </div>
+              </div>
+              <div class="col-sm-4 col-6 order-sm-3 order-2">
+                <a href="#modal-product4" data-dismiss="modal" data-toggle="modal" class="modal-prBtn">
+                  <div class="modal-prBtn__nextIcon"><i class="fa fa-chevron-right"></i></div>
+                  <div class="font-weight-light">Теплица XXL/Титан</div>
+                </a>
+              </div>
+              <button type="button" class="close p-3 position-absolute top-0 right-0" data-dismiss="modal"
+                aria-label="Close">
+                <span class="text-size-6" aria-hidden="true">&#10005;</span>
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-xl-10 offset-xl-1 col-12">
+                <div class="owl-carousel owl-carousel-modal owl-theme">
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/sibirskay1-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/sibirskay1-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/sibirskay2-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/sibirskay2-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/sibirskay3-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/sibirskay3-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/sibirskay4-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/sibirskay4-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/sibirskay5-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/sibirskay5-1.jpg" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Характеристики:</div>
+              </div>
+              <div class="col-3 d-lg-block d-none">
+                <div
+                  class="square__upToDown__reverse right-0 square__modal_1 right-0 position-absolute square-value__10 radius__leftBottom bg_green">
+                </div>
+                <div
+                  class="square__upToDown square__modal_2 position-absolute square-value__3 radius__leftTop bg_green">
+                </div>
+              </div>
+              <div class="col-lg-7 col-10 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="li-line my-3">
+                    <div>Производитель</div>
+                    <div class="li-line__dotted"></div>
+                    <div>Ижевск</div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Размер базового модуля</div>
+                    <div class="li-line__dotted"></div>
+                    <div>3х4 <span class="text_green">м</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Профиль основания</div>
+                    <div class="li-line__dotted"></div>
+                    <div>жесткие стальные трубы, 40х40 <span class="text_green">мм</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Профиль арок</div>
+                    <div class="li-line__dotted"></div>
+                    <div>стальные трубы, загнутые по ребру, 20х40 <span class="text_green">мм</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Двери и форточки</div>
+                    <div class="li-line__dotted"></div>
+                    <div>2 <span class="text_green">мм</span></div>
+                  </li>
+                </ul>
+                <div class="font-weight-light">Изначально длина <span class="font-weight-normal">конструкции равна 4
+                    метрам, но она легко увеличивается (кратно 2 метрам).</span> Установить добавочные элементы и
+                  нарастить площадь теплицы можно сразу или же спустя некоторое время, когда в этом возникнет
+                  необходимость.</div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Также в базовый комплект входят:</div>
+              </div>
+              <div class="col-lg-4 offset-lg-3 col-md-7 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="my-3"><span class="font-weight-bold">Ручки с защелкиванием;</span></li>
+                  <li class="my-3"><span class="font-weight-bold">Фиксаторы,</span> предотвращающие запахивание форточек
+                    и дверей;</li>
+                  <li class="my-3"><span class="font-weight-bold">Специальные петли</span> для подвязывания растений.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4 offset-1 d-md-block d-none">
+                <div
+                  class="square__upToDown__reverse top-0 left-0 position-absolute square-value__14 radius__rightTop bg_orange">
+                </div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Дополнительные опции:</div>
+              </div>
+              <div class="col-3 d-md-block d-none">
+                <div
+                  class="square__upToDown right-0 square__modal_1 right-0 position-absolute square-value__10 radius__leftBottom bg_green">
+                </div>
+                <div
+                  class="square__upToDown__reverse square__modal_3 position-absolute square-value__3 radius__leftBottom bg_green">
+                </div>
+              </div>
+              <div class="col-md-7 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="my-3"><span class="font-weight-bold">Перегородки для разделения культур</span> (позволяют
+                    обеспечить разницу климатических условий);</li>
+                  <li class="my-3"><span class="font-weight-bold">Системы капельного полива</span> (ручные,
+                    полуавтоматические, автоматические);</li>
+                  <li class="my-3"><span class="font-weight-bold">Механизмы, обеспечивающие автопроветривание</span>
+                    (форточки монтируются в любое место крыши, гидроцилиндры для автоматического открывания).</li>
+                </ul>
+              </div>
+              <div class="col-2 d-md-block d-none">
+                <div
+                  class="square__upToDown square__modal_4 position-absolute square-value__5 radius__rightBottom bg_orange">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 bg_green modal-form">
+                <form class="py-5">
+                  <input type="hidden" name="form" value="Окно заказа">
+                  <div class="row">
+                    <div class="col-12 mb-3">
+                      <div class="text-uppercase text-size-7 castom_shadow__title text-white font-weight-bold">ЗАКАЖИТЕ
+                        КОНСУЛЬТАЦИЮ</div>
+                      <div class="font-weight-light text-white text-size-5 castom_shadow__text">Ответ в течение 15 мин
+                      </div>
+                    </div>
+                    <div class="col-md-4 offset-md-2 col-sm-6">
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-control border-radius-30 h-auto p-3"
+                          placeholder="Ваше имя">
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                      <div class="form-group">
+                        <input type="tel" name="phone" class="form-control border-radius-30 h-auto p-3"
+                          placeholder="Номер телефона" required="">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <button type="submit"
+                          class="d-block text-size-5 font-weight-bold btn_custom text-uppercase border-0">ЗАКАЗАТЬ
+                          Консультацию</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="modal-product4" class="modal fade modal-product" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body p-0 text-center">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-sm-4 col-6 order-sm-1 order-1">
+                <a href="#modal-product3" data-dismiss="modal" data-toggle="modal" class="modal-prBtn">
+                  <div class="modal-prBtn__prevIcon"><i class="fa fa-chevron-left"></i></div>
+                  <div class="font-weight-light">Теплица Сибирская</div>
+                </a>
+              </div>
+              <div class="col-sm-4 order-sm-2 order-3">
+                <div class="font-weight-bold section_title my-sm-3">
+                  Теплица XXL/Титан
+                </div>
+              </div>
+              <div class="col-sm-4 col-6 order-sm-3 order-2">
+                <a href="#modal-product5" data-dismiss="modal" data-toggle="modal" class="modal-prBtn">
+                  <div class="modal-prBtn__nextIcon"><i class="fa fa-chevron-right"></i></div>
+                  <div class="font-weight-light">Теплица Капелька</div>
+                </a>
+              </div>
+              <button type="button" class="close p-3 position-absolute top-0 right-0" data-dismiss="modal"
+                aria-label="Close">
+                <span class="text-size-6" aria-hidden="true">&#10005;</span>
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-xl-10 offset-xl-1 col-12">
+                <div class="owl-carousel owl-carousel-modal owl-theme">
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/xxl1-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/xxl1-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/xxl2-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/xxl2-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/xxl3-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/xxl3-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/xxl4-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/xxl4-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/xxl5-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/xxl5-1.jpg" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Характеристики:</div>
+              </div>
+              <div class="col-3 d-lg-block d-none">
+                <div
+                  class="square__upToDown__reverse right-0 square__modal_1 right-0 position-absolute square-value__10 radius__leftBottom bg_green">
+                </div>
+                <div
+                  class="square__upToDown square__modal_2 position-absolute square-value__3 radius__leftTop bg_green">
+                </div>
+              </div>
+              <div class="col-lg-7 col-10 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="li-line my-3">
+                    <div>Производитель</div>
+                    <div class="li-line__dotted"></div>
+                    <div>Ижевск</div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Размер базового модуля</div>
+                    <div class="li-line__dotted"></div>
+                    <div>3х4 <span class="text_green">м</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Профиль основания</div>
+                    <div class="li-line__dotted"></div>
+                    <div>жесткие стальные трубы, 40х40 <span class="text_green">мм</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Профиль арок</div>
+                    <div class="li-line__dotted"></div>
+                    <div>стальные трубы, загнутые по ребру, 20х40 <span class="text_green">мм</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Двери и форточки</div>
+                    <div class="li-line__dotted"></div>
+                    <div>2 <span class="text_green">мм</span></div>
+                  </li>
+                </ul>
+                <div class="font-weight-light">Изначально длина <span class="font-weight-normal">конструкции равна 4
+                    метрам, но она легко увеличивается (кратно 2 метрам).</span> Установить добавочные элементы и
+                  нарастить площадь теплицы можно сразу или же спустя некоторое время, когда в этом возникнет
+                  необходимость.</div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Также в базовый комплект входят:</div>
+              </div>
+              <div class="col-lg-4 offset-lg-3 col-md-7 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="my-3"><span class="font-weight-bold">Ручки с защелкиванием;</span></li>
+                  <li class="my-3"><span class="font-weight-bold">Фиксаторы,</span> предотвращающие запахивание форточек
+                    и дверей;</li>
+                  <li class="my-3"><span class="font-weight-bold">Специальные петли</span> для подвязывания растений.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4 offset-1 d-md-block d-none">
+                <div
+                  class="square__upToDown__reverse top-0 left-0 position-absolute square-value__14 radius__rightTop bg_orange">
+                </div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Дополнительные опции:</div>
+              </div>
+              <div class="col-3 d-md-block d-none">
+                <div
+                  class="square__upToDown right-0 square__modal_1 right-0 position-absolute square-value__10 radius__leftBottom bg_green">
+                </div>
+                <div
+                  class="square__upToDown__reverse square__modal_3 position-absolute square-value__3 radius__leftBottom bg_green">
+                </div>
+              </div>
+              <div class="col-md-7 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="my-3"><span class="font-weight-bold">Перегородки для разделения культур</span> (позволяют
+                    обеспечить разницу климатических условий);</li>
+                  <li class="my-3"><span class="font-weight-bold">Системы капельного полива</span> (ручные,
+                    полуавтоматические, автоматические);</li>
+                  <li class="my-3"><span class="font-weight-bold">Механизмы, обеспечивающие автопроветривание</span>
+                    (форточки монтируются в любое место крыши, гидроцилиндры для автоматического открывания).</li>
+                </ul>
+              </div>
+              <div class="col-2 d-md-block d-none">
+                <div
+                  class="square__upToDown square__modal_4 position-absolute square-value__5 radius__rightBottom bg_orange">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 bg_green modal-form">
+                <form class="py-5">
+                  <input type="hidden" name="form" value="Окно заказа">
+                  <div class="row">
+                    <div class="col-12 mb-3">
+                      <div class="text-uppercase text-size-7 castom_shadow__title text-white font-weight-bold">ЗАКАЖИТЕ
+                        КОНСУЛЬТАЦИЮ</div>
+                      <div class="font-weight-light text-white text-size-5 castom_shadow__text">Ответ в течение 15 мин
+                      </div>
+                    </div>
+                    <div class="col-md-4 offset-md-2 col-sm-6">
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-control border-radius-30 h-auto p-3"
+                          placeholder="Ваше имя">
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                      <div class="form-group">
+                        <input type="tel" name="phone" class="form-control border-radius-30 h-auto p-3"
+                          placeholder="Номер телефона" required="">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <button type="submit"
+                          class="d-block text-size-5 font-weight-bold btn_custom text-uppercase border-0">ЗАКАЗАТЬ
+                          Консультацию</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="modal-product5" class="modal fade modal-product" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body p-0 text-center">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-sm-4 col-6 order-sm-1 order-1">
+                <a href="#modal-product4" data-dismiss="modal" data-toggle="modal" class="modal-prBtn">
+                  <div class="modal-prBtn__prevIcon"><i class="fa fa-chevron-left"></i></div>
+                  <div class="font-weight-light">Теплица XXL/Титан</div>
+                </a>
+              </div>
+              <div class="col-sm-4 order-sm-2 order-3">
+                <div class="font-weight-bold section_title my-sm-3">
+                  Теплица Капелька
+                </div>
+              </div>
+              <div class="col-sm-4 col-6 order-sm-3 order-2">
+                <a href="#modal-product6" data-dismiss="modal" data-toggle="modal" class="modal-prBtn">
+                  <div class="modal-prBtn__nextIcon"><i class="fa fa-chevron-right"></i></div>
+                  <div class="font-weight-light">Теплица Двускатная</div>
+                </a>
+              </div>
+              <button type="button" class="close p-3 position-absolute top-0 right-0" data-dismiss="modal"
+                aria-label="Close">
+                <span class="text-size-6" aria-hidden="true">&#10005;</span>
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-xl-10 offset-xl-1 col-12">
+                <div class="owl-carousel owl-carousel-modal owl-theme">
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/kaply1-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/kaply1-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/kaply2-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/kaply2-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/kaply3-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/kaply3-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/kaply4-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/kaply4-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/kaply5-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/kaply5-1.jpg" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Характеристики:</div>
+              </div>
+              <div class="col-3 d-lg-block d-none">
+                <div
+                  class="square__upToDown__reverse right-0 square__modal_1 right-0 position-absolute square-value__10 radius__leftBottom bg_green">
+                </div>
+                <div
+                  class="square__upToDown square__modal_2 position-absolute square-value__3 radius__leftTop bg_green">
+                </div>
+              </div>
+              <div class="col-lg-7 col-10 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="li-line my-3">
+                    <div>Производитель</div>
+                    <div class="li-line__dotted"></div>
+                    <div>Ижевск</div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Размер базового модуля</div>
+                    <div class="li-line__dotted"></div>
+                    <div>3х4 <span class="text_green">м</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Профиль основания</div>
+                    <div class="li-line__dotted"></div>
+                    <div>жесткие стальные трубы, 40х40 <span class="text_green">мм</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Профиль арок</div>
+                    <div class="li-line__dotted"></div>
+                    <div>стальные трубы, загнутые по ребру, 20х40 <span class="text_green">мм</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Двери и форточки</div>
+                    <div class="li-line__dotted"></div>
+                    <div>2 <span class="text_green">мм</span></div>
+                  </li>
+                </ul>
+                <div class="font-weight-light">Изначально длина <span class="font-weight-normal">конструкции равна 4
+                    метрам, но она легко увеличивается (кратно 2 метрам).</span> Установить добавочные элементы и
+                  нарастить площадь теплицы можно сразу или же спустя некоторое время, когда в этом возникнет
+                  необходимость.</div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Также в базовый комплект входят:</div>
+              </div>
+              <div class="col-lg-4 offset-lg-3 col-md-7 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="my-3"><span class="font-weight-bold">Ручки с защелкиванием;</span></li>
+                  <li class="my-3"><span class="font-weight-bold">Фиксаторы,</span> предотвращающие запахивание форточек
+                    и дверей;</li>
+                  <li class="my-3"><span class="font-weight-bold">Специальные петли</span> для подвязывания растений.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4 offset-1 d-md-block d-none">
+                <div
+                  class="square__upToDown__reverse top-0 left-0 position-absolute square-value__14 radius__rightTop bg_orange">
+                </div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Дополнительные опции:</div>
+              </div>
+              <div class="col-3 d-md-block d-none">
+                <div
+                  class="square__upToDown right-0 square__modal_1 right-0 position-absolute square-value__10 radius__leftBottom bg_green">
+                </div>
+                <div
+                  class="square__upToDown__reverse square__modal_3 position-absolute square-value__3 radius__leftBottom bg_green">
+                </div>
+              </div>
+              <div class="col-md-7 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="my-3"><span class="font-weight-bold">Перегородки для разделения культур</span> (позволяют
+                    обеспечить разницу климатических условий);</li>
+                  <li class="my-3"><span class="font-weight-bold">Системы капельного полива</span> (ручные,
+                    полуавтоматические, автоматические);</li>
+                  <li class="my-3"><span class="font-weight-bold">Механизмы, обеспечивающие автопроветривание</span>
+                    (форточки монтируются в любое место крыши, гидроцилиндры для автоматического открывания).</li>
+                </ul>
+              </div>
+              <div class="col-2 d-md-block d-none">
+                <div
+                  class="square__upToDown square__modal_4 position-absolute square-value__5 radius__rightBottom bg_orange">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 bg_green modal-form">
+                <form class="py-5">
+                  <input type="hidden" name="form" value="Окно заказа">
+                  <div class="row">
+                    <div class="col-12 mb-3">
+                      <div class="text-uppercase text-size-7 castom_shadow__title text-white font-weight-bold">ЗАКАЖИТЕ
+                        КОНСУЛЬТАЦИЮ</div>
+                      <div class="font-weight-light text-white text-size-5 castom_shadow__text">Ответ в течение 15 мин
+                      </div>
+                    </div>
+                    <div class="col-md-4 offset-md-2 col-sm-6">
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-control border-radius-30 h-auto p-3"
+                          placeholder="Ваше имя">
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                      <div class="form-group">
+                        <input type="tel" name="phone" class="form-control border-radius-30 h-auto p-3"
+                          placeholder="Номер телефона" required="">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <button type="submit"
+                          class="d-block text-size-5 font-weight-bold btn_custom text-uppercase border-0">ЗАКАЗАТЬ
+                          Консультацию</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="modal-product6" class="modal fade modal-product" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body p-0 text-center">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-sm-4 col-6 order-sm-1 order-1">
+                <a href="#modal-product5" data-dismiss="modal" data-toggle="modal" class="modal-prBtn">
+                  <div class="modal-prBtn__prevIcon"><i class="fa fa-chevron-left"></i></div>
+                  <div class="font-weight-light">Теплица Капелька</div>
+                </a>
+              </div>
+              <div class="col-sm-4 order-sm-2 order-3">
+                <div class="font-weight-bold section_title my-sm-3">
+                  Теплица Двускатная
+                </div>
+              </div>
+              <div class="col-sm-4 col-6 order-sm-3 order-2">
+                <a href="#modal-product7" data-dismiss="modal" data-toggle="modal" class="modal-prBtn">
+                  <div class="modal-prBtn__nextIcon"><i class="fa fa-chevron-right"></i></div>
+                  <div class="font-weight-light">Теплица Агровеликан 3.5</div>
+                </a>
+              </div>
+              <button type="button" class="close p-3 position-absolute top-0 right-0" data-dismiss="modal"
+                aria-label="Close">
+                <span class="text-size-6" aria-hidden="true">&#10005;</span>
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-xl-10 offset-xl-1 col-12">
+                <div class="owl-carousel owl-carousel-modal owl-theme">
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/domik1-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/domik1-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/domik2-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/domik2-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/domik3-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/domik3-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/domik4-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/domik4-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/domik5-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/domik5-1.jpg" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Характеристики:</div>
+              </div>
+              <div class="col-3 d-lg-block d-none">
+                <div
+                  class="square__upToDown__reverse right-0 square__modal_1 right-0 position-absolute square-value__10 radius__leftBottom bg_green">
+                </div>
+                <div
+                  class="square__upToDown square__modal_2 position-absolute square-value__3 radius__leftTop bg_green">
+                </div>
+              </div>
+              <div class="col-lg-7 col-10 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="li-line my-3">
+                    <div>Производитель</div>
+                    <div class="li-line__dotted"></div>
+                    <div>Ижевск</div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Размер базового модуля</div>
+                    <div class="li-line__dotted"></div>
+                    <div>3х4 <span class="text_green">м</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Профиль основания</div>
+                    <div class="li-line__dotted"></div>
+                    <div>жесткие стальные трубы, 40х40 <span class="text_green">мм</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Профиль арок</div>
+                    <div class="li-line__dotted"></div>
+                    <div>стальные трубы, загнутые по ребру, 20х40 <span class="text_green">мм</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Двери и форточки</div>
+                    <div class="li-line__dotted"></div>
+                    <div>2 <span class="text_green">мм</span></div>
+                  </li>
+                </ul>
+                <div class="font-weight-light">Изначально длина <span class="font-weight-normal">конструкции равна 4
+                    метрам, но она легко увеличивается (кратно 2 метрам).</span> Установить добавочные элементы и
+                  нарастить площадь теплицы можно сразу или же спустя некоторое время, когда в этом возникнет
+                  необходимость.</div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Также в базовый комплект входят:</div>
+              </div>
+              <div class="col-lg-4 offset-lg-3 col-md-7 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="my-3"><span class="font-weight-bold">Ручки с защелкиванием;</span></li>
+                  <li class="my-3"><span class="font-weight-bold">Фиксаторы,</span> предотвращающие запахивание форточек
+                    и дверей;</li>
+                  <li class="my-3"><span class="font-weight-bold">Специальные петли</span> для подвязывания растений.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4 offset-1 d-md-block d-none">
+                <div
+                  class="square__upToDown__reverse top-0 left-0 position-absolute square-value__14 radius__rightTop bg_orange">
+                </div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Дополнительные опции:</div>
+              </div>
+              <div class="col-3 d-md-block d-none">
+                <div
+                  class="square__upToDown right-0 square__modal_1 right-0 position-absolute square-value__10 radius__leftBottom bg_green">
+                </div>
+                <div
+                  class="square__upToDown__reverse square__modal_3 position-absolute square-value__3 radius__leftBottom bg_green">
+                </div>
+              </div>
+              <div class="col-md-7 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="my-3"><span class="font-weight-bold">Перегородки для разделения культур</span> (позволяют
+                    обеспечить разницу климатических условий);</li>
+                  <li class="my-3"><span class="font-weight-bold">Системы капельного полива</span> (ручные,
+                    полуавтоматические, автоматические);</li>
+                  <li class="my-3"><span class="font-weight-bold">Механизмы, обеспечивающие автопроветривание</span>
+                    (форточки монтируются в любое место крыши, гидроцилиндры для автоматического открывания).</li>
+                </ul>
+              </div>
+              <div class="col-2 d-md-block d-none">
+                <div
+                  class="square__upToDown square__modal_4 position-absolute square-value__5 radius__rightBottom bg_orange">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 bg_green modal-form">
+                <form class="py-5">
+                  <input type="hidden" name="form" value="Окно заказа">
+                  <div class="row">
+                    <div class="col-12 mb-3">
+                      <div class="text-uppercase text-size-7 castom_shadow__title text-white font-weight-bold">ЗАКАЖИТЕ
+                        КОНСУЛЬТАЦИЮ</div>
+                      <div class="font-weight-light text-white text-size-5 castom_shadow__text">Ответ в течение 15 мин
+                      </div>
+                    </div>
+                    <div class="col-md-4 offset-md-2 col-sm-6">
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-control border-radius-30 h-auto p-3"
+                          placeholder="Ваше имя">
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                      <div class="form-group">
+                        <input type="tel" name="phone" class="form-control border-radius-30 h-auto p-3"
+                          placeholder="Номер телефона" required="">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <button type="submit"
+                          class="d-block text-size-5 font-weight-bold btn_custom text-uppercase border-0">ЗАКАЗАТЬ
+                          Консультацию</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="modal-product7" class="modal fade modal-product" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body p-0 text-center">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-sm-4 col-6 order-sm-1 order-1">
+                <a href="#modal-product6" data-dismiss="modal" data-toggle="modal" class="modal-prBtn">
+                  <div class="modal-prBtn__prevIcon"><i class="fa fa-chevron-left"></i></div>
+                  <div class="font-weight-light">Теплица Двускатная</div>
+                </a>
+              </div>
+              <div class="col-sm-4 order-sm-2 order-3">
+                <div class="font-weight-bold section_title my-sm-3">
+                  Теплица Агровеликан 3.5
+                </div>
+              </div>
+              <div class="col-sm-4 col-6 order-sm-3 order-2">
+                <a href="#modal-product8" data-dismiss="modal" data-toggle="modal" class="modal-prBtn">
+                  <div class="modal-prBtn__nextIcon"><i class="fa fa-chevron-right"></i></div>
+                  <div class="font-weight-light">Теплица Агровеликан 4 ширина</div>
+                </a>
+              </div>
+              <button type="button" class="close p-3 position-absolute top-0 right-0" data-dismiss="modal"
+                aria-label="Close">
+                <span class="text-size-6" aria-hidden="true">&#10005;</span>
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-xl-10 offset-xl-1 col-12">
+                <div class="owl-carousel owl-carousel-modal owl-theme">
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/3.5w1-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/3.5w1-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/3.5w2-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/3.5w2-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/3.5w3-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/3.5w3-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/3.5w4-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/3.5w4-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/3.5w5-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/3.5w5-1.jpg" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Характеристики:</div>
+              </div>
+              <div class="col-3 d-lg-block d-none">
+                <div
+                  class="square__upToDown__reverse right-0 square__modal_1 right-0 position-absolute square-value__10 radius__leftBottom bg_green">
+                </div>
+                <div
+                  class="square__upToDown square__modal_2 position-absolute square-value__3 radius__leftTop bg_green">
+                </div>
+              </div>
+              <div class="col-lg-7 col-10 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="li-line my-3">
+                    <div>Производитель</div>
+                    <div class="li-line__dotted"></div>
+                    <div>Ижевск</div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Размер базового модуля</div>
+                    <div class="li-line__dotted"></div>
+                    <div>3х4 <span class="text_green">м</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Профиль основания</div>
+                    <div class="li-line__dotted"></div>
+                    <div>жесткие стальные трубы, 40х40 <span class="text_green">мм</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Профиль арок</div>
+                    <div class="li-line__dotted"></div>
+                    <div>стальные трубы, загнутые по ребру, 20х40 <span class="text_green">мм</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Двери и форточки</div>
+                    <div class="li-line__dotted"></div>
+                    <div>2 <span class="text_green">мм</span></div>
+                  </li>
+                </ul>
+                <div class="font-weight-light">Изначально длина <span class="font-weight-normal">конструкции равна 4
+                    метрам, но она легко увеличивается (кратно 2 метрам).</span> Установить добавочные элементы и
+                  нарастить площадь теплицы можно сразу или же спустя некоторое время, когда в этом возникнет
+                  необходимость.</div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Также в базовый комплект входят:</div>
+              </div>
+              <div class="col-lg-4 offset-lg-3 col-md-7 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="my-3"><span class="font-weight-bold">Ручки с защелкиванием;</span></li>
+                  <li class="my-3"><span class="font-weight-bold">Фиксаторы,</span> предотвращающие запахивание форточек
+                    и дверей;</li>
+                  <li class="my-3"><span class="font-weight-bold">Специальные петли</span> для подвязывания растений.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4 offset-1 d-md-block d-none">
+                <div
+                  class="square__upToDown__reverse top-0 left-0 position-absolute square-value__14 radius__rightTop bg_orange">
+                </div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Дополнительные опции:</div>
+              </div>
+              <div class="col-3 d-md-block d-none">
+                <div
+                  class="square__upToDown right-0 square__modal_1 right-0 position-absolute square-value__10 radius__leftBottom bg_green">
+                </div>
+                <div
+                  class="square__upToDown__reverse square__modal_3 position-absolute square-value__3 radius__leftBottom bg_green">
+                </div>
+              </div>
+              <div class="col-md-7 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="my-3"><span class="font-weight-bold">Перегородки для разделения культур</span> (позволяют
+                    обеспечить разницу климатических условий);</li>
+                  <li class="my-3"><span class="font-weight-bold">Системы капельного полива</span> (ручные,
+                    полуавтоматические, автоматические);</li>
+                  <li class="my-3"><span class="font-weight-bold">Механизмы, обеспечивающие автопроветривание</span>
+                    (форточки монтируются в любое место крыши, гидроцилиндры для автоматического открывания).</li>
+                </ul>
+              </div>
+              <div class="col-2 d-md-block d-none">
+                <div
+                  class="square__upToDown square__modal_4 position-absolute square-value__5 radius__rightBottom bg_orange">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 bg_green modal-form">
+                <form class="py-5">
+                  <input type="hidden" name="form" value="Окно заказа">
+                  <div class="row">
+                    <div class="col-12 mb-3">
+                      <div class="text-uppercase text-size-7 castom_shadow__title text-white font-weight-bold">ЗАКАЖИТЕ
+                        КОНСУЛЬТАЦИЮ</div>
+                      <div class="font-weight-light text-white text-size-5 castom_shadow__text">Ответ в течение 15 мин
+                      </div>
+                    </div>
+                    <div class="col-md-4 offset-md-2 col-sm-6">
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-control border-radius-30 h-auto p-3"
+                          placeholder="Ваше имя">
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                      <div class="form-group">
+                        <input type="tel" name="phone" class="form-control border-radius-30 h-auto p-3"
+                          placeholder="Номер телефона" required="">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <button type="submit"
+                          class="d-block text-size-5 font-weight-bold btn_custom text-uppercase border-0">ЗАКАЗАТЬ
+                          Консультацию</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="modal-product8" class="modal fade modal-product" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body p-0 text-center">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-sm-4 col-6 order-sm-1 order-1">
+                <a href="#modal-product7" data-dismiss="modal" data-toggle="modal" class="modal-prBtn">
+                  <div class="modal-prBtn__prevIcon"><i class="fa fa-chevron-left"></i></div>
+                  <div class="font-weight-light">Теплица Агровеликан 3.5</div>
+                </a>
+              </div>
+              <div class="col-sm-4 order-sm-2 order-3">
+                <div class="font-weight-bold section_title my-sm-3">
+                  Теплица Агровеликан 4 ширина
+                </div>
+              </div>
+              <div class="col-sm-4 col-6 order-sm-3 order-2">
+                <a href="#modal-product9" data-dismiss="modal" data-toggle="modal" class="modal-prBtn">
+                  <div class="modal-prBtn__nextIcon"><i class="fa fa-chevron-right"></i></div>
+                  <div class="font-weight-light">Теплица Ферма</div>
+                </a>
+              </div>
+              <button type="button" class="close p-3 position-absolute top-0 right-0" data-dismiss="modal"
+                aria-label="Close">
+                <span class="text-size-6" aria-hidden="true">&#10005;</span>
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-xl-10 offset-xl-1 col-12">
+                <div class="owl-carousel owl-carousel-modal owl-theme">
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/4w1-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/4w1-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/4w2-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/4w2-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/4w3-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/4w3-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/4w4-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/4w4-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/4w5-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/4w5-1.jpg" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Характеристики:</div>
+              </div>
+              <div class="col-3 d-lg-block d-none">
+                <div
+                  class="square__upToDown__reverse right-0 square__modal_1 right-0 position-absolute square-value__10 radius__leftBottom bg_green">
+                </div>
+                <div
+                  class="square__upToDown square__modal_2 position-absolute square-value__3 radius__leftTop bg_green">
+                </div>
+              </div>
+              <div class="col-lg-7 col-10 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="li-line my-3">
+                    <div>Производитель</div>
+                    <div class="li-line__dotted"></div>
+                    <div>Ижевск</div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Размер базового модуля</div>
+                    <div class="li-line__dotted"></div>
+                    <div>3х4 <span class="text_green">м</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Профиль основания</div>
+                    <div class="li-line__dotted"></div>
+                    <div>жесткие стальные трубы, 40х40 <span class="text_green">мм</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Профиль арок</div>
+                    <div class="li-line__dotted"></div>
+                    <div>стальные трубы, загнутые по ребру, 20х40 <span class="text_green">мм</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Двери и форточки</div>
+                    <div class="li-line__dotted"></div>
+                    <div>2 <span class="text_green">мм</span></div>
+                  </li>
+                </ul>
+                <div class="font-weight-light">Изначально длина <span class="font-weight-normal">конструкции равна 4
+                    метрам, но она легко увеличивается (кратно 2 метрам).</span> Установить добавочные элементы и
+                  нарастить площадь теплицы можно сразу или же спустя некоторое время, когда в этом возникнет
+                  необходимость.</div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Также в базовый комплект входят:</div>
+              </div>
+              <div class="col-lg-4 offset-lg-3 col-md-7 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="my-3"><span class="font-weight-bold">Ручки с защелкиванием;</span></li>
+                  <li class="my-3"><span class="font-weight-bold">Фиксаторы,</span> предотвращающие запахивание форточек
+                    и дверей;</li>
+                  <li class="my-3"><span class="font-weight-bold">Специальные петли</span> для подвязывания растений.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4 offset-1 d-md-block d-none">
+                <div
+                  class="square__upToDown__reverse top-0 left-0 position-absolute square-value__14 radius__rightTop bg_orange">
+                </div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Дополнительные опции:</div>
+              </div>
+              <div class="col-3 d-md-block d-none">
+                <div
+                  class="square__upToDown right-0 square__modal_1 right-0 position-absolute square-value__10 radius__leftBottom bg_green">
+                </div>
+                <div
+                  class="square__upToDown__reverse square__modal_3 position-absolute square-value__3 radius__leftBottom bg_green">
+                </div>
+              </div>
+              <div class="col-md-7 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="my-3"><span class="font-weight-bold">Перегородки для разделения культур</span> (позволяют
+                    обеспечить разницу климатических условий);</li>
+                  <li class="my-3"><span class="font-weight-bold">Системы капельного полива</span> (ручные,
+                    полуавтоматические, автоматические);</li>
+                  <li class="my-3"><span class="font-weight-bold">Механизмы, обеспечивающие автопроветривание</span>
+                    (форточки монтируются в любое место крыши, гидроцилиндры для автоматического открывания).</li>
+                </ul>
+              </div>
+              <div class="col-2 d-md-block d-none">
+                <div
+                  class="square__upToDown square__modal_4 position-absolute square-value__5 radius__rightBottom bg_orange">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 bg_green modal-form">
+                <form class="py-5">
+                  <input type="hidden" name="form" value="Окно заказа">
+                  <div class="row">
+                    <div class="col-12 mb-3">
+                      <div class="text-uppercase text-size-7 castom_shadow__title text-white font-weight-bold">ЗАКАЖИТЕ
+                        КОНСУЛЬТАЦИЮ</div>
+                      <div class="font-weight-light text-white text-size-5 castom_shadow__text">Ответ в течение 15 мин
+                      </div>
+                    </div>
+                    <div class="col-md-4 offset-md-2 col-sm-6">
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-control border-radius-30 h-auto p-3"
+                          placeholder="Ваше имя">
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                      <div class="form-group">
+                        <input type="tel" name="phone" class="form-control border-radius-30 h-auto p-3"
+                          placeholder="Номер телефона" required="">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <button type="submit"
+                          class="d-block text-size-5 font-weight-bold btn_custom text-uppercase border-0">ЗАКАЗАТЬ
+                          Консультацию</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="modal-product9" class="modal fade modal-product" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body p-0 text-center">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-sm-4 col-6 order-sm-1 order-1">
+                <a href="#modal-product8" data-dismiss="modal" data-toggle="modal" class="modal-prBtn">
+                  <div class="modal-prBtn__prevIcon"><i class="fa fa-chevron-left"></i></div>
+                  <div class="font-weight-light">Теплица Агровеликан 4 ширина</div>
+                </a>
+              </div>
+              <div class="col-sm-4 order-sm-2 order-3">
+                <div class="font-weight-bold section_title my-sm-3">
+                  Теплица Ферма
+                </div>
+              </div>
+              <div class="col-sm-4 col-6 order-sm-3 order-2">
+                <a href="#modal-product1" data-dismiss="modal" data-toggle="modal" class="modal-prBtn">
+                  <div class="modal-prBtn__nextIcon"><i class="fa fa-chevron-right"></i></div>
+                  <div class="font-weight-light">Теплица Мини</div>
+                </a>
+              </div>
+              <button type="button" class="close p-3 position-absolute top-0 right-0" data-dismiss="modal"
+                aria-label="Close">
+                <span class="text-size-6" aria-hidden="true">&#10005;</span>
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-xl-10 offset-xl-1 col-12">
+                <div class="owl-carousel owl-carousel-modal owl-theme">
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/ferma1-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/ferma1-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/ferma2-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/ferma2-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/ferma3-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/ferma3-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/ferma4-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/ferma4-1.jpg" class="img-fluid">
+                  </div>
+                  <div class="item" data-dot="<img src='./public/assets/img/modal/ferma5-1.jpg' class='img-fluid'>">
+                    <img src="./public/assets/img/modal/ferma5-1.jpg" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Характеристики:</div>
+              </div>
+              <div class="col-3 d-lg-block d-none">
+                <div
+                  class="square__upToDown__reverse right-0 square__modal_1 right-0 position-absolute square-value__10 radius__leftBottom bg_green">
+                </div>
+                <div
+                  class="square__upToDown square__modal_2 position-absolute square-value__3 radius__leftTop bg_green">
+                </div>
+              </div>
+              <div class="col-lg-7 col-10 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="li-line my-3">
+                    <div>Производитель</div>
+                    <div class="li-line__dotted"></div>
+                    <div>Ижевск</div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Размер базового модуля</div>
+                    <div class="li-line__dotted"></div>
+                    <div>3х4 <span class="text_green">м</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Профиль основания</div>
+                    <div class="li-line__dotted"></div>
+                    <div>жесткие стальные трубы, 40х40 <span class="text_green">мм</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Профиль арок</div>
+                    <div class="li-line__dotted"></div>
+                    <div>стальные трубы, загнутые по ребру, 20х40 <span class="text_green">мм</span></div>
+                  </li>
+                  <li class="li-line my-3">
+                    <div>Двери и форточки</div>
+                    <div class="li-line__dotted"></div>
+                    <div>2 <span class="text_green">мм</span></div>
+                  </li>
+                </ul>
+                <div class="font-weight-light">Изначально длина <span class="font-weight-normal">конструкции равна 4
+                    метрам, но она легко увеличивается (кратно 2 метрам).</span> Установить добавочные элементы и
+                  нарастить площадь теплицы можно сразу или же спустя некоторое время, когда в этом возникнет
+                  необходимость.</div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Также в базовый комплект входят:</div>
+              </div>
+              <div class="col-lg-4 offset-lg-3 col-md-7 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="my-3"><span class="font-weight-bold">Ручки с защелкиванием;</span></li>
+                  <li class="my-3"><span class="font-weight-bold">Фиксаторы,</span> предотвращающие запахивание форточек
+                    и дверей;</li>
+                  <li class="my-3"><span class="font-weight-bold">Специальные петли</span> для подвязывания растений.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4 offset-1 d-md-block d-none">
+                <div
+                  class="square__upToDown__reverse top-0 left-0 position-absolute square-value__14 radius__rightTop bg_orange">
+                </div>
+              </div>
+              <div class="col-8 offset-lg-2 text-left">
+                <div class="font-weight-bold text-size-7 mt-3">Дополнительные опции:</div>
+              </div>
+              <div class="col-3 d-md-block d-none">
+                <div
+                  class="square__upToDown right-0 square__modal_1 right-0 position-absolute square-value__10 radius__leftBottom bg_green">
+                </div>
+                <div
+                  class="square__upToDown__reverse square__modal_3 position-absolute square-value__3 radius__leftBottom bg_green">
+                </div>
+              </div>
+              <div class="col-md-7 text-left">
+                <ul class="text-size-5 green__ul font-weight-light py-2">
+                  <li class="my-3"><span class="font-weight-bold">Перегородки для разделения культур</span> (позволяют
+                    обеспечить разницу климатических условий);</li>
+                  <li class="my-3"><span class="font-weight-bold">Системы капельного полива</span> (ручные,
+                    полуавтоматические, автоматические);</li>
+                  <li class="my-3"><span class="font-weight-bold">Механизмы, обеспечивающие автопроветривание</span>
+                    (форточки монтируются в любое место крыши, гидроцилиндры для автоматического открывания).</li>
+                </ul>
+              </div>
+              <div class="col-2 d-md-block d-none">
+                <div
+                  class="square__upToDown square__modal_4 position-absolute square-value__5 radius__rightBottom bg_orange">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 bg_green modal-form">
+                <form class="py-5">
+                  <input type="hidden" name="form" value="Окно заказа">
+                  <div class="row">
+                    <div class="col-12 mb-3">
+                      <div class="text-uppercase text-size-7 castom_shadow__title text-white font-weight-bold">ЗАКАЖИТЕ
+                        КОНСУЛЬТАЦИЮ</div>
+                      <div class="font-weight-light text-white text-size-5 castom_shadow__text">Ответ в течение 15 мин
+                      </div>
+                    </div>
+                    <div class="col-md-4 offset-md-2 col-sm-6">
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-control border-radius-30 h-auto p-3"
+                          placeholder="Ваше имя">
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                      <div class="form-group">
+                        <input type="tel" name="phone" class="form-control border-radius-30 h-auto p-3"
+                          placeholder="Номер телефона" required="">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <button type="submit"
+                          class="d-block text-size-5 font-weight-bold btn_custom text-uppercase border-0">ЗАКАЗАТЬ
+                          Консультацию</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+  <!-- Owl carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"
+    integrity="sha256-s5TTOyp+xlSmsDfr/aZhg0Gz+JejYr5iTJI8JxG1SkM=" crossorigin="anonymous"></script>
+
+  <script src="./public/scripts/data.js"></script>
+  <script src="dist/scripts/c.min.js"></script>
+  <script src="dist/scripts/js.min.js"></script>
+</body>
+
+</html>
