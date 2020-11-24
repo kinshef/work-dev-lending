@@ -6,7 +6,7 @@ $(document).ready(function () {
     var length = $("input[name='length']:checked", form).val();
     var tolshchina = $("input[name='tolshchina']:checked", form).val();
     var sum = 0;
-    debugger;
+
     sum += calculatorData[product][length][tolshchina];
 
     var out = $('.jPrice', form);

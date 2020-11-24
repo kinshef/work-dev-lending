@@ -89,6 +89,26 @@ $(function () {
     dots: true,
     navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
   });
+  $(".owl-carousel2-modal").owlCarousel({
+    nav: true,
+    loop: true,
+    autoHeight: true,
+    navText: ['<i class="fa fa-3x fa-angle-left"></i>', '<i class="fa fa-3x fa-angle-right"></i>'],
+    responsive : {
+      0 : {
+        items: 2,
+      },
+      576 : {
+        items: 2,
+      },
+      768 : {
+        items: 3,
+      },
+      992 : {
+        items: 4,
+      },
+    }
+  });
 
   // fix problems when changing modals
   $('.modal-prBtn').click(function changeBody() {
@@ -101,6 +121,37 @@ $(function () {
     }, 40)
   })
   // fix problems when changing modals end
+
+
+  //gift modal
+  let timerId = setTimeout(() => {
+    $(".gift-form").addClass("show animate__rotateInDownLeft");
+  }, 8000);
+
+  $(".gift").click(() => $(".gift-form").addClass("show animate__rotateInDownLeft"));
+
+  let intervalId;
+
+  $(document).mouseup(function (event){
+    const form = $(".gift-form");
+
+    if ($(event.target).hasClass("close-btn")) {
+      closeForm(form);
+    }
+
+    if (!form.is(event.target) && form.has(event.target).length === 0 && form.hasClass('show')) {
+      closeForm(form);
+    }
+  });
+
+  function closeForm(form) {
+    clearInterval(intervalId);
+    clearTimeout(timerId);
+    form.removeClass("show animate__rotateInDownLeft");
+    intervalId = setInterval(() => {
+      $(".gift-form").addClass("show animate__rotateInDownLeft");
+    }, 25000);
+  }
 
 });
 document.addEventListener("DOMContentLoaded", function () {
