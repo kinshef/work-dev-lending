@@ -194,8 +194,10 @@ a:hover {
   z-index: 10;
 }
 .section-header svg{
-  min-height: 20px;
-  min-width: 20px;
+  max-height: 25px;
+  height: 100%;
+  width: 100%;
+  max-width: 25px;
 }
 .section-header.fixHead{
   background-color: #18181f;
