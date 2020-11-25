@@ -194,8 +194,8 @@ a:hover {
   z-index: 10;
 }
 .section-header svg{
-  min-height: 30px;
-  min-width: 30px;
+  min-height: 20px;
+  min-width: 20px;
 }
 .section-header.fixHead{
   background-color: #18181f;
@@ -547,29 +547,6 @@ a:hover {
   padding-bottom: 10rem;
   background-image: url(../assets/img/back/bg-pattern.svg);
 }
-.aboutUs_foto{
-  height: 200px;
-  border-radius: 30px;
-  overflow: hidden;
-  position: relative;
-  border: 1px solid #000;
-}
-.aboutUs_foto:nth-child(1){
-  z-index: 4;
-}
-.aboutUs_foto:nth-child(2){
-  z-index: 3;
-  transform: translateX(-10%);
-  background-color: rgba(0,0,0,0.7);
-}
-.aboutUs_foto:nth-child(3){
-  z-index: 2;
-  transform: translateX(-20%);
-}
-.aboutUs_foto:nth-child(4){
-  z-index: 1;
-  transform: translateX(-30%);
-}
 .section-aboutUs::before {
   content: '';
   position: absolute;
@@ -593,32 +570,14 @@ a:hover {
   background: url(../assets/img/icons/leaf.png) no-repeat center center;
   background-size: contain;
 }
-.aboutUs_foto{
-  position: relative;
-}
-.aboutUs__allPhoto{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, .4);
-  color: #fff;
-}
-.aboutUs__allPhoto div{
-  max-width: 140px;
-}
-.aboutUs__allPhoto svg{
-  max-width: 60px;
-  fill: #ffce1c;
-}
 @media(max-width: 576px){
   .section-aboutUs::before{
     display: none;
   }
-  .aboutUs_foto:nth-child(4) {
-    transform: translateX(-10%);
-  }
+}
+.single-aboutUs__prev,
+.single-aboutUs__next{
+  cursor: pointer;
 }
 
 /* section-reviews */

@@ -90,6 +90,13 @@ $(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
     });
+    $('.single-aboutUs').slick({
+        dots: true,
+        prevArrow: $('.single-aboutUs__prev'),
+        nextArrow: $('.single-aboutUs__next'),
+        arrows: true,
+        slidesToShow: 4,
+    });
 
     $("a.smoothscroll").click(function(a) {
         "" !== this.hash && (a.preventDefault(), a = this.hash, $("html, body").animate({
