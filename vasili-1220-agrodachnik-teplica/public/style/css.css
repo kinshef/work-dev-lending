@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:900&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
 
 /* Bootstrap fix */
 .btn {
@@ -26,6 +26,10 @@
 
 .text-red {
   color: red;
+}
+
+.text_green {
+  color: #3B9C2E;
 }
 
 .app-ff--alt {
@@ -348,28 +352,10 @@
 
 /* ADVANTAGES */
 
-/* SECTION PRICE-LOWER */
-.section-price-lower {
-  background: url('../img/bg-5-1.jpg') no-repeat center center;
-  background-size: cover;
-}
-
-.text_green {
-  color: #3B9C2E;
-}
-
-.price-lower-photo .price-lower-photo__item {
-  position: relative;
-  transition: all .5s;
-}
-
-.price-lower-photo .price-lower-photo__item:hover {
-  z-index: 2;
-}
-
-.price-lower-photo .price-lower-photo__item img {
-  object-fit: cover;
-  max-height: 10rem;
+/* section-SnowAndWind */
+.section-SnowAndWind{
+  background: url(../assets/img/back/background_section.png) no-repeat left bottom;
+  background-size: contain;
 }
 /* END */
 
@@ -530,6 +516,13 @@
 
 /* END */
 
+
+.section-enjoyPlant{
+  background: url(../assets/img/back/left_backgr.png) no-repeat left -47px bottom 89px, url(../assets/img/back/right_backgr.png) no-repeat right -182px bottom 190px;
+}
+
+
+
 /* Work */
 
 /* Footer */
@@ -648,13 +641,19 @@
 /* END MODAL CALCULATOR */
 
 /*---------------owl-carousel------------------------------*/
-.owl-height {
+
+.owl-carousel-productsImg,
+.owl-carousel-sale
+
+.owl-carousel-productsImg .owl-height,
+.owl-carousel-sale .owl-height {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
-.owl-dots {
+.owl-carousel-productsImg .owl-dots,
+.owl-carousel-sale .owl-dots {
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%);
@@ -663,8 +662,10 @@
   bottom: 0;
 }
 
-.owl-nav .owl-prev,
-.owl-nav .owl-next {
+.owl-carousel-productsImg .owl-nav .owl-prev,
+.owl-carousel-sale .owl-nav .owl-prev,
+.owl-carousel-productsImg .owl-nav .owl-next,
+.owl-carousel-sale .owl-nav .owl-next {
   position: absolute;
   top: 50%;
   -webkit-transform: translate(0, -50%);
@@ -683,7 +684,8 @@
   overflow: hidden;
 }
 
-.owl-nav .owl-prev {
+.owl-carousel-productsImg .owl-nav .owl-prev,
+.owl-carousel-sale .owl-nav .owl-prev {
   left: 0;
   border-radius: 0 40px 40px 0;
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, .65)), to(transparent));
@@ -691,7 +693,8 @@
   background: linear-gradient(to right, rgba(255, 255, 255, .65) 0%, transparent 100%);
 }
 
-.owl-nav .owl-next {
+.owl-carousel-productsImg .owl-nav .owl-next,
+.owl-carousel-sale .owl-nav .owl-next {
   right: 0;
   border-radius: 40px 0 0 40px;
   background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, .65)), to(transparent));
@@ -699,19 +702,22 @@
   background: linear-gradient(to left, rgba(255, 255, 255, .65) 0%, transparent 100%);
 }
 
-.owl-nav .owl-prev:hover {
+.owl-carousel-productsImg .owl-nav .owl-prev:hover,
+.owl-carousel-sale .owl-nav .owl-prev:hover {
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, .85)), to(transparent));
   background: -o-linear-gradient(left, rgba(255, 255, 255, .85) 0%, transparent 100%);
   background: linear-gradient(to right, rgba(255, 255, 255, .85) 0%, transparent 100%);
 }
 
-.owl-nav .owl-next:hover {
+.owl-carousel-productsImg .owl-nav .owl-next:hover,
+.owl-carousel-sale .owl-nav .owl-next:hover {
   background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, .85)), to(transparent));
   background: -o-linear-gradient(right, rgba(255, 255, 255, .85) 0%, transparent 100%);
   background: linear-gradient(to left, rgba(255, 255, 255, .85) 0%, transparent 100%);
 }
 
-.owl-dots .owl-dot {
+.owl-carousel-productsImg .owl-dots .owl-dot,
+.owl-carousel-sale .owl-dots .owl-dot {
   background-color: rgba(255, 255, 255, .4);
   height: 12px;
   width: 12px;
@@ -720,8 +726,10 @@
   margin: 2px;
 }
 
-.owl-dots .owl-dot:hover,
-.owl-dots .owl-dot.active {
+.owl-carousel-productsImg .owl-dots .owl-dot:hover,
+.owl-carousel-sale .owl-dots .owl-dot:hover,
+.owl-carousel-productsImg .owl-dots .owl-dot.active,
+.owl-carousel-sale .owl-dots .owl-dot.active {
   background-color: rgba(255, 255, 255, .8);
 }
 /*---------------end of owl-carousel------------------------------*/

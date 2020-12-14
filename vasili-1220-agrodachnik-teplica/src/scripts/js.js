@@ -82,21 +82,28 @@ $(document).ready(function () {
     }
   });
 
-    //owl-carousel
-    $(".owl-carousel-productsImg").owlCarousel({
-        items: 1,
-        nav: true,
-        loop: true,
-        autoHeight: true,
-        navText: ['<i class="fa mr-3 fa-lg fa-angle-left" aria-hidden="true"></i>', '<i class="fa ml-3 fa-lg fa-angle-right" aria-hidden="true"></i>'],
-    });
+  //owl-carousel
+  $(".owl-carousel-productsImg").owlCarousel({
+    items: 1,
+    nav: true,
+    loop: true,
+    autoHeight: true,
+    navText: ['<i class="fa mr-3 fa-lg fa-angle-left" aria-hidden="true"></i>', '<i class="fa ml-3 fa-lg fa-angle-right" aria-hidden="true"></i>'],
+  });
 
-    $(".owl-carousel-sale").owlCarousel({
-      items: 1,
-      nav: true,
-      loop: true,
-      autoHeight: true,
-      navText: ['<i class="fa mr-3 fa-lg fa-angle-left" aria-hidden="true"></i>', '<i class="fa ml-3 fa-lg fa-angle-right" aria-hidden="true"></i>'],
+  $(".owl-carousel-sale").owlCarousel({
+    items: 1,
+    nav: true,
+    loop: true,
+    autoHeight: true,
+    navText: ['<i class="fa mr-3 fa-lg fa-angle-left" aria-hidden="true"></i>', '<i class="fa ml-3 fa-lg fa-angle-right" aria-hidden="true"></i>'],
+  });
+  $(".owl-carousel-comments").owlCarousel({
+    items: 1,
+    nav: true,
+    loop: true,
+    autoHeight: true,
+    navText: ['<i class="fa mr-3 fa-lg fa-angle-left" aria-hidden="true"></i>', '<i class="fa ml-3 fa-lg fa-angle-right" aria-hidden="true"></i>'],
   });
 
   //gift modal
