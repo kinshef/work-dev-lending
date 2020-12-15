@@ -343,12 +343,35 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
   }
-
 }
-
 .main__subtitle {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
+}
+.section-catalog .section__title{
+  position: relative;
+  display: inline-block;
+}
+.section-catalog .section__title:before,
+.section-catalog .section__title::after {
+  content: "";
+  width: 100%;
+  max-width: 150px;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+}
+.section-catalog .section__title:before{
+  background: url(../assets/img/icons/header_l.png) no-repeat left center;
+  background-size: contain;
+  left: 0%;
+  transform: translate(-110%);
+}
+.section-catalog .section__title:after{
+  background: url(../assets/img/icons/header_r.png) no-repeat right center;
+  background-size: contain;
+  right: 0;
+  transform: translate(110%);
 }
 
 /* ADVANTAGES */
