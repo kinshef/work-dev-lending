@@ -264,7 +264,8 @@
 
 .app-dropdown:hover .app-dropdown__container {
   display: block;
-  animation: rotateInUpLeft 200ms;
+  -webkit-animation: rotateInUpLeft 200ms;
+          animation: rotateInUpLeft 200ms;
 }
 
 /* NAV */
@@ -397,10 +398,10 @@
 /* END */
 
 /* SECTION CALL MASTER*/
-.section-call-master {
+/* .section-call-master {
   background: url('../img/bg-7.jpg') no-repeat center center;
   background-size: cover;
-}
+} */
 
 .section-call-master {
   position: relative;
@@ -479,13 +480,29 @@
   width: 0;
   height: 300px;
   background: #fff;
-  animation-delay: .05s;
+  -webkit-animation-delay: .05s;
+          animation-delay: .05s;
   position: absolute;
   left: -15%;
   top: -125px;
   box-shadow: 0 0 55px 35px rgba(255, 255, 255, 1);
-  animation: 4s infinite ease-in-out slideme;
+  -webkit-animation: 4s infinite ease-in-out slideme;
+          animation: 4s infinite ease-in-out slideme;
   transform: rotate(45deg);
+}
+
+@-webkit-keyframes slideme {
+  0% {
+    left: -20%;
+  }
+
+  25% {
+    left: 135%;
+  }
+
+  100% {
+    left: 135%;
+  }
 }
 
 @keyframes slideme {
@@ -516,13 +533,65 @@
 
 /* END */
 
-
+/* section-enjoyPlant */
 .section-enjoyPlant{
   background: url(../assets/img/back/left_backgr.png) no-repeat left -47px bottom 89px, url(../assets/img/back/right_backgr.png) no-repeat right -182px bottom 190px;
 }
-
-
-
+.enjoyPlant-imgWrap{
+  max-width: 100%;
+  height: auto;
+}
+.owl-carousel-comments{
+  margin: 0 3rem;
+  width: auto;
+}
+.owl-carousel__productImg,
+.owl-carousel-comments .item,
+.owl-carousel-comments{
+  border-radius: 30px;
+}
+.owl-carousel-comments .item{
+  border: 10px solid #f7f7f7;
+  background-color: #fff;
+}
+.owl-carousel__productImg{
+  max-width: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.owl-carousel__stars{
+  max-width: 130px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.owl-carousel-comments .owl-nav .owl-prev,
+.owl-carousel-comments .owl-nav .owl-next{
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  font-size: 24px;
+  background: rgba(255, 255, 255, 0.5);
+  color: #84dc44;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  transition: all 0.3s
+}
+.owl-carousel-comments .owl-nav .owl-prev{
+  left: -3.5rem;
+}
+.owl-carousel-comments .owl-nav .owl-next{
+  right: -3.5rem;
+}
+.owl-carousel-comments .owl-nav .owl-prev:hover,
+.owl-carousel-comments .owl-nav .owl-next:hover{
+  color: #fff;
+  background: #84dc44;
+}
 /* Work */
 
 /* Footer */
@@ -600,7 +669,6 @@
 .catalog__card {
   margin-bottom: 3rem;
   padding: 1rem;
-  -webkit-box-shadow: 2px 2px 10px silver;
   box-shadow: 2px 2px 10px silver;
 }
 
@@ -618,20 +686,16 @@
   border: 3px solid #808080;
   cursor: pointer;
   margin: 0.2rem;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .catalog__input__label:hover {
-  -webkit-box-shadow: 3px 3px 3px silver;
   box-shadow: 3px 3px 3px silver;
 }
 
 .catalog__input input:checked + .catalog__input__label {
   color: #6d9932;
   border: 3px solid #6d9932;
-  -webkit-box-shadow: 3px 3px 3px silver;
   box-shadow: 3px 3px 3px silver;
 }
 
@@ -647,8 +711,6 @@
 
 .owl-carousel-productsImg .owl-height,
 .owl-carousel-sale .owl-height {
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
@@ -656,8 +718,6 @@
 .owl-carousel-sale .owl-dots {
   position: absolute;
   left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
   transform: translate(-50%);
   bottom: 0;
 }
@@ -668,8 +728,6 @@
 .owl-carousel-sale .owl-nav .owl-next {
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   height: 150px;
   line-height: 150px;
@@ -688,8 +746,6 @@
 .owl-carousel-sale .owl-nav .owl-prev {
   left: 0;
   border-radius: 0 40px 40px 0;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, .65)), to(transparent));
-  background: -o-linear-gradient(left, rgba(255, 255, 255, .65) 0%, transparent 100%);
   background: linear-gradient(to right, rgba(255, 255, 255, .65) 0%, transparent 100%);
 }
 
@@ -697,22 +753,16 @@
 .owl-carousel-sale .owl-nav .owl-next {
   right: 0;
   border-radius: 40px 0 0 40px;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, .65)), to(transparent));
-  background: -o-linear-gradient(right, rgba(255, 255, 255, .65) 0%, transparent 100%);
   background: linear-gradient(to left, rgba(255, 255, 255, .65) 0%, transparent 100%);
 }
 
 .owl-carousel-productsImg .owl-nav .owl-prev:hover,
 .owl-carousel-sale .owl-nav .owl-prev:hover {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, .85)), to(transparent));
-  background: -o-linear-gradient(left, rgba(255, 255, 255, .85) 0%, transparent 100%);
   background: linear-gradient(to right, rgba(255, 255, 255, .85) 0%, transparent 100%);
 }
 
 .owl-carousel-productsImg .owl-nav .owl-next:hover,
 .owl-carousel-sale .owl-nav .owl-next:hover {
-  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, .85)), to(transparent));
-  background: -o-linear-gradient(right, rgba(255, 255, 255, .85) 0%, transparent 100%);
   background: linear-gradient(to left, rgba(255, 255, 255, .85) 0%, transparent 100%);
 }
 
@@ -818,8 +868,25 @@
   top: -20px;
   bottom: -20px;
   border-radius: 50%;
-  animation: pulse 1.8s linear infinite;
+  -webkit-animation: pulse 1.8s linear infinite;
+          animation: pulse 1.8s linear infinite;
   opacity: 0;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
 }
 
 @keyframes pulse {
@@ -845,7 +912,8 @@
   left: 1rem;
   bottom: 5rem;
   width: 330px;
-  clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);
+          clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);
   visibility: hidden;
 }
 

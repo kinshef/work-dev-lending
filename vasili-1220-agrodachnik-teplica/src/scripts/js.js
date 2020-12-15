@@ -103,7 +103,8 @@ $(document).ready(function () {
     nav: true,
     loop: true,
     autoHeight: true,
-    navText: ['<i class="fa mr-3 fa-lg fa-angle-left" aria-hidden="true"></i>', '<i class="fa ml-3 fa-lg fa-angle-right" aria-hidden="true"></i>'],
+    margin: 40,
+    navText: ['<i class="fa fa-lg fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-lg fa-angle-right" aria-hidden="true"></i>'],
   });
 
   //gift modal
