@@ -5,18 +5,19 @@ $(document).ready(function() {
         var product = $("input[name='product']", form).val();
         var length = $("input[name='length']:checked", form).val();
         var param1 = $("input[name='param1'][type='hidden'], input[name='param1']:checked", form).val();
-        var additional = $("input[name='additional[]']:checked", form);
         var sum = 0;
         
         sum += calculator.products[product][length][param1];
 
+        var additional = $("input[name='additional[]']:checked", form);
         additional.each(function (i, e) {
             sum += calculator.additional[$(e).val()]
         });
 
+        var animateBlock = $('.catalog__price', form);
         var animationName = 'pulse';
         animateBlock.addClass('animated faster ' + animationName);
-        animateBlock.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){animateBlock.removeClass('animated faster ' + animationName)});
+        animateBlock.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd animationend animationend', function(){animateBlock.removeClass('animated faster ' + animationName)});
 
         var out = $('.calculator-price', form);
         var outOld = $('.calculator-price-old', form);
@@ -34,6 +35,12 @@ $(document).ready(function() {
                 out.data("animateFrom", Number(sum).toFixed());
             }
         });
+
+
+        if(calculator.products[product][length]['urlImg'] !== $('.jUrmImg', form).attr('src')){
+            $('.jUrmImg', form).attr('src', calculator.products[product][length]['urlImg']);
+        };
+
   });
   $("form.has-calculator").change();
 

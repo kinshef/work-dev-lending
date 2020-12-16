@@ -253,7 +253,7 @@ h1 {
 }
 
 #section-footer {
-  background-image: url(../img/footerBKG.png);
+  background-image: url(../assets/img/back/footerBKG.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -350,24 +350,6 @@ h1 {
     height: 46.8vw;
   }
 }
-
-/* @media (max-width: 700px) {
-  footer {
-    padding-top: 40px;
-  }
-}
-@media (max-width: 550px) {
-  footer {
-    padding-bottom: 100px;
-  }
-} */
-/* 
-.madeby {
-  width: 82px;
-  height: 17px;
-  background: url("../images/mo.svg") center no-repeat;
-  background-size: contain;
-} */
 
 .products {
   display: flex;

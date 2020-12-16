@@ -76,7 +76,6 @@ $(function () {
         //console.log(JSON.stringify(data))
         return false
     })
-    $('[data-toggle="popover"]').popover()
     
     // Smooth scroll
     $("a.smoothscroll").click(function (event) {
