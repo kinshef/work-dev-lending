@@ -73,28 +73,25 @@ $(document).ready(function () {
   // input mask
   $('.client-phone').inputmask("+37599-9999999");
 
-  // slider
-  $('.product-slider').slick({
-    infinite: true,
-    speed: 300,
+  $('.slider-catalog-content').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.slider-catalog-cart',
+    arrows: true,
+    dots: false,
+    prevArrow: $('.slider-catalog__prev'),
+    nextArrow: $('.slider-catalog__next'),
+    swipe: false
+  });
+  $('.slider-catalog-cart').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-    ]
+    asNavFor: '.slider-catalog-content',
+    arrows: true,
+    dots: false,
+    centerMode: true,
+    infinite: true,
+    focusOnSelect: true
   });
 
 
