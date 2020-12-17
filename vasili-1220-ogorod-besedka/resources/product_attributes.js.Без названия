@@ -1,0 +1,100 @@
+/** 
+ * @fileoverview This file work with product attributes
+ * @author Igor Zhabskiy <Igor.Zhabskiy.@gmail.com>
+ * @version 0.1
+ */
+$(document).ready(function() {
+	
+	/**
+	 * If page load
+	 */
+	var check_is = $("#checkbox_build_myself").is(':checked');
+	// if (!check_is) {
+	if (check_is) {
+		for (var i = 0; i < 4; i++) {
+			$("#build_price_null_"+i).css('display', 'block');
+			$("#build_price_not_null_"+i).css('display', 'none');
+		}
+	} else {
+		for (var i = 0; i < 4; i++) {
+			$("#build_price_not_null_"+i).css('display', 'block');
+			$("#build_price_null_"+i).css('display', 'none');
+		}
+	}
+	
+	/**
+	 * If greenhouse radio checked
+	 */
+	greenhouse_radio_id = '0';
+	$("input[id^='greenhouse_price_']").click(function() {
+		greenhouse_radio_id = $(this).attr('id').substr(-1);
+	});
+	
+	/**
+	 * If checkbox click
+	 */
+	$("input#checkbox_build_myself").click(function() {
+		var check_is_new = $("#checkbox_build_myself").is(':checked');
+		// if (!check_is_new) {
+		if (check_is_new) {
+			$("#radio_build_myself_true").click();
+			for (var i = 0; i < 4; i++) {
+				$("#build_price_null_"+i).css('display', 'block');
+				$("#build_price_not_null_"+i).css('display', 'none');
+			}		
+		} else {
+			$("#radio_build_myself_"+greenhouse_radio_id).click();
+			for (var i = 0; i < 4; i++) {
+				$("#build_price_not_null_"+i).css('display', 'block');
+				$("#build_price_null_"+i).css('display', 'none');
+			}
+		}
+	});
+	
+	/**
+	 * If click radio of greenhouse price
+	 */
+	$("input[id^='greenhouse_price_']").click(function() {
+		var check_is_myself = $('#checkbox_build_myself').is(':checked');
+		// if (!check_is_myself) {
+		if (check_is_myself) {
+			$('#radio_build_myself_true').checked = false;
+		} else {
+			var radio_id_key = $(this).attr('id').substr(-1);
+			$("#radio_build_myself_"+radio_id_key).click();
+		}
+	});
+
+	/**
+	 * If dummy myself click
+	 */
+	$("input#dummy_checkbox_build_myself").click(function() {
+// console.log("_click____");
+// console.log($(this).is(':checked'));
+		
+		// $('input#checkbox_build_myself').click();
+
+		// $('input#checkbox_build_myself').click();
+
+		// var check_dummy_is_myself = $(this).is(':checked');
+
+// console.log("dummy: " + check_dummy_is_myself);
+
+		// if (check_dummy_is_myself) {
+			// $('input#checkbox_build_myself').checked=false;
+			// $('input#checkbox_build_myself').click();
+		// } else {
+			// $('#checkbox_build_myself').checked=true;
+			// $('input#checkbox_build_myself').click();
+		// }
+
+		// m_attributes_price();
+	});
+
+	// setTimeout('$("input#dummy_checkbox_build_myself").click();',100);
+	// setTimeout('$("input#dummy_checkbox_build_myself").click();',100);
+	// setTimeout('$("input#dummy_checkbox_build_myself").click();',100);
+	// setTimeout('$("input#dummy_checkbox_build_myself").checked=false;',100);
+	
+	// $('input#dummy_checkbox_build_myself').click();
+});

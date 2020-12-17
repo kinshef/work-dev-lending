@@ -1,0 +1,131 @@
+/*Заказать теплицу*/
+.order-greenhouse {
+  position: relative;
+  padding: 10px;
+  background-color: #66921a;
+}
+@media (min-width: 718px) {
+  .order-greenhouse {
+    padding: 15px;
+    min-height: 370px;
+    background: url(../img/order-gh-bg2.jpg) center;
+  }
+  /*Листок и перец*/
+  .order-greenhouse:before,
+  .order-greenhouse:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+  .order-greenhouse:before {
+    width: 184px;
+    height: 256px;
+    background-image: url(../img/cut-pepper.png);
+    top: -50px;
+    right: 0;
+  }
+  .order-greenhouse:after {
+    width: 180px;
+    height: 196px;
+    background-image: url(../img/cut-sheet.png);
+    bottom: -65px;
+    left: 0;
+  }
+}
+.order-greenhouse-form {
+  position: relative;
+  padding-top: 15px;
+}
+@media (min-width: 718px) {
+  .order-greenhouse-form {
+    background-repeat: no-repeat;
+    background-position: center top;
+    /*width: 700px;*/
+    width: 680px;
+    height: 420px;
+    margin: auto;
+    padding: 80px;
+    background-image: url(../img/order-gh-form-bg-mini.png);
+  }
+  /*Листок*/
+  .order-greenhouse-form:before {
+    content: "";
+    display: block;
+    width: 134px;
+    height: 122px;
+    background: url(../img/order-gh-sheet.png) no-repeat;
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+  }
+}
+@media (min-width: 1050px) {
+  .order-greenhouse-form {
+    width: 880px;
+    height: 340px;
+    background-image: url(../img/order-gh-form-bg.png);
+  }
+}
+.order-greenhouse-title {
+  font-size: 48px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+/*Форма*/
+.order-greenhouse-form-content {
+  margin: 0 auto 15px;
+}
+.order-greenhouse-form-content .form-group {
+  margin-bottom: 5px;
+}
+.order-greenhouse-form-content .form-control {
+  text-align: center;
+}
+.order-greenhouse-form-content .btn {
+  padding: 5px 12px;
+  font-weight: 500;
+}
+.order-greenhouse-help-block {
+  font-size: 16px;
+  /*font-weight: 500;*/
+  color: #cde0aa;
+  text-align: center;
+  padding: 5px;
+}
+@media (min-width: 1050px) {
+  .order-greenhouse-title {
+    margin-bottom: 18px;
+  }
+  .order-greenhouse-form-content {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .order-greenhouse-form-content .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  .order-greenhouse-form-content .btn,
+  .order-greenhouse-form-content .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+  .order-greenhouse-form-content .form-control {
+    width: 220px;
+    text-align: left;
+  }
+  .order-greenhouse-form-content .btn {
+    width: 140px;
+  }
+}
+@media (min-width: 718px) and (max-width: 1049px) {
+  .order-greenhouse-form-content {
+    width: 55%;
+  }
+}
+/*end order-greenhouse*/

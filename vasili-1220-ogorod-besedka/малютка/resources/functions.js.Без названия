@@ -1,0 +1,753 @@
+/**
+ *	@author Spenser
+ *	@copyright 2009
+ *	@project SpenserShopCMS
+ */
+/**
+ * getYandexCID
+ *
+ * Get Yandex CID from COOKIE
+ *
+ */
+function getYandexCID() {
+	var match = document.cookie.match('(?:^|;)\\s*_ym_uid=([^;]*)');
+	return (match) ? decodeURIComponent(match[1]) : 'Не указано';
+}
+
+/**
+ * getGoogleCID
+ *
+ * Get Google CID from COOKIE
+ *
+ */
+function getGoogleCID() {
+	if (ga) {
+		var tracker = ga.getAll()[0];
+		var client_id = tracker.get('clientId');
+		return (client_id) ? client_id : 'Не указано';
+	}
+}
+
+/**
+ * sendDataFromAllFormsToGoogleEcommerce 
+ *
+ * This function send a data from all forms to Google Ecommerce
+ */
+function sendDataFromAllFormsToGoogleEcommerce(data_object,form) {
+	/**
+	 * Set object with all sending objects
+	 */
+	var initObject = {
+
+		/**
+		 * Full order
+		 */
+		form_full_order: function(data_object) {
+			window.dataLayer = window.dataLayer || [];
+			dataLayer.push(data_object);
+		},
+
+		/**
+		 * formCallback
+		 */
+		form_call_back: function() {
+			dataLayer.push({'event':'formCallback'});
+		},
+
+		/**
+		 * formQuestion
+		 */
+		form_question: function() {
+			dataLayer.push({'event':'formQuestion'});
+		},
+
+		/**
+		 * formCheaper
+		 */
+		form_cheaper: function() {
+			dataLayer.push({'event':'formCheaper'});
+		},
+
+		/**
+		 * formLanding
+		 */
+		form_landing: function() {
+			dataLayer.push({'event':'formLanding'});
+		},
+
+		/**
+		 * formFeedback
+		 */
+		form_feedback: function() {
+			dataLayer.push({'event':'formFeedback'});
+		},
+
+		/**
+		 * oneClickOrder
+		 */
+		form_oneClickOrder: function() {
+			dataLayer.push({'event':'oneClickOrder'});
+		},
+
+		/**
+		 * formCheckList
+		 */
+		form_checkList: function() {
+			dataLayer.push({'event':'formCheckList'});
+		},
+	};
+
+	/**
+	 * Initialize a data depending on form
+	 */
+	switch (form) {
+
+	  case 'form_full_order':
+	    initObject.form_full_order(data_object);
+	    break;
+
+	  case 'form_call_back':
+	    initObject.form_call_back();
+	    break; 
+
+	  case 'form_question':
+	    initObject.form_question();
+	    break;
+
+	  case 'form_cheaper':
+	    initObject.form_cheaper();
+	    break;
+
+	  case 'form_landing':
+	    initObject.form_landing();
+	    break;
+
+	  case 'form_feedback':
+	    initObject.form_feedback();
+	    break;
+
+	  case 'form_one_click':
+	  	initObject.form_oneClickOrder();
+	  	break;
+
+	  case 'form-check-list':
+	  	initObject.form_checkList();
+	  	break;
+
+	  default:
+	    initObject.form_feedback();
+	}
+}
+
+/**
+ * sendDataFromAllFormsToCRM 
+ *
+ * This function send a data from all forms to CRM
+ */
+function sendDataFromAllFormsToCRM(form_or_page,client_name,client_email,client_phone,products,roistat_id,order_id,add_text) {
+
+	/**
+	 * Prepare data (OBJECT) from from 
+	 */
+	if (roistat_id == '') {
+		roistat_id = TDA_GetRoistat('roistat_visit');
+	}
+	
+	var data_object = {
+		form_or_page: form_or_page, 
+		client_name:  client_name,
+		client_email:  client_email,
+		client_phone: client_phone,
+		products: 	  products,
+		roistat_id:   roistat_id,
+		order_id:     order_id,
+		add_text:     add_text,
+		yandex_cid: getYandexCID(),
+		google_cid: getGoogleCID()
+	};
+
+	/**
+	 * Send data on AJAX
+	 */
+	jQ.ajax({
+      type: "POST",
+      dataType: "json",
+      url: 'crm.php',
+      cache: false,
+      data: data_object,
+      success: function(object) {}
+	});
+}
+
+/**
+ * Funtion for Yandex Goals
+ */
+function yaCounterGoals(form, info, status) {
+	//Set goal id
+	var goal_id;
+	switch(form) {
+		case 'name-phone-callback':
+		goal_id = 'forma_obratnyj_zvonok';
+		break;
+
+		case 'phone-one-click':
+		goal_id = 'kupit_v_1_klik';
+		break;
+
+		case 'phone-search-cheaper':
+		goal_id = 'nashli_deshevle';
+		break;
+
+		default:
+		goal_id = 'forma_obratnyj_zvonok';
+		break;
+	}
+	//Prepare parameters for goals
+	var goalParams = {
+		form_name: form,
+		information: info,
+		status_send: status,
+		page: window.location.href
+	};
+	//Init Yandex goals сounter 
+	yaCounter28917425.reachGoal(goal_id, goalParams);
+}
+/**
+ * This function universal validate and send form
+ */
+function send_universal_form(form) {
+	if (window.XMLHttpRequest) { 
+		req = new XMLHttpRequest(); 
+	} else if (window.ActiveXObject) { 
+		req = new ActiveXObject("Microsoft.XMLHTTP"); 
+	}
+    if (req) {
+		//Set variable
+		var name_required = "Введите пожалуйста Ваше имя.";
+		var phone_required = "Введите пожалуйта Ваш номер телефона.";
+		var message_required = "Задайте пожалуйта Ваш вопрос.";
+		var oferta_required = "Согласно действующему законодательству для отправки данной формы требуется согласие на обработку персональных данных.";
+		var form_flag = jQ(form).attr('data-flag');
+		var custom_block = jQ(form).attr('data-block');
+		var clear_flag;
+		switch(form_flag) {
+			case 'name-phone-action':
+				var custom_name = form.elements["name"];
+				var custom_name = (custom_phone.value=="") ? 'Не указано' : form.elements["name"];
+				var custom_phone = form.elements["phone"];
+				var roistat_id = form.elements["roistat_id"];
+				roistat_id = (roistat_id) ? roistat_id.value : jQ(".roistat-promo").text();
+		    	if (custom_name.value == "") {
+					alert(name_required);
+					return false;
+				}
+				if (custom_phone.value == "") {
+					alert(phone_required);
+					return false;
+				}
+				var params = 'custom_name=' + custom_name.value + '&custom_phone=' + custom_phone.value + '&roistat_id=' + roistat_id + '&mode=' + form_flag;
+				break;
+			case 'name-phone-callback':
+				var custom_name = form.elements["name"];
+				var custom_name = (custom_name.value=="") ? 'Не указано' : form.elements["name"];
+				var custom_phone = form.elements["phone"];
+				var custom_oferta = form.elements["oferta"];
+				var roistat_id = form.elements["roistat_id"];
+				roistat_id = (roistat_id) ? roistat_id.value : jQ(".roistat-promo").text();
+				var form_name = 'Перезвонить мне';
+				var info = '';
+
+		    	if (custom_name.value == "") {
+					alert(name_required);
+					return false;
+				}
+				if (custom_phone.value == "") {
+					alert(phone_required);
+					return false;
+				}
+				if (custom_oferta.checked == false) {
+					alert(oferta_required);
+					return false;
+				}
+				var params = 'custom_name=' + custom_name.value + '&custom_phone=' + custom_phone.value + '&roistat_id=' + roistat_id + '&mode=' + form_flag;
+				/**
+				 * Send data from form to CRM
+				 */
+				sendDataFromAllFormsToCRM(form_name,custom_name.value,'',custom_phone.value,'',roistat_id,'','');
+				/**
+				 * Init e-commerce action "form_call_back"
+				 */
+				sendDataFromAllFormsToGoogleEcommerce('','form_call_back');
+				break;
+			case 'phone-one-click':
+				var custom_product_name = form.elements["product_name"];
+				var custom_name = form.elements["name"];
+				var custom_name = (custom_name.value=="") ? 'Не указано' : form.elements["name"];
+				var custom_phone = form.elements["phone"];
+				var custom_oferta = form.elements["oferta"];
+				var form_name = 'Купить в 1 клик';
+				var roistat_id = form.elements["roistat_id"];
+				roistat_id = (roistat_id) ? roistat_id.value : jQ(".roistat-promo").text();
+				clear_flag = true;
+				if (custom_phone.value == "") {
+					alert(phone_required);
+					return false;
+				}
+				if (custom_oferta.checked == false) {
+					alert(oferta_required);
+					return false;
+				}
+				var params = 'custom_product_name=' + custom_product_name.value + '&custom_name=' + custom_name.value + '&custom_phone=' + custom_phone.value + '&roistat_id=' + roistat_id + '&mode=' + form_flag;
+				/**
+				 * Send data from form to CRM
+				 */
+				sendDataFromAllFormsToCRM(form_name,'','',custom_phone.value,custom_product_name.value,roistat_id,'','');
+				/**
+				 * Init e-commerce action "form_one_click"
+				 */
+				sendDataFromAllFormsToGoogleEcommerce('','form_one_click');
+				break;
+			case 'phone-search-cheaper':
+				var custom_product_name = form.elements["product_name"];
+				var custom_name = form.elements["name"];
+				var custom_name = (custom_name.value=="") ? 'Не указано' : form.elements["name"];
+				var custom_phone = form.elements["phone"];
+				var custom_oferta = form.elements["oferta"];
+				var form_name = 'Нашли дешевле?';
+				var roistat_id = form.elements["roistat_id"];
+				roistat_id = (roistat_id) ? roistat_id.value : jQ(".roistat-promo").text();
+				var info = custom_product_name;
+				if (custom_phone.value == "") {
+					alert(phone_required);
+					return false;
+				}
+				if (custom_oferta.checked == false) {
+					alert(oferta_required);
+					return false;
+				}
+				var params = 'custom_product_name=' + custom_product_name.value + '&custom_name=' + custom_name.value + '&custom_phone=' + custom_phone.value + '&roistat_id=' + roistat_id + '&mode=' + form_flag;
+				/**
+				 * Send data from form to CRM
+				 * form_or_page,client_name,client_email,client_phone,products,roistat_id,order_id,add_text
+				 */
+				sendDataFromAllFormsToCRM(form_name,'','',custom_phone.value,custom_product_name.value,roistat_id,'','');
+				/**
+				 * Init e-commerce action "form_cheaper"
+				 */
+				sendDataFromAllFormsToGoogleEcommerce('','form_cheaper');
+				break;
+			case 'phone-order-product':
+				var custom_product_name = form.elements["product_name"];
+				var custom_name = form.elements["name"];
+				var custom_name = (custom_name.value=="") ? 'Не указано' : form.elements["name"];
+				var custom_phone = form.elements["phone"];
+				var custom_oferta = form.elements["oferta"];
+				var form_name = 'Форма Заказать';
+				var roistat_id = form.elements["roistat_id"];
+				roistat_id = (roistat_id) ? roistat_id.value : jQ(".roistat-promo").text();
+				var info = custom_product_name;
+				if (custom_name.value == "") {
+					alert(name_required);
+					return false;
+				}
+				if (custom_phone.value == "") {
+					alert(phone_required);
+					return false;
+				}
+				if (custom_oferta.checked == false) {
+					alert(oferta_required);
+					return false;
+				}
+				var params = 'custom_product_name=' + custom_product_name.value + '&custom_name=' + custom_name.value + '&custom_phone=' + custom_phone.value + '&roistat_id=' + roistat_id + '&mode=' + form_flag;
+				/**
+				 * Send data from form to CRM
+				 */
+				sendDataFromAllFormsToCRM(form_name,custom_name.value,'',custom_phone.value,custom_product_name.value,roistat_id,'','');
+				/**
+				 * Init e-commerce action "form_one_click"
+				 */
+				sendDataFromAllFormsToGoogleEcommerce('','form_one_click');
+				break;
+			case 'name-phone-message-questions':
+				var custom_name = form.elements["name"];
+				var custom_name = (custom_name.value=="") ? 'Не указано' : form.elements["name"];
+				var custom_phone = form.elements["phone"];
+				var custom_message = form.elements["message"];
+				var custom_oferta = form.elements["oferta"];
+				var form_name = 'Задать вопрос';
+				var product_name = form.elements["product_name"];
+				product_name = (product_name) ? product_name.value : 'Текстовые страницы';
+				var roistat_id = form.elements["roistat_id"];
+				roistat_id = (roistat_id) ? roistat_id.value : jQ(".roistat-promo").text();
+				if (custom_name.value == "") {
+					alert(name_required);
+					return false;
+				}
+				if (custom_phone.value == "") {
+					alert(phone_required);
+					return false;
+				}
+				if (custom_message.value == "") {
+					alert(message_required);
+					return false;
+				}
+				if (custom_oferta.checked == false) {
+					alert(oferta_required);
+					return false;
+				}
+				var params = 'custom_name=' + custom_name.value + '&custom_phone=' + custom_phone.value + '&custom_message=' + custom_message.value + '&roistat_id=' + roistat_id + '&mode=' + form_flag;
+				/**
+				 * Send data from form to CRM
+				 */
+				sendDataFromAllFormsToCRM(form_name,custom_name.value,'',custom_phone.value,product_name,roistat_id,'',custom_message.value);
+				/**
+				 * Init e-commerce action "form_question"
+				 */
+				sendDataFromAllFormsToGoogleEcommerce('','form_question');
+				break;
+
+			case 'name-phone-check-list':
+				var custom_name = form.elements["name"];
+				var custom_name_clear = (custom_name.value=="") ? 'Не указано' : form.elements["name"];
+				var custom_email = form.elements["email"];
+				var custom_email_clear = (custom_email.value=="") ? 'Не указан' : form.elements["email"];
+				var custom_phone = form.elements["phone"];
+				var custom_oferta = form.elements["oferta"];
+				var roistat_id = form.elements["roistat_id"];
+				roistat_id = (roistat_id) ? roistat_id.value : jQ(".roistat-promo").text();
+				var form_name = 'Заявка на список вопросов';
+				var info = '';
+
+		    	if (custom_name.value == "") {
+					alert(name_required);
+					return false;
+				}
+				if (custom_phone.value == "") {
+					alert(phone_required);
+					return false;
+				}
+				if (custom_oferta.checked == false) {
+					alert(oferta_required);
+					return false;
+				}
+				var params = 'custom_name=' + custom_name.value +  '&custom_email=' + custom_email.value + '&custom_phone=' + custom_phone.value + '&roistat_id=' + roistat_id + '&mode=' + form_flag;
+				/**
+				 * Send data from form to CRM
+				 */
+				sendDataFromAllFormsToCRM(form_name,custom_name.value,custom_email.value,custom_phone.value,'',roistat_id,'','');
+				/**
+				 * Init e-commerce action "form_call_back"
+				 */
+				sendDataFromAllFormsToGoogleEcommerce('','form-check-list');
+				break;
+		}
+		var url = "/ajax.php"; 
+		req.onreadystatechange = function() {  
+			if (req.readyState == 4) {
+				if(req.status == 200) {
+					var status_text;
+					if (req.responseText == true) {
+						if (form_flag=='name-phone-check-list') {
+							status_text = 'Ваша заявка успешно отправлена. Спасибо!';
+							alert(status_text);
+							$("#download_check_list").css("display","block");
+							document.getElementById("download_check_list").click();
+							$("#download_check_list").css("display","none");
+						} else {
+							status_text = 'Ваша заявка успешно отправлена. Спасибо!';
+							alert(status_text);
+						}
+					} else {
+						status_text = 'На сервере произошла ошибка, повторите позже!';
+						alert(status_text);
+					}
+					//Clear form
+					if (clear_flag == true) {
+						custom_phone.value = '';
+					} else {
+						custom_name.value = '';
+						custom_email.value = '';
+						custom_phone.value = '';
+					}
+					if (form_flag == 'name-phone-message-questions') {
+						custom_message.value = '';
+					}
+					//Close modal window
+					if (custom_block) {
+						jQ("#"+custom_block).modal('hide');
+					}
+					if (form_flag == 'name-phone-callback' || form_flag == 'phone-order-product' || 'phone-search-cheaper') {
+						//Init Yandex goals сounter 
+						yaCounterGoals(form_flag, info, status_text);
+					}
+				}
+			}
+		}
+	}
+	req.open("POST", url, true); 
+    req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); 
+    req.setRequestHeader('Content-length', params.length); 
+    req.send(params);
+}
+/**
+ * This function send mail
+ */
+function send_callback_form(form) {
+	if (window.XMLHttpRequest) { 
+		req = new XMLHttpRequest(); 
+	} else if (window.ActiveXObject) { 
+		req = new ActiveXObject("Microsoft.XMLHTTP"); 
+	}
+    if (req) {
+    	//Set varaables with errors
+		var name_required = "Введите пожалуйста Ваше имя.";
+		var phone_required = "Введите пожалуйта Ваш номер телефона.";
+		//Check variable and show message
+		if (form == 'one') {
+			var custom_name = document.getElementById('custom_name_one');
+			var custom_name = (custom_name.value=="") ? 'Не указано' : document.getElementById('custom_name_one');
+			var custom_phone = document.getElementById('custom_phone_one');
+			if (custom_phone.value == "") {
+				alert(phone_required);	
+				return false;
+			}
+			var params = 'custom_name=' + custom_name.value + '&custom_phone=' + custom_phone.value + '&mode=one';
+		} else if (form == 'want') {
+			var custom_name = document.getElementById('custom_name_want');
+			var custom_name = (custom_name.value=="") ? 'Не указано' : document.getElementById('custom_name_want');
+			var custom_phone = document.getElementById('custom_phone_want');
+			
+			if (custom_phone.value == "") {
+				alert(phone_required);	
+				return false;
+			}
+			var params = 'custom_name=' + custom_name.value + '&custom_phone=' + custom_phone.value + '&mode=want';
+		} else {
+			var custom_name = document.getElementById('custom_name');
+			var custom_name = (custom_name.value=="") ? 'Не указано' : document.getElementById('custom_name');
+			var custom_phone = document.getElementById('custom_phone');
+			if (custom_name.value == "") {
+				alert(name_required);	
+				return false;
+			}
+			if (custom_phone.value == "") {
+				alert(phone_required);	
+				return false;
+			}
+			var params = 'custom_name=' + custom_name.value + '&custom_phone=' + custom_phone.value + '&mode=sendcallback';
+		}
+		var url = "/ajax.php"; 
+		req.onreadystatechange = function() {  
+			if (req.readyState == 4) {
+				if(req.status == 200) {
+					if (req.responseText == true) {
+						alert('Ваша заявка успешно отправлена. Спасибо!');
+					} else {
+						alert('На сервере произошла ошибка, повторите позже!');
+					}
+					custom_name.value = '';
+					custom_phone.value = '';
+					jQ("#callback_form_bg").fadeToggle('fast');
+					
+					if (form == 'one') {
+						jQ("#callback_form_one").fadeToggle('fast');
+					} else if (form == 'want') {
+						jQ("#callback_form_want").fadeToggle('fast');
+					} else {
+						jQ("#callback_form").fadeToggle('fast');
+					}
+				}
+			}
+		}
+    }
+    req.open("POST", url, true); 
+    req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); 
+    req.setRequestHeader('Content-length', params.length); 
+    req.send(params);
+}
+/**
+ * This function send mail from product_name form
+ */
+function send_callback_form_product(form) {
+	if (window.XMLHttpRequest) { 
+		req = new XMLHttpRequest(); 
+	} else if (window.ActiveXObject) { 
+		req = new ActiveXObject("Microsoft.XMLHTTP"); 
+	}
+    if (req) {
+    	//Set varaables with errors
+		var name_required = "Введите пожалуйста Ваше имя.";
+		var phone_required = "Введите пожалуйта Ваш номер телефона.";
+		//Check variable and show message
+		if (form == 'product') {
+			var custom_name = document.getElementById('custom_name_product');
+			var custom_phone = document.getElementById('custom_phone_product');
+			if (custom_phone.value == "") {
+				alert(phone_required);	
+				return false;
+			}
+			var params = 'custom_name=' + custom_name.value + '&custom_phone=' + custom_phone.value + '&mode=product';
+		}
+		var url = "/ajax.php"; 
+		req.onreadystatechange = function() {  
+			if (req.readyState == 4) {
+				if(req.status == 200) {
+					if (req.responseText == true) {
+						alert('Ваша заявка успешно отправлена. Спасибо!');
+					} else {
+						alert('На сервере произошла ошибка, повторите позже!');
+					}
+					custom_name.value = '';
+					custom_phone.value = '';
+					jQ("#callback_form_bg").fadeToggle('fast');
+					
+					if (form == 'product') {
+						jQ("#callback_form_product").fadeToggle('fast');
+					}
+				}
+			}
+		}
+    }
+    req.open("POST", url, true);
+    req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); 
+    req.setRequestHeader('Content-length', params.length); 
+    req.send(params);
+}
+/**
+ * Send form for responces
+ */
+function m_product_responses_send() {
+    if (window.XMLHttpRequest) {req = new XMLHttpRequest();}
+    else if (window.ActiveXObject) {req = new ActiveXObject("Microsoft.XMLHTTP");} 
+    if (req) {
+        var feedback_name = document.getElementById('feedback_name');
+        var feedback_phone = document.getElementById('feedback_phone');
+        var feedback_message = document.getElementById('feedback_message');
+        var feedback_oferta = document.getElementById('feedback_oferta');
+        var feedback_image = document.getElementById('upload_image_path');
+        var feedback_email = document.getElementById('email-field');
+		var feedback_images_greenhouse = '';
+		jQ("#image_preview_block").find("img").each(function(index,block) {
+			if (feedback_images_greenhouse=='') {
+				feedback_images_greenhouse = jQ(block).attr("src");
+			} else {
+				feedback_images_greenhouse = feedback_images_greenhouse + ',' + jQ(block).attr("src");
+			}
+		});
+
+        if (feedback_name.value == '') {
+            alert('Пожалуйста представьтесь!');
+            feedback_name.focus();
+            return false;
+        } else if (feedback_message.value == '') {
+            alert('Пожалуйста оставьте свой отзыв!');
+            feedback_message.focus();
+            return false;
+        } else if (feedback_oferta.checked == false) {
+            alert('Согласно действующему законодательству для отправки данной формы требуется согласие на обработку персональных данных.');
+            feedback_oferta.focus();
+            return false;
+        } /*else if (window.reCAPTCHA==null || window.reCAPTCHA=="" || window.reCAPTCHA==undefined) {
+        	alert('Пожалуйста подтвердите, что Вы не робот.');*/
+        else if (feedback_email.value != '') {
+        	/*alert('Пожалуйста подтвердите, что Вы не робот.');*/
+        	return false;
+        } else {
+            var params = 'feedback_name=' + feedback_name.value + '&feedback_phone=' + feedback_phone.value + '&feedback_message=' + feedback_message.value + '&feedback_image=' + feedback_image.value + '&feedback_images_greenhouse=' + feedback_images_greenhouse + '&mode=sendresponse'; 
+           	var url = "/ajax.php";
+           	req.onreadystatechange = function() {
+    			if (req.readyState == 4) {
+    				if(req.status == 200) {
+    				  if (req.responseText == 'bad_response') alert('Ваш отзыв не был добавлен по техническим причинам.');
+                else if (req.responseText == 'response_added') {
+                    alert('Благодарим вас за оставленное мнение. Ваш отзыв будет опубликован после модерации.');
+                    document.getElementById('feedback_name').value = '';
+                    document.getElementById('feedback_phone').value = '';
+                    document.getElementById('feedback_message').value = '';
+                    document.getElementById('upload_image_path').value = '';
+                    document.getElementById('image_preview').setAttribute('src','');
+                    jQ("#image_preview_block").find("img").remove();
+					grecaptcha.reset();
+					/**
+					 * Init e-commerce action "form_feedback"
+					 */
+					sendDataFromAllFormsToGoogleEcommerce('','form_feedback');
+				    }
+				}
+			}
+        }
+      }
+    }
+    req.open("POST", url, true); 
+    req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); 
+    req.setRequestHeader('Content-length', params.length); 
+    req.send(params);
+}
+
+/**
+ * getProductPriceBlockByProductName
+ *
+ * This function get a product price block by product name
+ */
+function getProductPriceBlockByProductName(products_name_array) {
+
+	/**
+	 * Get products data from main page 
+	 */
+	jQ.get("/", function(data) {
+
+		/**
+		 * Get Price Block By Product Name
+		 */
+		var products_array_classes = {
+			"kremlevskaya.html": ".kremlevskaya",
+			"schaste-sadovoda.html": ".schaste-sadovoda",
+			"usilennaya.html": ".usilennaya",
+			"kremlevskaya-skazka-cink.html": ".kremlevskaya-skazka-cink",
+			"teplitsa-mittlaider.html": ".teplitsa-mittlaider",
+			"kvadrat.html": ".kvadrat",
+			"promishlennie-teplici.html": ".promishlennie-teplici",
+			"kaplya.html": ".kaplya",
+			"teplitsa-zvezda-agro.html": ".teplitsa-zvezda-agro",
+			"teplitsa-schaste-sadovoda-agro.html": ".teplitsa-schaste-sadovoda-agro",
+			"teplitsa-usilennaya-agro.html": ".teplitsa-usilennaya-agro",
+			"teplitsa-skazka-agro.html": ".teplitsa-skazka-agro",
+			"teplitsa-mittlaider-agro.html": ".teplitsa-mittlaider-agro",
+			"teplitsa-kvadratnaya-agro.html": ".teplitsa-kvadratnaya-agro",
+			"teplitsa-kapelka-agro.html": ".teplitsa-kapelka-agro",
+			"teplitsa-zvezda-premium.html": ".teplitsa-zvezda-premium",
+			"teplitsa-schaste-sadovoda-premium.html": ".teplitsa-schaste-sadovoda-premium",
+			"teplitsa-usilennaya-premium.html": ".teplitsa-usilennaya-premium",
+			"teplitsa-skazka-premium.html": ".teplitsa-skazka-premium",
+			"teplitsa-mittlaider-premium.html": ".teplitsa-mittlaider-premium",
+			"teplitsa-kvadratnaya-premium.html": ".teplitsa-kvadratnaya-premium",
+			"teplitsa-kapelka-premium.html": ".teplitsa-kapelka-premium"
+		};
+
+		/**
+		 * Loop all products in main page
+		 */
+		jQ(data).find(".prod-card-col").each(function(key,product_block) {
+			/**
+			 * Loop products from array
+			 */
+			for (var i = 0; i<products_name_array.length; i++) {
+				if (products_name_array[i]!=undefined) {
+					var get_product_url = jQ(product_block).find(".prod-card-name").html();
+					var search_product_name = get_product_url.search(products_name_array[i]);
+					if (search_product_name!=-1) {
+						var product_price_block = jQ(product_block).find(".prod-card-price").html();
+						jQ(products_array_classes[products_name_array[i]]).html(product_price_block);
+					}
+				}
+			}
+		});
+	});
+}
+
+function TDA_GetRoistat(name) {
+	let matches = document.cookie.match(new RegExp(
+		    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+		  ));
+		  return matches ? decodeURIComponent(matches[1]) : undefined;
+}

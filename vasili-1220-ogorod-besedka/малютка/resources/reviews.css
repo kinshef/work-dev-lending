@@ -1,0 +1,112 @@
+/*Отзывы*/
+.reviews {
+  position: relative;
+  background-color: #f4f4f4;
+}
+.reviews-title {}
+.reviews-list,
+.reviews-grid {
+  position: relative;
+}
+.review-item {
+  padding: 40px 0;
+  color: #7a7373;
+}
+.reviews-list .review-item {
+  border-bottom: 1px dashed #ddd;
+}
+.reviews-list .review-item:last-child {
+  border-bottom: 0;
+}
+.reviews-grid .review-item {
+  background: url(../img/dashed-h.png) repeat-x bottom;
+}
+.reviews-grid > .row:last-child > .review-item:last-child,
+.reviews-grid > .review-item:last-child {
+  background: none;
+}
+@media (min-width: 718px) {
+  .reviews-grid > .review-item {
+    padding-right: 10px;
+    float: left;
+    width: 50%;
+  }
+  .reviews-grid > .review-item:nth-child(2n) {
+    padding-right: 0;
+    padding-left: 10px;
+  }
+  .reviews-grid > .review-item:nth-child(2n+3) {
+    clear: both;
+  }
+}
+@media (min-width: 718px) {
+  .reviews-grid .review-item {
+    background: none;
+  }
+  .reviews-grid > .row:not(:last-child) {
+    background: url(../img/dashed-h.png) repeat-x bottom;
+  }
+}
+@media (min-width: 718px) {
+  .reviews-grid-separator:before {
+    content: "";
+    display: block;
+    width: 1px;
+    background: url(../img/dashed-v.png) repeat-y;
+    position: absolute;
+    top: 50px;
+    bottom: 30px;
+    left: 50%;
+  }
+}
+.review-item .swiper-container {
+  margin-top: 30px;
+}
+.review-item-header {
+  margin-bottom: 15px;
+}
+.review-item-header .media-left {
+  padding-right: 12px;
+}
+.review-item-header .media-left:before {
+  content: "";
+  display: block;
+  width: 62px;
+  height: 60px;
+  background: url(../img/icon-user_02.png) no-repeat center;
+}
+.review-item-header .media-body {
+  vertical-align: middle;
+}
+.review-item-header .review-item-name {
+  font-size: 18px;
+}
+.review-item-header .review-item-title {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.review-item-header .media-heading {
+  float: left;
+}
+.review-item-header .media-heading .review-item-name {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+  color: #2d2d2d;
+}
+.review-item-date {
+  float: right;
+  padding-top: 10px;
+}
+.review-item-body {
+  padding-left: 77px;
+}
+@media (max-width: 717px) {
+  .review-item-body {
+    padding-left: 0;
+  }
+}
+.review-item-desc {
+  padding-bottom: 10px;
+}
+/*end reviews*/

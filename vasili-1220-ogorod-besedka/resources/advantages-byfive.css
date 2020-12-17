@@ -1,0 +1,89 @@
+/*Преимущества по 5*/
+.advantages-byfive {
+  /*background-color: #fbf2df;*/
+  background: url(../img/bg.jpg);
+  font-weight: 500;
+  text-align: center;
+  padding: 40px 0;
+}
+.advantages-byfive-title {
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+.advantages-byf-item {
+  font-size: 16px;
+  line-height: 1.1;
+  color: #7a7373;
+  /*float: left;
+  width: 20%;*/
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+@media (min-width: 1050px) {
+  .advantages-byf-item {
+    float: left;
+    width: 20%;
+  }
+  .advantages-byfive-work-features .advantages-byf-item {
+    width: 22%;
+  }
+  .advantages-byfive-work-features .advantages-byf-payment {
+    width: 12%;
+  }
+}
+@media (min-width: 481px) and (max-width: 717px) {
+  .advantages-byf-item:nth-child(3) {
+    clear: both;
+  }
+}
+@media (max-width: 480px) {
+  .advantages-byf-item {
+    float: none;
+    width: auto;
+  }
+}
+.advantages-byf-item:before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-image: url(../img/advbyfive.png);
+  margin: 0 auto 10px;
+}
+.advantages-byf-dual-arc:before {
+  background-position: 0 0;
+}
+.advantages-byf-ten-years:before {
+  background-position: -80px 0;
+}
+.advantages-byf-window-shutters:before {
+  background-position: -160px 0;
+}
+.advantages-byf-polycarbonate:before {
+  background-position: -240px 0;
+}
+.advantages-byf-fast-and-easy:before {
+  background-position: -320px 0;
+}
+.advantages-byf-delivery:before {
+  background-position: 0 -80px;
+}
+.advantages-byf-control:before {
+  background-position: -80px -80px;
+}
+.advantages-byf-storage:before {
+  background-position: -160px -80px;
+}
+.advantages-byf-collectors:before {
+  background-position: -240px -80px;
+}
+.advantages-byf-payment:before {
+  background-position: -320px -80px;
+}
+.advantages-byf-item-title {
+  font-size: 23px;
+  color: #4f4f4f;
+  margin-bottom: 5px;
+}
+/*end advantages-byfive*/

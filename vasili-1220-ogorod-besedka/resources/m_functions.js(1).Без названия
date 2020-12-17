@@ -1,0 +1,95 @@
+/**
+ *	@author Spenser
+ *	@copyright 2012
+ *	@project SpenserShopCMS
+ *  @module Product grouping
+ */
+
+/**
+ * This function for additonal checkbox
+ */
+function m_attributes_price_quantity(key) {
+	
+	var additional_quantity = document.getElementById('additional_quantity_'+key).value;
+	
+	if (additional_quantity == '_') {
+		return false;
+	}
+	
+	if (isNumericAdditional(additional_quantity)) {
+		if (window.XMLHttpRequest) { 
+			req = new XMLHttpRequest(); 
+		} else if (window.ActiveXObject) { 
+			req = new ActiveXObject("Microsoft.XMLHTTP"); 
+		}
+		
+		if (req) {
+			var inputs = document.getElementsByTagName('input');
+			var values_radio = values_checkbox = '';
+			for (var i = 0; i < inputs.length; i++) {
+				if (inputs[i].type === 'radio' && inputs[i].checked) { values_radio += inputs[i].value + ':'; }
+				if (inputs[i].type === 'checkbox' && inputs[i].value !== "" &&  inputs[i].checked) {
+					if (inputs[i].value!="on") {
+						values_checkbox += inputs[i].value + ',';
+					}
+
+					if (inputs[i+1] && inputs[i+1].type === 'text') {
+						values_checkbox += inputs[i+1].value + ':';	
+					}
+				}
+			}
+			var clean_price = document.getElementById('clean_price');
+			var clean_discount = document.getElementById('clean_discount');
+			var current_price = document.getElementById('current_price');
+			var current_discount = document.getElementById('current_discount');
+			var category = $('.product-title').text();
+			console.log(category);
+			if (category.includes('Теплица') && ((category.includes('Агро') == false) || (category.includes('Премиум') == false)))
+			{
+				var cat = 1;
+			} else  {
+				var cat = 0;
+			}
+				var params = 'mode=change_price&values_radio=' + values_radio + '&values_checkbox=' + values_checkbox + '&cleanprice=' + clean_price.value + '&cleandiscount=' + clean_discount.value + '&cat='+cat;
+				var url = "/modules/product_attributes/m_ajax.php";
+				req.onreadystatechange = function() {
+			    if (req.readyState == 4) { 
+			        if(req.status == 200) {
+			            temp_data = req.responseText.split('{}');
+			            current_price.innerHTML = temp_data[0];
+			            current_discount.innerHTML = temp_data[1];
+			        }
+			    }
+			}
+		}
+		req.open("POST", url, true); 
+		req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); 
+		req.setRequestHeader('Content-length', params.length); 
+		req.send(params);
+	} else {
+		alert('Пожалуйста введите корректное количество копмлектации.');
+		return false;
+	}
+}
+
+/**
+ * This fucniton for quantity inputs
+ */
+function m_attributes_price_quantity_input(key) {
+	var additional_checkbox_check = document.getElementById('additional_checkbox_'+key).checked;
+	if (additional_checkbox_check) {
+		m_attributes_price_quantity(key);
+	}
+}
+
+/**
+ * Validate numeric
+ */
+function isNumericAdditional(str){
+	var expression = /^[0-9]+$/;
+	if(str.match(expression)) {
+		return true;
+	} else {
+		return false;
+	}
+}
