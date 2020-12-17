@@ -79,8 +79,8 @@ $(document).ready(function () {
     asNavFor: '.slider-catalog-cart',
     arrows: true,
     dots: false,
-    prevArrow: $('.slider-catalog__prev'),
-    nextArrow: $('.slider-catalog__next'),
+    prevArrow: '<div class="slider-catalog__prev"><i class="fa fa-lg fa-angle-double-left" aria-hidden="true"></i></div>',
+    nextArrow: '<div class="slider-catalog__next"><i class="fa fa-lg fa-angle-double-right" aria-hidden="true"></i></div>',
     swipe: false
   });
   $('.slider-catalog-cart').slick({
@@ -89,9 +89,23 @@ $(document).ready(function () {
     asNavFor: '.slider-catalog-content',
     arrows: true,
     dots: false,
-    centerMode: true,
-    infinite: true,
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+    ]
   });
 
 

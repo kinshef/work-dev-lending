@@ -30,6 +30,10 @@ ul {
   padding: 0;
 }
 
+a{
+  outline: none;
+}
+
 /* END RESET */
 
 /* HEADER */
@@ -77,6 +81,7 @@ ul {
 
 .nav-link:hover {
   cursor: pointer;
+  color: #000;
   background-color: #FFC107;
 }
 
@@ -216,8 +221,11 @@ ul {
 .slider-catalog-content__item{
   outline: none;
 }
+.section-product{
+  overflow: hidden;
+}
 .card{
-  border: 1px solid rgba(0,0,0,.125);
+  border: 2px solid rgba(0,0,0,.125);
   border-radius: .25rem;
   cursor: pointer;
   margin: auto 0.5rem;
@@ -226,13 +234,14 @@ ul {
   transition: border 0.4s;
 }
 .card:hover{
-  border: 1px solid rgba(0,0,0,.375);
+  border: 2px solid green;
 }
 .card.slick-current{
-  border: 1px solid green;
-  /* background-color: rgba(0, 128, 0, 0.3); */
+  border: 2px solid green;
+  background-color: rgb(180, 255, 180);
 }
-.slider-catalog__arrow div{
+.section-product .slider-catalog__prev,
+.section-product .slider-catalog__next{
   width: 4rem;
   padding: 0.8rem 0rem;
   position: absolute;
@@ -245,14 +254,30 @@ ul {
   color: #fff;
   transition: all 0.5s;
 }
-.slider-catalog__arrow div:hover{
+.section-product .slider-catalog__prev:hover,
+.section-product .slider-catalog__next:hover{
   background-color: rgba(18, 18, 24, 1);
 }
-.slider-catalog__arrow .slider-catalog__prev{
-  right: 1rem;
+.section-product .slider-catalog__prev{
+  left: 0;
+  transform: translate(-100%);
 }
-.slider-catalog__arrow .slider-catalog__next{
-  left: 1rem;
+.section-product .slider-catalog__next{
+  right: 0;
+  transform: translate(100%);
+}
+.section-product .table td,
+.section-product .table th{
+  padding: .25rem;
+}
+.section-product__second a {
+  color: #fff;
+}
+@media(max-width: 576px){
+  .section-product .slider-catalog__prev,
+  .section-product .slider-catalog__next{
+    width: 2rem;
+  }
 }
 
 /* FOOTER */
@@ -391,7 +416,11 @@ input[type=submit], button {
   left: 0;
   background-color: #FFC107;
 }
-
+@media(max-width: 500px){
+  .section-title{
+    font-size: 1.8rem;
+  }
+}
 .btn-custom {
   width: 150px;
   font-size: 0.7rem;
@@ -428,6 +457,10 @@ input[type=submit], button {
     font-weight: 700;
     font-size: 30px;
     color: red;
+}
+
+.text-size-4{
+  font-size: 1.2em;
 }
 
 /* END CUSTOM */
