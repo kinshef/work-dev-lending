@@ -79,6 +79,7 @@ $(document).ready(function () {
     asNavFor: '.slider-catalog-cart',
     arrows: true,
     dots: false,
+    infinite: true,
     prevArrow: '<div class="slider-catalog__prev"><i class="fa fa-lg fa-angle-double-left" aria-hidden="true"></i></div>',
     nextArrow: '<div class="slider-catalog__next"><i class="fa fa-lg fa-angle-double-right" aria-hidden="true"></i></div>',
     swipe: false
@@ -89,6 +90,8 @@ $(document).ready(function () {
     asNavFor: '.slider-catalog-content',
     arrows: true,
     dots: false,
+    centerMode: true,
+    infinite: true,
     focusOnSelect: true,
     responsive: [
       {

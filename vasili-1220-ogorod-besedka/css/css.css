@@ -755,17 +755,17 @@ a:hover {
   overflow: hidden;
 }
 
-/* section-advantages */
-.section-advantages{
+/* section-advantages2 */
+.section-advantages2{
   background-color: rgb(250, 236, 207);
   background-size: contain;
 }
-.section-advantages .advantages_img{
+.section-advantages2 .advantages_img{
   border-radius: 50%;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
-.section-advantages .advantages_img:hover {
+.section-advantages2 .advantages_img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
