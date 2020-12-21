@@ -1,0 +1,358 @@
+#section-nav{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    background-color: white;
+    border-bottom: 3px solid green;
+    z-index: 999;
+    box-shadow: 2px 2px 1rem rgba(0,0,0,0.4);
+}
+#section-main{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background-image: url("../img/back/scale_1200.png");
+    background-size: cover;
+    background-position: center bottom;
+}
+#section-about{
+    background-image: url("../img/back/scale_1200.png");
+    background-size: cover;
+    background-position: center bottom;
+}
+
+/* Fix bootstrap */
+@media (min-width: 1600px){
+    .container {
+        max-width: 1480px;
+        padding-left: 6%;
+    }
+}
+
+/* Reset */
+a{
+    color: inherit;
+}
+a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+/* Custom */
+.text-red{color: red;}
+.catalog__card__title{
+    background-color: rgb(252, 0, 0);
+}
+.c__section{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.c__bg--white60{
+    background-color: rgba(255,255,255,0.6);
+}
+.c__font--alt{
+    font-family: 'Montserrat', sans-serif;
+}
+.ul__fa--green i{
+    color: green;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.nav1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    font-weight: bold;
+}    
+@media (min-width: 768px) {
+    header{
+        font-size: 3rem;
+    }
+}
+.countdown-week{
+    font-size: 1.5rem;
+}
+@media (min-width: 1000px) {
+    .countdown-week{
+        font-size: 1.9rem;
+        color: rgb(207, 4, 4);
+    }
+}
+.countdown-week{
+    font-size: 1.5rem;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+.nav__link{
+    padding: 0.3rem 0.5rem;
+}
+.nav__logo,
+.nav__links{
+    display: none;
+}
+@media (min-width: 768px) {
+    .nav{
+        justify-content: space-between;
+    }
+    .nav__links{
+        display: block;
+    }
+}
+@media (min-width: 992px) {
+    .nav{
+        justify-content: space-between;
+    }
+    .nav__logo{
+        display: block;
+    }
+}
+
+     
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.main__title{
+    color: rgb(176, 253, 145);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+.main__img{
+    display: none;
+    padding-top: 15%;
+}
+@media (min-width: 768px) {
+    .main{
+        justify-content: space-between;
+        text-align: left;
+    }
+    .main__title{
+        font-size: 3rem;
+    }
+    .main__img{
+        display: block;
+    }
+}
+
+.sale__card{
+    padding: 1rem;
+    border: 3px solid green;
+    border-radius: 20px;
+}
+.sale__title{
+    margin: 1rem 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.sale__table{
+    text-align: left;
+}
+.sale__table thead th{
+    text-align: center;
+}
+.sale__table td{
+    text-align: right;
+}
+.sale__warranty{
+    padding: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+    background-color: green;
+}
+.sale__waranty__title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.sale__consult{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.sale__phones{
+    padding: 0.5rem 1rem;
+    padding-top: 1rem;
+    color: white;
+    background-color: green;
+}
+.sale__phone{
+    color: yellow;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.sale__price{
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: silver;
+}
+@media (min-width: 768px) {
+    .sale__phones{
+        padding: 0.5rem 2rem;
+        padding-top: 1rem;
+    }
+    .sale__price{
+        padding: 0.5rem 2rem;
+    }
+}
+
+.catalog__header{
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.catalog__header__text{
+    padding: 0.5rem 1rem;
+    background-color: white;
+}
+.catalog__header::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: silver;
+    z-index: -1;
+}
+.catalog__card{
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 3px solid green;
+}
+.catalog__title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+.catalog__table td{
+    text-align: right;
+}
+.catalog__price{
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.additional__card{
+    margin-bottom: 2rem;
+}
+.additional__block{
+    padding: 2rem;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+}
+
+.about__title{
+    color: yellow;
+}
+.about__text{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.contact__title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+.contact__phone{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.btn-my{
+    background-color: #fff126;
+    color: black;
+   font-weight: 600;
+   font-size: 2rem;
+}
+.main__text_black{
+    font-style: Italic;
+ color: rgb(215, 255, 229);
+ margin-bottom: 1px;
+}
+.main__text{
+ background-color: rgba(255,255,255,0.7);
+ color: rgb(252, 0, 0);
+ padding: 20px;
+}
+.main__te{
+    color: rgb(215, 255, 229)
+}
+.main__text1{
+    background-color: rgba(255, 255, 255, 0.767);
+    color: rgb(190, 0, 0);
+    padding-left: 20px;
+}
+.main__text_light{
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: Italic;
+    margin-bottom: 0px;
+    color: rgb(231, 255, 233);
+}
+.main__text_green{
+    color: rgb(213, 248, 214);
+}
+
+.catalog__card__price__title {
+    text-align: left;
+    font-weight: bold;
+}
+.catalog__card__price {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+    padding-bottom: 0.5rem;
+    color: rgb(252, 0, 0);
+    font-size: 50px;
+    font-weight: bold;
+}
+.catalog__card__price--old {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+.sale__img{
+margin-left: 15%;
+margin-right: 15%;
+}
+.leftstr, .rightstr {
+    float: left; /* Обтекание справа */ 
+    width: 50%; /* Ширина текстового блока */ 
+   }
+   .rightstr {
+    text-align: right; /* Выравнивание по правому краю */ 
+   }
+
+   .btn-custom{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    width: 70%;
+    border-radius: 30px;
+   }
