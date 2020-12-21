@@ -21,7 +21,7 @@ var calculatorData = {
             "100": 568,
         },
     },
-    "mini2.4m": {
+    "mini2_4m": {
         "4": {
             "50": 364,
             "70": 343,
@@ -131,7 +131,7 @@ var calculatorData = {
             "100": 750,
         },
     },
-    "shirokaya3.5m": {
+    "shirokaya3_5m": {
         "4": {
             "50": 550,
             "67": 527,
@@ -197,7 +197,7 @@ var calculatorData = {
             "100": 1053,
         },
     },
-    "promyshlennaya5.5m": {
+    "promyshlennaya5_5m": {
         "4": {
             "100": 1307,
         },
