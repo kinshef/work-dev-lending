@@ -4,9 +4,10 @@ $(document).ready(function() {
       var form = this;
       var product = $("input[name='product']", form).val();
       var length = $("input[name='length']:checked", form).val();
+      var param1 = $("input[name='param1']:checked", form).val();
       var sum = 0;
       
-      sum += calculatorData[product][length];
+      sum += calculator.products[product][length][param1];
 
       var out = $('.jPrice', form);
       var outOld = $('.jPriceOld', form);
