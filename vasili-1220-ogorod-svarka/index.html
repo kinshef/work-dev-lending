@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="./public/assets/img/favicon.ico" type="image/vnd.microsoft.icon">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -21,20 +21,21 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:900&amp;subset=cyrillic" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.envybox.io/widget/cbk.css">
     <link rel="stylesheet" href="../vendor/lib/lightcountdown_v1_1/lightcountdown.css">
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="./public/style/main.min.css">
+    <link rel="stylesheet" href="./public/style/css.css">
    
 
     <title>Купить сварочник в Минске</title>
 </head>
 <body>
 
-<section id="section-nav" class="animated fadeInDown">
+<section id="section-nav" class="sticky-top">
     <div class="container">
         <div class="nav">
             <div class="nav__logo">
-                <img src="img/logo.png" alt="logo" class="img-fluid">
+                <img src="./public/assets/img/isons/logo.png" alt="logo" class="img-fluid">
             </div>
             <div class="nav__links">
                 <a href="#section-main" class="nav__link smoothscroll">Главная</a>
@@ -44,7 +45,7 @@
                 <a href="#section-certificate" class="nav__link smoothscroll">Сертификаты</a>
                 <a href="#section-contact" class="nav__link smoothscroll d-none d-lg-inline">Контакты</a>
             </div>
-            +375 (33) 664 00 44
+            <span>+375 (33) 664 00 44</span>
             <div class="nav__callback">
                 <button class="btn btn-warning" data-toggle="modal" data-target="#modal-order">Консультация</button>
             </div>
@@ -52,83 +53,41 @@
     </div>
 </section>
 
-<section id="section-main">
-    <section id="section-main" style="background-image: url(./img/Patio-Outdoor-Patio-Lights.jpg);">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-md-6" style="margin: 100px; background-color: rgba(255,255,255,0.5); border: 4px solid #ffc107; border-radius: 20px;">
-                    <div class="main__title text-warning">
-                        СКИДКА 50%
-                    </div>
-                    <div class="main__subtitle text-warning">
-                         СЕЗОННАЯ РАСПРОДАЖА!
-                    </div>
-                    <div class="main__subtitle text-warning">
-                        НАДЕЖНЫЕ ТРИММЕРЫ
-                   </div>
-                    <div class="main__title--shtenli my-3 text-center">
-                        <p style="font-size:55px ; font-weight:1000; font-family: INTRO, sans-serif;">Сварочники Shtenli</p>
-                    </div>
-                    <div class="main__block mb-2">
-                        <div class="h2 text-red bg-white font-weight-bold">Скидка действует до конца недели!</div>
-                        <div class="countdown-week my-3 lightcountdown"><div class="lightcountdown__item lightcountdown__days">
-        <div class="lightcountdown__digits">
-            <div class="lightcountdown__digit" style="animation-duration: 800ms;">0</div>
-            <div class="lightcountdown__digit" style="animation-duration: 800ms;">6</div>
-        </div>
-        <div class="lightcountdown__text">Дней</div>
-    </div><div class="lightcountdown__delimeter">:</div><div class="lightcountdown__item lightcountdown__hours">
-        <div class="lightcountdown__digits">
-            <div class="lightcountdown__digit" style="animation-duration: 800ms;">0</div>
-            <div class="lightcountdown__digit" style="animation-duration: 800ms;">6</div>
-        </div>
-        <div class="lightcountdown__text">Часов</div>
-    </div><div class="lightcountdown__delimeter">:</div><div class="lightcountdown__item lightcountdown__minutes">
-        <div class="lightcountdown__digits">
-            <div class="lightcountdown__digit" style="animation-duration: 800ms;">2</div>
-            <div class="lightcountdown__digit" style="animation-duration: 800ms;">4</div>
-        </div>
-        <div class="lightcountdown__text">Минут</div>
-    </div><div class="lightcountdown__delimeter">:</div><div class="lightcountdown__item lightcountdown__seconds">
-        <div class="lightcountdown__digits">
-            <div class="lightcountdown__digit" style="animation-duration: 800ms;">3</div>
-            <div class="lightcountdown__digit" style="animation-duration: 800ms;">6</div>
-        </div>
-        <div class="lightcountdown__text">Секунд</div>
-    </div></div>
-                    </div>
+<section id="section-main" class="section-main">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-6" style="background-color: rgba(255,255,255,0.5); border: 4px solid #ffc107; border-radius: 20px;">
+                <div class="main__title text-warning">СКИДКА 50%</div>
+                <div class="main__subtitle text-warning">СЕЗОННАЯ РАСПРОДАЖА!</div>
+                <div class="main__subtitle text-warning">НАДЕЖНЫЕ ТРИММЕРЫ</div>
+                <div class="main__title--shtenli my-3 text-center">
+                    <p style="font-size:55px; font-weight:1000; font-family: INTRO, sans-serif;">Сварочники Shtenli</p>
+                </div>
+                <div class="main__block mb-2">
+                    <div class="h2 text-red bg-white font-weight-bold">Скидка действует до конца недели!</div>
+                    <div class="countdown-week my-3 lightcountdown"></div>
                     <p style="background-color: #f8cc08;"><em>Быстрая доставка по всей Беларуси</em></p>
                     <p class="h1">Дополнительные цепь и шина в подарок.</p>
                     <form>
-                      <input type="hidden" name="form" value="Окно заказа">
-                      <div class="form-group">
-                          <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required="">
-                      </div>
-                      <div class="form-group">
-                          <button type="submit" class="btn btn-danger shadow">забронировать скидку</button>
-                      </div>
-                  </form>
+                        <input type="hidden" name="form" value="Окно заказа">
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required="">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-danger shadow">забронировать скидку</button>
+                        </div>
+                    </form>
                 </div>
+            </div>
+            <div class="col-md-6">
                 <div class="main__img">
-                    <img src="img/catalog.png" alt="catalog" class="img-fluid" >
-                </div>
-                <div class="col-md-6 d-none d-md-block">
-                    <!--img src="img/plus/ks370b3.png" alt="product" class="img-fluid"-->
+                    <img src="./public/assets/img/isons/catalog.png" alt="catalog" class="mx-auto img-fluid" >
                 </div>
             </div>
         </div>
-    </section>
-    
-    <section id="section-product" class="section-product_bg">
-        <div class="section-product_timeline-bg p-2 text-white">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 section-product_text text-center">
-</section>
-   
-        </div>
     </div>
 </section>
+
 <section id="section-advantages" class="c__section">
     <div class="container">
         <div class="text-center pb-5">
@@ -140,7 +99,7 @@
             <div class="col-sm-6 col-md-4 col-lg-2 offset-lg-1 d-flex justify-content-center pt-5 pt-lg-0">
                 <div style="width: 150px" class="text-center">
                     <div>
-                        <img src="img/medal.svg" alt="" width="100">
+                        <img class="mx-auto" src="./public/assets/img/isons/medal.svg" alt="" width="100">
                     </div>
                     <div class="pt-3">
                         Немецкое качество по доступным ценам!
@@ -150,7 +109,7 @@
             <div class="col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center pt-5 pt-lg-0">
                 <div style="width: 150px" class="text-center">
                     <div>
-                        <img src="img/trolley.svg" alt="" width="100">
+                        <img class="mx-auto" src="./public/assets/img/isons/trolley.svg" alt="" width="100">
                     </div>
                     <div class="pt-3">
                         Доставка в день заказа по Минску
@@ -160,7 +119,7 @@
             <div class="col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center pt-5 pt-lg-0">
                 <div style="width: 150px" class="text-center">
                     <div class="pt-3">
-                        <img src="img/money.svg" alt="" width="100">
+                        <img class="mx-auto" src="./public/assets/img/isons/money.svg" alt="" width="100">
                     </div>
                     <div class="">
                         Оплата при получении
@@ -170,7 +129,7 @@
             <div class="col-sm-6 col-md-4 offset-md-2 col-lg-2 offset-lg-0 d-flex justify-content-center pt-5 pt-lg-0">
                 <div style="width: 150px" class="text-center">
                     <div class="pt-1">
-                        <img src="img/delivery-truck.svg" alt="" width="100">
+                        <img class="mx-auto" src="./public/assets/img/isons/delivery-truck.svg" alt="" width="100">
                     </div>
                     <div class="pt-2">
                         Быстрая доставка по всей Беларуси
@@ -180,7 +139,7 @@
             <div class="col-sm-6 offset-sm-3 col-md-4 offset-md-0 col-lg-2 offset-lg-0 d-flex justify-content-center pt-5 pt-lg-0">
                 <div style="width: 150px" class="text-center">
                     <div>
-                        <img src="img/wallet_1.svg" alt="" width="100">
+                        <img class="mx-auto" src="./public/assets/img/isons/wallet_1.svg" alt="" width="100">
                     </div>
                     <div class="pt-3">
                         Любые способы оплаты
@@ -190,40 +149,16 @@
         </div>
     </div>
 </section>
+
 <section id="section-sale" class="c__section">
     <h2><header class="text-red" data-animation="animated zoomInUp">Сварочники на акции:</header></h2>
     <div class="container">
         <div class="row">
             <div class="col-md-6 order-1 order-md-2">
                 <div class="catalog-sale__card">
-                    <h3><div class="catalog-sale__title text-red" data-animation="animated shake delay-2s">Внимание! Акция на триммер PROFI EXPERT 4.5 кВт </div></h3>
-                    <hr>
+                    <h3><div class="catalog-sale__title text-red" data-animation="animated shake delay-2s">Внимание! Акция на триммер PROFI EXPERT 4.5 кВт </div></h3><hr>
                     <p class="h3 font-weight-bold">11 БОНУСОВ В ПОДАРОК!</p>
-                    <div class="countdown-week my-5 lightcountdown"><div class="lightcountdown__item lightcountdown__days">
-<div class="lightcountdown__digits">
-    <div class="lightcountdown__digit" style="animation-duration: 800ms;">0</div>
-    <div class="lightcountdown__digit" style="animation-duration: 800ms;">2</div>
-</div>
-<div class="lightcountdown__text">Дней</div>
-</div><div class="lightcountdown__delimeter">:</div><div class="lightcountdown__item lightcountdown__hours">
-<div class="lightcountdown__digits">
-    <div class="lightcountdown__digit" style="animation-duration: 800ms;">0</div>
-    <div class="lightcountdown__digit" style="animation-duration: 800ms;">7</div>
-</div>
-<div class="lightcountdown__text">Часов</div>
-</div><div class="lightcountdown__delimeter">:</div><div class="lightcountdown__item lightcountdown__minutes">
-<div class="lightcountdown__digits">
-    <div class="lightcountdown__digit" style="animation-duration: 800ms;">4</div>
-    <div class="lightcountdown__digit" style="animation-duration: 800ms;">3</div>
-</div>
-<div class="lightcountdown__text">Минут</div>
-</div><div class="lightcountdown__delimeter">:</div><div class="lightcountdown__item lightcountdown__seconds">
-<div class="lightcountdown__digits">
-    <div class="lightcountdown__digit" style="animation-duration: 800ms;">5</div>
-    <div class="lightcountdown__digit animated flipInX" style="animation-duration: 800ms;">2</div>
-</div>
-<div class="lightcountdown__text">Секунд</div>
-</div></div>
+                    <div class="countdown-week my-5 lightcountdown"></div>
                     <p class="h4">Маска сеточка, ремень на два плеча с антивибрационной защитой, катушка с леской, леска 15 м., перчатки, беруши, масло, смазка редуктора, свеча зажигания, набор инструментов, 3-х лепестной нож кусторез!</p>
                     <h3><div class="catalog-sale__title text-red" data-animation="animated shake delay-2s">Осталось 8 триммеров по акции!</div></h3>
                     <div class="mt-4 text-center">
@@ -233,20 +168,18 @@
             </div>
             <div class="col-md-6 order-2 order-md-1">
                 <div class="catalog__card">
-                    <div class="catalog__card__title">
-                        PROFI EXPERT
-                    </div>
+                    <div class="catalog__card__title">PROFI EXPERT</div>
                     <div class="catalog__card__img">
                         <div id="carousel-sale" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="img/13b.jpg" alt="product" class="d-block w-100">
+                                    <img src="./public/assets/img/catalog/13b.jpg" alt="product" class="d-block w-100">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="img/blackpros.jpg" alt="product" class="d-block w-100">
+                                    <img src="./public/assets/img/catalog/blackpros.jpg" alt="product" class="d-block w-100">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="img/blackpros.jpg" alt="product" class="d-block w-100">
+                                    <img src="./public/assets/img/catalog/blackpros.jpg" alt="product" class="d-block w-100">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carousel-sale" role="button" data-slide="prev">
@@ -258,56 +191,49 @@
                                 <span class="sr-only">Вперед</span>
                             </a>
                         </div>
-                    </div>
-                    <hr>
+                    </div><hr>
                     <div class="catalog__card__table">
                         <div class="catalog__label">
-                                    <span class="badge badge-pill badge-danger animated pulse infinite slow"><i class="fa fa-star"></i> Товар на АКЦИИ!</span>
+                            <span class="badge badge-pill badge-danger animated pulse infinite slow">
+                                <i class="fa fa-star"></i> Товар на АКЦИИ!
+                            </span>
                         </div>
                         <table class="table table-sm table-striped">
-                            <tbody><tr>
-                                <th>Мощность</th>
-                                <td>4,5 кВт.</td>
-                            </tr>
-                            <tr>
-                                <th>Вес</th>
-                                <td>5.5 кг.</td>
-                            </tr>
-                            <tr>
-                                <th>Объем бака</th>
-                                <td>1,3 л.</td>
-                            </tr>
-                            <tr>
-                                <th>Гарантия</th>
-                                <td>24 месяца</td>
-                            </tr>
-                        </tbody></table>
-                    </div>
-                    <hr>
-                    <div class="catalog__card__price--old small">
-                        <s>674 руб.</s>
-                    </div>
-                    <div class="catalog__card__price">
-                        361 руб.
-                    </div>
+                            <tbody>
+                                <tr>
+                                    <th>Мощность</th>
+                                    <td>4,5 кВт.</td>
+                                </tr>
+                                <tr>
+                                    <th>Вес</th>
+                                    <td>5.5 кг.</td>
+                                </tr>
+                                <tr>
+                                    <th>Объем бака</th>
+                                    <td>1,3 л.</td>
+                                </tr>
+                                <tr>
+                                    <th>Гарантия</th>
+                                    <td>24 месяца</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><hr>
+                    <div class="catalog__card__price--old small"><s>674 руб.</s></div>
+                    <div class="catalog__card__price">361 руб.</div>
                     <div class="my-3">
-                        <button class="btn btn-warning btn-block btn-lg shadow transition--slide" data-toggle="modal" data-target="#modal-order">Заказать
-                        </button>
+                        <button class="btn btn-warning btn-block btn-lg shadow transition--slide" data-toggle="modal" data-target="#modal-order">Заказать</button>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-
-
 <section id="section-catalog" class="c__section">
     <header data-animation="animated zoomInUp">КАТАЛОГ</header>
     <div class="container">
-<div class="catalog__header my-5"><span class="catalog__header__text">БЕНЗОКОСЫ PROFI</span></div>
-
+        <div class="catalog__header my-5"><span class="catalog__header__text">БЕНЗОКОСЫ PROFI</span></div>
         <div class="row">
 
             <div class="col-md-4">
@@ -316,7 +242,7 @@
                         PROFI 1.1 кВт
                     </div>
                     <div class="catalog__img">
-                        <img src="img/catalog/9bp.jpg" alt="catalog" class="img-fluid">
+                        <img src="./public/assets/img/catalog/9bp.jpg" alt="catalog" class="img-fluid">
                     </div>
                     <div class="catalog__table">
                         <hr>
@@ -363,7 +289,7 @@
                         PROFI 1.75 кВт
                     </div>
                     <div class="catalog__img">
-                        <img src="img/catalog/9bp.jpg" alt="catalog" class="img-fluid">
+                        <img src="./public/assets/img/catalog/9bp.jpg" alt="catalog" class="img-fluid">
                     </div>
                     <div class="catalog__table">
                         <hr>
@@ -410,7 +336,7 @@
                         PROFI 2.15 кВт
                     </div>
                     <div class="catalog__img">
-                        <img src="img/catalog/9bp.jpg" alt="catalog" class="img-fluid">
+                        <img src="./public/assets/img/catalog/9bp.jpg" alt="catalog" class="img-fluid">
                     </div>
                     <div class="catalog__table">
                         <hr>
@@ -450,13 +376,14 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-md-4">
                 <div class="catalog__card">
                     <div class="catalog__title">
                         PROFI 2.5 кВт
                     </div>
                     <div class="catalog__img">
-                        <img src="img/catalog/9bp.jpg" alt="catalog" class="img-fluid">
+                        <img src="./public/assets/img/catalog/9bp.jpg" alt="catalog" class="img-fluid">
                     </div>
                     <div class="catalog__table">
                         <hr>
@@ -496,13 +423,14 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-md-4">
                 <div class="catalog__card">
                     <div class="catalog__title">
                         PROFI 3.5 кВт
                     </div>
                     <div class="catalog__img">
-                        <img src="img/catalog/9bp.jpg" alt="catalog" class="img-fluid">
+                        <img src="./public/assets/img/catalog/9bp.jpg" alt="catalog" class="img-fluid">
                     </div>
                     <div class="catalog__table">
                         <hr>
@@ -542,13 +470,14 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-md-4">
                 <div class="catalog__card">
                     <div class="catalog__title">
                         PROFI 4.5 кВт
                     </div>
                     <div class="catalog__img">
-                        <img src="img/catalog/9bp.jpg" alt="catalog" class="img-fluid">
+                        <img src="./public/assets/img/catalog/9bp.jpg" alt="catalog" class="img-fluid">
                     </div>
                     <div class="catalog__table">
                         <hr>
@@ -591,7 +520,6 @@
 
         </div>
         <div class="catalog__header my-5"><span class="catalog__header__text">SHTENLI BLACK PRO</span></div>
-
         <div class="row">
 
             <div class="col-md-4">
@@ -600,7 +528,7 @@
                         SHTENLI BLACK PRO 1.1 кВт
                     </div>
                     <div class="catalog__img">
-                        <img src="img/catalog/13b.jpg" alt="catalog" class="img-fluid">
+                        <img src="./public/assets/img/catalog/13b.jpg" alt="catalog" class="img-fluid">
                     </div>
                     <div class="catalog__table">
                         <hr>
@@ -647,7 +575,7 @@
                         SHTENLI BLACK PRO 2.15 кВт
                     </div>
                     <div class="catalog__img">
-                        <img src="img/catalog/13b.jpg" alt="catalog" class="img-fluid">
+                        <img src="./public/assets/img/catalog/13b.jpg" alt="catalog" class="img-fluid">
                     </div>
                     <div class="catalog__table">
                         <hr>
@@ -694,7 +622,7 @@
                         SHTENLI BLACK PRO 3.5 кВт
                     </div>
                     <div class="catalog__img">
-                        <img src="img/catalog/13b.jpg" alt="catalog" class="img-fluid">
+                        <img src="./public/assets/img/catalog/13b.jpg" alt="catalog" class="img-fluid">
                     </div>
                     <div class="catalog__table">
                         <hr>
@@ -735,14 +663,13 @@
                 </div>
             </div>
 
-
             <div class="col-md-4">
                 <div class="catalog__card">
                     <div class="catalog__title">
                         SHTENLI BLACK PRO S 1.75 кВт
                     </div>
                     <div class="catalog__img">
-                        <img src="img/catalog/13b.jpg" alt="catalog" class="img-fluid">
+                        <img src="./public/assets/img/catalog/13b.jpg" alt="catalog" class="img-fluid">
                     </div>
                     <div class="catalog__table">
                         <hr>
@@ -793,7 +720,7 @@
                         SHTENLI BLACK PRO S 3.5 кВт
                     </div>
                     <div class="catalog__img">
-                        <img src="img/catalog/13b.jpg" alt="catalog" class="img-fluid">
+                        <img src="./public/assets/img/catalog/13b.jpg" alt="catalog" class="img-fluid">
                     </div>
                     <div class="catalog__table">
                         <hr>
@@ -844,7 +771,7 @@
                         SHTENLI BLACK PRO S 4.5 кВт
                     </div>
                     <div class="catalog__img">
-                        <img src="img/catalog/13b.jpg" alt="catalog" class="img-fluid">
+                        <img src="./public/assets/img/catalog/13b.jpg" alt="catalog" class="img-fluid">
                     </div>
                     <div class="catalog__table">
                         <hr>
@@ -888,10 +815,9 @@
                     </div>
                 </div>
             </div>
+
         </div>
-
         <div class="catalog__header my-5"><span class="catalog__header__text">SHTENLI MS</span></div>
-
         <div class="row">
 
             <div class="col-md-4">
@@ -900,7 +826,7 @@
                         SHTENLI MS 1.75 кВт
                     </div>
                     <div class="catalog__img">
-                        <img src="img/catalog/9b.jpg" alt="catalog" class="img-fluid">
+                        <img src="./public/assets/img/catalog/9b.jpg" alt="catalog" class="img-fluid">
                     </div>
                     <div class="catalog__table">
                         <hr>
@@ -947,7 +873,7 @@
                         SHTENLI MS 3.5 кВт
                     </div>
                     <div class="catalog__img">
-                        <img src="img/catalog/9b.jpg" alt="catalog" class="img-fluid">
+                        <img src="./public/assets/img/catalog/9b.jpg" alt="catalog" class="img-fluid">
                     </div>
                     <div class="catalog__table">
                         <hr>
@@ -994,7 +920,7 @@
                         SHTENLI MS 4.5 кВт
                     </div>
                     <div class="catalog__img">
-                        <img src="img/catalog/9b.jpg" alt="catalog" class="img-fluid">
+                        <img src="./public/assets/img/catalog/9b.jpg" alt="catalog" class="img-fluid">
                     </div>
                     <div class="catalog__table">
                         <hr>
@@ -1034,27 +960,22 @@
                     </div>
                 </div>
             </div>
+
         </div>
-        
     </div>
 </section>
-
 
 <section id="section-info" class="c__section">
     <header data-animation="animated zoomInUp">Преимущества бензокос Shtenli</header>
     <div class="container">
-
         <div class="row">
-
             <div class="col-md-8">
                 <div class="text-center">
-                    <img src="img/catalog/why.jpg" alt="catalog" class="img-fluid">
+                    <img src="./public/assets/img/catalog/why.jpg" alt="catalog" class="img-fluid">
                 </div>
             </div>
-
             <div class="col-md-4 bg-light py-3">
                 <p class="h3 mb-5 text-success"> Бензокосы SHTENLI</p>
-
                 <p class="font-weight-bold">Производитель: - <span class="text-success">Shtenli (Германия)</span></p>
                 <p class="font-weight-bold">Тип двигателя: - <span class="text-success">Бензиновый</span></p>
                 <p class="font-weight-bold">Модель двигателя: - <span class="text-success">2-ух тактный</span></p>
@@ -1067,17 +988,11 @@
                 <p class="font-weight-bold">Ширина захвата: - <span class="text-success">230/430 мм</span></p>
                 <p class="font-weight-bold">Диаметр лески: - <span class="text-success">2 мм (в комплекте)</span></p>
                 <p class="font-weight-bold">Гарантия: - <span class="text-success">24 месяца</span></p>
-
             </div>
-
         </div>
-
         <div class="text-center my-5">
             <button class="btn btn-success btn-lg c__font--alt px-md-5" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ СЕЙЧАС</button>
         </div>
-
-       
-
     </div>
 </section>
 
@@ -1086,42 +1001,42 @@
         <h2>Преимущества</h2>
         <div class="benefits">
             <div class="benefit">
-                <img src="assets/images/bnf-01.jpg">
+                <img src="./public/assets/img/images/bnf-01.jpg">
                 <div class="bft-ttl">Квадратное соединение редуктора с валом</div>
                 <div class="bft-info">Это даёт валу и редуктору большую надёжность, чем шлицевое классическое соединение, где на косах с серьёзными мощностями рёбра звёздочки стираются за считанные покосы. Квадратное соединение вала используется только ведущими производителями, например Shtenli, Stihl и Husqvarna.</div>
             </div>
             <div class="benefit">
-                <img src="assets/images/bnf-03.jpg">
+                <img src="./public/assets/img/images/bnf-03.jpg">
                 <div class="bft-ttl">Возможность быстрой смазки редуктора</div>
                 <div class="bft-info">Редкая особенность у редукторов для бензиновых триммеров. Никогда еще смазка редуктора не была такой лёгкой.</div>
             </div>
             <div class="benefit">
-                <img src="assets/images/bnf-04.jpg">
+                <img src="./public/assets/img/images/bnf-04.jpg">
                 <div class="bft-ttl">Стальной трехлопастной нож в комплекте бензокосы</div>
                 <div class="bft-info">Все без исключения мотокосы Shtenli комплектуются трехлопастным ножом для уверенной борьбы с крупными сорняками и молодыми побегами.</div>
             </div>
             <div class="benefit">
-                <img src="assets/images/bnf-05.jpg">
+                <img src="./public/assets/img/images/bnf-05.jpg">
                 <div class="bft-ttl">Двойное крепление защитного кожуха  к валу и редуктору</div>
                 <div class="bft-info">Благодаря инженерам департамента безопасности вы уверены в своей защите. Основное крепление кожуха происходит к валу и дополнительно фиксируется к редуктору, что исключает проворачивание защиты во время работы.</div>
             </div>
             <div class="benefit">
-                <img src="assets/images/bnf-06.jpg">
+                <img src="./public/assets/img/images/bnf-06.jpg">
                 <div class="bft-ttl">Фиксатор на рукоятке с удобным курком</div>
                 <div class="bft-info">Рукоятка приятна и эргономична: вы легко фиксируете его в положении газ, что исключает напряжение в кисти. Процесс покоса травы становится приятным занятием.</div>
             </div>
             <div class="benefit">
-                <img src="assets/images/bnf-07.jpg">
+                <img src="./public/assets/img/images/bnf-07.jpg">
                 <div class="bft-ttl">Обязательное наличие акциза на всех бензокосах SHTENLI</div>
                 <div class="bft-info">Частым явлением стало наполонение стран Восточной Европы и СНГ некачественными подделками на бренд SHTENLI. Купив косу у официального представителя вы обезопасили себя от контрафактной продукции. Все оригинальные мотокосы SHTENLI оснащены акцизом на моторе или штанге триммера.</div>
             </div>
             <div class="benefit">
-                <img src="assets/images/bnf-08.jpg?6">
+                <img src="./public/assets/img/images/bnf-08.jpg?6">
                 <div class="bft-ttl">Система легкого запуска EasyStart</div>
                 <div class="bft-info">Что в переводе лаконично называется Лёгкий старт. Коса SHTENLI заводится с первого раза без дополнительных усилий, сохраняя до 60% вашей энергии. Маховик раскрутится, даже если его просто потянуть.</div>
             </div>
             <div class="benefit">
-                <img src="assets/images/bnf-09.jpg">
+                <img src="./public/assets/img/images/bnf-09.jpg">
                 <div class="bft-ttl">Долговечность подвижных элементов</div>
                 <div class="bft-info">Непревзойдённость технологии обеспечивается высоким уровнем соединительных узлов, позволяющих развивать увеличенное количество оборотов в минуту не теряя ресурсоёмкости.</div>
             </div>
@@ -1156,15 +1071,13 @@
         <div class="row">
 
             <div class="col-md-4">
-                <img src="img/catalog/set1.jpg" alt="additional" class="img-fluid">
+                <img src="./public/assets/img/certificate/set1.jpg" alt="additional" class="img-fluid">
             </div>
-
             <div class="col-md-4">
-                <img src="img/catalog/set2.jpg" alt="additional" class="img-fluid">
+                <img src="./public/assets/img/certificate/set2.jpg" alt="additional" class="img-fluid">
             </div>
-
             <div class="col-md-4">
-                <img src="img/catalog/set3.png" alt="additional" class="img-fluid">
+                <img src="./public/assets/img/certificate/set3.png" alt="additional" class="img-fluid">
             </div>
 
         </div>
@@ -1214,14 +1127,13 @@
 <section id="section-contact" class="c__section bg-dark text-white">
     <div class="container">
         <div class="text-center">
-            <img src="img/logo.png" alt="logo" class="img-fluid">
+            <img src="./public/assets/img/isons/logo.png" alt="logo" class="img-fluid">
         </div>
         <div class="row">
             <div class="col-md-6">
                 <p class="contact__title">Контакты</p>
                 <p class="contact__phone">
                     <a href="tel:+375333442958" class="contact__phone__link">+375 33 664-00-44</a>
-                  
                 </p>
             </div>
             <div class="col-md-6">
@@ -1244,10 +1156,8 @@
                 <div class="my-4">
                     <p class="h2">Ваш личный менеджер</p>
                     <p class="h2"> + 375 (33)664 00 44</p>
-                    
                     <hr>
                 </div>
-
                 <form>
                     <input type="hidden" name="form" value="Окно заказа">
                     <div class="form-group">
@@ -1292,22 +1202,22 @@
     </div>
 </div>
 
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
+<!-- Popper.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <!-- Fancybox -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
 <!-- Swiper -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js" integrity="sha256-uckMYBvIGtce2L5Vf/mwld5arpR5JuhAEeJyjPZSUKY=" crossorigin="anonymous"></script>
 
 <script src="../vendor/lib/lightcountdown_v1_1/lightcountdown.min.js"></script>
-<link rel="stylesheet" href="https://cdn.envybox.io/widget/cbk.css">
 <script type="text/javascript" src="https://cdn.envybox.io/widget/cbk.js?wcb_code=cef0f0dc5c6658c77645c68d8bf4e72a" charset="UTF-8" async></script>
-<script src="js/js.min.js"></script>
+<script src="./public/scripts/data.js"></script>
+<script src="./src/scripts/c.js"></script>
+<script src="./src/scripts/js.js"></script>
 <script src="../vendor/js/chat.js"></script>
 <script src="../vendor/js/analytics.js"></script>
 </body>

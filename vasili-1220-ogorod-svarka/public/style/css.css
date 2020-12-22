@@ -1,8 +1,4 @@
 #section-nav{
-    position: fixed;
-    top:0;
-    left:0;
-    right: 0;
     background-color: white;
     border-bottom: 3px solid green;
     z-index: 999;
@@ -11,12 +7,12 @@
 #section-main{
     padding-top: 5rem;
     padding-bottom: 3rem;
-    background-image: url("../img/back/scale_1200.png");
+    background-image: url("../../public/assets/img/back/scale_1200.png");
     background-size: cover;
     background-position: center bottom;
 }
 #section-about{
-    background-image: url("../img/back/scale_1200.png");
+    background-image: url("../../public/assets/img/back/scale_1200.png");
     background-size: cover;
     background-position: center bottom;
 }
