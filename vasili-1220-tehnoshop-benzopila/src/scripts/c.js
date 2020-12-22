@@ -5,7 +5,7 @@ $(document).ready(function () {
         let currentPrice = Number($('.jPrice', currentCard).text());
         let oldPriceBlock = $('.jPriceOld', currentCard);
 
-        oldPriceBlock.text((currentPrice * 1.3).toFixed());
+        oldPriceBlock.text((currentPrice * 1.2).toFixed());
     });
     $(".jPrices").change();
 });
