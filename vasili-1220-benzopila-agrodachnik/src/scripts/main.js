@@ -98,6 +98,20 @@ document.addEventListener("DOMContentLoaded", function () {
     console.error(e);
   }
 
+
+
+  try {
+
+
+    let asd = document.querySelector('.lightcountdown');
+    let asdall = document.querySelectorAll('.lightcountdown .lightcountdown__item');
+    console.log(asdall);
+
+
+  } catch (e) {
+    console.error(e);
+  }
+
   // resize block
   const heightBlock = () => {
     const cardBlock = document.querySelectorAll('.catalog-text');
