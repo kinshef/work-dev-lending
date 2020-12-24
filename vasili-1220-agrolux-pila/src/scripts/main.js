@@ -122,10 +122,10 @@ document.addEventListener("DOMContentLoaded", function () {
     var scanText = function(param){
       var maxHidP = 0;
       for(var i=0; i<param.length;i++){
-        if(maxHidP<param[i].scrollHeight){
-          maxHidP = param[i].scrollHeight;
+        if(maxHidP<param[i].offsetHeight){
+          maxHidP = param[i].offsetHeight;
           for(var j=0; j<param.length;j++){
-            if(param[j].scrollHeight < maxHidP){
+            if(param[j].offsetHeight < maxHidP){
               param[j].style.height = maxHidP + 'px';
             }
           }
