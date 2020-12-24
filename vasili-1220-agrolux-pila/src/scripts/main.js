@@ -132,10 +132,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     }
-    scanText(document.querySelectorAll('.catalog__parameter'))
+    let catalogParameter = document.querySelectorAll('.catalog__parameter');
+    scanText(catalogParameter)
     window.onresize = function() {
       if (document.body.clientWidth > 768){
-        scanText(document.querySelectorAll('.catalog__parameter'))
+        scanText(catalogParameter)
       }else{
         for(var j=0; j<catalogParameter.length;j++){
           catalogParameter[j].style.height = 'auto';

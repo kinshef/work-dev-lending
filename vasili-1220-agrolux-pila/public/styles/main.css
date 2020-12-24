@@ -70,6 +70,7 @@ textarea {
   left: 0;
   width: 100%;
   background: rgba(62, 88, 69, 0.4);
+  box-shadow: 0px 10px 25px 15px rgba(62, 88, 69, 0.4);
   color: white;
   padding: 8px 0;
 }
@@ -88,6 +89,10 @@ textarea {
   }
   a.btn-transparent{
     font-size: 1rem;
+  }
+  .page-header{
+    background: rgba(62, 88, 69, 0.8);
+    box-shadow: 0px 10px 25px 15px rgba(62, 88, 69, 0.8);
   }
 }
 a.btn-transparent {
@@ -183,7 +188,7 @@ a.btn-transparent:hover {
 .catalog__input__text{
   box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
   top: 0;
-  z-index: 1;
+  z-index: 3;
   min-width: 200px;
   transition: all .6s;
   opacity: 0;
@@ -212,6 +217,19 @@ a.btn-transparent:hover {
     right: auto;
     transform: translate(-90%, -30%);
   }
+}
+@media(max-width: 768px){
+  .cart-wrapper__left .catalog__input__text,
+  .cart-wrapper__right .catalog__input__text{
+    right: auto;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+  /* .cart-wrapper__left .catalog__input__text{
+    left: 0;
+    right: auto;
+    transform: translate(-90%, -30%);
+  } */
 }
 
 /* END SECTION CATALOG */
