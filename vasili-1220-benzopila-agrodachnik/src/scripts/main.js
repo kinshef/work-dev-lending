@@ -85,48 +85,23 @@ $(document).ready(function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  try {
-    // countdown
-    let dateEnd = new Date();
-    dateEnd.setDate(dateEnd.getDay() ? dateEnd.getDate() - dateEnd.getDay() + 8 : dateEnd.getDate() + 1);
-    dateEnd.setHours(0, 0, 0);
-    let countdown = new LightCountdown(".countdown-week", dateEnd, {
-      animation: "animated flipInX",
-      animationDuration: "600ms"
-    });
-  } catch (e) {
-    console.error(e);
-  }
-
-
-
-  try {
-
-
-    let asd = document.querySelector('.lightcountdown');
-    let asdall = document.querySelectorAll('.lightcountdown .lightcountdown__item');
-    console.log(asdall);
-
-
-  } catch (e) {
-    console.error(e);
-  }
-
   // resize block
-  const heightBlock = () => {
-    const cardBlock = document.querySelectorAll('.catalog-text');
-    let maxHeight = 0;
-    cardBlock.forEach((block) => {
-      if (maxHeight < block.scrollHeight) {
-        maxHeight = block.scrollHeight;
-      }
-    });
-    cardBlock.forEach((block) => block.style.height = maxHeight + 'px');
-  }
-
-  heightBlock();
-
-  window.onresize = () => {
+  try {
+    const heightBlock = () => {
+      const cardBlock = document.querySelectorAll('.catalog-text');
+      let maxHeight = 0;
+      cardBlock.forEach((block) => {
+        if (maxHeight < block.scrollHeight) {
+          maxHeight = block.scrollHeight;
+        }
+      });
+      cardBlock.forEach((block) => block.style.height = maxHeight + 'px');
+    }
     heightBlock();
-  };
+    window.onresize = () => {
+      heightBlock();
+    };
+  } catch (e) {
+    console.error(e);
+  }
 });

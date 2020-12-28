@@ -19,7 +19,6 @@
     <!-- Fancybox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../vendor/lib/lightcountdown/lightcountdown.css">
     <link rel="stylesheet" href="public/styles/main.css">
 
 </head>
@@ -109,19 +108,8 @@
                     <div class="col-12 mt-5 mb-5">
                         <form class="main-form bg-light-color p-4">
                             <div class="row">
-                                <!-- <div class="col-12 col-lg-8 text-center">
-                                    <h3 class="font-weight-bold">
-                                        Горящие предложения: от 7 до 9 бонусов в подарок!
-                                    </h3>
-                                    <p>
-                                        Покупай бензопилу сейчас и получи дополнительные комплектующие в ПОДАРОК!
-                                    </p>
-                                    <h3 class="text-danger font-weight-bold">
-                                        Срок акции ограничен!
-                                    </h3>
-                                </div> -->
-                                <div class="col-12 col-lg-4 mb-3">
-                                    <div class="countdown-week"></div>
+                                <div class="col-12 d-md-block d-none">
+                                    <script src="//megatimer.ru/get/cf84fb9ed87f12e683a67aaa501c228f.js"></script>
                                 </div>
                             </div>
                             <div class="row">
@@ -992,8 +980,7 @@
             </div>
         </section>
 
-        <!--
-        <section class="section-work text-center insert_shadow" id="section-work">
+        <!--<section class="section-work text-center insert_shadow" id="section-work">
             <div class="container">
                 <div class="row">
                     <div class="col-12 mt-5 mb-5">
@@ -1044,8 +1031,8 @@
                     </div>
                 </div>
             </div>
-        </section>
--->
+        </section> -->
+
         <section id="section-work" class="section-order">
             <div class="container">
                 <div class="row justify-content-center text-white text-center font-weight-bold">
@@ -1320,6 +1307,66 @@
             </div>
         </section>
 
+        <section class="section-reviews" id="section-reviews">
+            <div class="container">
+                <div class="row align-items-center text-center">
+                    <div class="col-12">
+                        <div class="h2">Отзывы наших клиентов</div>
+                    </div>
+                    <div class="col-9">
+                        <hr class="border-secondary">
+                        <p class="text-left">Себе на дачу взял пилу Белтех в этом магазине. Выбор оказался удачным. Пила надежная и простая в эксплуатации. После зимней спячки заводится легко и непринужденно. Пиле уже четвертый сезон пошел, проблем с ней не было вообще, главное грамотно эксплуатировать. Мое мнение: идеальное соотношение цены и качества.</p>
+                    </div>
+                    <div class="col-3">
+                        <div class="reviews-img mx-auto">
+                            <img src="./public/assets/img/reviews/r1.jpg" class="mw-100">
+                        </div>
+                        <div class="font-weight-bold my-2">Сергей, Люберцы</div>
+                    </div>
+                    <div class="col-3">
+                        <div class="reviews-img mx-auto">
+                            <img src="./public/assets/img/reviews/r1.jpg" class="mw-100">
+                        </div>
+                        <div class="font-weight-bold my-2">Сергей, Люберцы</div>
+                    </div>
+                    <div class="col-9">
+                        <hr class="border-secondary">
+                        <p class="text-left">Себе на дачу взял пилу Белтех в этом магазине. Выбор оказался удачным. Пила надежная и простая в эксплуатации. После зимней спячки заводится легко и непринужденно. Пиле уже четвертый сезон пошел, проблем с ней не было вообще, главное грамотно эксплуатировать. Мое мнение: идеальное соотношение цены и качества.</p>
+                    </div>
+                    <div class="col-12">
+                        <form class="reviews-form my-3">
+                            <input type="hidden" name="form" value="Заказать бензопилу по акции">
+                            <div class="font-weight-bold h3">Заказать бензопилу по акции</div>
+                            <div class="row align-items-center text-left">
+                                <div class="col-lg-3 my-2">
+                                    <label for="reviews-form__phone" class="mb-0">Имя:</label>
+                                    <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                </div>
+                                <div class="col-lg-3 my-2">
+                                    <label for="reviews-form__phone" class="mb-0">Телефон:<span class="text-red">*</span></label>
+                                    <input id="reviews-form__phone" type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                                </div>
+                                <div class="col-lg-3 my-2">
+                                    <label for="reviews-form__phone" class="mb-0">Выберите модель:</label>
+                                    <div class="reviews-form__select">
+                                        <select name="model">
+                                            <option value="no">Не выбрано</option>
+                                            <option value="1">Вариант 1</option>
+                                            <option value="2">Вариант 2</option>
+                                            <option value="3">Вариант 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 my-2">
+                                    <button type="submit" class="btn btn-danger btn-block btn-lg">Отправить заявку</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer bg-dark" id="footer">
@@ -1479,498 +1526,45 @@
     </div>
 
     <div id="modal-product1" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-md">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="text-size-5 text-white">&#10005;</span>
+                    <span class="text-white">&#10005;</span>
                 </button>
+                <div class="modal-header">
+                    <div class="font-weight-bold h3 mb-0">Бензопила PROFI 5500</div>
+                </div>
                 <div class="owl-carousel owl-carousel-modal owl-theme text-center">
                     <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod1.jpg" data-fancybox="product1">
-                            <img src="./public/assets/img/catalog/shtenliprod1.jpg" class="w-100 h-auto img-fluid">
+                        <a href="./public/assets/img/catalog/profiprod1.jpg" data-fancybox="product1">
+                            <img src="./public/assets/img/catalog/profiprod1.jpg" class="w-100 h-auto img-fluid">
                         </a>
                     </div>
                     <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod2.jpg" data-fancybox="product1">
-                            <img src="./public/assets/img/catalog/shtenliprod2.jpg" class="w-100 h-auto img-fluid">
+                        <a href="./public/assets/img/catalog/profiprod2.jpg" data-fancybox="product1">
+                            <img src="./public/assets/img/catalog/profiprod2.jpg" class="w-100 h-auto img-fluid">
                         </a>
                     </div>
                     <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod3.jpg" data-fancybox="product1">
-                            <img src="./public/assets/img/catalog/shtenliprod3.jpg" class="w-100 h-auto img-fluid">
+                        <a href="./public/assets/img/catalog/profiprod3.jpg" data-fancybox="product1">
+                            <img src="./public/assets/img/catalog/profiprod3.jpg" class="w-100 h-auto img-fluid">
                         </a>
                     </div>
                     <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod4.jpg" data-fancybox="product1">
-                            <img src="./public/assets/img/catalog/shtenliprod4.jpg" class="w-100 h-auto img-fluid">
+                        <a href="./public/assets/img/catalog/profiprod4.jpg" data-fancybox="product1">
+                            <img src="./public/assets/img/catalog/profiprod4.jpg" class="w-100 h-auto img-fluid">
                         </a>
                     </div>
                     <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod5.jpg" data-fancybox="product1">
-                            <img src="./public/assets/img/catalog/shtenliprod5.jpg" class="w-100 h-auto img-fluid">
+                        <a href="./public/assets/img/catalog/profiprod5.jpg" data-fancybox="product1">
+                            <img src="./public/assets/img/catalog/profiprod5.jpg" class="w-100 h-auto img-fluid">
                         </a>
                     </div>
                 </div>
-                <div class="modal-body p-5">
-                    <div class="font-weight-bold text-size-7 mb-3">Бензопила SHTENLI 220</div>
+                <div class="modal-body px-4">
+                    <div class="font-weight-bold h4 mt-4">Характеристики:</div>
                     <ul>
-                        <li><span>Производитель:</span> SHTENLI GmbH (Германия)</li>
-                        <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
-                        <li><span>Мощность:</span> 2,2 кВт</li>
-                        <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
-                        <li><span>Паз шины:</span> 1,5 мм</li>
-                        <li><span>Длинна шины:</span> 400 мм</li>
-                        <li><span>Монтажный инструмент:</span> Защита цепи (кожух)</li>
-                        <li><span>Объем топливного бака:</span> 0,58 л</li>
-                        <li><span>Объем масляного бака:</span> 0,26 л</li>
-                        <li><span>Гарантия:</span> 24 мес</li>
-                    </ul>
-
-                    <p class="font-weight-bold">Акционные предложения на бензопилы уточняйте у менеджера!</p>
-                    <div class="my-3">
-                        <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal-product2" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="text-size-5 text-white">&#10005;</span>
-                </button>
-                <div class="owl-carousel owl-carousel-modal owl-theme text-center">
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod1.jpg" data-fancybox="product2">
-                            <img src="./public/assets/img/catalog/shtenliprod1.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod2.jpg" data-fancybox="product2">
-                            <img src="./public/assets/img/catalog/shtenliprod2.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod3.jpg" data-fancybox="product2">
-                            <img src="./public/assets/img/catalog/shtenliprod3.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod4.jpg" data-fancybox="product2">
-                            <img src="./public/assets/img/catalog/shtenliprod4.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod5.jpg" data-fancybox="product2">
-                            <img src="./public/assets/img/catalog/shtenliprod5.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                </div>
-                <div class="modal-body p-5">
-                    <div class="font-weight-bold text-size-7 mb-3">Бензопила SHTENLI 250</div>
-                    <ul>
-                        <li><span>Производитель:</span> SHTENLI GmbH (Германия)</li>
-                        <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
-                        <li><span>Мощность:</span> 2,5 кВт</li>
-                        <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
-                        <li><span>Паз шины:</span> 1,5 мм</li>
-                        <li><span>Длинна шины:</span> 400 мм</li>
-                        <li><span>Монтажный инструмент:</span> Защита цепи (кожух)</li>
-                        <li><span>Объем топливного бака:</span> 0,58 л</li>
-                        <li><span>Объем масляного бака:</span> 0,26 л</li>
-                        <li><span>Гарантия:</span> 24 мес</li>
-                    </ul>
-
-                    <p class="font-weight-bold">Акционные предложения на бензопилы уточняйте у менеджера!</p>
-                    <div class="my-3">
-                        <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal-product3" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="text-size-5 text-white">&#10005;</span>
-                </button>
-                <div class="owl-carousel owl-carousel-modal owl-theme text-center">
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod1.jpg" data-fancybox="product3">
-                            <img src="./public/assets/img/catalog/shtenliprod1.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod2.jpg" data-fancybox="product3">
-                            <img src="./public/assets/img/catalog/shtenliprod2.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod3.jpg" data-fancybox="product3">
-                            <img src="./public/assets/img/catalog/shtenliprod3.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod4.jpg" data-fancybox="product3">
-                            <img src="./public/assets/img/catalog/shtenliprod4.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod5.jpg" data-fancybox="product3">
-                            <img src="./public/assets/img/catalog/shtenliprod5.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                </div>
-                <div class="modal-body p-5">
-                    <div class="font-weight-bold text-size-7 mb-3">Бензопила SHTENLI 280</div>
-                    <ul>
-                        <li><span>Производитель:</span> SHTENLI GmbH (Германия)</li>
-                        <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
-                        <li><span>Мощность:</span> 2,8 кВт</li>
-                        <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
-                        <li><span>Паз шины:</span> 1,5 мм</li>
-                        <li><span>Длинна шины:</span> 400 мм</li>
-                        <li><span>Монтажный инструмент:</span> Защита цепи (кожух)</li>
-                        <li><span>Объем топливного бака:</span> 0,58 л</li>
-                        <li><span>Объем масляного бака:</span> 0,26 л</li>
-                        <li><span>Гарантия:</span> 24 мес</li>
-                    </ul>
-
-                    <p class="font-weight-bold">Акционные предложения на бензопилы уточняйте у менеджера!</p>
-                    <div class="my-3">
-                        <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal-product4" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="text-size-5 text-white">&#10005;</span>
-                </button>
-                <div class="owl-carousel owl-carousel-modal owl-theme text-center">
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod1.jpg" data-fancybox="product4">
-                            <img src="./public/assets/img/catalog/shtenliprod1.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod2.jpg" data-fancybox="product4">
-                            <img src="./public/assets/img/catalog/shtenliprod2.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod3.jpg" data-fancybox="product4">
-                            <img src="./public/assets/img/catalog/shtenliprod3.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod4.jpg" data-fancybox="product4">
-                            <img src="./public/assets/img/catalog/shtenliprod4.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod5.jpg" data-fancybox="product4">
-                            <img src="./public/assets/img/catalog/shtenliprod5.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                </div>
-                <div class="modal-body p-5">
-                    <div class="font-weight-bold text-size-7 mb-3">Бензопила SHTENLI 310</div>
-                    <ul>
-                        <li><span>Производитель:</span> SHTENLI GmbH (Германия)</li>
-                        <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
-                        <li><span>Мощность:</span> 3,1 кВт</li>
-                        <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
-                        <li><span>Паз шины:</span> 1,5 мм</li>
-                        <li><span>Длинна шины:</span> 400 мм</li>
-                        <li><span>Монтажный инструмент:</span> Защита цепи (кожух)</li>
-                        <li><span>Объем топливного бака:</span> 0,58 л</li>
-                        <li><span>Объем масляного бака:</span> 0,26 л</li>
-                        <li><span>Гарантия:</span> 24 мес</li>
-                    </ul>
-
-                    <p class="font-weight-bold">Акционные предложения на бензопилы уточняйте у менеджера!</p>
-                    <div class="my-3">
-                        <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal-product5" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="text-size-5 text-white">&#10005;</span>
-                </button>
-                <div class="owl-carousel owl-carousel-modal owl-theme text-center">
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod1.jpg" data-fancybox="product5">
-                            <img src="./public/assets/img/catalog/shtenliprod1.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod2.jpg" data-fancybox="product5">
-                            <img src="./public/assets/img/catalog/shtenliprod2.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod3.jpg" data-fancybox="product5">
-                            <img src="./public/assets/img/catalog/shtenliprod3.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod4.jpg" data-fancybox="product5">
-                            <img src="./public/assets/img/catalog/shtenliprod4.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod5.jpg" data-fancybox="product5">
-                            <img src="./public/assets/img/catalog/shtenliprod5.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                </div>
-                <div class="modal-body p-5">
-                    <div class="font-weight-bold text-size-7 mb-3">Бензопила SHTENLI 350</div>
-                    <ul>
-                        <li><span>Производитель:</span> SHTENLI GmbH (Германия)</li>
-                        <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
-                        <li><span>Мощность:</span> 3,5 кВт</li>
-                        <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
-                        <li><span>Паз шины:</span> 1,5 мм</li>
-                        <li><span>Длинна шины:</span> 400 мм</li>
-                        <li><span>Монтажный инструмент:</span> Защита цепи (кожух)</li>
-                        <li><span>Объем топливного бака:</span> 0,58 л</li>
-                        <li><span>Объем масляного бака:</span> 0,26 л</li>
-                        <li><span>Гарантия:</span> 24 мес</li>
-                    </ul>
-
-                    <p class="font-weight-bold">Акционные предложения на бензопилы уточняйте у менеджера!</p>
-                    <div class="my-3">
-                        <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal-product6" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="text-size-5 text-white">&#10005;</span>
-                </button>
-                <div class="owl-carousel owl-carousel-modal owl-theme text-center">
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod1.jpg" data-fancybox="product6">
-                            <img src="./public/assets/img/catalog/shtenliprod1.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod2.jpg" data-fancybox="product6">
-                            <img src="./public/assets/img/catalog/shtenliprod2.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod3.jpg" data-fancybox="product6">
-                            <img src="./public/assets/img/catalog/shtenliprod3.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod4.jpg" data-fancybox="product6">
-                            <img src="./public/assets/img/catalog/shtenliprod4.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod5.jpg" data-fancybox="product6">
-                            <img src="./public/assets/img/catalog/shtenliprod5.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                </div>
-                <div class="modal-body p-5">
-                    <div class="font-weight-bold text-size-7 mb-3">Бензопила SHTENLI 400</div>
-                    <ul>
-                        <li><span>Производитель:</span> SHTENLI GmbH (Германия)</li>
-                        <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
-                        <li><span>Мощность:</span> 4,0 кВт</li>
-                        <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
-                        <li><span>Паз шины:</span> 1,5 мм</li>
-                        <li><span>Длинна шины:</span> 400 мм</li>
-                        <li><span>Монтажный инструмент:</span> Защита цепи (кожух)</li>
-                        <li><span>Объем топливного бака:</span> 0,58 л</li>
-                        <li><span>Объем масляного бака:</span> 0,26 л</li>
-                        <li><span>Гарантия:</span> 24 мес</li>
-                    </ul>
-
-                    <p class="font-weight-bold">Акционные предложения на бензопилы уточняйте у менеджера!</p>
-                    <div class="my-3">
-                        <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal-product7" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="text-size-5 text-white">&#10005;</span>
-                </button>
-                <div class="owl-carousel owl-carousel-modal owl-theme text-center">
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod1.jpg" data-fancybox="product7">
-                            <img src="./public/assets/img/catalog/shtenliprod1.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod2.jpg" data-fancybox="product7">
-                            <img src="./public/assets/img/catalog/shtenliprod2.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod3.jpg" data-fancybox="product7">
-                            <img src="./public/assets/img/catalog/shtenliprod3.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod4.jpg" data-fancybox="product7">
-                            <img src="./public/assets/img/catalog/shtenliprod4.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod5.jpg" data-fancybox="product7">
-                            <img src="./public/assets/img/catalog/shtenliprod5.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                </div>
-                <div class="modal-body p-5">
-                    <div class="font-weight-bold text-size-7 mb-3">Бензопила SHTENLI 450</div>
-                    <ul>
-                        <li><span>Производитель:</span> SHTENLI GmbH (Германия)</li>
-                        <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
-                        <li><span>Мощность:</span> 4,5 кВт</li>
-                        <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
-                        <li><span>Паз шины:</span> 1,5 мм</li>
-                        <li><span>Длинна шины:</span> 400 мм</li>
-                        <li><span>Монтажный инструмент:</span> Защита цепи (кожух)</li>
-                        <li><span>Объем топливного бака:</span> 0,58 л</li>
-                        <li><span>Объем масляного бака:</span> 0,26 л</li>
-                        <li><span>Гарантия:</span> 24 мес</li>
-                    </ul>
-
-                    <p class="font-weight-bold">Акционные предложения на бензопилы уточняйте у менеджера!</p>
-                    <div class="my-3">
-                        <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal-product8" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="text-size-5 text-white">&#10005;</span>
-                </button>
-                <div class="owl-carousel owl-carousel-modal owl-theme text-center">
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod1.jpg" data-fancybox="product8">
-                            <img src="./public/assets/img/catalog/shtenliprod1.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod2.jpg" data-fancybox="product8">
-                            <img src="./public/assets/img/catalog/shtenliprod2.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod3.jpg" data-fancybox="product8">
-                            <img src="./public/assets/img/catalog/shtenliprod3.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod4.jpg" data-fancybox="product8">
-                            <img src="./public/assets/img/catalog/shtenliprod4.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod5.jpg" data-fancybox="product8">
-                            <img src="./public/assets/img/catalog/shtenliprod5.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                </div>
-                <div class="modal-body p-5">
-                    <div class="font-weight-bold text-size-7 mb-3">Бензопила SHTENLI 520</div>
-                    <ul>
-                        <li><span>Производитель:</span> SHTENLI GmbH (Германия)</li>
-                        <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
-                        <li><span>Мощность:</span> 5,2 кВт</li>
-                        <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
-                        <li><span>Паз шины:</span> 1,5 мм</li>
-                        <li><span>Длинна шины:</span> 400 мм</li>
-                        <li><span>Монтажный инструмент:</span> Защита цепи (кожух)</li>
-                        <li><span>Объем топливного бака:</span> 0,58 л</li>
-                        <li><span>Объем масляного бака:</span> 0,26 л</li>
-                        <li><span>Гарантия:</span> 24 мес</li>
-                    </ul>
-
-                    <p class="font-weight-bold">Акционные предложения на бензопилы уточняйте у менеджера!</p>
-                    <div class="my-3">
-                        <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal-product9" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="text-size-5 text-white">&#10005;</span>
-                </button>
-                <div class="owl-carousel owl-carousel-modal owl-theme text-center">
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod1.jpg" data-fancybox="product9">
-                            <img src="./public/assets/img/catalog/shtenliprod1.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod2.jpg" data-fancybox="product9">
-                            <img src="./public/assets/img/catalog/shtenliprod2.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod3.jpg" data-fancybox="product9">
-                            <img src="./public/assets/img/catalog/shtenliprod3.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod4.jpg" data-fancybox="product9">
-                            <img src="./public/assets/img/catalog/shtenliprod4.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./public/assets/img/catalog/shtenliprod5.jpg" data-fancybox="product9">
-                            <img src="./public/assets/img/catalog/shtenliprod5.jpg" class="w-100 h-auto img-fluid">
-                        </a>
-                    </div>
-                </div>
-                <div class="modal-body p-5">
-                    <div class="font-weight-bold text-size-7 mb-3">Бензопила SHTENLI 550</div>
-                    <ul>
-                        <li><span>Производитель:</span> SHTENLI GmbH (Германия)</li>
+                        <li><span>Производитель:</span> PROFI (Польша)</li>
                         <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
                         <li><span>Мощность:</span> 5,5 кВт</li>
                         <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
@@ -1982,7 +1576,595 @@
                         <li><span>Гарантия:</span> 24 мес</li>
                     </ul>
 
-                    <p class="font-weight-bold">Акционные предложения на бензопилы уточняйте у менеджера!</p>
+                    <div class="font-weight-bold h4 mt-5">функционал:</div>
+                    <ul>
+                        <li>PROFI (Польша)</li>
+                        <li>Бензиновый 2-ух тактный</li>
+                        <li>Бензиновый 2-ух тактный2</li>
+                    </ul>
+
+                    <div class="h5 mt-4"><span class="font-weight-bold">Премиум комплект!</span> 2 шины + 2 цепи.</div>
+
+                    <div class="font-weight-bold h3 mb-0 mt-4">Новая цена: 6 990 руб.</div>
+                    <div class="h6"><s>Старая цена: 9 920 руб.</s></div>
+                    
+
+                    <div class="my-3">
+                        <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-product2" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="text-white">&#10005;</span>
+                </button>
+                <div class="modal-header">
+                    <div class="font-weight-bold h3 mb-0">Бензопила PROFI 5500</div>
+                </div>
+                <div class="owl-carousel owl-carousel-modal owl-theme text-center">
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod1.jpg" data-fancybox="product2">
+                            <img src="./public/assets/img/catalog/profiprod1.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod2.jpg" data-fancybox="product2">
+                            <img src="./public/assets/img/catalog/profiprod2.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod3.jpg" data-fancybox="product2">
+                            <img src="./public/assets/img/catalog/profiprod3.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod4.jpg" data-fancybox="product2">
+                            <img src="./public/assets/img/catalog/profiprod4.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod5.jpg" data-fancybox="product2">
+                            <img src="./public/assets/img/catalog/profiprod5.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-body px-4">
+                    <div class="font-weight-bold h4 mt-4">Характеристики:</div>
+                    <ul>
+                        <li><span>Производитель:</span> PROFI (Польша)</li>
+                        <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
+                        <li><span>Мощность:</span> 5,5 кВт</li>
+                        <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
+                        <li><span>Паз шины:</span> 1,5 мм</li>
+                        <li><span>Длинна шины:</span> 400 мм</li>
+                        <li><span>Монтажный инструмент:</span> Защита цепи (кожух)</li>
+                        <li><span>Объем топливного бака:</span> 0,58 л</li>
+                        <li><span>Объем масляного бака:</span> 0,26 л</li>
+                        <li><span>Гарантия:</span> 24 мес</li>
+                    </ul>
+
+                    <div class="font-weight-bold h4 mt-5">функционал:</div>
+                    <ul>
+                        <li>PROFI (Польша)</li>
+                        <li>Бензиновый 2-ух тактный</li>
+                        <li>Бензиновый 2-ух тактный2</li>
+                    </ul>
+
+                    <div class="h5 mt-4"><span class="font-weight-bold">Премиум комплект!</span> 2 шины + 2 цепи.</div>
+
+                    <div class="font-weight-bold h3 mb-0 mt-4">Новая цена: 6 990 руб.</div>
+                    <div class="h6"><s>Старая цена: 9 920 руб.</s></div>
+                    
+
+                    <div class="my-3">
+                        <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-product3" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="text-white">&#10005;</span>
+                </button>
+                <div class="modal-header">
+                    <div class="font-weight-bold h3 mb-0">Бензопила PROFI 5500</div>
+                </div>
+                <div class="owl-carousel owl-carousel-modal owl-theme text-center">
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod1.jpg" data-fancybox="product3">
+                            <img src="./public/assets/img/catalog/profiprod1.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod2.jpg" data-fancybox="product3">
+                            <img src="./public/assets/img/catalog/profiprod2.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod3.jpg" data-fancybox="product3">
+                            <img src="./public/assets/img/catalog/profiprod3.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod4.jpg" data-fancybox="product3">
+                            <img src="./public/assets/img/catalog/profiprod4.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod5.jpg" data-fancybox="product3">
+                            <img src="./public/assets/img/catalog/profiprod5.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-body px-4">
+                    <div class="font-weight-bold h4 mt-4">Характеристики:</div>
+                    <ul>
+                        <li><span>Производитель:</span> PROFI (Польша)</li>
+                        <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
+                        <li><span>Мощность:</span> 5,5 кВт</li>
+                        <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
+                        <li><span>Паз шины:</span> 1,5 мм</li>
+                        <li><span>Длинна шины:</span> 400 мм</li>
+                        <li><span>Монтажный инструмент:</span> Защита цепи (кожух)</li>
+                        <li><span>Объем топливного бака:</span> 0,58 л</li>
+                        <li><span>Объем масляного бака:</span> 0,26 л</li>
+                        <li><span>Гарантия:</span> 24 мес</li>
+                    </ul>
+
+                    <div class="font-weight-bold h4 mt-5">функционал:</div>
+                    <ul>
+                        <li>PROFI (Польша)</li>
+                        <li>Бензиновый 2-ух тактный</li>
+                        <li>Бензиновый 2-ух тактный2</li>
+                    </ul>
+
+                    <div class="h5 mt-4"><span class="font-weight-bold">Премиум комплект!</span> 2 шины + 2 цепи.</div>
+
+                    <div class="font-weight-bold h3 mb-0 mt-4">Новая цена: 6 990 руб.</div>
+                    <div class="h6"><s>Старая цена: 9 920 руб.</s></div>
+                    
+
+                    <div class="my-3">
+                        <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-product4" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="text-white">&#10005;</span>
+                </button>
+                <div class="modal-header">
+                    <div class="font-weight-bold h3 mb-0">Бензопила PROFI 5500</div>
+                </div>
+                <div class="owl-carousel owl-carousel-modal owl-theme text-center">
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod1.jpg" data-fancybox="product4">
+                            <img src="./public/assets/img/catalog/profiprod1.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod2.jpg" data-fancybox="product4">
+                            <img src="./public/assets/img/catalog/profiprod2.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod3.jpg" data-fancybox="product4">
+                            <img src="./public/assets/img/catalog/profiprod3.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod4.jpg" data-fancybox="product4">
+                            <img src="./public/assets/img/catalog/profiprod4.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod5.jpg" data-fancybox="product4">
+                            <img src="./public/assets/img/catalog/profiprod5.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-body px-4">
+                    <div class="font-weight-bold h4 mt-4">Характеристики:</div>
+                    <ul>
+                        <li><span>Производитель:</span> PROFI (Польша)</li>
+                        <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
+                        <li><span>Мощность:</span> 5,5 кВт</li>
+                        <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
+                        <li><span>Паз шины:</span> 1,5 мм</li>
+                        <li><span>Длинна шины:</span> 400 мм</li>
+                        <li><span>Монтажный инструмент:</span> Защита цепи (кожух)</li>
+                        <li><span>Объем топливного бака:</span> 0,58 л</li>
+                        <li><span>Объем масляного бака:</span> 0,26 л</li>
+                        <li><span>Гарантия:</span> 24 мес</li>
+                    </ul>
+
+                    <div class="font-weight-bold h4 mt-5">функционал:</div>
+                    <ul>
+                        <li>PROFI (Польша)</li>
+                        <li>Бензиновый 2-ух тактный</li>
+                        <li>Бензиновый 2-ух тактный2</li>
+                    </ul>
+
+                    <div class="h5 mt-4"><span class="font-weight-bold">Премиум комплект!</span> 2 шины + 2 цепи.</div>
+
+                    <div class="font-weight-bold h3 mb-0 mt-4">Новая цена: 6 990 руб.</div>
+                    <div class="h6"><s>Старая цена: 9 920 руб.</s></div>
+                    
+
+                    <div class="my-3">
+                        <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-product5" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="text-white">&#10005;</span>
+                </button>
+                <div class="modal-header">
+                    <div class="font-weight-bold h3 mb-0">Бензопила PROFI 5500</div>
+                </div>
+                <div class="owl-carousel owl-carousel-modal owl-theme text-center">
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod1.jpg" data-fancybox="product5">
+                            <img src="./public/assets/img/catalog/profiprod1.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod2.jpg" data-fancybox="product5">
+                            <img src="./public/assets/img/catalog/profiprod2.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod3.jpg" data-fancybox="product5">
+                            <img src="./public/assets/img/catalog/profiprod3.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod4.jpg" data-fancybox="product5">
+                            <img src="./public/assets/img/catalog/profiprod4.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod5.jpg" data-fancybox="product5">
+                            <img src="./public/assets/img/catalog/profiprod5.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-body px-4">
+                    <div class="font-weight-bold h4 mt-4">Характеристики:</div>
+                    <ul>
+                        <li><span>Производитель:</span> PROFI (Польша)</li>
+                        <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
+                        <li><span>Мощность:</span> 5,5 кВт</li>
+                        <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
+                        <li><span>Паз шины:</span> 1,5 мм</li>
+                        <li><span>Длинна шины:</span> 400 мм</li>
+                        <li><span>Монтажный инструмент:</span> Защита цепи (кожух)</li>
+                        <li><span>Объем топливного бака:</span> 0,58 л</li>
+                        <li><span>Объем масляного бака:</span> 0,26 л</li>
+                        <li><span>Гарантия:</span> 24 мес</li>
+                    </ul>
+
+                    <div class="font-weight-bold h4 mt-5">функционал:</div>
+                    <ul>
+                        <li>PROFI (Польша)</li>
+                        <li>Бензиновый 2-ух тактный</li>
+                        <li>Бензиновый 2-ух тактный2</li>
+                    </ul>
+
+                    <div class="h5 mt-4"><span class="font-weight-bold">Премиум комплект!</span> 2 шины + 2 цепи.</div>
+
+                    <div class="font-weight-bold h3 mb-0 mt-4">Новая цена: 6 990 руб.</div>
+                    <div class="h6"><s>Старая цена: 9 920 руб.</s></div>
+                    
+
+                    <div class="my-3">
+                        <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-product6" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="text-white">&#10005;</span>
+                </button>
+                <div class="modal-header">
+                    <div class="font-weight-bold h3 mb-0">Бензопила PROFI 5500</div>
+                </div>
+                <div class="owl-carousel owl-carousel-modal owl-theme text-center">
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod1.jpg" data-fancybox="product6">
+                            <img src="./public/assets/img/catalog/profiprod1.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod2.jpg" data-fancybox="product6">
+                            <img src="./public/assets/img/catalog/profiprod2.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod3.jpg" data-fancybox="product6">
+                            <img src="./public/assets/img/catalog/profiprod3.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod4.jpg" data-fancybox="product6">
+                            <img src="./public/assets/img/catalog/profiprod4.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod5.jpg" data-fancybox="product6">
+                            <img src="./public/assets/img/catalog/profiprod5.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-body px-4">
+                    <div class="font-weight-bold h4 mt-4">Характеристики:</div>
+                    <ul>
+                        <li><span>Производитель:</span> PROFI (Польша)</li>
+                        <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
+                        <li><span>Мощность:</span> 5,5 кВт</li>
+                        <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
+                        <li><span>Паз шины:</span> 1,5 мм</li>
+                        <li><span>Длинна шины:</span> 400 мм</li>
+                        <li><span>Монтажный инструмент:</span> Защита цепи (кожух)</li>
+                        <li><span>Объем топливного бака:</span> 0,58 л</li>
+                        <li><span>Объем масляного бака:</span> 0,26 л</li>
+                        <li><span>Гарантия:</span> 24 мес</li>
+                    </ul>
+
+                    <div class="font-weight-bold h4 mt-5">функционал:</div>
+                    <ul>
+                        <li>PROFI (Польша)</li>
+                        <li>Бензиновый 2-ух тактный</li>
+                        <li>Бензиновый 2-ух тактный2</li>
+                    </ul>
+
+                    <div class="h5 mt-4"><span class="font-weight-bold">Премиум комплект!</span> 2 шины + 2 цепи.</div>
+
+                    <div class="font-weight-bold h3 mb-0 mt-4">Новая цена: 6 990 руб.</div>
+                    <div class="h6"><s>Старая цена: 9 920 руб.</s></div>
+                    
+
+                    <div class="my-3">
+                        <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-product7" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="text-white">&#10005;</span>
+                </button>
+                <div class="modal-header">
+                    <div class="font-weight-bold h3 mb-0">Бензопила PROFI 5500</div>
+                </div>
+                <div class="owl-carousel owl-carousel-modal owl-theme text-center">
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod1.jpg" data-fancybox="product7">
+                            <img src="./public/assets/img/catalog/profiprod1.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod2.jpg" data-fancybox="product7">
+                            <img src="./public/assets/img/catalog/profiprod2.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod3.jpg" data-fancybox="product7">
+                            <img src="./public/assets/img/catalog/profiprod3.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod4.jpg" data-fancybox="product7">
+                            <img src="./public/assets/img/catalog/profiprod4.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod5.jpg" data-fancybox="product7">
+                            <img src="./public/assets/img/catalog/profiprod5.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-body px-4">
+                    <div class="font-weight-bold h4 mt-4">Характеристики:</div>
+                    <ul>
+                        <li><span>Производитель:</span> PROFI (Польша)</li>
+                        <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
+                        <li><span>Мощность:</span> 5,5 кВт</li>
+                        <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
+                        <li><span>Паз шины:</span> 1,5 мм</li>
+                        <li><span>Длинна шины:</span> 400 мм</li>
+                        <li><span>Монтажный инструмент:</span> Защита цепи (кожух)</li>
+                        <li><span>Объем топливного бака:</span> 0,58 л</li>
+                        <li><span>Объем масляного бака:</span> 0,26 л</li>
+                        <li><span>Гарантия:</span> 24 мес</li>
+                    </ul>
+
+                    <div class="font-weight-bold h4 mt-5">функционал:</div>
+                    <ul>
+                        <li>PROFI (Польша)</li>
+                        <li>Бензиновый 2-ух тактный</li>
+                        <li>Бензиновый 2-ух тактный2</li>
+                    </ul>
+
+                    <div class="h5 mt-4"><span class="font-weight-bold">Премиум комплект!</span> 2 шины + 2 цепи.</div>
+
+                    <div class="font-weight-bold h3 mb-0 mt-4">Новая цена: 6 990 руб.</div>
+                    <div class="h6"><s>Старая цена: 9 920 руб.</s></div>
+                    
+
+                    <div class="my-3">
+                        <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-product8" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="text-white">&#10005;</span>
+                </button>
+                <div class="modal-header">
+                    <div class="font-weight-bold h3 mb-0">Бензопила PROFI 5500</div>
+                </div>
+                <div class="owl-carousel owl-carousel-modal owl-theme text-center">
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod1.jpg" data-fancybox="product8">
+                            <img src="./public/assets/img/catalog/profiprod1.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod2.jpg" data-fancybox="product8">
+                            <img src="./public/assets/img/catalog/profiprod2.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod3.jpg" data-fancybox="product8">
+                            <img src="./public/assets/img/catalog/profiprod3.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod4.jpg" data-fancybox="product8">
+                            <img src="./public/assets/img/catalog/profiprod4.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod5.jpg" data-fancybox="product8">
+                            <img src="./public/assets/img/catalog/profiprod5.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-body px-4">
+                    <div class="font-weight-bold h4 mt-4">Характеристики:</div>
+                    <ul>
+                        <li><span>Производитель:</span> PROFI (Польша)</li>
+                        <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
+                        <li><span>Мощность:</span> 5,5 кВт</li>
+                        <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
+                        <li><span>Паз шины:</span> 1,5 мм</li>
+                        <li><span>Длинна шины:</span> 400 мм</li>
+                        <li><span>Монтажный инструмент:</span> Защита цепи (кожух)</li>
+                        <li><span>Объем топливного бака:</span> 0,58 л</li>
+                        <li><span>Объем масляного бака:</span> 0,26 л</li>
+                        <li><span>Гарантия:</span> 24 мес</li>
+                    </ul>
+
+                    <div class="font-weight-bold h4 mt-5">функционал:</div>
+                    <ul>
+                        <li>PROFI (Польша)</li>
+                        <li>Бензиновый 2-ух тактный</li>
+                        <li>Бензиновый 2-ух тактный2</li>
+                    </ul>
+
+                    <div class="h5 mt-4"><span class="font-weight-bold">Премиум комплект!</span> 2 шины + 2 цепи.</div>
+
+                    <div class="font-weight-bold h3 mb-0 mt-4">Новая цена: 6 990 руб.</div>
+                    <div class="h6"><s>Старая цена: 9 920 руб.</s></div>
+                    
+
+                    <div class="my-3">
+                        <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-product9" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="text-white">&#10005;</span>
+                </button>
+                <div class="modal-header">
+                    <div class="font-weight-bold h3 mb-0">Бензопила PROFI 5500</div>
+                </div>
+                <div class="owl-carousel owl-carousel-modal owl-theme text-center">
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod1.jpg" data-fancybox="product9">
+                            <img src="./public/assets/img/catalog/profiprod1.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod2.jpg" data-fancybox="product9">
+                            <img src="./public/assets/img/catalog/profiprod2.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod3.jpg" data-fancybox="product9">
+                            <img src="./public/assets/img/catalog/profiprod3.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod4.jpg" data-fancybox="product9">
+                            <img src="./public/assets/img/catalog/profiprod4.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./public/assets/img/catalog/profiprod5.jpg" data-fancybox="product9">
+                            <img src="./public/assets/img/catalog/profiprod5.jpg" class="w-100 h-auto img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-body px-4">
+                    <div class="font-weight-bold h4 mt-4">Характеристики:</div>
+                    <ul>
+                        <li><span>Производитель:</span> PROFI (Польша)</li>
+                        <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
+                        <li><span>Мощность:</span> 5,5 кВт</li>
+                        <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
+                        <li><span>Паз шины:</span> 1,5 мм</li>
+                        <li><span>Длинна шины:</span> 400 мм</li>
+                        <li><span>Монтажный инструмент:</span> Защита цепи (кожух)</li>
+                        <li><span>Объем топливного бака:</span> 0,58 л</li>
+                        <li><span>Объем масляного бака:</span> 0,26 л</li>
+                        <li><span>Гарантия:</span> 24 мес</li>
+                    </ul>
+
+                    <div class="font-weight-bold h4 mt-5">функционал:</div>
+                    <ul>
+                        <li>PROFI (Польша)</li>
+                        <li>Бензиновый 2-ух тактный</li>
+                        <li>Бензиновый 2-ух тактный2</li>
+                    </ul>
+
+                    <div class="h5 mt-4"><span class="font-weight-bold">Премиум комплект!</span> 2 шины + 2 цепи.</div>
+
+                    <div class="font-weight-bold h3 mb-0 mt-4">Новая цена: 6 990 руб.</div>
+                    <div class="h6"><s>Старая цена: 9 920 руб.</s></div>
+                    
+
                     <div class="my-3">
                         <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
                     </div>
@@ -1992,11 +2174,14 @@
     </div>
 
     <div id="modal-product10" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-md">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="text-size-5 text-white">&#10005;</span>
+                    <span class="text-white">&#10005;</span>
                 </button>
+                <div class="modal-header">
+                    <div class="font-weight-bold h3 mb-0">Бензопила PROFI 5500</div>
+                </div>
                 <div class="owl-carousel owl-carousel-modal owl-theme text-center">
                     <div class="item">
                         <a href="./public/assets/img/catalog/profiprod1.jpg" data-fancybox="product10">
@@ -2024,12 +2209,12 @@
                         </a>
                     </div>
                 </div>
-                <div class="modal-body p-5">
-                    <div class="font-weight-bold text-size-7 mb-3">Бензопила PROFI 2800</div>
+                <div class="modal-body px-4">
+                    <div class="font-weight-bold h4 mt-4">Характеристики:</div>
                     <ul>
                         <li><span>Производитель:</span> PROFI (Польша)</li>
                         <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
-                        <li><span>Мощность:</span> 2,8 кВт</li>
+                        <li><span>Мощность:</span> 5,5 кВт</li>
                         <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
                         <li><span>Паз шины:</span> 1,5 мм</li>
                         <li><span>Длинна шины:</span> 400 мм</li>
@@ -2039,7 +2224,19 @@
                         <li><span>Гарантия:</span> 24 мес</li>
                     </ul>
 
-                    <p class="font-weight-bold">Акционные предложения на бензопилы уточняйте у менеджера!</p>
+                    <div class="font-weight-bold h4 mt-5">функционал:</div>
+                    <ul>
+                        <li>PROFI (Польша)</li>
+                        <li>Бензиновый 2-ух тактный</li>
+                        <li>Бензиновый 2-ух тактный2</li>
+                    </ul>
+
+                    <div class="h5 mt-4"><span class="font-weight-bold">Премиум комплект!</span> 2 шины + 2 цепи.</div>
+
+                    <div class="font-weight-bold h3 mb-0 mt-4">Новая цена: 6 990 руб.</div>
+                    <div class="h6"><s>Старая цена: 9 920 руб.</s></div>
+                    
+
                     <div class="my-3">
                         <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
                     </div>
@@ -2049,11 +2246,14 @@
     </div>
 
     <div id="modal-product11" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-md">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="text-size-5 text-white">&#10005;</span>
+                    <span class="text-white">&#10005;</span>
                 </button>
+                <div class="modal-header">
+                    <div class="font-weight-bold h3 mb-0">Бензопила PROFI 5500</div>
+                </div>
                 <div class="owl-carousel owl-carousel-modal owl-theme text-center">
                     <div class="item">
                         <a href="./public/assets/img/catalog/profiprod1.jpg" data-fancybox="product11">
@@ -2081,12 +2281,12 @@
                         </a>
                     </div>
                 </div>
-                <div class="modal-body p-5">
-                    <div class="font-weight-bold text-size-7 mb-3">Бензопила PROFI 3100</div>
+                <div class="modal-body px-4">
+                    <div class="font-weight-bold h4 mt-4">Характеристики:</div>
                     <ul>
                         <li><span>Производитель:</span> PROFI (Польша)</li>
                         <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
-                        <li><span>Мощность:</span> 3,1 кВт</li>
+                        <li><span>Мощность:</span> 5,5 кВт</li>
                         <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
                         <li><span>Паз шины:</span> 1,5 мм</li>
                         <li><span>Длинна шины:</span> 400 мм</li>
@@ -2096,7 +2296,19 @@
                         <li><span>Гарантия:</span> 24 мес</li>
                     </ul>
 
-                    <p class="font-weight-bold">Акционные предложения на бензопилы уточняйте у менеджера!</p>
+                    <div class="font-weight-bold h4 mt-5">функционал:</div>
+                    <ul>
+                        <li>PROFI (Польша)</li>
+                        <li>Бензиновый 2-ух тактный</li>
+                        <li>Бензиновый 2-ух тактный2</li>
+                    </ul>
+
+                    <div class="h5 mt-4"><span class="font-weight-bold">Премиум комплект!</span> 2 шины + 2 цепи.</div>
+
+                    <div class="font-weight-bold h3 mb-0 mt-4">Новая цена: 6 990 руб.</div>
+                    <div class="h6"><s>Старая цена: 9 920 руб.</s></div>
+                    
+
                     <div class="my-3">
                         <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
                     </div>
@@ -2106,11 +2318,14 @@
     </div>
 
     <div id="modal-product12" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-md">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="text-size-5 text-white">&#10005;</span>
+                    <span class="text-white">&#10005;</span>
                 </button>
+                <div class="modal-header">
+                    <div class="font-weight-bold h3 mb-0">Бензопила PROFI 5500</div>
+                </div>
                 <div class="owl-carousel owl-carousel-modal owl-theme text-center">
                     <div class="item">
                         <a href="./public/assets/img/catalog/profiprod1.jpg" data-fancybox="product12">
@@ -2138,12 +2353,12 @@
                         </a>
                     </div>
                 </div>
-                <div class="modal-body p-5">
-                    <div class="font-weight-bold text-size-7 mb-3">Бензопила PROFI 3500</div>
+                <div class="modal-body px-4">
+                    <div class="font-weight-bold h4 mt-4">Характеристики:</div>
                     <ul>
                         <li><span>Производитель:</span> PROFI (Польша)</li>
                         <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
-                        <li><span>Мощность:</span> 3,5 кВт</li>
+                        <li><span>Мощность:</span> 5,5 кВт</li>
                         <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
                         <li><span>Паз шины:</span> 1,5 мм</li>
                         <li><span>Длинна шины:</span> 400 мм</li>
@@ -2153,7 +2368,19 @@
                         <li><span>Гарантия:</span> 24 мес</li>
                     </ul>
 
-                    <p class="font-weight-bold">Акционные предложения на бензопилы уточняйте у менеджера!</p>
+                    <div class="font-weight-bold h4 mt-5">функционал:</div>
+                    <ul>
+                        <li>PROFI (Польша)</li>
+                        <li>Бензиновый 2-ух тактный</li>
+                        <li>Бензиновый 2-ух тактный2</li>
+                    </ul>
+
+                    <div class="h5 mt-4"><span class="font-weight-bold">Премиум комплект!</span> 2 шины + 2 цепи.</div>
+
+                    <div class="font-weight-bold h3 mb-0 mt-4">Новая цена: 6 990 руб.</div>
+                    <div class="h6"><s>Старая цена: 9 920 руб.</s></div>
+                    
+
                     <div class="my-3">
                         <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
                     </div>
@@ -2163,11 +2390,14 @@
     </div>
 
     <div id="modal-product13" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-md">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="text-size-5 text-white">&#10005;</span>
+                    <span class="text-white">&#10005;</span>
                 </button>
+                <div class="modal-header">
+                    <div class="font-weight-bold h3 mb-0">Бензопила PROFI 5500</div>
+                </div>
                 <div class="owl-carousel owl-carousel-modal owl-theme text-center">
                     <div class="item">
                         <a href="./public/assets/img/catalog/profiprod1.jpg" data-fancybox="product13">
@@ -2195,12 +2425,12 @@
                         </a>
                     </div>
                 </div>
-                <div class="modal-body p-5">
-                    <div class="font-weight-bold text-size-7 mb-3">Бензопила PROFI 4000</div>
+                <div class="modal-body px-4">
+                    <div class="font-weight-bold h4 mt-4">Характеристики:</div>
                     <ul>
                         <li><span>Производитель:</span> PROFI (Польша)</li>
                         <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
-                        <li><span>Мощность:</span> 4,0 кВт</li>
+                        <li><span>Мощность:</span> 5,5 кВт</li>
                         <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
                         <li><span>Паз шины:</span> 1,5 мм</li>
                         <li><span>Длинна шины:</span> 400 мм</li>
@@ -2210,7 +2440,19 @@
                         <li><span>Гарантия:</span> 24 мес</li>
                     </ul>
 
-                    <p class="font-weight-bold">Акционные предложения на бензопилы уточняйте у менеджера!</p>
+                    <div class="font-weight-bold h4 mt-5">функционал:</div>
+                    <ul>
+                        <li>PROFI (Польша)</li>
+                        <li>Бензиновый 2-ух тактный</li>
+                        <li>Бензиновый 2-ух тактный2</li>
+                    </ul>
+
+                    <div class="h5 mt-4"><span class="font-weight-bold">Премиум комплект!</span> 2 шины + 2 цепи.</div>
+
+                    <div class="font-weight-bold h3 mb-0 mt-4">Новая цена: 6 990 руб.</div>
+                    <div class="h6"><s>Старая цена: 9 920 руб.</s></div>
+                    
+
                     <div class="my-3">
                         <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
                     </div>
@@ -2220,11 +2462,14 @@
     </div>
 
     <div id="modal-product14" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-md">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="text-size-5 text-white">&#10005;</span>
+                    <span class="text-white">&#10005;</span>
                 </button>
+                <div class="modal-header">
+                    <div class="font-weight-bold h3 mb-0">Бензопила PROFI 5500</div>
+                </div>
                 <div class="owl-carousel owl-carousel-modal owl-theme text-center">
                     <div class="item">
                         <a href="./public/assets/img/catalog/profiprod1.jpg" data-fancybox="product14">
@@ -2252,12 +2497,12 @@
                         </a>
                     </div>
                 </div>
-                <div class="modal-body p-5">
-                    <div class="font-weight-bold text-size-7 mb-3">Бензопила PROFI 4500</div>
+                <div class="modal-body px-4">
+                    <div class="font-weight-bold h4 mt-4">Характеристики:</div>
                     <ul>
                         <li><span>Производитель:</span> PROFI (Польша)</li>
                         <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
-                        <li><span>Мощность:</span> 4,5 кВт</li>
+                        <li><span>Мощность:</span> 5,5 кВт</li>
                         <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
                         <li><span>Паз шины:</span> 1,5 мм</li>
                         <li><span>Длинна шины:</span> 400 мм</li>
@@ -2267,7 +2512,19 @@
                         <li><span>Гарантия:</span> 24 мес</li>
                     </ul>
 
-                    <p class="font-weight-bold">Акционные предложения на бензопилы уточняйте у менеджера!</p>
+                    <div class="font-weight-bold h4 mt-5">функционал:</div>
+                    <ul>
+                        <li>PROFI (Польша)</li>
+                        <li>Бензиновый 2-ух тактный</li>
+                        <li>Бензиновый 2-ух тактный2</li>
+                    </ul>
+
+                    <div class="h5 mt-4"><span class="font-weight-bold">Премиум комплект!</span> 2 шины + 2 цепи.</div>
+
+                    <div class="font-weight-bold h3 mb-0 mt-4">Новая цена: 6 990 руб.</div>
+                    <div class="h6"><s>Старая цена: 9 920 руб.</s></div>
+                    
+
                     <div class="my-3">
                         <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
                     </div>
@@ -2277,11 +2534,14 @@
     </div>
 
     <div id="modal-product15" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-md">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="text-size-5 text-white">&#10005;</span>
+                    <span class="text-white">&#10005;</span>
                 </button>
+                <div class="modal-header">
+                    <div class="font-weight-bold h3 mb-0">Бензопила PROFI 5500</div>
+                </div>
                 <div class="owl-carousel owl-carousel-modal owl-theme text-center">
                     <div class="item">
                         <a href="./public/assets/img/catalog/profiprod1.jpg" data-fancybox="product15">
@@ -2309,12 +2569,12 @@
                         </a>
                     </div>
                 </div>
-                <div class="modal-body p-5">
-                    <div class="font-weight-bold text-size-7 mb-3">Бензопила PROFI 5200</div>
+                <div class="modal-body px-4">
+                    <div class="font-weight-bold h4 mt-4">Характеристики:</div>
                     <ul>
                         <li><span>Производитель:</span> PROFI (Польша)</li>
                         <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
-                        <li><span>Мощность:</span> 5,2 кВт</li>
+                        <li><span>Мощность:</span> 5,5 кВт</li>
                         <li><span>Скорость холостого хода:</span> 3200 об/мин</li>
                         <li><span>Паз шины:</span> 1,5 мм</li>
                         <li><span>Длинна шины:</span> 400 мм</li>
@@ -2324,7 +2584,19 @@
                         <li><span>Гарантия:</span> 24 мес</li>
                     </ul>
 
-                    <p class="font-weight-bold">Акционные предложения на бензопилы уточняйте у менеджера!</p>
+                    <div class="font-weight-bold h4 mt-5">функционал:</div>
+                    <ul>
+                        <li>PROFI (Польша)</li>
+                        <li>Бензиновый 2-ух тактный</li>
+                        <li>Бензиновый 2-ух тактный2</li>
+                    </ul>
+
+                    <div class="h5 mt-4"><span class="font-weight-bold">Премиум комплект!</span> 2 шины + 2 цепи.</div>
+
+                    <div class="font-weight-bold h3 mb-0 mt-4">Новая цена: 6 990 руб.</div>
+                    <div class="h6"><s>Старая цена: 9 920 руб.</s></div>
+                    
+
                     <div class="my-3">
                         <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
                     </div>
@@ -2334,11 +2606,14 @@
     </div>
 
     <div id="modal-product16" class="modal fade modal-product" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-md">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="text-size-5 text-white">&#10005;</span>
+                    <span class="text-white">&#10005;</span>
                 </button>
+                <div class="modal-header">
+                    <div class="font-weight-bold h3 mb-0">Бензопила PROFI 5500</div>
+                </div>
                 <div class="owl-carousel owl-carousel-modal owl-theme text-center">
                     <div class="item">
                         <a href="./public/assets/img/catalog/profiprod1.jpg" data-fancybox="product16">
@@ -2366,8 +2641,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="modal-body p-5">
-                    <div class="font-weight-bold text-size-7 mb-3">Бензопила PROFI 5500</div>
+                <div class="modal-body px-4">
+                    <div class="font-weight-bold h4 mt-4">Характеристики:</div>
                     <ul>
                         <li><span>Производитель:</span> PROFI (Польша)</li>
                         <li><span>Тип двигателя:</span> Бензиновый 2-ух тактный</li>
@@ -2381,7 +2656,19 @@
                         <li><span>Гарантия:</span> 24 мес</li>
                     </ul>
 
-                    <p class="font-weight-bold">Акционные предложения на бензопилы уточняйте у менеджера!</p>
+                    <div class="font-weight-bold h4 mt-5">функционал:</div>
+                    <ul>
+                        <li>PROFI (Польша)</li>
+                        <li>Бензиновый 2-ух тактный</li>
+                        <li>Бензиновый 2-ух тактный2</li>
+                    </ul>
+
+                    <div class="h5 mt-4"><span class="font-weight-bold">Премиум комплект!</span> 2 шины + 2 цепи.</div>
+
+                    <div class="font-weight-bold h3 mb-0 mt-4">Новая цена: 6 990 руб.</div>
+                    <div class="h6"><s>Старая цена: 9 920 руб.</s></div>
+                    
+
                     <div class="my-3">
                         <button class="btn btn-warning btn-lg px-5 border-radius-30 shadow transition--slide" data-dismiss="modal" data-toggle="modal" data-target="#modal-order">ЗАКАЗАТЬ БЕНЗОПИЛУ</button>
                     </div>
@@ -2399,10 +2686,7 @@
     <!-- Fancybox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
 
-    <script src="../vendor/lib/lightcountdown/lightcountdown.min.js"></script>
-
-    <script src="./src/scripts/main.js"></script>
-    <!-- <script src="dist/scripts/main.min.js"></script> -->
+    <script src="dist/scripts/main.min.js"></script>
     <script src="../vendor/js/app.js"></script>
 </body>
 
