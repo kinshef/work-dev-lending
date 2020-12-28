@@ -345,6 +345,7 @@ textarea {
   background-size: auto 100%;
   z-index: 1;
   padding: 5rem 0;
+  overflow: hidden;
   margin: -5rem 0;
 }
 .section-catalogDop img,
